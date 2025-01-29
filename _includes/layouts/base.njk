@@ -6,6 +6,22 @@
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
 		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+		
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://noscript.show{{ page.url}}" />
+<meta property="og:title" content="No Script Show {{title}}" />
+<meta property="og:description" content="{{description}}" />
+<meta property="og:image" content="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp"  />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://noscript.show{{ page.url}}" />
+<meta property="twitter:title" content="No Script Show {{title}}" />
+<meta property="twitter:description" content="{{description}}" />
+<meta property="twitter:image" content="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp" />
+
+
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
 		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
 
