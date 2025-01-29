@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	
+	<url>
+		<loc>https://example.com/blog/thirdpost%20copy/</loc>
+		<lastmod>2015-08-24</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/secondpost/</loc>
+		<lastmod>2018-07-04</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/6th/</loc>
+		<lastmod>2018-08-24</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/dd/</loc>
+		<lastmod>2018-08-24</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/thirdpost/</loc>
+		<lastmod>2018-08-24</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/fifthpost/</loc>
+		<lastmod>2023-01-23</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/1/</loc>
+		<lastmod>2023-12-13</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/2/</loc>
+		<lastmod>2024-01-17</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/learn/1/</loc>
+		<lastmod>2024-09-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/episodes/</loc>
+		<lastmod>2025-01-26</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/blog/</loc>
+		<lastmod>2025-01-26</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/</loc>
+		<lastmod>2025-01-26</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/tags/</loc>
+		<lastmod>2025-01-26</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/learn/</loc>
+		<lastmod>2025-01-28</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/feed/feed.xml</loc>
+		<lastmod>2025-01-29</lastmod>
+	</url>
+</urlset>
