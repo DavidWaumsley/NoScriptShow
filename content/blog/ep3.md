@@ -1,6 +1,6 @@
 ---
 title: Modern CSS layouts
-description: The W3C's perspective of CSS layout and how it might be easier than most think.
+description: The W3C on CSS layout and how it might be easier than we think.
 date: 2024-01-22
 tags: ["podcast"]
 permalink: "/3{{slugify }}/"

@@ -22,32 +22,52 @@
 	</url>
 	
 	<url>
-		<loc>https://example.com/episodes/</loc>
+		<loc>https://example.com/learn/2/</loc>
+		<lastmod>2024-01-30</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/4/</loc>
+		<lastmod>2024-02-02</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/README/</loc>
 		<lastmod>2025-01-26</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/</loc>
+		<loc>https://example.com/content/episodes/</loc>
 		<lastmod>2025-01-26</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/</loc>
+		<loc>https://example.com/content/blog/</loc>
 		<lastmod>2025-01-26</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/tags/</loc>
+		<loc>https://example.com/content/</loc>
 		<lastmod>2025-01-26</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/learn/</loc>
+		<loc>https://example.com/content/tags/</loc>
+		<lastmod>2025-01-26</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://example.com/content/learn/</loc>
 		<lastmod>2025-01-28</lastmod>
 	</url>
 	
 	<url>
+		<loc>https://example.com/messing/</loc>
+		<lastmod>2025-01-30</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://example.com/feed/feed.xml</loc>
-		<lastmod>2025-01-29</lastmod>
+		<lastmod>2025-01-30</lastmod>
 	</url>
 </urlset>

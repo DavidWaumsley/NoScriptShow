@@ -1,0 +1,774 @@
+<!doctype html>
+<html lang="en-gb">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>What is intrinsic web design?. No Script Show</title>
+		<meta name="description" content="Web layout from a designer&#39;s point of view.">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="No Script Show">
+		
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://noscript.show/4/">
+<meta property="og:title" content="No Script Show What is intrinsic web design?">
+<meta property="og:description" content="Web layout from a designer&#39;s point of view.">
+<meta property="og:image" content="https://i.ytimg.com/vi_webp/gqsU-ysvQF0/maxresdefault.webp">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://noscript.show/4/">
+<meta property="twitter:title" content="No Script Show What is intrinsic web design?">
+<meta property="twitter:description" content="Web layout from a designer&#39;s point of view.">
+<meta property="twitter:image" content="https://i.ytimg.com/vi_webp/gqsU-ysvQF0/maxresdefault.webp">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	font-size: 125%;
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	max-width: 100%;
+	height: auto;
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main,
+footer {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+}
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+/* Youtube */
+lite-youtube {
+    background-color: #000;
+    position: relative;
+    display: block;
+    contain: content;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;   
+}
+
+/* gradient */
+lite-youtube::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    top: 0;
+    /* Pixel-perfect port of YT's gradient PNG, using https://github.com/bluesmoon/pngtocss plus optimizations */
+    background-image: linear-gradient(180deg, rgb(0 0 0 / 67%) 0%, rgb(0 0 0 / 54%) 14%, rgb(0 0 0 / 15%) 54%, rgb(0 0 0 / 5%) 72%, rgb(0 0 0 / 0%) 94%);
+    height: 99px;
+    width: 100%;
+    font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+    color: hsl(0deg 0% 93.33%);
+    text-shadow: 0 0 2px rgba(0,0,0,.5);
+    font-size: 18px;
+    padding: 25px 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+lite-youtube:hover::before {
+    color: white;
+}
+
+/* responsive iframe with a 16:9 aspect ratio
+    thanks https://css-tricks.com/responsive-iframes/
+*/
+lite-youtube::after {
+    content: "";
+    display: block;
+	aspect-ratio: 16 / 9 ;
+}
+lite-youtube > iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+/* play button */
+lite-youtube > .lyt-playbtn {
+    display: block;
+    /* Make the button element cover the whole area for a large hover/click target… */
+    width: 100%;
+    height: 100%;
+    /* …but visually it's still the same size */
+    background: no-repeat center/68px 48px;
+    /* YT's actual play button svg */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>');
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    filter: grayscale(100%);
+    transition: filter .1s cubic-bezier(0, 0, 0.2, 1);
+    border: 0;
+}
+
+lite-youtube:hover > .lyt-playbtn,
+lite-youtube .lyt-playbtn:focus {
+    filter: none;
+}
+
+/* Post-click styles */
+lite-youtube.lyt-activated {
+    cursor: unset;
+}
+lite-youtube.lyt-activated::before,
+lite-youtube.lyt-activated > .lyt-playbtn {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.lyt-visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }</style>
+		
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">No Script Show</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/content/">Home</a></li>
+					<li class="nav-item"><a href="/content/episodes/">Episodes</a></li>
+					<li class="nav-item"><a href="/content/learn/">Learn</a></li>
+					<li class="nav-item"><a href="/content/blog/">Archive</a></li>
+					<li class="nav-item"><a href="/feed/feed.xml">Feed</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="what-is-intrinsic-web-design">What is intrinsic web design?</h1>
+
+
+
+<ul class="post-metadata">
+	<li><time datetime="2024-02-02">02 February 2024</time></li>
+	<li><a href="/tags/podcast/" class="post-tag">podcast</a></li>
+</ul>
+
+
+<lite-youtube videoid="gqsU-ysvQF0" style="background-image: url('https://i.ytimg.com/vi_webp/gqsU-ysvQF0/maxresdefault.webp');">
+  <a href="https://youtube.com/watch?v=gqsU-ysvQF0" class="lyt-playbtn" title="Play Video">   
+  </a>
+</lite-youtube>
+
+
+<h2 id="show-notes">Show Notes</h2>
+<p>Intrinsic web design was a term coined by Jen Simmons in her 2018 talk called <a href="https://talks.jensimmons.com/GdnO62">&quot;Everything you know about web design just changed&quot;</a>.</p>
+<p>We add our perspective to Jen's history of web layouts and ask what does that mean for us? And do we need to approach projects and client's differently?</p>
+<h3 id="what-is-intrinsic-web-design-2">What is Intrinsic Web design?</h3>
+<p>Perhaps this quote best explains how it is different to responsive design:</p>
+<blockquote>
+<p>&quot;We're programming a flexibility model, not telling elements exactly where to sit and how to look.&quot;<br>
+- Jeffrey Zeldman (paraphrasing Jen Simmons)</p>
+</blockquote>
+<p><strong>Key points:</strong></p>
+<ul>
+<li>CSS Grid and letting the browser calculate size and alignment.</li>
+<li>New creative possibility without disregarding web standards (the web's universal approach to communication).</li>
+<li>A more abstract approach to visual design.</li>
+</ul>
+<h3 id="the-history-of-web-layouts">The history of web layouts</h3>
+<p>An overlapping history that loosely goes from flow only to HTML tables to Flash to fluid to fixed to responsive.</p>
+<img src="img\Instrisic-design-history.avif" alt="A chart of Jen Simmon's history of web layouts">
+<picture><source type="image/avif" srcset="/.11ty/image/?src=public%5Cimg%5Cimage.png&width=1600&format=avif&via=transform 1600w"><source type="image/webp" srcset="/.11ty/image/?src=public%5Cimg%5Cimage.png&width=1600&format=webp&via=transform 1600w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=public%5Cimg%5Cimage.png&width=1600&format=png&via=transform" alt="testing" width="1600" height="900"></picture>
+<h3 id="what-does-this-mean-for-us">What does this mean for us?</h3>
+<ul>
+<li>Re-educating ourselves (possibly without making a podcast) ?</li>
+<li>Setting better expectations of the web for clients (ie. HTML/communication first) ?</li>
+<li>A change in how we organise web projects (reversing the picture to web approach) ?</li>
+<li>More creatively with space (thinking outside the fixed box)?</li>
+</ul>
+<h3 id="jens-css-layout-resources">Jen's CSS layout resources</h3>
+<ul>
+<li><a href="https://labs.jensimmons.com/">Jen Simmon's web layout experiments</a></li>
+<li><a href="https://www.youtube.com/layoutland">Layout Land on YouTube</a></li>
+</ul>
+  <details>
+<summary>Transcript</summary>
+<p>[00:00:05] <strong>Nathan Wrigley</strong>: Hello there. Welcome to this episode four of the No Script web show, which is all about modern front end web design. We'll be looking at what we can build today with minimal dependencies and skills.</p>
+<p>Today we're talking about intrinsic web design, a term coined by Jen Simmons in her 2018 talk, which was called Everything You Know about web design Just Changed. She. iss, a graphic designer, educator and speaker, a member of the CSS working group who worked on CSS grid layouts. She worked as a developer advocate at Mozilla and later at Apple.</p>
+<p>we'll be adding our perspective to Jen's talks on the history of web layouts and asking what it means for us. I cannot have these conversations by myself. And as always, I'm joined by David Waumsley. How are you doing, David?</p>
+<p>[00:00:53] <strong>David Waumsley</strong>: I'm very well, thank you. Yeah, that was a good introduction.</p>
+<p>[00:00:58] <strong>Nathan Wrigley</strong>: Yeah. Thank you. I'm glad that you wrote it for me.</p>
+<p>[00:00:59] <strong>David Waumsley</strong>: Yeah. Oh, so shall we start? We've got some headers, haven't we? Yeah, we've got that. and was starting with, what the heck is intrinsic design? Which, I do remember on the first episode we was doing for this show where I've mentioned that and then chuck it at you and said, do you have a definition of what is? And the answer</p>
+<p>[00:01:18] <strong>Nathan Wrigley</strong>: was, I really didn't. and to be honest with you, I'm still a little bit. Hazy on it because there isn't a, an exact dictionary, different definition</p>
+<p>[00:01:27] <strong>David Waumsley</strong>: is there. no, of course not. And I think, I get from the talk itself that Jen did is that she's just wanting to signify whether you use it or not. I think she even says, just wanted to say that. I think with the technology we have and the approaches we have to web designing that it warrants. Another name other than just a bit more responsive. Yeah, responsive plus. Yeah. Yeah. yeah, I thought there's a good, we've got it actually up on the screen there.</p>
+<p>There's a quite a good quote, I think. it's taken from a tweet from Jeffrey Zeldman, who's paraphrasing Jen Simmons, and I quite like that as my way of understanding, Intrinsic design as being something different to responsive design.</p>
+<p>[00:02:16] <strong>Nathan Wrigley</strong>: I'll read it out for the people who are listening to this.</p>
+<p>So Jeffrey, in his tweet said, we're programming a flexibility model, not telling elements exactly where to sit and how to look. So it's very much open-ended.</p>
+<p>[00:02:30] <strong>David Waumsley</strong>: Yeah, and I think that probably with the technology, with the way that we have with CSS grid particularly, and Flexbox before that, but in a way, when we got Flexbox, we tended to not use it fixed flexibility.</p>
+<p>We tended to set the, kind of fixed wits on it, but now all of these kind of ways that the browser can now calculate the size of items and align them for us according to. The user that they find do the calculations first. I think that's what she's getting over, I think with this. And that is slightly different from the responsive designs.</p>
+<p>'cause when we got that, we just thought it was a reaction with the media queries, I think to, having the iPhone. So we thought, okay, we need another version of the phone with the iPhone. We'll use the media queries and then we'll just design something and we will fix where things. Exactly are going to sit and look, where they're going to sit and look.</p>
+<p>Yeah. Where I think now we're moving away from that. We're now thinking, you know what? We'll never know. There's so many different devices out there. Let's stop trying to do, let's let the content decide that the size that it needs. And I think that's probably the big thing about it. I think</p>
+<p>[00:03:41] <strong>Nathan Wrigley</strong>: that's quite a hard thing for us to get into our heads as well, because we really have spent a long time, decades on the internet trying to get things to look exactly.</p>
+<p>As we wish them to look and to know exactly where every pixel will be with any given device. Yeah, so if you were to open up a tablet and I, you could tell me the dimensions of it, I would be able to predict exactly where this. This div or card or content piece would be, but this is a bit more, this is a bit different, isn't it?</p>
+<p>you just generally say, okay, these things will probably be about there, but I'm not entirely sure based upon that device because everything is entirely, and I'm gonna use your word squishy. Yes. Squishy. everything can move in its own way and it will be very hard because the maths is being carried out.</p>
+<p>On the fly as opposed to it being based upon viewport. So at some point it, it does exactly this. This is a much more fluid, it's doing whatever it says in a kind of curved way. if it's, if, we move things, if we make the viewport smaller, all of these. Pieces are going to move over, but we're not entirely sure where they're gonna end up. So yeah. Yeah, that's</p>
+<p>[00:04:50] <strong>David Waumsley</strong>: a new challenge and I think it's very different from the way that we've looked when we've borrowed from print and we've looked at, generally we thought to templates. We make our boxes and then we put the content into those boxes and we think, oh, okay, that box won't sit, there'll have to go underneath on the mobile.</p>
+<p>And we do that. But we still think of it as the same fix W box where now this suddenly this idea that. you're gonna say, you want this content to have enough room, but let the browser decide where it is and you'll style this content. And I think it's just a complete mind flip. And I do think there's something that I thought was quite interesting because it, it's eight years on.</p>
+<p>When Jen did this talk in 2018 from when the List Apart event talk was done, that really brought in the Ethon Marcotte, brought in the responsive era, but he started that off with a quote, which goes back to 2000. I'll read that one 'cause I've got it on my extra notes, which is we should embrace the fact that the web doesn't have the same constraints as print and designed for this flexibility.</p>
+<p>But first we must accept the ebb and flow of things. And I think in a way, you know what? I think what Jen's doing with this one is having another crack at if you like, at the same thing that we have to, with better tools now to be able to do that to, get us to think about content and it becomes A HTML first approach, isn't it?</p>
+<p>The, you are styling to the HTML document and the content that you put in there, rather than the kind of reverse where we style things and then made the HTML stuff fit into the boxes we designed right.</p>
+<p>[00:06:31] <strong>Nathan Wrigley</strong>: Yeah, I think it's gonna be really interesting. I think it's gonna take a whole new generation of people to get into this system.</p>
+<p>I don't mean a new generation, as in it has to be the younger people. 'cause obviously you are absolutely fascinated by this at the moment. But you, are, really gonna have to, not unlearn, but just put a completely different layer over what you have already learned and be willing not to know quite where everything is.</p>
+<p>But I also think it's quite freeing because you can just put something on the page and be satisfied that it. It'll do something adjacent to what I want, but I won't know exactly where it is. And we've been very much focused on knowing exactly where everything is based upon the device size. And, you only have to look inside the Chrome browser and things like that.</p>
+<p>And it's obviously got all the different devices by name. And, maybe that whole process will change because it'll just be, drag it in from the left, drag it in from the right and just see, if it's behaving in the way that you'd anticipated, and if not, rewrite the CSS to, to match exactly what your expectations were.</p>
+<p>But none of this is new. Is it 20? What did you say? 2018 was when? Jen did this</p>
+<p>[00:07:33] <strong>David Waumsley</strong>: talk for that talk. Yes. And then, eight years before for responsive, alluding to this ebb and flow thing that's been going on for ages, going back to 2000. So it's always been there. This I idea, I guess it is just that the technology, because we can not so much have to set size into absolute pixels, and we have a layout tool that does it, it does open up loads of.</p>
+<p>I, I think creativity. I think that was her main thing because she's a designer coming at it. And actually we can talk about that. I guess while we talk about the main part. A good part of her talk was about the history of web layout, so maybe we can just chat a little bit for those people watching the YouTube, we have actually borrowed, One of her slides to just show her kind of loose history of overlapping changes in the web. Going from only having flow only in the beginnings in the nineties to H TM L tables to flash to fluid where we would generally. Our sites with percentages ourselves to fix, where we ended up getting a lot of these frameworks in the nine 60 framework was particularly popular.</p>
+<p>Yeah. Where we spotted everything into those fixed widths, then moving to responsive and then to the unknown, which I think is catching on as intrinsic as an idea that we are perhaps in a new era. So yeah, it</p>
+<p>[00:09:01] <strong>Nathan Wrigley</strong>: seems to be the watch word at the moment, doesn't it? The word intrinsic design seems to be popping up more and more.</p>
+<p>Yeah. which I think is gonna be the, The future for, the foreseeable future. However, the chart that we're showing on the page, probably does give us some intuition that Intrinsic will be here for a period of time and then will be replaced by something in its turn. But for now, it does feel like, yeah, it's the next evolution.</p>
+<p>But she also, there was a little quote, and I can't remember the exact wording, but it was something along the lines of, in, in, evolutionary terms, the internet is that period where the fish. grew legs, the fins became a little bit more rigid and suddenly some of the fish could waddle out onto the land and all land based, Life, which can, which is mobile came from that moment and she was likening where we are to that with the internet. And I think that's a really good point. You get the impression that everything we've got now is the destination. But it isn't, we're just literally beginning the journey and maybe, a hundred years from now, the internet will still be around us.</p>
+<p>Probably entirely different in the way it's consumed and the kind of devices that are available. But probably look back on where we are now, and it'll just be one of the, one of the cards on Jen's charts Intrinsic design. Oh, how, oh, how quaint that was.</p>
+<p>[00:10:22] <strong>David Waumsley</strong>: she was very much on the mission of the web as opposed to just the internet keeping that.</p>
+<p>Because the core foundations of that is that, hasty mail, the ability to be able to share information with each other, given to us for free for that and to keep it on board with that. And I dunno what you got from the her account of the history, but for me it was a little bit about, I.</p>
+<p>Because she frames it within this idea that you've got the designers who want things to just look pretty like hers and the kind of standards people who just go, we can't lose this thing. Where it's able to communicate with anybody, whatever the device they've got, whether they can't read or not, we need to keep that HDML markup good.</p>
+<p>And there's always been this battle. Which she thinks is now solved. And the two points I, suppose in the, story was the HTML tables. Oh yeah. That made stuff pretty, but it ruined the web, didn't it? Yeah. Purpose of it.</p>
+<p>[00:11:14] <strong>Nathan Wrigley</strong>: you couldn't, can't, can only imagine what the HT ML markup of a tables based layout look like. It would just be a 99% junk that you don't</p>
+<p>[00:11:23] <strong>David Waumsley</strong>: these days need. Yeah. Exactly, and it couldn't work on all devices. It was useless for a good percentage of people who couldn't read the stuff, but it gave you graphics and pretties, And then of course, from Flash, it almost went entirely off, didn't it?</p>
+<p>Because then you've got proprietary code, which was only effectively embedded in the HTML, that it had no relationship to HTML. So it was unusable by basically anybody who wasn't signed up to. to go in this whole proprietary route. So yeah, I think after, that point, I do think then we start to get into the more problems of okay, we have agreed that we, need to keep the HTML clean and readable and serve everybody.</p>
+<p>And then the rest of it becomes, how do we make the design work?</p>
+<p>[00:12:08] <strong>Nathan Wrigley</strong>: That's right. Yeah. That's interesting. if you could stare into the mind of people like, Vince Cert and, oh, who's the other guy that's usually, regarded as one of the founders of the internet. Tim Burners Lee, that's it.</p>
+<p>Oh, yes. Tim Burners Lee back in the day when they came up with the, idea of hyperlinks and all of that. Just no intuition that the internet would be anything other than an academic exercise that would probably be connected. With a handful of computers in major universities, and that was it.</p>
+<p>And so the idea of moving text around was it, but then it just, it exploded. Suddenly people had this intuition that it could be used for a thousand different things. And everybody got really excited. Modems came along. We all got computers of one fashion or another. And like you say, ht ML tables, suddenly people figured out, oh.</p>
+<p>We can make it look a bit like a magazine. Yeah. that was not expected, but it had to be crowbarred in. Then obviously everybody realized, hang on, we've lost the content somewhere. The actual content is just surrounded by a load of junk HDML that we don't need, but we really like it to look pretty.</p>
+<p>So who cares? We'll make it look pretty, even though people who can't see it, can't, consume it. Like you said, flash, which is a little black box, a box that nothing could communicate with. And, now we seem to have gotten full gone. Full circle. Yeah. And we're now hopefully at a stage where it can look pretty.</p>
+<p>[00:13:35] <strong>David Waumsley</strong>: But it's just HTML and it's web standards. It's keeping the web as one. I think the worry with things like Flash was the break off. you go to this propriety thing, suddenly this free tool for communication that we can all use, which at its core is HTML, if that's lost, which it was really with breaking, HTML with tables and, then going off, away from it with flash.</p>
+<p>And she does make a little thing, and we'll, address that later a little. There's a. Passing comment is not on there. She's not talking about component based design and the move to JavaScript in CSS Oh, CSS, sorry. In JavaScript getting right way round. Yeah. But she did allude to the fact that they, that complexity, that, it still, always.</p>
+<p>Has the potential to produce standards, but it does move it and makes it more complicated and switches the normal route of how the web is built with JavaScript being an addition to the HTML and CSS, so we'll talk about that later because it's quite interesting how there has been a shift back, I think, for those people who came in with JavaScript. Back to the HTML again? I think so. Even since her talk, I think. But that's for later episodes. I think</p>
+<p>[00:14:44] <strong>Nathan Wrigley</strong>: But it, but yeah, just to reemphasize that point, we really don't know what the destination of this is, but we know that what we're doing at the moment is probably more akin to the spirit. It's got the standards, it's gonna be hopefully consumable by all sorts of different people who can consume things with their eyes or with their ears or whatever it may be. And, and it, does feel like a. we're going back to something which got lost by things like tables and flash</p>
+<p>[00:15:11] <strong>David Waumsley</strong>: and all of that. Yeah, that's why I think we're always with this stuff where everybody seems to be looking backwards to see where we got to where we are now. But I think interesting because her table of dates on it, doesn't reflect my reality in the real world because it, markets are so much different, aren't they?</p>
+<p>when something may have gone out of fashion to those people who technically know, like her, who work on the spec, reality has it become. It can become even more popular. So things like Bootstrap and jQuery, we're still growing up to a year ago and still have a dominance in the market.</p>
+<p>And, something like Bootstrap doesn't ha I think it's still experimental when it comes to Grid. So and we're, grid goes back to 2017, so we're catching up. So you see how things probably are 10, I would say in the real world, things are about 10 years out on her. kind of history if you like.</p>
+<p>[00:16:06] <strong>Nathan Wrigley</strong>: Yeah. She's very much a thought leader though, isn't she? Yes. and I think that's also something which I find remarkable about people like Jen, is just that capacity to stare into a crystal ball and imagine what could be, and then collaborate with other people to build the, spec so that can be, and then communicate with the browser manufacturers so that all of that can be implemented.</p>
+<p>All of this stuff going on in the. Background, but just feeling, feeling into the future as to what it can be. And then you and I and people like us, we get the trickle down from that. Once it's been built, we then start to explore what we can do with it. So it really does make people like us seem, almost messianic 'cause they, can build the future and imagine what that would look like and, have the, passion to push, their agenda and their vision</p>
+<p>[00:17:02] <strong>David Waumsley</strong>: through. it's people like yeah, there's always somebody I think in the working groups on a spec at the time. So we got her and then we got, Rachel Andrew, who we talked about last week, and we'll be talking sooner about Miriam Suzanne, who effectively is the same sort of role in the working groups when it comes to container queries.</p>
+<p>And thank it's, I'm so thankful that we've got people like that who can relate it, that they built websites and they can relate what's going on the technical side of the W3C into stuff that we might. Understand how we might put it to use, so</p>
+<p>[00:17:35] <strong>Nathan Wrigley</strong>: yeah, it's interesting. I wonder what the, and again, we, I'm going off piece a little bit here, but I wonder what the incentive for them is.</p>
+<p>So obviously they've got the time to do it, so they, they must have some sort of, job. So in Jen's case, I think you said, worked at Mozilla for a long time and perhaps is at Apple now, although that. I dunno if that's still the case. So these companies, it's may, maybe there's a philanthropic element to it.</p>
+<p>So we're talking about, standards based and it'll be able to be viewed by everybody. But maybe also it's just good commercial sense. if Google's Chrome browser, which seems to be. Really the browser of choice for almost any part of the world that you care to go into. If it, all of these things are built in, it makes the, it makes whatever they build more likely to succeed as well.</p>
+<p>And if we can convert everything over to the web and rely less on, I don't know, proprietary software sitting on a desktop computer, if it can all be handled online, that works for them. As well, So that kind of philanthropic versus company, discussion is quite interesting.</p>
+<p>[00:18:44] <strong>David Waumsley</strong>: Yeah, sure. Just, move on a little bit to Yeah, we've put a little section here, just some questions for ourselves on what does this mean for us?</p>
+<p>And I put the answers in here as well, which was, we do, I do feel there is a bit of reeducation that's needed going on. we covered it a little bit last time in the sense that we were referring to. Rachel Andrew says It's often easier to teach somebody who doesn't know CSS today because we have to think about it in a very different way because suddenly an outpouring of a load of changes have come to it and, a new mental model.</p>
+<p>The intrinsic mental model, I think means that we have to reeducate ourselves, so not everybody can. Set up a podcast, but, that's our way of doing it, isn't it? Yeah. And it,</p>
+<p>[00:19:32] <strong>Nathan Wrigley</strong>: but there is a lot to, I don't know if unlearn is the right word, but there's a lot, like I said earlier, there's a lot, there's another layer, just a slap on top.</p>
+<p>Yeah. But a lot of the layer, which is slapped on top means that the layers beneath, there's bits of that no longer are worth thinking about anymore. And it's figuring out which bits of the new knowledge. Which bits replace the bits that I used to know? and I think that's gonna be the journey that I'm on.</p>
+<p>'cause I'm very much at the beginning of all this, and I've got a lot of reeducating to do. And for me it's quite hard because I'm constantly thinking, yeah, but I could do that with, something that, and then you figure out, oh no, but then it wouldn't enable this possibility. Wait a minute. So there is quite a lot of reeducation, and I think, I'm sure you're right.</p>
+<p>If you're a, if you're a, a. Person just going into college or just beginning on your web development journey? I think you've pro, you've probably got the, a shot at doing far more learning than I will do because mine is gonna be bundled up with forgetting what</p>
+<p>[00:20:32] <strong>David Waumsley</strong>: I've already learned. Yes. I, we put down, I put down setting better expectations for the web for clients and, I mean is, I think what this is trying to do is get us a little bit back to that. We are putting out content in HTML and the styling goes over the top of that, where I think for most. Clients their expectation is, and their experiences are pretty sight, which they see in their one particular view and say that I like something like that.</p>
+<p>Yeah. 'cause that's their experience. they probably won't understand unless said otherwise, that, the importance of GOOD HTML in terms of helping them to get visitors because it's, search friendly and, being able to reach. Many more people and designing over the top of that. So I often think there's a lot of trying to not only cope with the fact that we're almost flipping the way you design upside down.</p>
+<p>Also, I think, if you have to do it for somebody else, they usually come in with an expectation of show me a website and I'll tell you if that's what I like the look of, But there's so much more to it than that, isn't there? Yeah.</p>
+<p>[00:21:50] <strong>Nathan Wrigley</strong>: Yeah. How much of this do you think you are gonna be, pushing forwards into your client's lap?</p>
+<p>Or, are you gonna be talking about any of this? Will the word intrinsic design ever exit your mouth when you're talking to clients? Or is it more about, okay, this is, look, I'll show you roughly what it'll look like when we, use a different variety of browsers. Are you even gonna get into that?</p>
+<p>Are you just gonna, I think the word responsive design has landed so well out in the real world that I think even non-technical people understand that. There's some something going on when you look at it on a mobile that's different to a desktop, but do you feel that you need to educate your clients with the technicalities of this?</p>
+<p>[00:22:30] <strong>David Waumsley</strong>: as I've learned, I think I've started talking about it differently. I do talk about it as in terms of the content that we need, because at the end of the day, it doesn't matter how it's styled to a lot of people. if that content isn't reaching everybody who might want it and that search engines, et cetera, can't see it.</p>
+<p>So we always start with the content and then we say how we're going to beautify that content from there. Yeah. Yeah. And I think that's it. And because of that. That approach to it, it makes a lot more sense to them. So usually the first conversation is about how the, how the message is gonna go and reach people, so the content</p>
+<p>[00:23:01] <strong>Nathan Wrigley</strong>: comes first.The design is a definite</p>
+<p>[00:23:04] <strong>David Waumsley</strong>: second, right? So I think it's easy to explain to them in that way, if it had no design, it would still do quite well, as many. Badly designed sites, if they've got the fundamentals underneath, can do quite well, it's interesting</p>
+<p>[00:23:18] <strong>Nathan Wrigley</strong>: though, 'cause that's a profound shift for a lot of people, isn't it?</p>
+<p>Because really the, building of websites, it very much felt like the, design was, I. Central to what the client wanted. it's okay, how's it gonna look? And you fill it up with LO and then, you pull the LO out and hope for the best. Whereas this is exactly the opposite.</p>
+<p>Let's just start with the content. Let's get the message get the words right, get all the assets right, and then.</p>
+<p>[00:23:49] <strong>David Waumsley</strong>: you do. You know what I mean? That's it though. So the next point in probably changing how we organize web projects, right? And she alludes to that in the talk, doesn't she? With saying the typical thing is that someone has an idea, then they get a rough draft of that idea, better draft of that idea, and then it goes to the person to turn that into the code.</p>
+<p>And that really is the way it's always been done. But in a way, it's the wrong way round because. there is something to know about how that's co the intrinsic bit. I wouldn't use it with clients, but I think the intrinsic is saying that it's still intrinsic to that web standards. HTML means of communication.</p>
+<p>The design is a part of the content and that's, in a way, while we're. While she's doing all her clever experiments, which she does, which we put links to on the show notes there to her layout, land where she does experiments. She's coming in from the, I want it pretty and the designer, but knows from a. Standards perspective, she needs to have this good, clear, marked up communication in the HTML, but I think what she's seen is, oh, I can have lots more fun with this. And I think that's the way I'm trying to sell it now on to clients without using intrinsic 'cause It doesn't mean it's just, it sounds like Tech Talk, doesn't it?</p>
+<p>[00:25:04] <strong>Nathan Wrigley</strong>: interesting because it feels like the workflow. Of a project is amended. rather than the design coming first or at the same time as the content, that the content comes first, the design then comes second. But it doesn't, marginalize the importance of the design.</p>
+<p>It just, yeah. and it's not like designers are gonna go out of work. Exactly. In fact, they're gonna have a lot more, to think about. But it just puts it in a different. Position in the Yes, in the project workflow. it, it comes after the content, whereas I feel very often it, it was the other way around.</p>
+<p>[00:25:37] <strong>David Waumsley</strong>: Yeah. Yes, and exactly because you can't control the devices that people are coming in on their experience. And of course, something that Jen talks about in lots of other things. I'm not sure in that talk. But otherwise, she's very keen to point out that, whatever design you do, if somebody sticks it in reader mode or they decide they have high contrast on their computer or they're on the screen readers, all that, all of what you've designed isn't there.</p>
+<p>So the essentials, we all must agree is that everybody can I. Get this content and that's a well marked top HTML. But I think what she's making as a designer is like, wow, there's some of these clever stuff. And actually it's a harder task for the designer now because you can't fix 'em into these boxes any longer.</p>
+<p>There's come in different devices, so now you have to be really inventive and imagine lots of different flows for your content. So people will lots. Lots of different experiences, all of which will be great from a designer. So I think the designer's more important now, but I just think the traditional approach of the designer where they would just create something that looked pretty with just their colors, and that's your box where you gotta stick that text in there and this is where you're gonna stick this widget and. That approach to it doesn't work. The, I don't think it'll</p>
+<p>[00:26:48] <strong>Nathan Wrigley</strong>: be, quite interesting because in the past you had so many conversations with designers where you would get the design and then you would figure out that the content wouldn't fit in the design. Now, it's entirely possible that conversation will go in reverse and you'll give them the content and they'll, the disciples will say. There's too much content. we can't get the content into anything like a reasonable design. So there'll be interesting trailer, your menu is, it's lovely, but there's 97 items in it. we can't deal with that. You've put everything front and center, so there's just, we have to figure out new ways to have these conversations and new workflows to make it, work. I. I think</p>
+<p>[00:27:25] <strong>David Waumsley</strong>: Nathan, you put on your tab just for those on YouTube. I think I did you put that her labs where she's got lots of little experiments. these are a bit out date 'cause there's so much more you can do. I mean if you make that responsive, I think you should. Yeah. So for those</p>
+<p>[00:27:40] <strong>Nathan Wrigley</strong>: that are listening to this, we're showing, and I'll give you the, I'll give you the RL it's labs dot Jen Simmons.com.</p>
+<p>I'm sure David will put that into the show notes. But what we're staring at is a. Is a, like a desktop ish layout, but everything is on its side, and as I reduce it. You can see that essentially lots of the different pieces. It now looks like it's in two halves where the top half is moving up and the bottom half appears to be moving down a little bit.</p>
+<p>Then suddenly everything that was at 45 degrees at some point went to normal orientation. Yeah. And as we can see, it just so smart. So it dramatically changes the way it looks. Yeah, based upon the design and, if you're watching the video, you'll be able to get an, impression of that.</p>
+<p>But yeah, go to jen labs dot jen simmons.com and and just play. With the, the widths and the view port and you'll Oh, it's so</p>
+<p>[00:28:40] <strong>David Waumsley</strong>: clever. I love it. Yeah. And it changes, doesn't it? I think, that idea that you might go, oh, I've had an idea. And every, but 'cause what we've always tried to do with all our designs is when we've said, okay, the visual design is what we want and we want everyone to experience it.</p>
+<p>We've been trying to. Bang, these kind of square pegs into round holes with it, trying to make the code underneath work. but that's it. That's, it is that kind of thing, which I think is just clever design I can't do because okay, there isn't one experience for people, but you can't force an experience that's gonna be brilliant.</p>
+<p>But what you can do now is you can. Create a range of experiences,</p>
+<p>[00:29:20] <strong>Nathan Wrigley</strong>: And, it looked every si even if you do a tiny modification to the width of the window that you're looking at it in. I'm just gonna move it by what I consider to be a centimeter on my screen. I know that unit is of no use to anybody, but you get the idea.</p>
+<p>Some, it's changed, like you can't predict where it's gonna go. you can roughly predict where it's gonna go, but, and there we go, little tiny change again and another one, and another, and then there's suddenly a dramatic change. Yeah. And then another dramatic change about now. Then we go back out.</p>
+<p>Little change. It's just, you're right. I wouldn't have the faintest idea what she's done here, but</p>
+<p>[00:29:58] <strong>David Waumsley</strong>: it's and she could put all the text on an angle because the space is there big, but it wouldn't work small. So I think it's a great time for design. Sometimes when you talk about the web standards, which I'm very keen on getting the HTML right.</p>
+<p>Sounds like you are. Poo-pooing it. And I think that's what Jen's talk does for us, comes in with a designer's perspective where you go, yeah, sure it needs to be good. Everybody needs to be able to access the content you make for the web. That's just a given, isn't it? But then you can still be beautiful with stuff.</p>
+<p>You just have to think a little bit differently. I think you have to work from the content rather than the design, and then stick the content in it. You make the, content, flexible and interesting. So it. Only needs, it doesn't have more space than it needs, but has space needs. Yeah. I'm with</p>
+<p>[00:30:45] <strong>Nathan Wrigley</strong>: you. And I think that, I think it's gonna be interesting for people who, create these websites, especially if their role is, the content, let's say, is encapsulating that to hand it off to a designer to suggest what that design could look like. Yeah. I think there's a whole new set of skills that we're gonna have to get new conversations to get into new ways of figuring out new workflows, but ultimately I think we'll manage it.</p>
+<p>[00:31:09] <strong>David Waumsley</strong>: I think it translates To I, yeah. I think any client or the type of client I work with, when it's just the solo owner, it's easy to get over the fact you wanna get your message out there. The easiest way is to make sure you get good H ml that Google can read full of that stuff, and then we can have some real adventures about how this content's got the design, which gets us back to the, let's start with the content, Yeah. yeah, it's a great system. I think so, yeah. Different from what we've done, I think in the past. We</p>
+<p>[00:31:38] <strong>Nathan Wrigley</strong>: should probably plug, Jen Simmons YouTube channel as well. She's got a yes, a channel called Layout Land. The, I imagine you'd be able to Google that, but if you can't, the, it will be in the show notes and it's, it's video after video of her, showing all sorts of interesting, things that you can do.</p>
+<p>I haven't consumed even a. 10th of what she's done. But it's all really fascinating and breaks, breaks apart one little problem at a time</p>
+<p>[00:32:04] <strong>David Waumsley</strong>: and it's, it's lovely. Yeah. Yeah. the only problem with it is that some of the stuff has moved on. You might do some of that stuff differently, but it's still, I think it's a useful, she's. She's good at talking as well, so Yeah.</p>
+<p>[00:32:16] <strong>Nathan Wrigley</strong>: Yeah, she is. She's very good. How do you feel? Have we, managed to get through that episode or? I think we have. Yeah,</p>
+<p>[00:32:21] <strong>David Waumsley</strong>: I think we have. Shall I just lead on quickly? 'cause it does lead on from her. Talk a bit into the next one. We'll, we've got two episodes which we'll do next, which we'll really be talking about component based design, which you didn't talk about.</p>
+<p>And at the time of our talk in 2018, we didn't have container queries and. I think that's component based design can come outta that. But we've also got something called web component. So I think next time I think we'll talk about component based design, because when you're looking at Jen Simmers, this is really somebody who's making a document.</p>
+<p>Look beautiful. Basically, it's how we started with the web and that's all she refers to. But there is this sort of other movement isn't there where we, actually the web is just these little blocks of UI that we build up. Yeah. we'll I think next time we'll be, that's just a little lead in it comes out of a talk.'cause in some way she makes reference to it, but doesn't cover</p>
+<p>[00:33:15] <strong>Nathan Wrigley</strong>: it. So component based design, container queries, all that kind of stuff. Coming up in episode five, we're taking it. Each episode is just recorded. When it's recorded. we'll get them out as we get them out. So it may be that we manage one every week, or maybe it'll fall into a, shorter cadence or longer cadence, who knows?</p>
+<p>But for now, I guess we've wrapped up number four. yeah. And we'll see you. On the no script show next time. For the, for those of you that are listening, the website is being, updated with the bits and pieces that we've talked about, and you can find it at no script show and then you just do forward slash and the number of the episode.</p>
+<p>So there'll be no script show forward slash four. And yeah, there we go. I will see</p>
+<p>[00:34:02] <strong>David Waumsley</strong>: you next time, David. Yeah. Lovely. Bye-Bye. Bye bye.</p>
+ </details>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/learn/2/">Easy responsive or fluid typography</a></li>
+</ul>
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<p><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a></em></p>
+		</footer>
+
+		<!-- This page `/4/` was built on 2025-01-30T10:52:21.324Z -->
+		<script type="module" src="/dist/d9JSaiKaDS.js"></script>		
+	</body>
+</html>

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CSS layouts made simple</title>
+		<title>CSS layouts made simple. No Script Show</title>
 		<meta name="description" content="Looks at modern CSS layouts using the show&#39;s initial simplified site.">
 		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="No Script Show">
 		
@@ -577,10 +577,10 @@ lite-youtube.lyt-activated > .lyt-playbtn {
 			<nav>
 				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/">Home</a></li>
-					<li class="nav-item"><a href="/episodes/">Episodes</a></li>
-					<li class="nav-item"><a href="/learn/">Learn</a></li>
-					<li class="nav-item"><a href="/blog/">Archive</a></li>
+					<li class="nav-item"><a href="/content/">Home</a></li>
+					<li class="nav-item"><a href="/content/episodes/">Episodes</a></li>
+					<li class="nav-item"><a href="/content/learn/">Learn</a></li>
+					<li class="nav-item"><a href="/content/blog/">Archive</a></li>
 					<li class="nav-item"><a href="/feed/feed.xml">Feed</a></li>
 				</ul>
 			</nav>
@@ -605,47 +605,56 @@ lite-youtube.lyt-activated > .lyt-playbtn {
 </lite-youtube>
 
 
-<p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-<h2 id="code">Code</h2>
-<h3 id="this-is-a-very-long-heading-that-i-want-to-wrap-this-is-a-very-long-heading-that-i-want-to-wrap-this-is-a-very-long-heading-that-i-want-to-wrap-this-is-a-very-long-heading-that-i-want-to-wrap">This is a very long heading that I want to wrap This is a very long heading that I want to wrap This is a very long heading that I want to wrap This is a very long heading that I want to wrap</h3>
-<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-<pre class="language-css" tabindex="0"><code class="language-css">
-<span class="token comment">/* Intrinsic resposive grids: */</span>
+<h2 id="transcript">TRANSCRIPT</h2>
+<h3 id="the-reason-for-this-video">The reason for this video</h3>
+<p>This is extra content to the main <a href="/">No Script show</a> No Script show. In particular, <a href="/3">Episode 3</a> where Nathan and I were trying to both understand and explain modern CSS layout and how it has been completely refactored.</p>
+<p>We used the main points of a talk by <a href="https://noti.st/rachelandrew/VqOEAa/refactoring-the-way-we-talk-about-css#scagi0F">Rachel Andrew</a>. She was significant in seeing we got the first truly comprehensive layout spec for the web:- CSS Grid. It was actually supported in all the browsers back in 2017 so you can see we are doing a lot of catching up.</p>
+<p>Its not a topic that translates to an audio podcast very well so here I'm showing how it connects with the first stages of building the show's website.</p>
+<p>The site is, on purpose, simple and under-styled so we can use it to keep showing what we are learning in the show. For example the enforced dark mode should be an option by the time we do our episode on user preferences.</p>
+<h3 id="why-understanding-css-and-html-is-more-useful-than-ever">Why understanding CSS and HTML is more useful than ever</h3>
+<p>Overall the show is about learning the fundamentals of designing for the browser at a time when it could not be more different to designing for print.</p>
+<p>Even if you are not authoring the HTML and CSS yourself it's probably more essential than ever to know the basics of what it is doing. And if you know the basics then HTML and CSS also becomes easy (which they were always designed to be)</p>
+<p>About a year ago I decided I should be able to offer clients who need a CMS a site just using the web platform and I got a bit overwhelmed, but now with a few sites under my belt it seems you don't need to over complicate this or know it all. I think this is essentially Rachel Andrew's main point. She says she can teach new people easier than those with a history with CSS and get people able to make their own site in a day.</p>
+<h3 id="tools">Tools</h3>
+<ul>
+<li><a href="https://visualstudio.microsoft.com/">Visual Studio Code</a> A free and open source code editor. I won't cover installing that as there are plenty of posts and YouTube videos on that.</li>
+<li>There is also this fork that does not send data to Microsoft. <a href="https://vscodium.com/">VSCodium</a></li>
+<li><a href="https://www.netlify.com/">Netlify Hosting</a> . Free up to 100GB bandwidth per month.</li>
+</ul>
+<p>We are working to W3C <a href="https://www.w3.org/2001/tag/doc/leastPower.html">rule of least power</a>.</p>
+<p>That is starting with HTM and CSS first as declarative language where the browser is already equipped to do what we tell it or declare what we want it to do . We will still need a smidge of JS which needs programming logic. But typically if enough people are doing stuff in JS it gets put into HTML or CSS where it is fast and has much less room for error. Presently we will need JS for a dark mode switcher, but this probably will not be true for much longer.</p>
+<p>Long term as this is a content site we will probably have to manage. Maybe with WordPress (locally) or a static site generator like <a href="https://astro.build/">Astro</a> or <a href="https://www.11ty.dev/">11ty</a>.</p>
+<p>The nice thing about editors today is they do most of your writing.</p>
+<h3 id="looking-at-the-code">Looking at the code</h3>
+<p>The rest of the video looks and the code used and how it is influenced by Rachel Andrew's talk covered in Episode 3 of the podcast.</p>
+<ul>
+<li>Flow layout</li>
+<li>Use of CSS Flex, Grid Subgrid</li>
+<li>Logical properties</li>
+<li>(Box) Alignment and sizing</li>
+</ul>
+<h3 id="code-snippets">Code snippets</h3>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token comment">/* Intrinsic resposive grids: */</span>
 
-  <span class="token selector">.resources</span> <span class="token punctuation">{</span>
-    <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span>
-    <span class="token property">gap</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--space-s-l<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> <span class="token function">repeat</span><span class="token punctuation">(</span>auto-fit<span class="token punctuation">,</span>
-    <span class="token function">minmax</span><span class="token punctuation">(</span><span class="token function">min</span><span class="token punctuation">(</span>27rem<span class="token punctuation">,</span> 100%<span class="token punctuation">)</span><span class="token punctuation">,</span> 1fr<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token property">margin-block-end</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--space-m-l<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span> 
+<span class="token comment">/* min function added to remove the 
+   media query shown in the video. */</span>
+ 
+ <span class="token selector">.resources</span> <span class="token punctuation">{</span>
+   <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span>
+   <span class="token property">gap</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--space-s-l<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> <span class="token function">repeat</span><span class="token punctuation">(</span>auto-fit<span class="token punctuation">,</span>
+   <span class="token function">minmax</span><span class="token punctuation">(</span><span class="token function">min</span><span class="token punctuation">(</span>27rem<span class="token punctuation">,</span> 100%<span class="token punctuation">)</span><span class="token punctuation">,</span> 1fr<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token property">margin-block-end</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--space-m-l<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token punctuation">}</span> 
 
-    <span class="token comment">/* I added a min function with the 2nd value to 100%.
-    This removed the media query needed in the video. */</span>
-  
-    <span class="token comment">/* Used to center the main content: */</span>
+<span class="token comment">/* Used to center the main content: */</span>
 
-    <span class="token selector">.narrow</span> <span class="token punctuation">{</span>
-      <span class="token property">margin-inline</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
-      <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">min</span><span class="token punctuation">(</span>70ch<span class="token punctuation">,</span> 100% - 3rem<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>   
+   <span class="token selector">.narrow</span> <span class="token punctuation">{</span>
+     <span class="token property">margin-inline</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
+     <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">min</span><span class="token punctuation">(</span>70ch<span class="token punctuation">,</span> 100% - 3rem<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>  </code></pre>
 
-</code></pre>
-<h3 id="heading-with-a-link">Heading with a <a href="#code">link</a></h3>
-<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-<pre><code>// this is a command
-function myCommand() {
-	let counter = 0;
-	counter++;
-}
-
-// Test with a line break above this line.
-console.log('Test');
-</code></pre>
-<h2 id="section-header">Section Header</h2>
-<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-
-<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/3/">Modern CSS layouts</a></li>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/3/">Modern CSS layouts</a></li><li class="links-nextprev-next">Next →<br><a href="/learn/2/">Easy responsive or fluid typography</a></li>
 </ul>
 			</heading-anchors>
 		</main>
@@ -654,7 +663,7 @@ console.log('Test');
 			<p><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a></em></p>
 		</footer>
 
-		<!-- This page `/learn/1/` was built on 2025-01-29T18:41:20.306Z -->
+		<!-- This page `/learn/1/` was built on 2025-01-30T10:52:21.324Z -->
 		<script type="module" src="/dist/d9JSaiKaDS.js"></script>		
 	</body>
 </html>

@@ -1,6 +1,6 @@
 ---
 title: Everything we knew about web design changed!
-description: About this podcast and its aims to keep up with the fast changing web platform.
+description: How this podcast aims to keep up with a fast changing web platform.
 date: 2023-12-13
 tags: [ podcast ]
 permalink: "/1{{slugify }}/"

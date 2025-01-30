@@ -3,25 +3,193 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>No Script Show</title>
-		<meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
+		<title>Easy responsive or fluid typography. No Script Show</title>
+		<meta name="description" content="Looking at the Utopia online calculator which makes it easy to get fluid typography.">
 		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="No Script Show">
 		
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://noscript.show/">
-<meta property="og:title" content="No Script Show ">
-<meta property="og:description" content="">
-<meta property="og:image" content="https://i.ytimg.com/vi_webp//maxresdefault.webp">
+<meta property="og:url" content="https://noscript.show/learn/2/">
+<meta property="og:title" content="No Script Show Easy responsive or fluid typography">
+<meta property="og:description" content="Looking at the Utopia online calculator which makes it easy to get fluid typography.">
+<meta property="og:image" content="https://i.ytimg.com/vi_webp/jweWInlUTgQ/maxresdefault.webp">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://noscript.show/">
-<meta property="twitter:title" content="No Script Show ">
-<meta property="twitter:description" content="">
-<meta property="twitter:image" content="https://i.ytimg.com/vi_webp//maxresdefault.webp">
+<meta property="twitter:url" content="https://noscript.show/learn/2/">
+<meta property="twitter:title" content="No Script Show Easy responsive or fluid typography">
+<meta property="twitter:description" content="Looking at the Utopia online calculator which makes it easy to get fluid typography.">
+<meta property="twitter:image" content="https://i.ytimg.com/vi_webp/jweWInlUTgQ/maxresdefault.webp">
 		
-		<style>/* This is an arbitrary CSS string added to the bundle */
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
 /* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
@@ -409,10 +577,10 @@ lite-youtube.lyt-activated > .lyt-playbtn {
 			<nav>
 				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
-					<li class="nav-item"><a href="/episodes/">Episodes</a></li>
-					<li class="nav-item"><a href="/learn/">Learn</a></li>
-					<li class="nav-item"><a href="/blog/">Archive</a></li>
+					<li class="nav-item"><a href="/content/">Home</a></li>
+					<li class="nav-item"><a href="/content/episodes/">Episodes</a></li>
+					<li class="nav-item"><a href="/content/learn/">Learn</a></li>
+					<li class="nav-item"><a href="/content/blog/">Archive</a></li>
 					<li class="nav-item"><a href="/feed/feed.xml">Feed</a></li>
 				</ul>
 			</nav>
@@ -421,10 +589,46 @@ lite-youtube.lyt-activated > .lyt-playbtn {
 		<main id="skip">
 			<heading-anchors>
 				
-<H1>homepage</H1>
+<h1 id="easy-responsive-or-fluid-typography">Easy responsive or fluid typography</h1>
 
-<p>this is my text <strong>strong text.</strong></p>
 
+
+<ul class="post-metadata">
+	<li><time datetime="2024-01-30">30 January 2024</time></li>
+	<li><a href="/tags/learn/" class="post-tag">learn</a></li>
+</ul>
+
+
+<lite-youtube videoid="jweWInlUTgQ" style="background-image: url('https://i.ytimg.com/vi_webp/jweWInlUTgQ/maxresdefault.webp');">
+  <a href="https://youtube.com/watch?v=jweWInlUTgQ" class="lyt-playbtn" title="Play Video">   
+  </a>
+</lite-youtube>
+
+
+<h2 id="transcript">TRANSCRIPT</h2>
+<h3 id="the-reason-for-this-video">The reason for this video</h3>
+<p>This is an extra to the main no script podcast.</p>
+<p>As part of the podcast we are live designing and developing the show's website. This is so as the show progresses we can highlight the huge number of significant advances that have been coming to the web platform recently (mostly HTML and CSS).</p>
+<p>Ahead of our episode on typography (where there will be too much to cover) I thought it might be helpful to do a quick walkthrough of the responsive typography that's already been set up.</p>
+<p>As with much of the podcast we are presently learning how to move to the more flexible intrinsic web design approach.</p>
+<p>I hated having to set font sizes for different devices with media queries. It got ever more time consuming and ineffective as the range of devices available grew.</p>
+<p>Adding more breakpoints as most page builders did only made site's harder to change, bloated and still unable to serve users of the future.</p>
+<p>Fortunately, CSS has given us a function called <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clamp">clamp</a>. With this, we can get the browser to do all the hard work for us. We just set our minimum and maximum size parameter and it will do the calculation to see the right size is served to the user.</p>
+<p>Even better, we don't really have to write it or understand it. There are free copy and paste tools out that create custom property we can use in our designs</p>
+<h3 id="utopia-fluid-type-scale-calculator">Utopia - Fluid Type Scale Calculator</h3>
+<p>The one I used here is <a href="https://utopia.fyi/">Utopia.fyi.</a></p>
+<p>It is made by James Gilyead (a designer specialising in typography) &amp; Trys Mudford (a really smart frontend developer) and is supported by <a href="https://clearleft.com/">Clearleft</a> a UK agency co-founded by <a href="https://adactio.com/">Jeremy Keith</a>.</p>
+<p>I have tried other tools, but I like Utopia best because:</p>
+<ul>
+<li>We can also use it to set responsive spacing</li>
+<li>It is thoughtfully developed. Recently I saw vw was updated to vi (to measure the inline size of the viewport, not just the viewport).</li>
+<li>It also includes a non-viewport unit in the middle “preferred” value to see if things do not get messed up if the users zoomed in on their viewport .</li>
+<li>They have already added sizing for container queries which we will cover later on the show. Also A WordPress theme.json generator is in the pipeline!</li>
+</ul>
+<p>Also mention in the video is <a href="https://typescale.com/">Typescale.com</a> and the new unit for the text-wrap property:- balance and pretty which help balance text and reduces widowed words.</p>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/learn/1/">CSS layouts made simple</a></li><li class="links-nextprev-next">Next →<br><a href="/4/">What is intrinsic web design?</a></li>
+</ul>
 			</heading-anchors>
 		</main>
 
@@ -432,7 +636,7 @@ lite-youtube.lyt-activated > .lyt-playbtn {
 			<p><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a></em></p>
 		</footer>
 
-		<!-- This page `/` was built on 2025-01-29T18:41:20.307Z -->
-		<script type="module" src="/dist/PQuipxb2GV.js"></script>		
+		<!-- This page `/learn/2/` was built on 2025-01-30T10:52:21.324Z -->
+		<script type="module" src="/dist/d9JSaiKaDS.js"></script>		
 	</body>
 </html>
