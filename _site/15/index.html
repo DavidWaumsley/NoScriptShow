@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="en-gb">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Static vs dynamic for content heavy websites. No Script Show</title>
+		<meta name="description" content="Comparing 11ty (Eleventy) and WordPress to use on this site as the content grows.">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="No Script Show">
+		
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://noscript.show/15/">
+<meta property="og:title" content="No Script Show Static vs dynamic for content heavy websites">
+<meta property="og:description" content="Comparing 11ty (Eleventy) and WordPress to use on this site as the content grows.">
+<meta property="og:image" content="https://i.ytimg.com/vi_webp/HOSJMg-Opp4/maxresdefault.webp">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://noscript.show/15/">
+<meta property="twitter:title" content="No Script Show Static vs dynamic for content heavy websites">
+<meta property="twitter:description" content="Comparing 11ty (Eleventy) and WordPress to use on this site as the content grows.">
+<meta property="twitter:image" content="https://i.ytimg.com/vi_webp/HOSJMg-Opp4/maxresdefault.webp">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	font-size: 125%;
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	max-width: 100%;
+	height: auto;
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main,
+footer {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+}
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0 0 1rem 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+/* Youtube */
+lite-youtube {
+    background-color: #000;
+    position: relative;
+    display: block;
+    contain: content;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;   
+}
+
+/* gradient */
+lite-youtube::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    top: 0;
+    /* Pixel-perfect port of YT's gradient PNG, using https://github.com/bluesmoon/pngtocss plus optimizations */
+    background-image: linear-gradient(180deg, rgb(0 0 0 / 67%) 0%, rgb(0 0 0 / 54%) 14%, rgb(0 0 0 / 15%) 54%, rgb(0 0 0 / 5%) 72%, rgb(0 0 0 / 0%) 94%);
+    height: 99px;
+    width: 100%;
+    font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+    color: hsl(0deg 0% 93.33%);
+    text-shadow: 0 0 2px rgba(0,0,0,.5);
+    font-size: 18px;
+    padding: 25px 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+lite-youtube:hover::before {
+    color: white;
+}
+
+/* responsive iframe with a 16:9 aspect ratio
+    thanks https://css-tricks.com/responsive-iframes/
+*/
+lite-youtube::after {
+    content: "";
+    display: block;
+	aspect-ratio: 16 / 9 ;
+}
+lite-youtube > iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+/* play button */
+lite-youtube > .lyt-playbtn {
+    display: block;
+    /* Make the button element cover the whole area for a large hover/click target… */
+    width: 100%;
+    height: 100%;
+    /* …but visually it's still the same size */
+    background: no-repeat center/68px 48px;
+    /* YT's actual play button svg */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>');
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    filter: grayscale(100%);
+    transition: filter .1s cubic-bezier(0, 0, 0.2, 1);
+    border: 0;
+}
+
+lite-youtube:hover > .lyt-playbtn,
+lite-youtube .lyt-playbtn:focus {
+    filter: none;
+}
+
+/* Post-click styles */
+lite-youtube.lyt-activated {
+    cursor: unset;
+}
+lite-youtube.lyt-activated::before,
+lite-youtube.lyt-activated > .lyt-playbtn {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.lyt-visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }</style>
+		
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">No Script Show</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/episodes/">Episodes</a></li>
+					<li class="nav-item"><a href="/learn/">Learn</a></li>
+					<li class="nav-item"><a href="/blog/">Archive</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="static-vs-dynamic-for-content-heavy-websites">Static vs dynamic for content heavy websites</h1>
+
+
+
+<ul class="post-metadata">
+	<li><time datetime="2025-01-09">09 January 2025</time></li>
+	<li><a href="/tags/podcast/" class="post-tag">podcast</a></li>
+</ul>
+
+
+<lite-youtube videoid="HOSJMg-Opp4" style="background-image: url('https://i.ytimg.com/vi_webp/HOSJMg-Opp4/maxresdefault.webp');">
+  <a href="https://youtube.com/watch?v=HOSJMg-Opp4" class="lyt-playbtn" title="Play Video">   
+  </a>
+</lite-youtube>
+
+
+<h2 id="spoiler">Spoiler</h2>
+<p>This is about what to use for the show's website as the content grows. We're going to try <a href="https://www.11ty.dev/">11ty</a> partly because Nathan's show <a href="wpbuilds.com/">WP Builds</a> is already about WordPress, but also 11ty might be a more logical fit for this particular show.</p>
+<h2 id="what-our-site-needs">What our site needs:</h2>
+<ul>
+<li>A quicker way to write posts. A text editor or Markdown?</li>
+<li>Easier way to add SEO metadata, open graph, sitemaps and RSS.</li>
+<li>A way to automate tags and categories.</li>
+<li>A quicker way to add performant YouTube videos.</li>
+</ul>
+<h2 id="the-dilemma-of-static-v-dynamic">The dilemma of Static v Dynamic</h2>
+<p>An old debate. Dynamic provided what we needed in the early 2000's, but even by 2008 there was <a href="https://jekyllrb.com/">Jekyll</a>, a SSG (that inspired 11ty). <a href="http://www.aaronsw.com/weblog/000404">Bake don't fry</a> by Aaron Swartz in 2002 also got some questioning dynamic.</p>
+<h3 id="wordpress">WordPress</h3>
+<p>The obvious choice as most successful blogging platform:</p>
+<ul>
+<li>Quick and easy to set up with no developer skills.</li>
+<li>A massive range of themes and plugins.</li>
+<li>We know it.</li>
+<li>Well funded… although topical at the moment.</li>
+</ul>
+<h4 id="downsides-for-this-shows-site">Downsides for this show's site:</h4>
+<ul>
+<li>Control of the code output. Important to a show focussed on web standards and accessibility *.</li>
+<li>Using WP would not teach us about alternatives.</li>
+<li>Paying for hosting(caching/backup/security) and time on software update and maintenance **.</li>
+<li>Not so easy offer a CMS version of our site demos.</li>
+<li>The intented audience. WP is seen as a no code solution. This show is about how lovely and friendly code can be.</li>
+</ul>
+<p>* A classic theme would allow this, but control over the modern block themes requires JS skills we don't have or need.<br>
+** We could convert WP to static for free hosting but manually that is a faff. Services that convert WP to static hosting are expensive.</p>
+<h3 id="static-site-generators">Static Site Generators</h3>
+<p>Gaining popularity at the moment. The 2024 Web Almanac <a href="https://cloudcannon.com/blog/the-rise-of-static-first-websites-why-major-brands-are-making-the-switch/">shows 67% growth in static and hybrid website architectures among the top 10,000 most-visited sites</a>.</p>
+<h4 id="general-problems-with-static-site-generators-ssg-s">General problems with Static Site Generators (SSG's)</h4>
+<ul>
+<li>Needs some skills or willingness to use a terminal rather than a UI.</li>
+<li>Many choices. No industry standard.</li>
+<li>Many have retired.</li>
+<li>There are lots to set up with a blog.</li>
+<li>It's cobbled together out of various bits of tech. House of cards?</li>
+<li>You need to add the CMS yourself for a multi author blog.</li>
+<li>No inbuilt commenting system or search.</li>
+</ul>
+<h3 id="why-11ty">Why 11ty?</h3>
+<p>There's 360 SSG's <a href="https://jamstack.org/generators/">listed here</a>.</p>
+<ul>
+<li>Possibly the simplest way to explore SSGs.</li>
+<li>Unopinionated. There's no way to know you have used it.</li>
+<li>Flexible with a range of templating languages.</li>
+<li>You add complexity as needed.</li>
+<li>Fast build times.</li>
+<li>Not VC funded *.</li>
+<li>Users include: W3C, UK gov, US gov, Google, Cern, NASA, A11Y Project, Web.dev and CSS Tricks.</li>
+<li>Fans include: Miriam Suzanne, Lea Verou, Stephanie Eckles, Heydon Pickering, Andy Bell, Chris Coyier, Michelle Barker, Sara Soueidan and Ben Myers (many people mentioned in this show).</li>
+</ul>
+<p>* 11ty has recently <a href="https://www.11ty.dev/blog/eleventy-font-awesome/">joined Font Awesome.</a></p>
+<details> 
+<summary>Transcript</summary>
+<p>[00:00:06] <strong>Nathan Wrigley:</strong> Hello and welcome to the No Script Show. After some visual YouTube only content, we’re back with an episode that also works as an audio podcast too. Here we’re looking at a longstanding debate, which seems to get more significant all the time. That is whether or when to go a static or dynamic route when building websites.</p>
+<p>As this podcast is focused on catching up with changes in the web platform, we don’t generally talk about third party frameworks and platforms, but as the show’s own website gets larger, we may need help to manage it. This has left us with the static. Dynamic dilemma, and I’m joined as always to have this chat by David.</p>
+<p>How you doing, David?</p>
+<p>[00:00:47] <strong>David Waumsley:</strong> Yeah, I’m really good. yeah, so should we spoil things and say that we already know what we’re going to try and use? Yeah. for this site we’re gonna try 11, which is a static site generator. the main reason for that, is, Is that you already do a show, which is on WordPress anyway, and that’s our background anyway, so we know that.</p>
+<p>By taking a look at that, it gives us something new to do. But, I think this conversation came up. We thought, we might as well do this topic. ’cause you asked me the question with you we know each other from WordPress and I’ve been starting to learn 11 I. For the idea of making kind of large content sites with that.</p>
+<p>And you said you’re just not swapping one set of complications for another with that. And I thought, yes I am. but I thought there’s a good conversation, but why I might want to do that. So I guess, yeah,</p>
+<p>[00:01:48] <strong>Nathan Wrigley:</strong> what this is about. It’s interesting ’cause obviously if, like me, you are heavily embedded in the WordPress ecosystem and continuing to do that.</p>
+<p>I might add, there’s a learning curve just to make WordPress work. You could really not know anything about html CSS, JavaScript, any of that, I’m sure many people do. And so you spend your time learning how to make WordPress achieve what it is that you want to achieve with code or plugins or whatever it may be.</p>
+<p>And I did get the intuition that if the no script show website needed some sort of capability to manage the content as it grows, you’ve gotta have some system in place. It can’t just be writing static HDML files and uploading them. It’d be nice to be able to automate some features or have some CMS in the background.</p>
+<p>I did wonder what would the learning curve for 11 look like? And if it basically ended up being the same kind of learning curve that you do with WordPress, I was just thinking, what’s the point in that? You’re just swapping one difficulty for a different difficulty. And so that was why I prompted that conversation.</p>
+<p>Which then in the background led you to create the content for this episode, yeah.</p>
+<p>[00:03:02] <strong>David Waumsley:</strong> Yeah. And I. More logically, I think it’s more appropriate for this show because what we tried to do is make it different from what we were doing with WebPress to get back to relearning the web platform. And mostly it was geared around the idea of keeping it as simple as possible.</p>
+<p>Yeah. So we don’t talk about the other stuff, but obviously we’ve moved to that point here, and this is probably why it’s more logical because. If we go with something like Eleventy in particular, which I’ll discuss later, it allows you to opt in gradually for what you need, rather than start with this kind of monolith system where even with the JAMstack type stuff, you can end up that way.</p>
+<p>Should we bring up the website where we’ve got some of the notes to just guide us through our conversation?</p>
+<p>[00:03:46] <strong>Nathan Wrigley:</strong> yeah. I, would just say at this point, if it’s all right, David, that I, have no experience with Eleventy at all, so really I’m just your. The here today to be a foil. if anything doesn’t make sense to me, I’m going to ask you what’s going on and what have you.</p>
+<p>But I’ve had various conversations with you. You’ve outlined how it works and what have you. But if I end up being incredibly ignorant, apologies.</p>
+<p>[00:04:09] <strong>David Waumsley:</strong> apologies to anybody who’s in the levity community ’cause they really clever people there. And I’m just. just starting to grapple with it to understand it, but not having really any JavaScript background.</p>
+<p>And that is a program that runs on JavaScript. I’m really not that knowledgeable. Okay. So I’m probably gonna stuff up with the things that I say. But anyway, let’s, and I</p>
+<p>[00:04:30] <strong>Nathan Wrigley:</strong> just say though, at this point it, it’s interesting because it has excited you though. yeah. And obviously in these videos we try not to be that person, you’re just demonstrating how excited you are.</p>
+<p>But I think it’s fair to say that you are really. Pleased that you’ve come across this and you’ve obviously explored a load of different options and this is the one that you’ve got into. And so in a way, in a sense, I’m happy that you found it. ’cause it, you used to have that same feeling I think about WordPress and now you’ve, you’ve swapped it for this, so that’s nice.</p>
+<p>You’ve got another project to get your teeth into. It’s lovely.</p>
+<p>[00:05:04] <strong>David Waumsley:</strong> Yeah. and particularly with that, it’s quite what’s quite interesting and it’s. It wasn’t known at the time. I didn’t really understand the 11 t. I didn’t know what the options were if you wanted something outside of WordPress, and certainly on that kind of JAMstack side, but it turns out that most of the people I’ve ended up talking about on this show, the people that are getting me back into the web platform and learning CSS, again, are a lot of the people who are big fans of this particular thing.</p>
+<p>So interesting. It’s yeah, it’s like I found the thing that might. Fit my needs best. it’s gonna depend. So let’s start with the site, what this site needs, because it’s becoming, we’ve done 30 sort of bits of content. some of it hasn’t even gone on to the site. We haven’t redesigned it yet.</p>
+<p>so I. We are we getting to the point where doing it manually, as I am just writing out the HT ml and sticking up a new page on it, is getting a bit, tedious, particularly with the SEO stuff, right? That has to go in there. So we need, as I’ve listed there, a quicker way to write a. Posts and obviously WordPress or a dynamic system is likely to give you a text editor where you are more likely to go if you are on the static Versions of that is using markdown, which is.</p>
+<p>Pretty new to me. Are you familiar with it?</p>
+<p>[00:06:25] <strong>Nathan Wrigley:</strong> I’m familiar with it, but it’s never been something that, that gelled with me. I’ve always preferred, basically not mark down. I’ve always preferred to write the text and then highlight the bits and then add the correct formatting via some kind of editor, be it tiny MCE or now the block editor in WordPress.</p>
+<p>That just works with me. I know people who are just huge fans of Mark down. To the point where, you know, any app that doesn’t support markdown, be that like a note taking app or what have you, they just won’t use it. ’cause they, it’s become part of their muscle memory. So for me, no, but I understand its benefits.</p>
+<p>[00:07:01] <strong>David Waumsley:</strong> And it’s a big thing in the WordPress community. A lot of people, there’s plugins, you can add it in if you want to, if you wanna work with that. but yeah, Yeah, so it’s something I’m gonna have to learn to speed up the writing of these posts if I want to do it that way. With markdown, I think you’ll only</p>
+<p>[00:07:16] <strong>Nathan Wrigley:</strong> need a handful of shortcuts if you like.</p>
+<p>I think you know, headings and links and there won’t be too much. I think that you need to commit to memory. So I think once you’ve got 10 things in your head, that’ll probably be all that you need for this.</p>
+<p>[00:07:30] <strong>David Waumsley:</strong> Yeah, it makes it. I think, writing with Mark down is quicker than actually using the text editor.</p>
+<p>I’m sure you’re right.</p>
+<p>[00:07:36] <strong>Nathan Wrigley:</strong> Yeah.</p>
+<p>[00:07:38] <strong>David Waumsley:</strong> but I gotta get used to that. But an easy way, and this is really the key thing, I think adding in the SEO stuff that you do when you want a different description on that and it gets a little bit more complex with, Some of that stuff, particularly with the open graph stuff, if you want a particular image to show, which we often do on this one, sitemaps and RSS feeds, all that kind of stuff.</p>
+<p>A way to automate the tags and categories, which we’ve effectively got two categories. There were the sort of separate learn videos that I did separate to our main podcast and, now we’ve already, because we. We don’t know where this show’s going. We’ve already ended up with a third, which is our kind of YouTube only content, isn’t it?</p>
+<p>yeah. a way to be able to organize that kind of stuff. And also, a way of being able to add the performant YouTube videos, which I’ve had to do manually each time, to, yeah, it’s it’s</p>
+<p>[00:08:30] <strong>Nathan Wrigley:</strong> interesting looking at those bullet points because for my need.</p>
+<p>[00:08:34] <strong>David Waumsley:</strong> WordPress</p>
+<p>[00:08:35] <strong>Nathan Wrigley:</strong> satisfies that in, every one of those bullet points works really well with WordPress. from the perspective of this and the endeavor that we’re doing here, it it’s interesting to see those things are now the bare minimum of what you need. It basically boils down to four or five things.</p>
+<p>Yeah. And if you can find a platform that satisfies those four or five things, then you’ve hit gold. yeah. Okay. Carry on.</p>
+<p>[00:08:58] <strong>David Waumsley:</strong> there might be a few other things, like dates and stuff like that. Yeah. Okay. You could write those in if you want modified date to do automatically as soon as you change the post and that.</p>
+<p>Yeah. things that you could do with both systems. So yeah, the dilemma of static or, dynamic and in all honesty, when I thought we’d be doing this show, what I thought we’d probably end up doing is doing a kind of WordPress, version of it first. Because obviously it’s what we know, but I didn’t really realize until recently that this is a bit of an old debate.</p>
+<p>So as I understand it, it’s like dynamic obviously came in the early two thousands. Obviously WordPress, not the newest of them came in, what, 2003?</p>
+<p>[00:09:44] <strong>Nathan Wrigley:</strong> Yeah,</p>
+<p>[00:09:44] <strong>David Waumsley:</strong> I think so. Yep. And that took care of the fact that, we needed to have. Lots and lots of pages on as such and things like blogs and that take care of it.</p>
+<p>But I did, what I didn’t realize is that the whole question of is dynamic all we need or is kin static play a role was already there. There was jackal, which, I’ll bring up the website. I know this is going out as audio, but, It won’t make any difference to this. I’ll just bring up their site.</p>
+<p>So this is, a static site generator that’s been running off Ruby since about 2008, I think. Okay. still popular, so it’s not exactly as if, this concept is new. It’s quite new to me. And I guess with that, the popular term, JAMstack coming in. Probably from about 2000, not sure 15, 16 or onwards. it’s probably changed things and what we can do with JavaScript now is changed things.</p>
+<p>But yeah, the idea of being able to statically, generate these things and. Zach Leatherman, the author behind Eleventy, who I was listening to him and he was pointed to an article, bake Don’t Fry by Aman Schwartz, which, dates back to 2002 where he set off some kind of debate questioning. dynamic, whether we should be doing it on a computer end rather than having to generate the content that the user sees Yeah.</p>
+<p>On a live server, then that’s really what we’re talking about, I think. Yeah. yeah, WordPress, as I said, was the obvious choice, because. As we know, it’s the most successful plugin platform. It’s quick and easy to set up with no developer skills, massive range of themes and plugins.</p>
+<p>So pretty much any functionality or look that you might want, you could probably get out the box. We know it. It’s well funded, it’s got that background, although it’s a little bit topical at the moment, but we won’t get into that. But for me, the downsides for this site show, was that we’re all about the, the code about, working with the CSS and learning all of that new stuff.</p>
+<p>So it’s important to have something that could, we could have complete control of the. Source code that we’re outputting, particularly as we’re gonna use our site as well as an example sometimes of the things that we talk about. And I think you can lose that with WordPress. You don’t get such same control over things.</p>
+<p>[00:12:17] <strong>Nathan Wrigley:</strong> Yeah. you do, have that control, but the, barrier to that, you have to spend many, hours, years possibly really understanding how WordPress is built and constructed in order to learn how to strip out what you don’t want and put in exact. What you do want, which is why I guess enterprise agencies in the WordPress space can charge enterprise level, fees for their products, which presumably spit out exactly what the client wants.</p>
+<p>But in this case, it sounds like 11 is the opposite. You start with kind of nothing and you build in the bits that you want, as opposed to WordPress, which has a ton of stuff out the box that you then have to maybe strip out if it’s not exactly what you want.</p>
+<p>[00:13:00] <strong>David Waumsley:</strong> Yes, exactly. It is working from the opposite side.</p>
+<p>it’s not just the, where the dynamic stuff happens. Which, in our case is on the, our own personal computers rather than on the server. But it’s also about, I think the approach generally, although not necessarily true of all static site generators, they come with their own set of stuff.</p>
+<p>But certainly with Eleventy, it is the kind of, it’s been purposely made with the idea that. Zach Leatherman, the person behind it is really of the belief that most people should be able to make their websites with just plain old the web platform. Yeah. H ml and CSS. Yep. And then if you do need the dependencies, you can just add ’em in as you need.</p>
+<p>So that’s been the kind of approach to that particular project. the thing is though, why I thought we might not do it, because just before I, got into looking into 11, I really got into the idea of using the classic theme and building on WordPress and building my own setup with that one and coding it from the beginning.</p>
+<p>But if you’re to move over and go to modern, WordPress with it, you have to get into the block themes really, if you’re to take advantage of going forward that route. So then that requires me skills that I don’t have or I’m not going to need. It’s going to box me into. The kind of WordPress React route or something to learn to have that same control over things.</p>
+<p>[00:14:21] <strong>Nathan Wrigley:</strong> So are you meaning particularly JavaScript skills that you might need to have? Okay.</p>
+<p>[00:14:26] <strong>David Waumsley:</strong> Yeah.</p>
+<p>[00:14:27] <strong>Nathan Wrigley:</strong> Yeah.</p>
+<p>[00:14:27] <strong>David Waumsley:</strong> So somebody can, they can control their code output on WordPress, but you probably need some extra skills if you’re going to go the new modern. JavaScript first route with WordPress.</p>
+<p>And that’s, so that kind of, that, that kind of skilled me outta the situation even though I don’t have JavaScript skills and it, I don’t wanna be boxed in so much to one particular, JavaScript, if you like, or one approach with that, Got it. yeah. Yeah. So the other downside is that we would, if we use WordPress, then we wouldn’t be learning an alternative, which is always good to know, different things that you can use.</p>
+<p>we’d have to pay for our hosting and there might be some other things that we’d have to pay for caching, backup, security, that kind of stuff that I do on the WordPress sites that I manage. It is not so easy to ’cause something I would quite like to do with our shows. For the last three episodes that we did, we made a demo site to Yeah, and made that public for anybody if they wanted to use it just to analyze it or use bits of it in the start of their projects, which I want to do.</p>
+<p>What I’d like to be able to do is to do some. not necessarily a CMS version of it, but just use, add a, an eleventy version of it. Yeah. And it would be a lot easier to do that by just adding some extra things, like there’s a permanent header and footer template and you just change the content for extra pages.</p>
+<p>So I’d like to make a version of that. That would be. It would be more difficult to share that with people if I wanted to do a WordPress version of that.</p>
+<p>[00:15:58] <strong>Nathan Wrigley:</strong> So do you mean you might atomize the site? So you, okay, if you like this header here’s the bit for the header and if you like this footer, here’s the bit for the footer, that kind of thing.</p>
+<p>And you’d be able to share those components, those</p>
+<p>[00:16:12] <strong>David Waumsley:</strong> jigsaw</p>
+<p>[00:16:13] <strong>Nathan Wrigley:</strong> pieces.</p>
+<p>[00:16:14] <strong>David Waumsley:</strong> the risk sharing that what all I was thinking of, say we did the bistro site that we did. Yeah. And that was just an example. If I made a version of that, I could decide, and I think we’ll do this, maybe we’ll do this as the next episode, just show how you could just add 11 two to it.</p>
+<p>So say on that bistro site as say, there’s a lot more pages you want on it, and I think. Okay. That means I have to change the header and the photo on each. Got it. Pages. Got it. I can turn this so I can do a CMS version if you like, one that you can do. there something that makes it easier to manage your content really.</p>
+<p>Okay. I’m not talking about, UI or anything like that. Okay. But yeah, also the intended audience. I think it’s the downside for this one is to say, we’re really about getting back to the web platform and learning stuff there. And partly because WordPress is. More popularly seen as a no code solution.</p>
+<p>that’s really not fair when all the people are really serious developers who use WordPress, but generally it’s seen as that where our show is a bit about Pumping up a little bit how lovely and friendly code can be these days. Yeah. so it’s more suiting to that different audience.</p>
+<p>Yeah. Okay. Great. Yeah, so that’s that. also, let’s talk a bit about the static site generators. So there is, there do seem to be gaining popularity at the moment. So there was the. 2024 Web Almanac, which, was just so in showing that there’s a 67% growth in static and hybrid website. A, architectures amongst the top.</p>
+<p>This is difficult for me to say for some reason, 10,000 most visited sites. Gosh, that’s a lot. Wow. It’s, it is a huge growth. Yeah. I mean there is, there is, talk of it here, obviously Cloud Canyon, because they, do a CMS for static. People are obviously going to promote that. I think there is something, if you actually go to the web.</p>
+<p>Itself, the way of being able to measure that’s quite tricky is particularly with something like Eleventy, because you can’t tell Eleventy is being used ‘</p>
+<p>[00:18:26] <strong>Nathan Wrigley:</strong> cause</p>
+<p>[00:18:27] <strong>David Waumsley:</strong> Eleventy</p>
+<p>[00:18:27] <strong>Nathan Wrigley:</strong> doesn’t put anything out to identify itself.</p>
+<p>[00:18:30] <strong>David Waumsley:</strong> Yeah. anybody interested in that would probably just want to go and look at, the table of contents and probably the jump stack area.</p>
+<p>because they’ve had to assess on the basis of speed. I believe how. what sites are statically generated and what’s are being dynamically. Okay. So it might not be entirely accurate, but Right. It does seem that there is a trend towards that. And obviously that’s where the growth has been.</p>
+<p>There’s other static site generators like Astro 11 is fairly stable, but it’s still been growing over the years that it’s been around. So there is a general growth in those. So there is that, but there are some general problems. Shall we just quickly cover those? Yeah, problem. Let’s go for it. Yep.</p>
+<p>Yeah. These are problems that WordPress solves for you, for other people, which is you do need some skills and you certainly need a willingness, I think, to use a terminal to do command line rather than a nice friendly ui. So that’s still something which is a bit alien to me.</p>
+<p>[00:19:29] <strong>Nathan Wrigley:</strong> Yeah, I think, a lot of people, that is already a bridge too far, isn’t it?</p>
+<p>if you Exactly. really getting the terminal out for. The vast majority of the people online is a, is too much. It’s immediately hostile and weird and too scary. So you’ve probably put 99% of the population out with that one bullet point, but for those 1% who love it and are willing to give it a go.</p>
+<p>Yep. Fair enough point taken.</p>
+<p>[00:19:55] <strong>David Waumsley:</strong> Yeah, and the interesting thing, having, I’m in that, it’s no, I’m not judging that, don’t do that. But now. because it’s a few simple commands and if it’s set out with instructions, how to do it. Yeah, it’s actually quite simple. it’s actually a lot simpler than dealing with most of the</p>
+<p>[00:20:14] <strong>Nathan Wrigley:</strong> ui.</p>
+<p>You can, are you in effect then memorizing the things that you need as opposed to having an understanding of, ever every single thing that you type? Is it more a set of, okay, this is now part of my muscle memory. I know that at this point I need to type this into the terminal even though I don’t fully understand what’s going on.</p>
+<p>[00:20:30] <strong>David Waumsley:</strong> Most of the time, when it’s set up, all I’m ever doing is wanting to just run or serve at 11, which is just basically, I, you just do a run command. It’s that one command, and I’ve put it into a short key anyway, so it just, it’s, I don’t have to think to get it up and running. But of course when you’re installing all these different packages, which is what you do with these things, it’s, it’s all made possible.</p>
+<p>And why it’s popular now I think, is because we have. No js, which allows us to pull in all these packages and work on our local environment. So the idea of installing all these different packages and controlling those is, scary. It was scary to me. It’s still scary to me, but,</p>
+<p>[00:21:11] <strong>Nathan Wrigley:</strong> so far, yeah, you never really see what’s going on.</p>
+<p>Do you, you, you don’t quite get a visual. you get it in the terminal, you get some sort of. Text-based feedback that things have happened, but okay, where did those packages go? What just happened? Where is it on my computer? How can I get to it? And, of course the answer is you don’t really need to, anyway, sorry.</p>
+<p>Yeah, okay. Carry on.</p>
+<p>[00:21:35] <strong>David Waumsley:</strong> No, that’s, brilliant. It’s exactly my experience. and, but now, it’s starting to go, oh, it’s not that difficult at all actually. Yeah. And it just works anyway, and I know where it’s going. Yes. Yeah. I, it. It’s surprising how quickly you change and how it’s not as difficult as you first think.</p>
+<p>But anyway, yeah, and the other problem of course, with a static site generators is there are, so many choices out there. No industry standard. You can’t really look at this. If I just go over to the Jam Stack site here, we’ll see now on their filter here, it’s listing 365 different generators. Now, gosh, in all honesty, some of them you wouldn’t really think of as a site generator.</p>
+<p>If I just go to this on license, we’ll see this WP two static, which is a, now I think defunct. I tried to use this actually a way of turning, a WordPress site into a static site. it maybe does work. It didn’t work the last time I tried it. You, have a solution to do that, don’t you? That you use?</p>
+<p>Yeah.</p>
+<p>[00:22:38] <strong>Nathan Wrigley:</strong> Yeah. I’m not using that one, but I, have a plugin which enables me to turn static to turn WordPress websites into static, and then it shuffles it over to Netlify or. Bonnie, CDN or whatever, Amazon, whatever.</p>
+<p>[00:22:52] <strong>David Waumsley:</strong> Yep. Yeah. I, it may be listed on there. I don’t think it is, but, no. Yeah, there, there are some big players that everybody knows about because of the popularity of reactors, library.</p>
+<p>Then next JS goes with that as a sort of static site generator for that. Hugh goes very popular because it’s quick, but it’s built on a language like go. And then we have all these other ones, which are perhaps. Declining in the popularity that were heavy, that were very much JavaScript frameworks.</p>
+<p>Gatsby is one of those, popular ones coming forward now are Astro and stuff like this. The big, really what I’m trying to show here is the fact that there is so many choices, not one absolute leader in the area as there is with the dynamic with WordPress. And many of these will now be. Not broken, but they will not be getting the support that they need, Funding these things is, quite a tricky thing. So there, I think there are some downsides that go. if you move towards this static site generator, way many as retired as I’ve put here, but there’s also a lot to go into setting up a blog. Like we’re saying, all these different components that you make up in just your head or alone, we’re saying, oh, I want this image and this description to come in for Facebook, a different one for Twitter.</p>
+<p>all of that kind of stuff. you’re gonna have to code all these different lines in, if you want the dates to do this, you have to do this if you are doing it manually. So there’s a lot of elements Yeah. that you have to do. And also, the big thing is that it’s the criticism, of setting site generators is that.</p>
+<p>this benefit as well, but it’s cobbled together out of various bits of tech. it’s, like</p>
+<p>[00:24:40] <strong>Nathan Wrigley:</strong> you said, it’s a house of cards. There’s this whole sort of, exactly that House of Cards, you remove one card halfway up the stack and many, more things collapse as a result.</p>
+<p>[00:24:51] <strong>David Waumsley:</strong> Yeah,</p>
+<p>And for our job, of course, the main thing is though, I don’t think it’s that relevant.</p>
+<p>If we wanted a, a ui, a CMS type UI for. Multi-author where we’re both adding to this, then that’s an extra complexity on top of the stuff that you have to do that. And there are, there is a free option. There’s dcap, which is great, which you could use, as a free CMS to do that. But otherwise they get quite expensive if you want to set them up and make ’em a lot easier.</p>
+<p>and there’s no inbuilt comment, none of the dynamic stuff, of course, that you get on the service or the commenting system or the search. But then. I think that’s a topic. We could do a whole topic on this. What there are other solutions here. ’cause you could argue also on the WordPress side that things like caching make the commenting system difficult anyway and searches, and particularly I.</p>
+<p>Good. Unless you do some work on it.</p>
+<p>[00:25:43] <strong>Nathan Wrigley:</strong> no, but it’s interesting ’cause they are all, they’re all parts of the thought process to going in, if you can’t tick all those boxes, it may be dynamic isn’t something that you wanna put on the shelf. Maybe dynamic is something that you want to do, WordPress and so on.</p>
+<p>And if those things are things that you can cope with, particularly the second to last one, the multi-author bit. Yes. then yeah, go static and and. You’ve been through this process, and here’s the next bullet point, Why 11? That’s where you’ve settled? Yeah. Interesting.</p>
+<p>You’ve got 360 plus to choose from. Why that one? How did that make</p>
+<p>[00:26:21] <strong>David Waumsley:</strong> its way to the top? Exactly. I’ll just take one thing actually just on the commenting system. We’ll just go back on that one ’cause it maybe is worth talking about it. ’cause one thing that interests me and maybe the easier route, although it’s in WordPress as well, is to, I’m quite interested in web mentions and all of that indie stuff, right?</p>
+<p>Yeah. And how you could employ them on sites. But anyway, sorry. Why 11 two? So why really? Why have I. Move towards that. I guess it’s the people that I’ve been following recently. I’ve talked about that. mainly because let’s just go over to their site ’cause it says it all on there because it’s, pictures itself as the simpler static site generator.</p>
+<p>So it’s probably the easiest route in for somebody like me who doesn’t understand JavaScript. so that’s probably the key thing. Lemme just have a look. It’s un opinionated. Is that a proper word? Yeah, I</p>
+<p>[00:27:12] <strong>Nathan Wrigley:</strong> think so. Yeah. It does not have an opinion is on opinionated. Yes.</p>
+<p>[00:27:16] <strong>David Waumsley:</strong> Yeah. In the sense that you’re not gonna know if 11 is being used unless declare it in some sort of way where even with the other static site generators, they’re probably likely to output something to help you along your way, which will give away that it is that particular static site generator.</p>
+<p>So it’s, I think it’s the only example I can think of that. Yeah, that’s really</p>
+<p>[00:27:38] <strong>Nathan Wrigley:</strong> interesting. ’cause yeah, you would’ve thought even to just promote the project, it would be, it’s a choice that they’ve made deliberately to have the ht ML or whatever is being surfaced on the front end. To deliberately strip out everything, which shows that it has been built with 11.</p>
+<p>Because if you think back to the origins of the project, that could have been a very sensible thing to put in because as the project grew, more people would, right click view source, ah, eleventy. Interesting. I’ll go and explore that. But they’ve made the decision to have none of that in there.</p>
+<p>And you know that free marketing has gone away, but, for the benefit of the speed of the website and all of that, it’s a good idea.</p>
+<p>[00:28:23] <strong>David Waumsley:</strong> And, when we say they, it’s really one man. It’s leatherman. Yeah. Yeah. it’s been his project, which is, yeah, it’s just been that, his journey has been WordPress to jackal, to, creating eleventy as a version of jackal.</p>
+<p>To do static site and he’s got these kind of things, which made me align with it, His approach to the web. okay. but it is very flexible because, lemme just go to their site again because it lists these, I think it does over here. no it doesn’t. let me go over to some of my other points.</p>
+<p>It’s used on a lot of well-known sites already,</p>
+<p>[00:29:02] <strong>Nathan Wrigley:</strong> gosh, no kidding. Look at that. Yeah. Nasa,</p>
+<p>[00:29:06] <strong>David Waumsley:</strong> we’ve got the W three C now. It’s used for various different pages. Yeah, it might be a sub domain of something, but still, yeah. WordPress is also used on nasa, so there’s overlap with this, where it’s needed.</p>
+<p>Web dev, notify, lots and lots of different Chrome developers, so it’s got good. And it’s got really good people. That’s the main thing here. I’ve listed a few of ’em out, but I can see them here as people who contribute to it. Who, so I can see here, there’s, her name’s just gone now.</p>
+<p>Miriam. Suzanne. There you go. Miriam, Suzanne. Yes. somebody writing that. I see Michelle Barker over here. I’m sure if I stared at this. Oh yes. I can see Stephanie Eccles. Lots of people here that we mention who are big fans of that. Let me go back to the notes here, ’cause I’m. Getting sidetracked again.</p>
+<p>and the other thing is as well, if you are using something like 11 T compared to say, another JAMstack solution, what it’s known for is its quick build times, which is quite important. So you’re building your end and you’re probably rooting it through to GitHub, which is then going on to something like gi.</p>
+<p>Netlify. Yeah. And you, and there’s a cost to the build time on that. So if it takes a very long time, which something like Gatsby can take, 20 if not a hundred times longer than something like 11 t could to do similar number of pages. So it’s quite good on that if you want to stay within your free allowance, I’ve put it down as a benefit, that it’s not.</p>
+<p>VC funded, venture capital is funded. Okay. But it’s also a negative I think, as well. Yeah, I</p>
+<p>[00:30:48] <strong>Nathan Wrigley:</strong> mean you’ve got that whole hit by a boss thing, haven’t you with it. if it’s one person, that means it’s great. You’ve got this one point of contact, but also you’ve got this one point of failure,</p>
+<p>[00:30:59] <strong>David Waumsley:</strong> as well.</p>
+<p>Yeah.</p>
+<p>[00:31:00] <strong>Nathan Wrigley:</strong> Yeah. And</p>
+<p>[00:31:01] <strong>David Waumsley:</strong> 11, it’s been quite interesting ’cause obviously it’s been this personal project, it’s taken off ’cause it’s met the needs of a lot of people who share his same view about keeping things as simple as possible, and and really taken off. With particularly people who, people like Miriam, Suzanne, people who contribute to, making CSS what it is today.</p>
+<p>[00:31:24] <strong>Nathan Wrigley:</strong> Yeah.</p>
+<p>[00:31:26] <strong>David Waumsley:</strong> so it’s taken off, but Netlify funded it for some time. cloud Canyon did that because they were CMS. That’s use things like Astra and Eleventy or stuff like that. now I think to, it has been self-funded for some time, which is. Some of these people over here were some of the contributors to, they were paying their own money to use it to help him to put more time into the project.</p>
+<p>Now, just recently, and I dunno what difference that’s gonna make to things, he’s just joined the font awesome team who are doing another product, which is, it’ll come to me in a minute. Something we can Okay. That’s Webber awesome. Oh,</p>
+<p>[00:32:08] <strong>Nathan Wrigley:</strong> okay. Oh yeah. I’d heard of that. Yeah, that’s gone out of my mind.</p>
+<p>I’ve forgotten what that is. You saw that?</p>
+<p>[00:32:13] <strong>David Waumsley:</strong> Yeah. Fantastic video. Yes. yeah. Yeah, that’s right. So yeah, so it’s,</p>
+<p>[00:32:16] <strong>Nathan Wrigley:</strong> yeah, it’s a part of that. That video was fantastic. That video was like, it was shot in Hollywood or something. That was incredible. Anyway, sorry, what an aside. Okay, moving on.</p>
+<p>[00:32:28] <strong>David Waumsley:</strong> and that’s it really.</p>
+<p>That’s probably just covered the. The main things were the things that came up in your mind about this? No,</p>
+<p>[00:32:35] <strong>Nathan Wrigley:</strong> I think the, I’m just curious to see because I, like I said, I haven’t used it. I’m a staunch WordPress fan, and I can, totally see why some of these things have got your, got your intuitions, you just wanna be out there and figuring out how all this works.</p>
+<p>I’m just keen to see how it works and in the end. How it works in terms of, being, let’s say a time saver. Now, I, know that there’s all the arguments about, okay, I don’t want a bloated CMSI don’t wanna pay for server time. That’s not being used. I don’t have a need for a commenting system and all that kind of thing.</p>
+<p>But I’m, interested to see how it saves time and money over time. I think they’re the two things that I wanna see from this, how quick is it to. Get up and running, how quick is it to create a page? How quick is it to, I don’t know, implement some of the designs like the bento one that you did recently?</p>
+<p>How quick is it to inject those into it? and I’m fascinated by the cost implications. ’cause I imagine with this, the cost is for a typical, I don’t know, Brochure website for somebody living in a town, you know where there’s gonna be thousands of views a year, not millions of views a year.</p>
+<p>I’m interested to see how close to free it is. ’cause I’m imagining it will approximate very close to free at some point.</p>
+<p>[00:33:55] <strong>David Waumsley:</strong> Yeah, you, that’s what we’re doing at the moment, while we just do it with the basic web platform and no. Third party platform at all for this site. we check it out, we get our free hosting and I’m sure there’ll always be some free hosting for the sort of visits Yeah.</p>
+<p>That we get. The amount of traffic that we get. Yep. So really all this is building on the Y 11 to fits. It is because we can add in something to take, to remove some of the chore of having to update things that would. Come with WordPress out of the box. Yeah. there’s no doubt about it. If I was, taken on a job that, had a big, large content site and it needed multi authors and it was at my skill level, there’s no doubt it would be WordPress That would be the choice for this sort of thing if I had to do this job, because there’s no way that I would be linking all of this stuff up.</p>
+<p>[00:34:45] <strong>Nathan Wrigley:</strong> To give them</p>
+<p>[00:34:46] <strong>David Waumsley:</strong> the UI that they needed. Yeah. yeah. so that would be the obvious choice. But when it comes to this, where. Effectively, it’s only you or I might have to update the content here. obviously the benefits of static is once you stick it up there, unless you mess with it, it’s gonna live on forever.</p>
+<p>Where you put, like on a dynamic platform, someone else can mess up your website for You and you have to update, don’t you? Because you know you have to. Yeah. security</p>
+<p>[00:35:16] <strong>Nathan Wrigley:</strong> patches, things like that. Yeah. It’s interesting. I’ll tell you what, it’s gonna be fascinating. I, you are gonna, you’re gonna ring WordPress out of my cold, dead hands, but, but nevertheless, it’s a fascinating ride.</p>
+<p>And, I’m here to watch it all happen,</p>
+<p>[00:35:32] <strong>David Waumsley:</strong> yeah.</p>
+<p>[00:35:32] <strong>Nathan Wrigley:</strong> Shall we, shall we do next time,</p>
+<p>[00:35:35] <strong>David Waumsley:</strong> shall we?</p>
+<p>[00:35:36] <strong>Nathan Wrigley:</strong> Yeah, you could highlight what you think is</p>
+<p>[00:35:38] <strong>David Waumsley:</strong> gonna happen next time. Yeah. Okay. I think maybe we will try and we’ll take one of those, old sites. I’m not sure which ones. One of the, and I’ll.</p>
+<p>Try and put some eleventy in it with my basic skills of what I know about it so far, so you can see it in action. I think we can probably do that as an audio as well, because Oh yeah, if I just explain Yeah. The process, I think it will make sense, but, we’ll definitely need YouTube so you can see what I’m doing.</p>
+<p>So perhaps we’ll give that a bash.</p>
+<p>[00:36:05] <strong>Nathan Wrigley:</strong> Yeah, that sounds good to me. you’ll be able to check this out, at the No Script Show website. It’s no script show slash 15 ’cause that is the episode that we’re on. You’ll be able to find the show notes that we’re showing on the screen, but if you’re listening to it, on the audio, then there are some show notes there that you can click links on if any of the bits and pieces have raised your.</p>
+<p>Levels of curiosity, about 11 or indeed WordPress. So shall we call it a day? Is that a wrap? Yeah, I think so. Alright. See you. I’ll see you next time.</p>
+<p>[00:36:37] <strong>David Waumsley:</strong> Yeah,</p>
+<p>[00:36:37] <strong>Nathan Wrigley:</strong> thanks. Bye bye. Bye-bye.</p>
+<details> 
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/14/">The Frontend Divide:- UX Designers vs JavaScript Specialists</a></li>
+</ul>
+			</details></details></heading-anchors>
+		</main>
+
+		<footer>
+			<small><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a></em>
+			| <a href="/feed/feed.xml">RSS Feed</a></small>
+		</footer>
+
+		<!-- This page `/15/` was built on 2025-01-31T16:46:28.480Z -->
+		<script type="module" src="/dist/d9JSaiKaDS.js"></script>		
+	</body>
+</html>

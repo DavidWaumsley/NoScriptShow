@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en-gb">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>I’m the ultimate dark and light theme toggle switch… and so’s my wife.. No Script Show</title>
+		<meta name="description" content="About the accessibility considerations of adding a dark and light theme toggle switcher.">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="No Script Show">
+		
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://noscript.show/learn/10/">
+<meta property="og:title" content="No Script Show I’m the ultimate dark and light theme toggle switch… and so’s my wife.">
+<meta property="og:description" content="About the accessibility considerations of adding a dark and light theme toggle switcher.">
+<meta property="og:image" content="https://i.ytimg.com/vi_webp/NbOtbHW4zlA/maxresdefault.webp">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://noscript.show/learn/10/">
+<meta property="twitter:title" content="No Script Show I’m the ultimate dark and light theme toggle switch… and so’s my wife.">
+<meta property="twitter:description" content="About the accessibility considerations of adding a dark and light theme toggle switcher.">
+<meta property="twitter:image" content="https://i.ytimg.com/vi_webp/NbOtbHW4zlA/maxresdefault.webp">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	font-size: 125%;
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	max-width: 100%;
+	height: auto;
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main,
+footer {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+}
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0 0 1rem 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+/* Youtube */
+lite-youtube {
+    background-color: #000;
+    position: relative;
+    display: block;
+    contain: content;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;   
+}
+
+/* gradient */
+lite-youtube::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    top: 0;
+    /* Pixel-perfect port of YT's gradient PNG, using https://github.com/bluesmoon/pngtocss plus optimizations */
+    background-image: linear-gradient(180deg, rgb(0 0 0 / 67%) 0%, rgb(0 0 0 / 54%) 14%, rgb(0 0 0 / 15%) 54%, rgb(0 0 0 / 5%) 72%, rgb(0 0 0 / 0%) 94%);
+    height: 99px;
+    width: 100%;
+    font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+    color: hsl(0deg 0% 93.33%);
+    text-shadow: 0 0 2px rgba(0,0,0,.5);
+    font-size: 18px;
+    padding: 25px 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+lite-youtube:hover::before {
+    color: white;
+}
+
+/* responsive iframe with a 16:9 aspect ratio
+    thanks https://css-tricks.com/responsive-iframes/
+*/
+lite-youtube::after {
+    content: "";
+    display: block;
+	aspect-ratio: 16 / 9 ;
+}
+lite-youtube > iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+/* play button */
+lite-youtube > .lyt-playbtn {
+    display: block;
+    /* Make the button element cover the whole area for a large hover/click target… */
+    width: 100%;
+    height: 100%;
+    /* …but visually it's still the same size */
+    background: no-repeat center/68px 48px;
+    /* YT's actual play button svg */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>');
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    filter: grayscale(100%);
+    transition: filter .1s cubic-bezier(0, 0, 0.2, 1);
+    border: 0;
+}
+
+lite-youtube:hover > .lyt-playbtn,
+lite-youtube .lyt-playbtn:focus {
+    filter: none;
+}
+
+/* Post-click styles */
+lite-youtube.lyt-activated {
+    cursor: unset;
+}
+lite-youtube.lyt-activated::before,
+lite-youtube.lyt-activated > .lyt-playbtn {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.lyt-visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }</style>
+		
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">No Script Show</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/episodes/">Episodes</a></li>
+					<li class="nav-item"><a href="/learn/">Learn</a></li>
+					<li class="nav-item"><a href="/blog/">Archive</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="i-m-the-ultimate-dark-and-light-theme-toggle-switch-and-so-s-my-wife">I’m the ultimate dark and light theme toggle switch… and so’s my wife.</h1>
+
+
+
+<ul class="post-metadata">
+	<li><time datetime="2024-05-23">23 May 2024</time></li>
+	<li><a href="/tags/learn/" class="post-tag">learn</a></li>
+</ul>
+
+
+<lite-youtube videoid="NbOtbHW4zlA" style="background-image: url('https://i.ytimg.com/vi_webp/NbOtbHW4zlA/maxresdefault.webp');">
+  <a href="https://youtube.com/watch?v=NbOtbHW4zlA" class="lyt-playbtn" title="Play Video">   
+  </a>
+</lite-youtube>
+
+
+<h2 id="toggles-should-be-a-browser-feature">Toggles should be a browser feature</h2>
+<p>As part of designing the No Script Show's website I talked <a href="/learn/9">before</a> about light and dark themes and briefly on adding a toggle switch.</p>
+<p>Here I'm looking more closely at the implementation and sharing some alternative code.</p>
+<p>I skimmed over this topic before because it was getting far away from what our show is about (i.e. how easy it's becoming to make effective sites with only modern HTML and CSS).</p>
+<p>Everything I encountered doing this led away from this and to me strongly agreeing with Bramus Van Damme (a Developer Relations Engineer at Google) that these per-site toggle switches <a href="https://www.bram.us/2022/05/25/dark-mode-toggles-should-be-a-browser-feature/">should be a browser feature.</a> This was something <a href="https://www.xda-developers.com/apple-adding-per-website-dark-mode-safari/">rumoured</a> to be coming to Safari a few years back around the time Bramus was raising this.</p>
+<p>Ideally I would like to see <a href="https://www.bram.us/2024/04/13/what-if-you-had-real-control-over-light-mode-dark-mode-on-a-per-site-basis/">Bramus and Luke Warlow's &quot;proof of concept&quot;</a> Chrome extension getting more attention to show browser vendors that the demand is there.</p>
+<p>If we look at how complex it can become for non programmers to implement a dark/light switch properly I think it makes their case.</p>
+<p>Modern CSS makes it easy for us to create dark and light themes with CSS color-scheme and the &quot;prefers-color-scheme&quot; media query to honour a users system preference. But in giving us this it creates the demand to offer this option via a toggle on our own individual sites.</p>
+<p>Doing this creates a dependency back to custom javaScript and we have to either duplicate our dark and light theme code or in the case of javaScript failure have to ignore the user's system preference.</p>
+<p>We have to compromise when working with dark and light images (which I will cover next time on this mini-site ) and we have additional accessibility considerations which I am focussing on here.</p>
+<h2 id="the-ultimate-theme-toggle">The Ultimate Theme Toggle</h2>
+<p>The code I am using here comes from Salma Alam-Naylor's (slightly tongue in cheek) <a href="https://whitep4nth3r.com/blog/best-light-dark-mode-theme-toggle-javascript/">The Ultimate Theme Toggle™️</a> . Equally I could have gone with Adam Argyle's <a href="https://web.dev/patterns/theming/theme-switch">Dark and Light Theme Switch</a> shared on Google's web.dev and used on his <a href="https://nerdy.dev/">personal site too.</a></p>
+<p>I've made some additions to Salma's code which I have included in the article that goes with the video and we explain them here.</p>
+<p>I've also been looking at two other dark and light switches from to two other developers I admire: [Una Kravets](https://una.im/ target=) personal site and CSS in real life by <a href="https://css-irl.info/">Michelle Barker</a> .</p>
+<p>All of the above are similar to what I shared before. They all use a HTML button for the switch, they all try to honour the user system preference first and use the browser's local storage to hold changes in preference.</p>
+<p>I'm not sure why all chose a button over a checkbox input used on some other solutions. I doubted the semantics of my own button choice. It's probably irrelevant, but even here we have division on how to do a two option switch.</p>
+<p>Michelle Barker's CSS in real life site is closest to what I shared before in that it has a default light theme and the javaScript adds a class selectors for the dark theme styles. She goes one step further in adding duplicate CSS in a “prefers-color-scheme” media query so it still works if javaScript fails or is turned off.</p>
+<p><strong>Note:</strong> Even with Bramus and Luke's chrome extension checking that light and dark themes are working properly in all situations is a pain. We have to keep clearing local storage</p>
+<p><img src="/img/local-storage.webp" alt="Screenshot of where the local storage is on Chromium browsers. That is the appications tab and local storage."></p>
+<p>The other three are different in that they use data attributes: [data-theme=&quot;light&quot;] and [data-theme=&quot;dark&quot;] instead of a CSS class selector.</p>
+<p>As browsers might support a media query for “no preference” I can see the sense in grouping themes like this rather than having a default and an alternative, but, of course, what's best depends on the situation.</p>
+<h2 id="adding-icons">Adding icons</h2>
+<p>Salma gives us all the code we need on Codepen but the text version without icons. On her own site she adds icons as decorative background images.</p>
+<p>This is not something I will say often, but I went with the Chat GPT suggestions to add these icons to the button's HTML via the javascript.</p>
+<p>This might be OTT as Salma Javascript provides a nice dynamic aria label that explains the button.</p>
+<p>My addition allows the screen reader users to hover over the icons and hear what they are and what they do, via the icon alt tags (which are also dynamic)</p>
+<p>The other 3 sites mentioned have SVG's hard coded into the buttons so there are no alt tags there.</p>
+<p>If they wanted the icons announced they could have added an aria labelledby that reference to a title added to the SVG. They have not, which does leaves me thinking I have over complicated this</p>
+<p>If you want to use my version so you don't need to add the icons via CSS you could remove them from screen readers by adding aria-hidden=&quot;true&quot; to the icons (only shown in the video so I don't forget)</p>
+<h2 id="toggles-suck">Toggles suck!</h2>
+<p>I'm not going to get into UI here. There's a lot of articles about the usability of toggle switches. This one called toggles suck seems to do a good job of bringing together what others have said.</p>
+<p>I'd rather see the best people in accessibility working with browser vendors to create a convention we all could understand and use.</p>
+<p>Nathan's impression was that side to side toggling had become the norm. He could be right, certainly there was a run off fancy Codepen toggles like that, but here there are all single icons ( Adam and Una both have cool SVG animation).</p>
+<p>We'll go with the least attention grabbing and space saving approach as there are probably better things for the visitor to get focussed on.</p>
+<h2 id="no-javascript">No javascript</h2>
+<p>With Salma's code we set a fallback theme in the HTML if javaScript fails: <code>&lt;html lang=&quot;en&quot; data-theme=&quot;light&quot;&gt;</code></p>
+<p>The user device preference is not honoured (unless that matches what we have set.)</p>
+<p>On the personal sites for the others they have duplicated the CSS That is, they have:</p>
+<pre class="language-html" tabindex="0"><code class="language-html"> @media (prefers-color-scheme: light) {
+/* All the light rules*/
+}</code></pre>
+<p>AND</p>
+<pre class="language-html" tabindex="0"><code class="language-html">[data-theme="light"]{
+/* All the light rules again*/
+} </code></pre>
+<p>If we want the same we need to add some additional JS.</p>
+<pre class="language-js" tabindex="0"><code class="language-js"><span class="token operator">&lt;</span>script<span class="token operator">></span>
+ <span class="token comment">// Inline script to set the initial theme based on system preference or local storage</span>
+<span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+ <span class="token keyword">const</span> localStorageTheme <span class="token operator">=</span> localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">'theme'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token keyword">const</span> systemPrefersDark <span class="token operator">=</span> window<span class="token punctuation">.</span><span class="token function">matchMedia</span><span class="token punctuation">(</span><span class="token string">'(prefers-color-scheme: dark)'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>matches<span class="token punctuation">;</span>
+ <span class="token keyword">const</span> theme <span class="token operator">=</span> localStorageTheme <span class="token operator">?</span> localStorageTheme <span class="token operator">:</span> <span class="token punctuation">(</span>systemPrefersDark <span class="token operator">?</span> <span class="token string">'dark'</span> <span class="token operator">:</span> <span class="token string">'light'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">'data-theme'</span><span class="token punctuation">,</span> theme<span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span> </code></pre>
+<p>I got Chat GPT to do this. It's probably best to let the browser read this first. I have to put this in the head. Also I have to place the prefers-color-scheme media queries first in the CSS.</p>
+<p>We will probably stick with Salma's approach. The CSS duplication seems fine for a few colours, but if you get into swapping icons and images based on dark and light preference the code and maintenance starts adding up.</p>
+<h2 id="no-js-no-toggle">No JS - no toggle</h2>
+<p>I have altered Salma's code to hide the toggle when there is no JS. The button has an inline style of <code>display:none;</code>which is changed to <code>display:block;</code> by the javaScript. This removes it from the accessibility tree for screen readers too.</p>
+<h2 id="focus-state">Focus state</h2>
+<p>In an earlier video I mentioned the new focus-visible pseudo class to let the browser remove ugly focus rings when a sighted user does not need this visual clue. This is generally one to go for, but here we have an exception as the button here is not being styled in the regular way and we need people to tab to it and change it with the keyboard. I added it this way:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"> <span class="token selector">:focus-visible:not(toggle)</span><span class="token punctuation">{</span>             
+    <span class="token comment">/* Styles */</span>
+ <span class="token punctuation">}</span></code></pre>
+<h2 id="toggle-animation">Toggle Animation</h2>
+<p>We don't have much animation here, but still I have added <code>@media (prefers-reduced-motion: no-preference)</code>to this so it only shows for people who do not set this to reduced or no motion.</p>
+<h2 id="aria-live">Aria Live</h2>
+<p>Finally noticed on Adam Argyles's personal site and also Una Kravets they had added <code>aria-live=&quot;polite&quot;</code>. It's not included in Adams web dev article.</p>
+<p>Aria live gives screen readers an update of regional changes they might not otherwise be aware of because the reader is focused elsewhere.</p>
+<p>For example if a checkout form has an input to add something that will alter the price positioned elsewhere in the region the changed price will be announced (politely) when the input is checked. It's likely that sighted users would be looking at price when clicking elsewhere and this brings this ability to non sighted users.</p>
+<p>After trying it with the NVDA (an open source screen reader that is also the most used) I felt adding this might be annoying or even more confusing in this situation.</p>
+<p>If I enter in light mode without aria live the screen reader announces &quot;switch to dark theme button&quot; if I enter or click it says &quot;switch to light theme&quot;. I Imagine most would understand what's happening on the first change.</p>
+<p>Also If hover over the icon it says it is a sun icon that switches to a dark theme.</p>
+<p>If I add aria live <a href="https://www.nvaccess.org/">NVDA</a> says switch to light theme 3 times and automatically reads the new alt image tag too. It could be my ignorance using NVDA, but I did not like how it worked with my solution.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Trying to get a toggle to work well pushed me beyond my skill set and toward feeling less certain in what I am doing. I think that alone backs up Bramus’s argument for browsers to do this.</p>
+<p>As dark and light themes become increasingly becoming a standard I’d rather be focussing on doing better designs with the same CSS as everyone rather than going it alone with my own custom JS hacks.</p>
+<p>I feel more sure of this after seeing a couple of these switches made for the massive WordPress audience that have not taken anything the care the people I feature here have. Previously, I would have excitedly jumped on these taking it for granted that I was aiding accessibility</p>
+<p>Whilst I don't think this is as bad as the way things went with the accessibility overlays market (which I am sure was well intended originally) but, I think some early standards might avoid a similar thing happening . Rant over!</p>
+<h2 id="the-code"><a href="https://codepen.io/David-Waumsley-the-solid/pen/ExzyyoK">The code</a></h2>
+<p>See the Pen <a href="https://codepen.io/David-Waumsley-the-solid/pen/ExzyyoK">Light and dark theme toggle</a> by David Waumsley (<a href="https://codepen.io/David-Waumsley-the-solid">@David-Waumsley-the-solid</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/11/">What’s new in web images. Are they worth a thousand words?</a></li><li class="links-nextprev-next">Next →<br><a href="/learn/11/">Finally, a delightful free accessibility tool. Silktide&#39;s accessibility checker</a></li>
+</ul>
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<small><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a></em>
+			| <a href="/feed/feed.xml">RSS Feed</a></small>
+		</footer>
+
+		<!-- This page `/learn/10/` was built on 2025-01-31T16:46:28.481Z -->
+		<script type="module" src="/dist/d9JSaiKaDS.js"></script>		
+	</body>
+</html>

@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="en-gb">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Embedding YouTube videos for performance. No Script Show</title>
+		<meta name="description" content="Looking at a web component called Lite YouTube Embed by Paul Irish which allows us to embed YouTube videos without automatically forcing  visitors to download all of YouTube&#39;s associated assets.">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="No Script Show">
+		
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://noscript.show/learn/6/">
+<meta property="og:title" content="No Script Show Embedding YouTube videos for performance">
+<meta property="og:description" content="Looking at a web component called Lite YouTube Embed by Paul Irish which allows us to embed YouTube videos without automatically forcing  visitors to download all of YouTube&#39;s associated assets.">
+<meta property="og:image" content="https://i.ytimg.com/vi_webp/dt3XR_X22GY/maxresdefault.webp">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://noscript.show/learn/6/">
+<meta property="twitter:title" content="No Script Show Embedding YouTube videos for performance">
+<meta property="twitter:description" content="Looking at a web component called Lite YouTube Embed by Paul Irish which allows us to embed YouTube videos without automatically forcing  visitors to download all of YouTube&#39;s associated assets.">
+<meta property="twitter:image" content="https://i.ytimg.com/vi_webp/dt3XR_X22GY/maxresdefault.webp">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	font-size: 125%;
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	max-width: 100%;
+	height: auto;
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main,
+footer {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+}
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0 0 1rem 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+/* Youtube */
+lite-youtube {
+    background-color: #000;
+    position: relative;
+    display: block;
+    contain: content;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;   
+}
+
+/* gradient */
+lite-youtube::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    top: 0;
+    /* Pixel-perfect port of YT's gradient PNG, using https://github.com/bluesmoon/pngtocss plus optimizations */
+    background-image: linear-gradient(180deg, rgb(0 0 0 / 67%) 0%, rgb(0 0 0 / 54%) 14%, rgb(0 0 0 / 15%) 54%, rgb(0 0 0 / 5%) 72%, rgb(0 0 0 / 0%) 94%);
+    height: 99px;
+    width: 100%;
+    font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+    color: hsl(0deg 0% 93.33%);
+    text-shadow: 0 0 2px rgba(0,0,0,.5);
+    font-size: 18px;
+    padding: 25px 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+lite-youtube:hover::before {
+    color: white;
+}
+
+/* responsive iframe with a 16:9 aspect ratio
+    thanks https://css-tricks.com/responsive-iframes/
+*/
+lite-youtube::after {
+    content: "";
+    display: block;
+	aspect-ratio: 16 / 9 ;
+}
+lite-youtube > iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+/* play button */
+lite-youtube > .lyt-playbtn {
+    display: block;
+    /* Make the button element cover the whole area for a large hover/click target… */
+    width: 100%;
+    height: 100%;
+    /* …but visually it's still the same size */
+    background: no-repeat center/68px 48px;
+    /* YT's actual play button svg */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>');
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    filter: grayscale(100%);
+    transition: filter .1s cubic-bezier(0, 0, 0.2, 1);
+    border: 0;
+}
+
+lite-youtube:hover > .lyt-playbtn,
+lite-youtube .lyt-playbtn:focus {
+    filter: none;
+}
+
+/* Post-click styles */
+lite-youtube.lyt-activated {
+    cursor: unset;
+}
+lite-youtube.lyt-activated::before,
+lite-youtube.lyt-activated > .lyt-playbtn {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.lyt-visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }</style>
+		
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">No Script Show</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/episodes/">Episodes</a></li>
+					<li class="nav-item"><a href="/learn/">Learn</a></li>
+					<li class="nav-item"><a href="/blog/">Archive</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="embedding-youtube-videos-for-performance">Embedding YouTube videos for performance</h1>
+
+
+
+<ul class="post-metadata">
+	<li><time datetime="2024-03-06">06 March 2024</time></li>
+	<li><a href="/tags/learn/" class="post-tag">learn</a></li>
+</ul>
+
+
+<lite-youtube videoid="dt3XR_X22GY" style="background-image: url('https://i.ytimg.com/vi_webp/dt3XR_X22GY/maxresdefault.webp');">
+  <a href="https://youtube.com/watch?v=dt3XR_X22GY" class="lyt-playbtn" title="Play Video">   
+  </a>
+</lite-youtube>
+
+
+<p>Hello. This is following up to <a href="/5">episode 5</a> of the main podcast where Nathan and I were talking about component based web design.</p>
+<p>In that we touched on <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components">web components</a> which in simple terms are “web standards” alternatives to 3rd party component libraries like React and Vue.js. The big plus is they will last as long as the web.</p>
+<p>We've been experimenting with two web components for the media embeds on the show's constantly developing website:</p>
+<ul>
+<li>A Shadow Dom component for our audio podcast player by Dave Rupert (which I'll cover in the next video) and what we are covering today..</li>
+<li>A &quot;Light Dom&quot; component called <a href="https://github.com/paulirish/lite-youtube-embed/">Lite YouTube Embed</a> by Paul Irish which allows us to embed YouTube videos without forcing the visitors to download all of YouTube associated files regardless of whether the video is actually played.</li>
+</ul>
+<h2 id="lite-youtube-embed">Lite Youtube Embed</h2>
+<p>What Lite YouTube Embed does is only downloads a YouTube thumbnail image of the video and places a SVG play button over it so it visibly looks the same as a regular embed.</p>
+<p>This saves well over a megabyte on the initial page load (which is, in our case, more than 10 times the size of the page we are adding it to) Of course, when the user clicks on play the embed acts as normal, but I'm sure a decent percentage of people visiting our page will have already seen the video and are here for the additional text resources. According to <a href="https://medium.com/illumination/mr-beast-explains-why-you-shouldnt-put-outbound-links-into-posts-on-social-media-platforms-1b8bcf9ce198">Mr. Beast we should be avoiding external links in YouTube.</a></p>
+<p>I'm surprised Google's YouTube embed does not do this by default, particularly since the default way of embedding almost certainly makes you fail their own <a href="https://pagespeed.web.dev/analysis/https-noscript-show-0/t1ya9i5v2y?form_factor=mobile">Core Web Vitals on page load.</a></p>
+<p>If they downloaded files based on the user's actions, as this component does, I'm sure it would greatly benefit the environment (not to mention those users who pay proportionately more for their data particularly outside of the west).</p>
+<p>But on the positive side, Paul Irish the author of this alternative is a Google employee who works on performance, Chrome DevTools, Lighthouse, and PageSpeed Insights.</p>
+<p>Also for the last 8 years I have been using a <a href="https://www.labnol.org/internet/light-youtube-embeds/27941/">similar technique</a> by another Google developer Amit Agarwal (who seems to update his post on this according to the date shown).</p>
+<p>The previous solution seemed to work perfectly, but I thought I would try Paul's as it is often recommended and is on Github where I can see if others have found issues I may have not tested for.</p>
+<p>From my quite shallow understanding the main difference is that Paul Irish's solution is a web component in the sense that the Javascript used is registered to this custom element we put in our html.</p>
+<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>lite-youtube</span><span class="token punctuation">></span></span> content goes here <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>lite-youtube</span><span class="token punctuation">></span></span>  </code></pre>
+<p>This is not a Shadow Dom component where the CSS is encapsulated in the Javascript (although there is a link to a <a href="https://github.com/justinribeiro/lite-youtube">forked Shadow Dom version</a>).</p>
+<p>I've called it “Light DOM” as that is the favoured buzzword of the day but I think we could just call it HTML.</p>
+<p>The instructions and examples on Github are straightforward and useful, but I did deviate a bit from them to push performance as much as possible. Certainly I would appreciate anyone letting me know if I have got it wrong.</p>
+<p><img src="/img/Lite-you-tube-embed-page-speed.webp" alt="Screenshot of  a Page Speed Insights test showing a 100 score."></p>
+<h2 id="the-css">The CSS</h2>
+<hr>
+<p>Firstly, I grabbed Paul's CSS which I put into my only style-sheet so it's cached ready for each page that might need it. Given CSS renders quickly and we have little of it on this site that makes the most sense to me.</p>
+<p>As a side point, these days (and following some Google recommendations) I will separate large chunks of CSS that may just be used on a few rarely visited pages and add them to that page internally or inline. Something that back in the day would have been frowned upon, but now we have to balance what we load and against having one source of truth for our code.</p>
+<p>I slightly slimmed and modernised the CSS For example we have now have aspect-ratio so don't need old CSS tricks hack to achieve this and change anything I saw that was not a logical property I may change this further but here is mine:</p>
+<pre class="language-css" tabindex="0"><code class="language-css">   <span class="token comment">/* Youtube */</span>
+
+<span class="token selector">lite-youtube</span> <span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+  <span class="token property">contain</span><span class="token punctuation">:</span> content<span class="token punctuation">;</span>
+  <span class="token property">background-position</span><span class="token punctuation">:</span> center center<span class="token punctuation">;</span>
+  <span class="token property">background-size</span><span class="token punctuation">:</span> cover<span class="token punctuation">;</span>
+  <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* gradient */</span>
+<span class="token selector">lite-youtube::before</span> <span class="token punctuation">{</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token function">attr</span><span class="token punctuation">(</span>data-title<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">inset-block-start</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+   <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>180deg<span class="token punctuation">,</span>
+   <span class="token function">hsla</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0%<span class="token punctuation">,</span> 0%<span class="token punctuation">,</span> 0.67<span class="token punctuation">)</span> 0%<span class="token punctuation">,</span>
+   <span class="token function">hsla</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0%<span class="token punctuation">,</span> 0%<span class="token punctuation">,</span> 0.54<span class="token punctuation">)</span> 14%<span class="token punctuation">,</span>
+   <span class="token function">hsla</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0%<span class="token punctuation">,</span> 0%<span class="token punctuation">,</span> 0.15<span class="token punctuation">)</span> 54%<span class="token punctuation">,</span>
+   <span class="token function">hsla</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0%<span class="token punctuation">,</span> 0%<span class="token punctuation">,</span> 0.051<span class="token punctuation">)</span> 72%<span class="token punctuation">,</span>
+   <span class="token function">hsla</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0%<span class="token punctuation">,</span> 0%<span class="token punctuation">,</span> 0<span class="token punctuation">)</span> 94%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 99px<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>  
+  <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+  <span class="token property">white-space</span><span class="token punctuation">:</span> nowrap<span class="token punctuation">;</span>
+  <span class="token property">text-overflow</span><span class="token punctuation">:</span> ellipsis<span class="token punctuation">;</span>
+  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* responsive iframe with a 16:9 aspect ratio
+  thanks https://css-tricks.com/responsive-iframes/
+*/</span>
+<span class="token selector">lite-youtube::after</span> <span class="token punctuation">{</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+ <span class="token comment">/* padding-bottom: calc(100% / (16 / 9)); */</span>
+ <span class="token property">aspect-ratio</span><span class="token punctuation">:</span> 16 / 9 <span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">lite-youtube > iframe</span> <span class="token punctuation">{</span>
+<span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+<span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+<span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>  
+<span class="token property">inset-block-start</span><span class="token punctuation">:</span>0 <span class="token punctuation">;</span>
+<span class="token property">inset-inline-start</span><span class="token punctuation">:</span>0 <span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* play button */</span>
+<span class="token selector">lite-youtube > .lty-playbtn</span> <span class="token punctuation">{</span>
+<span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+<span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+<span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token comment">/* …but visually it's still the same size */</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> no-repeat center/68px 48px<span class="token punctuation">;</span>
+  <span class="token comment">/* YT's actual play button svg */</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> url
+  <span class="token punctuation">(</span>'<span class="token property">data</span><span class="token punctuation">:</span>image/svg+xml<span class="token punctuation">;</span>utf8<span class="token punctuation">,</span>&lt;svg xmlns=<span class="token string">"http://www.w3.org/2000/svg"</span>
+   viewBox=<span class="token string">"0 0 68 48"</span>>&lt;
+   path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13
+ 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63
+  3.26-5.42 6.19C.06 13.05 0
+24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 
+5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13
+27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 
+34.95 68 24 68 24s-.06-10.95-1.48-16.26z" 
+fill=<span class="token string">"red"</span>/>&lt;   
+path d=<span class="token string">"M45 24 27 14v20"</span>
+ fill=<span class="token string">"white"</span>/>&lt;/svg>'<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span>
+  <span class="token property">z-index</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+  <span class="token property">filter</span><span class="token punctuation">:</span> <span class="token function">grayscale</span><span class="token punctuation">(</span>25%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">transition</span><span class="token punctuation">:</span> filter .1s <span class="token function">cubic-bezier</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.2<span class="token punctuation">,</span> 1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">lite-youtube:hover > .lty-playbtn,
+lite-youtube .lty-playbtn:focus</span> <span class="token punctuation">{</span>
+  <span class="token property">filter</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* Post-click styles */</span>
+<span class="token selector">lite-youtube.lyt-activated</span> <span class="token punctuation">{</span>
+  <span class="token property">cursor</span><span class="token punctuation">:</span> unset<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">lite-youtube.lyt-activated::before,
+lite-youtube.lyt-activated > .lty-playbtn</span> <span class="token punctuation">{</span>
+  <span class="token property">opacity</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">pointer-events</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.lyt-visually-hidden</span> <span class="token punctuation">{</span>
+  <span class="token property">clip</span><span class="token punctuation">:</span> <span class="token function">rect</span><span class="token punctuation">(</span>0 0 0 0<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">inset</span><span class="token punctuation">(</span>50%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span>
+  <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">white-space</span><span class="token punctuation">:</span> nowrap<span class="token punctuation">;</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="the-javascript">The Javascript</h2>
+<p>I downloaded the Github Javascript file to my sites folder and linked to the pages it was needed on.</p>
+<p>This file is well commented, but just to shave off a bit more for visitors I removed these and <a href="https://www.toptal.com/developers/javascript-minifier">minified the Javascript.</a> It compresses 1.7kb</p>
+<h2 id="the-html">The HTML</h2>
+<hr>
+<p>With a space of over 700px for the video I need a slightly larger thumbnail than the default 480px which is what you would get if you did not specify an inline background image. The next size up was 640px which might look a bit poor on retina display.</p>
+<p>1280px seemed a bit large but I accidentally discovered that YouTube serves a webp version and that saving made me go with that.</p>
+<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>lite-youtube</span> <span class="token attr-name">videoid</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>xx<span class="token punctuation">"</span></span>
+<span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value css language-css"><span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">'https://i.ytimg.com/vi_webp/xx/maxresdefault.webp'</span><span class="token punctuation">)</span></span><span class="token punctuation">;</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">></span></span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>lite-youtube</span><span class="token punctuation">></span></span></code></pre>
+<p>This also stops Google's PageSpeed Insights from nagging me to “serve images in a next-gen format”. There is still a nag about “Serving static assets with an efficient cache policy” but I don't think there's anything I can do about that as it is on Google's servers.</p>
+<p>You can see the issues if you run a <a href="https://pagespeed.web.dev/analysis/https-paulirish-github-io-lite-youtube-embed-variants-pe-html/i897dycxhw?form_factor=mobile">Pagespeed insights test on on the Lite Youtube Embed's demo page</a></p>
+<p>The other thing PageSpeed Insights flagged up (under the SEO section) was that the link to YouTube was not crawlable so I formatted that differently. The main concern with this solution is many claimed this makes the video....</p>
+<h2 id="not-indexable-by-google"><a href="https://github.com/paulirish/lite-youtube-embed/issues/105">Not Indexable by Google</a></h2>
+<p>This is issue is now solved with iframe in a <noscript> tag within the Javascript.</noscript></p>
+<p>Dave Smart's another suggestion was to add schema with this <a href="https://classyschema.org/Video?example=single">handy tool.</a></p>
+<p>All you have to do is add your Youtube video and it generates the JSON script which I add just before the pages closing  tag. Incidentally, I put SEO stuff last in the head following a talk by performance expert Harry Robert called <a href="https://www.youtube.com/watch?v=UW1PEMBdX5E">&quot;Get your head straight&quot;.</a></p>
+<p>I am not sure how important schema or rich snippets are these days. Some SEO's have started saying that with advances in machine learning technology i.e. Natural language processing (NLP) search engines are relying on them less.</p>
+<p>I've added them just because it is so quick to do so, which was not the case when I was using WordPress, but it's &quot;swings and roundabouts&quot;: as WordPress plugins did automate other SEO meta data that I now have to do manually. I will talk about this another time.</p>
+<h2 id="preloading-the-youtube-thumbnail">Preloading the YouTube thumbnail</h2>
+<hr>
+<p>One last thing before I go, is that I preloaded the Youtube thumbnail. As it was there at hand it seemed a quick copy and paste job that seemed to keep the PageSpeed Insights score more often at 100.</p>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/5/">What is component based web design?</a></li><li class="links-nextprev-next">Next →<br><a href="/6/">What&#39;s the big deal with container queries?</a></li>
+</ul>
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<small><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a></em>
+			| <a href="/feed/feed.xml">RSS Feed</a></small>
+		</footer>
+
+		<!-- This page `/learn/6/` was built on 2025-01-31T16:46:28.481Z -->
+		<script type="module" src="/dist/d9JSaiKaDS.js"></script>		
+	</body>
+</html>

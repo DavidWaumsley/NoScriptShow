@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en-gb">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Finally, a delightful free accessibility tool. Silktide&#39;s accessibility checker. No Script Show</title>
+		<meta name="description" content="A new and free accessibility checker by Silktide, which includes a simple screen reader simulator.">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="No Script Show">
+		
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://noscript.show/learn/11/">
+<meta property="og:title" content="No Script Show Finally, a delightful free accessibility tool. Silktide&#39;s accessibility checker">
+<meta property="og:description" content="A new and free accessibility checker by Silktide, which includes a simple screen reader simulator.">
+<meta property="og:image" content="https://i.ytimg.com/vi_webp/FLAAs6upFj8/maxresdefault.webp">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://noscript.show/learn/11/">
+<meta property="twitter:title" content="No Script Show Finally, a delightful free accessibility tool. Silktide&#39;s accessibility checker">
+<meta property="twitter:description" content="A new and free accessibility checker by Silktide, which includes a simple screen reader simulator.">
+<meta property="twitter:image" content="https://i.ytimg.com/vi_webp/FLAAs6upFj8/maxresdefault.webp">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	font-size: 125%;
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	max-width: 100%;
+	height: auto;
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main,
+footer {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+}
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0 0 1rem 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+/* Youtube */
+lite-youtube {
+    background-color: #000;
+    position: relative;
+    display: block;
+    contain: content;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;   
+}
+
+/* gradient */
+lite-youtube::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    top: 0;
+    /* Pixel-perfect port of YT's gradient PNG, using https://github.com/bluesmoon/pngtocss plus optimizations */
+    background-image: linear-gradient(180deg, rgb(0 0 0 / 67%) 0%, rgb(0 0 0 / 54%) 14%, rgb(0 0 0 / 15%) 54%, rgb(0 0 0 / 5%) 72%, rgb(0 0 0 / 0%) 94%);
+    height: 99px;
+    width: 100%;
+    font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+    color: hsl(0deg 0% 93.33%);
+    text-shadow: 0 0 2px rgba(0,0,0,.5);
+    font-size: 18px;
+    padding: 25px 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+lite-youtube:hover::before {
+    color: white;
+}
+
+/* responsive iframe with a 16:9 aspect ratio
+    thanks https://css-tricks.com/responsive-iframes/
+*/
+lite-youtube::after {
+    content: "";
+    display: block;
+	aspect-ratio: 16 / 9 ;
+}
+lite-youtube > iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+/* play button */
+lite-youtube > .lyt-playbtn {
+    display: block;
+    /* Make the button element cover the whole area for a large hover/click target… */
+    width: 100%;
+    height: 100%;
+    /* …but visually it's still the same size */
+    background: no-repeat center/68px 48px;
+    /* YT's actual play button svg */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>');
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    filter: grayscale(100%);
+    transition: filter .1s cubic-bezier(0, 0, 0.2, 1);
+    border: 0;
+}
+
+lite-youtube:hover > .lyt-playbtn,
+lite-youtube .lyt-playbtn:focus {
+    filter: none;
+}
+
+/* Post-click styles */
+lite-youtube.lyt-activated {
+    cursor: unset;
+}
+lite-youtube.lyt-activated::before,
+lite-youtube.lyt-activated > .lyt-playbtn {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.lyt-visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }</style>
+		
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">No Script Show</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/episodes/">Episodes</a></li>
+					<li class="nav-item"><a href="/learn/">Learn</a></li>
+					<li class="nav-item"><a href="/blog/">Archive</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="finally-a-delightful-free-accessibility-tool-silktides-accessibility-checker">Finally, a delightful free accessibility tool. Silktide&#39;s accessibility checker</h1>
+
+
+
+<ul class="post-metadata">
+	<li><time datetime="2024-06-01">01 June 2024</time></li>
+	<li><a href="/tags/learn/" class="post-tag">learn</a></li>
+</ul>
+
+
+<lite-youtube videoid="FLAAs6upFj8" style="background-image: url('https://i.ytimg.com/vi_webp/FLAAs6upFj8/maxresdefault.webp');">
+  <a href="https://youtube.com/watch?v=FLAAs6upFj8" class="lyt-playbtn" title="Play Video">   
+  </a>
+</lite-youtube>
+
+
+<p>This is not my planned follow-up, but in my <a href="/learn/10">last video</a> I ended up testing the accessibility of a light and dark theme toggle using NVDA's screen reader.</p>
+<p>Out of my frustration with that, I discovered a fabulous new and free <a href="https://silktide.com/toolbar/">accessibility checker by Silktide</a> that includes a simple screen reader simulator. I think it's the only checker to include this.</p>
+<p>As the W3C defines accessibility testing as a subset of usability testing, I'm particularly pleased to find a user-friendly accessibility tool that I genuinely look forward to using.</p>
+<p>It's comprehensive enough to allow me to lose some other accessibility add-ons (accumulated, but hardly used) and is designed so well that I can imagine using it on client calls to demonstrate the unseen work done on their behalf.</p>
+<p>I recommend the <a href="https://www.youtube.com/watch?v=tFMY8cLubD4">10-Minute Web Accessibility Audit webinar</a> by Silktide's eloquent and knowledgeable CEO Oliver Emberton. He can explain his tool better than I can.</p>
+<h2 id="the-screen-reader-alone-makes-it-praiseworthy">The screen reader alone makes it praiseworthy</h2>
+<p>I am writing this to spread the word because I don't have to be so modest about its value to users like me, particularly the screen reader.</p>
+<p>This screen reader is not fully fledged and only works on the page you are testing, but that's its strength.</p>
+<p>They rightly highlight its ease of use, but the real joy for me is that it's just where I need it and that its functionality is confined to the website page we are testing.</p>
+<p>I found running the NVDA desktop app, as a sighted user, difficult. As soon as I start the reader for testing I want to go into my code editor to make changes, run other tests, or look things up. It comes with me because its real job is to assist me with everything I do on the computer.</p>
+<p>It could be my lack of experience, and there are extensions or settings to help, but having watched some demos by experienced blind people I suspect this will never feel easy for me. I'm also lazy when it comes to firing up desktop applications for quick tasks.</p>
+<p>That said, it's important to read the limitations of this screen reader. They have applied the 80/20 rule, so it won't entirely remove the need to test with a full screen reader.</p>
+<p><strong>For example:</strong> In my <a href="/learn/10">last video</a> I was unsure about the poor results with aria-live on a light/dark theme toggle. I did not know whether it was a user error on my part, the inappropriate use of this code, or just a screen reader bug.</p>
+<p>This screen reader will not help with that as aria-live is not supported. Neither can I hover and have the alt text read to me as CSS hover will not work.</p>
+<p>If we have <code>&lt;select&gt;, &lt;details&gt;, and &lt;summary&gt;</code> in our HTML, it will not work. I suspect anything where the browser treats the elements as a component could be tricky.</p>
+<p>Limitations aside, I think this is a great way to introduce more designers to screen readers. I've often thought I should use one regularly so it naturally becomes a part of my design thinking.</p>
+<p><strong>👋 Note:</strong> I contacted Silktide thinking there could be a bug as my selected Google voices were falling silent at about 280 characters. It seemed only to be with Google voices. No problems with the Microsoft one. I need to test more, but don't think it is an issue for Silktide, but let me know if you encounter the same.</p>
+<h2 id="how-to-get-the-accessibility-checker">How to get the accessibility checker</h2>
+<p>It is a <a href="https://chromewebstore.google.com/detail/mpobacholfblmnpnfbiomjkecoojakah">Chrome extension</a> which allows you to add it to Microsoft Edge (and perhaps other Chromium browsers). As of May 2024, there is no Firefox extension, but it is in their sights.</p>
+<p>Other additions are likely to come, but I suspect much will depend on how much attention this receives. To justify the time, I imagine it also needs to work as a good marketing tool for Silktide's business, where they have more sophisticated premium checkers that monitor and report on full sites and go beyond accessibility.</p>
+<p>I tend to avoid endorsing businesses, but I don't think this is any different from using WebAIM's Wave, IBM's Equal Access Toolkit, or Google's Lighthouse.</p>
+<p>I have had a positive awareness of Silktide since 2011 when I was despairing at how the UK was going to implement the &quot;Cookie Law&quot;.</p>
+<p>They really stood out as a voice of reason who were not afraid to hold the bureaucratic power of the ICO to account. The BBC <a href="https://www.bbc.com/news/technology-19505835">covered them</a>. They were right. It did nothing to protect users and made web usability worse until it was quietly abandoned.</p>
+<p>I've seen quite a bit of their public content and I connect with their approach. Perhaps because I lived close to their UK base, but equally I like the way the US side of their company does their training videos too.</p>
+<p>These are a part of the tool and although incomplete at the moment of this recording, they are short, clear, and to me, &quot;spot on&quot;.</p>
+<p>I feel their focus leans more toward making us better designers by helping us find empathy rather than the dull legislative finger-wagging side of accessibility.</p>
+<h2 id="overview">Overview</h2>
+<h3 id="accessibility-checker">Accessibility checker</h3>
+<p>It's not the best way to think about accessibility, but the first thing I want to know with any checker is do I pass?</p>
+<p>This does an automated test looking at WCAG 2.1 AA, the present &quot;good&quot; standard that will become a legal requirement for many serving the EU next year. You can easily swap that to AAA, the &quot;excellent&quot; standard.</p>
+<p>Apparently, this runs over 200 tests, but of course no accessibility test is definitive. What I quite like is you can switch to the Assisted mode where it will prompt you to look further and use some judgment. Even so, there are limits to how a tool like this can help.</p>
+<p>For example, with help from this checker I can easily get the No Script Show's presently basic site to pass on 2.1 AAA, but I can't pat myself on the back for this accessibility excellence. We have video content that does not include a sign language version, which the checker cannot know.</p>
+<p>Interestingly, where our site fails is with a decision I discussed before in an earlier video regarding links opening in a new tab.</p>
+<p>This is something I did all the time before, but I decided that breaking the back button was really only justifiable on pages where there was media that would be disrupted if the user clicked to a new page. To hint that the link is to an external resource, I added an icon which was a suggestion from an article from the Wave accessibility tool.</p>
+<p>Silktide's accessibility checker made me realize I completely forgot non-sighted users and gave me some options, handy code snippets, and a link to the relevant WC3 document.</p>
+<h3 id="empathy-building-simulators">Empathy building simulators</h3>
+<p>There are three simulators that help us empathize with the experience of others: dyslexia (which some thought I had), color blindness, and impaired vision. I like that the color blindness simulator gives the percentage of those affected (I had an extension for this but it never added that).</p>
+<h3 id="heading-order">Heading order</h3>
+<p>The next section is heading order. Setting these up in a sensible hierarchy is now drummed into me, but it easily slips up in a large document and this is easier to see than in code. Also, as screen reader users may navigate with the &quot;h&quot; key, you get a sense of whether the header text alone explains the page (as a sighted user, I often do a quick scan over the header sections before committing).</p>
+<h3 id="landmarks">Landmarks</h3>
+<p>Screen readers automatically assign these, so we don't see them in the code unless we specifically assign them with roles. We can check if they have got it right against the W3C definition example the tool links to.</p>
+<p>Even though I have gotten familiar with NVDA announcing these, I was not really familiar with the concept and we'll certainly be looking to use these where needed from here on.</p>
+<p>I won't say who, but I used this to look at a well-known site that is going through a redesign and has plenty of accessibility-focused followers.</p>
+<p>They had not made use of specific landmarks to separate content into &quot;regions&quot; and sometimes &quot;complementary&quot; sections where to me that would have made sense.</p>
+<h3 id="focus-order">Focus order</h3>
+<p>This gives us an order map of a tabbing order. The site I thought might be approved with the use of regions certainly has quite a disorientating tabbing order where the user jumps sharply up and down the page.</p>
+<p>It is probably worth testing with Silktide's fake Uni site that has numerous accessibility issues baked in <a href="https://fake-university.com">fake-university.com</a></p>
+<p>On its homepage, the focus order looks OK at first glance until we see what comes first.</p>
+<h3 id="alt-text">Alt text</h3>
+<p>This offers a nice overlay of the alt text tags on a page. Those with empty alt tags get labeled as &quot;decorative&quot;.</p>
+<p>A nice touch was seeing that in the sidebar it had picked up on hidden images.</p>
+<p>It is worth watching the short video that warns of over or under-describing images. With AI tools starting to automate this, I can see limited or non-sighted users getting the contextual information they require replaced with irrelevant flowery prose.</p>
+<h3 id="screen-reader-extras">Screen Reader Extras</h3>
+<p>With NVDA we can blank out the visual screen. It is just quicker to do here. Certainly, I am going to challenge myself to do this more often as it is quite a different experience when you can't see how to navigate the screen reader.</p>
+<p>Having mostly worked with WebAim's Wave checker, I like that I can see and check dark and light modes which can be structurally different. I think that has brought me full circle to my last video. It's almost as if I planned these.</p>
+<p>If you do use it, please try to show your appreciation to Silktide with reviews. Helping them is likely to see this tool getting even more love.</p>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/learn/10/">I’m the ultimate dark and light theme toggle switch… and so’s my wife.</a></li><li class="links-nextprev-next">Next →<br><a href="/12/">How web typography has evolved</a></li>
+</ul>
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<small><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a></em>
+			| <a href="/feed/feed.xml">RSS Feed</a></small>
+		</footer>
+
+		<!-- This page `/learn/11/` was built on 2025-01-31T16:46:28.481Z -->
+		<script type="module" src="/dist/d9JSaiKaDS.js"></script>		
+	</body>
+</html>
