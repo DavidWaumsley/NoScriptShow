@@ -2,72 +2,112 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
-		<loc>https://example.com/1/</loc>
+		<loc>https://noscript.show/1/</loc>
 		<lastmod>2023-12-13</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/2/</loc>
+		<loc>https://noscript.show/2/</loc>
 		<lastmod>2024-01-17</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/3/</loc>
+		<loc>https://noscript.show/3/</loc>
 		<lastmod>2024-01-22</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/learn/1/</loc>
+		<loc>https://noscript.show/learn/1/</loc>
 		<lastmod>2024-01-24</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/learn/2/</loc>
+		<loc>https://noscript.show/learn/2/</loc>
 		<lastmod>2024-01-30</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/4/</loc>
+		<loc>https://noscript.show/4/</loc>
 		<lastmod>2024-02-02</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/README/</loc>
+		<loc>https://noscript.show/learn/3/</loc>
+		<lastmod>2024-02-06</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/learn/4/</loc>
+		<lastmod>2024-02-13</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/learn/5/</loc>
+		<lastmod>2024-02-20</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/5/</loc>
+		<lastmod>2024-02-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/6/</loc>
+		<lastmod>2024-03-14</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/7/</loc>
+		<lastmod>2024-03-27</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/8/</loc>
+		<lastmod>2024-04-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/9/</loc>
+		<lastmod>2024-04-25</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/10/</loc>
+		<lastmod>2024-05-02</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/11/</loc>
+		<lastmod>2024-05-16</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/episodes/</loc>
 		<lastmod>2025-01-26</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/content/episodes/</loc>
+		<loc>https://noscript.show/blog/</loc>
 		<lastmod>2025-01-26</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/content/blog/</loc>
+		<loc>https://noscript.show/</loc>
 		<lastmod>2025-01-26</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/content/</loc>
+		<loc>https://noscript.show/tags/</loc>
 		<lastmod>2025-01-26</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/content/tags/</loc>
-		<lastmod>2025-01-26</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/content/learn/</loc>
+		<loc>https://noscript.show/learn/</loc>
 		<lastmod>2025-01-28</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/messing/</loc>
-		<lastmod>2025-01-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://example.com/feed/feed.xml</loc>
-		<lastmod>2025-01-30</lastmod>
+		<loc>https://noscript.show/feed.xml</loc>
+		<lastmod>2025-01-31</lastmod>
 	</url>
 </urlset>

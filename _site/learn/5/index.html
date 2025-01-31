@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="en-gb">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Accessibility - Skip nav links &amp; :focus-visible. No Script Show</title>
+		<meta name="description" content="Looking at links gaffs, aria labels, when to use target=&quot;_blank&quot; and underlining links with CSS.">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="No Script Show">
+		
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://noscript.show/learn/5/">
+<meta property="og:title" content="No Script Show Accessibility - Skip nav links &amp; :focus-visible">
+<meta property="og:description" content="Looking at links gaffs, aria labels, when to use target=&quot;_blank&quot; and underlining links with CSS.">
+<meta property="og:image" content="https://i.ytimg.com/vi_webp/_KLBhO_7zW8/maxresdefault.webp">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://noscript.show/learn/5/">
+<meta property="twitter:title" content="No Script Show Accessibility - Skip nav links &amp; :focus-visible">
+<meta property="twitter:description" content="Looking at links gaffs, aria labels, when to use target=&quot;_blank&quot; and underlining links with CSS.">
+<meta property="twitter:image" content="https://i.ytimg.com/vi_webp/_KLBhO_7zW8/maxresdefault.webp">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	font-size: 125%;
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	max-width: 100%;
+	height: auto;
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main,
+footer {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+}
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0 0 1rem 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+/* Youtube */
+lite-youtube {
+    background-color: #000;
+    position: relative;
+    display: block;
+    contain: content;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;   
+}
+
+/* gradient */
+lite-youtube::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    top: 0;
+    /* Pixel-perfect port of YT's gradient PNG, using https://github.com/bluesmoon/pngtocss plus optimizations */
+    background-image: linear-gradient(180deg, rgb(0 0 0 / 67%) 0%, rgb(0 0 0 / 54%) 14%, rgb(0 0 0 / 15%) 54%, rgb(0 0 0 / 5%) 72%, rgb(0 0 0 / 0%) 94%);
+    height: 99px;
+    width: 100%;
+    font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+    color: hsl(0deg 0% 93.33%);
+    text-shadow: 0 0 2px rgba(0,0,0,.5);
+    font-size: 18px;
+    padding: 25px 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+lite-youtube:hover::before {
+    color: white;
+}
+
+/* responsive iframe with a 16:9 aspect ratio
+    thanks https://css-tricks.com/responsive-iframes/
+*/
+lite-youtube::after {
+    content: "";
+    display: block;
+	aspect-ratio: 16 / 9 ;
+}
+lite-youtube > iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+/* play button */
+lite-youtube > .lyt-playbtn {
+    display: block;
+    /* Make the button element cover the whole area for a large hover/click target… */
+    width: 100%;
+    height: 100%;
+    /* …but visually it's still the same size */
+    background: no-repeat center/68px 48px;
+    /* YT's actual play button svg */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>');
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    filter: grayscale(100%);
+    transition: filter .1s cubic-bezier(0, 0, 0.2, 1);
+    border: 0;
+}
+
+lite-youtube:hover > .lyt-playbtn,
+lite-youtube .lyt-playbtn:focus {
+    filter: none;
+}
+
+/* Post-click styles */
+lite-youtube.lyt-activated {
+    cursor: unset;
+}
+lite-youtube.lyt-activated::before,
+lite-youtube.lyt-activated > .lyt-playbtn {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.lyt-visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }</style>
+		
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">No Script Show</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/episodes/">Episodes</a></li>
+					<li class="nav-item"><a href="/learn/">Learn</a></li>
+					<li class="nav-item"><a href="/blog/">Archive</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="accessibility-skip-nav-links-and-focus-visible">Accessibility - Skip nav links &amp; :focus-visible</h1>
+
+
+
+<ul class="post-metadata">
+	<li><time datetime="2024-02-20">20 February 2024</time></li>
+	<li><a href="/tags/learn/" class="post-tag">learn</a></li>
+</ul>
+
+
+<lite-youtube videoid="_KLBhO_7zW8" style="background-image: url('https://i.ytimg.com/vi_webp/_KLBhO_7zW8/maxresdefault.webp');">
+  <a href="https://youtube.com/watch?v=_KLBhO_7zW8" class="lyt-playbtn" title="Play Video">   
+  </a>
+</lite-youtube>
+
+
+<h2 id="transcript">TRANSCRIPT</h2>
+<p>We've been progressively building the show's website with a first focus on trying to make the content as usable as we can before seriously tackling the aesthetics.</p>
+<p>Now we have 5 items in the main navigation, it seemed like time to add a way for <strong>keyboard</strong> and <strong>screen readers</strong> users to be able to skip the repetition of these links and get to the main page content.</p>
+<p>WCAG (the Web Content Accessibility Guidelines) does not specify &quot;skip nav links&quot;, but says we should have a mechanism to <a href="https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html">bypass blocks</a> of content that are repeated on multiple Web pages. Other examples they give are:</p>
+<ul>
+<li>News site's where the users may have to go though many article links to get to the main story and</li>
+<li>Ecommerce sites where there could be many filter options before they can get to the products.</li>
+</ul>
+<p>Some sites also provide a <strong>&quot;skip to the footer&quot;</strong> option too.</p>
+<p>We don't need that, but this has made me think about how footers are often used to dump less relevant content and legalese and how we might also want to allow people to skip that. Amazon does this by placing their &quot;back to top&quot; link at the start of their footer.</p>
+<p>(Accidentally there's no legal links here as there's no tracking or cookies on this site)</p>
+<p>Truefully, if it hadn't been for accessibility legislation increasing awareness (and we'll probably have more with the <a href="https://ec.europa.eu/social/main.jsp?catId=1202">European Accessibility Act</a> coming in 2025) I am not sure how much attention I would have paid to these things.</p>
+<p>It's a shame I needed the law to encourage me to do the designer's main job of finding empathy with users, but now I think sharpening up these &quot;soft skills&quot; is becoming more vital. Not just to increase the reach of our website, but to highlight the advantages we have over AI.</p>
+<p>As a sighted mouse user I almost never use the keyboard on web pages until recently when I had a temporary strain on my mouse hand. Presumably age will force me to do this more.</p>
+<p>From my limited experience of tabbing my way around the web it is frustrating, but this must pale into insignificance compared with those with motor issues who have to navigate pages with <a href="https://webaim.org/articles/motor/assistive">head wands, mouth sticks or sip-and-puff switches.</a></p>
+<p>While many off-the-shelf sites have &quot;skip to content links&quot; added by default they can make things even more confusing when addons (like forms) and DIY user mess up the tabbing order.</p>
+<p>It is not difficult to add this yourself and do it right, but before I get into that I want to mention (as it's relevant) the new…</p>
+<h3 id="focus-visible-pseudo-class">:focus-visible (pseudo class)</h3>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible">:focus-visible</a> now has support across all major browsers and solves a problem that when a sighted mouse user clicks on a focusable element (like a button) they get a 'focus ring' that may only be needed to guide those using the tab key.</p>
+<p>When I was in a page builder community this issue came up regularly with people saying how do I get rid of the ugly outline around the header text of my FAQ section when clicked. The reason was the accordion module marked up the titles with the button tag.</p>
+<p>The <em>wrong</em> solution was to the add this CSS:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">:focus</span> <span class="token punctuation">{</span> <span class="token property">outline</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span> <span class="token punctuation">}</span></code></pre>
+<p><a href="https://www.a11yproject.com/posts/never-remove-css-outlines/">My solution</a> was to add JavaScript to detect a mouse action and then remove the outline. Now browsers will by magic (or heuristics) do this for us via its own user agent CSS. No need for JS.</p>
+<p>Assuming we are not <a href="https://caniuse.com/?search=focus-visible">supporting IE</a>, we only have to remember to avoid using :focus (rather than :focus-visible) when we want to custom style our focus state as this will undo what browsers are now doing for us.</p>
+<p>I have used this:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">:focus-visible</span><span class="token punctuation">{</span>
+<span class="token property">outline</span><span class="token punctuation">:</span> 2px solid <span class="token function">var</span><span class="token punctuation">(</span>--accent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token property">outline-offset</span><span class="token punctuation">:</span> .35rem<span class="token punctuation">;</span>
+<span class="token property">border-radius</span><span class="token punctuation">:</span> .1rem<span class="token punctuation">;</span>
+<span class="token punctuation">}</span> </code></pre>
+<h3 id="skip-nav-links">Skip nav links</h3>
+<h4 id="adding-the-html">Adding the HTML</h4>
+<p>Ideally I would have set this up first, but the idea was to build up this starting with the bare minimum which was a single page.</p>
+<p>I also wanted to see how far we could go using VS Code search and replace before having to bring in a CMS or static site generator the manage the growing number of pages</p>
+<p>To quickly add the skip links to all pages I went to VS Code's &quot;Edit tab&quot; and selected &quot;replace in files&quot;. I searched for the beginning</p>
+<p>tag which gave me all the HTML pages and replace with:</p>
+<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#skip-to-main<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>skip-link<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Skip to content<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>    </code></pre>
+<p>The link has an ID (skip-to-main) for the same page linking and a class (skip-link) or the styling</p>
+<p>I repeated this search and replace to add where I wanted the skip link to go to in the document. I chose the maing tag Some use a H1:</p>
+<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>narrow<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>skip-to-main<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
+<p><strong>NOTE:</strong> I had to do this twice as there were two types of classes already added to the main tag.</p>
+<h4 id="adding-the-css">Adding the CSS</h4>
+<p>We needed some styles for the link and a way to hide it until it is focussed on. As I have already added a custom focus ring we have that already.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.skip-link</span> <span class="token punctuation">{</span>
+<span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span> 
+<span class="token property">padding</span><span class="token punctuation">:</span> .3rem<span class="token punctuation">;</span>
+<span class="token property">margin-inline-start</span><span class="token punctuation">:</span> .5rem<span class="token punctuation">;</span>
+<span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--shade<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token property">text-decoration-thickness</span><span class="token punctuation">:</span> <span class="token function">max</span><span class="token punctuation">(</span>0.06rem<span class="token punctuation">,</span> 1px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token property">text-underline-offset</span><span class="token punctuation">:</span> 0.2rem<span class="token punctuation">;</span> 
+<span class="token property">z-index</span><span class="token punctuation">:</span> 10<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>  
+<span class="token comment">/* styles the skip to content link */</span></code></pre>
+<p>The most frustrating part of this is that CSS has multiple ways to hide content, but no specific display property for hiding content from all except screen reader or keyboard user.</p>
+<p>We can't use</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token property">display</span><span class="token punctuation">:</span> none </code></pre>
+<p>as this removes elements altogether. Because of this we have all sorts of over complex “belt and braces” approaches which have to get changed according to the changing inconsistency of screen readers and browser vendors</p>
+<p>Here I have included what is used by <a href="https://tailwindcss.com/docs/screen-readers">Tailwind</a> and Bootstrap at the time of recording plus clip-path (that is supposed to replace the now deprecated clip property, but is used for old browsers).</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.skip-link:not(:focus)</span> <span class="token punctuation">{</span> 
+<span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">inset</span><span class="token punctuation">(</span>50%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+<span class="token property">width</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span> 
+<span class="token property">height</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span>
+<span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token property">margin</span><span class="token punctuation">:</span> -1px<span class="token punctuation">;</span>
+<span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+<span class="token property">clip</span><span class="token punctuation">:</span> <span class="token function">rect</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token property">white-space</span><span class="token punctuation">:</span> nowrap<span class="token punctuation">;</span>
+<span class="token property">border-width</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">/* hides the link when not focussed */</span></code></pre>
+<p>On the live site (for now) I have only added:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.skip-link:not(:focus)</span> <span class="token punctuation">{</span> 
+ <span class="token property">clip-path</span><span class="token punctuation">:</span> <span class="token function">inset</span><span class="token punctuation">(</span>50%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>This is to see under what circumstance this today is not enough. Let me know if you see an issue. There was one with Safari, but I think it is fixed now.</p>
+<p>What this does is clip all edges of the element to 50% effectively hiding everything.</p>
+<p><a href="https://www.w3schools.com/accessibility/accessibility_skip_links.php">W3schools.com</a> take a different approach.</p>
+<h3 id="other-links">Other links</h3>
+<ul>
+<li><a href="https://www.scottohara.me/blog/2023/03/21/visually-hidden-hack">Visually hidden content is a hack that needs to be resolved, not enshrined</a></li>
+<li><a href="https://www.tpgi.com/the-anatomy-of-visually-hidden/">The anatomy of visually-hidden</a></li>
+<li><a href="https://dev.to/merri/can-we-at-least-modernize-visually-hidden-n31">Can we at least modernize visually hidden?</a></li>
+</ul>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/learn/4/">Creating links that are not too hyper!</a></li><li class="links-nextprev-next">Next →<br><a href="/5/">What is component based web design?</a></li>
+</ul>
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<small><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a></em>
+			| <a href="/feed/feed.xml">RSS Feed</a></small>
+		</footer>
+
+		<!-- This page `/learn/5/` was built on 2025-01-31T09:52:20.295Z -->
+		<script type="module" src="/dist/d9JSaiKaDS.js"></script>		
+	</body>
+</html>

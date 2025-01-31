@@ -2,7 +2,7 @@ import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
-import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+// import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import pluginFilters from "./_config/filters.js";
 
 
@@ -31,7 +31,7 @@ export default async function (eleventyConfig) {
   // https://www.11ty.dev/docs/watch-serve/#add-your-own-watch-targets
 
   // Watch images for the image pipeline.
-  eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg,gif}");
+  // eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg,gif}");
 
   // Per-page bundles, see https://github.com/11ty/eleventy-plugin-bundle
   // Adds the {% css %} paired shortcode
@@ -53,13 +53,13 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addPlugin(feedPlugin, {
     type: "atom", // or "rss", "json"
-    outputPath: "/feed/feed.xml",
+    // outputPath: "/feed/feed.xml",
     stylesheet: "pretty-atom-feed.xsl",
     templateData: {
-      eleventyNavigation: {
-        key: "Feed",
-        order: 4,
-      },
+      // eleventyNavigation: {s
+      //   key: "Feed",
+      //   order: 4,
+      // },
     },
     collection: {
       name: "posts",
@@ -76,26 +76,26 @@ export default async function (eleventyConfig) {
     },
   });
 
-  // Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
-  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-    // Output formats for each image.
-    formats: ["avif", "webp", "auto"],
+  	// Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
+	// eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+	// 	// Output formats for each image.
+	// 	formats: ["avif", "webp", "auto"],
 
-    // widths: ["auto"],
+	// 	widths: ["auto"],
 
-    failOnError: false,
-    htmlOptions: {
-      imgAttributes: {
-        // e.g. <img loading decoding> assigned on the HTML tag will override these values.
-        loading: "lazy",
-        decoding: "async",
-      },
-    },
+	// 	failOnError: false,
+	// 	htmlOptions: {
+	// 		imgAttributes: {
+	// 			// e.g. <img loading decoding> assigned on the HTML tag will override these values.
+	// 			loading: "lazy",
+	// 			decoding: "async",
+	// 		}
+	// 	},
 
-    sharpOptions: {
-      animated: true,
-    },
-  });
+	// 	sharpOptions: {
+	// 		animated: true,
+	// 	},
+	// });
 
   // Filters
   eleventyConfig.addPlugin(pluginFilters);
@@ -132,12 +132,12 @@ export const config = {
   htmlTemplateEngine: "njk",
 
   // These are all optional:
-  // dir: {
-  //   input: "content", // default: "."
-  //   includes: "../_includes", // default: "_includes" (`input` relative)
-  //   data: "../_data", // default: "_data" (`input` relative)
-  //   output: "_site",
-  // },
+  dir: {
+    input: "content", // default: "."
+    includes: "../_includes", // default: "_includes" (`input` relative)
+    data: "../_data", // default: "_data" (`input` relative)
+    output: "_site",
+  },
 
   // -----------------------------------------------------------------
   // Optional items:

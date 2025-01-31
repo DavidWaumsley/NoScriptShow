@@ -31,18 +31,14 @@ Perhaps this quote best explains how it is different to responsive design:
 An overlapping history that loosely goes from flow only to HTML tables to Flash to fluid to fixed to responsive.
 
 
-
-<img src="/img/Instrisic-design-history.avif" alt="A chart of Jen Simmon's history of web layouts">
-
-
-<img src="/public/img/image.png" alt="testing">
+<img src="/img/intrinsic-design-history.avif"  loading="lazy" width="1600" height="900" alt="A chart of Jen Simmon's history of web layouts">
 
 
 ### What does this mean for us?
 
-*   Re-educating ourselves (possibly without making a podcast) ?
-*   Setting better expectations of the web for clients (ie. HTML/communication first) ?
-*   A change in how we organise web projects (reversing the picture to web approach) ?
+*   Re-educating ourselves (possibly without making a podcast)?
+*   Setting better expectations of the web for clients (ie. HTML/communication first)?
+*   A change in how we organise web projects (reversing the picture to web approach)?
 *   More creatively with space (thinking outside the fixed box)?
 
 ### Jen's CSS layout resources
@@ -294,4 +290,4 @@ So there'll be no script show forward slash four. And yeah, there we go. I will 
 
 \[00:34:02\] **David Waumsley**: you next time, David. Yeah. Lovely. Bye-Bye. Bye bye.
 
- </details>
+ </details> 

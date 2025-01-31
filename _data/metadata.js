@@ -1,11 +1,11 @@
 export default {
 	title: "No Script Show",
-	url: "https://example.com/",
+	url: "https://noscript.show/",
 	language: "en-gb",
-	description: "I am writing about my experiences as a naval navel-gazer.",
+	description: "Talking, learning and building websites simply.",
 	author: {
 		name: "David Waumsley",
-		email: "youremailaddress@example.com",
-		url: "https://example.com/about-me/"
+		email: "david@davidwaumsey.com",
+		url: "https://noscript.show/"
 	}
 }

@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="en-gb">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>User Preferences:- rethinking web design. No Script Show</title>
+		<meta name="description" content="About the 6 new CSS media queries that let us design unique experiences according to the preferences the website visitor sets in their device or browser.">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="No Script Show">
+		
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://noscript.show/10/">
+<meta property="og:title" content="No Script Show User Preferences:- rethinking web design">
+<meta property="og:description" content="About the 6 new CSS media queries that let us design unique experiences according to the preferences the website visitor sets in their device or browser.">
+<meta property="og:image" content="https://i.ytimg.com/vi_webp/vMhE--tXGYc/maxresdefault.webp">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://noscript.show/10/">
+<meta property="twitter:title" content="No Script Show User Preferences:- rethinking web design">
+<meta property="twitter:description" content="About the 6 new CSS media queries that let us design unique experiences according to the preferences the website visitor sets in their device or browser.">
+<meta property="twitter:image" content="https://i.ytimg.com/vi_webp/vMhE--tXGYc/maxresdefault.webp">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	font-size: 125%;
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	max-width: 100%;
+	height: auto;
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main,
+footer {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+}
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0 0 1rem 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+/* Youtube */
+lite-youtube {
+    background-color: #000;
+    position: relative;
+    display: block;
+    contain: content;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;   
+}
+
+/* gradient */
+lite-youtube::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    top: 0;
+    /* Pixel-perfect port of YT's gradient PNG, using https://github.com/bluesmoon/pngtocss plus optimizations */
+    background-image: linear-gradient(180deg, rgb(0 0 0 / 67%) 0%, rgb(0 0 0 / 54%) 14%, rgb(0 0 0 / 15%) 54%, rgb(0 0 0 / 5%) 72%, rgb(0 0 0 / 0%) 94%);
+    height: 99px;
+    width: 100%;
+    font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+    color: hsl(0deg 0% 93.33%);
+    text-shadow: 0 0 2px rgba(0,0,0,.5);
+    font-size: 18px;
+    padding: 25px 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+lite-youtube:hover::before {
+    color: white;
+}
+
+/* responsive iframe with a 16:9 aspect ratio
+    thanks https://css-tricks.com/responsive-iframes/
+*/
+lite-youtube::after {
+    content: "";
+    display: block;
+	aspect-ratio: 16 / 9 ;
+}
+lite-youtube > iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+/* play button */
+lite-youtube > .lyt-playbtn {
+    display: block;
+    /* Make the button element cover the whole area for a large hover/click target… */
+    width: 100%;
+    height: 100%;
+    /* …but visually it's still the same size */
+    background: no-repeat center/68px 48px;
+    /* YT's actual play button svg */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>');
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    filter: grayscale(100%);
+    transition: filter .1s cubic-bezier(0, 0, 0.2, 1);
+    border: 0;
+}
+
+lite-youtube:hover > .lyt-playbtn,
+lite-youtube .lyt-playbtn:focus {
+    filter: none;
+}
+
+/* Post-click styles */
+lite-youtube.lyt-activated {
+    cursor: unset;
+}
+lite-youtube.lyt-activated::before,
+lite-youtube.lyt-activated > .lyt-playbtn {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.lyt-visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }</style>
+		
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">No Script Show</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/episodes/">Episodes</a></li>
+					<li class="nav-item"><a href="/learn/">Learn</a></li>
+					<li class="nav-item"><a href="/blog/">Archive</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="user-preferences-rethinking-web-design">User Preferences:- rethinking web design</h1>
+
+
+
+<ul class="post-metadata">
+	<li><time datetime="2024-05-02">02 May 2024</time></li>
+	<li><a href="/tags/podcast/" class="post-tag">podcast</a></li>
+</ul>
+
+
+<lite-youtube videoid="vMhE--tXGYc" style="background-image: url('https://i.ytimg.com/vi_webp/vMhE--tXGYc/maxresdefault.webp');">
+  <a href="https://youtube.com/watch?v=vMhE--tXGYc" class="lyt-playbtn" title="Play Video">   
+  </a>
+</lite-youtube>
+
+
+<h2 id="new-css-media-features">New CSS media features</h2>
+<p>Presently there's W3C specifications for 6 CSS media features that allow our design to respond to a user's browser or device preferences.</p>
+<p>Included below is the global browser support as of April 2024 from the <a href="https://caniuse.com/">Can I use</a> site and the year when the feature was supported in the core browsers:</p>
+<ul>
+<li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">Prefers-color-scheme</a></strong> supported in 2020 - 96%.</li>
+<li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion">Prefers-reduced-motion</a></strong> supported in 2020 - 96%.</li>
+<li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/forced-colors">Forced-colors*</a></strong> supported in 2020 - 96%.</li>
+<li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-contrast">Prefers-contrast:</a></strong> supported in 2022 - 97%.</li>
+<li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-transparency">Prefers-reduced-transparency</a></strong> experimental - 68%.</li>
+<li><strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-data">Prefers-reduced-data</a></strong> experimental - 0%</li>
+</ul>
+<p>* An example of a forced colour mode is Windows High Contrast mode where you might want to provide an alternative to subtleties like box shadows to mark out an area.</p>
+<h2 id="statistics-on-user-preferences">Statistics on user preferences</h2>
+<p>Data on user behaviour is not easy to find, but we can look at Chrome's data on the percentage of features included on the pages they crawl.</p>
+<ul>
+<li><a href="https://chromestatus.com/metrics/feature/timeline/popularity/3581">PreferredColorSchemeDarkSetting</a>- 32%</li>
+<li><a href="https://chromestatus.com/metrics/feature/timeline/popularity/3870">Forced-colors</a> 27%</li>
+<li><a href="https://chromestatus.com/metrics/feature/timeline/popularity/3869">Prefers-contrast</a> 14%</li>
+<li><a href="https://chromestatus.com/metrics/feature/timeline/popularity/4364">Reduced motion</a> 0.5%</li>
+<li><a href="https://chromestatus.com/metrics/feature/timeline/popularity/4635">Prefers-reduced-transparency</a> 0.4</li>
+<li>Prefers-reduced-data: no data.</li>
+</ul>
+<h3 id="some-extra-info-on-dark-mode">Some extra info on dark mode</h3>
+<p><a href="https://earthweb.com/how-many-people-use-dark-mode/#How_Many_People_Use_Dark_Mode_in_2023">Earthweb</a> says 81.9% of smartphone users use dark mode and that 64.6% expect websites to apply dark mode automatically.</p>
+<p><a href="https://helpfultech.net/dark-mode-usage-statistics-2024.html">Helpfultech</a> says after 10 p.m., about 82.7% of users put their phones in dark mode, revealing a particular usage trend.</p>
+<h2 id="what-does-this-mean-for-designers">What does this mean for designers?</h2>
+<h3 id="cons">Cons</h3>
+<ul>
+<li>Client resistance to anything not visually on brand?</li>
+<li>The cost and relative returns on implementation?</li>
+<li>Concerns about the tech being in its infancy?</li>
+<li>Lack of data?</li>
+</ul>
+<h3 id="pros">Pros</h3>
+<ul>
+<li>Responding to a user's preferences may allow better control on branding?</li>
+<li>As with accessibility the cost of not implementing these (progressive enhancements) at build time could be more costly.</li>
+<li>Tech moves fast. For example if browsers implemented an easy dark/light toggle how quickly would site want a dark/light mode?</li>
+<li>Browsers and device vendors have a powerful influence over the web. Now these are in the W3C's specifications and growing we may not need proof of the direction?</li>
+</ul>
+<h2 id="other-links">Other Links</h2>
+<ul>
+<li>Our <a href="https://www.youtube.com/watch?v=eZTB4rH7Wh8">short video</a> on adding a light and mode mode with toggle</li>
+<li>A Google employee's <a href="https://www.bram.us/2024/04/13/what-if-you-had-real-control-over-light-mode-dark-mode-on-a-per-site-basis/">case for browsers to support a light/dark toggle</a></li>
+<li><a href="https://www.xda-developers.com/apple-adding-per-website-dark-mode-safari/">Safari could be adding a per website dark mode</a></li>
+</ul>
+<details>
+<summary>Transcript</summary>
+<p>[00:00:05] <strong>Nathan Wrigley:</strong> Welcome to the No Script web show about modern web design, where we look at what we can build today with minimal software and skills. Today we’re talking about the new CSS media queries that let us design unique experiences according to the preferences website visitors set in their browser or device.</p>
+<p>This is relatively new and increasingly popular, but it also challenges the way we have traditionally approached web design. So David. Are you feeling challenged?</p>
+<p>[00:00:35] <strong>David Waumsley:</strong> Yeah, I’ve been really challenged actually. a little while back I did a, short video on light and dark mode and it opened up so much about being able to, or actually in our case, not being able to use, I.</p>
+<p>some of the new CSS properties for that. yeah. But we did agree though that you would not call me challenge, but call me special from now</p>
+<p>[00:00:58] <strong>Nathan Wrigley:</strong> on.</p>
+<p>[00:00:59] <strong>David Waumsley:</strong> You are special,</p>
+<p>[00:01:00] <strong>Nathan Wrigley:</strong> David. Okay. that’s absolutely fine by me. I guess the interesting thing here is that we really are heading into a new era where it’s possible for the person viewing the webpage to have some sort of, some ability to change various things in the past until almost.</p>
+<p>Let’s say now what is what you get. dear viewer, I’m gonna serve you up a website and this is what you’re gonna see. But now we’ve got the option to, to interact with that a little bit, which makes life a little bit more interesting, maybe a little bit more challenging. Shall I show our webpage so that we can begin this episode properly?</p>
+<p>[00:01:40] <strong>David Waumsley:</strong> yeah. The show notes. I agree. we started this show really, I guess on the premise that, Everything had changed and we were looking at intrinsic design and we were looking at how we had to give up the idea that we would be setting our designs to some fixed width or something. It had to be squishy.</p>
+<p>And I think this is, on a similar vein, we now have to give up the idea that perhaps we’re choosing the colors that everybody’s gonna get or even the interactions, So I think, we’re having to get a little bit more abstract all the time, or a little bit more removed away from traditional, print design all</p>
+<p>[00:02:19] <strong>Nathan Wrigley:</strong> the time.</p>
+<p>Yeah. I guess SAS apps and things like that have had bits of this for a while, haven’t they? you’ve been able to tweak the way that, so for example, Facebook looks in certain ways and what have you. but it’s coming under the banner of user preferences and the idea being that anybody can decide a whole bunch of different things, and it’s not just.</p>
+<p>the light and dark mode, although that was covered in the previous episode nine. By the way, if you want to follow the show notes for this, our website is no script show and then you just append the number of the episode after the forward slash So this will be, episode 10, so it’s no script show, slash 10, and you can see that on the screen right now.</p>
+<p>So shall we begin with these new CSS media features then? Yes, we’ve got six of ’em</p>
+<p>[00:03:08] <strong>David Waumsley:</strong> and we’ve listed them here. And the first one we know about because that’s what we’ve just been talking about, which is prefers color scheme, where we can set things to dark or light mode so we can do a separate design for dark and light with this, and perhaps in the future, certainly in the spec for no preference at all.</p>
+<p>So we could have three alternatives. Plus what we regularly will theme, So we’ve got that.</p>
+<p>[00:03:36] <strong>Nathan Wrigley:</strong> We’ve got, can I just pause you there just for one moment? So I can see that we’ve got a link here, which is, we’ll probably click on in a minute, but you’ve got this supported in 2020 and that comes from, can I use, and then what’s this, 96% that’s next to it.</p>
+<p>it seems like quite a high. Yeah. Sorry.</p>
+<p>[00:03:53] <strong>David Waumsley:</strong> Yeah, for those, yeah. So this is, can I use, has given us the percentage rounded up. I haven’t put the dots. Something, as it presently stands where we’re in April, 2024. so that’s, the browsers who. supporting these different features. So yeah, 96% and of course it’s higher with, can I use, if we look just at the UK or us with that, and I’ve put supported since 2020 because that’s when all the core browsers we were talking about, baseline before, and it, would it meet all of those core browsers there.</p>
+<p>the next one, shall we just, we will list them all out, shall we? One is, yeah. Let’s list them out and then explore. Yeah. Is preferred reduced motion where we can decide whether we are going to include some of the animations that we might put into, whether we just make animations, something that.</p>
+<p>Only those people who are specifically not set a preference for. I think, again, this is pretty similar statistics on this one. So it’s again, at 96% been supported in the core browser since 2020. And we have forced colors, which I oddly I didn’t even know about this one. Nope. And no, and this again, it’s been out for the same length of time.</p>
+<p>It has the same can I use and. It appears to be used quite a lot, but it’s, referring to, or at least the MDN records gives us something. An example of it might be Windows High Contrast Mode, where if somebody set that up, then we might need to have some other styling. So for example. And it’s the one that they use.</p>
+<p>it will make all the drop shadows, the subtle drop shadows evaporate. So if we wanted to section out an area, we might need to put a clear border around it for those people who have chosen to have a, false color with a theme,</p>
+<p>[00:05:53] <strong>Nathan Wrigley:</strong> I. And is this something that’s, ’cause I noticed you’ve got a little asterisk next to that one, which then is highlighted, be below.</p>
+<p>You gave an example of Windows, high contrast Mode. Now I’m not familiar with that because I have a Mac. is that some sort of setting that you set up in Windows to say, I, for the eyesight that I’ve got, I would prefer everything to be really of, a high contrast across the whole os.</p>
+<p>So it’s not just in the browser, it’s on everything that Windows shows you.</p>
+<p>[00:06:23] <strong>David Waumsley:</strong> Do you know what, this is where I’m a bit under prepared with this one. Okay. Because I do know there are some themes that you can put on, ’cause I, played around with those and there’s a really kind of high contrast theme I think in there as I understand it, that you could just pick, there are other ones, so you could just overwrite basic colors.</p>
+<p>So I think it is that, okay, that’s okay. It’s one to explore. It’s okay. Yeah. There’s things, for us to learn as well. Okay. Okay. And there’s also prefers contrast as well, which may be a separate setting on, that one. So, we’ve got the, oh, sorry, I’ve skipped over one here. I’m looking at other notes.</p>
+<p>So we’ve got force colors, which is asterisk, which is the one where that could apply when someone set up a theme that would make sense and prefers contrast, which I believe is a setting that you might choose. To go across all boards, without a theme if you like. Okay. So I think that’s the separation between those two.</p>
+<p>And they, sorry, can I just</p>
+<p>[00:07:21] <strong>Nathan Wrigley:</strong> drill down into that? So forced colors is, where you, are enforcing a predetermined set of colors that, that, you want to be there and prefers contrast is a bit more ephemeral. It’s a bit, okay. we want high contrast, but we’re not specifying the color palette.</p>
+<p>[00:07:40] <strong>David Waumsley:</strong> Yeah. Okay. I think that’s the case. Yeah. We should have been a bit more prepared with this one, but I do know there’s themes in windows where you could force those kind of colors, and I think the height prefers contrast is just a setting that you might just generally want in the same way that you have setting that increases your font size across, The board uhhuh. and then we’ve got re prefers reduced transparency. Oh, I didn’t cover the contrast. That’s at, 97%. Yeah. And again, this is supported a bit later. That’s 2022 prefers reduced transparency. It’s still experimental. But, it’s only not supported in Firefox and Safari as we’re talking about this, so it’s still got a 68%.</p>
+<p>Can I use? you can, people are still using that. And what that is totally experimental is the last one, which is prefers reduced data. And that’s only available behind a flag, I think in Chrome. Okay. Or edge. Edge and, odd, oddly opera, which isn’t counted as one of the core. So they’ve all got it ready to go behind a flag.</p>
+<p>But yes, the reduced data is. A way of us being able to say someone slicks that as their preference. Then how we might honor that might be by. Not loading some custom fonts, being able to just use, say, fonts instead. So if they’ve chosen that we, don’t load that or we don’t load some big images or video or something like that, or serve something as an alternative to that.</p>
+<p>So</p>
+<p>[00:09:20] <strong>Nathan Wrigley:</strong> shall we just very quickly dip into each of these links one at a time and just read the top paragraph? ’cause it might even educate us. Yeah, sure. Bits that we missed, okay. So we’re gonna go for the first one, which is prefer. Prefers color scheme, and we’re gonna end up on the M-D-M-M-D-N web docs.</p>
+<p>And it says here, the prefers color scheme CSS media feature is used to detect if a user has requested light or dark color theme. So it’s binary, on or off. A user indicates their preference through an operating system setting. EG light and dark mode. I don’t know if you have ever implemented this, but I’ve got dark mode set across the board on every device that I own.</p>
+<p>This is a fairly recent development for me, and it’s largely born out of my lack of battery life on a phone. That was the first thing that Dr. Drove it and I realized that I was saving. Battery by having the black screen instead of the light screen, ’cause you’re not like illuminating the pixels. And it made a real difference.</p>
+<p>But then I started to explore what it was like on the Mac, and then I started to hear all sorts of things about, the environmental impact because it’s using less battery power. Is there is an impact on that and it’s in, on my Mac. it works. Some things, are obviously not honoring it.</p>
+<p>We’ll probably see some things in a moment that don’t honor it, but on the whole, as you can see here, I don’t know if you’ve got yours switched off. This webpage to me looks like this. It’s black over where you are. Have you got this as black or as white? If you don’t have that switched on. Yeah,</p>
+<p>[00:10:53] <strong>David Waumsley:</strong> I have no preference set, so I get white and I get it.</p>
+<p>Also if I set it to light as well. So there is one thing in that, that it actually is not a complete spec because it does give us an option to put in some code that we’re going to have to start it for people who set it to dark, to set it specifically to light. but light and no preference tend to go together at the moment.</p>
+<p>But in the future, there may be spec four. it’s not supported in the browsers at the moment, but for no preference.</p>
+<p>[00:11:26] <strong>Nathan Wrigley:</strong> Yeah. Okay. alright. Okay, let’s go to the next one then. But that was, gave us a bit of an overview. So this is prefers reduced motion. I think you covered that probably. but it says here, the prefers reduced motion CSS media feature is used to detect if a user has enabled a setting on their device to minimize the amount of non-essential motion setting is used to convey to the browser on the device that the user prefers an interface that removes, reduces or replaces motion.</p>
+<p>Based animations, and I know that there are some people that I know who really suffer when they look at animations on websites that it actually causes something akin to, being on a fairground ride or something like that. You either get this real sense of nausea from it. I, do not have this at all.</p>
+<p>I could watch any amount of motion on a screen and it wouldn’t interfere with me at all. But I know that this really does make people feel quite unwell, which is. Which is interesting. anything to add to that?</p>
+<p>[00:12:27] <strong>David Waumsley:</strong> No, nothing but people can have it temporarily where they, often something with an ear infection can throw out people’s balance and they find it very difficult then to cope with anything that’s moving around on a page.</p>
+<p>I.</p>
+<p>[00:12:40] <strong>Nathan Wrigley:</strong> Yeah. But that’s a really interesting one that there’s, a medical aspect to that. Yeah. Which is you can very rarely say that about, web design, that they’re gonna have some impact on people’s actual, physical state. Okay. Forced colors. Let’s just run through these quickly. I. Forced colors, is used to detect if the user agent has enabled a forced colors mode where it enforces.</p>
+<p>So here we are a user chosen limited color palette on the page. An example of a forced colors mode is windows high contrast mode. Okay, shall I move on to the next one? Okay, just quickly nipping through these prefers contrast, is used to detect whether the user has requested the web content to be presented with a lower or higher contrast.</p>
+<p>So I’m a little bit unsure about what the actual difference with forced and prefers is. Yeah.</p>
+<p>[00:13:33] <strong>David Waumsley:</strong> Yeah. Yeah. Okay. I, think, I got it right. Just having a quick Google search here does look like on the contrast themes that you can have. So I think the force colors is because the force schemes will force their own color.</p>
+<p>Okay. On the, okay. and I think the high contrast is simply just a, generally boosting up your contrast across all sites, but generally it will deliver. Got it. Got it. The site as it is where the, themes, I think as I’ve only tested it out once and it was a very uncomfortable experience when I put it on one of their dark themes, I put it on, it was difficult to, for me to view some of the websites because,</p>
+<p>[00:14:09] <strong>Nathan Wrigley:</strong> okay.</p>
+<p>[00:14:10] <strong>David Waumsley:</strong> they did, we’ve gone for subtlety a lot more these days. We have these kind of drop shadows to mark out little areas and we think that’s really wonderful, but they just obliterated. As soon as you go into one of these themes, you just, Yeah. You can’t tell what the area is.</p>
+<p>[00:14:23] <strong>Nathan Wrigley:</strong> Yeah. Yeah.</p>
+<p>okay. So that’s, highlighted that. So we know that one is a bit more profound than the other, let’s put it that way. Okay. prefers reduced transparency, is used to detect if a user has enabled a setting on their device to reduce. The transparent or translucent layer effects used on the device.</p>
+<p>Switching on such a setting can help improve contrast and readability for some users. Okay. Anything to add to that, or shall I go on?</p>
+<p>[00:14:49] <strong>David Waumsley:</strong> No, nothing. We do use a lot of opacity on things, and again, it’s this sort of subtlety, which, you know. Some people just can’t see it, can they? So they want that reduced.</p>
+<p>Yeah.</p>
+<p>[00:14:59] <strong>Nathan Wrigley:</strong> yep. And then this one, which is prefers reduced data, is used to detect if a user requested that web content consumes less internet traffic. And obviously the links you’ll be able to find on the show notes and, really we’ve just. Literally scratch the surface because each of these pages will give you information not only about where it’s supported, but how to implement it along with code snippets and, what have you.</p>
+<p>So there they are on no script show slash 10. Okay. So should we move on from there or do you want to explore that more? Yeah.</p>
+<p>[00:15:33] <strong>David Waumsley:</strong> There’s, some extra statistics that, let’s talk about the statistics. ’cause there isn’t much available If we want to know about a user’s behavior, as far as I know, I’d love it if somebody told me otherwise.</p>
+<p>But we can, and we’ve listed out the, Google’s own data, which is, what is browser is finding are features that have been included on the pages that they crawled.</p>
+<p>[00:15:57] <strong>Nathan Wrigley:</strong> Okay, so are you basically saying that the number that we’re showing on the screen, so this one for example, is showing 32%. They’re saying that on 32% of the websites that they’re crawling, they’ve detected this.</p>
+<p>Somebody has implemented, gosh. 32% that. Wow. Okay.</p>
+<p>[00:16:14] <strong>David Waumsley:</strong> I know. And it doesn’t, really surprise me actually now because I’ve just become aware after a long time of not that dark is quite popular. More than I thought. But actually the next one, so our forced colors, which is, if we’ve got it right, is all about people who are choosing a theme.</p>
+<p>It seems that people are. According to Crows, if we’ve understood it correctly, the 27% of people, so 27%</p>
+<p>[00:16:43] <strong>Nathan Wrigley:</strong> percent of</p>
+<p>[00:16:44] <strong>David Waumsley:</strong> websites</p>
+<p>[00:16:44] <strong>Nathan Wrigley:</strong> or pages, right? So 20% of shipped websites, things that you can go and browse on the internet, have the capability to force. You can. You can. Yeah. Or, to they honor it.</p>
+<p>[00:16:58] <strong>David Waumsley:</strong> You know they’re going to,</p>
+<p>[00:16:59] <strong>Nathan Wrigley:</strong> yeah. That’s a better way of saying it. Yeah. Nice. Wow, that’s actually staggering. Yeah. I would’ve thought that number would’ve been in the low single digits. Yeah. but that just shows essentially what a, bad web, a bad website designer I am, these things have gotten lost.</p>
+<p>and yet there they are. 27% of websites have been shipped with this so that it can be honored. Sorry, of inter, so anyway, I should say preferred color scheme, dark setting. That was 32% forced colors, 27%. You carry on down the list if you like.</p>
+<p>[00:17:34] <strong>David Waumsley:</strong> Yeah. and the next one is preferred contrast coming in at 14% or 14% of pages that they crawl.</p>
+<p>Have some code in there that is honoring that. contrast preference, reduced motion. Now we drop down quite a lot to, 0.5%. For that, and that’s rounding up on that one. So that isn’t being used much ’cause it’s newer and not so well supported, Prefers reduced transparency. We’ve got 0.4% and finally we’ve got nothing for prefers reduced data because it’s experimental and it’s only behind flags.</p>
+<p>So</p>
+<p>[00:18:15] <strong>Nathan Wrigley:</strong> I love what you’ve written there. Prefers reduced data. No data. that’s ideal. That’s the way it should be. but okay. That shows a precipitous drop. So the, color, the col, the bits and pieces with the coloring of the website, the dark, the light. The force color, the prefers contrast.</p>
+<p>That’s, been taken up. that is started to ship and is now, it’s getting to be in the sort of high 30, sorry, the, low thirties in some cases, but the motion ones. The transparency one. In this case real. This is new. Nobody’s going for that yet, but we know at least that it’s available in most of the browsers so it could start to become an important topic in the near future.</p>
+<p>[00:19:00] <strong>David Waumsley:</strong> Yeah, I’m surprised the reduced motion isn’t supported so much because it’s been around for quite a while in terms of the call support and in my circles, it seems to be talked about quite a lot about using animation and an awareness generally of accessibility and wanting to, not give people problems.</p>
+<p>So I’m surprised that’s a low. I hope we’re interpreting these figures, but there’s not much on it from the users. Point of view, knowing user’s behavior. The, we’ve only got, if you like, what fellow developers are putting into their code as some indication about what’s growing and,</p>
+<p>[00:19:33] <strong>Nathan Wrigley:</strong> but I guess the motion one.</p>
+<p>I’m trying to think of my recent browsing history, and I am really struggling to think of something that I’ve looked at in the last week where there was any animation at all. Ah, the majority of where I end up, so it’s newspapers, it’s web design, tutorials, things like that. There isn’t anything in that I can think of as animation, so I just wonder if.</p>
+<p>The message about let’s, should we just not bother with animation? Because is it really needed? I wonder if that message is coming across and so people are just not implementing it because there’s not a lot to implement. There’s not a lot to switch on or switch off ’cause they’ve foregone the option to have animation.</p>
+<p>I don’t know. I’m pure guesswork. Yeah, it’s a really good point because</p>
+<p>[00:20:18] <strong>David Waumsley:</strong> I think people are more conscious about adding it, but I thought it might be included. even on. Our site. There’s a bit of animation. In fact, if you would go to the, there’s a little back to the top scroll button, and if you click on it, it animates, scrolls up.</p>
+<p>You can, in fact, you could probably do it if you scroll down on there. Scroll down to the bottom. to the bottom, just right there. Click that. Yeah. Yeah. And that’s, there it is. scrolling up with some animation. Now actually, if you had your preference set, it wouldn’t do that because I actually have included the code already.</p>
+<p>To, if it’s, only there, if there’s no preference, if you said that you don’t want motion, it’ll go so to the top. Straight to the top, right? So I imagine even if you are right, which I think is interesting, that’s probably coming into play as well. But I think simple things like that are often built into a lot of sites, and I would suspect it’s one of those things where you would want to use this.</p>
+<p>To get rid of that for those people. Yeah. Specifically don’t want any animation, but, yeah.</p>
+<p>[00:21:19] <strong>Nathan Wrigley:</strong> can I just ask you, because I know that you are implementing some of these bits and pieces, and it might be curious for the, listener or the, the viewer depending on where you come in. so how, are you actually implementing that?</p>
+<p>So you mentioned that you put in the code for the, let’s say, reduced motion. Yeah. what does that look like? Where does it sit? How complicated is that to implement? And also how does the user actually set it? How do you, as a user of webpages, how do you say, I want no motion, please. How do you,</p>
+<p>[00:21:49] <strong>David Waumsley:</strong> this is the thing.</p>
+<p>You have to put that in your. I don’t know if it’s in the browser settings. I think this has to be in your device for this. It is just showing how little we are prepared for this. in terms of me being able to implement it, it’s very easy. I just need to put that in this particular media query. In fact, now you put me on the spot ’cause I’m just quickly trying to search now for my code on that.</p>
+<p>No, it’s okay. We can</p>
+<p>[00:22:14] <strong>Nathan Wrigley:</strong> probably go to the, oh look, isn’t that interesting? The MDN pages, which we showed a moment ago, respected my dark mode, but the Chrome platform status page, which we just clicked on, has not, it’s decided to show me it, in white. So yeah. Okay. That’s, that’s interesting. Sorry, I was buying you a bit of time there, David.</p>
+<p>[00:22:34] <strong>David Waumsley:</strong> Yeah, it’s no good ’cause I still haven’t found it in my code, but it was a very simple thing to just wrap that in. basically I think I put it in a media query that was saying, has no preference, then put the scroll animation in there. and that’s, it’s as simple as that, but that’s fine.</p>
+<p>[00:22:51] <strong>Nathan Wrigley:</strong> Yeah, the purpose of today wasn’t to explain how to do it, it was more to illustrate the fact that these things are, available and, yeah, become more important in the future.</p>
+<p>however, they are, discovered by the user browsing the website. Do you wanna go on to, the bit at the bottom about more dark mode, or have you got more to say on that?</p>
+<p>[00:23:08] <strong>David Waumsley:</strong> Yeah. Yeah, no, I, think that’s it. I think I was right with, it’s a device only rather than a browser that you can set for no motion.</p>
+<p>But I could be wrong on that. Maybe browsers will start introducing that. yeah, there is some extra information ’cause that’s all we could really find about users’ behavior rather developers. And we’ve got a couple of quotes and I dunno how reliable they are, but you can go and check ’em out for yourself.</p>
+<p>So we’ve got earth, web. Who are saying, maybe you can read that out there. Yeah, so Earth</p>
+<p>[00:23:39] <strong>Nathan Wrigley:</strong> Web, the, website there, a quote that David’s found is, 81.9%, they call it 82% of smartphone users use dark mode. And that 65%, 64.6 expects expect websites to apply dark mode automatically. That figure. Seems so far skewed to that side with the experience that I have in my life.</p>
+<p>Yes. so I’m not gonna contest whether it’s valid or not. I’m sure that they’ve done the, polling and the research, but if I was to tell you about the people that I’ve interacted with over the last week or month. Almost nobody on their mobile device that I know has, even an inclination of what dark mode or light mode is.</p>
+<p>and everything is just in the default that the, the device ships with. but I know for my part, I have implemented that. So I am in that 65% there. but they seem surprisingly high to me. Yeah, and I’ve</p>
+<p>[00:24:44] <strong>David Waumsley:</strong> seen another, about specifically looking to people like us, people who build sites or developers, and that kind of, then it’s really high eighties, maybe even reaching nineties that I’ve seen of people who prefer dark mode, which of course is something that if you work is something like VS code to do the actual coding, you’re gonna get a default.</p>
+<p>And I, I don’t know anybody who codes these days in. a light mode. But, so yeah, it is a surprising statistic. the only, I’ve only got one other site which went out last year where I’ve implemented dark mode and I thought we’re moving towards this. I keep hearing more and more about this.</p>
+<p>And, I’ve got all I’ve got to go on as the statistics from that is my own observations by looking at Microsoft’s clarity. Where does screen recordings? Yeah. So that’s the only thing. And I have looked through, hundreds of these screen recordings over the time and my. Estimate would be somewhere over 10% have come in and, but probably still under 20% have come in on dark mode.</p>
+<p>I, to this point, I, there’s a toggle to this point. I haven’t seen anyone swap. Use that to swap their preference. Interesting enough. Interesting. But the, but that’s much lower than what you would hear. there’s various statistics on this about promoting dark mode, which are always high, but it’s, that’s quite low.</p>
+<p>But when I think about it, that would be expected because this website we know is for. middle-aged people plus who are in the UK and primarily coming in on desktops. yeah. Yeah. So I think it’s skewed to the lower end naturally, if our, an anecdotal evidence is that it’s a big trending thing, I think amongst people, younger people.</p>
+<p>Oh, from the mobiles. Okay. So</p>
+<p>[00:26:41] <strong>Nathan Wrigley:</strong> yeah, that’s an interesting point. So the demographics, the age, demographics in particular might be playing a part. Also, I, we were talking before we hit record, there isn’t really a, apart from doing it in the os, so on Mac, os, windows or Android or iOS, where you can set this up and you hope that the, the browser inherits that there isn’t really yet a.</p>
+<p>A universal way of doing this within a website. There, there’s this kind of toggle thing, which I’m seeing more. So top right there’s a little slider, essentially it’s a little toggle button that goes right, yeah. Or left. And it’s got a picture symbol of a moon, symbol of a sun. And you switch it on and off, but that’s not everywhere.</p>
+<p>And on some, even some big websites, even governmental websites, you don’t see it. So there isn’t yet this thing. Sometimes it’s buried in the footer. There’s no universal way of doing it. And actually I do wonder how reluctant people would, let’s say we set on the toggle in the top right. I do wonder how willing web developers will be and companies will be to give up that much real estate in the most important bit of the website.</p>
+<p>For that toggle, because that’s where your, I don’t know, your contact us button goes or maybe your logo or something like that. So anyway, time will tell. Yeah,</p>
+<p>[00:27:57] <strong>David Waumsley:</strong> I’ll just quickly cover this other from Helpful Tech. They say after 10:00 PM about 82.7, percent of users put their phone into dark mode.</p>
+<p>and I think that’s interesting because, my only real experience with. Technology that kind of automatically does that is sat navs. they, yeah, they tend to do that. And, I think, yeah, that’s probably very likely. I, you touched on something which I covered in my short video, before that, and we were, we’ve been talking about this on, I guess we should bring it in.</p>
+<p>there is, As I was trying to implement our light and dark mode for the, redesign of the site, I decided that we must have a toggle because it’s okay honoring those preferences that are set in someone’s device or their browser, but they may not always want it, and if they have got it set, they might not like the dark mode.</p>
+<p>You’ve given someone right, right on your site, and they may at different points in the day. Or different types of content want to swap. So we end up with the toggle and suddenly we have a dilemma because something which we could do with CSS, honor those people’s preferences if we want to toggle them. It, you’re gonna have to do that on a page by page basis to make the CSS that we’ve been given work. And that’s a terrible experience. So we then end up using JavaScript to store site-wide disc, preference that you’ve set, so you can turn it off and know it’s there and have the control. So we get into this and then this becomes an argument.</p>
+<p>By a Google employee called Bramos Van Dam. It’s not in the notes here, but he has put forward a little test of a. A button that you can have in the browser. He’s been making the argument for a couple of years that this should be, the toggle button, should be a feature on a side by side basis that should be in your browser rather than every website having to reinvent the wheel, put this extra code in,</p>
+<p>[00:30:00] <strong>Nathan Wrigley:</strong> so the something equivalent.</p>
+<p>So if you look on my. screen here. I’ve obviously got A load of chrome extensions here. But to the right of them are, these are browser based things. They look like extensions, but they’re actually coming from the browser. So it’s, toggling on and off the, sidebar and things like that.</p>
+<p>His suggestion is something like this, right? That you would have a, button maybe up here in the browser and you’d click it. Click it again, on off. Dark mode, like mode, dark mode like mode. And the browser would take on the responsibility of remembering that on the no script show website you want dark.</p>
+<p>So when you come back you’re just good to go. And that feels nice as well because that could ship, that’s one of the settings that could sync between devices. So if you’ve got Brave, I’m using Brave. if you’re using Brave on a mobile phone and another computer. It would sync that data and be able to transfer it so that your experience is the same wherever you go.</p>
+<p>That seems like the right way of doing it. Yeah.</p>
+<p>[00:31:01] <strong>David Waumsley:</strong> Yeah. And also, since finding that, I also discovered, and this is some time back, but there is an article in its link below on our other links on the show’s website, but Safari a couple of years back 2022, there was talk coming out that they were considering putting this very thing into Safari browsers.</p>
+<p>So I do think it does seem logical that they will provide this choice. It. Following the people I follow now, a lot of people have implemented light and dark modes and realized on their own designs that just leaving it to a browser or device setting isn’t enough. You need to be able to give people a toggle, and as soon as you get the toggles, you get that extra code.</p>
+<p>You also get another issue with some, logos, and I’ll talk about this in a short video because suddenly you want a light and a dark mode. and you maybe have to serve up again with JavaScript, that, or do it with a background image. But with an SVG, you can include the prefers. Color scheme and you can change your SVG to respond.</p>
+<p>Yeah. So it’d be wonderful if we can just get it down to HTML and CSS being able to, and let the browsers do the toggle for us all.</p>
+<p>[00:32:13] <strong>Nathan Wrigley:</strong> Yeah. Yeah. I guess one of the things is that, so I’m just gonna scroll back up the page. So just in, in this show, we’ve covered, color schemes, reduce motion force colors, contrast transparency data, that’s quite a lot of toggles.</p>
+<p>if that were to be on the website, the whole of. Discuss a whole area of toggles that you’ve gotta toggle on and off, make decisions. And if you just set that up in the browser, you know the, maybe the first time you install it, that’s part of the onboarding experience. do you typically like large light or dark?</p>
+<p>Do you typically want reduced motion, et cetera? Then that being handled by the browser, in every case, in every single one of those feels like the right way. To begin that journey?</p>
+<p>[00:32:57] <strong>David Waumsley:</strong> yeah. I wonder, the light and dark one is because I think it’s come up. all of these things you should be able to find in your device or your browser anyway, the ones that are listed, of course, it’s now with the light and dark on a site by site basis that you decide to, so I, think if you went for no data, you wouldn’t decide that you wanted that on a site by site basis.</p>
+<p>Yeah. and the same as contrast. So I think it’s the light and dark mode that stands out as something different where, our behavior dictates that actually we want to be able to choose. yeah. But on a side by side basis, where the others, I’m not sure, I think they could be set in the, I. In your settings then be good.</p>
+<p>yeah. if you do have an issue with motion, then you’ll, want all of your websites. You probably want that</p>
+<p>[00:33:44] <strong>Nathan Wrigley:</strong> everywhere. Yeah, exactly. I think that was what I was trying to say. I probably didn’t communicate it very well, but, yeah. Okay, so we’re on the 38 minute mark.</p>
+<p>Shall we just wrap up with these pros and cons? Do you wanna go through that of what it means for people working. Building website. Yeah,</p>
+<p>[00:33:58] <strong>David Waumsley:</strong> exactly. There was just maybe, I think we’re both agreed on this one, but what we might get, I think it’s worth trying to implement some of these things, but what we might get is the client’s resistance on the con side here of doing anything that’s not visually on brand.</p>
+<p>[00:34:14] <strong>Nathan Wrigley:</strong> Yep.</p>
+<p>[00:34:14] <strong>David Waumsley:</strong> Yep. that we might be some cost, versus relative returns on implementation if we all have to do and concerns about this is tech in its infancy, which I think when we’re having this debate about the, whether we should be having a switch in our browsers to switch from dark and light mode, I think it shows us how we are in an infancy with that one.</p>
+<p>And as we were showing in, there’s a lack of data about our actual. Users are behaving. But I think the counter to that, is the thing that I’ve put on the pro, which would be responded to a user’s preferences, would probably allow us to control the branding better, because if users are going to increasingly override it with themes that they get from their browsers because they get used to that.</p>
+<p>Or they’re just setting things up, then you lose your control over your branding anyway. You might think it’s fine ’cause it works on yours. So I think it’s a way of doing that. I think when it comes to. the cost of these things. I think it probably as a lot of these fall under accessibility in some form or another, then implementation early on is probably going to save extra cost later.</p>
+<p>Retro fitting is more expensive than just doing it at the start. Always. Yeah. Yeah, exactly. And I think that’s it. And I think in some ways we, can already see, we didn’t actually look at. Did we look at any of those growing statistics? It does look like everything’s on the growth. We’re moving to a more, user preference based.</p>
+<p>web, I think.</p>
+<p>[00:35:46] <strong>Nathan Wrigley:</strong> Yeah. Some of the links that we have on this page link to the Chrome documentation and their polling, as we said, the pages, yeah. The graphs are always, inexorably rising up. They don’t seem to be going down. So this is a trend without a doubt. Yeah. Sorry, interruption. Yeah.</p>
+<p>[00:36:02] <strong>David Waumsley:</strong> No, and I think there’s more people these days who will know about things that are already.</p>
+<p>Most of the browsers are reading mode where you can just wipe out all of the design anyway. So I think people are, getting smarter and I, it does to me, I dunno about you. It feels like with a lot of things we are moving away from, I. How we used to look at the web, particularly, people who paid us to design websites were because they were marking out their space in this new area to do their marketing and print was what everybody knew.</p>
+<p>Where I think where this moves us a little bit back to the fact that, the web is still, this kind of information sharing platform. Yeah. And we need to provide whatever we are selling within that framework and be part of the general web so we can give. Use us, the experience we have to fit in, if you like, with yeah.</p>
+<p>The, direction. So I think, yeah, there’s, a big change. that’s it really. there was so much more we could have talked about in this one. I think there’s a bigger debate about the light and dark mode, but, I. I think we, this is probably, we talk long enough.</p>
+<p>[00:37:09] <strong>Nathan Wrigley:</strong> we’ve certainly supplied information.</p>
+<p>it is pretty clear that there’s a lot that we really don’t know. but it is cutting edge. But I think what we can definitely take out of this is that this is here, it’s available, people are beginning to use it, and in some cases are using it. Not quite as a, majority, but it’s fast approaching a majority.</p>
+<p>And, and so yeah, go and look at the show notes. Like I said, no script show slash 10 for the 10th episode. You can find all of the links there and go and explore for yourself and start having that conversation with your clients. Are we done? Yeah, we’re done. Yeah. Okay. In which case I’ll say I’ll see you on episode 11.</p>
+<p>Thanks David. Yeah, thank you. Bye-Bye bye-Bye.</p>
+</details>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/9/">Does Baseline solve our browser support problems?</a></li><li class="links-nextprev-next">Next →<br><a href="/11/">What’s new in web images. Are they worth a thousand words?</a></li>
+</ul>
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<small><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a></em>
+			| <a href="/feed/feed.xml">RSS Feed</a></small>
+		</footer>
+
+		<!-- This page `/10/` was built on 2025-01-31T09:52:20.294Z -->
+		<script type="module" src="/dist/d9JSaiKaDS.js"></script>		
+	</body>
+</html>

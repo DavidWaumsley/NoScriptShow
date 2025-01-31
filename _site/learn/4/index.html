@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en-gb">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Creating links that are not too hyper!. No Script Show</title>
+		<meta name="description" content="Looking at links gaffs, aria labels, when to use target=&quot;_blank&quot; and underlining links with CSS.">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="No Script Show">
+		
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://noscript.show/learn/4/">
+<meta property="og:title" content="No Script Show Creating links that are not too hyper!">
+<meta property="og:description" content="Looking at links gaffs, aria labels, when to use target=&quot;_blank&quot; and underlining links with CSS.">
+<meta property="og:image" content="https://i.ytimg.com/vi_webp/AQAw17sNO6c/maxresdefault.webp">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://noscript.show/learn/4/">
+<meta property="twitter:title" content="No Script Show Creating links that are not too hyper!">
+<meta property="twitter:description" content="Looking at links gaffs, aria labels, when to use target=&quot;_blank&quot; and underlining links with CSS.">
+<meta property="twitter:image" content="https://i.ytimg.com/vi_webp/AQAw17sNO6c/maxresdefault.webp">
+		
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
+/* Defaults */
+:root {
+	--font-family: -apple-system, system-ui, sans-serif;
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--color-gray-20: #e0e0e0;
+	--color-gray-50: #C0C0C0;
+	--color-gray-90: #333;
+
+	--background-color: #fff;
+
+	--text-color: var(--color-gray-90);
+	--text-color-link: #082840;
+	--text-color-link-active: #5f2b48;
+	--text-color-link-visited: #17050F;
+
+	--syntax-tab-size: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-gray-20: #e0e0e0;
+		--color-gray-50: #C0C0C0;
+		--color-gray-90: #dad8d8;
+
+		/* --text-color is assigned to --color-gray-_ above */
+		--text-color-link: #1493fb;
+		--text-color-link-active: #6969f7;
+		--text-color-link-visited: #a6a6f8;
+
+		--background-color: #15202b;
+	}
+}
+
+
+/* Global stylesheet */
+* {
+	box-sizing: border-box;
+}
+
+@view-transition {
+	navigation: auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	font-size: 125%;
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	max-width: 40em;
+}
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
+img{
+  max-width: 100%;
+}
+img[width][height] {
+  height: auto;
+}
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+video,
+iframe {
+	max-width: 100%;
+	height: auto;
+	aspect-ratio: 16/9;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.5;
+}
+
+li {
+	line-height: 1.5;
+}
+
+a[href] {
+	color: var(--text-color-link);
+}
+a[href]:visited {
+	color: var(--text-color-link-visited);
+}
+a[href]:hover,
+a[href]:active {
+	color: var(--text-color-link-active);
+}
+
+main,
+footer {
+	padding: 1rem;
+}
+main :first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px dashed var(--color-gray-20);
+}
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.links-nextprev {
+	display: flex;
+	justify-content: space-between;
+	gap: .5em 1em;
+	list-style: "";
+	border-top: 1px dashed var(--color-gray-20);
+	padding: 1em 0;
+}
+.links-nextprev > * {
+	flex-grow: 1;
+}
+.links-nextprev-next {
+	text-align: right;
+}
+
+table {
+	margin: 1em 0;
+}
+table td,
+table th {
+	padding-right: 1em;
+}
+
+pre,
+code {
+	font-family: var(--font-family-monospace);
+}
+pre:not([class*="language-"]) {
+	margin: .5em 0;
+	line-height: 1.375; /* 22px /16 */
+	-moz-tab-size: var(--syntax-tab-size);
+	-o-tab-size: var(--syntax-tab-size);
+	tab-size: var(--syntax-tab-size);
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	overflow-x: auto;
+}
+code {
+	word-break: break-all;
+}
+
+/* Header */
+header {
+	display: flex;
+	gap: 1em .5em;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 1em;
+}
+.home-link {
+	font-size: 1em; /* 16px /16 */
+	font-weight: 700;
+	margin-right: 2em;
+}
+.home-link:link:not(:hover) {
+	text-decoration: none;
+}
+
+/* Nav */
+.nav {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.nav-item {
+	display: inline-block;
+	margin-right: 1em;
+}
+.nav-item a[href]:not(:hover) {
+	text-decoration: none;
+}
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/* Posts list */
+.postlist {
+	list-style: none;
+	padding: 0;
+	padding-left: 1.5rem;
+}
+.postlist-item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	counter-increment: start-from -1;
+	margin-bottom: 1em;
+}
+.postlist-item:before {
+	display: inline-block;
+	pointer-events: none;
+	content: "" counter(start-from, decimal-leading-zero) ". ";
+	line-height: 100%;
+	text-align: right;
+	margin-left: -1.5rem;
+}
+.postlist-date,
+.postlist-item:before {
+	font-size: 0.8125em; /* 13px /16 */
+	color: var(--color-gray-90);
+}
+.postlist-date {
+	word-spacing: -0.5px;
+}
+.postlist-link {
+	font-size: 1.1875em; /* 19px /16 */
+	font-weight: 700;
+	flex-basis: calc(100% - 1.5rem);
+	padding-left: .25em;
+	padding-right: .5em;
+	text-underline-position: from-font;
+	text-underline-offset: 0;
+	text-decoration-thickness: 1px;
+}
+.postlist-item-active .postlist-link {
+	font-weight: bold;
+}
+
+/* Tags */
+.post-tag {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.postlist-item > .post-tag {
+	align-self: center;
+}
+
+/* Tags list */
+.post-metadata {
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: .5em;
+	list-style: none;
+	padding: 0;
+	margin: 0 0 1rem 0;
+}
+.post-metadata time {
+	margin-right: 1em;
+}
+
+/* Youtube */
+lite-youtube {
+    background-color: #000;
+    position: relative;
+    display: block;
+    contain: content;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;   
+}
+
+/* gradient */
+lite-youtube::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    top: 0;
+    /* Pixel-perfect port of YT's gradient PNG, using https://github.com/bluesmoon/pngtocss plus optimizations */
+    background-image: linear-gradient(180deg, rgb(0 0 0 / 67%) 0%, rgb(0 0 0 / 54%) 14%, rgb(0 0 0 / 15%) 54%, rgb(0 0 0 / 5%) 72%, rgb(0 0 0 / 0%) 94%);
+    height: 99px;
+    width: 100%;
+    font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+    color: hsl(0deg 0% 93.33%);
+    text-shadow: 0 0 2px rgba(0,0,0,.5);
+    font-size: 18px;
+    padding: 25px 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+lite-youtube:hover::before {
+    color: white;
+}
+
+/* responsive iframe with a 16:9 aspect ratio
+    thanks https://css-tricks.com/responsive-iframes/
+*/
+lite-youtube::after {
+    content: "";
+    display: block;
+	aspect-ratio: 16 / 9 ;
+}
+lite-youtube > iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+/* play button */
+lite-youtube > .lyt-playbtn {
+    display: block;
+    /* Make the button element cover the whole area for a large hover/click target… */
+    width: 100%;
+    height: 100%;
+    /* …but visually it's still the same size */
+    background: no-repeat center/68px 48px;
+    /* YT's actual play button svg */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>');
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    filter: grayscale(100%);
+    transition: filter .1s cubic-bezier(0, 0, 0.2, 1);
+    border: 0;
+}
+
+lite-youtube:hover > .lyt-playbtn,
+lite-youtube .lyt-playbtn:focus {
+    filter: none;
+}
+
+/* Post-click styles */
+lite-youtube.lyt-activated {
+    cursor: unset;
+}
+lite-youtube.lyt-activated::before,
+lite-youtube.lyt-activated > .lyt-playbtn {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.lyt-visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }</style>
+		
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">No Script Show</a>
+			<nav>
+				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/episodes/">Episodes</a></li>
+					<li class="nav-item"><a href="/learn/">Learn</a></li>
+					<li class="nav-item"><a href="/blog/">Archive</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			<heading-anchors>
+				
+<h1 id="creating-links-that-are-not-too-hyper">Creating links that are not too hyper!</h1>
+
+
+
+<ul class="post-metadata">
+	<li><time datetime="2024-02-13">13 February 2024</time></li>
+	<li><a href="/tags/learn/" class="post-tag">learn</a></li>
+</ul>
+
+
+<lite-youtube videoid="AQAw17sNO6c" style="background-image: url('https://i.ytimg.com/vi_webp/AQAw17sNO6c/maxresdefault.webp');">
+  <a href="https://youtube.com/watch?v=AQAw17sNO6c" class="lyt-playbtn" title="Play Video">   
+  </a>
+</lite-youtube>
+
+
+<h2 id="notes">Notes</h2>
+<hr>
+<p>As hyperlinks make the web what it is, I thought I should talk a bit about how we have marked-up and styled our anchor tags on this initial version of the show's website.</p>
+<p>The premise of the podcast is that we are relearning the fundamentals of web design. What this has been showing us is that this process is only partly about learning new approaches and specifications.</p>
+<p>Much of it is about unlearning things that once seemed like cool design, but increasingly look more like ignorance and even contempt for web users.</p>
+<h3 id="lets-start-with-the-basic-html-markup">Let's start with the basic HTML markup</h3>
+<p>Getting an anchor link with the VSCode editor is really easy:</p>
+<ul>
+<li>We type &quot;a&quot; and enter on the first option that automatically appears. The cursor moves to where we want to add our url.</li>
+<li>If that url is for a local HTML file we only need to enter a forward slash to select from the available files.</li>
+<li>Then we only need to tab to where we can enter the text to be linked (just before the closing anchor tag)</li>
+</ul>
+<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> linked text here<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
+<p>For accessibility we should avoid vague link copy like &quot;Click Here&quot; and &quot;Read More&quot; which can be confusing when a screen reader reads them out of context. Of course, we can get around this by adding an aria-label for screen readers to announce:</p>
+<pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>read more about avoiding aria-labels<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> read more...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
+<p>An easier way might be to try (where possible) to design with non-sighted people in mind.</p>
+<p>It saves having to read the difference between aria-label and aria-labelledby and still doubting you got it right? That could just be me!</p>
+<p>Recently I programmed the &quot;read more&quot; links on a WordPress blog archive page to add an aria-label that included the blog post's title.</p>
+<p>It's a very common pattern, but often it seems pointless as the title is typically a link that has been styled to not look like a link and so require another for the sighted people.</p>
+<h3 id="using-target-blank">Using target &quot;_blank&quot;</h3>
+<p>In the VS Code editor we can select the 2nd anchor tag option (blank) and will get:</p>
+<pre class="language-html" tabindex="0"><code class="language-html"> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/<span class="token punctuation">"</span></span>  <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>_blank<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>noopener noreferrer<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> read more...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
+<p>This, of course, opens the link in a new browser tab and VS Code kindly adds rel=&quot;noopener noreferrer&quot;.</p>
+<p>It does this as target “_blank” opens up a security issue which these solve. There is no SEO implication with these.</p>
+<p>You may also notice that rel=&quot;nofollow” is not an option nor does it auto-complete in VSCode. I am quite thankful for this because I was an over user of nofollow.</p>
+<p>Many years back I bought into the idea that you could balance your inbound and outbound like ratio for better SEO results. I'm sure ratios matter, but if everyone can prevent search engines from following everyone else there is little point in having search or SEO</p>
+<p>From now on I'm using it to prevent passing link authority to sites that don't reflect the values of the site. My guess would be that with Google's new focus on <a href="https://developers.google.com/search/blog/2022/12/google-raters-guidelines-e-e-a-t">Experience, Expertise, Authoritativeness and Trustworthiness</a> linking to reputable sources might help.</p>
+<h3 id="when-should-we-use-target-blank">When should we use target &quot;_blank&quot;?</h3>
+<p>For most previous sites I've defaulted to using target&quot;_blank&quot; for external links. This is something which a <a href="https://css-tricks.com/use-target_blank/">2014 CSS tricks article</a> argues is a bad approach.</p>
+<p>I read this article when it was published and changed my approach, but like one of the article's commenters says I had it flagged by a client as a bug! Since this article I imagine even more people's use of social media where external links open a new tab.</p>
+<p>Interestingly when I switched to following people who blog on web standards who mostly don't use target&quot;_blank&quot;, I was thrown at first. That told me I had also developed this expectation.</p>
+<p>I believe the CSS tricks article is right. When you force target”_blank” you take away the user's ability to opt-in to that. This, of course, is assuming they know they can right click and choose to open links in a new tab or window.</p>
+<p>This site has one of the &quot;good reasons&quot; CSS tricks list for using target&quot;_blank&quot; This is that we have audio and video content which could be disrupted if the user clicks a link that does not open a new tab.</p>
+<p>Of course, that is not on every page. Initially to keep the site's behaviour consistent I made the external links on resources and subscribed page target&quot;_blank&quot;, but I have changed this to give (our type of) users the option. I would be interested in your thoughts.</p>
+<p>As most modern screen readers will declare what will happen, the concern is with sighted users. To help I have added a “link-out” icon with this CSS that selects every link with the target=&quot;_blank attribute:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">a [target="_blank"]:after</span> <span class="token punctuation">{</span> 
+<span class="token property">content</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>/images/link-out.svg<span class="token punctuation">)</span></span><span class="token punctuation">;</span>
+<span class="token property">margin-inline</span><span class="token punctuation">:</span> 0.2rem<span class="token punctuation">;</span>
+<span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--brand<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>    </code></pre>
+<p><a href="https://webaim.org/techniques/hypertext/hypertext_links#new_window">Webaim.org</a> suggests this, but also note that it does not necessarily tell users that a new tab will open.</p>
+<p>I can't possibly do this video without citing Heydon Pickering's powerful slide from a <a href="https://vimeo.com/377175838">talk at Paris Web</a>.</p>
+<h3 id="underline-your-f-cking-links-you-sociopaths">&quot;Underline your f*cking links, you sociopaths&quot;</h3>
+<p>This seems to have become a popular t-shirt slogan now.</p>
+<p>Without Custom CSS browser agent styles give us underlines on our links by default. It is a signifier that identifies this UI from other things as a way of navigating the web.</p>
+<p>Unfortunately designers come along and remove them without a full understanding of the impact. Particularly on the 300 million colour blind people of the world.</p>
+<p>I'm particularly guilty of this because I used a builder based Bootstrap 4 framework and unthinkingly went along with the default. They remove the links until the user hovers over them. This was changed with Bootstrap 5.</p>
+<p>In Heydon's talk he mentions how accessibility expert <a href="https://adrianroselli.com/">Adrian Roselli</a> was urging Mastodon to add underlined links. There was resistance as The CEO and lead developer did not want the <a href="https://github.com/mastodon/mastodon/pull/9898#issuecomment-456410756">&quot;visual clutter&quot;</a> (and being open source there were other subjective opinions). It seems they have added underlines now.</p>
+<h3 id="styling-underlines-with-css">Styling underlines with CSS</h3>
+<p>Of course aesthetics are also important and fortunately CSS keeps giving us more control over our underlines.</p>
+<p>We can independently colour, style and set the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration-thickness">thickness</a> of them. We can set them to skip ink ( i.e. leave space for font descenders)or not . My favourite is the new <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset">text-underline-offset</a></p>
+<p>For our site, I have used this reset taken this from a brilliant article by <a href="https://moderncss.dev/modern-css-for-dynamic-component-based-architecture/#css-reset-additions">Stephanie Eckles:</a></p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token comment">/* Baseline for default links */</span>
+<span class="token selector">a:not([class])</span> <span class="token punctuation">{</span>
+<span class="token property">text-decoration-thickness</span><span class="token punctuation">:</span> <span class="token function">max</span><span class="token punctuation">(</span>0.06rem<span class="token punctuation">,</span> 1px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token property">text-underline-offset</span><span class="token punctuation">:</span> 0.4rem<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>One difference on this site is that I set mine to rems (set by the root) where she uses ems relative to the element. We are using a lot of h2's as links and ems seemed too thick in this case.</p>
+<p>One last thing I like to do to is give links a subtle press down feel on click:</p>
+<pre class="language-css" tabindex="0"><code class="language-css"> <span class="token selector">a: active</span> <span class="token punctuation">{</span> 
+<span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+<span class="token property">inset-block-start</span><span class="token punctuation">:</span> 0.05rem<span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token comment">/* inset-block-start is the
+ modern way to write "top"  */</span>  
+</code></pre>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/learn/3/">Web safe or system fonts are cool again</a></li><li class="links-nextprev-next">Next →<br><a href="/learn/5/">Accessibility - Skip nav links &amp; :focus-visible</a></li>
+</ul>
+			</heading-anchors>
+		</main>
+
+		<footer>
+			<small><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.0.0</a></em>
+			| <a href="/feed/feed.xml">RSS Feed</a></small>
+		</footer>
+
+		<!-- This page `/learn/4/` was built on 2025-01-31T09:52:20.295Z -->
+		<script type="module" src="/dist/d9JSaiKaDS.js"></script>		
+	</body>
+</html>
