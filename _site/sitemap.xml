@@ -192,7 +192,7 @@
 	</url>
 	
 	<url>
-		<loc>https://noscript.show/feed.xml</loc>
+		<loc>https://noscript.show/feed/feed.xml</loc>
 		<lastmod>2025-02-02</lastmod>
 	</url>
 </urlset>
