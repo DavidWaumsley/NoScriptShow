@@ -5,11 +5,51 @@
   <subtitle>Building solid websites simply.</subtitle>
   <link href="https://noscript.show/feed.xml" rel="self" />
   <link href="https://noscript.show/" />
-  <updated>2025-01-09T00:00:00Z</updated>
+  <updated>2025-01-23T00:00:00Z</updated>
   <id>https://noscript.show/</id>
   <author>
     <name>David Waumsley</name>
   </author>
+  <entry>
+    <title>Long-term WordPress user tries building with 11ty (a Static Site Generator)</title>
+    <link href="https://noscript.show/build/5/" />
+    <updated>2025-01-23T00:00:00Z</updated>
+    <id>https://noscript.show/build/5/</id>
+    <content type="html">&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;As WordPress user we know how to build dynamic sites. We know next to nothing about Static Site Generators and the Jamstack. Here we rebuild a HTML site with 11ty (Eleventy). We also look at adding a CMS.&lt;/p&gt;
+&lt;h2 id=&quot;things-we-cover&quot;&gt;Things we cover&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;What we need to run 11ty (Node, Git and free hosting).&lt;/li&gt;
+&lt;li&gt;Starting 11ty from scratch (installing 11ty).&lt;/li&gt;
+&lt;li&gt;Creating our first page. Converting Markdown to HTML.&lt;/li&gt;
+&lt;li&gt;Creating a header and footer template for our site.&lt;/li&gt;
+&lt;li&gt;Introducing Front Matter (like WordPress custom fields).&lt;/li&gt;
+&lt;li&gt;Adding CSS and bundling with a Nunjucks template.&lt;/li&gt;
+&lt;li&gt;Bringing in other website assets with the Eleventy config file.&lt;/li&gt;
+&lt;li&gt;Making the site&#39;s head dynamic for SEO (doing the job of a WordPress SEO plugin).&lt;/li&gt;
+&lt;li&gt;Making HTML more manageable with partials.&lt;/li&gt;
+&lt;li&gt;Adjusting CSS classes with Front Matter.&lt;/li&gt;
+&lt;li&gt;Introducing data (like WordPress&#39;s database), but with a dynamic menu.&lt;/li&gt;
+&lt;li&gt;Adding events. Similar to working with WordPress&#39;s post loop.&lt;/li&gt;
+&lt;li&gt;Adding a CMS (Decap and locally the Front Matter CMS extension).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/@EleventyVideo/videos&quot;&gt;11ty YouTube&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://11tybundle.dev/&quot;&gt;11ty Bundle&lt;/a&gt;. A fabulous place for all the latest by Bob Monsour.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are years out of date, but with the help of 11ty docs and Claude AI I could covert to 11ty V3:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://learneleventyfromscratch.com/&quot;&gt;Learn Eleventy From Scratch&lt;/a&gt;. Andy Bell.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=4wD00RT6d-g&quot;&gt;Turn static HTML/CSS into a blog with CMS using the JAMStack&lt;/a&gt;. Kevin Powell.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <title>Static vs dynamic for content heavy websites</title>
     <link href="https://noscript.show/15/" />
@@ -1572,145 +1612,5 @@ There&#39;s lots in HTML and CSS that is probably under-used in typography.  Her
 &lt;p&gt;You’ll be able to, find the episode there forward slash subscribe. If you wanna subscribe. And if you wanna find us on YouTube, you probably have, already, but it’s youtube.com/at the at symbol. No script show and and subscribe. Smash that bell, whatever it is that successful YouTubers ask you to do, that.&lt;/p&gt;
 &lt;p&gt;Do a bunch of those things. I don’t know what they are, but, Okay. Are we done David? We are. Thanks. That was a good chat. Yeah. Perfect. Have a nice day. See you later. Yeah, you do. Bye-Bye bye.&lt;/p&gt;
 &lt;/details&gt;</content>
-  </entry>
-  <entry>
-    <title>Adding a light and dark mode with a toggle</title>
-    <link href="https://noscript.show/learn/9/" />
-    <updated>2024-04-21T00:00:00Z</updated>
-    <id>https://noscript.show/learn/9/</id>
-    <content type="html">&lt;p&gt;This is following on from podcast &lt;a href=&quot;https://noscript.show/8&quot;&gt;episode 8&lt;/a&gt; where Nathan and I finally started talking about designing the show&#39;s website.&lt;/p&gt;
-&lt;p&gt;In that episode I offered a rough homepage mock up and together we attempted to critically access it in the way various experts might.&lt;/p&gt;
-&lt;p&gt;Here I am looking at the light and dark mode toggle in that design. I&#39;ll share the code I&#39;m initially going to use and also talk about my concerns over present implementations of this feature.&lt;/p&gt;
-&lt;p&gt;Offering a dark mode toggle is trending right now, but we are including it because It is not entirely inconceivable that one day this might be considered a standard for most websites.&lt;/p&gt;
-&lt;p&gt;I say this because browser and (particularly mobile) device vendors have good reasons to want to offer a portable web experience that can respond to the environmental light, available battery life and what the user personally finds comfortable. These vendors have a powerful influence on the W3C working groups which recently has been giving us many new ways to work with a variety of user preferences.&lt;/p&gt;
-&lt;p&gt;I can cover this better with Nathan when we do our planned podcast episode on the user preferences we can, or soon will be able to, honour using CSS.&lt;/p&gt;
-&lt;h2 id=&quot;embracing-the-dark-side&quot;&gt;Embracing the dark side?&lt;/h2&gt;
-&lt;p&gt;The dark mode that&#39;s presently on the initial site was a whim. We wanted to start with only enough design to make our early content presentable and the dark aspect gave its stark appearance a little more interest with most sites being light.&lt;/p&gt;
-&lt;p&gt;Honouring a user&#39;s (system or browser) preference for dark or light is not technically difficult (at least with simple designs).&lt;/p&gt;
-&lt;p&gt;Since 2020, we can add to our CSS:&lt;/p&gt;
-&lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;:root&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;token property&quot;&gt;color-scheme&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; light dark&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Then if we create a HTML page the browsers own user agent styles will kick in.&lt;/p&gt;
-&lt;p&gt;If our device or browser is set to dark mode the browser will give us light text against a dark background and visa versus is set to light. It will also apply dark and light styling to the browser built in components as I previously used with the audio element.&lt;/p&gt;
-&lt;p&gt;Most will not want this as the styles colours added by browser are similar but not the same. I personally prefer Firefox&#39;s slightly lighter and blue tinged background to chrome&#39;s default.&lt;/p&gt;
-&lt;p&gt;To take control of our own light and dark colours we have the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme&quot;&gt;prefers-color-scheme&lt;/a&gt; media query. Baseline (which we talk about in &lt;a href=&quot;https://noscript.show/9&quot;&gt;episode 9&lt;/a&gt; of the podcast) classifies it as &amp;quot;widely available&amp;quot; across browsers. &lt;a href=&quot;https://caniuse.com/?search=prefers-color-scheme&quot;&gt;Can I use&lt;/a&gt; in April 2024 says it is96% supported globally (higher in the UK and USA).&lt;/p&gt;
-&lt;p&gt;Very soon things may get easier when the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark&quot;&gt;light-dark()&lt;/a&gt; function gets better browser support. With this you will be able write your CSS like this:&lt;/p&gt;
-&lt;p&gt;body {color: light-dark(color-1, color-2);
-background-color: light-dark (color-1, custom color-2);
-}&lt;/p&gt;
-&lt;p&gt;or assign them to custom properties&lt;/p&gt;
-&lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;:root&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
- &lt;span class=&quot;token property&quot;&gt;color-scheme&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; light dark&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token property&quot;&gt;--base&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;light-dark&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;hsl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;0&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 0%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 100%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hsl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;240&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 10%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 10%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token property&quot;&gt;--shade&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;light-dark&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;hsl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;0&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 0%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 100%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hsl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;240&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 10%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 10%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;the-dark-mode-toggle-dilemma&quot;&gt;The dark mode toggle dilemma&lt;/h2&gt;
-&lt;p&gt;Although initially some felt it was enough to let the user decide their preference via their browser or device settings I think most have come to realise that most users don&#39;t know there is this option and if they do they may not alway want it . The way to solve both issues is to offer a toggle switch on your site.&lt;/p&gt;
-&lt;p&gt;he good news is that thanks to the newly supported &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/:has&quot;&gt;:has()&lt;/a&gt; CSS relational pseudo-class we can create a toggle without needing JavaScript.&lt;/p&gt;
-&lt;p&gt;There is a &lt;a href=&quot;https://codepen.io/bramus/pen/oNOwqMW&quot;&gt;great demo of this&lt;/a&gt; by Bramus Van Damme. He works for Google and is definitely someone to follow.&lt;/p&gt;
-&lt;p&gt;His light dark switch works by using :has() to see if an HTML input has been checked. If so, it uses that associated CSS rule if not it uses the other.&lt;/p&gt;
-&lt;p&gt;The snag with using this as a light and dark toggle is that it only applies to the page you are on. I set up a demo and concluded the experience is worse that not having a toogle.&lt;/p&gt;
-&lt;h2 id=&quot;hello-js-my-old-friend&quot;&gt;Hello JS my old friend&lt;/h2&gt;
-&lt;p&gt;If we want the user&#39;s toggled preference to remain until they say otherwise we need javaScript to hold this request in the user&#39;s local storage in their browser.&lt;/p&gt;
-&lt;p&gt;This is what I&#39;m doing presently. The javaScript I used was prompted with Chat GPT, but seems to have been working fine on another site I did last year.&lt;/p&gt;
-&lt;h3 id=&quot;javascript&quot;&gt;javaScript&lt;/h3&gt;
-&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;
- &lt;span class=&quot;token comment&quot;&gt;// Get the toggle button element by its ID&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; toggleButton &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;dark-mode-toggle&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;// Get the root element of the document &lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; rootElement &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;documentElement&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;// Check if the user&#39;s system prefers dark mode&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; prefersDarkMode &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;matchMedia&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;(prefers-color-scheme: dark)&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;matches&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;// Check if there&#39;s a stored color mode preference in local storage&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; storedMode &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; localStorage&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getItem&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;colorMode&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;// If there&#39;s a stored mode preference, add it to the root element&#39;s class list&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;storedMode&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  rootElement&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;classList&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;storedMode&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; 
-&lt;span class=&quot;token comment&quot;&gt;// If there&#39;s no stored mode preference but the system prefers dark mode, add the dark mode class&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;prefersDarkMode&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  rootElement&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;classList&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;dark-mode&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;// Add an event listener to the toggle button for when it&#39;s clicked&lt;/span&gt;
-toggleButton&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;click&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;token comment&quot;&gt;// Toggle the &#39;dark-mode&#39; class on the root element&lt;/span&gt;
-  rootElement&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;classList&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;toggle&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;dark-mode&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  
-  &lt;span class=&quot;token comment&quot;&gt;// Determine the current mode based on whether the &#39;dark-mode&#39; class is present&lt;/span&gt;
-  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; currentMode &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; rootElement&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;classList&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;contains&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;dark-mode&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;dark-mode&#39;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  
-  &lt;span class=&quot;token comment&quot;&gt;// Store the current mode preference in local storage&lt;/span&gt;
-  localStorage&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setItem&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;colorMode&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; currentMode&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;css&quot;&gt;CSS&lt;/h3&gt;
-&lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;:root&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;token comment&quot;&gt;/* colors*/&lt;/span&gt;
-  &lt;span class=&quot;token property&quot;&gt;--brand&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hsl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;355&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 81%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 62%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;token property&quot;&gt;--accent&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;token function&quot;&gt;hsl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;240&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 27%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 40%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;token property&quot;&gt;--base&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;hsl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;240&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 8%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 90%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;token property&quot;&gt;--text&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;token function&quot;&gt;hsl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;240&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 8%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 10%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;token property&quot;&gt;--shade&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hsl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;240&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 9%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 82%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;token selector&quot;&gt;.dark-mode&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;token property&quot;&gt;--brand&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hsl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;355&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 81%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 62%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;token property&quot;&gt;--accent&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hsl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;240&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 100%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 81%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;token property&quot;&gt;--base&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hsl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;240&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 8%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 10%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;token property&quot;&gt;--text&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hsl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;240&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 8%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 95%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;token property&quot;&gt;--shade&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;hsl&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;240&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 9%&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 14%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;   
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-
-&lt;span class=&quot;token selector&quot;&gt;.toggle-area&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;token property&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; flex&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token property&quot;&gt;justify-content&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; end&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;token selector&quot;&gt;#dark-mode-toggle&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; 
-  &lt;span class=&quot;token property&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
-  &lt;span class=&quot;token property&quot;&gt;cursor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; pointer&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
-  &lt;span class=&quot;token property&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;--brand&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
-  &lt;span class=&quot;token property&quot;&gt;border-radius&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 20rem&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;token selector&quot;&gt;#dark-mode-toggle img&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;token property&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 20px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;token property&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;inline&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;token property&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;.2rem&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;token property&quot;&gt;transition&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; .4s&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;token selector&quot;&gt;#dark-mode-toggle img:active&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;token property&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;90deg&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;token selector&quot;&gt;.dark-mode .moon&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;token property&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;invert&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;100%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
-  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;token selector&quot;&gt;.dark-mode .sun&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-   &lt;span class=&quot;token property&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;invert&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;100%&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;html&quot;&gt;HTML&lt;/h3&gt;
-&lt;pre class=&quot;language-html&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;toggle-area&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;button&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;dark-mode-toggle&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;       
-  &lt;span class=&quot;token attr-name&quot;&gt;aria-label&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;A toggle for a dark or light theme&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;      
-    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;img&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;moon&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;/images/moon.svg&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;img&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;sun&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;/images/sun.svg&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;      
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;button&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;  &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;some-light-in-the-darkness&quot;&gt;Some light in the darkness&lt;/h2&gt;
-&lt;p&gt;I was not sure how to conclude this. I did not like the idea of relying on javaScript. I did not like that I could not use the prefers-color-scheme to swap my logo if I had a toggle.&lt;/p&gt;
-&lt;p&gt;Mostly I felt that if the overall aim of the W3C is to encourage a more user preference based web I am not sure that leaving web designers to come up with their own UI for this is the right way. More confusion for users and developers individually reinventing the wheel.&lt;/p&gt;
-&lt;p&gt;Then I discovered Bramus had a few days ago released a proof of concept [light and dark mode extension for chrome](https://www.bram.us/2023/10/09/the-future-of-css-easy-light-dark-mode-color-switching-with-light-dark/ target=). I missed it, but he has been arguing that there should be settings in the browser based on the web site viewed for a few years.&lt;/p&gt;
-&lt;p&gt;Certainly If all browsers did adopt it would address some of my uneasiness with it and make it easy for those wanting to only use HTML and CSS.&lt;/p&gt;
-&lt;p&gt;No doubt it would create other concerns like should it only show if the site has a light and dark mode to stop users pointless clicking for something that does not exist.&lt;/p&gt;
-&lt;p&gt;What I think this probably tells us is that the state of a user preference based web is very much in its infancy.&lt;/p&gt;
-</content>
   </entry>
 </feed>

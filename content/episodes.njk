@@ -1,11 +1,12 @@
 ---js
 const eleventyNavigation = {
-	key: "Episodes",
+	key: "Talk",
 	order: 2
 };
 ---
 
-<h1>Podcast Episodes</h1>
+<h1>Talk</h1>
+<p><strong>Audio podcast episodes (also on YouTube).</strong></p>
 
 <ol reversed >
 {%- for post in collections['podcast'] | reverse -%}

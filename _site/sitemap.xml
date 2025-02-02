@@ -132,6 +132,11 @@
 	</url>
 	
 	<url>
+		<loc>https://noscript.show/build/5/</loc>
+		<lastmod>2025-01-23</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://noscript.show/episodes/</loc>
 		<lastmod>2025-01-26</lastmod>
 	</url>
@@ -157,7 +162,12 @@
 	</url>
 	
 	<url>
+		<loc>https://noscript.show/build/</loc>
+		<lastmod>2025-02-02</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://noscript.show/feed.xml</loc>
-		<lastmod>2025-01-31</lastmod>
+		<lastmod>2025-02-02</lastmod>
 	</url>
 </urlset>
