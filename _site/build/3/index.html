@@ -3,25 +3,193 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>No Script Show. No Script Show</title>
+		<title>Redesigning a Bistro site. Part 1. The Design.. No Script Show</title>
 		<meta name="description" content="Talking, learning and building websites simply.">
 		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="No Script Show">
 		
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://noscript.show/chat/">
-<meta property="og:title" content="No Script Show ">
+<meta property="og:url" content="https://noscript.show/build/3/">
+<meta property="og:title" content="No Script Show Redesigning a Bistro site. Part 1. The Design.">
 <meta property="og:description" content="">
-<meta property="og:image" content="https://i.ytimg.com/vi_webp//maxresdefault.webp">
+<meta property="og:image" content="https://i.ytimg.com/vi_webp/iT_orlzLAIY/maxresdefault.webp">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://noscript.show/chat/">
-<meta property="twitter:title" content="No Script Show ">
+<meta property="twitter:url" content="https://noscript.show/build/3/">
+<meta property="twitter:title" content="No Script Show Redesigning a Bistro site. Part 1. The Design.">
 <meta property="twitter:description" content="">
-<meta property="twitter:image" content="https://i.ytimg.com/vi_webp//maxresdefault.webp">
+<meta property="twitter:image" content="https://i.ytimg.com/vi_webp/iT_orlzLAIY/maxresdefault.webp">
 		
-		<style>/* This is an arbitrary CSS string added to the bundle */
+		<style>/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
+}
+/* This is an arbitrary CSS string added to the bundle */
 /* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
@@ -410,7 +578,7 @@ lite-youtube.lyt-activated > .lyt-playbtn {
 				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
 				<ul class="nav">
 					<li class="nav-item"><a href="/">Home</a></li>
-					<li class="nav-item"><a href="/chat/" aria-current="page">Chat</a></li>
+					<li class="nav-item"><a href="/chat/">Chat</a></li>
 					<li class="nav-item"><a href="/learn/">Learn</a></li>
 					<li class="nav-item"><a href="/build/">Build</a></li>
 					<li class="nav-item"><a href="/blog/">Archive</a></li>
@@ -421,11 +589,26 @@ lite-youtube.lyt-activated > .lyt-playbtn {
 		<main id="skip">
 			<heading-anchors>
 				
-<h1 id="chat">Chat</h1>
-<p><strong>Audio podcast episodes (also on YouTube).</strong></p>
+<h1 id="redesigning-a-bistro-site-part-1-the-design">Redesigning a Bistro site. Part 1. The Design.</h1>
 
-<ol reversed=""><li><a href="/15/">Static vs dynamic for content heavy websites</a><br> Comparing 11ty (Eleventy) and WordPress to use on this site as the content grows.</li><li><a href="/14/">The Frontend Divide:- UX Designers vs JavaScript Specialists</a><br> UX Designers vs JavaScript Specialists.</li><li><a href="/13/">What is the W3C doing about AI?</a><br> This looks at the latest W3C report on AI and its impact on the web. It explores the future of AI standards and ethics.</li><li><a href="/12/">How web typography has evolved</a><br> We talk about how web typography has evolved to meet new technological and social demands.</li><li><a href="/11/">What’s new in web images. Are they worth a thousand words?</a><br> We have new image formats and CSS properties to control images. But serving ever smaller and bigger screen resolutions efficiently is no easy feat.</li><li><a href="/10/">User Preferences:- rethinking web design</a><br> About the 6 new CSS media queries that let us design unique experiences according to the preferences the website visitor sets in their device or browser.</li><li><a href="/9/">Does Baseline solve our browser support problems?</a><br> Baseline is a Google initiative introduced in 2023 that aims to make it easier for developers and other website stakeholders to understand what might be ready for production.</li><li><a href="/8/">Designing an effective homepage</a><br> We critique a design of the show&#39;s future homepage against what experts from UX, copywriting, SEO and marketing might say.</li><li><a href="/7/">How do we start a website project?</a><br> Looking at the The MDN web docs on &quot;project ideation&quot;.</li><li><a href="/6/">What&#39;s the big deal with container queries?</a><br> Another approach to component based design, but focussed on layout.</li><li><a href="/5/">What is component based web design?</a><br> Making websites with reusable UI building bricks. What the web platform offers us and do we need it?</li><li><a href="/4/">What is intrinsic web design?</a><br> Web layout from a designer&#39;s point of view.</li><li><a href="/3/">Modern CSS layouts</a><br> The W3C on CSS layout and how it might be easier than we think.</li><li><a href="/2/">The big picture.</a><br> How this show tries to follow the development of the web.</li><li><a href="/1/">Everything we knew about web design changed!</a><br> How this podcast aims to keep up with a fast changing web platform.</li></ol>
 
+
+<ul class="post-metadata">
+	<li><time datetime="2024-10-25">25 October 2024</time></li>
+	<li><a href="/tags/build/" class="post-tag">build</a></li>
+</ul>
+
+
+<lite-youtube videoid="iT_orlzLAIY" style="background-image: url('https://i.ytimg.com/vi_webp/iT_orlzLAIY/maxresdefault.webp');">
+  <a href="https://youtube.com/watch?v=iT_orlzLAIY" class="lyt-playbtn" title="Play Video">   
+  </a>
+</lite-youtube>
+
+
+<p>Coming.</p>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/build/2/">Redesigning a vets site. Part 2. Coding with CSS and Testing</a></li><li class="links-nextprev-next">Next →<br><a href="/build/4/">Redesigning a Bistro/café site. Part 2. Coding with HTML and CSS</a></li>
+</ul>
 			</heading-anchors>
 		</main>
 
@@ -434,7 +617,7 @@ lite-youtube.lyt-activated > .lyt-playbtn {
 			| <a href="/feed/feed.xml">RSS Feed</a></small>
 		</footer>
 
-		<!-- This page `/chat/` was built on 2025-02-02T12:54:00.548Z -->
-		<script type="module" src="/dist/PQuipxb2GV.js"></script>		
+		<!-- This page `/build/3/` was built on 2025-02-02T12:54:00.546Z -->
+		<script type="module" src="/dist/d9JSaiKaDS.js"></script>		
 	</body>
 </html>
