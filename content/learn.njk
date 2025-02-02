@@ -11,6 +11,8 @@ const eleventyNavigation = {
 
 <ol reversed>
 {%- for post in collections['learn']  | reverse -%}
-  <li><a href="{{post.url}}">{{ post.data.title }}</a> <br> {{post.data.description}}</li>
+  <li><a href="{{post.url}}">{{ post.data.title }}</a> <br>
+   <time class="postlist-date"  datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time><br>
+   {{post.data.description}}</li>
 {%- endfor -%}
 </ol>
