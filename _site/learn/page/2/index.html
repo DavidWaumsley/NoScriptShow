@@ -54,7 +54,7 @@
 	box-sizing: border-box;
 }
 
-/* @view-transition {
+@view-transition {
 	navigation: auto;	
 }
 
@@ -62,7 +62,7 @@
 ::view-transition-new(root) {
   animation-duration: .6s ; 
 }
-   */
+  
 
 html,
 body {
@@ -395,7 +395,8 @@ lite-youtube.lyt-activated > .lyt-playbtn {
 	padding: 1rem;
 	font: inherit;
 	cursor: pointer;
-	outline: inherit;	
+	outline: inherit;
+	float: right;	
   }
   .theme-icon {
 	inline-size: 25px;
@@ -418,6 +419,9 @@ lite-youtube.lyt-activated > .lyt-playbtn {
   }</style>
 		
 	</head>
+	 <button class="toggle" data-theme-toggle="" id="theme-toggle" style="display: none" type="button" aria-label=" light and dark mode switch">
+        <img class="theme-icon" src="/svgs/moon.svg" width="25" height="25" alt="dark and light theme switcher">
+      </button>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
@@ -430,9 +434,7 @@ lite-youtube.lyt-activated > .lyt-playbtn {
 					<li class="nav-item"><a href="/chat/">Chat</a></li>
 					<li class="nav-item"><a href="/learn/">Learn</a></li>
 					<li class="nav-item"><a href="/build/">Build</a></li>
-					<li class="nav-item"><a href="/blog/">Archive</a></li>	
-
-	 
+					<li class="nav-item"><a href="/blog/">Archive</a></li>
 	</ul></nav>
 
 		</header>
@@ -469,7 +471,7 @@ lite-youtube.lyt-activated > .lyt-playbtn {
 			| <a href="/feed/feed.xml">RSS Feed</a></small>
 		</footer>
 
-		<!-- This page `/learn/page/2/` was built on 2025-02-03T18:43:33.150Z -->
+		<!-- This page `/learn/page/2/` was built on 2025-02-03T18:49:45.147Z -->
 		<script type="module" src="/dist/PQuipxb2GV.js"></script>
 		<script src="/js/light-dark.js"></script>	
 	</body>

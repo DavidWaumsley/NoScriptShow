@@ -30,7 +30,7 @@
 	box-sizing: border-box;
 }
 
-/* @view-transition {
+@view-transition {
 	navigation: auto;	
 }
 
@@ -38,7 +38,7 @@
 ::view-transition-new(root) {
   animation-duration: .6s ; 
 }
-   */
+  
 
 html,
 body {
@@ -371,7 +371,8 @@ lite-youtube.lyt-activated > .lyt-playbtn {
 	padding: 1rem;
 	font: inherit;
 	cursor: pointer;
-	outline: inherit;	
+	outline: inherit;
+	float: right;	
   }
   .theme-icon {
 	inline-size: 25px;
