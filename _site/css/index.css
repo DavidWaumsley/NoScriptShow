@@ -5,7 +5,6 @@
 }
 
 
-
 [data-theme="dark"] {
 	--brand: #ed505d;
 	--accent: #9e9eff;
@@ -75,11 +74,7 @@ img{
 img[width][height] {
   height: auto;
 }
-/* img[src$=".svg"] {
-  width: 100%;
-  height: auto;
-  max-width: none;
-} */
+
 video,
 iframe {
 	max-width: 100%;
@@ -117,14 +112,7 @@ main :first-child {
 	margin-top: 0;
 }
 
-header {
-	border-bottom: 1px dashed var(--color-gray-20);
-}
-header:after {
-	content: "";
-	display: table;
-	clear: both;
-}
+
 
 .links-nextprev {
 	display: flex;
