@@ -5,9 +5,7 @@ import pluginNavigation from "@11ty/eleventy-navigation";
 // import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import pluginFilters from "./_config/filters.js";
 
-
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
-
 
 export default async function (eleventyConfig) {
   // Drafts, see also _data/eleventyDataSchema.js
@@ -16,8 +14,7 @@ export default async function (eleventyConfig) {
       return false;
     }	
   });
-  
-  
+   
 
   // Copy the contents of the `public` folder to the output folder
   // For example, `./public/css/` ends up in `_site/css/`
@@ -55,13 +52,7 @@ export default async function (eleventyConfig) {
 		type: "atom", // or "rss", "json"
 		outputPath: "/feed/feed.xml",
 		stylesheet: "pretty-atom-feed.xsl",
-		// templateData: {
-		// 	eleventyNavigation: {
-		// 		key: "Feed",
-		// 		order: 6
-		// 	}
-		// },
-		collection: {
+			collection: {
 			name: "posts",
 			limit: 10,
 		},
@@ -139,16 +130,4 @@ export const config = {
     output: "_site",
   },
 
-  // -----------------------------------------------------------------
-  // Optional items:
-  // -----------------------------------------------------------------
-
-  // If your site deploys to a subdirectory, change `pathPrefix`.
-  // Read more: https://www.11ty.dev/docs/config/#deploy-to-a-subdirectory-with-a-path-prefix
-
-  // When paired with the HTML <base> plugin https://www.11ty.dev/docs/plugins/html-base/
-  // it will transform any absolute URLs in your HTML to include this
-  // folder name and does **not** affect where things go in the output folder.
-
-  // pathPrefix: "/",
 };
