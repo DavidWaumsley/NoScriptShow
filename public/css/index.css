@@ -42,8 +42,16 @@
 }
 
 @view-transition {
-	navigation: auto;
+	navigation: auto;	
 }
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: .6s ; 
+}
+
+
+  
 
 html,
 body {
