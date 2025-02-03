@@ -30,7 +30,7 @@
 	box-sizing: border-box;
 }
 
-@view-transition {
+/* @view-transition {
 	navigation: auto;	
 }
 
@@ -38,7 +38,7 @@
 ::view-transition-new(root) {
   animation-duration: .6s ; 
 }
-  
+   */
 
 html,
 body {
