@@ -20,7 +20,8 @@
 <meta property="twitter:title" content="No Script Show {{title}}" />
 <meta property="twitter:description" content="{{description}}" />
 <meta property="twitter:image" content="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp" />
-
+ <link rel="stylesheet" href="/css/index.css">
+ <link rel="stylesheet" href="/css/prism-diff.css">
 
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
 		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
@@ -37,20 +38,33 @@
 		#}
 
 		{#- Add an arbitrary string to the bundle #}
-		{%- css %}/* This is an arbitrary CSS string added to the bundle */{% endcss %}
+		{# {%- css %}/* This is an arbitrary CSS string added to the bundle */{% endcss %} #}
 		{#- Add the contents of a file to the bundle #}
-		{%- css %}{% include "public/css/index.css" %}{% endcss %}
+		{# {%- css %}{% include "public/css/index.css" %}{% endcss %} #}
 		{#- Or you can add from node_modules #}
-		{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
+		{%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
 
 		{#- Render the CSS bundle using inlined CSS (for the fastest site performance in production) #}
 		<style>{% getBundle "css" %}</style>
-		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
-		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
+	
 		{#- Add the heading-anchors web component to the JavaScript bundle #}
-		{%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
+		{# {%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %} #}
 		
 	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">{{ metadata.title }}</a>
+
+			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+				{%- for entry in collections.all | eleventyNavigation %}
+					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+				{%- endfor %}	
+
 	 <button
         class="toggle"
         data-theme-toggle
@@ -67,19 +81,8 @@
           alt="dark and light theme switcher"
         />
       </button>
-	<body>
-		<a href="#skip" class="visually-hidden">Skip to main content</a>
-
-		<header>
-			<a href="/" class="home-link">{{ metadata.title }}</a>
-
-			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-			<nav>
-				<h2 class="visually-hidden">Top level navigation menu</h2>
-				<ul class="nav">
-				{%- for entry in collections.all | eleventyNavigation %}
-					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-				{%- endfor %}
+	 
+	 
 	</nav>
 
 		</header>

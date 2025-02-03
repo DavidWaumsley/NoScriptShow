@@ -1,3 +1,14 @@
+
+/* @view-transition {
+	navigation: auto;	
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: .6s ; 
+} */
+
+
 /* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
@@ -5,25 +16,23 @@
 }
 
 
-[data-theme="dark"] {
-	--brand: #ed505d;
-	--accent: #9e9eff;
-	--secondary: hsl(194, 27%, 69%);
-	--text: hsl(0, 0%, 91%);
-	--text-alt: hsl(60, 1%, 15%);
-	--surface: hsl(240, 9%, 14%);
-	--shadow: hsl(0, 0%, 96%);
-  }
+
   
   [data-theme="light"] {
 	--brand: #a1323b;
 	--accent: #9e9eff;
 	--text: hsl(240, 8%, 10%);
-	--secondary: hsl(194, 27%, 69%);
-	--text-alt: hsl(60, 1%, 15%);
 	--surface: hsl(0, 0%, 98%);
 	--shadow: hsl(60, 1%, 15%);
 	
+  }
+
+  [data-theme="dark"] {
+	--brand: #ed505d;
+	--accent: #9e9eff;
+	--text: hsl(0, 0%, 91%);
+	--surface: hsl(240, 9%, 14%);
+	--shadow: hsl(0, 0%, 96%);
   }
 
 /* Global stylesheet */
@@ -31,16 +40,6 @@
 	box-sizing: border-box;
 }
 
-@view-transition {
-	navigation: auto;	
-}
-
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation-duration: .6s ; 
-}
-
-  
 
 html,
 body {
