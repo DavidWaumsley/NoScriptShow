@@ -62,7 +62,7 @@ export default async function (eleventyConfig) {
       subtitle: "Building solid websites simply.",
       base: "https://noscript.show/",
       author: {
-        name: "David Waumsley",
+        name: "No Script Show",
       },
     },
   });
