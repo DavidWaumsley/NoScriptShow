@@ -36,6 +36,27 @@
 }
 
 
+
+[data-theme="dark"] {
+	--brand: #ed505d;
+	--accent: #9e9eff;
+	--secondary: hsl(194, 27%, 69%);
+	--text: hsl(0, 0%, 91%);
+	--text-alt: hsl(60, 1%, 15%);
+	--surface: hsl(240, 9%, 14%);
+	--shadow: hsl(0, 0%, 96%);
+  }
+  
+  [data-theme="light"] {
+	--brand: #a1323b;
+	--accent: #9e9eff;
+	--text: hsl(240, 8%, 10%);
+	--secondary: hsl(194, 27%, 69%);
+	--text-alt: hsl(60, 1%, 15%);
+	--surface: hsl(0, 0%, 98%);
+	--shadow: hsl(60, 1%, 15%);
+}
+
 /* Global stylesheet */
 * {
 	box-sizing: border-box;
@@ -59,8 +80,8 @@ body {
 	margin: 0 auto;
 	font-family: var(--font-family);
 	font-size: 125%;
-	color: var(--text-color);
-	background-color: var(--background-color);
+	color: var(--text);
+	background-color: var(--surface);
 }
 html {
 	overflow-y: scroll;
@@ -87,11 +108,11 @@ img{
 img[width][height] {
   height: auto;
 }
-img[src$=".svg"] {
+/* img[src$=".svg"] {
   width: 100%;
   height: auto;
   max-width: none;
-}
+} */
 video,
 iframe {
 	max-width: 100%;
@@ -111,14 +132,14 @@ li {
 }
 
 a[href] {
-	color: var(--text-color-link);
+	color: var(--text);
 }
 a[href]:visited {
-	color: var(--text-color-link-visited);
+	color: var(--text);
 }
 a[href]:hover,
 a[href]:active {
-	color: var(--text-color-link-active);
+	color: var(--brand);
 }
 
 main,
@@ -190,7 +211,7 @@ header {
 	display: flex;
 	gap: 1em .5em;
 	flex-wrap: wrap;
-	align-items: center;
+	align-items:center;
 	padding: 1em;
 }
 .home-link {
@@ -207,6 +228,7 @@ header {
 	display: flex;
 	padding: 0;
 	margin: 0;
+	align-items:center;
 	list-style: none;
 }
 .nav-item {
@@ -244,7 +266,7 @@ header {
 .postlist-date,
 .postlist-item:before {
 	font-size: 0.8125em; /* 13px /16 */
-	color: var(--color-gray-90);
+	color: var(--brand);
 }
 .postlist-date {
 	word-spacing: -0.5px;
@@ -382,4 +404,38 @@ lite-youtube.lyt-activated > .lyt-playbtn {
     position: absolute;
     white-space: nowrap;
     width: 1px;
+  }
+
+
+  /* Light and dark toggle */
+
+.toggle {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 1rem;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;	
+  }
+  .theme-icon {
+	inline-size: 25px;
+	block-size: 25px;
+	transition: 0.3s;
+	
+  }
+  .theme-icon:hover {
+	transform: scale(1.2);
+  }
+
+
+  
+  .hide-dark-img {
+	display: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+	.theme-icon:active {
+	  transform: rotate(-22deg);
+	}
   }
