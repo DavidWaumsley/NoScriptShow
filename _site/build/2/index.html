@@ -205,6 +205,15 @@ pre[class*="language-diff-"] {
 	--text-alt: hsl(60, 1%, 15%);
 	--surface: hsl(240, 9%, 14%);
 	--shadow: hsl(0, 0%, 96%);
+
+	@view-transition {
+		navigation: auto;	
+	}
+	
+	::view-transition-old(root),
+	::view-transition-new(root) {
+	  animation-duration: .6s ; 
+	}
   }
   
   [data-theme="light"] {
@@ -215,6 +224,15 @@ pre[class*="language-diff-"] {
 	--text-alt: hsl(60, 1%, 15%);
 	--surface: hsl(0, 0%, 98%);
 	--shadow: hsl(60, 1%, 15%);
+
+	@view-transition {
+		navigation: auto;	
+	}
+	
+	::view-transition-old(root),
+	::view-transition-new(root) {
+	  animation-duration: .6s ; 
+	}
 }
 
 /* Global stylesheet */
@@ -222,14 +240,7 @@ pre[class*="language-diff-"] {
 	box-sizing: border-box;
 }
 
-@view-transition {
-	navigation: auto;	
-}
 
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation-duration: .6s ; 
-}
   
 
 html,
@@ -640,7 +651,7 @@ lite-youtube.lyt-activated > .lyt-playbtn {
 			| <a href="/feed/feed.xml">RSS Feed</a></small>
 		</footer>
 
-		<!-- This page `/build/2/` was built on 2025-02-03T18:49:44.964Z -->
+		<!-- This page `/build/2/` was built on 2025-02-03T18:51:44.133Z -->
 		<script type="module" src="/dist/d9JSaiKaDS.js"></script>
 		<script src="/js/light-dark.js"></script>	
 	</body>
