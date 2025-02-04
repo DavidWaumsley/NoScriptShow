@@ -21,6 +21,8 @@ const numberOfLatestPostsToShow = 3;
 <li>Standards, accessibility and anything to makes the web better for all.</li>
 </ul>
 
+
+
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 <h2>Latest {{ latestPostsCount }} Episode{% if latestPostsCount != 1 %}s{% endif %}</h2>
@@ -33,6 +35,7 @@ const numberOfLatestPostsToShow = 3;
 {# {% if morePosts > 0 %}
 <p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="blog.njk">the archive</a>.</p>
 {% endif %} #}
+
 
 <h2>Your hosts</h2>
 

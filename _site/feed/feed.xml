@@ -5,11 +5,84 @@
   <subtitle>Building solid websites simply.</subtitle>
   <link href="https://noscript.show/feed/feed.xml" rel="self" />
   <link href="https://noscript.show/" />
-  <updated>2025-01-23T00:00:00Z</updated>
+  <updated>2025-02-07T00:00:00Z</updated>
   <id>https://noscript.show/</id>
   <author>
     <name>No Script Show</name>
   </author>
+  <entry>
+    <title>Building with an 11ty starter sites and headless WordPress</title>
+    <link href="https://noscript.show/build/7/" />
+    <updated>2025-02-07T00:00:00Z</updated>
+    <id>https://noscript.show/build/7/</id>
+    <content type="html">&lt;h1 id=&quot;building-with-an-11ty-starter-sites-and-headless-wordpress&quot;&gt;Building with an 11ty starter sites and headless WordPress&lt;/h1&gt;
+&lt;h2 id=&quot;starter-sites&quot;&gt;Starter Sites&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;11ty has something similar to WordPress themes called starter sites.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Here&#39;s some places to look:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://11tybundle.dev/starters/&quot;&gt;11ty Bundle&lt;/a&gt;. A fabulous place for all thing 11ty by &lt;a href=&quot;https://bobmonsour.com/&quot;&gt;Bob Monsour&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jamstackthemes.dev/#ssg=eleventy&quot;&gt;JamStack Themes&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.11ty.dev/docs/starter/&quot;&gt;The 11ty site&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Starter sites are typical plain for us to add our own CSS &lt;a href=&quot;https://github.com/CloudCannon/campus-spark-bookshop-template&quot;&gt;exceptions&lt;/a&gt;. Some are created around Tailwind or Bootstrap or include javaSript framework intergration.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;We narrowed it to these 3 for the show&#39;s website:&lt;/strong&gt;
+`&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/11ty/eleventy-base-blog&quot;&gt;The 11ty Base blog&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/madrilene/eleventy-excellent&quot;&gt;Eleventy Excellent&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/scottsweb/elva&quot;&gt;Elva&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All are updated to 11ty v.3, but can carry npm packages that are &lt;a href=&quot;https://www.npmjs.com/package/inflight&quot;&gt;deprecated&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;&lt;em&gt;Eventy Excellent by &lt;a href=&quot;https://www.lenesaile.com/en/&quot;&gt;Lene Saile&lt;/a&gt; was the closest fit as it used CUBE CSS, Paul Irish&#39;s Lite YouTube Embed and has a strew of great features.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;h2 id=&quot;11ty-as-a-static-frontend-for-wordpress&quot;&gt;11ty as a static frontend for WordPress.&lt;/h2&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;11ty has an &lt;a href=&quot;https://www.11ty.dev/docs/migrate/wordpress/#use-@11ty/import&quot;&gt;importer&lt;/a&gt; that can grap WordPress posts.&lt;/li&gt;
+&lt;li&gt;This hooks in to the WordPress REST API.&lt;/li&gt;
+&lt;li&gt;It works out of the box with the 11ty base blog.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Andy Bell has a couple of articles: one on &lt;a href=&quot;https://bell.bz/i-hooked-up-eleventy-to-wordpress-api/&quot;&gt;hooking 11ty to WordPress&lt;/a&gt; and another on &lt;a href=&quot;https://bell.bz/importing-eleventy-content-into-wordpress/&quot;&gt;importing 11ty content to WordPress&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There&#39;s other articles on bringing WordPress content into 11ty. Here&#39;s two that talk about WordPress plugins that tell WordPress to tell the host to rebuild 11ty.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.mikeaparicio.com/posts/2023-11-07-using-wordpress-as-a-headless-cms-for-eleventy/&quot;&gt;Using Wordpress as a headless CMS for Eleventy by Mike Aparicio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://davedavies.dev/post/how-to-use-11ty-with-headless-wordpress/&quot;&gt;How to use 11ty with Headless WordPress and deploy to Netlify by Dave Davies&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The two WordPress plugins have not been updated in 4 years.&lt;/p&gt;
+&lt;p&gt;We also have to consider the number concurrent builds our static hosting plan allow if letting clients update. Netlify only allows one on the free plan.&lt;/p&gt;
+&lt;h2 id=&quot;building-with-the-11ty-base-blog&quot;&gt;Building with the 11ty base blog&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;Learning more about 11ty by using the starter site from its author &lt;a href=&quot;https://www.zachleat.com/&quot;&gt;Zach Leatherman&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;the-pros&quot;&gt;The Pros&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Preconfigured 11ty plugins: &lt;a href=&quot;https://www.11ty.dev/docs/plugins/rss/&quot;&gt;RSS&lt;/a&gt;, &lt;a href=&quot;https://www.11ty.dev/docs/plugins/image/&quot;&gt;Image Transform&lt;/a&gt;, &lt;a href=&quot;https://www.11ty.dev/docs/plugins/navigation/&quot;&gt;Navigation&lt;/a&gt;,  &lt;a href=&quot;https://www.11ty.dev/docs/plugins/syntaxhighlight/&quot;&gt;Syntax Highlighting&lt;/a&gt;, &lt;a href=&quot;https://www.11ty.dev/docs/plugins/id-attribute/&quot;&gt;Id Attribute &lt;/a&gt; and &lt;a href=&quot;https://www.11ty.dev/docs/plugins/html-base/&quot;&gt;HTML &lt;code&gt;&amp;lt;base&amp;gt;&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Simple Stylesheet to extend or replace.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated and well documented.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If using AI tell it you are extending the 11ty base blog and it adjusts it&#39;s solution!&lt;/p&gt;
+&lt;h3 id=&quot;the-cons&quot;&gt;The Cons&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;You need time have to understand how the plugins work if making structural changes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;continuing-from-the-last-video&quot;&gt;Continuing from the last video&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Using slugs.&lt;/li&gt;
+&lt;li&gt;Adding contitionals.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <title>Long-term WordPress user tries building with 11ty (a Static Site Generator)</title>
     <link href="https://noscript.show/build/6/" />
@@ -565,450 +638,5 @@
 &lt;p&gt;I doubt it. I’m sure David will go and change that in a hurry, but that was lovely. Thank you David. Thanks. I’ll speak to you soon.&lt;/p&gt;
 &lt;p&gt;[00:40:44] &lt;strong&gt;David Waumsley:&lt;/strong&gt; Yeah, cheers. Bye.&lt;/p&gt;
 &lt;/details&gt;</content>
-  </entry>
-  <entry>
-    <title>How web typography has evolved</title>
-    <link href="https://noscript.show/12/" />
-    <updated>2024-06-12T00:00:00Z</updated>
-    <id>https://noscript.show/12/</id>
-    <content type="html">&lt;style&gt;
-
-       
-        .text-effect  {   
-            margin-top: 0;     
-            margin-bottom: 1rem;       
-            font-size: 7rem;               
-            display: block;
-            font-weight: 900;
-            background:url(&quot;/img/typography-title.webp&quot;) center;
-            background-size:cover;
-            background-clip:text;
-            -webkit-background-clip: text;   
-            color: transparent;
-            filter: drop-shadow(0.2rem 0.2rem  black) ;
-        }
-        
-    h1 small{
-    
-      font-size: var(--step-1);
-      font-weight: 400;
-      font-style: italic;
-    }
-    .columns{
-    columns: 18rem auto;
-    column-gap: var(--size-l)
-    }
-    
-    .columns::first-letter{
-      font-family: Georgia, &#39;Times New Roman&#39;, Times, serif;
-      border: .2rem solid var(--brand);
-      padding: .5rem;
-      margin: 0 .6rem 0 0;
-      initial-letter: 1.7;
-    }
-    
-    
-    :root {
-      --color:hsl(240, 9%, 14%);
-      --c1: hsl(355, 81%, 62%);
-      --c2: hsl(293, 93%, 73%);
-      --c3: hsl(240, 100%, 81%);
-      --gradient: linear-gradient(
-        60deg,
-        var(--c3),
-        var(--c2),
-        var(--c1),
-        var(--c2),
-        var(--c3)
-      );
-      --scale-start: 0.1;
-      --scale-end: 1.0;
-      /* 
-        linear easing generator
-        https://linear-easing-generator.netlify.app/
-      */
-       --ease-elastic: linear(
-        0, 0.186 2.1%, 0.778 7.2%, 1.027 9.7%, 1.133, 1.212, 1.264, 1.292 15.4%,
-        1.296, 1.294, 1.285, 1.269 18.9%, 1.219 20.9%, 1.062 25.8%, 0.995 28.3%,
-        0.944 31.1%, 0.93, 0.921, 0.92 35.7%, 0.926, 0.94 39.7%, 1.001 47%, 1.014,
-        1.021 52.4%, 1.02 56.4%, 1 65.5%, 0.994 70.7%, 1.001 88.4%, 1
-      );
-      --ease-bounce-out: cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-    
-    @media (prefers-reduced-motion) {
-      :root {
-        --scale-start: var(--scale-end);
-        --ease-elastic: ease-out;
-        --ease-bounce-out: ease-out;
-      }
-    }
-    
-    .text {
-      font-family:Georgia, serif;
-      background-image: var(--gradient);
-      font-size: 5rem;
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-    }
-    
-    @supports (animation-timeline: view()) {
-      .box {
-        animation: trigger steps(1) both, fade linear both;
-        animation-timeline: view();
-        animation-range: entry 40% contain 40%;
-      }
-    
-      .text {
-        animation: pop-back 1s var(--ease-bounce-out) forwards;
-      }
-    
-      @container style(--animate: true) {
-        .text {
-          animation: pop 1s var(--ease-elastic) forwards,
-            text-gradient 500Ms cubic-bezier(0, 0.55, 0.45, 1) forwards;
-        }
-      }
-    }
-    
-    @keyframes fade {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-    
-    @keyframes trigger {
-      to {
-        --animate: true;
-      }
-    }
-    
-    @keyframes pop {
-      from {
-        scale: var(--scale-start);
-      }
-      to {
-        scale: var(--scale-end);
-      }
-    }
-    
-    @keyframes text-gradient {
-      100% {
-        background-position: 10% center;
-      }
-    }
-    
-    @keyframes pop-back {
-      from {
-        scale: var(--scale-end);
-      }
-      to {
-        color: var(--color);
-        scale: var(--scale-start);
-      }
-    }
-    
-    
-    .w-mode{
-       writing-mode: vertical-lr;
-       font-size: 2rem; 
-       transform: rotate(180deg);
-       margin:0 1rem 0 0 ; 
-       filter: drop-shadow( -3rem 0 rgba(25, 25, 25, 0.339))  brightness(200%);
-    }
-    
-    .box {
-    display: grid; 
-    grid-template-columns: 6rem auto;
-    align-items: end;
-    background-color:black;
-    }
-    
-    .box h2{
-      margin-inline-start:-1rem;      
-    }
-    
-&lt;/style&gt;
-&lt;p class=&quot;text-effect&quot;&gt;Typo&lt;wbr&gt;graphy&lt;/p&gt;
-&lt;h2 id=&quot;responsive-typography&quot;&gt;Responsive typography&lt;/h2&gt;  
-&lt;p&gt;We&#39;ve gone from one screen resolution to accommodating standard mobile and tablet sizes to no assumptions about viewport size or pixel density.  We&#39;ve seen various shifts:&lt;/p&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;px to rems.&lt;/strong&gt;  Once hotly debated. The 62.5% trick of converting 1 rem to 10 px is still quite popular.&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;Media queries to fluid typography&lt;/strong&gt; (with viewport units and calc). Recommended: The &lt;a href=&quot;https://utopia.fyi/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Utopia CSS generator&lt;/a&gt; and Trys Mudford&#39;s &lt;a href=&quot;https://www.youtube.com/watch?v=xd6wSHqGreQ&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;video presentation&lt;/a&gt; about Utopia and fluid design. Utopia also helps us with type scale.&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;individually spaced elements to systems for flow (vertical stacking)&lt;/strong&gt;. Recommended: &lt;a href=&quot;https://every-layout.dev/layouts/stack/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The stack on Every Layout&lt;/a&gt;  and this &lt;a href=&quot;https://someantics.dev/great-typography-with-modern-css/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;typography demo&lt;/a&gt; by Mike Mai on Ben Myer&#39;s someantics.dev.&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;New units:&lt;/strong&gt; ch, ex, vw, vh, vmin and vmax. &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;accessibility&quot;&gt;Accessibility &lt;/h2&gt;
-&lt;p&gt;We have seem an increased awareness that the web should be readable to all:&lt;/p&gt;
-&lt;ul&gt;
- &lt;li&gt;&lt;strong&gt;From a western bias to writing modes and internationalisation.&lt;/strong&gt; &lt;a href=&quot;https://noscript.show/3&quot;&gt;We talk about this&lt;/a&gt; when discussing a talk by Rachel Andrew on modern CSS layout.&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;Web safe fonts to an abundance of open source options and back to quality and system fonts.&lt;/strong&gt; We did a &lt;a href=&quot;https://noscript.show/learn/3&quot;&gt;short video &lt;/a&gt;on system fonts which looked at &lt;a href=&quot;https://modernfontstacks.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;modernfontstacks.com.&lt;/a&gt;  Familiarity help users the most, but designers like new trends. We have to find a balance.&lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;From the browser styles to setting line height and proximity according to the font used&lt;/strong&gt;. &lt;abbr title=&quot;The Web Content Accessibility Guidelines&quot;&gt;WCAG&lt;/abbr&gt; can give us some guidelines (ie. 1.5 for paragraph line heights). Experts set this according to the font&#39;s &quot;X&quot; size. They know also to reduce the line height on headings and make the space above a heading wider the the space to the next paragraph for better proximity. &lt;/li&gt;
- &lt;li&gt;&lt;strong&gt;From seeing link underlining as &quot;visual clutter&quot; to respecting it as essential UI&lt;/strong&gt;. We now have &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;text underlining offset &lt;/a&gt;, text-decoration thickness and style giving designers more control.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;variable-fonts&quot;&gt;Variable Fonts&lt;/h2&gt;
-&lt;ul&gt;
- &lt;li&gt;Multiple font formats (TTF, OFT, EOT, WOFF) to WOFF2 (unless supporting IE).&lt;/li&gt;
- &lt;li&gt;Individually loading weights and italics to fine control via CSS.&lt;/li&gt;
- &lt;li&gt;Color (chromatic) fonts. It is probably too soon to see the value particularly as this has not started with one format.
- &lt;/li&gt;
-&lt;/ul&gt;
-&lt;section class=&quot;wide&quot;&gt;
-&lt;h2 id=&quot;lesser-used-specifications&quot;&gt;Lesser used specifications&lt;/h2&gt;   
-&lt;div class=&quot;columns&quot;&gt;
-There&#39;s lots in HTML and CSS that is probably under-used in typography.  Here we are using &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/columns&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;CSS columns&lt;/a&gt; to force two columns within the space available. We could set it to &lt;code&gt;columns: 2;&lt;/code&gt; but we would need a media query for smaller devices. Instead this set to &lt;code&gt;columns: 18rem auto;&lt;/code&gt; so when there is not 18rem of space it colapses to one column.    
-&lt;/div&gt;
-&lt;br&gt;
-&lt;/section&gt;
-&lt;ul&gt;
-&lt;li&gt;In the above section we are using &lt;code&gt;:first-letter&lt;/code&gt; with &lt;code&gt;initial-letter: 1.5&lt;/code&gt; to create a drop cap.&lt;/li&gt;
-&lt;li&gt; On this site the &lt;code&gt; &amp;lt;kbd&amp;gt;&amp;lt;/kbd&amp;gt;&lt;/code&gt; tag saves us needing images to explain keyboard commands &lt;kbd&gt;Ctrl&lt;/kbd&gt;  &lt;kbd&gt;⇧ Shift&lt;/kbd&gt; and &lt;kbd&gt;Enter ↵ &lt;/kbd&gt; &lt;/li&gt;
-&lt;li&gt;There&#39;s many other useful tags in HTML. In this article we have used: &lt;code&gt;&amp;lt;abbr title=&amp;quot;Web Content Accessibility Guidelines&amp;quot;&amp;gt;WCAG&amp;lt;/abbr&amp;gt;&lt;/code&gt; and used &lt;code&gt;&amp;lt;wbr&amp;gt;&lt;/code&gt; to force the Typograpy title to break as &quot;typo&quot; and &quot;graphy&quot; when ther is not enough space. &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;new-specifications&quot;&gt;New specifications &lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/hanging-punctuation&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Hanging-punctuation&lt;/a&gt; It gives us the ability to have stop quotation marks indenting the text. Safari only.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/font-size-adjust&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;font-size-adjust&lt;/a&gt;Most useful for ajusting fallback fonts to match custom fonts. Preventing a jump. Limited availability &lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/font-kerning&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;font-kerning &lt;/a&gt; sets the use of the kerning information stored in a font. Auto lets the browser decide. Normal let the font decide. Fully supported.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;background-clip &lt;/a&gt; sets whether an element&#39;s background extends underneath its border box, padding box, or content box. Used on the title of this post. Widely Available.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;box&quot;&gt;
-&lt;p&gt;&lt;span class=&quot;w-mode&quot;&gt;Typography&lt;/span&gt;&lt;/p&gt; 
-&lt;h2 class=&quot;text pop&quot; id=&quot;branding-and-storytelling&quot;&gt;Branding &amp; Storytelling&lt;/h2&gt;    
-&lt;/div&gt;
-&lt;p&gt;Designers have got ever more creative with text and the &lt;abbr title=&quot;Worldwide Web Consoritum&quot;&gt;W3C&lt;/abbr&gt; is making it easier.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Scroll animation coming to CSS.&lt;/li&gt;
-&lt;li&gt;Writing modes.&lt;/li&gt;
-&lt;li&gt;Better positioning with CSS grid and subgrid.&lt;/li&gt;
-&lt;li&gt; Blending, filtering, masking and overlapping with other elements.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;details&gt;
-&lt;summary&gt;Transcript&lt;/summary&gt;                 
-&lt;p&gt;[00:00:05] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;Welcome to the No Script show about modern web design, where we look at what we can build today with minimal software and skills.&lt;/p&gt;
-&lt;p&gt;Today we&amp;#8217;re talking about how web typography has evolved to meet new technological and social demands. We can&amp;#8217;t cover all the new CSS properties and units or fully explore what is possible with variable fonts, but we might be able to understand modern web typography through its changing history. David.&lt;/p&gt;
-&lt;p&gt;How comfortable are you with the topic of typography? Now there&amp;#8217;s a leading question.&lt;/p&gt;
-&lt;p&gt;[00:00:37] David Waumsley: Yeah. not very, I always feel intimidated. We were talking about this earlier. I think we both feel that when people really know their stuff, when they&amp;#8217;ve got design training, they know stuff and it&amp;#8217;s almost a secret language.&lt;/p&gt;
-&lt;p&gt;I think that&amp;#8217;s a club. Yep. I dunno the secret handshake to get in, but I&amp;#8217;m learning stuff and it&amp;#8217;s becoming more important to me all the time and&lt;/p&gt;
-&lt;p&gt;[00:01:02] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;think it never felt at the beginning when I was doing websites, it never felt like an important thing. And then I&amp;#8217;d open up a book. So when books were the way that you learn about the internet, I&amp;#8217;d open up a book and I&amp;#8217;d see.&lt;/p&gt;
-&lt;p&gt;somebody getting into typography and my eyes would just glaze over. there&amp;#8217;d be charts pointing to the corners of letters and the kerning and all of that kind of thing. And I think I don&amp;#8217;t need to know any of this. it&amp;#8217;s hard enough getting the pixels on the page, just I&amp;#8217;ll use whatever font comes my way.&lt;/p&gt;
-&lt;p&gt;but you&amp;#8217;re right. And I, feel like a lot of people who have been, very good, capable, thoughtful about typography, I. Maybe they have some background in graphic design, a history of working in graphic design, or maybe they went to some art college or something like that. So there has been a feeling that it&amp;#8217;s in a domain that I don&amp;#8217;t, usually circulate in.&lt;/p&gt;
-&lt;p&gt;[00:01:53] David Waumsley: I know. And you were showing me some of the books that were on your shelf there. Yeah. You&amp;#8217;ve got things by Elliot J Stock and, what was it? Mark Bolton. Mark Bolton.&lt;/p&gt;
-&lt;p&gt;[00:02:00] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;The, the Designing for the Web, it&amp;#8217;s an old book now, but open it up and it&amp;#8217;s full of this typography stuff and, actually interestingly.&lt;/p&gt;
-&lt;p&gt;I don&amp;#8217;t think that information in that book has probably aged. If you were to look at screenshots of websites, that will be terribly outta date. &amp;#8217;cause that book&amp;#8217;s probably about 12, maybe older, maybe as much as 15 years old, I&amp;#8217;m not sure. the, layouts and the capabilities and the screenshots of the websites, they&amp;#8217;re really out of date now and you almost smirk looking at them.&lt;/p&gt;
-&lt;p&gt;But the typography information. It looks as fresh today as it ever did. So that&amp;#8217;s curious. It&amp;#8217;s this stuff is old.&lt;/p&gt;
-&lt;p&gt;[00:02:40] David Waumsley: Yeah. And I think what we&amp;#8217;re talking about is how we&amp;#8217;ve translated some of that historically onto the web here. We&amp;#8217;ve not worried about it &amp;#8217;cause we&amp;#8217;ve been limited in what we could do When we started with the web, when we started, we.&lt;/p&gt;
-&lt;p&gt;You had those website fonts anyway, but, but I, and I think there&amp;#8217;s also errors that we&amp;#8217;ve never even thought of that you and I both been exposed to you particularly &amp;#8217;cause you&amp;#8217;ve interviewed a lot of people who are knowledgeable about this. So there&amp;#8217;s a lot of things like knowing a readable character length, across the page, something that&amp;#8217;s comfortable to read with, something generally under about 70 characters or something.&lt;/p&gt;
-&lt;p&gt;Underline in text, which we&amp;#8217;ll talk about links as we&amp;#8217;ll talk about. And, Just generally. also we tended to center things, didn&amp;#8217;t we? Yeah. Blocks of paragraphs, which were hard to read. So I think there&amp;#8217;s a lot of things that you and I would&amp;#8217;ve picked up because it&amp;#8217;s coming even to, those communities in WordPress.&lt;/p&gt;
-&lt;p&gt;We, pick up from a lot of people knowledgeable in that, about that kind of stuff. But&lt;/p&gt;
-&lt;p&gt;[00:03:40] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;yeah. Yeah, whenever I&amp;#8217;ve spoken to somebody who is deeply embedded in this kind of thing, I am profoundly. Interested in the level of detail that you can get to with typography? Yeah, we&amp;#8217;re, obviously, in this episode, we&amp;#8217;re gonna scratch almost none of the surface even.&lt;/p&gt;
-&lt;p&gt;We&amp;#8217;re just, we&amp;#8217;re just touching the merest bit of it. But when you get into it, all of the different bits and pieces that make up a letter, there&amp;#8217;s so many words that are, ligatures and kerning and all of these different things, and I don&amp;#8217;t know what most of them are. Having a conversation though with these people always leaves me feeling, wow, there&amp;#8217;s a, that literally is a career just in that, just in learning typography.&lt;/p&gt;
-&lt;p&gt;But, I think it&amp;#8217;s, I think it&amp;#8217;s not, I think the ship has sailed for me. David. No, I think&lt;/p&gt;
-&lt;p&gt;[00:04:33] David Waumsley: we can start to, we can implement a lot of stuff that sat there. I think what makes me interested in it is. Following on from my last chat, we were talking about how difficult it is with images that I know even from the early web when I could look at somebody who knows typography, they can lay out a beautiful site with text only and I just think I wanna be able to do that.&lt;/p&gt;
-&lt;p&gt;Yeah. Anyway, shall we bring up the show notes?&lt;/p&gt;
-&lt;p&gt;[00:04:56] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;Yeah, indeed. Indeed. Here we go. Okay, I&amp;#8217;ll just quick plug about this website, So you are looking at, if you are looking at this and not listening to it, but if you are listening to it and want to look at it, go to no script show. So that&amp;#8217;s the url, no script show, and then forward slash whatever episode we&amp;#8217;re talking about.&lt;/p&gt;
-&lt;p&gt;So this is episode 11. no script show slash 11. We&amp;#8217;ll get you to this page. And what a, fantastic start you&amp;#8217;ve made at the top there, David. That looks like an image. Surely it&amp;#8217;s an image. Yeah.&lt;/p&gt;
-&lt;p&gt;[00:05:32] David Waumsley: it&amp;#8217;s type, it&amp;#8217;s just using, I think, a fairly new property where we can, and I always forget what the name of it, I mention it later in the notes, so we&amp;#8217;ll come to it.&lt;/p&gt;
-&lt;p&gt;But it&amp;#8217;s a, basically a clipping two type. And then we can put an image showing through, so the, type is transparent and the image underneath it is clipped in it. So yeah, I thought I needed to do something a little bit fancy for this episode, yeah.&lt;/p&gt;
-&lt;p&gt;[00:05:54] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;But that is really, lovely, isn&amp;#8217;t it? Because just, the evolution of that in the day when we began, that was possible, but only as an image without a doubt.&lt;/p&gt;
-&lt;p&gt;and it&amp;#8217;s not. it, I, don&amp;#8217;t know how many people deploy this kind of typography, but that looks profoundly nice. it may not to be ev everybody&amp;#8217;s palette, the colors or what have you, but look at what&amp;#8217;s possible. Yeah. It&amp;#8217;s copy pastable. It is the word typography on a screen.&lt;/p&gt;
-&lt;p&gt;But you&amp;#8217;ve got all these lovely flowing colors in the background and it really sets it off. It&amp;#8217;s really alive at the very beginning, so Bravo. Lovely job. Yeah, thank you.&lt;/p&gt;
-&lt;p&gt;[00:06:34] David Waumsley: okay. Should we start with, we&amp;#8217;re looking at changes, so we&amp;#8217;ll start with the biggest change probably is the, responsive web and how typography had to change.&lt;/p&gt;
-&lt;p&gt;So&lt;/p&gt;
-&lt;p&gt;So we&amp;#8217;ll start talking, I think about responsive typography because we&amp;#8217;ve gone from that single screen resolution that we could all work to.&lt;/p&gt;
-&lt;p&gt;So it&amp;#8217;s similar to print. Then we&amp;#8217;ve gone to. Responsive when we first got our sort of standard sizes for our most mobiles and tablets to now when we can make no assumptions about the viewport size of that our users have, or the pixel density as well that comes with those devices. So we, that&amp;#8217;s meant that we&amp;#8217;ve had quite a few shifts really, that the first one is from pixels to Rems as our unit for working with type.&lt;/p&gt;
-&lt;p&gt;And I think with that I&amp;#8217;ve put down that it was once hotly debated. and it was up till quite recently, I think, with a lot of people still preferring pixels, still backwards looking on this, but I. And we were talking about this earlier, it&amp;#8217;s, been a recommendation for s from the W three C since we&amp;#8217;ve had CSS three, which is going back to 1999.&lt;/p&gt;
-&lt;p&gt;So 20,&lt;/p&gt;
-&lt;p&gt;[00:07:52] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;25 years that everybody&amp;#8217;s ignored it. Yeah, but that&amp;#8217;s because that&amp;#8217;s, largely because. They weren&amp;#8217;t able to use it. The browsers didn&amp;#8217;t keep up. Exactly right. Exactly. Yeah.&lt;/p&gt;
-&lt;p&gt;[00:08:05] David Waumsley: And I think it still continued on because, It&amp;#8217;s, not just that, that the technology wasn&amp;#8217;t there to allow us with rems, it&amp;#8217;s just that we&amp;#8217;re so used.&lt;/p&gt;
-&lt;p&gt;people have to convert often from a pixel perfect design onto the web, and they&amp;#8217;re used to working with pixels rather than, having something which is just non-static at all with rems. But I think the argument&amp;#8217;s over, and I don&amp;#8217;t think you&amp;#8217;ll find any experts that will. For pixels now because of the accessibility, because of the fact that it is.&lt;/p&gt;
-&lt;p&gt;you&amp;#8217;re unable a user&amp;#8217;s unable then to change their browser settings if they want something large and have that honored and have everything, proportionately changed. So I think REMS is definitely it because it&amp;#8217;s more manageable, it&amp;#8217;s more scalable. You, can change your mind about the overall size quite easily by changing the root percentage.&lt;/p&gt;
-&lt;p&gt;[00:08:59] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;But, I guess a reason for. This not becoming the default also is because it&amp;#8217;s so much less intuitive to understand. It&amp;#8217;s there&amp;#8217;s, some weird number that you put in there which isn&amp;#8217;t necessarily an integer. And because of that it&amp;#8217;s hard to ga gauge what that means. And based upon what you&amp;#8217;ve got as the root font size them, it might look different.&lt;/p&gt;
-&lt;p&gt;Whereas with a pixel you put in 30 and assuming you&amp;#8217;re using the same font throughout the website, you know what that&amp;#8217;s gonna look like. And. 15 will be smaller by this exact amount, and 50 will be bigger by this exact amount. But, but it doesn&amp;#8217;t allow for the capacity to change it. I guess a trick in the page builders that we&amp;#8217;ve used is to use media queries and then change the font size within the mobile view and all of this kind of thing.&lt;/p&gt;
-&lt;p&gt;But, better to just set it up once and get it right with, leading onto the next point, media queries and fluid typography.&lt;/p&gt;
-&lt;p&gt;[00:09:59] David Waumsley: Yeah, exactly. REMS on their own. I, suppose they weren&amp;#8217;t as convincing us pixels and why the debate went on until we really got, viewport units and calc allowing us to move from media queries where we&amp;#8217;re saying, okay, it&amp;#8217;s gonna be this pixels at.&lt;/p&gt;
-&lt;p&gt;This view port width and there&amp;#8217;s gonna be, now we&amp;#8217;ve moved to fluid tire topography where we can use Cal and let the browser calculate it first. So I guess why the, why we&amp;#8217;ve everybody&amp;#8217;s accepted REMS now is because of the fact we could use fluid typography and we&amp;#8217;ve got these generators that takes all of the chore outta the maths.&lt;/p&gt;
-&lt;p&gt;And my recommended one is the utopia. One, and there&amp;#8217;s a presentation I&amp;#8217;ve linked to it on the show notes there, which is worth watching by Tris Midford, who talks about not only their tool and what they&amp;#8217;re doing with it, but just generally fluid design. And it&amp;#8217;s made it so much easier because now, if I want to do anything now, I just go over to their tool and I say.&lt;/p&gt;
-&lt;p&gt;And it starts with pixels. You put in what you want, right at the smallest size, your base layer&lt;/p&gt;
-&lt;p&gt;[00:11:04] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;going. Yeah. Yeah.&lt;/p&gt;
-&lt;p&gt;[00:11:05] David Waumsley: You say, what do you imagine the pixels to be there? What do you imagine its largest size that you are accommodating. Put the pixel value expected and it does the calculation between those two points.&lt;/p&gt;
-&lt;p&gt;And it also allows you to change the typography scale, which is. Another thing again, which makes typography so much better. It&amp;#8217;s like musical notes. There are set types of scales that you do, so the spacing, and it will do all that for you. So as it&amp;#8217;s condensing down to a mobile, the type of scale that you might have at a large size.&lt;/p&gt;
-&lt;p&gt;There needs to be less space between, the lettering and stuff. the text itself,&lt;/p&gt;
-&lt;p&gt;[00:11:39] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;I, confess I&amp;#8217;ve not used that tool, but it sounds like a really valuable thing. So just in case you&amp;#8217;re listening to this on the audio, Google Utopia, CSS generator, and if you are able to get to our show notes, there&amp;#8217;s a link.&lt;/p&gt;
-&lt;p&gt;Directly there, so I should probably check that out. I confess I didn&amp;#8217;t.&lt;/p&gt;
-&lt;p&gt;[00:11:58] David Waumsley: No, there&amp;#8217;s a num I, I&amp;#8217;ve done a small video where I&amp;#8217;ve mentioned it as well and using it, and I, it&amp;#8217;s my favorite one. There&amp;#8217;s a lot of ones out there. Why I like it is because they&amp;#8217;re, they use it all the time. There&amp;#8217;s a few good designers.&lt;/p&gt;
-&lt;p&gt;Andy Bell is one of them who uses it. All the time. and they&amp;#8217;re using it in Clear Left, which is, Jeremy Keith&amp;#8217;s agency as well. So they&amp;#8217;re supporting it. So they&amp;#8217;re really keeping up to date on things that are changing with typography as well. So that&amp;#8217;s why I like theirs above all others, but Okay.&lt;/p&gt;
-&lt;p&gt;Yeah. Yeah. and it&amp;#8217;s got other things that go with it. Spacing as well, which I used. yeah, so I think, yeah, I never connected the dots until we started talking about the whole REM thing, but I think it&amp;#8217;s, everybody&amp;#8217;s jumped to rems when you can see, you can use the fluid typography.&lt;/p&gt;
-&lt;p&gt;So that seems to be the way I.&lt;/p&gt;
-&lt;p&gt;[00:12:47] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;We should probably say at this point what the fluid ty, what fluid typography is, and if you&amp;#8217;ve never en encountered it, and you are using, I don&amp;#8217;t know, media queries to change bluntly, you&amp;#8217;ve got a, I don&amp;#8217;t know, a, font sizing pixels for desktop, a font sizing pixels for tablet, and a font sizing pixels for anything less than tablet.&lt;/p&gt;
-&lt;p&gt;Call it mobile, then. This is different. This is where the, this is the allowance with fluid typography. That the, width, it&amp;#8217;s, it is a complete linear scale. If you, enlarge the, view port, given the constraints or what, what CSS you use, the typography will just grow proportionately and then reach some sort of maximum.&lt;/p&gt;
-&lt;p&gt;So if you&amp;#8217;re on, like a giant eight K monitor, it&amp;#8217;s not, gonna be truly enormous. It&amp;#8217;ll max out at some point that you set. But, it&amp;#8217;s beautiful watching it when you actually just grab the handles of your browser and reduce, enlarge, reduce enlarge, and you see the font size growing and shrinking.&lt;/p&gt;
-&lt;p&gt;And actually if, you think about that&amp;#8217;s what we should always have had. I. I wish we had that, but we didn&amp;#8217;t, tech technology didn&amp;#8217;t allow for it, but that&amp;#8217;s exactly what you want, right? I&amp;#8217;m on this size device and it&amp;#8217;s halfway between this and this. So the font is there and it&amp;#8217;s perfectly aligned for the viewport that I&amp;#8217;ve got.&lt;/p&gt;
-&lt;p&gt;Yeah. it&amp;#8217;s a shame that it&amp;#8217;s now a new thing rather than this has been around forever and ever since the dawn of the internet. And it&amp;#8217;s a kind&lt;/p&gt;
-&lt;p&gt;[00:14:13] David Waumsley: of compromise with it. &amp;#8217;cause I think when it first came out with the fluid typography, it was just saying, oh, we could use viewport width now to do everything right.&lt;/p&gt;
-&lt;p&gt;And then you realize that you have to anchor that a little bit with a REM in there to make sure that, because if you do that, then users can&amp;#8217;t zoom out on their browser. So you there&amp;#8217;s a strange anchor and the mass of it become very difficult. So you are not absolutely fully assure, unless you, move.&lt;/p&gt;
-&lt;p&gt;Your browser to see how it&amp;#8217;s responding. But it does get over that big hiccup in the fact that once where we have used the responsive to set them to our known mobiles and tablet sizes, we found that many are just before the break point that you might be reaching and then suddenly their text is out proportion to the size of their device.&lt;/p&gt;
-&lt;p&gt;Yeah. And you get this horrible jump in, so it gets rid of that. Yeah. And it&amp;#8217;s, it is lovely, isn&amp;#8217;t it? yeah. I think another thing that&amp;#8217;s changed, at least for me, this might be my ignorance, but there&amp;#8217;s a sort of move away, I think from our browsers would generally sort out the spacing on an element by element.&lt;/p&gt;
-&lt;p&gt;Basis, or we would style elements. we would put the margins of the paddings that we wanted on our individual elements. Now, I think there&amp;#8217;s more of an interest in looking at flow because we want to control uniformly the. The space that we&amp;#8217;ve got between our paragraphs and stuff. So there are a couple of, again, a couple of things that I would recommend for this.&lt;/p&gt;
-&lt;p&gt;One is the stack, which is on every layout, which is, again, Andy Bell, who I&amp;#8217;ve mentioned, and probably a key person behind this is Hayden Pickering, because 10 years ago now, he came up with something called. atomic, which you called the No, it was the Lobotomized Owl. Oh, this little selector.&lt;/p&gt;
-&lt;p&gt;yeah. Yeah. it&amp;#8217;s, he always had this problem, so if you put pad in padding on the bottom of your paragraphs, then the last paragraph would always have that padding that you didn&amp;#8217;t want. So he&amp;#8217;s used this little technique to be able to. Effectively set it on the top of your paragraph, but by using these Lobotomized owl, it&amp;#8217;s a child so that, so he doesn&amp;#8217;t select the first one.&lt;/p&gt;
-&lt;p&gt;so there&amp;#8217;s something that you can uniform the spaces. And there&amp;#8217;s also a wonderful demo as well. Definitely recommended. I wanna watch it again by, Mike. May who&amp;#8217;s a really good person on typography and he is got lots of tools as well, that you can use, but is on a show by Ben Meyers called some antics Do dev.&lt;/p&gt;
-&lt;p&gt;Oh, that&amp;#8217;s clever Semantic. I love what a clever name. Yeah, And you&amp;#8217;ve gotta watch that. if you&amp;#8217;re really into typography, I&amp;#8217;ve gotta watch it again. &amp;#8217;cause I didn&amp;#8217;t, it went over my head. But it really discusses that whole idea of flow and he sets it more manually. But, yeah, and I think that&amp;#8217;s a kind of fairly new thing.&lt;/p&gt;
-&lt;p&gt;[00:17:07] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;Again, links in the show notes, both of those things. The stack and the typography demo by Mike May, my, I&amp;#8217;m not sure, is in the show notes. And then we&amp;#8217;ve got these new units, which honestly I don&amp;#8217;t know anywhere near enough about, so I&amp;#8217;m hoping that you are actually gonna school me here. This&amp;#8217;ll be interesting.&lt;/p&gt;
-&lt;p&gt;Yeah,&lt;/p&gt;
-&lt;p&gt;[00:17:27] David Waumsley: I&amp;#8217;m pretty poor on them. One that I do use. So we&amp;#8217;ve got ch which is for character, so we can set our. Width of things by the character length, which is really, useful for that problem that I mentioned earlier about the fact that we tend to, or I did, tend to put too many words. I. On a full view.&lt;/p&gt;
-&lt;p&gt;so it&amp;#8217;s not very readable. You can set with your character length, and that&amp;#8217;s what I&amp;#8217;m doing actually on the site that you&amp;#8217;re looking at. So what&amp;#8217;s setting the length of the inner container here is the characters. I think it&amp;#8217;s set at 70. So effectively the text within that can expand beyond that. So a lot of people are using that in part of the responsive design.&lt;/p&gt;
-&lt;p&gt;if you set that maximum on all of your paragraphs, then wherever you&amp;#8217;re gonna place &amp;#8217;em in your design, you know it&amp;#8217;s going to be. Fairly readable, you said?&lt;/p&gt;
-&lt;p&gt;[00:18:15] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;Yeah. That&amp;#8217;s&lt;/p&gt;
-&lt;p&gt;[00:18:15] David Waumsley: interesting.&lt;/p&gt;
-&lt;p&gt;[00:18:16] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;Okay. That&amp;#8217;s fascinating.&lt;/p&gt;
-&lt;p&gt;[00:18:17] David Waumsley: Yeah, and something I don&amp;#8217;t think I&amp;#8217;ve ever used yet, which is X, the Ex.&lt;/p&gt;
-&lt;p&gt;Which is ex Yeah. I&amp;#8217;ve never used this. No, it&amp;#8217;s based, it&amp;#8217;s a little bit like M&amp;#8217;S are based on the, the font, M size, and we get REMS from that because we get root elements. X is the same. It&amp;#8217;s something in typography, which again, I don&amp;#8217;t understand, which is set in the, height of the X basically is something measuring.&lt;/p&gt;
-&lt;p&gt;So when you get clever people like Mike May, who knows how to use these, they will actually use that value for setting the heights. They will use that for. Knowing what is the correct line height to put according to the font that you&amp;#8217;re using? Yeah,&lt;/p&gt;
-&lt;p&gt;[00:18:59] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;this rings a bell. it&amp;#8217;s got, it has got some characteristic of the letter X, hasn&amp;#8217;t it?&lt;/p&gt;
-&lt;p&gt;And I can&amp;#8217;t remember why that letter in particular. Maybe it&amp;#8217;s just got certain height or width ratio. Yeah. Can&amp;#8217;t remember, but yeah. Okay. That&amp;#8217;s fascinating. So not the letter X, but EX in this case. Yeah,&lt;/p&gt;
-&lt;p&gt;[00:19:18] David Waumsley: EX in this case. I&amp;#8217;ve never used it yet, but it&amp;#8217;s really for, if you do understand that you might be setting certain things against the, X value of the font if you really understand the font you are using.&lt;/p&gt;
-&lt;p&gt;So you are styling into that. Yeah, it goes a bit above me. And then of course we got the. We&amp;#8217;ve already talked about them. We&amp;#8217;ve got the sort of a viewport width of Viewport height. We can start using an viewport minimum of Viewport Max. And someone like Mike May, again, I really don&amp;#8217;t use V Max yet, but he might use it to section the sort of space he will put on sections of his site.&lt;/p&gt;
-&lt;p&gt;So his header, his footer, his main, The leftover space at the bottom, he&amp;#8217;ll be setting this to percentage. So depending on the browser itself, it will allow a little bit more space or less as needed. So again, it&amp;#8217;s, it&amp;#8217;s one way of doing it. But again, I use other things in Utopia for spacing to, set spacing so it changes according to the size of the viewport.&lt;/p&gt;
-&lt;p&gt;So there&amp;#8217;s lots of different ways to skin this particular cat, I think.&lt;/p&gt;
-&lt;p&gt;[00:20:19] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;Yeah. And no doubt a Google around each of these will give you, yeah, a lot more information. But yeah, some of those a mystery to me. Some of them I&amp;#8217;ve definitely used. Okay. Shall we move on? Yeah. Yeah. Accessibility.&lt;/p&gt;
-&lt;p&gt;[00:20:33] David Waumsley: again, that&amp;#8217;s a big.&lt;/p&gt;
-&lt;p&gt;awareness boost that we&amp;#8217;ve had recently over accessibility, maybe because it&amp;#8217;s becoming law for us. So if we do it professionally, I guess we should be aware of these things. So there&amp;#8217;s a lot of changes there. we&amp;#8217;ve talked about this before. There&amp;#8217;s, we&amp;#8217;ve really gone from this western bias on the web to now having writing modes and internationalization.&lt;/p&gt;
-&lt;p&gt;Yeah. So we, I think we talked, Rachel Andrews talked about that when we were talking. I think it was in episode three when we talked about how we need to know this concept to know our CSS layouts. But there are lots of other things coming along with that. I noticed, I was just listening to the latest release, on Chrome where they have started to put in place something so you can.&lt;/p&gt;
-&lt;p&gt;Deal with, Chinese, Japanese, and Korean characters and stuff, and kind of space those out, Oh, interesting. That&amp;#8217;s a big shift. Interesting. Yeah. Okay.&lt;/p&gt;
-&lt;p&gt;[00:21:34] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;Yeah. So we were saying before the call began, weren&amp;#8217;t we before we hit record, at least that, at least I don&amp;#8217;t, really even think about the, web as, a Chinese.&lt;/p&gt;
-&lt;p&gt;Character thing. Yes. if I ever see something like that, I, I&amp;#8217;ve clearly strayed into an area of the web that I can&amp;#8217;t access &amp;#8217;cause I can&amp;#8217;t read Chinese. But just think of the population and the fact that all of these browsers in the past, at least anyway, were really configured for, left to top to bottom.&lt;/p&gt;
-&lt;p&gt;Yeah. and the character set being, a Latin alphabet. And of course most of the world don&amp;#8217;t, use any of that. But, but we&amp;#8217;re educated to think about that. and even, the things that we&amp;#8217;ve been talking about, the ex is based upon the, Latin character X and so on. And I don&amp;#8217;t even know where to begin with typography with.&lt;/p&gt;
-&lt;p&gt;I don&amp;#8217;t know, a Chinese character set. I, no idea what the concerns are there. I do know that there&amp;#8217;s a history of, calligraphy and making those characters look beautiful. I would say even more so than we have in the West with our typography, that there seems to be a real heritage in, I. when they paint the Chinese characters, making them look beautiful and adding weight to certain strokes so that they enlarge in one part and diminish in another, and then, tail off into sort of, almost nothingness.&lt;/p&gt;
-&lt;p&gt;I. Yeah. And, yeah. Fascinating. I&amp;#8217;d, love to get&lt;/p&gt;
-&lt;p&gt;[00:23:10] David Waumsley: into that. It&amp;#8217;s interesting &amp;#8217;cause I think the new things that you brought out for them is, a word break and auto phase for them. And also trimming because how, how their text is getting aligned in the sort of spacing isn&amp;#8217;t. Always perfect on the web and kind of, this is all still new stuff.&lt;/p&gt;
-&lt;p&gt;It seems incredible that you should have such a large population of people Yeah. Who have not been accommodated so far on the web. But that&amp;#8217;s definitely a change and it knocks onto us. &amp;#8217;cause even if we never deal with those, we&amp;#8217;ve had to understand things like Flexbox and grid layouts in terms of writing modes.&lt;/p&gt;
-&lt;p&gt;We&amp;#8217;ve needed to have that concept to be able to align things properly. So yeah, that&amp;#8217;s a massive change. Shall I move to the next thing? sure. That is our shift away from what we had when we started, which was only web, say fonts or system fonts to this abundance of open source options. Google fonts particularly, and then back to, I think I.&lt;/p&gt;
-&lt;p&gt;And it&amp;#8217;s not, this is, this keeps going backwards and forwards I&amp;#8217;m sure to a few quality fonts that you use that have all the character sets that are, flexible or a trend a bit back to considering system fonts again, I. So I did a little video on that one before, which was &lt;a href=&quot;https://noscript.show/cdn-cgi/l/email-protection&quot; class=&quot;__cf_email__&quot; data-cfemail=&quot;d3bfbcbcb8babdb493bebcb7b6a1bdb5bcbda7a0a7b2b0b8fdb0bcbe&quot;&gt;[email&amp;#160;protected]&lt;/a&gt;, which allows you to see what, what fonts are available on different systems.&lt;/p&gt;
-&lt;p&gt;And you get a little screenshot of it as well, so you can see how they might pan out if you do want to use them. But there&amp;#8217;s a real, I. I think from a accessibility point of view is the fact that probably what helps people with dyslexia above anything else or other things is familiarity. So if it&amp;#8217;s your system font that you&amp;#8217;re using for your body text, if that&amp;#8217;s an apple.&lt;/p&gt;
-&lt;p&gt;What we should be seeing there, I think should be San Francisco on your screen. this is a variable font. It&amp;#8217;s a, font that we couldn&amp;#8217;t license and, for many people that&amp;#8217;s just gonna be familiar. So it&amp;#8217;s a good font to use perhaps, rather than bringing in a custom one where we don&amp;#8217;t need to, where it doesn&amp;#8217;t add any extra value.&lt;/p&gt;
-&lt;p&gt;[00:25:19] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;Yeah, I think we all got a bit carried away when Google fonts came around, didn&amp;#8217;t we? Dumping, just dumping every kind of imaginable font that we could because it looked quirky and interesting. And I, think you&amp;#8217;re right. I think there&amp;#8217;s definitely a move away from that, in the WordPress space and CMS space and, webspace, localizing those fonts, I guess is a, recent endeavor.&lt;/p&gt;
-&lt;p&gt;But, GDPR and all that kind of thing. But, but I, think you&amp;#8217;re right. I think going back to system fonts and something which is familiar. for functional text. Text, like we&amp;#8217;re seeing on the screen now where we&amp;#8217;re just trying to get information from us to you where the flare and the novelty of it is really not the point then.&lt;/p&gt;
-&lt;p&gt;Yeah. But obviously if I was to go to, I don&amp;#8217;t know, the latest band&amp;#8217;s website, the latest pop stars website, where that sort of creativity is trying to be emphasized. Maybe the bit about how tickets, how much tickets cost, and where the venue is. Maybe that&amp;#8217;d be a web safe font. the bit about, what the artist does and who they are, especially the headings.&lt;/p&gt;
-&lt;p&gt;You you, still feel you&amp;#8217;ve gotta go a bit knots with that because, &amp;#8217;cause it, that&amp;#8217;s part of the whole typography thing is allowing you to be creative. But I&amp;#8217;m like you, but maybe it&amp;#8217;s &amp;#8217;cause I&amp;#8217;m old and my eyes are starting to fail a bit more. I&amp;#8217;ve got glasses on and things I want, I would just want clarity.&lt;/p&gt;
-&lt;p&gt;I just want everything to be, the contrast between the background and the font. To be clear, I need it to be readable. I need it to be spaced out and I, I honestly don&amp;#8217;t care too much for the, for the snazzy fonts.&lt;/p&gt;
-&lt;p&gt;[00:26:55] David Waumsley: Yeah, and I, just think, obviously with the other pressures, the kind of green pressures and the speed pressures as well, that, if there&amp;#8217;s not a good reason to argue for a custom font, we don&amp;#8217;t necessarily stick it in and, but that&amp;#8217;s not been my thinking.&lt;/p&gt;
-&lt;p&gt;For the last 10 years, it&amp;#8217;s been like, woo. Which, of all these fonts that, Exactly.&lt;/p&gt;
-&lt;p&gt;[00:27:14] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;Which one might Crow are in? But don&amp;#8217;t you have, I can&amp;#8217;t remember the last time this happened to me, but when you stumble across a website where they&amp;#8217;ve just got text, so imagery is out the window, it&amp;#8217;s just, plain background.&lt;/p&gt;
-&lt;p&gt;Yeah. Beautiful typography, something clear, readable. They&amp;#8217;ve obviously thought about the layout a lot. Yeah, it really does. It compels you. It just sucks you in, Yeah. it, it&amp;#8217;s, really profound what fonts can do. In fact, we said this before we began the show. The. A website where clearly somebody&amp;#8217;s put a lot of effort into fonts and making their typography look amazing.&lt;/p&gt;
-&lt;p&gt;It it really knocks it out the park. It takes something ordinary and makes it into extraordinary, but it, I don&amp;#8217;t end up looking at the font particularly. I just get this profound sense. Oh, that&amp;#8217;s clever. That&amp;#8217;s really beautiful. Yeah. I&amp;#8217;m now gonna go and explore what font that is and what the wits that they&amp;#8217;re using and all of these kind of things.&lt;/p&gt;
-&lt;p&gt;But, yeah, sorry, digression.&lt;/p&gt;
-&lt;p&gt;[00:28:14] David Waumsley: Yeah, no, that&amp;#8217;s fine. the next point in some ways I think I&amp;#8217;ve made it already, but, perhaps a trend in that from moving to browser setting the line heights and stuff, or as individually doing it to, and proximity according to fonts use. So in some ways we have some guidance about line height is usually the biggest problem for people not being able to read.&lt;/p&gt;
-&lt;p&gt;When you&amp;#8217;ve got your paragraphs and you&amp;#8217;ve not got the right amount, and you can go to something like war gag. the, actually there&amp;#8217;s another little thing on there. If you hover over the wagg, you&amp;#8217;ll see I&amp;#8217;m using, oh, it&amp;#8217;s under lined with a, I&amp;#8217;m using the abbreviation here. Another bit of typography.&lt;/p&gt;
-&lt;p&gt;the web content accessibility guidelines. Oh, sadly,&lt;/p&gt;
-&lt;p&gt;[00:28:56] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;our video platform doesn&amp;#8217;t pick that up. That&amp;#8217;s interesting. Ah, that&amp;#8217;s, but, I am hovering over something and on my screen.&lt;/p&gt;
-&lt;p&gt;[00:29:03] David Waumsley: Ah, interesting. Oh, I can&lt;/p&gt;
-&lt;p&gt;[00:29:04] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;see it. And, it, there, there&amp;#8217;s a little, like a, tool tip if you like, that&amp;#8217;s the browser has provided, which pops up to, to give me the context of that.&lt;/p&gt;
-&lt;p&gt;But on, on the video, it&amp;#8217;s not come through. There&amp;#8217;s, there must be some reason for that. But anyway, there we go. And I think,&lt;/p&gt;
-&lt;p&gt;[00:29:19] David Waumsley: there&amp;#8217;s more awareness of lots of things about giving line height and, the experts will know how to do that against the, fonts. The waggle will give us guidelines, like it should be roughly about 1.5.&lt;/p&gt;
-&lt;p&gt;it&amp;#8217;s a unitless height, so it takes the value of the. The unit for the font that you&amp;#8217;ve said. and there were other things that I wasn&amp;#8217;t aware of until recently is the, and it&amp;#8217;s probably failing on this site. the idea of proximity, the idea that we need to leave a little bit more on a header when there&amp;#8217;s some paragraph text underneath it.&lt;/p&gt;
-&lt;p&gt;The, on the header itself, the space above it needs to be more than the space before you get to the paragraph. So the proximity of the header two. The paragraph underneath is grouped together, and that makes for better reading. So these, yeah, it&amp;#8217;s&lt;/p&gt;
-&lt;p&gt;[00:30:05] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;interesting. I&amp;#8217;ve always found that to be strange when you look at that, when you see it on somebody else&amp;#8217;s website.&lt;/p&gt;
-&lt;p&gt;I. It looks correct, but when you are in the weeds and you are looking at, let&amp;#8217;s say, I don&amp;#8217;t know the, padding above a heading, I always want to get rid of it. I want it to go away. But, then when I look at it on the front end, oh yeah, no, that, that looks right because it, you do need to give that little bit of breathing space, don&amp;#8217;t you?&lt;/p&gt;
-&lt;p&gt;That bit&amp;#8217;s finished. We&amp;#8217;re now onto a new heading. There needs to be a, proportionate gap to show, okay, this is an H four. There&amp;#8217;s a. There&amp;#8217;s something going on there. This is an H three something and this is an H two something else. but I, always, have this intuition. I want to erase it, but I generally don&amp;#8217;t.&lt;/p&gt;
-&lt;p&gt;[00:30:51] David Waumsley: Yeah. It&amp;#8217;s just that, it&amp;#8217;s just so you can see what content belongs with what which kind of belongs with the content below. Just proximity is one of those things which I&amp;#8217;m becoming more aware of all the time. as you listen to more people who know UX design and have that. Formal training.&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;m just looking&lt;/p&gt;
-&lt;p&gt;[00:31:05] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;for it on this page. And we, you don&amp;#8217;t really have too much use of that, do you? You&amp;#8217;ve got these great big, I&amp;#8217;m guessing these are H twos or something like that, but, it should be, if&lt;/p&gt;
-&lt;p&gt;[00:31:14] David Waumsley: I&amp;#8217;ve done it I probably haven&amp;#8217;t, it should have a little bit more space above. Oh, it definitely does.&lt;/p&gt;
-&lt;p&gt;There&amp;#8217;s,&lt;/p&gt;
-&lt;p&gt;[00:31:20] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;it looks like it, there&amp;#8217;s a little, you probably can&amp;#8217;t see on the screen. There&amp;#8217;s a little gray box here and the distance between the v and the box. Oh, no, it definitely is. There&amp;#8217;s definitely a little bit more. Okay. Alright, Rob.&lt;/p&gt;
-&lt;p&gt;[00:31:34] David Waumsley: the, next point under accessibility was just a, move, that we&amp;#8217;ve seen, I think recently about earlier we tended to see underlining as visual clutter.&lt;/p&gt;
-&lt;p&gt;something that you, on your links I&amp;#8217;m talking about here, to now respecting it as a essential. UI and I think we&amp;#8217;ve been given some new tools that go along with that one that I most and I&amp;#8217;m using it all the time. If you see that, yeah, you are where the links are there, there&amp;#8217;s a, bit of a space between it, and that&amp;#8217;s because of the new property, which is the textline, underlining offset where you can actually offset that line.&lt;/p&gt;
-&lt;p&gt;So we, none of the descendants are touching on it. and also you can set the. Thickness of that line as well. You can make it a little bit thinner and obviously you can color it. So we&amp;#8217;ve got a lot more control over our links. Now&lt;/p&gt;
-&lt;p&gt;[00:32:23] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;I really like what you&amp;#8217;ve done here. So obviously the descender, the G here in, in whatever font this is not particularly, it&amp;#8217;s not particularly long.&lt;/p&gt;
-&lt;p&gt;The G doesn&amp;#8217;t descend that far. Yeah, but still. The, little gap that you&amp;#8217;ve got here, which is bigger than I would expect normally is nice. it really does make that kind of feel like it&amp;#8217;s, I don&amp;#8217;t know, it&amp;#8217;s not breaking up the, flow when my eyes going from left to right and reading through it, that line is out the way.&lt;/p&gt;
-&lt;p&gt;Yeah. So I&amp;#8217;m able to read it as normal text and keep going. and I do the fact that the line isn&amp;#8217;t broken up. and, sorry, one last thing. And I do think that this has to become the default, doesn&amp;#8217;t it? I think we all just need to settle on underlining is the way to do it? Yeah, just let&amp;#8217;s all go back to underlining please.&lt;/p&gt;
-&lt;p&gt;I.&lt;/p&gt;
-&lt;p&gt;[00:33:10] David Waumsley: It&amp;#8217;s become a, I think, setting also this offset, is quite nice. And I think some people have put it in their CSS resets if there&amp;#8217;s no other style against it or class against it that will be there. Stephanie Eccles does that and and I think that&amp;#8217;s. A really, it&amp;#8217;s only recent this, that we were able to do it.&lt;/p&gt;
-&lt;p&gt;So I can see why people are wanting to remove stuff, even though you do break up the line by default of browsers. If there is a descender, it can be a little bit uncomfortable to read. But yes, I think the argument now is that we should, and, to be honest, we&amp;#8217;re just going back to arguments that we&amp;#8217;re there from the nineties, so we,&lt;/p&gt;
-&lt;p&gt;[00:33:47] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;yeah.&lt;/p&gt;
-&lt;p&gt;[00:33:47] David Waumsley: Jacob Nielsen, who was always saying, you must underline your links. You must underline your links. And somehow we got designers got into the idea that it was just a bit clutter and we&amp;#8217;ll remove it, it&amp;#8217;s fine and it really isn&amp;#8217;t fine. And the way to know that is just imagine I. That you can&amp;#8217;t see color, and then you&amp;#8217;ll know it&amp;#8217;s not fine.&lt;/p&gt;
-&lt;p&gt;And imagine that. Yeah, that&amp;#8217;s a nice&lt;/p&gt;
-&lt;p&gt;[00:34:06] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;way. Yeah.&lt;/p&gt;
-&lt;p&gt;[00:34:07] David Waumsley: Simple. Or, imagine that your device is a black and white device, a monochrome device. Yeah. And suddenly you&amp;#8217;ve removed what the web basically is. It&amp;#8217;s,&lt;/p&gt;
-&lt;p&gt;[00:34:17] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;yeah. That&amp;#8217;s really a good point. Yeah. That&amp;#8217;s a perfect encapsulation of why. It needs to be that way.&lt;/p&gt;
-&lt;p&gt;If you are, if you cannot see color, just imagine it in black and white. And here it&amp;#8217;s pretty clear. Also, I guess your, the, line height, the gap between the, this, row of text and this row of text is enough to allow that. To breathe, if Yeah. So the, under, let&amp;#8217;s, yeah, this is a better example &amp;#8217;cause you can see more of it.&lt;/p&gt;
-&lt;p&gt;The underline here, you&amp;#8217;ve got the offset, which is quite generous, but still not too much. But it&amp;#8217;s still not interfering with the road. Be below the, the line below it. This is still not being interfered with by this. And you can actually see that in the. The way it&amp;#8217;s being highlighted. So that&amp;#8217;s nice. nicely Don David,&lt;/p&gt;
-&lt;p&gt;[00:35:03] David Waumsley: basically.&lt;/p&gt;
-&lt;p&gt;Okay, we&amp;#8217;re using system fonts here, so I&amp;#8217;m not actually sure whether, the line height is right on yours as it is on the one that I see on the Interesting. So, it&amp;#8217;s a bit of a guesswork on that, I think. Anyway. Yeah, so I think that&amp;#8217;s definitely a move. And it was, it&amp;#8217;s down to the fact that we had frameworks like Bootstrap, which were hugely popular, that didn&amp;#8217;t underline their links by default.&lt;/p&gt;
-&lt;p&gt;It&amp;#8217;s changed now. Bootstrap. Yeah. But anyway. Okay. Should we move on to the&lt;/p&gt;
-&lt;p&gt;[00:35:29] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;next&lt;/p&gt;
-&lt;p&gt;[00:35:29] David Waumsley: bit&lt;/p&gt;
-&lt;p&gt;[00:35:30] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;of technology? Yeah, we&amp;#8217;d better race, actually. We&amp;#8217;re on. Yeah, we&amp;#8217;re on. not, I&amp;#8217;m not sure exactly how long, but we&amp;#8217;ve added up quite a few minutes. So let&amp;#8217;s just put the, put the pedal to the metal. Is that what they say?&lt;/p&gt;
-&lt;p&gt;Something like that. There&amp;#8217;s a lot to&lt;/p&gt;
-&lt;p&gt;[00:35:42] David Waumsley: cover here. Yeah. Variable fonts. We can cover them. Fairly quickly. there&amp;#8217;s a big, change in the fact that we used to have to support multiple font formats. &amp;#8217;cause there&amp;#8217;s a whole history with them. So we had the TTF, the OFT. I can&amp;#8217;t remember the what they stand for now.&lt;/p&gt;
-&lt;p&gt;But no, there were a whole history, I think you know, the true type form. There&amp;#8217;s the first one that was Microsoft and Apple getting together back in the eighties. And then you get. Variations that have come on those to make them fit better with the web. Things like, I think the OFT added ligatures and things like that.&lt;/p&gt;
-&lt;p&gt;And then we&amp;#8217;ve got the embedded ot, which was the one to work very well with IE. And then finally the world, worldwide web consortium got together and had a body for, fonts. And then that&amp;#8217;s when we got Wolff.&lt;/p&gt;
-&lt;p&gt;[00:36:35] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;Honestly, if you, if you get me to transcribe this with AI software, the last paragraph you just said will be so interesting.&lt;/p&gt;
-&lt;p&gt;[00:36:45] David Waumsley: So, we get the web open font format, which is what we&amp;#8217;ve got. And from 2010, so this is really the recommendation from the Ws. Three C from 2010, and then they further optimize it. So we get WF two now support is there for WF two. So we&amp;#8217;ve basically gone from having to support all these, this history of formats to really being able to pretty much, unless we need to support IE, to get away with WF two, which is wonderful.&lt;/p&gt;
-&lt;p&gt;Yay. Yay. What do, yeah. And the, great thing about this, which leads us really to the variable fonts is the fact that, the. That&amp;#8217;s the format for variable fonts, and I think that&amp;#8217;s the big trend now is the fact that instead of having to load individually the weights or the italic versions of the font that we&amp;#8217;re using, is that we can have this all within the one WF two format and use CSS to fine control the weights.&lt;/p&gt;
-&lt;p&gt;So if we want some. Bizarre weight. So we want it, instead of it going from 300 to 400 and we want 3, 2, 5, or something as the exact weight, we can do it with the variable fonts. And if we want our italics to slightly slant in a different way, we can do it with the CSS. So I think that&amp;#8217;s really exciting, at the moment that we can do that.&lt;/p&gt;
-&lt;p&gt;Downside, of course, is that you. if you&amp;#8217;re only using a couple of weights or something and you&amp;#8217;re not using all this extra, then they are a bit heavier than loading those individually. And finally, yeah, we put down, which I think we&amp;#8217;ll just skip &amp;#8217;cause I think we&amp;#8217;ll need to come back to it &amp;#8217;cause I don&amp;#8217;t understand it.&lt;/p&gt;
-&lt;p&gt;Color or chromatic fonts. Chromatic is the correct&lt;/p&gt;
-&lt;p&gt;[00:38:25] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;word. no. I have no understanding of this. Anyway. It&amp;#8217;s a thing.&lt;/p&gt;
-&lt;p&gt;[00:38:29] David Waumsley: It&amp;#8217;s a thing. Yeah. And actually it brings in a new format. I think it&amp;#8217;s taking one of the old formats with SVGs and I think there&amp;#8217;s not clarity over what that is. There are some, Google fonts out there, which are chromatic fonts that you can play around with.&lt;/p&gt;
-&lt;p&gt;I, don&amp;#8217;t quite get the value yet because I&lt;/p&gt;
-&lt;p&gt;[00:38:45] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;don&amp;#8217;t, yeah, I&amp;#8217;m on trying to understand what the purpose is, if you, we can set the color of a font fairly straightforwardly in CSS I&amp;#8217;m interested to see what the benefit is. What, are we getting out of it? Is it that fonts can be, I don&amp;#8217;t know, can there be gradients in font colors, or.&lt;/p&gt;
-&lt;p&gt;I, yes,&lt;/p&gt;
-&lt;p&gt;[00:39:04] David Waumsley: exactly. I think it&amp;#8217;s exactly that and I think, you can do a lot of the tilting and rotating and stuff of your fonts, which can create some lovely effects. But in the ones that I&amp;#8217;ve seen around, the only thing where I could see I&amp;#8217;d use it and, effectively it&amp;#8217;s no dissimilar from what I&amp;#8217;m doing on the top header of this post where I&amp;#8217;m got an image coming through.&lt;/p&gt;
-&lt;p&gt;So where I&amp;#8217;ve seen a color font being used, say it&amp;#8217;s saying the word pizza and the background, the images of pizza and. Think, I&amp;#8217;m not going to load this quite heavy color font to do that when I can do it with a, kind of simple. Clip masking like this for myself, so yeah. Yeah. The value&amp;#8217;s not there yet for me.&lt;/p&gt;
-&lt;p&gt;Okay. We&amp;#8217;ll have to see. Perhaps I don&amp;#8217;t understand it. yeah. Alright. That&amp;#8217;s&lt;/p&gt;
-&lt;p&gt;[00:39:45] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;variable. Fonts. Now we&amp;#8217;re onto some lesser used specs.&lt;/p&gt;
-&lt;p&gt;[00:39:49] David Waumsley: Yeah, I just wanted to mention a couple of things on typography &amp;#8217;cause they were relatively new to me, so I put an example up on there. So something which is really when we&amp;#8217;re talking about responsive again, it&amp;#8217;s not used and that&amp;#8217;s CSS columns.&lt;/p&gt;
-&lt;p&gt;And actually this is so cool. This is so great. Yeah, it&amp;#8217;s, it is just simply that you can set. Columns for any of the things that you want, and you can make it responsive. It&amp;#8217;s not by default. So if we have a column count of two, it wouldn&amp;#8217;t be responsive. We&amp;#8217;d, we would need a media query. But what I&amp;#8217;ve done on here, because there is a, limited space anyway, I&amp;#8217;ve put it so it&amp;#8217;s just magic numbers with this, but I&amp;#8217;ve put it at 18 res here.&lt;/p&gt;
-&lt;p&gt;So it&amp;#8217;s created two columns while there&amp;#8217;s more than the 18 res to it. But if you. If you zoom in on this one, it will just automatically,&lt;/p&gt;
-&lt;p&gt;[00:40:36] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;see what we get. Oh, collapse. Probably make that in the center. Zoom. Let&amp;#8217;s put that right in the middle there. So I&amp;#8217;m gonna collapse the screen. We&amp;#8217;ve still got two columns.&lt;/p&gt;
-&lt;p&gt;And there look, there we go. There&amp;#8217;s some magic moment there. It collapses down into the one column. That&amp;#8217;s super useful. That&amp;#8217;s great.&lt;/p&gt;
-&lt;p&gt;[00:40:54] David Waumsley: So sometimes we just, bring in grid and all of that stuff where we could simply do it with CSS columns. It&amp;#8217;s been there for some time. I think the spec&amp;#8217;s been tightened up.&lt;/p&gt;
-&lt;p&gt;I think, It&amp;#8217;s, Rachel, Andrew has been working on this as well, who worked on grid quite a lot. So anyway, it&amp;#8217;s just a really cool trick which gets ignored. And I think there are lots of other little things which I&amp;#8217;m just becoming aware of. So I&amp;#8217;ve put a drop shadow in there. It&amp;#8217;s another little bit of, on the t on my paragraph there, it&amp;#8217;s.&lt;/p&gt;
-&lt;p&gt;If you see that it&amp;#8217;s, I&amp;#8217;ve styled it slightly different, used a different font, and it&amp;#8217;s going over one and a half of the text a little bit more because I&amp;#8217;ve put a little border around it on there. And this is something, though, it&amp;#8217;s not very well supported at the moment. So it&amp;#8217;s a combination of using first letter as a, pseudo.&lt;/p&gt;
-&lt;p&gt;Element. Or class, I think. And then initial letter as a drop cap to do that. So these kind of things. Yeah. And then there&amp;#8217;s a whole thing, I won&amp;#8217;t go into too much here else, we&amp;#8217;ll go on forever, but I think there&amp;#8217;s a whole lot of HTML, which we underuse. So I&amp;#8217;ve just given one example here where I&amp;#8217;m using the keyboard one, rather than having to pull in an image, I can style the the.&lt;/p&gt;
-&lt;p&gt;KBD tag and create this kind of little control shift, enter keys or any key that I want. Just with CSS.&lt;/p&gt;
-&lt;p&gt;[00:42:19] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;They&amp;#8217;re nice, aren&amp;#8217;t they? They look really nice.&lt;/p&gt;
-&lt;p&gt;[00:42:22] David Waumsley: Yeah. I think all the pros, the people who&amp;#8217;ve been in this game longer than me will put these in their explanations, but I think it&amp;#8217;s, definitely worth looking at lots of, HTML because we just don&amp;#8217;t use many of the tags.&lt;/p&gt;
-&lt;p&gt;Like Mark, we don&amp;#8217;t use, we don&amp;#8217;t often put a. Different styling for time. All of these are tags which we often forget about, particularly if we&amp;#8217;ve come from a background of A CMS, we just put those in. and, I&amp;#8217;m using one actually on the top of the title there, so I&amp;#8217;m actually using one which I&amp;#8217;d entirely forgotten about until I started writing this, which is, the, let me just find it on the notes so I get it.&lt;/p&gt;
-&lt;p&gt;There is one called. Somewhere. There it is. It&amp;#8217;s WBR, which is, there it is. It&amp;#8217;s basically, yes. It is given a width, it&amp;#8217;s width break opportunity, I think. And if you go to the top of the site here as I&amp;#8217;ve got a huge, typography here. I&amp;#8217;m actually using that to separate typo and graph. So if you slim in on that one when it hasn&amp;#8217;t got the room, oh, this is good.&lt;/p&gt;
-&lt;p&gt;This is, we&lt;/p&gt;
-&lt;p&gt;[00:43:30] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;didn&amp;#8217;t do, we didn&amp;#8217;t try this before the show started. No. So I&amp;#8217;m making it smaller. We got the word typography. It will eventually break. Yay. Look at that. That&amp;#8217;s so&lt;/p&gt;
-&lt;p&gt;[00:43:39] David Waumsley: great. So you could tell us where, if you really do want to keep your massive font or something, you might want to decide where it breaks, and that&amp;#8217;s an opportunity to do it.&lt;/p&gt;
-&lt;p&gt;Unlike a regular break, which will just break it for everybody. This breaks when there&amp;#8217;s the opportunity to break. You can set it wherever you like, multiple&lt;/p&gt;
-&lt;p&gt;[00:43:54] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;things in one word or. Yeah.&lt;/p&gt;
-&lt;p&gt;[00:43:57] David Waumsley: Yes. Yeah, exactly. So it&amp;#8217;s just sometimes you want your word to break in a different way. Yeah. If you&amp;#8217;re gonna keep it big, probably I should have just made it small, but, okay.&lt;/p&gt;
-&lt;p&gt;I think that&amp;#8217;s probably enough &amp;#8217;cause I&amp;#8217;m covering, yeah, the stuff. Let&amp;#8217;s talk about the new spec, shall we? okay, here we go. Couple of things here. That&amp;#8217;s, one that&amp;#8217;s only in Safari only, which I think is really handy, which is hanging punctuation, which will allow, and I&amp;#8217;ve heard this being talked about a lot.&lt;/p&gt;
-&lt;p&gt;People get annoyed at that. If you&amp;#8217;ve got a block quote and the, you styled up your quotes on what, you&amp;#8217;re gonna put the quotes up there anyway, those quotes are going to indent your text. Yeah, And it&amp;#8217;s a lot easier if people keep. Running down vertically and see everything aligned.&lt;/p&gt;
-&lt;p&gt;So what hanging punctuation could do is to make sure that you get to choose that it goes outside. So you&amp;#8217;d have to use a lot of CSS to try and force your right. Yeah, there would be a lot of negative margins and all that nonsense. So that&amp;#8217;s quite cool, when it&amp;#8217;s supported. But it&amp;#8217;s safari only at the moment.&lt;/p&gt;
-&lt;p&gt;We&amp;#8217;ve got font size adjust, which I talked about, about a year ago with doing stuff. Performance. it&amp;#8217;s just, it&amp;#8217;s the most useful thing is the fact that you can adjust, some of these fonts. Usually a fallback font, which might be a system font or something. So you can change its X shape, you can stretch it out a little bit so it can better match.&lt;/p&gt;
-&lt;p&gt;I. The custom font that is waiting to load. So it stops this sort of jarring when it&amp;#8217;s going from the system fallback font to the custom font loading in. So you can line them up a little bit better with that. it&amp;#8217;s limited availability at the moment, and there&amp;#8217;s, font ing, that&amp;#8217;s fully supported at the moment, which allows us to, Browsers Will, kerning is spacing basically between letters. Yeah. Yeah. Browsers will do that for themselves. If you want to force it, you can force it so that it&amp;#8217;s set by the font or you can let the browser do it, or you can just turn it off altogether if you are controlling that. So that&amp;#8217;s a, fully supported thing, but fairly new.&lt;/p&gt;
-&lt;p&gt;And finally, the thing that was. Making the, my title with the image coming through it is the background clip, which is beautiful. yeah, quite new but widely available now, and yeah, it&amp;#8217;s just used for clipping backgrounds on there and it&amp;#8217;s useful with text.&lt;/p&gt;
-&lt;p&gt;[00:46:19] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;Okay. Okay. So they&amp;#8217;re all in the show notes?&lt;/p&gt;
-&lt;p&gt;no. All in the show notes, no script show slash 11. And then you&amp;#8217;ve got a little flourish at the end here, haven&amp;#8217;t you? You&amp;#8217;ve got something nice to. Yeah, if you scroll, scroll. Now. I scroll up. Scroll up. Hold on. I&amp;#8217;ll wait for it. You have to see this or go to the webpage. okay. I&amp;#8217;m gonna scroll up slowly.&lt;/p&gt;
-&lt;p&gt;That little word typography, which is orientated at 90 degrees is fading in and out. I&amp;#8217;m noticing that. What am I waiting for? Oh, at that,&lt;/p&gt;
-&lt;p&gt;oh my. Yeah. Wow.&lt;/p&gt;
-&lt;p&gt;[00:46:52] David Waumsley: You&amp;#8217;ve even got a little bounce going on there. Yeah, I borrowed it from somebody else. I must credit them, and I&amp;#8217;ve forgotten who it is. It&amp;#8217;s somebody I do follow and I&amp;#8217;ve forgotten, but I&amp;#8217;ve amended it slightly just for hours. But yes, really this is just to highlight just the last bit of change, if you like, in our history, and I think this is really significant, only in the Chrome at the moment, but we&amp;#8217;ve got scroll animation, which means that we can do a lot of.&lt;/p&gt;
-&lt;p&gt;Cool animations and stuff, with our text as I&amp;#8217;m just showing off here. It&amp;#8217;s a little bit over. It&amp;#8217;s great though.&lt;/p&gt;
-&lt;p&gt;[00:47:21] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;Isn&amp;#8217;t, that brilliant. and again, obviously the purview of JavaScript forever, this was, the only way to do it and now all of this stuff is coming to CSS. Yeah. it is a bit flashy, isn&amp;#8217;t it?&lt;/p&gt;
-&lt;p&gt;There&amp;#8217;s quite a lot going on there to make you make your eyes water, but you get the point. It doesn&amp;#8217;t have to be quite so dramatic as that, but something subtle. Something just sort fading in or moving slightly to the left or the right could be very profound. That&amp;#8217;s lovely.&lt;/p&gt;
-&lt;p&gt;[00:47:48] David Waumsley: I think it&amp;#8217;s really nice that it&amp;#8217;s coming to a lan, language that we can understand, rather than JavaScript and you really rely on languages and it makes it a lot easier.&lt;/p&gt;
-&lt;p&gt;So if your, browser had been set to prefer reduced motion in some form or another, then you won&amp;#8217;t get that bounce and you&amp;#8217;ll get the fade in slightly. You won&amp;#8217;t get the bouncing because it can just wrap that in the CSS to be able to do that. I, I. That&amp;#8217;s great. And I&amp;#8217;ve also put the tilted text here just to show that we can have some fun with writing modes these days, and particularly if it that&amp;#8217;s combined with the better positioning that we&amp;#8217;ve got.&lt;/p&gt;
-&lt;p&gt;So it, it&amp;#8217;s maybe not lined up perfectly &amp;#8217;cause they had to do it quickly, but it&amp;#8217;s using grid to put it side by side. So Grid and Subgrid given us the ability to place more accurately our texts and we can, as we&amp;#8217;re showing here with the writing mode changing that we can turn it on its side.&lt;/p&gt;
-&lt;p&gt;It&amp;#8217;s nice. It&amp;#8217;s really nice. Yeah. Yeah. And that&amp;#8217;s it. And I just think that&amp;#8217;s the way things are going. I think typography is becoming a big thing. People are using blending, filtering, masking, overlapping with other elements and all these kind of things to tell stories these days on their web and need less images.&lt;/p&gt;
-&lt;p&gt;I think you can do a lot with good typography, and it can all be. Fully accessible. You can turn off the styling and anyone can read the text document screen. Readers can read it. So I think typography just come such&lt;/p&gt;
-&lt;p&gt;[00:49:15] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;a long way. I think this episode has been profoundly interesting. Can I urge you if you have listened to this or even watched it on the screen, go, to no script show.&lt;/p&gt;
-&lt;p&gt;I keep saying I&amp;#8217;ve, I&amp;#8217;m sure I&amp;#8217;ve said episode 11 throughout this whole thing. And of course it&amp;#8217;s actually episode 12, isn&amp;#8217;t it? Yeah. I&amp;#8217;m sorry about that. anytime I&amp;#8217;ve said episode 11, ignore that it&amp;#8217;s actually episode 12 and go check it out. No script show slash 12. I&amp;#8217;ll correct that in the, in the transcript hopefully, and go and see, what marvelous things David has put together.&lt;/p&gt;
-&lt;p&gt;It&amp;#8217;s all there loads of links, loads of opportunity for you to learn and figure out all this stuff. Wow. For yourself. Learn with me.&lt;/p&gt;
-&lt;p&gt;[00:49:55] David Waumsley: Yeah, it&amp;#8217;s, yeah. We bitten off more than can chew really with this episode. It&amp;#8217;s gone on quite a long time, so we&amp;#8217;ll probably have to close up. It&amp;#8217;s been a long one,&lt;/p&gt;
-&lt;p&gt;[00:50:03] &lt;strong&gt;Nathan Wrigley: &lt;/strong&gt;so shall we.&lt;/p&gt;
-&lt;p&gt;Shall we knock it on the head there? Yeah. Okay. We&amp;#8217;ll be back soon. Who knows when? We don&amp;#8217;t have a set schedule, but we&amp;#8217;ll be back at some point in the near future with episode 12, no 13 saving himself. So I&amp;#8217;ll see you next time. Thanks, David. Yeah, thank you. Cheers. Bye bye.&lt;/p&gt;
-&lt;/details&gt;
-</content>
   </entry>
 </feed>

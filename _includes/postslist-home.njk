@@ -1,6 +1,18 @@
-{%- css %}.postlist { counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }} }{% endcss %}
-<ol reversed class="postlist">
+
 {%- for post in postslist | reverse %}
-<a href="{{ post.url }}"><img src="https://i.ytimg.com/vi_webp/{{post.data.videoid}}/mqdefault.webp" alt="" width="300">  </a>
+  <li>
+    {% if post.data.videoid %}
+      <a href="{{ post.url }}" class="block">
+        <img src="https://i.ytimg.com/vi_webp/{{post.data.videoid}}/mqdefault.webp" 
+             alt="{{post.data.title}}" 
+             width="320" 
+             height="180"
+             loading="lazy">
+      </a>
+    {% else %}
+      <a href="{{ post.url }}" >
+        <span>{{ post.data.title }}</span>
+      </a>
+    {% endif %}
+  </li>
 {%- endfor %}
-</ol>
