@@ -21,7 +21,6 @@
 <meta property="twitter:description" content="{{description}}" />
 <meta property="twitter:image" content="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp" />
  <link rel="stylesheet" href="/css/index.css">
- <link rel="stylesheet" href="/css/prism-diff.css">
 
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
 		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
@@ -42,10 +41,10 @@
 		{#- Add the contents of a file to the bundle #}
 		{# {%- css %}{% include "public/css/index.css" %}{% endcss %} #}
 		{#- Or you can add from node_modules #}
-		{%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
+		{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
 
 		{#- Render the CSS bundle using inlined CSS (for the fastest site performance in production) #}
-		<style>{% getBundle "css" %}</style>
+		{# <style>{% getBundle "css" %}</style> #}
 	
 		{#- Add the heading-anchors web component to the JavaScript bundle #}
 		{# {%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %} #}
