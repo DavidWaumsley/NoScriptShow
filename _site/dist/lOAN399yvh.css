@@ -1,4 +1,3 @@
-
 /* @view-transition {
 	navigation: auto;	
 }
@@ -499,3 +498,13 @@ color: #f92672;
 .token.entity {
 	cursor: help;
 }
+@view-transition {
+	navigation: auto;	
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: .6s ; 
+}
+
+/* Test css */

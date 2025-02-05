@@ -88,7 +88,7 @@
     <link href="https://noscript.show/build/6/" />
     <updated>2025-01-23T00:00:00Z</updated>
     <id>https://noscript.show/build/6/</id>
-    <content type="html">&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+    <content type="html">&lt;h2 id=&quot;show-notes&quot;&gt;Show notes&lt;/h2&gt;
 &lt;hr&gt;
 &lt;p&gt;As WordPress user we know how to build dynamic sites. We know next to nothing about Static Site Generators and the Jamstack. Here we rebuild a HTML site with 11ty (Eleventy). We also look at adding a CMS.&lt;/p&gt;
 &lt;h2 id=&quot;things-we-cover&quot;&gt;Things we cover&lt;/h2&gt;

@@ -20,14 +20,20 @@
 <meta property="twitter:title" content="No Script Show {{title}}" />
 <meta property="twitter:description" content="{{description}}" />
 <meta property="twitter:image" content="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp" />
- <link rel="stylesheet" href="/css/index.css">
+
+<link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
+
+{%- css %}
+{% include "public/css/index.css" %}
+{% include "public/css/test.css" %}
+{% endcss %}
 
  <meta name="generator" content="{{ eleventy.generator }}">
 
 		{#-
 		Plain-text bundles are provided via the `eleventy-plugin-bundle` plugin:
 		1. CSS:
-			* Add to a per-page bundle using `{% css %}{% endcss %}`
+			* Add to a per-page bundle using `{% css %}`
 			* Retrieve bundle content using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
 		2. Or for JavaScript:
 			* Add to a per-page bundle using `{% js %}{% endjs %}`
@@ -38,7 +44,7 @@
 		{#- Add an arbitrary string to the bundle #}
 		{# {%- css %}/* This is an arbitrary CSS string added to the bundle */{% endcss %} #}
 		{#- Add the contents of a file to the bundle #}
-		{# {%- css %}{% include "public/css/index.css" %}{% endcss %} #}
+		
 		{#- Or you can add from node_modules #}
 		{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
 
@@ -46,7 +52,7 @@
 		{# <style>{% getBundle "css" %}</style> #}
 	
 		{#- Add the heading-anchors web component to the JavaScript bundle #}
-		{# {%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %} #}
+		{%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
 		
 	</head>
 	<body>
