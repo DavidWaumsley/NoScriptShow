@@ -4,7 +4,6 @@ description: Building with the 11ty base blog.
 date: 2025-02-07
 tags: ["build"]
 permalink: "build/7{{slugify }}/"
-draft: true
 ---
 # Building with an 11ty starter sites and headless WordPress
 
