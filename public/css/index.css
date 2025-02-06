@@ -113,9 +113,11 @@ code {
 	flex-wrap: wrap;	
 	list-style: none;
 	align-items: baseline;
-	font-size: var(--step-1);
-	
+	font-size: var(--step-1);	
 }
+
+
+
 .post-metadata time {
 	margin-right: 1em;
 }
