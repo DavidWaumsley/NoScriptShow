@@ -12,15 +12,15 @@ draft: true
 
 ## Starter Sites
 ----------------------------------------
-11ty has something similar to WordPress themes called starter sites.
+11ty has something similar to WordPress themes called starter sites. It also has plugins.
 
-**Here's some places to look:**
+**Some places to look for themes:**
 
 *   [11ty Bundle](https://11tybundle.dev/starters/). A fabulous place for all thing 11ty by [Bob Monsour](https://bobmonsour.com/).
 *   [JamStack Themes](https://jamstackthemes.dev/#ssg=eleventy).
 *   [The 11ty site](https://www.11ty.dev/docs/starter/).
 
-Starter sites are typical plain for us to add our own CSS [exceptions](https://github.com/CloudCannon/campus-spark-bookshop-template). Some are created around Tailwind or Bootstrap or include javaSript framework intergration.
+Starter sites are typical plain for us to add our own CSS [exceptions](https://github.com/CloudCannon/campus-spark-bookshop-template). Some are created around Tailwind or Bootstrap or include javaScript framework intergration.
 
 **We narrowed it to these 3 for the show's website:**
 `
@@ -50,9 +50,15 @@ There's other articles on bringing WordPress content into 11ty. Here's two that 
 *   [Using Wordpress as a headless CMS for Eleventy by Mike Aparicio](https://www.mikeaparicio.com/posts/2023-11-07-using-wordpress-as-a-headless-cms-for-eleventy/)
 *   [How to use 11ty with Headless WordPress and deploy to Netlify by Dave Davies](https://davedavies.dev/post/how-to-use-11ty-with-headless-wordpress/)
 
-The two WordPress plugins have not been updated in 4 years.
+The two WordPress plugins have not been updated in 4 years. We also have to consider the number concurrent builds our static hosting plan allow if letting clients update. Netlify only allows one on the free plan.
 
-We also have to consider the number concurrent builds our static hosting plan allow if letting clients update. Netlify only allows one on the free plan.
+**Present conclusion:**
+
+- Automated updates require WP plugin dependencies and or skills to manage that. For a simple blog setting up Decap's free CMS seem easier.
+- A WP notify plugin could be used as a prompt to devs to do a manual update, but imagine someone repeatedly publishing to correct typos.
+
+With the cost, technical complexity and maintenance overhead of Headless it seems already to be in decline. 
+
 
 
 ## Building with the 11ty base blog
@@ -70,9 +76,9 @@ If using AI tell it you are extending the 11ty base blog and it adjusts it's sol
 
 ### The Cons
 
-- You need time have to understand how the plugins work if making structural changes.
+- You need time have to understand how the plugins work and how the config file is set up.
 
 ## Continuing from the last video
 
 - Using slugs.
-- Adding contitionals.
+- Adding conditionals.

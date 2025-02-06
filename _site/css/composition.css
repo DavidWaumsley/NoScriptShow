@@ -1,0 +1,171 @@
+/********************************************************/
+
+/************ 0_ BODY & TOP BAR ************/
+
+/*********************************************************/
+
+/* margin/padding for body areas */
+.top-bar {
+    padding-inline: 6vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary);
+    margin-bottom: var(--space-xs);
+  }
+  
+  header {
+    margin-inline: 6vw;
+  }
+  footer {
+    margin-inline: 6vw;
+  }
+  main {
+    margin-inline: 6vw;
+    margin-block-end: var(--space-2xl);
+  }
+  
+  @media (width < 68rem) {
+    .hours {
+      display: none;
+    }
+  }
+  
+  section{
+    padding-block: var(--space-m);
+  }
+
+
+/************************************************************************************/
+
+/**********1_ HEADER & NAV  **********/
+
+/************************************************************************************/
+
+@media (width < 68rem) {
+    header > * {
+      display: grid;
+      place-content: center;
+    }
+  }
+  
+  @media (width > 68rem) {
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--space-m);
+    margin-block-end: 0;
+    align-items: center;
+  }
+
+  /* Nav */
+
+  .nav{
+    list-style-type: none;
+  }
+
+nav a[href]:not(:hover) {
+	text-decoration: none;
+    list-style-type: none;
+}
+
+
+.nav a[href][aria-current="page"] {
+	text-decoration: underline;
+}
+
+/************************************************************************************/
+
+/************ FLUID BREAKOUTS ************/
+
+/************************************************************************************/
+/* https://layout-breakouts-builder.vercel.app/ */
+
+.page-layout > *,
+.full-width > * {
+  grid-column: content;
+}
+.page-layout,
+.full-width {
+  --minimum-content-padding: 1rem;
+
+  /** TRACK WIDTHS **/
+  --full-max-width: 1fr;
+  --popout-max-width: 60rem;
+  --content-max-width: 75ch;
+
+  /** TRACK SIZES **/
+  --full: minmax(var(--minimum-content-padding), 1fr);
+  --popout: minmax(
+    0,
+    calc((var(--popout-max-width) - var(--content-max-width)) * 0.5)
+  );
+  --content: min(
+    var(--content-max-width),
+    100% - var(--minimum-content-padding) * 2
+  );
+
+  display: grid;
+  grid-template-columns:
+    [full-start]
+    var(--full)
+    [popout-start]
+    var(--popout)
+    [content-start]
+    var(--content)
+    [content-end]
+    var(--popout)
+    [popout-end]
+    var(--full)
+    [full-end];
+}
+
+/** CLASSES **/
+.full {
+  grid-column: full;
+}
+.full-start {
+  grid-column-start: full-start;
+}
+.full-end {
+  grid-column-end: full-end;
+}
+
+.popout {
+  grid-column: popout;
+}
+.popout-start {
+  grid-column-start: popout-start;
+}
+.popout-end {
+  grid-column-end: popout-end;
+}
+
+.content {
+  grid-column: content;
+}
+.content-start {
+  grid-column-start: content-start;
+}
+.content-end {
+  grid-column-end: content-end;
+}
+
+.full-width {
+  grid-column: full;
+}
+.full-content,
+.full-content-nopad {
+  grid-column: full;
+}
+.full-content {
+  padding-inline: var(--minimum-content-padding);
+}

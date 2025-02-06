@@ -21,7 +21,7 @@
 <meta property="twitter:description" content="Building with the 11ty base blog.">
 <meta property="twitter:image" content="https://i.ytimg.com/vi_webp//maxresdefault.webp">
 
-<link rel="stylesheet" href="/dist/lOAN399yvh.css">
+<link rel="stylesheet" href="/dist/cjN196i8XZ.css">
 
  <meta name="generator" content="Eleventy v3.0.0">
 		
@@ -30,6 +30,10 @@
 		
 	</head>
 	<body>
+		<button class="toggle" data-theme-toggle="" id="theme-toggle" style="display: none" type="button" aria-label=" light and dark mode switch">
+        <img class="theme-icon" src="/svgs/moon.svg" width="25" height="25" alt="dark and light theme switcher">
+      </button>
+
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
 		<header>
@@ -43,19 +47,16 @@
 					<li class="nav-item"><a href="/build/">Build</a></li>
 					<li class="nav-item"><a href="/blog/">Archive</a></li>	
 
-	 <button class="toggle" data-theme-toggle="" id="theme-toggle" style="display: none" type="button" aria-label=" light and dark mode switch">
-        <img class="theme-icon" src="/svgs/moon.svg" width="25" height="25" alt="dark and light theme switcher">
-      </button>
+	 
 	 
 	 
 	</ul></nav>
 
 		</header>
 
-		<main id="skip">
+		<main class="page-layout" id="skip">
 			<heading-anchors>
 				
-
 <h1 class="visually-hidden" id="building-with-an-11ty-starter-sites-and-headless-wordpress">Building with an 11ty starter sites and headless WordPress</h1>
 
 
@@ -72,14 +73,14 @@
 <h1 id="building-with-an-11ty-starter-sites-and-headless-wordpress-2">Building with an 11ty starter sites and headless WordPress</h1>
 <h2 id="starter-sites">Starter Sites</h2>
 <hr>
-<p>11ty has something similar to WordPress themes called starter sites.</p>
-<p><strong>Here's some places to look:</strong></p>
+<p>11ty has something similar to WordPress themes called starter sites. It also has plugins.</p>
+<p><strong>Some places to look for themes:</strong></p>
 <ul>
 <li><a href="https://11tybundle.dev/starters/">11ty Bundle</a>. A fabulous place for all thing 11ty by <a href="https://bobmonsour.com/">Bob Monsour</a>.</li>
 <li><a href="https://jamstackthemes.dev/#ssg=eleventy">JamStack Themes</a>.</li>
 <li><a href="https://www.11ty.dev/docs/starter/">The 11ty site</a>.</li>
 </ul>
-<p>Starter sites are typical plain for us to add our own CSS <a href="https://github.com/CloudCannon/campus-spark-bookshop-template">exceptions</a>. Some are created around Tailwind or Bootstrap or include javaSript framework intergration.</p>
+<p>Starter sites are typical plain for us to add our own CSS <a href="https://github.com/CloudCannon/campus-spark-bookshop-template">exceptions</a>. Some are created around Tailwind or Bootstrap or include javaScript framework intergration.</p>
 <p><strong>We narrowed it to these 3 for the show's website:</strong>
 `</p>
 <ul>
@@ -108,8 +109,13 @@
 <li><a href="https://www.mikeaparicio.com/posts/2023-11-07-using-wordpress-as-a-headless-cms-for-eleventy/">Using Wordpress as a headless CMS for Eleventy by Mike Aparicio</a></li>
 <li><a href="https://davedavies.dev/post/how-to-use-11ty-with-headless-wordpress/">How to use 11ty with Headless WordPress and deploy to Netlify by Dave Davies</a></li>
 </ul>
-<p>The two WordPress plugins have not been updated in 4 years.</p>
-<p>We also have to consider the number concurrent builds our static hosting plan allow if letting clients update. Netlify only allows one on the free plan.</p>
+<p>The two WordPress plugins have not been updated in 4 years. We also have to consider the number concurrent builds our static hosting plan allow if letting clients update. Netlify only allows one on the free plan.</p>
+<p><strong>Present conclusion:</strong></p>
+<ul>
+<li>Automated updates require WP plugin dependencies and or skills to manage that. For a simple blog setting up Decap's free CMS seem easier.</li>
+<li>A WP notify plugin could be used as a prompt to devs to do a manual update, but imagine someone repeatedly publishing to correct typos.</li>
+</ul>
+<p>With the cost, technical complexity and maintenance overhead of Headless it seems already to be in decline.</p>
 <h2 id="building-with-the-11ty-base-blog">Building with the 11ty base blog</h2>
 <hr>
 <p>Learning more about 11ty by using the starter site from its author <a href="https://www.zachleat.com/">Zach Leatherman</a>.</p>
@@ -128,12 +134,12 @@
 <p>If using AI tell it you are extending the 11ty base blog and it adjusts it's solution!</p>
 <h3 id="the-cons">The Cons</h3>
 <ul>
-<li>You need time have to understand how the plugins work if making structural changes.</li>
+<li>You need time have to understand how the plugins work and how the config file is set up.</li>
 </ul>
 <h2 id="continuing-from-the-last-video">Continuing from the last video</h2>
 <ul>
 <li>Using slugs.</li>
-<li>Adding contitionals.</li>
+<li>Adding conditionals.</li>
 </ul>
 
 <ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/build/6/">Long-term WordPress user tries building with 11ty (a Static Site Generator)</a></li>
@@ -146,8 +152,8 @@
 			| <a href="/feed/feed.xml">RSS Feed</a></small>
 		</footer>
 
-		<!-- This page `/build/7/` was built on 2025-02-05T10:39:46.074Z -->
-		<script type="module" src="/dist/CwQ79bFWx2.js"></script>
-		<script src="/js/light-dark.js"></script>	
+		<!-- This page `/build/7/` was built on 2025-02-06T07:47:29.954Z -->
+		<script type="module" src="/dist/Sf_-fSrx_J.js"></script>
+		
 	</body>
 </html>

@@ -25,7 +25,12 @@
 
 {%- css %}
 {% include "public/css/index.css" %}
-{% include "public/css/test.css" %}
+{% include "public/css/reset.css" %}
+{% include "public/css/global.css" %}
+{% include "public/css/composition.css" %}
+{% include "public/css/block.css" %}
+{% include "public/css/utility.css" %}
+{% include "public/css/exceptions.css" %}
 {% endcss %}
 
  <meta name="generator" content="{{ eleventy.generator }}">
@@ -56,20 +61,7 @@
 		
 	</head>
 	<body>
-		<a href="#skip" class="visually-hidden">Skip to main content</a>
-
-		<header>
-			<a href="/" class="home-link">{{ metadata.title }}</a>
-
-			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-			<nav>
-				<h2 class="visually-hidden">Top level navigation menu</h2>
-				<ul class="nav">
-				{%- for entry in collections.all | eleventyNavigation %}
-					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-				{%- endfor %}	
-
-	 <button
+		<button
         class="toggle"
         data-theme-toggle
         id="theme-toggle"
@@ -85,13 +77,28 @@
           alt="dark and light theme switcher"
         />
       </button>
+
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">{{ metadata.title }}</a>
+
+			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+				{%- for entry in collections.all | eleventyNavigation %}
+					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>					
+				{%- endfor %}	
+
+	 
 	 
 	 
 	</nav>
 
 		</header>
 
-		<main id="skip">
+		<main class="page-layout" id="skip">
 			<heading-anchors>
 				{{ content | safe }}
 			</heading-anchors>
@@ -104,6 +111,9 @@
 
 		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
 		<script type="module" src="{% getBundleFileUrl "js" %}"></script>
-		<script src="/js/light-dark.js"></script>	
+		{%- js  %}
+		{% include "public/js/light-dark.js" %}
+		{% endjs %}
+		
 	</body>
 </html>

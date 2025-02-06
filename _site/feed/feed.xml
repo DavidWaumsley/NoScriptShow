@@ -18,14 +18,14 @@
     <content type="html">&lt;h1 id=&quot;building-with-an-11ty-starter-sites-and-headless-wordpress&quot;&gt;Building with an 11ty starter sites and headless WordPress&lt;/h1&gt;
 &lt;h2 id=&quot;starter-sites&quot;&gt;Starter Sites&lt;/h2&gt;
 &lt;hr&gt;
-&lt;p&gt;11ty has something similar to WordPress themes called starter sites.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Here&#39;s some places to look:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;11ty has something similar to WordPress themes called starter sites. It also has plugins.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Some places to look for themes:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://11tybundle.dev/starters/&quot;&gt;11ty Bundle&lt;/a&gt;. A fabulous place for all thing 11ty by &lt;a href=&quot;https://bobmonsour.com/&quot;&gt;Bob Monsour&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://jamstackthemes.dev/#ssg=eleventy&quot;&gt;JamStack Themes&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.11ty.dev/docs/starter/&quot;&gt;The 11ty site&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Starter sites are typical plain for us to add our own CSS &lt;a href=&quot;https://github.com/CloudCannon/campus-spark-bookshop-template&quot;&gt;exceptions&lt;/a&gt;. Some are created around Tailwind or Bootstrap or include javaSript framework intergration.&lt;/p&gt;
+&lt;p&gt;Starter sites are typical plain for us to add our own CSS &lt;a href=&quot;https://github.com/CloudCannon/campus-spark-bookshop-template&quot;&gt;exceptions&lt;/a&gt;. Some are created around Tailwind or Bootstrap or include javaScript framework intergration.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;We narrowed it to these 3 for the show&#39;s website:&lt;/strong&gt;
 `&lt;/p&gt;
 &lt;ul&gt;
@@ -54,8 +54,13 @@
 &lt;li&gt;&lt;a href=&quot;https://www.mikeaparicio.com/posts/2023-11-07-using-wordpress-as-a-headless-cms-for-eleventy/&quot;&gt;Using Wordpress as a headless CMS for Eleventy by Mike Aparicio&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://davedavies.dev/post/how-to-use-11ty-with-headless-wordpress/&quot;&gt;How to use 11ty with Headless WordPress and deploy to Netlify by Dave Davies&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The two WordPress plugins have not been updated in 4 years.&lt;/p&gt;
-&lt;p&gt;We also have to consider the number concurrent builds our static hosting plan allow if letting clients update. Netlify only allows one on the free plan.&lt;/p&gt;
+&lt;p&gt;The two WordPress plugins have not been updated in 4 years. We also have to consider the number concurrent builds our static hosting plan allow if letting clients update. Netlify only allows one on the free plan.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Present conclusion:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Automated updates require WP plugin dependencies and or skills to manage that. For a simple blog setting up Decap&#39;s free CMS seem easier.&lt;/li&gt;
+&lt;li&gt;A WP notify plugin could be used as a prompt to devs to do a manual update, but imagine someone repeatedly publishing to correct typos.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With the cost, technical complexity and maintenance overhead of Headless it seems already to be in decline.&lt;/p&gt;
 &lt;h2 id=&quot;building-with-the-11ty-base-blog&quot;&gt;Building with the 11ty base blog&lt;/h2&gt;
 &lt;hr&gt;
 &lt;p&gt;Learning more about 11ty by using the starter site from its author &lt;a href=&quot;https://www.zachleat.com/&quot;&gt;Zach Leatherman&lt;/a&gt;.&lt;/p&gt;
@@ -74,12 +79,12 @@
 &lt;p&gt;If using AI tell it you are extending the 11ty base blog and it adjusts it&#39;s solution!&lt;/p&gt;
 &lt;h3 id=&quot;the-cons&quot;&gt;The Cons&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;You need time have to understand how the plugins work if making structural changes.&lt;/li&gt;
+&lt;li&gt;You need time have to understand how the plugins work and how the config file is set up.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;continuing-from-the-last-video&quot;&gt;Continuing from the last video&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Using slugs.&lt;/li&gt;
-&lt;li&gt;Adding contitionals.&lt;/li&gt;
+&lt;li&gt;Adding conditionals.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
   </entry>
