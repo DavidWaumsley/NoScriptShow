@@ -13,8 +13,6 @@ layout: layouts/base.njk
   </a>
 </lite-youtube>
 {% endif %}
-</div>
-<br>
 
 <ul class="post-metadata">
 	<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
@@ -23,6 +21,10 @@ layout: layouts/base.njk
 	<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
 	{%- endfor %}
 </ul>
+</div>
+<br>
+
+
 
 
 

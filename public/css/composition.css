@@ -74,6 +74,38 @@ nav a[href]:not(:hover) {
 	text-decoration: underline;
 }
 
+
+.box {
+  /*--------Settings-------*/ 
+  --grid-col-count: 3;
+  --grid-gap: var(--space-m);
+  --grid-item-min-width: 18rem;
+  /*------------------------*/ 
+  --gap-count: calc(var(--grid-col-count) - 1);
+  --total-gap-width: calc(var(--gap-count) * var(--grid-gap));
+  --grid-item-max-width: calc((100% - var(--total-gap-width)) / var(--grid-col-count));
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item-min-width), var(--grid-item-max-width)), 1fr));
+  grid-gap: var(--grid-gap);
+  padding-block: var(--grid-gap);
+  border: 1px solid var(--text-alt);
+}
+
+  
+
+.box li {
+  padding: var(--space-m);
+  list-style: none;
+  border: 1px solid var(--text);
+  border-radius: .4rem;
+  align-content: start;
+}
+
+.box h2 {
+font-size: var(--step-1);
+}
+
+
 /************************************************************************************/
 
 /************ FLUID BREAKOUTS ************/
