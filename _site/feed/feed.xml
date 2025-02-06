@@ -81,10 +81,11 @@
 &lt;ul&gt;
 &lt;li&gt;You need time have to understand how the plugins work and how the config file is set up.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;continuing-from-the-last-video&quot;&gt;Continuing from the last video&lt;/h2&gt;
+&lt;h2 id=&quot;missed-last-time&quot;&gt;Missed last time&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Using slugs.&lt;/li&gt;
 &lt;li&gt;Adding conditionals.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.11ty.dev/docs/languages/webc/&quot;&gt;WebC&lt;/a&gt; (web components).&lt;/li&gt;
 &lt;/ul&gt;
 </content>
   </entry>

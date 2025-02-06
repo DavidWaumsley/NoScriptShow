@@ -77,7 +77,8 @@ If using AI tell it you are extending the 11ty base blog and it adjusts it's sol
 
 - You need time have to understand how the plugins work and how the config file is set up.
 
-## Continuing from the last video
+## Missed last time
 
 - Using slugs.
 - Adding conditionals.
+- [WebC](https://www.11ty.dev/docs/languages/webc/) (web components).
