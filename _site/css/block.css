@@ -208,3 +208,7 @@ color: var(--text-alt);
    font-family: var(--font-family-monospace);
    line-height: 1;
   }
+
+  .pagination li {
+    display: inline-block;
+  }
