@@ -27,9 +27,13 @@ const numberOfLatestPostsToShow = 3;
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 <h2>Latest {{ latestPostsCount }} Episode{% if latestPostsCount != 1 %}s{% endif %}</h2>
 
+<div class="latest full ">
+
 {% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
 {% set postslistCounter = postsCount %}
 {% include "postslist-home.njk" %}
+
+</div>
 
 {% set morePosts = postsCount - numberOfLatestPostsToShow %}
 {# {% if morePosts > 0 %}

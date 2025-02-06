@@ -91,7 +91,7 @@ nav a[href]:not(:hover) {
 
   /** TRACK WIDTHS **/
   --full-max-width: 1fr;
-  --popout-max-width: 60rem;
+  --popout-max-width: 70rem;
   --content-max-width: 75ch;
 
   /** TRACK SIZES **/

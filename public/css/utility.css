@@ -13,7 +13,7 @@
     margin-top: var(--flow-space);
   }
   h2 {
-    --flow-space: 3.6rem;
+    --flow-space: 3.4rem;
   }
   h3 {
     --flow-space: 2rem;
@@ -23,7 +23,7 @@
   }
   
   p {
-    --flow-space: 0.5rem;
+    --flow-space: 0.8rem;
   }
   section {
     --flow-space: 5rem;
@@ -34,6 +34,11 @@
   blockquote,
   blockquote + * {
     --flow-space: 3rem;
+  }
+
+  main ul li {
+    --flow-space: 2rem;
+
   }
 
 /********************************************************/
