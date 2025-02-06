@@ -116,9 +116,7 @@ code {
 	font-size: var(--step-1);	
 }
 
-.post-metadata ul {
-text-align: center;	
-}
+
 
 .post-metadata time {
 	margin-right: 1em;
