@@ -1,68 +1,4 @@
 
- 
-
-/* Global stylesheet */
-* {
-	box-sizing: border-box;
-}
-
-
-
-
-
-/* https://www.a11yproject.com/posts/how-to-hide-content/ */
-.visually-hidden {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
-}
-
-/* Fluid images via https://www.zachleat.com/web/fluid-images/ */
-img{
-  max-width: 100%;
-}
-img[width][height] {
-  height: auto;
-}
-
-video,
-iframe {
-	max-width: 100%;
-	height: auto;
-	aspect-ratio: 16/9;
-}
-
-
-
-li {
-	line-height: 1.5;
-}
-
-a[href] {
-	color: var(--text);
-}
-a[href]:visited {
-	color: var(--text);
-}
-a[href]:hover,
-a[href]:active {
-	color: var(--brand);
-}
-
-main,
-footer {
-	padding: 1rem;
-}
-main :first-child {
-	margin-top: 0;
-}
-
-
-
 .links-nextprev {
 	display: flex;
 	justify-content: space-between;
@@ -70,6 +6,11 @@ main :first-child {
 	list-style: "";
 	border-top: 1px dashed var(--color-gray-20);
 	padding: 1em 0;
+	
+}
+
+.links-nextprev li {
+	font-size: var(--step-0);
 }
 .links-nextprev > * {
 	flex-grow: 1;
@@ -108,16 +49,6 @@ pre:not([class*="language-"]) {
 }
 code {
 	word-break: break-all;
-}
-
-
-.home-link {
-	font-size: 1em; /* 16px /16 */
-	font-weight: 700;
-	margin-right: 2em;
-}
-.home-link:link:not(:hover) {
-	text-decoration: none;
 }
 
 
@@ -179,15 +110,12 @@ code {
 /* Tags list */
 .post-metadata {
 	display: inline-flex;
-	flex-wrap: wrap;
-	gap: .5em;
+	flex-wrap: wrap;	
 	list-style: none;
-	padding: 0;
-	margin: 0 0 1rem 0;
+	align-items: baseline;
+	font-size: var(--step-1);
+	
 }
 .post-metadata time {
 	margin-right: 1em;
 }
-
-
- 

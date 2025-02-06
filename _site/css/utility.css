@@ -1,0 +1,54 @@
+
+
+/********************************************************/
+
+/************  FLOW ************/
+
+/*********************************************************/
+
+.flow {
+    --flow-space: 1rem;
+  }
+  .flow > * + * {
+    margin-top: var(--flow-space);
+  }
+  h2 {
+    --flow-space: 3.6rem;
+  }
+  h3 {
+    --flow-space: 2rem;
+  }
+  h4 {
+    --flow-space: 1.3rem;
+  }
+  
+  p {
+    --flow-space: 0.5rem;
+  }
+  section {
+    --flow-space: 5rem;
+  }
+  img {
+    --flow-space: 2rem;
+  }
+  blockquote,
+  blockquote + * {
+    --flow-space: 3rem;
+  }
+
+/********************************************************/
+
+/************  OTHER ************/
+
+/*********************************************************/
+
+  /* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}

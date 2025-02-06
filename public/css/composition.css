@@ -5,15 +5,6 @@
 /*********************************************************/
 
 /* margin/padding for body areas */
-.top-bar {
-    padding-inline: 6vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--secondary);
-    margin-bottom: var(--space-xs);
-  }
   
   header {
     margin-inline: 6vw;
@@ -55,6 +46,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding-block-end: var(--space-l);
     }
   }
   

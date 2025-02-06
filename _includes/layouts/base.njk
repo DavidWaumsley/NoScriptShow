@@ -24,13 +24,14 @@
 <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
 
 {%- css %}
-{% include "public/css/index.css" %}
+
 {% include "public/css/reset.css" %}
 {% include "public/css/global.css" %}
 {% include "public/css/composition.css" %}
-{% include "public/css/block.css" %}
 {% include "public/css/utility.css" %}
+{% include "public/css/block.css" %}
 {% include "public/css/exceptions.css" %}
+{% include "public/css/index.css" %}
 {% endcss %}
 
  <meta name="generator" content="{{ eleventy.generator }}">
@@ -89,21 +90,17 @@
 				<ul class="nav">
 				{%- for entry in collections.all | eleventyNavigation %}
 					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>					
-				{%- endfor %}	
-
-	 
-	 
-	 
+				{%- endfor %}	 
 	</nav>
 
 		</header>
-
-		<main class="page-layout" id="skip">
-			<heading-anchors>
+<heading-anchors>
+		<main class="[ page-layout ] [ flow ] " id="skip">
+			
 				{{ content | safe }}
-			</heading-anchors>
+			
 		</main>
-
+</heading-anchors>
 		<footer>
 			<small><em>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a></em>
 			| <a href="/feed/feed.xml">RSS Feed</a></small>

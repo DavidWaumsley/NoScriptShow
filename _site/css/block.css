@@ -1,3 +1,57 @@
+/************************************************************************************/
+
+/**********2_ HEADER & NAV  **********/
+
+/************************************************************************************/
+
+.logo img {
+  inline-size: 275px;
+  padding: var(--space-2xs);
+  margin-inline-start: -1rem;
+  background: linear-gradient(
+    transparent 0%,
+    transparent 20%,
+    var(--text-alt) 20%,
+    var(--text-alt) 72%,
+    transparent 72%,
+    transparent 72% 100%
+  );
+}
+
+nav a,
+nav a:active:not(.btn) {
+  font-size: var(--step--1);
+  text-transform: capitalize;
+  transition: 0.5s;
+}
+
+nav a:hover:not(.btn) {
+  background: linear-gradient(
+    transparent 0%,
+    transparent 75%,
+    var(--brand) 75%,
+    var(--brand) 90%,
+    transparent 90%,
+    transparent 100%
+  );
+}
+
+header li {
+  list-style: none;
+  line-height: 2.2;
+}
+
+footer li {
+  list-style: none;
+}
+
+header a {
+  text-decoration: none;
+  padding-block: 1rem;
+}
+
+
+
 
 /* Youtube */
 lite-youtube {
@@ -126,4 +180,9 @@ lite-youtube.lyt-activated > .lyt-playbtn {
 	.theme-icon:active {
 	  transform: rotate(-22deg);
 	}
+  }
+
+  .post-metadata li{
+
+    font-size: var(--step-0);
   }
