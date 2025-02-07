@@ -75,7 +75,7 @@ If using AI tell it you are extending the 11ty base blog and it adjusts it's sol
 
 ### The Cons
 
-- You need time have to understand how the plugins work and how the config file is set up.
+- You need time to understand how the plugins work and how it is configured.
 
 ## Missed last time
 
