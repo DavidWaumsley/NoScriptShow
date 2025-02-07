@@ -15,48 +15,48 @@ permalink: "build/7{{slugify }}/"
 
 **Some places to look for themes:**
 
-*   [11ty Bundle](https://11tybundle.dev/starters/). A fabulous place for all thing 11ty by [Bob Monsour](https://bobmonsour.com/).
+*   [11ty Bundle](https://11tybundle.dev/starters/). A fabulous place for all things 11ty by [Bob Monsour](https://bobmonsour.com/).
 *   [JamStack Themes](https://jamstackthemes.dev/#ssg=eleventy).
 *   [The 11ty site](https://www.11ty.dev/docs/starter/).
 
-Starter sites are typical plain for us to add our own CSS [exceptions](https://github.com/CloudCannon/campus-spark-bookshop-template). Some are created around Tailwind or Bootstrap or include javaScript framework intergration.
+Starter sites are typically plain for us to add our own CSS, but there are [exceptions](https://github.com/CloudCannon/campus-spark-bookshop-template). Some are created around Tailwind or Bootstrap or include javaScript framework intergration.
 
-**We narrowed it to these 3 for the show's website:**
-`
-*   [The 11ty Base blog](https://github.com/11ty/eleventy-base-blog).
+**3 considered suited to the show's website:**
+
+*   [The 11ty Base Blog](https://github.com/11ty/eleventy-base-blog).
     
 *   [Eleventy Excellent](https://github.com/madrilene/eleventy-excellent).
     
 *   [Elva](https://github.com/scottsweb/elva).
     
-
-All are updated to 11ty v.3, but can carry npm packages that are [deprecated](https://www.npmjs.com/package/inflight).
-
 <small>*Eventy Excellent by [Lene Saile](https://www.lenesaile.com/en/) was the closest fit as it used CUBE CSS, Paul Irish's Lite YouTube Embed and has a strew of great features.*</small>
 
 
 ## 11ty as a static frontend for WordPress.
 ----------------------------------------
 
-*   11ty has an [importer](https://www.11ty.dev/docs/migrate/wordpress/#use-@11ty/import) that can grap WordPress posts.
-*   This hooks in to the WordPress REST API.
-*   It works out of the box with the 11ty base blog.
 
-Andy Bell has a couple of articles: one on [hooking 11ty to WordPress](https://bell.bz/i-hooked-up-eleventy-to-wordpress-api/) and another on [importing 11ty content to WordPress](https://bell.bz/importing-eleventy-content-into-wordpress/).
+Andy Bell has a couple of articles on [hooking 11ty to WordPress](https://bell.bz/i-hooked-up-eleventy-to-wordpress-api/) and [importing 11ty content to WordPress](https://bell.bz/importing-eleventy-content-into-wordpress/).
 
-There's other articles on bringing WordPress content into 11ty. Here's two that talk about WordPress plugins that tell WordPress to tell the host to rebuild 11ty.
+These talk about using WordPress plugins to tell hosts to rebuild 11ty.
 
 *   [Using Wordpress as a headless CMS for Eleventy by Mike Aparicio](https://www.mikeaparicio.com/posts/2023-11-07-using-wordpress-as-a-headless-cms-for-eleventy/)
 *   [How to use 11ty with Headless WordPress and deploy to Netlify by Dave Davies](https://davedavies.dev/post/how-to-use-11ty-with-headless-wordpress/)
 
-The two WordPress plugins have not been updated in 4 years. We also have to consider the number concurrent builds our static hosting plan allow if letting clients update. Netlify only allows one on the free plan.
+<small>The mentioned WordPress plugins have not been updated in 4 years. We also have to consider the number concurrent builds our static hosting plan allow if letting clients update. Netlify only allows one on the free plan.</small>
 
-**Present conclusion:**
+### An alternative
 
-- Automated updates require WP plugin dependencies and or skills to manage that. For a simple blog setting up Decap's free CMS seem easier.
+The 11ty [importer](https://www.11ty.dev/docs/migrate/wordpress/#use-@11ty/import) that can graps WordPress posts from the WordPress REST API. It works out of the box with the 11ty base blog.
+
+### Early conclusion:
+
 - A WP notify plugin could be used as a prompt to devs to do a manual update, but imagine someone repeatedly publishing to correct typos.
 
-With the cost, technical complexity and maintenance overhead of Headless it seems already to be in decline. 
+- Automated updates require WP plugin dependencies and or skills to manage that. For a simple blog setting up Decap's free CMS seem easier.
+
+
+With the cost, technical complexity and maintenance overhead of headless along with the growth of static and uncertaintly in WordPress it seem this is likey to be in decline. 
 
 
 

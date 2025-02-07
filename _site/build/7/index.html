@@ -50,7 +50,8 @@
 
 		</header>
 <heading-anchors>
-		<main class="[ page-layout ] [ flow ] " id="skip">
+
+	<main class="[ page-layout ] [ flow ]" id="skip">
 			
 				
 <h1 class="visually-hidden" id="building-with-an-11ty-starter-sites-and-headless-wordpress">Building with an 11ty starter sites and headless WordPress</h1>
@@ -72,16 +73,15 @@
 <p>11ty has something similar to WordPress themes called starter sites. It also has plugins.</p>
 <p><strong>Some places to look for themes:</strong></p>
 <ul>
-<li><a href="https://11tybundle.dev/starters/">11ty Bundle</a>. A fabulous place for all thing 11ty by <a href="https://bobmonsour.com/">Bob Monsour</a>.</li>
+<li><a href="https://11tybundle.dev/starters/">11ty Bundle</a>. A fabulous place for all things 11ty by <a href="https://bobmonsour.com/">Bob Monsour</a>.</li>
 <li><a href="https://jamstackthemes.dev/#ssg=eleventy">JamStack Themes</a>.</li>
 <li><a href="https://www.11ty.dev/docs/starter/">The 11ty site</a>.</li>
 </ul>
-<p>Starter sites are typical plain for us to add our own CSS <a href="https://github.com/CloudCannon/campus-spark-bookshop-template">exceptions</a>. Some are created around Tailwind or Bootstrap or include javaScript framework intergration.</p>
-<p><strong>We narrowed it to these 3 for the show's website:</strong>
-`</p>
+<p>Starter sites are typically plain for us to add our own CSS, but there are <a href="https://github.com/CloudCannon/campus-spark-bookshop-template">exceptions</a>. Some are created around Tailwind or Bootstrap or include javaScript framework intergration.</p>
+<p><strong>3 considered suited to the show's website:</strong></p>
 <ul>
 <li>
-<p><a href="https://github.com/11ty/eleventy-base-blog">The 11ty Base blog</a>.</p>
+<p><a href="https://github.com/11ty/eleventy-base-blog">The 11ty Base Blog</a>.</p>
 </li>
 <li>
 <p><a href="https://github.com/madrilene/eleventy-excellent">Eleventy Excellent</a>.</p>
@@ -90,28 +90,28 @@
 <p><a href="https://github.com/scottsweb/elva">Elva</a>.</p>
 </li>
 </ul>
-<p>All are updated to 11ty v.3, but can carry npm packages that are <a href="https://www.npmjs.com/package/inflight">deprecated</a>.</p>
 <p><small><em>Eventy Excellent by <a href="https://www.lenesaile.com/en/">Lene Saile</a> was the closest fit as it used CUBE CSS, Paul Irish's Lite YouTube Embed and has a strew of great features.</em></small></p>
 <h2 id="11ty-as-a-static-frontend-for-wordpress">11ty as a static frontend for WordPress.</h2>
 <hr>
-<ul>
-<li>11ty has an <a href="https://www.11ty.dev/docs/migrate/wordpress/#use-@11ty/import">importer</a> that can grap WordPress posts.</li>
-<li>This hooks in to the WordPress REST API.</li>
-<li>It works out of the box with the 11ty base blog.</li>
-</ul>
-<p>Andy Bell has a couple of articles: one on <a href="https://bell.bz/i-hooked-up-eleventy-to-wordpress-api/">hooking 11ty to WordPress</a> and another on <a href="https://bell.bz/importing-eleventy-content-into-wordpress/">importing 11ty content to WordPress</a>.</p>
-<p>There's other articles on bringing WordPress content into 11ty. Here's two that talk about WordPress plugins that tell WordPress to tell the host to rebuild 11ty.</p>
+<p>Andy Bell has a couple of articles on <a href="https://bell.bz/i-hooked-up-eleventy-to-wordpress-api/">hooking 11ty to WordPress</a> and <a href="https://bell.bz/importing-eleventy-content-into-wordpress/">importing 11ty content to WordPress</a>.</p>
+<p>These talk about using WordPress plugins to tell hosts to rebuild 11ty.</p>
 <ul>
 <li><a href="https://www.mikeaparicio.com/posts/2023-11-07-using-wordpress-as-a-headless-cms-for-eleventy/">Using Wordpress as a headless CMS for Eleventy by Mike Aparicio</a></li>
 <li><a href="https://davedavies.dev/post/how-to-use-11ty-with-headless-wordpress/">How to use 11ty with Headless WordPress and deploy to Netlify by Dave Davies</a></li>
 </ul>
-<p>The two WordPress plugins have not been updated in 4 years. We also have to consider the number concurrent builds our static hosting plan allow if letting clients update. Netlify only allows one on the free plan.</p>
-<p><strong>Present conclusion:</strong></p>
+<p><small>The mentioned WordPress plugins have not been updated in 4 years. We also have to consider the number concurrent builds our static hosting plan allow if letting clients update. Netlify only allows one on the free plan.</small></p>
+<h3 id="an-alternative">An alternative</h3>
+<p>The 11ty <a href="https://www.11ty.dev/docs/migrate/wordpress/#use-@11ty/import">importer</a> that can graps WordPress posts from the WordPress REST API. It works out of the box with the 11ty base blog.</p>
+<h3 id="early-conclusion">Early conclusion:</h3>
 <ul>
-<li>Automated updates require WP plugin dependencies and or skills to manage that. For a simple blog setting up Decap's free CMS seem easier.</li>
-<li>A WP notify plugin could be used as a prompt to devs to do a manual update, but imagine someone repeatedly publishing to correct typos.</li>
+<li>
+<p>A WP notify plugin could be used as a prompt to devs to do a manual update, but imagine someone repeatedly publishing to correct typos.</p>
+</li>
+<li>
+<p>Automated updates require WP plugin dependencies and or skills to manage that. For a simple blog setting up Decap's free CMS seem easier.</p>
+</li>
 </ul>
-<p>With the cost, technical complexity and maintenance overhead of Headless it seems already to be in decline.</p>
+<p>With the cost, technical complexity and maintenance overhead of headless along with the growth of static and uncertaintly in WordPress it seem this is likey to be in decline.</p>
 <h2 id="building-with-the-11ty-base-blog">Building with the 11ty base blog</h2>
 <hr>
 <p>Learning more about 11ty by using the starter site from its author <a href="https://www.zachleat.com/">Zach Leatherman</a>.</p>
@@ -152,7 +152,7 @@
 			| <a href="/feed/feed.xml">RSS Feed</a></small>
 		</footer>
 
-		<!-- This page `/build/7/` was built on 2025-02-06T18:10:24.176Z -->
+		<!-- This page `/build/7/` was built on 2025-02-07T05:59:41.266Z -->
 		<script type="module" src="/dist/3AxR9D___K.js"></script>
 		
 	</body>
