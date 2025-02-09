@@ -18,13 +18,13 @@
 
 <h1>Chat</h1>
 
-<p><strong>Audio podcast episodes (also on YouTube).</strong></p>
+<p><strong>Audio podcast episodes</strong> (also on YouTube).</p>
 
 {# {% if pagination.pageNumber > 0 %}
   <p class="page-indicator">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</p>
 {% endif %} #}
 
-<p class="page-indicator">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</p>
+<small class="page-indicator">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</small>
 
  <ul class="box">
 {%- for post in posts -%}
