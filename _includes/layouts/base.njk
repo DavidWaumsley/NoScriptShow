@@ -7,9 +7,9 @@
 <meta name="description" content="{{ description or metadata.description }}">
 <link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 
-{% if layout == "layouts/post.njk" and videoid %}
+{# {% if layout == "layouts/post.njk" and videoid %}
 <link rel="preload" href="/path/to/lite-youtube.js" as="script">
-{% endif %}
+{% endif %} #}
    
  {% if layout == "layouts/post.njk" and videoid %}
  <link rel="preload" as="image" href="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp">
