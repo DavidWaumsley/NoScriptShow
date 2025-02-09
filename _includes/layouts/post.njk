@@ -24,9 +24,9 @@ layout: layouts/base.njk
 </ul>
 </div>
 </div>
-
+<heading-anchors>
 {{ content | safe }}
-
+</heading-anchors>
 {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}
 {%- set nextPost = collections.posts | getNextCollectionItem %}
