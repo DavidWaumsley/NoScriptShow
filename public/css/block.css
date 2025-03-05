@@ -5,17 +5,9 @@
 /************************************************************************************/
 
 .logo img {
-  inline-size: 275px;
+  inline-size:400px;
   padding: var(--space-2xs);
-  margin-inline-start: -1rem;
-  background: linear-gradient(
-    transparent 0%,
-    transparent 20%,
-    var(--text-alt) 20%,
-    var(--text-alt) 72%,
-    transparent 72%,
-    transparent 72% 100%
-  );
+  margin-inline-start: -50px; 
 }
 
 nav a,

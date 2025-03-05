@@ -212,3 +212,7 @@ figcaption {
 p, li{
     font-size: var(--step-1);
 }
+
+summary{
+  font-size: var(--step-1); 
+}
