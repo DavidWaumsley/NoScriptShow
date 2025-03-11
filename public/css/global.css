@@ -216,3 +216,10 @@ p, li{
 summary{
   font-size: var(--step-1); 
 }
+
+blockquote {
+  border-inline: 0.5rem solid var(--text-alt);
+  padding: 1rem;
+  font-style: italic;
+  margin-inline: 0;
+}
