@@ -21,13 +21,13 @@
 &lt;ul&gt;
 &lt;li&gt;It always was in the sense it tells a computer what to do.&lt;/li&gt;
 &lt;li&gt;But as a declarative language it does not give the control expected from an imperative language.&lt;/li&gt;
-&lt;li&gt;Intrinsic web design seems to demand  a more programmatic approach.&lt;/li&gt;
-&lt;li&gt;The new programming logic is more about giving better hints to the browser which has to protect content for users.&lt;/li&gt;
+&lt;li&gt;Intrinsic web design seems to demand a programmatic approach.&lt;/li&gt;
+&lt;li&gt;CSS programming is more about giving better hints to the browser (which has to protect content for users).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;css-s-direction&quot;&gt;CSS’s direction&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Unknown as it’s shaped by consensus.&lt;/li&gt;
-&lt;li&gt;The W3C (with global stakeholders) sets standards aimed to connect and empower humanity, but it can’t enforce them.
+&lt;li&gt;The W3C (with global stakeholders) sets standards aimed to empower humanity, but it can’t enforce them.
 -The W3C thinks about long term problems. The commercial world thinks about short term solutions (tortoise and the hare?).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;css-programming&quot;&gt;CSS programming?&lt;/h3&gt;
@@ -36,7 +36,7 @@
 &lt;li&gt;&lt;a href=&quot;https://css-tricks.com/if-css-gets-inline-conditionals/&quot;&gt;Inline :if() conditionals.&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/:has&quot;&gt;Trigonometry.&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/:has&quot;&gt;:has().&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Relative_colors&quot;&gt;Relative Color.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Relative_colors&quot;&gt;Relative color.&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Popular design components that relied on JavaScript to display content are becoming achievable with HTML and CSS.  Examples:  &lt;a href=&quot;https://chrome.dev/carousel-configurator/&quot;&gt;carousel configurator&lt;/a&gt;, &lt;a href=&quot;https://codepen.io/SaraSoueidan/pen/bGPjBQe/f5761a4ef1339f38668ca7098d0bda26&quot;&gt;accordions&lt;/a&gt;  and &lt;a href=&quot;https://codepen.io/web-dot-dev/pen/jOeKzpb&quot;&gt;popups&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;what-does-this-mean&quot;&gt;What does this mean?&lt;/h2&gt;
@@ -46,19 +46,19 @@
 &lt;h3 id=&quot;page-builders&quot;&gt;Page Builders&lt;/h3&gt;
 &lt;p&gt;WYSIWYG and CSS in a UI does not really work anymore.&lt;/p&gt;
 &lt;h2 id=&quot;coping-with-more-complex-css&quot;&gt;Coping with more complex CSS&lt;/h2&gt;
-&lt;p&gt;Perhaps we can avoid overwhelm  by starting simply with the basics.&lt;/p&gt;
+&lt;p&gt;Perhaps we can avoid overwhelm by starting with the basics.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;UX design begins with content and uses design rules (color, proximity spacing) to that content more manageable  for users. This can be applied intrinsically in the browser.&lt;/p&gt;
+&lt;p&gt;UX design begins with content and uses design rules (color, proximity spacing) to make that content more manageable for users. This can be applied intrinsically in the browser.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;If we start with semantic HTML first most of our accessibility and performance problems are prevented. The message becomes the  priority. Effectively we have a website.&lt;/p&gt;
+&lt;p&gt;If we start with semantic HTML most of our accessibility and performance problems are prevented. The message becomes the priority.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;We only need to know the fundamentals of CSS (The cascade, display modes, alignment and sizing) to manually create a decent looking website.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Generators and recipes from W3C experts can build on that to give us a more flexible layout and complex component.&lt;/p&gt;
+&lt;p&gt;Generators and recipes from W3C experts can build on that to give us  more flexible layouts and complex components.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </content>
