@@ -1,5 +1,5 @@
 ---
-title:  'intrinsic page bilder?'
+title:  'The intrinsic Page Builder'
 description: What is a CMS and should clients have one.
 date: 2025-03-12
 tags: ["podcast"]
