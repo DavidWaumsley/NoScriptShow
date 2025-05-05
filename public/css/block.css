@@ -3,8 +3,7 @@
 
 .logo  {
   inline-size:220px;
-  padding: var(--space-xs);
-  margin-inline-start: -50px; 
+  padding: var(--space-xs); 
 }
 
 .nss-icon {

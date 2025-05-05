@@ -12,8 +12,8 @@
   footer {
     margin-inline: 6vw;
   }
-  main {
-    margin-inline: 6vw;
+  main { 
+    margin-inline: 2vw; 
     margin-block-end: var(--space-2xl);
   }
   
