@@ -1,18 +1,4 @@
-@view-transition {
-	navigation: auto;	
-}
-
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation-duration: .6s ; 
-}
-
-/* Test css */
-
-/*
-CSS RESET
-A version of this: https://piccalil.li/blog/a-more-modern-css-reset/
-*/
+/*CSS RESET*/
 
 *,
 *:before,
@@ -33,6 +19,7 @@ html {
 html {
   interpolate-size: allow-keywords;
 }
+
 /* Remove default margin in favour of better control in authored CSS */
 
 body,

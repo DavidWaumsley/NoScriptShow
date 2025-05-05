@@ -1,12 +1,32 @@
+/*
+GLOBAL STYLES
+--------------
+COLOR VARIABLES 
+FLUID TYPE VARIABLES
+FLUID SPACING VARIABLES
+BODY AND FONT FACE
+TYPE ELEMENTS
+OTHER GLOBAL ELEMENTS 
+*/
+
+@view-transition {
+	navigation: auto;
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: .4s ; 
+}
+
+/********************************/
+/****** COLOR VARIABLES  *******/        
 
 [data-theme="light"] {
-	--brand: #ED505D;
+	--brand: #c6313d;
 	--accent: #9e9eff;
 	--text: hsl(240, 8%, 10%);
   --text-alt: hsl(0, 0%, 98%);
 	--surface:  #ffffff;
-	--shadow: hsl(60, 1%, 15%);
-	
+	--shadow: hsl(60, 1%, 15%);	
   }
 
   [data-theme="dark"] {
@@ -22,53 +42,10 @@
     scrollbar-color:var(--brand) var(--surface);
     scrollbar-width:auto;
 }
-/********************************************************/
 
-/************ 2_ FLUID TYPE VARIABLES ************/
+/********************************/
+/***** FLUID TYPE VARIABLES ******/  
 
-/*********************************************************/
-
-@font-face {
-    font-family: "Ubuntu Mono";
-    src: url("/fonts/UbuntuMono-Regular.woff2");
-    unicode-range: U+0000, U+0008-0009, U+000D, U+001D, U+0020-007E,
-        U+00A0-024F, U+0292, U+02BC, U+02C6-02C7, U+02C9, U+02D8-02DD, U+0311,
-        U+0384-0386, U+0388-038A, U+038C, U+038E-03A1, U+03A3-03CE,
-        U+0400-045F, U+0462-0463, U+0472-0475, U+048A-04F9, U+1E80-1E85,
-        U+1EF2-1EF3, U+1F00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D,
-        U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4,
-        U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4,
-        U+1FF6-1FFE, U+2013-2015, U+2018-201A, U+201C-201E, U+2020-2022,
-        U+2026, U+2030, U+2039-203A, U+2044, U+2070, U+2074-2079, U+2080-2089,
-        U+20AC, U+20AE, U+20B4, U+20B9, U+2113, U+2116, U+2122, U+2126,
-        U+212E, U+2153-215E, U+2202, U+2206, U+220F, U+2211-2212, U+2215,
-        U+2219-221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+2500,
-        U+2502, U+250C, U+2510, U+2514, U+2518, U+251C, U+2524, U+252C,
-        U+2534, U+253C, U+2550-256C, U+2588, U+2591-2593, U+25CA, U+E0FF,
-        U+EFFD, U+F000-F002, U+F506-F511, U+F80A-F81D, U+FB01-FB02, U+FFFD;
-        font-display: swap;
-}
-
-@font-face {
-  font-family: "Ubuntu Mono Bold";
-  src: url("/fonts/UbuntuMono-Bold.woff2");
-  unicode-range: U+0000, U+0008-0009, U+000D, U+001D, U+0020-007E,
-      U+00A0-024F, U+0292, U+02BC, U+02C6-02C7, U+02C9, U+02D8-02DD, U+0311,
-      U+0384-0386, U+0388-038A, U+038C, U+038E-03A1, U+03A3-03CE,
-      U+0400-045F, U+0462-0463, U+0472-0475, U+048A-04F9, U+1E80-1E85,
-      U+1EF2-1EF3, U+1F00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D,
-      U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4,
-      U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4,
-      U+1FF6-1FFE, U+2013-2015, U+2018-201A, U+201C-201E, U+2020-2022,
-      U+2026, U+2030, U+2039-203A, U+2044, U+2070, U+2074-2079, U+2080-2089,
-      U+20AC, U+20AE, U+20B4, U+20B9, U+2113, U+2116, U+2122, U+2126,
-      U+212E, U+2153-215E, U+2202, U+2206, U+220F, U+2211-2212, U+2215,
-      U+2219-221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+2500,
-      U+2502, U+250C, U+2510, U+2514, U+2518, U+251C, U+2524, U+252C,
-      U+2534, U+253C, U+2550-256C, U+2588, U+2591-2593, U+25CA, U+E0FF,
-      U+EFFD, U+F000-F002, U+F506-F511, U+F80A-F81D, U+FB01-FB02, U+FFFD;
-      font-display: swap;
-}
 
 
 /* @link https://utopia.fyi/type/calculator?c=320,17,1.125,1280,21,1.25,10,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
@@ -88,11 +65,9 @@
     --step-9: clamp(3.0669rem, 0.8296rem + 11.1866vw, 9.7789rem);
     --step-10: clamp(3.4503rem, 0.5258rem + 14.6222vw, 12.2236rem);
   }
-  /********************************************************/
-  
-  /************ 3_ FLUID SPACING VARIABLES ************/
-  
-  /*********************************************************/
+ 
+/********************************/
+/*** FLUID SPACING VARIABLES ****/
   
   /* @link https://utopia.fyi/space/calculator?c=320,17,1.2,1280,21,1.25,10,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l|s-xl|s-2xl|s-3xl&g=s,l,xl,12 */
   
@@ -124,8 +99,51 @@
     --space-s-3xl: clamp(1.0625rem, -1.2083rem + 11.3542vw, 7.875rem);
   }
 
+/********************************/
+/****** BODY AND FONT FACE *******/
 
-  /* Body */
+@font-face {
+  font-family: "Ubuntu Mono";
+  src: url("/fonts/UbuntuMono-Regular.woff2");
+  unicode-range: U+0000, U+0008-0009, U+000D, U+001D, U+0020-007E,
+      U+00A0-024F, U+0292, U+02BC, U+02C6-02C7, U+02C9, U+02D8-02DD, U+0311,
+      U+0384-0386, U+0388-038A, U+038C, U+038E-03A1, U+03A3-03CE,
+      U+0400-045F, U+0462-0463, U+0472-0475, U+048A-04F9, U+1E80-1E85,
+      U+1EF2-1EF3, U+1F00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D,
+      U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4,
+      U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4,
+      U+1FF6-1FFE, U+2013-2015, U+2018-201A, U+201C-201E, U+2020-2022,
+      U+2026, U+2030, U+2039-203A, U+2044, U+2070, U+2074-2079, U+2080-2089,
+      U+20AC, U+20AE, U+20B4, U+20B9, U+2113, U+2116, U+2122, U+2126,
+      U+212E, U+2153-215E, U+2202, U+2206, U+220F, U+2211-2212, U+2215,
+      U+2219-221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+2500,
+      U+2502, U+250C, U+2510, U+2514, U+2518, U+251C, U+2524, U+252C,
+      U+2534, U+253C, U+2550-256C, U+2588, U+2591-2593, U+25CA, U+E0FF,
+      U+EFFD, U+F000-F002, U+F506-F511, U+F80A-F81D, U+FB01-FB02, U+FFFD;
+      font-display: swap;
+}
+
+@font-face {
+font-family: "Ubuntu Mono Bold";
+src: url("/fonts/UbuntuMono-Bold.woff2");
+unicode-range: U+0000, U+0008-0009, U+000D, U+001D, U+0020-007E,
+    U+00A0-024F, U+0292, U+02BC, U+02C6-02C7, U+02C9, U+02D8-02DD, U+0311,
+    U+0384-0386, U+0388-038A, U+038C, U+038E-03A1, U+03A3-03CE,
+    U+0400-045F, U+0462-0463, U+0472-0475, U+048A-04F9, U+1E80-1E85,
+    U+1EF2-1EF3, U+1F00-1F15, U+1F18-1F1D, U+1F20-1F45, U+1F48-1F4D,
+    U+1F50-1F57, U+1F59, U+1F5B, U+1F5D, U+1F5F-1F7D, U+1F80-1FB4,
+    U+1FB6-1FC4, U+1FC6-1FD3, U+1FD6-1FDB, U+1FDD-1FEF, U+1FF2-1FF4,
+    U+1FF6-1FFE, U+2013-2015, U+2018-201A, U+201C-201E, U+2020-2022,
+    U+2026, U+2030, U+2039-203A, U+2044, U+2070, U+2074-2079, U+2080-2089,
+    U+20AC, U+20AE, U+20B4, U+20B9, U+2113, U+2116, U+2122, U+2126,
+    U+212E, U+2153-215E, U+2202, U+2206, U+220F, U+2211-2212, U+2215,
+    U+2219-221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+2500,
+    U+2502, U+250C, U+2510, U+2514, U+2518, U+251C, U+2524, U+252C,
+    U+2534, U+253C, U+2550-256C, U+2588, U+2591-2593, U+25CA, U+E0FF,
+    U+EFFD, U+F000-F002, U+F506-F511, U+F80A-F81D, U+FB01-FB02, U+FFFD;
+    font-display: swap;
+}
+
 
 html {
     font-size: 97%;
@@ -149,11 +167,8 @@ html {
     color: var(--text);   
   }
 
-/********************************************************/
-
-/************ 5_ TYPE ELEMENTS ************/
-
-/*********************************************************/
+/********************************/
+/******** TYPE ELEMENTS ********/
 
 h1,
 h2,
@@ -174,12 +189,9 @@ h1 {
   text-align:center;
 }
 
-
-
 h2 {
   font-size: var(--step-3);
-  text-transform: capitalize;
-  
+  text-transform: capitalize;  
 }
 
 h3 {
@@ -220,7 +232,6 @@ a:hover {
   color: hsl(from var(--text) h s calc(l + 25)); 
 }
 
-
 a:active {
   position: relative;
   inset-block-start: 0.05rem;
@@ -240,6 +251,8 @@ main li {
   line-height: calc(1.6em + 0.5rem);
 }
 
+/********************************/
+/***** OTHER GLOBAL ELEMENTS *****/
 p,
 small,
 li,
@@ -261,3 +274,69 @@ blockquote {
   font-style: italic;
   margin-inline: 0;
 }
+
+::selection {
+  color: var(--text);
+  background-color: var(--text);
+}
+
+::marker {
+  color: var(--brand);
+  font-size: var(--step-1); 
+}
+address {
+  display: inline-block;
+  font-style: italic;
+}
+  /* skip links and focus */
+
+.skip-link {
+  position: absolute;
+  padding: 0.5rem;
+  margin: 1rem;
+  background-color: var(--shadow);  
+  z-index: 10;
+  font-weight: 700;}
+
+.skip-link:not(:focus) {
+  clip-path: inset(50%);
+}
+
+:focus-visible {
+    outline: 0.3rem solid var(--text);  
+    border-radius: 0.5rem;
+  } 
+
+.toggle:focus-visible {
+  outline: 0.3rem solid var(--accent);  
+  border-radius: 0.5rem;
+ }
+
+/* Less used*/
+
+a abbr  {
+  text-decoration: none;
+}
+
+abbr {
+  text-decoration: underline dotted;
+}
+
+kbd {
+  border: 0.1rem solid;
+  border-radius: 0.3rem;
+  box-shadow: inset 0 -0.1rem 0 0;
+  padding: 0.3rem 0.5rem;
+  margin-inline: 0.3rem;
+  white-space: nowrap; 
+}
+
+code {
+  background-color: var(--tertiary);
+  color: var(--brand-95-l);
+  font-size: var(--step-0);
+  font-family: "Courier New", Courier, monospace;
+  padding: 0.2rem;
+}
+
+

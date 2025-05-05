@@ -226,7 +226,7 @@ lite-youtube.lyt-activated > .lyt-playbtn {
 
   .btn, .btn:active{  
     border: none;
-    background-color: var(--text);  
+    background-color: var(--brand);  
     color: var(--text-alt);
     display: block;
     padding: 0.6em 1.5em;
