@@ -43,6 +43,7 @@
         U+2502, U+250C, U+2510, U+2514, U+2518, U+251C, U+2524, U+252C,
         U+2534, U+253C, U+2550-256C, U+2588, U+2591-2593, U+25CA, U+E0FF,
         U+EFFD, U+F000-F002, U+F506-F511, U+F80A-F81D, U+FB01-FB02, U+FFFD;
+        font-display: swap;
 }
 
 @font-face {
@@ -63,6 +64,7 @@
       U+2502, U+250C, U+2510, U+2514, U+2518, U+251C, U+2524, U+252C,
       U+2534, U+253C, U+2550-256C, U+2588, U+2591-2593, U+25CA, U+E0FF,
       U+EFFD, U+F000-F002, U+F506-F511, U+F80A-F81D, U+FB01-FB02, U+FFFD;
+      font-display: swap;
 }
 
 

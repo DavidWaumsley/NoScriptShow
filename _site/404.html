@@ -4,6 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>No Script Show. No Script Show</title>
+
+<script>
+  // This runs immediately, before the page renders
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+</script> 
 <meta name="description" content="Talking, learning and building websites simply.">
 <link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="No Script Show">
 
@@ -25,7 +35,7 @@
 <meta property="twitter:description" content="">
 <meta property="twitter:image" content="https://i.ytimg.com/vi_webp//maxresdefault.webp">
 
-<link rel="stylesheet" href="/dist/FeoUWKh3XN.css">
+<link rel="stylesheet" href="/dist/YeanXI6Rom.css">
 
  <meta name="generator" content="Eleventy v3.0.0">
 		
@@ -80,7 +90,7 @@ This will work for both GitHub pages and Netlify:
 			| <a href="/feed/feed.xml">RSS Feed</a></small>
 		</footer>
 
-		<!-- This page `/404.html` was built on 2025-05-05T08:48:32.483Z -->
+		<!-- This page `/404.html` was built on 2025-05-05T09:05:39.607Z -->
 		<script type="module" src="/dist/2it2F9Kmpn.js"></script>		
 	</body>
 </html>
