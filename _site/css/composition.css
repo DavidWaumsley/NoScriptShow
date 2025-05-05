@@ -27,6 +27,10 @@
     padding-block: var(--space-m);
   }
 
+  .top-bar {
+    display: flex;
+    justify-self: end;   
+}
 
 /************************************************************************************/
 
@@ -50,19 +54,6 @@
     }
   }
   
-  header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: var(--space-m);
-    margin-block-end: 0;
-    align-items: center;
-  }
-
-  /* Nav */
-
-
-
-
 .box {
   /*--------Settings-------*/ 
   --grid-col-count: 3;

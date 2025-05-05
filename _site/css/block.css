@@ -11,11 +11,19 @@
   padding: var(--space-xs);
 }
 
+header nav ul {
+  display: flex;
+  flex-wrap: wrap; 
+  margin-block-end: 0;
+  align-items: center;
+}
+
 nav a,
 nav a:active:not(.btn) {
   font-size: var(--step-0);
   text-transform: capitalize;
   transition: 0.5s;
+  padding: var(--space-xs);
 }
 
 .nav{
@@ -29,7 +37,10 @@ text-decoration: none;
 
 
 .nav a[href][aria-current="page"] {
-border-block-end: .4rem solid var(--brand);
+text-decoration: underline;
+text-decoration-thickness: .4rem;
+text-decoration-color: var(--brand);
+text-underline-offset: .8rem;
 }
 
 /* nav a:hover:not(.btn) {
@@ -54,7 +65,7 @@ footer li {
 
 header a {
   text-decoration: none;
-  padding-block: 1rem;
+
 }
 
 .projects{

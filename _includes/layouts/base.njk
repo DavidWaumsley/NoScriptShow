@@ -50,57 +50,18 @@
 {% include "public/css/exceptions.css" %}
 {% include "public/css/index.css" %}
 {% endcss %}
-
  <link rel="preload" href="/fonts/UbuntuMono-Bold.woff2"  as="font" type="font/woff2" crossorigin="">
-  <link rel="preload" href="/fonts/UbuntuMono-Regular.woff2"  as="font" type="font/woff2" crossorigin="">
-
+ <link rel="preload" href="/fonts/UbuntuMono-Regular.woff2"  as="font" type="font/woff2" crossorigin="">
  <meta name="generator" content="{{ eleventy.generator }}">
+</head>
+ <a href="#skip" class="[ visually-hidden ]">Skip to main content</a>
+<body>
 
-		{#-
-		Plain-text bundles are provided via the `eleventy-plugin-bundle` plugin:
-		1. CSS:
-			* Add to a per-page bundle using `{% css %}`
-			* Retrieve bundle content using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
-		2. Or for JavaScript:
-			* Add to a per-page bundle using `{% js %}{% endjs %}`
-			* Retrieve via `{% getBundle "js" %}` or `{% getBundleFileUrl "js" %}`
-		3. Learn more: https://github.com/11ty/eleventy-plugin-bundle
-		#}
-
-		{#- Add an arbitrary string to the bundle #}
-		{# {%- css %}/* This is an arbitrary CSS string added to the bundle */{% endcss %} #}
-		{#- Add the contents of a file to the bundle #}
-		
-		{#- Or you can add from node_modules #}
-		{# {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %} #}
-
-		{#- Render the CSS bundle using inlined CSS (for the fastest site performance in production) #}
-		{# <style>{% getBundle "css" %}</style> #}
-	
-		{#- Add the heading-anchors web component to the JavaScript bundle #}
-		{# {%- js %}{% endjs %} #}
-		
-	</head>
-	<body>
-		<button
-        class="toggle"
-        data-theme-toggle
-        id="theme-toggle"
-        style="display: none"
-        type="button"
-        aria-label=" light and dark mode switch"
-      >
-        <img
-          class="theme-icon"
-          src="/svg/moon.svg"
-          width="25"
-          height="25"
-          alt="dark and light theme switcher"
-        />
+		<div class="[ top-bar ]">
+		<button class="[ toggle ]" data-theme-toggle="" id="theme-toggle" style="display: none" type="button" aria-label=" light and dark mode switch">
+        <img class="theme-icon" src="/svg/moon.svg" width="25" height="25" alt="">
       </button>
-
-		<a href="#skip" class="visually-hidden">Skip to main content</a>
-
+	  </div>	
 
   {% include "partials/header.njk" %}
 
