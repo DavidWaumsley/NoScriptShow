@@ -18,7 +18,21 @@ nav a:active:not(.btn) {
   transition: 0.5s;
 }
 
-nav a:hover:not(.btn) {
+.nav{
+  list-style-type: none;
+}
+
+nav a[href]:not(:hover) {
+text-decoration: none;
+  list-style-type: none;
+}
+
+
+.nav a[href][aria-current="page"] {
+border-block-end: .4rem solid var(--brand);
+}
+
+/* nav a:hover:not(.btn) {
   background: linear-gradient(
     transparent 0%,
     transparent 75%,
@@ -27,7 +41,7 @@ nav a:hover:not(.btn) {
     transparent 90%,
     transparent 100%
   );
-}
+} */
 
 header li {
   list-style: none;
@@ -249,13 +263,14 @@ lite-youtube.lyt-activated > .lyt-playbtn {
   }
   
 
-  .reel {
+  .reel  {
     display: flex;
     block-size: auto;
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-color:  var(--brand) var(--text);   
 }
+
 
 .reel > * {
   flex: 0 0 auto;

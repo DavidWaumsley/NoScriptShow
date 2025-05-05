@@ -1,6 +1,6 @@
 
 [data-theme="light"] {
-	--brand: #ed505d;
+	--brand: #ED505D;
 	--accent: #9e9eff;
 	--text: hsl(240, 8%, 10%);
   --text-alt: hsl(0, 0%, 98%);
@@ -18,7 +18,10 @@
 	--shadow: hsl(0, 0%, 96%);
   }
 
-
+  * {
+    scrollbar-color:var(--brand) var(--surface);
+    scrollbar-width:auto;
+}
 /********************************************************/
 
 /************ 2_ FLUID TYPE VARIABLES ************/
@@ -122,11 +125,6 @@
   }
 
 
-  :root {
-	--font-family: "Ubuntu Mono", -apple-system, system-ui, sans-serif;
-	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
-}
-
   /* Body */
 
 html {
@@ -144,7 +142,7 @@ html {
   }
   
   body {
-    font-family: var(--font-family) ;
+    font-family: "Ubuntu Mono", monospace; 
     font-size: var(--step-0);
     line-height: calc(1.4em + 0.5rem);
     background-color: var(--surface);

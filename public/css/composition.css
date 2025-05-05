@@ -60,19 +60,7 @@
 
   /* Nav */
 
-  .nav{
-    list-style-type: none;
-  }
 
-nav a[href]:not(:hover) {
-	text-decoration: none;
-    list-style-type: none;
-}
-
-
-.nav a[href][aria-current="page"] {
-	text-decoration: underline;
-}
 
 
 .box {
