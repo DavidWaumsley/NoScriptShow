@@ -83,7 +83,7 @@ ol[role="list"] {
 
 a:not([class]) {
   text-decoration-thickness: max(0.06rem, 1px);
-  text-underline-offset: 0.3rem;
+  text-underline-offset: .5rem;
 }
 
 /* Set core body defaults */

@@ -4,10 +4,15 @@
 
 /************************************************************************************/
 
-.logo img {
-  inline-size:400px;
-  padding: var(--space-2xs);
+.logo  {
+  inline-size:220px;
+  padding: var(--space-xs);
   margin-inline-start: -50px; 
+}
+
+.nss-icon {
+  inline-size:220px;
+  padding: var(--space-xs);
 }
 
 nav a,
@@ -42,7 +47,15 @@ header a {
   padding-block: 1rem;
 }
 
+.projects{
+  background-color: var(--text);
+  color: var(--text-alt);
+  padding: var(--space-l);
+}
 
+.projects h2{
+ color: var(--text-alt);
+}
 
 
 /* Youtube */
@@ -178,29 +191,101 @@ lite-youtube.lyt-activated > .lyt-playbtn {
 
     font-size: var(--step-0);
   }
-
-  .latest{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: var(--space-2xs);
-    margin:var(--space-l);
-   
-  }
-.latest li{
-list-style-type: none;
-background-color: var(--text);
-color: var(--text-alt);
- width: 380px;
-  }
-
-  .latest li:not(img) a{
-    display: block;
-   color: var(--text-alt);
-   padding: var(--space-l);
-   font-family: var(--font-family-monospace);
-   line-height: 1;
-  }
-
+ 
   .pagination li {
     display: inline-block;
   }
+
+
+
+  .value-prop{
+    font-size: var(--step-7);
+    text-align:center;
+    font-weight: 700;
+  }
+  
+  .value-prop span{
+    display: block;
+    font-size: var(--step-0);
+    text-align:center;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-family: "Ubuntu Mono";
+  }
+
+
+  .btn, .btn:active{  
+    border: none;
+    background-color: var(--brand);  
+    color: #fff;
+    display: block;
+    padding: 0.6em 1.5em;
+    font-weight: 900;
+    letter-spacing: 0.05em; 
+    font-family: "Ubuntu Mono Bold"; 
+    text-decoration: none;  
+    text-transform: uppercase;
+    width:  fit-content;
+    height: fit-content; 
+    font-size: var(--step-0); 
+    outline: 0.1rem solid transparent;
+    outline-offset: -0.125rem;
+    /* box-shadow: 0  .1rem 0rem 0rem hsla(0, 0%, 2%, 1); */
+    transition: .2s ease-out;
+    margin-block: var(--space-m);
+  }
+
+  .btn-alt{
+    background-color: var(--text);
+    color: var(--text-alt) ;
+  }
+  
+  .btn:hover {
+    color: #fff;
+    transition: .1s ease-in; 
+    box-shadow: 0 0 0 0 hsla(0, 0%, 2%, 0.1);    
+    background-color: hsl(from var(--brand) h s calc(l + -6)); 
+  }  
+   
+  .btn:focus-visible{
+    outline: 0.3rem solid var(--brand);  
+    border-radius: 0.5rem;
+  }
+  
+
+  .reel {
+    display: flex;
+    block-size: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-color:  var(--brand) var(--text);   
+}
+
+.reel > * {
+  flex: 0 0 auto;
+  }
+  
+  .reel div {
+  flex-basis: 26rem; 
+  padding: 2rem;
+  }
+  
+  /* space between "slides" */
+  .reel > * {
+  margin-inline-end: 10rem;
+  }
+
+  .bio{ 
+    padding: var(--space-l);
+    border: .4rem solid var(--text);
+    border-block-start: 0;
+  }
+
+  @media (width > 87rem) {
+  .bio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  
+  }
+}
+
+  
