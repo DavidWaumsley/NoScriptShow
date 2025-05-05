@@ -212,8 +212,8 @@ lite-youtube.lyt-activated > .lyt-playbtn {
 
   .btn, .btn:active{  
     border: none;
-    background-color: var(--brand);  
-    color: #fff;
+    background-color: var(--text);  
+    color: var(--text-alt);
     display: block;
     padding: 0.6em 1.5em;
     font-weight: 900;
@@ -240,7 +240,7 @@ lite-youtube.lyt-activated > .lyt-playbtn {
     color: #fff;
     transition: .1s ease-in; 
     box-shadow: 0 0 0 0 hsla(0, 0%, 2%, 0.1);    
-    background-color: hsl(from var(--brand) h s calc(l + -6)); 
+    background-color: var(--brand); 
   }  
    
   .btn:focus-visible{
