@@ -162,12 +162,12 @@
 	</url>
 	
 	<url>
-		<loc>https://noscript.show/blog/</loc>
+		<loc>https://noscript.show/pages/blog/</loc>
 		<lastmod>2025-02-05</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://noscript.show/build/</loc>
+		<loc>https://noscript.show/pages/build/</loc>
 		<lastmod>2025-02-05</lastmod>
 	</url>
 	
@@ -177,7 +177,7 @@
 	</url>
 	
 	<url>
-		<loc>https://noscript.show/</loc>
+		<loc>https://noscript.show/pages/</loc>
 		<lastmod>2025-02-05</lastmod>
 	</url>
 	
@@ -187,7 +187,7 @@
 	</url>
 	
 	<url>
-		<loc>https://noscript.show/tags/</loc>
+		<loc>https://noscript.show/pages/tags/</loc>
 		<lastmod>2025-02-05</lastmod>
 	</url>
 	
@@ -217,7 +217,17 @@
 	</url>
 	
 	<url>
+		<loc>https://noscript.show/pages/contact/</loc>
+		<lastmod>2025-05-06</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/pages/about/</loc>
+		<lastmod>2025-05-06</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://noscript.show/feed/feed.xml</loc>
-		<lastmod>2025-05-05</lastmod>
+		<lastmod>2025-05-06</lastmod>
 	</url>
 </urlset>
