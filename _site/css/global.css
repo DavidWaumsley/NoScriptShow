@@ -26,7 +26,8 @@ OTHER GLOBAL ELEMENTS
 	--text: hsl(240, 8%, 10%);
   --text-alt: hsl(0, 0%, 98%);
 	--surface:  #ffffff;
-	--shadow: hsl(60, 1%, 15%);	
+	--shadow: hsl(60, 1%, 15%);
+  --shade:	#f3f0f0;
   }
 
   [data-theme="dark"] {
@@ -36,6 +37,7 @@ OTHER GLOBAL ELEMENTS
   --text-alt: hsl(240, 8%, 10%);
 	--surface: hsl(240, 9%, 14%);
 	--shadow: hsl(0, 0%, 96%);
+  --shade:	hsl(240, 8%, 10%);
   }
 
   * {
@@ -161,7 +163,7 @@ html {
   body {
     font-family: "Ubuntu Mono", monospace; 
     font-size: var(--step-0);
-    line-height: calc(1.4em + 0.5rem);
+    line-height: calc(1.6em + 0.5rem);
     background-color: var(--surface);
     color: var(--text);   
   }
@@ -189,12 +191,12 @@ h1 {
 }
 
 h2 {
-  font-size: var(--step-3);
+  font-size: var(--step-4);
   text-transform: capitalize;  
 }
 
 h3 {
-  font-size: var(--step-2); 
+  font-size: var(--step-3); 
 }
 
 h4 {
@@ -268,8 +270,8 @@ summary{
 }
 
 blockquote {
-  border-inline: 0.5rem solid var(--text-alt);
-  padding: 1rem;
+  border-inline-start: 0.4rem solid var(--brand);
+  padding: var(--space-2xs);
   font-style: italic;
   margin-inline: 0;
 }
@@ -283,6 +285,7 @@ blockquote {
   color: var(--brand);
   font-size: var(--step-1); 
 }
+
 address {
   display: inline-block;
   font-style: italic;
@@ -337,5 +340,3 @@ code {
   font-family: "Courier New", Courier, monospace;
   padding: 0.2rem;
 }
-
-

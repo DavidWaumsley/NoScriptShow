@@ -89,7 +89,10 @@ header a {
 }
 
 
-/* Youtube */
+/********************************/
+/************ YOUTUBE ************/
+
+
 lite-youtube {
     background-color: #000;
     position: relative;
@@ -517,5 +520,11 @@ select:focus {
 textarea {
   height: 15rem;
   resize: vertical; 
+}
+
+article li::marker {
+  color: var(--brand);
+  content: '■   ';
+  font-size: var(--step-1); 
 }
 
