@@ -79,7 +79,6 @@ header a {
 /********************************/
 /************ HOMEPAGE ************/
 .latest-eps svg{
-
   margin-block-start: -4rem;
   margin-block-end: 2rem;
 }
@@ -467,8 +466,7 @@ footer li{
 /* Base form styles */
 form {
   margin-block-end: var(--space-m);
-  background-color: var(--shadow-2);
-  border-radius: 0.5rem;
+  background-color: var(--shade);  
 }
 
 .field-wrapper {
@@ -485,7 +483,7 @@ label {
 
 /* Required field indicator */
 .required {
-  color: var(--accent);
+  color: var(--brand);
   margin-inline-start: 0.25rem;
 }
 
@@ -497,8 +495,7 @@ textarea,
 select {
   width: 100%;
   padding: 1rem 0.5rem;
-  border: 0.2rem solid var(--text);
-  border-radius: 0.5rem; 
+  border: 0.4rem solid var(--text); 
   transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
@@ -507,8 +504,8 @@ input:focus,
 textarea:focus,
 select:focus {
   outline: none;
-  border-color: var(--tertiary); 
-}
+  border-color: var(--brand); 
+}   
 
 
 /* Textarea specific styles */
