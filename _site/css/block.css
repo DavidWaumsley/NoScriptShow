@@ -15,7 +15,7 @@ header nav ul {
   display: flex;
   flex-wrap: wrap; 
   margin-block-end: 0;
-  align-items: center;
+  /* align-items: center; */
 }
 
 nav a,
