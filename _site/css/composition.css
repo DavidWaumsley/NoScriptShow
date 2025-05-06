@@ -9,8 +9,24 @@ FOOTER
 FLUID BREAKOUTS 
 */
 
-/********************************/
+/*******************************/
 /************ BODY ************/   
+
+.top-bar     {grid-area: tb;}
+header       {grid-area: h;}
+main         {grid-area: m;}
+footer       {grid-area: f;}
+
+
+body { 
+  display: grid; 
+  grid-template:
+  "tb"
+  "h"
+  "m" 1fr /* gives remaining space to the main */
+  "f"
+  ; 
+}
   
   header {
     margin-inline: 6vw;
@@ -31,14 +47,15 @@ FLUID BREAKOUTS
 /********************************/
 /******** HEADER & NAV  ********/
 
-@media (width < 68rem) {
-    header > * {
+@media (width <= 45rem) {
+    header {
       display: grid;
-      place-content: center;
+      justify-content: center;
+      margin-block-end: var(--space-xl);
     }
   }
   
-  @media (width > 68rem) {
+  @media (width > 45rem) {
     header {
       display: flex;
       justify-content: space-between;    

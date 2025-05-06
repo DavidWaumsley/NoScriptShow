@@ -1,10 +1,7 @@
 
 
-/********************************************************/
-
-/************  FLOW ************/
-
-/*********************************************************/
+/*******************************/
+/************ FLOW ************/   
 
 .flow {
     --flow-space: 1rem;
@@ -20,8 +17,7 @@
   }
   h4 {
     --flow-space: 1.3rem;
-  }
-  
+  }  
   p {
     --flow-space: 0.8rem;
   }
@@ -40,16 +36,11 @@
   }
   main ul li {
     --flow-space: 2rem;
-
   }
 
-/********************************************************/
+/*******************************/
+/************ OTHER ************/   
 
-/************  OTHER ************/
-
-/*********************************************************/
-
-  /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden {
 	clip: rect(0 0 0 0);
 	clip-path: inset(50%);
@@ -67,12 +58,6 @@
 .text-center{
   text-align: center;
 }
-
-.c {
-  display: grid;
-  justify-items: center;
-}  
-
 
 .sidelines {
   display: grid;
@@ -132,48 +117,13 @@
   padding-block-end: 5rem;
 }
 
-
 .center-me {
   display: grid;
   justify-items: center;
 }  
 
-.latest-eps li:first-child{
-  font-size: var(--step-2);  
-  margin-block-end: var(--space-l);
-  font-weight: 700;
-
-  }
-
-.latest-eps{ 
-  border-inline: .4rem solid var(--text);
-  padding: var(--space-l);  
-  align-content:center;
-}
-
-.latest-eps{  
- text-align: center;
-}
-
-.latest-eps li{
-  list-style-type: none;  
-  font-size: var(--step-0); 
-}
-
-.latest-eps li:not(:first-child){
-display: inline-flex;
-flex-wrap: wrap;
-
-}
-
-.latest-eps li {
-  align-content:center;
-  justify-content:space-between;
-  text-align: center;
-  }
-
   .pretty {
-    text-wrap: pretty;
+   text-wrap: pretty;
 }
 
 @view-transition {

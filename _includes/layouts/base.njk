@@ -55,21 +55,18 @@
  <a href="#skip" class="[ skip-link ]">Skip to main content</a>
 <body>
 
-		<div class="[ top-bar ]">
-		<button class="[ toggle ]" data-theme-toggle="" id="theme-toggle" style="display: none" type="button" aria-label=" light and dark mode switch">
-        <img class="theme-icon" src="/svg/moon.svg" width="25" height="25" alt="">
-      </button>
-	  </div>	
+<div class="[ top-bar ]">
+<button class="[ toggle ]" data-theme-toggle="" id="theme-toggle" style="display: none" type="button" aria-label=" light and dark mode switch">
+<img class="theme-icon" src="/svg/moon.svg" width="25" height="25" alt="">
+</button>
+</div>	
 
   {% include "partials/header.njk" %}
-
-
-	<main class="[ page-layout ] [ flow ]" id="skip">
+<main class="[ page-layout ] [ flow ]" id="skip">
 			
 				{{ content | safe }}
 			
-		</main>
-
+</main>
 	
   {% include "partials/footer.njk" %}
 
@@ -80,5 +77,5 @@
 		{% include "public/js/lite-yt-embed.js" %}	
 		{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}	
 		{% endjs %}		
-	</body>
+</body>
 </html>
