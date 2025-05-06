@@ -48,8 +48,7 @@
   @media (width > 68rem) {
     header {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: space-between;    
       padding-block-end: var(--space-l);
     }
   }

@@ -2,6 +2,7 @@
 /******** HEADER & NAV  ********/
 
 .logo  {
+  margin-block-start: -1.5rem;
   inline-size:220px;
   padding: var(--space-xs); 
 }
@@ -14,8 +15,7 @@
 header nav ul {
   display: flex;
   flex-wrap: wrap; 
-  margin-block-end: 0;
-  /* align-items: center; */
+  margin-block-end: 0; 
 }
 
 nav a,
