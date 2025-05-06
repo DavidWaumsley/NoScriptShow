@@ -83,6 +83,11 @@ header a {
   margin-block-end: 2rem;
 }
 
+.bio img{
+  background-color: var(--brand);
+  background: linear-gradient(180deg, transparent 33%,  var(--brand) 33%);
+}
+
 
 /* Youtube */
 lite-youtube {
