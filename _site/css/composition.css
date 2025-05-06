@@ -1,10 +1,16 @@
-/********************************************************/
+/*
+COMPOSITION
+-----------
+BODY
+HEADER & NAV 
+HOMEPAGE MAIN
+ABOUT
+FOOTER 
+FLUID BREAKOUTS 
+*/
 
-/************ 0_ BODY & TOP BAR ************/
-
-/*********************************************************/
-
-/* margin/padding for body areas */
+/********************************/
+/************ BODY ************/   
   
   header {
     margin-inline: 6vw;
@@ -16,27 +22,14 @@
     margin-inline: 2vw; 
     margin-block-end: var(--space-2xl);
   }
-  
-  @media (width < 68rem) {
-    .hours {
-      display: none;
-    }
-  }
-  
-  section{
-    padding-block: var(--space-m);
-  }
-
+     
   .top-bar {
     display: flex;
     justify-self: end;   
 }
 
-/************************************************************************************/
-
-/**********1_ HEADER & NAV  **********/
-
-/************************************************************************************/
+/********************************/
+/******** HEADER & NAV  ********/
 
 @media (width < 68rem) {
     header > * {

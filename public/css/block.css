@@ -2,7 +2,7 @@
 /******** HEADER & NAV  ********/
 
 .logo  {
-  margin-block-start: -1.5rem;
+  margin-block-start: -1.2rem;
   inline-size:220px;
   padding: var(--space-xs); 
 }

@@ -4,18 +4,10 @@ GLOBAL STYLES
 COLOR VARIABLES 
 FLUID TYPE VARIABLES
 FLUID SPACING VARIABLES
-BODY AND FONT FACE
+FONT FACE AND BODY
 TYPE ELEMENTS
 OTHER GLOBAL ELEMENTS 
 */
-
-@view-transition {
-	navigation: auto;
-}
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation-duration: .2s ; 
-}
 
 /********************************/
 /****** COLOR VARIABLES  *******/        
@@ -47,7 +39,6 @@ OTHER GLOBAL ELEMENTS
 
 /********************************/
 /***** FLUID TYPE VARIABLES ******/  
-
 
 /* @link https://utopia.fyi/type/calculator?c=320,17,1.125,1280,21,1.25,10,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
@@ -101,7 +92,7 @@ OTHER GLOBAL ELEMENTS
   }
 
 /********************************/
-/****** BODY AND FONT FACE *******/
+/****** FONT FACE AND BODY *******/
 
 @font-face {
   font-family: "Ubuntu Mono";
@@ -182,28 +173,23 @@ h6 {
   font-weight: 700;
   font-family: "Ubuntu Mono Bold" ;
 }
-
 h1 {
   font-size: var(--step-5);
   margin-block-end: var(--space-s);
   text-transform: capitalize; 
   text-align:center;
 }
-
 h2 {
   font-size: var(--step-4);
   text-transform: capitalize;  
 }
-
 h3 {
   font-size: var(--step-3); 
 }
-
 h4 {
   font-size: var(--step-1);
   font-weight: 500;  text-transform: capitalize;
 }
-
 h5 {
   font-size: var(--step--1);
   color: var(--tertiary);
@@ -212,7 +198,6 @@ h5 {
   letter-spacing: 0.05rem;
   text-transform: uppercase;
 }
-
 h6 {
   font-size: var(--step--1);
 }
@@ -222,15 +207,13 @@ small {
   line-height: 1.5;
   display: inline-block;
 }
-
 a {
   color: var(--text);
   text-decoration-color: var(--brand);
   padding-block: 0.5rem;
 }
-
 a:hover {
-  color: hsl(from var(--text) h s calc(l + 25)); 
+  color: var(--brand); 
 }
 
 a:active {
@@ -277,7 +260,7 @@ blockquote {
 }
 
 ::selection {
-  color: var(--text);
+  color: var(--text-alt);
   background-color: var(--text);
 }
 
@@ -296,34 +279,36 @@ address {
   position: absolute;
   padding: 0.5rem;
   margin: 1rem;
-  background-color: var(--shadow);  
+  background-color: var(--text);  
+  color: var(--text-alt);
   z-index: 10;
-  font-weight: 700;}
+  font-weight: 700;
+  text-underline-offset: .5rem;
+} 
 
 .skip-link:not(:focus) {
-  clip-path: inset(50%);
+  clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
 }
-
 :focus-visible {
-    outline: 0.3rem solid var(--text);  
-    border-radius: 0.5rem;
+    outline: 0.3rem solid var(--text);     
   } 
 
 .toggle:focus-visible {
-  outline: 0.3rem solid var(--accent);  
+  outline: 0.3rem solid var(--text);  
   border-radius: 0.5rem;
  }
 
 /* Less used*/
 
-a abbr  {
-  text-decoration: none;
-}
-
 abbr {
   text-decoration: underline dotted;
 }
-
 kbd {
   border: 0.1rem solid;
   border-radius: 0.3rem;
@@ -332,7 +317,6 @@ kbd {
   margin-inline: 0.3rem;
   white-space: nowrap; 
 }
-
 code {
   background-color: var(--tertiary);
   color: var(--brand-95-l);
