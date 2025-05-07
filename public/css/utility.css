@@ -133,3 +133,7 @@
 ::view-transition-new(root) {
   animation-duration: .2s ; 
 }
+
+.brand-font{
+  font-family: "Ubuntu Mono" , monospace; 
+}
