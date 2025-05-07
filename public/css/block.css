@@ -2,7 +2,7 @@
 /******** HEADER & NAV  ********/
 
 header svg {
-  margin-block-start: -1.2rem;
+  margin-block-start: -2rem;
   inline-size:16rem;
   padding: var(--space-xs); 
 }
@@ -20,8 +20,8 @@ header nav ul {
 
 nav a,
 nav a:active:not(.btn) {
-  font-size: var(--step-0);
-  text-transform: capitalize;
+  font-size: var(--step--1);
+  text-transform: uppercase;
   transition: 0.5s;
   padding: var(--space-xs);
 }
@@ -35,7 +35,6 @@ text-decoration: none;
   list-style-type: none;
 }
 
-
 .nav a[href][aria-current="page"] {
 text-decoration: underline;
 text-decoration-thickness: .4rem;
@@ -43,27 +42,46 @@ text-decoration-color: var(--brand);
 text-underline-offset: .8rem;
 }
 
-/* nav a:hover:not(.btn) {
-  background: linear-gradient(
-    transparent 0%,
-    transparent 75%,
-    var(--brand) 75%,
-    var(--brand) 90%,
-    transparent 90%,
-    transparent 100%
-  );
-} */
-
 header li {
   list-style: none;
   line-height: 2.2;
 }
 
-
-
 header a {
   text-decoration: none;
+}
 
+/********************************/
+/************ HOMEPAGE ************/
+
+
+.latest-eps{ 
+  border-inline: .4rem solid var(--text);
+  padding: var(--space-s);  
+  align-content:center;
+}
+
+.latest-eps{  
+ text-align: center;
+}
+
+.latest-eps img{  
+border: .4rem solid var(--text);
+padding: var(--space-2xs);
+ }
+
+.latest-eps li{
+  list-style-type: none;    
+}
+
+.latest-eps li {
+  display: inline-flex;
+  align-content:center;
+  justify-content:space-between; 
+  }
+.latest-eps svg{
+  margin-block-start: -4rem;
+  margin-block-end: 2rem;
 }
 
 .projects{
@@ -76,50 +94,10 @@ header a {
  color: var(--text-alt);
 }
 
-/********************************/
-/************ HOMEPAGE ************/
-
-.latest-eps li:first-child{
-  font-size: var(--step-2);  
-  margin-block-end: var(--space-l);
-  font-weight: 700;
-
-  }
-
-.latest-eps{ 
-  border-inline: .4rem solid var(--text);
-  padding: var(--space-l);  
-  align-content:center;
-}
-
-.latest-eps{  
- text-align: center;
-}
-
-.latest-eps li{
-  list-style-type: none;  
-  font-size: var(--step-0); 
-}
-
-.latest-eps li:not(:first-child){
-display: inline-flex;
-flex-wrap: wrap;
-}
-
-.latest-eps li {
-  align-content:center;
-  justify-content:space-between;
-  text-align: center;
-  }
-.latest-eps svg{
-  margin-block-start: -4rem;
-  margin-block-end: 2rem;
-}
-
 .bio img{
   background-color: var(--brand);
   background: linear-gradient(180deg, transparent 33%,  var(--brand) 33%);
-}
+ }
 
 
 /********************************/
@@ -161,9 +139,7 @@ lite-youtube:hover::before {
     color: white;
 }
 
-/* responsive iframe with a 16:9 aspect ratio
-    thanks https://css-tricks.com/responsive-iframes/
-*/
+
 lite-youtube::after {
     content: "";
     display: block;
@@ -273,11 +249,12 @@ lite-youtube.lyt-activated > .lyt-playbtn {
   
   .value-prop span{
     display: block;
-    font-size: var(--step-0);
+    font-size: var(--step--1);
     text-align:center;
     text-transform: uppercase;
-    line-height: 1.5;
-    font-family: "Ubuntu Mono";
+    line-height: 1.5; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+    font-weight: 600;
   }
 
 

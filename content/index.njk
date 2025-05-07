@@ -3,7 +3,7 @@ const eleventyNavigation = {
 	key: "Home",
 	order: 1
 };
-const numberOfLatestPostsToShow = 4;
+const numberOfLatestPostsToShow = 3;
 ---
 
 <h1 class="[ value-prop ]"><span>A vodcast about </span>Making websites simple again </h1>
@@ -15,7 +15,7 @@ const numberOfLatestPostsToShow = 4;
 <h2 class="angle">Latest episodes</h2>
 
 
-<div class="[ latest-eps ][ brand-font ]">
+<div class="[ latest-eps ]">
 
 <div class="[ center-me ]">
 <svg class="nss-icon" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" clip-rule="evenodd" viewBox="0 0 1256 526"><text x="46.807" y="266.332" fill="var(--text)" font-family="&quot;CourierNewPS-BoldMT&quot;,&quot;Courier New&quot;,monospace" font-size="220" font-weight="700" transform="translate(-185.937 -597.349) scale(4.22452)">&lt;</text><text x="46.807" y="266.332" fill="var(--text)" font-family="&quot;CourierNewPS-BoldMT&quot;,&quot;Courier New&quot;,monospace" font-size="220" font-weight="700" transform="matrix(-4.22452 0 0 4.22452 1441.103 -597.349)">&lt;</text><path fill="var(--brand)" d="M667.556 118.89c0-21.05-17.09-38.14-38.14-38.14s-38.139 17.09-38.139 38.14v288.181c0 21.05 17.09 38.14 38.14 38.14s38.14-17.09 38.14-38.14v-288.18ZM779.88 189.84c0-16.903-13.723-30.627-30.626-30.627s-30.626 13.724-30.626 30.627V336.12c0 16.903 13.723 30.627 30.626 30.627s30.627-13.724 30.627-30.627V189.84ZM451.077 243.087c0-14.406-11.696-26.102-26.102-26.102s-26.102 11.696-26.102 26.102v39.787c0 14.407 11.696 26.103 26.102 26.103s26.102-11.696 26.102-26.103v-39.787ZM856.249 243.087c0-14.406-11.696-26.102-26.102-26.102-14.407 0-26.103 11.696-26.103 26.102v39.787c0 14.407 11.696 26.103 26.103 26.103 14.406 0 26.102-11.696 26.102-26.103v-39.787ZM539.677 191.132c0-17.616-14.303-31.919-31.92-31.919-17.616 0-31.918 14.303-31.918 31.92v143.696c0 17.616 14.302 31.919 31.919 31.919 17.616 0 31.919-14.303 31.919-31.92V191.133Z"/></svg>
@@ -32,13 +32,12 @@ const numberOfLatestPostsToShow = 4;
 </div>
 
 <div class=" [ angle-up ]" >
-<a class="btn btn-alt" href="blog.njk"> See the other {{ morePosts }} posts{% if morePosts != 1 %}{% endif %}</a>
+<a class="btn btn-alt" href="blog.njk"> See {{ morePosts }} more episodes{% if morePosts != 1 %}{% endif %}</a>
 {% endif %}
 </div>
 </section>
 
 <section class="[ full projects ]">
-
 <h2 class="[ text-center ] [ full ]">Projects</h2>
 
 <div class="[ reel ]">
@@ -54,11 +53,9 @@ const numberOfLatestPostsToShow = 4;
 </section>
 
 <section class="[ popout ] ">
-
 <h2 class="[ angle ]">Hosts</h2>
 
 <div class="[ bio ]">
-
 <div>
 <img src="img/Nathan-Wrigley.webp" alt="" loading="lazy" width="800" height="750">
 <h3>Nathan Wrigley</h3>
