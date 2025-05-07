@@ -64,90 +64,6 @@
 </content>
   </entry>
   <entry>
-    <title>The intrinsic Page Builder</title>
-    <link href="https://noscript.show/pbs8/" />
-    <updated>2025-03-12T00:00:00Z</updated>
-    <id>https://noscript.show/pbs8/</id>
-    <content type="html">&lt;h1 id=&quot;the-intrinsic-page-builder&quot;&gt;The intrinsic page builder&lt;/h1&gt;
-&lt;p&gt;A talk in four sections:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The changes and new demands on web designers.&lt;/li&gt;
-&lt;li&gt;What is intrinsic web design?&lt;/li&gt;
-&lt;li&gt;What is a page builder?&lt;/li&gt;
-&lt;li&gt;What could an &amp;quot;intrinsic&amp;quot; page builder look like?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The focus is on what is coming from the &lt;a href=&quot;https://www.w3.org/&quot;&gt;W3C&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;what-are-the-changes-and-new-demands&quot;&gt;What are the changes and new demands?&lt;/h2&gt;
-&lt;p&gt;2017 may have brought one of the biggest changes since the beginning of the web with &lt;a href=&quot;https://web.dev/blog/interop-2025&quot;&gt;browser interoperability&lt;/a&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Dark and light mode&lt;/li&gt;
-&lt;li&gt;No or reduced motion (animation)&lt;/li&gt;
-&lt;li&gt;Forced colour (for high contrast themes)&lt;/li&gt;
-&lt;li&gt;Reduced transparency  (experimental)&lt;/li&gt;
-&lt;li&gt;Reduced data to save bandwidth (experimental)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;More pressing is:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Having to support over 2k unique &lt;a href=&quot;https://viewports.fyi/all/&quot;&gt;viewport sizes&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Having the web on fridges, watches, glasses and kindles.&lt;/li&gt;
-&lt;li&gt;Having to support mono-chrome  right up to  P3 colour gamut  this is wider than our graphic programs support.&lt;/li&gt;
-&lt;li&gt;Smart Speakers where this is no screen at all.&lt;/li&gt;
-&lt;li&gt;And that our sites need to be faster, greener, accessible and international.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;img src=&quot;https://noscript.show/img/CSSAwesome.webp&quot; loading=&quot;lazy&quot; width=&quot;1476&quot; height=&quot;1500&quot; alt=&quot;&quot;&gt;
-&lt;h2 id=&quot;what-is-intrinsic-web-design&quot;&gt;What is intrinsic web design?&lt;/h2&gt;
-&lt;p&gt;Jen Simmons coined the term in 2018 in a talk called &lt;a href=&quot;https://www.youtube.com/watch?v=jBwBACbRuGY&quot;&gt;&amp;quot;Everything You Know About Web Design Just Changed&amp;quot;&lt;/a&gt;.&lt;/p&gt;
-&lt;img src=&quot;https://noscript.show/img/image.png&quot; loading=&quot;lazy&quot; width=&quot;1600&quot; height=&quot;900&quot; alt=&quot;&quot;&gt;
-&lt;p&gt;&lt;strong&gt;Resources&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://info.cern.ch/&quot;&gt;The first ever website&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://labs.jensimmons.com/&quot;&gt;CSS Experiments - Jen Simmons&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=5uhIiI9Ld5M&quot;&gt;Andy Bell – Be the browser’s mentor, not its micromanager&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=su6WA0kUUJE&quot;&gt; Matthias Ott - Web Design Engineering With the New CSS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;what-is-a-page-builder&quot;&gt;What is a page builder?&lt;/h2&gt;
-&lt;p&gt;There is no one answer, but typically they are seen as visual tools that help people build web pages with no code knowledge.&lt;/p&gt;
-&lt;h3 id=&quot;wysiwygs&quot;&gt;WYSIWYGs&lt;/h3&gt;
-&lt;p&gt;Håkon Wium Lie (the creator of CSS) says &lt;a href=&quot;https://www.youtube.com/watch?v=PQTpsxf7rQQ&amp;amp;t=2606s&quot;&gt;&amp;quot;the WYSIWYG model doesn&#39;t really work and shouldn&#39;t work&amp;quot;.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;There’s too many devices to view them all simultaneously. The W3C tries to make CSS as easy and logical as possible, but it needs to be taught right.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;If we agree, page builders need to be tools that help people understand and work with code rather than avoid it.&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&quot;ai&quot;&gt;AI&lt;/h3&gt;
-&lt;p&gt;Presently vibe coding is being heavily hyped. You just prompt what you want and you get it. But...&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;LLMs are trained on old and bad ways of doing things.&lt;/li&gt;
-&lt;li&gt;We need understand the code to prompt and judge its returns&lt;/li&gt;
-&lt;li&gt;AI can be restricted to libraries such as React with Tailwind CSS, but can create more compexity.&lt;/li&gt;
-&lt;li&gt;HTML and CSS are declarative languages. Almost every line written is a creative judgement.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;a-way-to-escape-css&quot;&gt;A way to escape CSS?&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Many traditional programmers hate CSS because it does not give them the control they expect&lt;/li&gt;
-&lt;li&gt;Others (me) have learned to hate it because it was taught as hacks and tricks to make it like print.&lt;/li&gt;
-&lt;li&gt;It is becoming a complex programming language replacing JavaScript, but the design basics have got much easier.&lt;/li&gt;
-&lt;li&gt;With CSS becoming more programmable we can do more with generators and recipes.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;the-professional-builders&quot;&gt;The professional builders&lt;/h3&gt;
-&lt;p&gt;These seem popular now probably because there are so many visual designers who started with a WYSIWYG only to find they need to learn CSS. But learning CSS through a UI seems to&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;add an extra layer of complexity (new icons and builder specific names to learn).&lt;/li&gt;
-&lt;li&gt;creates and ever changing working environment.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Some builders ecosystems recommend CSS frameworks or promote certain methodologies like BEM but they can distract from learning CSS basic and make thing harder in the long run.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Resources&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://infrequently.org/series/reckoning/&quot;&gt;Alex Russell - The Reckoning &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=pzRsvoyQGsg&quot;&gt;Jeremy Keith - Declarative Design&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://noti.st/rachelandrew/wuKH4y&quot;&gt;Rachel Andrew - Refactoring (the way we talk about) CSS&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;what-might-an-intrisic-page-builder-look-like&quot;&gt;What might an intrisic page builder look like?&lt;/h2&gt;
-&lt;p&gt;So far on the noscript show we made a few simple demo sites ( &lt;a href=&quot;https://vets.here24.co/&quot;&gt;Vets&lt;/a&gt;, &lt;a href=&quot;https://bisto.here24.co/&quot;&gt;Bistro&lt;/a&gt; and &lt;a href=&quot;https://bento.here24.co/&quot;&gt;Hairdresser&lt;/a&gt;) with no builder.&lt;/p&gt;
-&lt;p&gt;It&#39;s been a good way to catch up on modern CSS, but it has shown me what I do&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;there is no cost for hosting&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
     <title>Should we be offering clients a CMS?</title>
     <link href="https://noscript.show/17/" />
     <updated>2025-03-12T00:00:00Z</updated>
@@ -1268,6 +1184,14 @@
     <link href="https://noscript.show/build/3/" />
     <updated>2024-10-25T00:00:00Z</updated>
     <id>https://noscript.show/build/3/</id>
+    <content type="html">&lt;p&gt;Coming.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Redesigning a vets site. Part 2. Coding with CSS and Testing</title>
+    <link href="https://noscript.show/build/2/" />
+    <updated>2024-10-05T00:00:00Z</updated>
+    <id>https://noscript.show/build/2/</id>
     <content type="html">&lt;p&gt;Coming.&lt;/p&gt;
 </content>
   </entry>

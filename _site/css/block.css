@@ -96,7 +96,7 @@ padding: var(--space-2xs);
 
 .bio img{
   background-color: var(--brand);
-  background: linear-gradient(180deg, transparent 33%,  var(--brand) 33%);
+  background: linear-gradient(180deg, transparent 33.3%,  var(--brand) 33.3%);  
  }
 
 
