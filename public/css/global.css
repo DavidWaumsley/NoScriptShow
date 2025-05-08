@@ -259,18 +259,13 @@ ul {
 }
 
 main li {
-  margin-inline-start: var(--space-s);
+  margin-inline-start: var(--space-l);
   line-height: calc(1.6em + 0.5rem);
 }
 
 /********************************/
 /***** OTHER GLOBAL ELEMENTS *****/
-p,
-small,
-li,
-figcaption {
-  max-inline-size: 65ch;
-}
+
 
 p, li{
     font-size: var(--step-1);

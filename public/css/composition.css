@@ -134,8 +134,8 @@ font-size: var(--step-2);
 
   /** TRACK WIDTHS **/
   --full-max-width: 1fr;
-  --popout-max-width: 80rem;
-  --content-max-width: 80ch;
+  --popout-max-width: 90rem;
+  --content-max-width: 55rem;
 
   /** TRACK SIZES **/
   --full: minmax(var(--minimum-content-padding), 1fr);
