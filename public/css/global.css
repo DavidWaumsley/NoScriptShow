@@ -254,11 +254,11 @@ strong {
   font-weight: 700;
 }
 
-ul {
+ul, ol {
   margin-block-end: var(--space-s);
 }
 
-main li {
+main li  {
   margin-inline-start: var(--space-l);
   line-height: calc(1.6em + 0.5rem);
 }
