@@ -22,7 +22,7 @@
 {%- for post in posts -%}
   <li><a href="{{post.url}}"><h2>{{ post.data.title }}</h2></a> <br>
    <time class="postlist-date"  datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time><br>
-   {{post.data.description}}</li>
+  <small>{{post.data.description}}</small> </li>
 {%- endfor -%}
 </ul>
 
