@@ -68,11 +68,7 @@ nav a:active:not(.btn) {
   padding: var(--space-xs);
 }
 
-.nav{
-  list-style-type: none;
-}
-
-nav a[href]:not(:hover) {
+header nav a[href]:not(:hover) {
 text-decoration: none;
   list-style-type: none;
 }
@@ -341,18 +337,20 @@ lite-youtube.lyt-activated > .lyt-playbtn {
 
   .pagination li {
     display: inline-block; 
-    margin-block-end: var(--space-m);  
-   
+    margin-block-end: var(--space-m);     
   }
 
 
   .pagination a {
-   border: .4rem solid var(--text);   
+   border: .4rem solid var(--text);
+   background-color: var(--brand); 
+   color: var(--text-alt);    
   }
+  
 
   .pagination a:hover {
-  background-color: var(--brand); 
-  color: var(--text-alt); 
+    background-color: var(--text-alt); 
+  color: var(--text); 
    }
 
 
