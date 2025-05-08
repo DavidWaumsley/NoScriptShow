@@ -8,13 +8,13 @@ videoid: dt3XR_X22GY
 ---
 
 
-Hello. This is following up to [episode 5](/5) of the main podcast where Nathan and I were talking about component based web design.
+Hello. This is following up to [episode 5](/5) of the main chat where Nathan and I were talking about component based web design.
 
 In that we touched on [web components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components) which in simple terms are “web standards” alternatives to 3rd party component libraries like React and Vue.js. The big plus is they will last as long as the web.
 
 We've been experimenting with two web components for the media embeds on the show's constantly developing website:
 
-*   A Shadow Dom component for our audio podcast player by Dave Rupert (which I'll cover in the next video) and what we are covering today..
+*   A Shadow Dom component for our audio chat player by Dave Rupert (which I'll cover in the next video) and what we are covering today..
 *   A "Light Dom" component called [Lite YouTube Embed](https://github.com/paulirish/lite-youtube-embed/) by Paul Irish which allows us to embed YouTube videos without forcing the visitors to download all of YouTube associated files regardless of whether the video is actually played.
 
 Lite Youtube Embed

@@ -7,7 +7,7 @@ permalink: "/learn/8{{slugify }}/"
 videoid: -RgObYHDwxw
 ---
 
-The no script show's website has been a place to put our content and implement things we talk about in the podcast. It's functional, but not yet designed for a specific audience as we've only just started talking about design on the show.
+The no script show's website has been a place to put our content and implement things we talk about in the chat. It's functional, but not yet designed for a specific audience as we've only just started talking about design on the show.
 
 Nevertheless, it is the first web project I have done since 2007 that has not, in some way, involved WordPress. With that in mind, I thought I'd do a few videos on my experience switching from a dynamic platform to manually building static sites.
 

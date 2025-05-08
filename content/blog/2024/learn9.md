@@ -6,7 +6,7 @@ tags: ["learn"]
 permalink: "/learn/9{{slugify }}/"
 videoid: eZTB4rH7Wh8
 ---
-This is following on from podcast [episode 8](/8) where Nathan and I finally started talking about designing the show's website.
+This is following on from chat [episode 8](/8) where Nathan and I finally started talking about designing the show's website.
 
 In that episode I offered a rough homepage mock up and together we attempted to critically access it in the way various experts might.
 
@@ -16,7 +16,7 @@ Offering a dark mode toggle is trending right now, but we are including it becau
 
 I say this because browser and (particularly mobile) device vendors have good reasons to want to offer a portable web experience that can respond to the environmental light, available battery life and what the user personally finds comfortable. These vendors have a powerful influence on the W3C working groups which recently has been giving us many new ways to work with a variety of user preferences.
 
-I can cover this better with Nathan when we do our planned podcast episode on the user preferences we can, or soon will be able to, honour using CSS.
+I can cover this better with Nathan when we do our planned chat episode on the user preferences we can, or soon will be able to, honour using CSS.
 
 Embracing the dark side?
 ------------------------
@@ -39,7 +39,7 @@ If our device or browser is set to dark mode the browser will give us light text
 
 Most will not want this as the styles colours added by browser are similar but not the same. I personally prefer Firefox's slightly lighter and blue tinged background to chrome's default.
 
-To take control of our own light and dark colours we have the [prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) media query. Baseline (which we talk about in [episode 9](/9) of the podcast) classifies it as "widely available" across browsers. [Can I use](https://caniuse.com/?search=prefers-color-scheme) in April 2024 says it is96% supported globally (higher in the UK and USA).
+To take control of our own light and dark colours we have the [prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) media query. Baseline (which we talk about in [episode 9](/9) of the chat) classifies it as "widely available" across browsers. [Can I use](https://caniuse.com/?search=prefers-color-scheme) in April 2024 says it is96% supported globally (higher in the UK and USA).
 
 Very soon things may get easier when the [light-dark()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark) function gets better browser support. With this you will be able write your CSS like this:
 

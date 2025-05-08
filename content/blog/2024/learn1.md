@@ -18,7 +18,7 @@ This is extra content to the main [No Script show](/) No Script show. In particu
 
 We used the main points of a talk by [Rachel Andrew](https://noti.st/rachelandrew/VqOEAa/refactoring-the-way-we-talk-about-css#scagi0F). She was significant in seeing we got the first truly comprehensive layout spec for the web:- CSS Grid. It was actually supported in all the browsers back in 2017 so you can see we are doing a lot of catching up.
 
-Its not a topic that translates to an audio podcast very well so here I'm showing how it connects with the first stages of building the show's website.
+Its not a topic that translates to an audio chat very well so here I'm showing how it connects with the first stages of building the show's website.
 
 The site is, on purpose, simple and under-styled so we can use it to keep showing what we are learning in the show. For example the enforced dark mode should be an option by the time we do our episode on user preferences.
 
@@ -46,7 +46,7 @@ The nice thing about editors today is they do most of your writing.
 
 ### Looking at the code
 
-The rest of the video looks and the code used and how it is influenced by Rachel Andrew's talk covered in Episode 3 of the podcast.
+The rest of the video looks and the code used and how it is influenced by Rachel Andrew's talk covered in Episode 3 of the chat.
 
 *   Flow layout
 *   Use of CSS Flex, Grid Subgrid

@@ -87,12 +87,12 @@
 <article>
 <heading-anchors>
 	<div class="flow">
-<p>This is following on from podcast <a href="/8">episode 8</a> where Nathan and I finally started talking about designing the show's website.</p>
+<p>This is following on from chat <a href="/8">episode 8</a> where Nathan and I finally started talking about designing the show's website.</p>
 <p>In that episode I offered a rough homepage mock up and together we attempted to critically access it in the way various experts might.</p>
 <p>Here I am looking at the light and dark mode toggle in that design. I'll share the code I'm initially going to use and also talk about my concerns over present implementations of this feature.</p>
 <p>Offering a dark mode toggle is trending right now, but we are including it because It is not entirely inconceivable that one day this might be considered a standard for most websites.</p>
 <p>I say this because browser and (particularly mobile) device vendors have good reasons to want to offer a portable web experience that can respond to the environmental light, available battery life and what the user personally finds comfortable. These vendors have a powerful influence on the W3C working groups which recently has been giving us many new ways to work with a variety of user preferences.</p>
-<p>I can cover this better with Nathan when we do our planned podcast episode on the user preferences we can, or soon will be able to, honour using CSS.</p>
+<p>I can cover this better with Nathan when we do our planned chat episode on the user preferences we can, or soon will be able to, honour using CSS.</p>
 <h2 id="embracing-the-dark-side">Embracing the dark side?</h2>
 <p>The dark mode that's presently on the initial site was a whim. We wanted to start with only enough design to make our early content presentable and the dark aspect gave its stark appearance a little more interest with most sites being light.</p>
 <p>Honouring a user's (system or browser) preference for dark or light is not technically difficult (at least with simple designs).</p>
@@ -103,7 +103,7 @@
 <p>Then if we create a HTML page the browsers own user agent styles will kick in.</p>
 <p>If our device or browser is set to dark mode the browser will give us light text against a dark background and visa versus is set to light. It will also apply dark and light styling to the browser built in components as I previously used with the audio element.</p>
 <p>Most will not want this as the styles colours added by browser are similar but not the same. I personally prefer Firefox's slightly lighter and blue tinged background to chrome's default.</p>
-<p>To take control of our own light and dark colours we have the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">prefers-color-scheme</a> media query. Baseline (which we talk about in <a href="/9">episode 9</a> of the podcast) classifies it as &quot;widely available&quot; across browsers. <a href="https://caniuse.com/?search=prefers-color-scheme">Can I use</a> in April 2024 says it is96% supported globally (higher in the UK and USA).</p>
+<p>To take control of our own light and dark colours we have the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">prefers-color-scheme</a> media query. Baseline (which we talk about in <a href="/9">episode 9</a> of the chat) classifies it as &quot;widely available&quot; across browsers. <a href="https://caniuse.com/?search=prefers-color-scheme">Can I use</a> in April 2024 says it is96% supported globally (higher in the UK and USA).</p>
 <p>Very soon things may get easier when the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark">light-dark()</a> function gets better browser support. With this you will be able write your CSS like this:</p>
 <p>body {color: light-dark(color-1, color-2);
 background-color: light-dark (color-1, custom color-2);
@@ -242,10 +242,10 @@ toggleButton<span class="token punctuation">.</span><span class="token function"
 <h3 id="audio-episodes">Audio episodes</h3>
 
 <ul> 
-<li><a href="https://podcasts.apple.com/us/podcast/no-script-show/id1721164461">Apple podcasts</a></li>  
+<li><a href="https://chats.apple.com/us/chat/no-script-show/id1721164461">Apple chats</a></li>  
 <li><a href="https://open.spotify.com/show/3Ki7eEhpGheFpmJOzZ0WEi">Spotify</a></li> 
 <li><a href="https://castbox.fm/channel/id5744674?utm_campaign=ex_share_ch&utm_medium=exlink&country=us">Castbox.fm</a></li>
-<li><a href="https://www.podcastrepublic.net/podcast/1721164461">Podcast Republic</a></li>
+<li><a href="https://www.chatrepublic.net/chat/1721164461">chat Republic</a></li>
 <li><a href="https://feeds.hubhopper.com/9698ac00a8141974e116d9298f9f87c8.rss">Feed</a></li>   
 </ul>
 </nav>
@@ -269,7 +269,7 @@ toggleButton<span class="token punctuation">.</span><span class="token function"
  </div>
 </footer>
 
-		<!-- This page `/learn/9/` was built on 2025-05-08T16:32:15.247Z -->
+		<!-- This page `/learn/9/` was built on 2025-05-08T16:33:32.440Z -->
 		<script type="module" src="/dist/2it2F9Kmpn.js"></script>		
 </body>
 </html>

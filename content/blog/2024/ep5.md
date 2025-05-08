@@ -2,7 +2,7 @@
 title: What is component based web design?
 description: Making websites with reusable UI building bricks. What the web platform offers us and do we need it?
 date: 2024-02-29
-tags: ["podcast"]
+tags: ["chat"]
 permalink: "/5{{slugify }}/"
 videoid: f7VUb-7bF28
 ---
@@ -66,7 +66,7 @@ We'll talk about Container Queries in the next episode.
 *   [Talk: Is Atomic Design Dead? - Brad Frost](https://www.youtube.com/watch?v=PK_PICNTgAg)
 *   [Talk: The Good, The Bad, and The Web Components - Zach Leatherman](https://www.youtube.com/watch?v=R4Ri4ft7bXY)
 *   [Light Youtube Embed Web Component -Paul Irish](https://github.com/paulirish/lite-youtube-embed?tab=readme-ov-file#pro-usage-load-w-js-deferred-aka-progressive-enhancement)
-*   [Podcast Player Web Component - Dave Rupert](https://htmlwithsuperpowers.netlify.app/using/examples/podcast-player.html)
+*   [chat Player Web Component - Dave Rupert](https://htmlwithsuperpowers.netlify.app/using/examples/chat-player.html)
 
 <details>
 <summary>Transcript</summary>
@@ -193,7 +193,7 @@ Just so much extra code and no separation of concerns. So it depends who you are
 
 \[00:20:15\] **David Waumsley**: Yeah. I think you've just led onto the next topic, actually, the last thing we were gonna cover, which is, what are our component options? Because yes, in a way, we need it for this site. but yeah, we, I listed out some things here where we now have more options.
 
-Once really, if you wanted this component based design. And to encapsulate something that you were reusing, and in our case, we've needed it. We probably need a podcast player or not. We'll talk about this later. Yeah. But that's a component where we'd probably want to be able to take this one component and move it to wherever you needed an audio player without having to reinvent the wheel all the time with it.
+Once really, if you wanted this component based design. And to encapsulate something that you were reusing, and in our case, we've needed it. We probably need a chat player or not. We'll talk about this later. Yeah. But that's a component where we'd probably want to be able to take this one component and move it to wherever you needed an audio player without having to reinvent the wheel all the time with it.
 
 And before, really, there wasn't much option you would've to use something like a React library to do something like that. Where now we have got some new options, they're not new, but we have what is called web components. do you wanna explain that
 
@@ -205,13 +205,13 @@ So at the simplest level, it is a custom element that you create. So we've actua
 
 It says Light YouTube embed or whatever, and we're putting that in there. And then this JavaScript created by somebody else is acting on this custom element. Stopping YouTube from loading all of its things until this, image has been clicked. And we have another one where it is, taken from Dave Rupert, which I haven't shown to anybody yet.
 
-But, we'll do a video on this one, which is a podcast player, designed around the existing. audio tag the element itself, but add it on through JavaScript around another custom element called a podcast player. it adds to that and adds in some extra functionality through JavaScript and also the Stein in that goes with it.
+But, we'll do a video on this one, which is a chat player, designed around the existing. audio tag the element itself, but add it on through JavaScript around another custom element called a chat player. it adds to that and adds in some extra functionality through JavaScript and also the Stein in that goes with it.
 
 And this is what's considered as the shadow dom because. The styling isn't, so it's very portable. We can take that and move it anywhere else. So we have got that option in there. there's a lot to talk about this because it's done at the end of last year, 2000 and, 23. There were so many people, if you like, who were standard space people talking about this and whether they need it.
 
 that it's gained a lot of attention and for me. I don't know if I fully understand what we're talking about. 'cause some people talk about the shadow dom, which is a way of using JavaScript to add in to your browser, some extra slots if you like. Yeah. With functionality in it. And it allows you to encapsulate your CSS, which used to be a problem for everybody before.
 
-But it also has a slight issue with it in the sense that, as you saw, I was showing you the demo of the podcast player when you. Load the page. There's a, flash of un styled content that happens 'cause the JavaScript then has to load the, CSS. so there's a lot of people who are just looking towards the light dom.
+But it also has a slight issue with it in the sense that, as you saw, I was showing you the demo of the chat player when you. Load the page. There's a, flash of un styled content that happens 'cause the JavaScript then has to load the, CSS. so there's a lot of people who are just looking towards the light dom.
 
 But effectively, when you're talking about light dom, all you're talking about is putting a custom element. So you create your own instead of having a diviv. Between your angle brackets, you put a name, so it could be Pod, and it has to have a dash player in between that, and you've got your own custom element and you can attach JavaScript or CSS to it, or you can create within that.
 
@@ -233,7 +233,7 @@ you can style it, you can make it go wherever you want, but a drawback of that. 
 
 But I dunno, but is that what you're saying? This is the web component that you've played with here. You've hijacked the audio. The default audio player and you've just made it look different, but you can imagine that being played out across any aspect of the website. It could be the video, it could be the buttons, it could be anything.
 
-\[00:27:26\] **David Waumsley**: Yeah, I mean it's obviously, I haven't done it. It's somebody much cleverer than me, Dave Rupert, who's actually has created a podcast player for their show, which is Shop Talk. Which is, excellent. so they created that and I've just been able to literally just take their files and do that. And it's on style.
+\[00:27:26\] **David Waumsley**: Yeah, I mean it's obviously, I haven't done it. It's somebody much cleverer than me, Dave Rupert, who's actually has created a chat player for their show, which is Shop Talk. Which is, excellent. so they created that and I've just been able to literally just take their files and do that. And it's on style.
 
 if I put the styling on, I have to take the sty in and put it in the JavaScript itself, and it's loading it through the shadow dom. But yes, it's creating all of the things that through JavaScript they've added in, which isn't in the default audio, but if somebody turns JavaScript off, the interesting thing is that we're still putting the audio, tag within.
 

@@ -14,7 +14,7 @@
     document.documentElement.setAttribute('data-theme', 'dark');
   }
 </script> 
-<meta name="description" content="Looking at a audio podcast player which is a shadow DOM component by Dave Rupert. It&#39;s fabulous but comes with some pros and cons.">
+<meta name="description" content="Looking at a audio chat player which is a shadow DOM component by Dave Rupert. It&#39;s fabulous but comes with some pros and cons.">
 <link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="No Script Show">
 
 
@@ -27,14 +27,14 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://noscript.show/learn/7/">
 <meta property="og:title" content="No Script Show Adding an audio player (web components)">
-<meta property="og:description" content="Looking at a audio podcast player which is a shadow DOM component by Dave Rupert. It&#39;s fabulous but comes with some pros and cons.">
+<meta property="og:description" content="Looking at a audio chat player which is a shadow DOM component by Dave Rupert. It&#39;s fabulous but comes with some pros and cons.">
 <meta property="og:image" content="https://i.ytimg.com/vi_webp/J03DQ2rQBsE/maxresdefault.webp">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://noscript.show/learn/7/">
 <meta property="twitter:title" content="No Script Show Adding an audio player (web components)">
-<meta property="twitter:description" content="Looking at a audio podcast player which is a shadow DOM component by Dave Rupert. It&#39;s fabulous but comes with some pros and cons.">
+<meta property="twitter:description" content="Looking at a audio chat player which is a shadow DOM component by Dave Rupert. It&#39;s fabulous but comes with some pros and cons.">
 <meta property="twitter:image" content="https://i.ytimg.com/vi_webp/J03DQ2rQBsE/maxresdefault.webp">
 
 <link rel="stylesheet" href="/dist/pVZm17iZ26.css">
@@ -87,20 +87,20 @@
 <article>
 <heading-anchors>
 	<div class="flow">
-<h2 id="audio-podcast-player">Audio podcast player</h2>
+<h2 id="audio-chat-player">Audio chat player</h2>
 <hr>
-<p>This is the second follow-up to episode of the podcast where we we were talking about component based web design.</p>
-<p>Here we are looking at the audio podcast player that's presently on the show website. This is a shadow DOM component by <a href="https://daverupert.com/">Dave Rupert.</a> He is co-host of the <a href="https://shoptalkshow.com/">Shop Talk podcast</a> which he does with Chris Coyier (of Codepen and formerly CSS tricks fame). This player is also used on their podcast too.</p>
-<p>We can find it at <a href="https://htmlwithsuperpowers.netlify.app/using/examples/podcast-player.html">HTML with superpowers</a> where the code and working example is on (perhaps no surprise) <a href="https://codepen.io/davatron5000/pen/LYerBQw">CodePen.</a></p>
+<p>This is the second follow-up to episode of the chat where we we were talking about component based web design.</p>
+<p>Here we are looking at the audio chat player that's presently on the show website. This is a shadow DOM component by <a href="https://daverupert.com/">Dave Rupert.</a> He is co-host of the <a href="https://shoptalkshow.com/">Shop Talk chat</a> which he does with Chris Coyier (of Codepen and formerly CSS tricks fame). This player is also used on their chat too.</p>
+<p>We can find it at <a href="https://htmlwithsuperpowers.netlify.app/using/examples/chat-player.html">HTML with superpowers</a> where the code and working example is on (perhaps no surprise) <a href="https://codepen.io/davatron5000/pen/LYerBQw">CodePen.</a></p>
 <h2 id="installing-the-audio-player">Installing the audio player</h2>
 <hr>
-<p>To install the podcast player all we have to do is:</p>
+<p>To install the chat player all we have to do is:</p>
 <ul>
 <li>Copy and paste the JavaScript to our own JS file and reference it on the pages we are using it (just before the close <code>&lt;/body&gt;</code> tag of our HTML).</li>
 </ul>
 <p><code>&lt;script type=&quot;module&quot; src=&quot;/player.js&quot;&gt;&lt;/script&gt;</code></p>
 <ul>
-<li>Then add the <code>&lt;podcast-player&gt; &lt;/podcast-player&gt;</code> custom element to where we want the player to show in our HTML and within that add on an tag providing the source of our audio file.</li>
+<li>Then add the <code>&lt;chat-player&gt; &lt;/chat-player&gt;</code> custom element to where we want the player to show in our HTML and within that add on an tag providing the source of our audio file.</li>
 </ul>
 <h2 id="the-pros-and-cons-of-shadow-dom-components">The pros and cons of shadow DOM components</h2>
 <hr>
@@ -108,33 +108,33 @@
 <p>Using only the audio tag is the simplest approach, but the style and functionality of players varies across browsers.</p>
 <p>For example the 60% of chromium browsers visitors (globally) will get a download and playback speed option. Presently those on Firefox will not get these. Music is about the only audio I listen to at a normal speed so it would not meet my needs.</p>
 <p>Although there is not much in the way of styling included, you will see from the Codepen example that the CSS (flexbox) layout is encapsulated in the Javascript.</p>
-<p>As we discussed in the podcast, this can be good in the sense that it is portable. We can add the component to any project without the fear of naming or specificity conflicts with the existing CSS there.</p>
+<p>As we discussed in the chat, this can be good in the sense that it is portable. We can add the component to any project without the fear of naming or specificity conflicts with the existing CSS there.</p>
 <p>The downside is there is a delay to the CSS being processed which increases the Cumulative Layout Shift that Google's core web vital measures. In this case we see the browser's native audio player before the styling kicks in. On a slow internet connection it could be frustrating to move your finger or mouse over the play button only for it to move before you can complete the action.</p>
 <p>As I am coding alone to my own naming convention CSS encapsulation to me is not really a benefit. It forces me to do the CSS styling in a Javascript document where I lose the time-saving prompts and auto-completes that <a href="https://emmet.io/">Emmet</a> gives me in the VS Code editor. I'm more prone to error.</p>
-<p>Of course, Dave Rupert and Chris Coyier are both far more knowledgeable on web components than I am. On their podcast they discussed this topic at the end of 2023 following a run of articles by people who influence web standards.</p>
+<p>Of course, Dave Rupert and Chris Coyier are both far more knowledgeable on web components than I am. On their chat they discussed this topic at the end of 2023 following a run of articles by people who influence web standards.</p>
 <p>It might be worth reading Chris's article on <a href="https://frontendmasters.com/blog/light-dom-only/">light DOM components</a> that reflects and references the view that this, rather than Shadow DOM, might be our best first option.</p>
-<p>In this case (and as I understand it), if we want the fallback back of the HTML audio player we need the <a href="https://htmlwithsuperpowers.netlify.app/images/podcast-player.png">shadow-root open for a slot in which to place it.</a></p>
+<p>In this case (and as I understand it), if we want the fallback back of the HTML audio player we need the <a href="https://htmlwithsuperpowers.netlify.app/images/chat-player.png">shadow-root open for a slot in which to place it.</a></p>
 <p>As this is the <a href="https://noscript.show/">noscript.show</a> we're focusing on what we can do with the declarative languages HTML and CSS, but if you want to learn Web Component. Dave Rupert has a <a href="https://frontendmasters.com/courses/web-components/">course on it.</a> He has been following this tech for more than a decade before its recent popularity (as a way to escape the burnout of changing and competing 3rd party libraries?).</p>
 <p>It may also be worth following Zach Leatherman (best known for creating the 11ty static site generator) who creates, talks and <a href="https://www.zachleat.com/web/?category=web-components">writes</a> a lot about Web Components.</p>
-<h2 id="adjusting-the-podcast-player-defaults">Adjusting the podcast player defaults</h2>
+<h2 id="adjusting-the-chat-player-defaults">Adjusting the chat player defaults</h2>
 <hr>
 <h3 id="css">CSS</h3>
-<p>Below is the custom CSS I added for this flexbox version. I initially &quot;borrowed&quot; the CSS grid layout used on the Shop Talk podcast.</p>
-<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.podcast-player</span> <span class="token punctuation">{</span>
+<p>Below is the custom CSS I added for this flexbox version. I initially &quot;borrowed&quot; the CSS grid layout used on the Shop Talk chat.</p>
+<pre class="language-css" tabindex="0"><code class="language-css"><span class="token selector">.chat-player</span> <span class="token punctuation">{</span>
 <span class="token property">background-color</span><span class="token punctuation">:</span><span class="token function">var</span><span class="token punctuation">(</span>--shade<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token comment">/* this is overwriting lower in the cascade*/</span>   
   <span class="token punctuation">}</span>
-<span class="token selector">.podcast-player button svg</span><span class="token punctuation">{</span>
+<span class="token selector">.chat-player button svg</span><span class="token punctuation">{</span>
 <span class="token property">background-color</span><span class="token punctuation">:</span><span class="token function">var</span><span class="token punctuation">(</span>--brand<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token property">display</span><span class="token punctuation">:</span>block<span class="token punctuation">;</span>
 <span class="token property">width</span><span class="token punctuation">:</span>4rem<span class="token punctuation">;</span>
 <span class="token property">height</span><span class="token punctuation">:</span>2rem<span class="token punctuation">;</span>
 <span class="token property">padding</span><span class="token punctuation">:</span>.5rem<span class="token punctuation">;</span> 
 <span class="token punctuation">}</span>
-<span class="token selector">.podcast-player button</span> <span class="token punctuation">{</span>
+<span class="token selector">.chat-player button</span> <span class="token punctuation">{</span>
 <span class="token property">background-color</span><span class="token punctuation">:</span><span class="token function">var</span><span class="token punctuation">(</span>--brand<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-<span class="token selector">.podcast-player button:hover</span><span class="token punctuation">{</span>
+<span class="token selector">.chat-player button:hover</span><span class="token punctuation">{</span>
 <span class="token property">filter</span><span class="token punctuation">:</span> <span class="token function">brightness</span><span class="token punctuation">(</span>1.2<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 <span class="token selector">.button-rewind</span><span class="token punctuation">{</span>
@@ -143,19 +143,19 @@
 <span class="token selector">.button-ff</span><span class="token punctuation">{</span>
  <span class="token property">display</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-<span class="token selector">.podcast-player input[type=range]</span> <span class="token punctuation">{</span>
+<span class="token selector">.chat-player input[type=range]</span> <span class="token punctuation">{</span>
  <span class="token property">appearance</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
 <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
 <span class="token property">background-color</span><span class="token punctuation">:</span><span class="token function">var</span><span class="token punctuation">(</span>--base<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-<span class="token selector">.podcast-player input[type=range]::-webkit-slider-thumb</span> <span class="token punctuation">{</span>
+<span class="token selector">.chat-player input[type=range]::-webkit-slider-thumb</span> <span class="token punctuation">{</span>
 <span class="token property">height</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span>
 <span class="token property">width</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span> 
 <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--brand<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span>
 <span class="token property">appearance</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>      
 <span class="token punctuation">}</span>
-<span class="token selector">podcast-player button</span> <span class="token punctuation">{</span>
+<span class="token selector">chat-player button</span> <span class="token punctuation">{</span>
  <span class="token property">border</span><span class="token punctuation">:</span>none<span class="token punctuation">;</span>     
 <span class="token punctuation">}</span></code></pre>
 <p>Before adding any extra CSS it adapted to the color-scheme: dark presently set on our site. Although the CSS is encapsulated I could reference the colour variables set it up in the :root of the site. If I used the same colour naming convention across projects this would be helpful. I suspect I won't!</p>
@@ -187,10 +187,10 @@
 <h3 id="audio-episodes">Audio episodes</h3>
 
 <ul> 
-<li><a href="https://podcasts.apple.com/us/podcast/no-script-show/id1721164461">Apple podcasts</a></li>  
+<li><a href="https://chats.apple.com/us/chat/no-script-show/id1721164461">Apple chats</a></li>  
 <li><a href="https://open.spotify.com/show/3Ki7eEhpGheFpmJOzZ0WEi">Spotify</a></li> 
 <li><a href="https://castbox.fm/channel/id5744674?utm_campaign=ex_share_ch&utm_medium=exlink&country=us">Castbox.fm</a></li>
-<li><a href="https://www.podcastrepublic.net/podcast/1721164461">Podcast Republic</a></li>
+<li><a href="https://www.chatrepublic.net/chat/1721164461">chat Republic</a></li>
 <li><a href="https://feeds.hubhopper.com/9698ac00a8141974e116d9298f9f87c8.rss">Feed</a></li>   
 </ul>
 </nav>
@@ -214,7 +214,7 @@
  </div>
 </footer>
 
-		<!-- This page `/learn/7/` was built on 2025-05-08T16:32:15.246Z -->
+		<!-- This page `/learn/7/` was built on 2025-05-08T16:33:32.439Z -->
 		<script type="module" src="/dist/2it2F9Kmpn.js"></script>		
 </body>
 </html>

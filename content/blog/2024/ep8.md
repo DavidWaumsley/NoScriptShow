@@ -2,7 +2,7 @@
 title:  Designing an effective homepage
 description: We critique a design of the show's future homepage against what experts from UX, copywriting, SEO and marketing might say.
 date: 2024-04-11
-tags: ["podcast"]
+tags: ["chat"]
 permalink: "/8{{slugify }}/"
 videoid: -88LZYm_YTQ
 ---
@@ -65,7 +65,7 @@ Click on the image for the pdf version.
 <details>
 <summary>Transcript</summary>
 
-\[00:00:05\] **Nathan Wrigley:** Hello and welcome to the No Script web show about modern web design, where we look at what we can build today with minimal dependencies and skills. Last time we were defining some aims for the show’s website, which David is developing as part of. The podcast. Now we need a design to help it connect with the right audience.
+\[00:00:05\] **Nathan Wrigley:** Hello and welcome to the No Script web show about modern web design, where we look at what we can build today with minimal dependencies and skills. Last time we were defining some aims for the show’s website, which David is developing as part of. The chat. Now we need a design to help it connect with the right audience.
 
 If we were experts in user experience or UX and its associated disciplines such as copywriting, branding, graphic design, and SEO, we might look at each of those. In turn, we are not. So instead we’ve created a rough homepage design, or David has, and we will use this episode to critique it against what we think various expert bodies might say.
 
@@ -205,7 +205,7 @@ All sorts of things on that, particularly user psychologies and stuff, which I f
 
 Describe and critique what we’ve got on the website at the moment, plus a, an initial homepage design that David’s thrown together in, I believe Figma was the software of choice. Yeah. but if you do want to go and look at the homepage that we’re talking about now, it’ll obviously be changing, but that’s no script show.
 
-And, but if you want to go over and look at the video that we’re gonna be. putting out the, exactly the same content that you are hearing in the podcast. You’ll hear every word the same, but you’ll be able to see it as well. ’cause it’ll be a video. You can find that if you go to youtube.com/at the at symbol and then no script show.
+And, but if you want to go over and look at the video that we’re gonna be. putting out the, exactly the same content that you are hearing in the chat. You’ll hear every word the same, but you’ll be able to see it as well. ’cause it’ll be a video. You can find that if you go to youtube.com/at the at symbol and then no script show.
 
 I’m not sure you need the at symbol actually in there. But anyway, there it is. youtube.com/at no script show. So you can find it from there. So what do you want me to do? Would you like me to, first of all, put the homepage that we’ve currently got on? Or do you want to go straight to your figment PF design?
 
@@ -221,17 +221,17 @@ Shall I zoom in on one? Shall I zoom in on Yeah, zoom. Say the top of this one. 
 
 \[00:20:09\] **Nathan Wrigley:** Okay. So there it is. There’s the light version. I’ll just try and zoom in a little bit better. Oh, there we go. That’ll do nicely. Okay, so what’s going on?
 
-\[00:20:18\] **David Waumsley:** So for the people on the audio, really, on the desktop version of this, we’re going out into two columns. On the right hand side, there’s a, an icon of a podcast, mic and, with.
+\[00:20:18\] **David Waumsley:** So for the people on the audio, really, on the desktop version of this, we’re going out into two columns. On the right hand side, there’s a, an icon of a chat, mic and, with.
 
-Something slapped on it, little sticker saying podcast and tutorials and articles, which is, so I, my thinking was why we need to make this look something better than what we’ve got at the moment, and it needs to communicate what’s here straight away from the no script show. So I. If we’re going to fill it into two columns, then we need something that screams podcasts. So I think that icon does that.
+Something slapped on it, little sticker saying chat and tutorials and articles, which is, so I, my thinking was why we need to make this look something better than what we’ve got at the moment, and it needs to communicate what’s here straight away from the no script show. So I. If we’re going to fill it into two columns, then we need something that screams chats. So I think that icon does that.
 
-\[00:20:56\] **Nathan Wrigley:** Yeah, I think, that icon is like the universal symbol of podcasting where wherever you go, if you go to podcasting apps, if you go to, podcasting websites, you, just get the mic and it’s this very stylized version. It’s like a, it’s like a cop. With, with a, like a mic stock on top of it.
+\[00:20:56\] **Nathan Wrigley:** Yeah, I think, that icon is like the universal symbol of chating where wherever you go, if you go to chating apps, if you go to, chating websites, you, just get the mic and it’s this very stylized version. It’s like a, it’s like a cop. With, with a, like a mic stock on top of it.
 
 One thing I should just say is, I have a, I have an Evernote extension. My browser, and we’re not promoting Evernote, that little Evernote symbol, which is there is not part of David’s design. Okay. A little, Evernote icon, which whenever a PDF crops up just pops up and says, do you wanna save this?
 
 So ignore the little elephant.
 
-\[00:21:39\] **David Waumsley:** Yeah. yeah, so this is usually the problem when you go to desktop, obviously. and if you actually look a little bit to the left here, I’ve got the, sort of mobile version of that. And again, I don’t know if this is right. So we’ve got a logo and then when it goes to one column, instead of it being the second item in the second column, the podcast, mic.
+\[00:21:39\] **David Waumsley:** Yeah. yeah, so this is usually the problem when you go to desktop, obviously. and if you actually look a little bit to the left here, I’ve got the, sort of mobile version of that. And again, I don’t know if this is right. So we’ve got a logo and then when it goes to one column, instead of it being the second item in the second column, the chat, mic.
 
 It’s the first one here, so I’m gonna have to reverse if you think that’s the way to do it. And you’ll notice that the design’s different. So we’ll need to use something like a picture tag where you can do art direction. So you can basically say, when it’s at this point, it’ll show this image, which is a, a more of a rectangle than the square that you’re seeing on the desktop version.
 
@@ -243,17 +243,17 @@ But I feel when you land on a mobile, you’ve only got a very small frame there
 
 \[00:23:26\] **Nathan Wrigley:** Actually, if you think about it, if you, were to imagine a, typical, orientation of a phone, held, in the usual way, so not landscape, but the usual portrait, it’s gonna cut off.
 
-What about there, where the mouse is at the moment, somewhere where it’s says latest podcast episode. That’s where the, fold, if you like, is gonna be, and I think if this was a square, if this image was a square, it would be like to here. Yes. And so it’s gonna push everything down. You might lose this little section.
+What about there, where the mouse is at the moment, somewhere where it’s says latest chat episode. That’s where the, fold, if you like, is gonna be, and I think if this was a square, if this image was a square, it would be like to here. Yes. And so it’s gonna push everything down. You might lose this little section.
 
 So no, I don’t know. It’s, you are gonna be doing the, grunt work on making it, I think you’ve got the right intuition, having a smaller letter box, image there so that you’ve got more.
 
 \[00:24:08\] **David Waumsley:** That’s right. Yeah. that was my thinking. If we can, within the frame of most mobiles, get the key points, which is on that top hero section.
 
-Effectively we need to get the, main text message to people, some visual representation of what’s here. So it’s quick and easy to spot. And that’s the mic. And then also our main call to action, which is gonna get people to subscribe to it either on YouTube or Apple or Spotify. And you told me that, Google Podcast, which I put in there, is about to go, so that will get Yeah.
+Effectively we need to get the, main text message to people, some visual representation of what’s here. So it’s quick and easy to spot. And that’s the mic. And then also our main call to action, which is gonna get people to subscribe to it either on YouTube or Apple or Spotify. And you told me that, Google chat, which I put in there, is about to go, so that will get Yeah.
 
-\[00:24:40\] **Nathan Wrigley:** So there’s an iteration which is forced on us by no fault of our own. Yeah. Google. Getting rid of the podcasting app, which has become quite a popular thing for Android users because it’s the default. But they’re replacing it with, YouTube music is gonna become their platform. So we’ll have to deal with that and put a, you’ve already got a YouTube logo.
+\[00:24:40\] **Nathan Wrigley:** So there’s an iteration which is forced on us by no fault of our own. Yeah. Google. Getting rid of the chating app, which has become quite a popular thing for Android users because it’s the default. But they’re replacing it with, YouTube music is gonna become their platform. So we’ll have to deal with that and put a, you’ve already got a YouTube logo.
 
-yes. So it might be that you just end up with three logos in there, or you could pick another popular, player, like something like Pocket Cast. I guess the, enterprise there would be to just to go around some of the big. Podcasts out there and see what they’re doing. see what the likes of Joe Rogan is doing with his options.
+yes. So it might be that you just end up with three logos in there, or you could pick another popular, player, like something like Pocket Cast. I guess the, enterprise there would be to just to go around some of the big. chats out there and see what they’re doing. see what the likes of Joe Rogan is doing with his options.
 
 Oh yes. But Apple is the big one. And then everything and YouTube, I think will be the, obviously the big one for us as well.
 
@@ -263,9 +263,9 @@ navigation is falling underneath it ’cause of the space. The one column, very 
 
 \[00:26:10\] **Nathan Wrigley:** It’s don’t make me think, isn’t it? This is just, I guess absolutely the most standard, that logo left menu aligned right to the right, with the, the bottom, typically the furthest option on the right. Yeah. I think that’s, I think that’s exactly. The way it should be, frees up a bit of space, gets you a few centimeters of, of extra, space.
 
-interesting. I notice here that on the desktop version, you’ve got a subscribe link. as a button, but on the, and I dunno if this was just by accident, but on the mobile version, the subscribe link has gone. Yeah. And, I was thinking that actually one of the primary endeavors for us at the moment launching this podcast is to get, I.
+interesting. I notice here that on the desktop version, you’ve got a subscribe link. as a button, but on the, and I dunno if this was just by accident, but on the mobile version, the subscribe link has gone. Yeah. And, I was thinking that actually one of the primary endeavors for us at the moment launching this chat is to get, I.
 
-People to subscribe and it’s difficult for a podcast to make that button do anything useful because where do you send them? Do you send them to a page, which is then a bunch of other links? That’s what we’ve got at the moment. it’s got links to things like Apple Podcasts and YouTube and so on, but that is the primary thing, I suppose for us at the moment, trying to make a podcast successful is to get people to subscribe.
+People to subscribe and it’s difficult for a chat to make that button do anything useful because where do you send them? Do you send them to a page, which is then a bunch of other links? That’s what we’ve got at the moment. it’s got links to things like Apple chats and YouTube and so on, but that is the primary thing, I suppose for us at the moment, trying to make a chat successful is to get people to subscribe.
 
 And so I would petition you to keep that included in the mobile menu. I. as well.
 
@@ -275,7 +275,7 @@ Actually it does. I think it does because I was gonna go through the whole of th
 
 \[00:27:58\] **Nathan Wrigley:** Yeah. Another option of course would be to just to take these ever so familiar icons.
 
-Actually, I think the Spotify icon is really familiar. I think the YouTube one is, I’m not so sure about the Apple Podcast icon. I just don’t know if that’s ingrained in people’s heads. No, but you often see that on websites, don’t you? Maybe. I don’t know. Here I. Somewhere very top like an extra bar, which sticks.
+Actually, I think the Spotify icon is really familiar. I think the YouTube one is, I’m not so sure about the Apple chat icon. I just don’t know if that’s ingrained in people’s heads. No, but you often see that on websites, don’t you? Maybe. I don’t know. Here I. Somewhere very top like an extra bar, which sticks.
 
 which is just separate with those sort of subscribe icons. you might have a Twitter handle or something like that. We’re not going down that route. This is all audio, but that might be an option as well as to is to put it, is to put those icons simply. There. I dunno. I’m conflicted about that.
 
@@ -285,7 +285,7 @@ My sense is now that I ignore anything that’s icons on the top now. Okay. So I
 
 It’s the place where, yeah, Social icons, lazily will put up there, so.
 
-\[00:29:24\] **Nathan Wrigley:** Can I just delve into this a little bit more? is the primary thing for us on this homepage, is it to get them to YouTube? Just YouTube. not, even the podcast. apps because you are making a load of content, yeah. Which goes in this show, but it is not part of the audio feed.
+\[00:29:24\] **Nathan Wrigley:** Can I just delve into this a little bit more? is the primary thing for us on this homepage, is it to get them to YouTube? Just YouTube. not, even the chat. apps because you are making a load of content, yeah. Which goes in this show, but it is not part of the audio feed.
 
 Yes. But you are making a load of YouTube content, so is really the whole point to drive everybody to YouTube. Even this website, like the whole website is just a function of getting people to go to YouTube where all the content would be. obviously you won’t get the transcripts and stuff like that, but what, do you think is, that the whole point?
 
@@ -295,23 +295,23 @@ Promote YouTube. Wow. I think they’ve just come up with, yeah,
 
 But for the. I think you’re right. Actually, we’ll need to check about this.
 
-\[00:30:35\] **Nathan Wrigley:** So here’s the thing, is that the, podcasting space, if, you can get people to subscribe, that’s fabulous, but it’s a bit like getting people onto an email list. There’s quite a lot of steps to go through. you’ve got to have a, podcast player.
+\[00:30:35\] **Nathan Wrigley:** So here’s the thing, is that the, chating space, if, you can get people to subscribe, that’s fabulous, but it’s a bit like getting people onto an email list. There’s quite a lot of steps to go through. you’ve got to have a, chat player.
 
-You’ve got to be inclined to go, there’s somehow search for it or copy and paste, a URL and it’s a silo. In that there’s no algorithm in a podcast player to promote your content. Whereas if we can get them to YouTube after a period of time will start surfacing us to people who are just browsing YouTube.
+You’ve got to be inclined to go, there’s somehow search for it or copy and paste, a URL and it’s a silo. In that there’s no algorithm in a chat player to promote your content. Whereas if we can get them to YouTube after a period of time will start surfacing us to people who are just browsing YouTube.
 
 But also, at the end when a video is over, you will end up with. Other pieces of our content push. Now, obviously that’s completely proprietary. We have no control. YouTube could cancel us at any minute and all of those kind of things. But I think history shows YouTube’s gonna be around and it can be a very successful marketing channel.
 
-So for now at least, anyway, it feels YouTube is the main Dr. Main driver and the, the podcasting apps, it, that’s great, but maybe that’s not the main thrust. Yeah. Yeah,
+So for now at least, anyway, it feels YouTube is the main Dr. Main driver and the, the chating apps, it, that’s great, but maybe that’s not the main thrust. Yeah. Yeah,
 
 \[00:31:40\] **David Waumsley:** that’s, brilliant. Nathan. That’s okay. This chat was worth it just for that because you’ve just nailed it. Actually, I think we’re missing the main name.
 
-We do want get ’em to, when it comes to the homepage, I think YouTube just needs to be there. I think when it comes to the individual episodes, which will be class. ’cause not all of the things that we put on YouTube is a podcast episode. So on those particular pages, then a bar like this, which just suggests you can go and listen to this in other places.
+We do want get ’em to, when it comes to the homepage, I think YouTube just needs to be there. I think when it comes to the individual episodes, which will be class. ’cause not all of the things that we put on YouTube is a chat episode. So on those particular pages, then a bar like this, which just suggests you can go and listen to this in other places.
 
 I think that’s the solution. That’s, yeah. So we need to change that. Definitely.
 
 \[00:32:10\] **Nathan Wrigley:** Okay. But the, but the website has massive utility because it’s a platform that we can use. Should we come up with stuff that’s non YouTube? Yeah, but also it’s gonna be the, getting back to what we were talking about earlier, it’s the SEO piece.
 
-It’s the, if somebody hears in a crowded room, somebody says, oh, you should listen to this. No, no script show, podcast. They’re gonna go to Google and type it in. And obviously we want a website to service. That and so that we can appear, but also we can do our own other things on that website, can’t we?
+It’s the, if somebody hears in a crowded room, somebody says, oh, you should listen to this. No, no script show, chat. They’re gonna go to Google and type it in. And obviously we want a website to service. That and so that we can appear, but also we can do our own other things on that website, can’t we?
 
 we can, in the future if it takes off, we can do other types of content, other things, which might never make it onto YouTube, blog posts and so on. So the website for now maybe is this driver to YouTube, but we wouldn’t give up on the website and just do YouTube. The website’s gonna be important, but, okay.
 
@@ -329,7 +329,7 @@ A Would you like to subscribe modal as soon as they arrive? Do, you remember wha
 
 Do you actually have to dismiss it by clicking some a button or can you just click elsewhere in the ui? I don’t know. Anyway. I thought that was good. I don’t know. no. Okay. I think keep it in and let’s see. See if it, yeah, we’ll see. Gets our, see if it gets our subscriber account over 59. No, that’s where we’re at right now.
 
-\[00:34:39\] **David Waumsley:** Should we talk about the, because obviously copy came into this and I’ve put together after quite a bit of thought the best I could come up with, but I’d just be interested in your thoughts, You already suggested something that might need swapping around. So what we’ve got, for those who can’t see it, we’ve got a little, what they call an eyebrow, which is the sort of subheader, and it says, web design podcast for non-programmers.
+\[00:34:39\] **David Waumsley:** Should we talk about the, because obviously copy came into this and I’ve put together after quite a bit of thought the best I could come up with, but I’d just be interested in your thoughts, You already suggested something that might need swapping around. So what we’ve got, for those who can’t see it, we’ve got a little, what they call an eyebrow, which is the sort of subheader, and it says, web design chat for non-programmers.
 
 And then below that is the main header, dis rediscovering HTML and modern with an asterisk on it, CSS. you suggested that might be better the other way round visually. Ah, interesting.
 
@@ -355,9 +355,9 @@ Would you make that a paragraph text and size it, and then make the rediscoverin
 
 \[00:37:58\] **David Waumsley:** that’s going beyond the now will be changed. Call to action button. There’s a little, and that’s going to be a details tab. So there’s a little asterisk say modern CSS question mark. And what that I thought could be, and again, I dunno if my think is good on this home pages for SEO. a tricky because, you are expecting a lot of your internal links and external links to give the power to that, and effectively it’s a hub, but in some ways you do need to communicate with as much text as possible what is here, and the homepage is gonna be that.
 
-So rather than overwhelming people with information they might not need using something like a details tab, which works like an icon, just in straight H ml, you. Add in something so I can add a bit of an explainer by what we mean by modern CSS and why that’s prompted this whole podcast in a bit of additional text, which in which I can put some other headers and some other keywords in it, but also to be useful to anybody who really, it doesn’t know what that means.
+So rather than overwhelming people with information they might not need using something like a details tab, which works like an icon, just in straight H ml, you. Add in something so I can add a bit of an explainer by what we mean by modern CSS and why that’s prompted this whole chat in a bit of additional text, which in which I can put some other headers and some other keywords in it, but also to be useful to anybody who really, it doesn’t know what that means.
 
-a lot of people are saying modern CSS and they know that this is this new wave of, since grid and. You know so much more that we can do that we don’t need JavaScript for. That’s what people are referring to, but it needs some explanation, but it seems too much to put that explanation. A wall of text for everybody, right? Just wants to be interested in podcast.
+a lot of people are saying modern CSS and they know that this is this new wave of, since grid and. You know so much more that we can do that we don’t need JavaScript for. That’s what people are referring to, but it needs some explanation, but it seems too much to put that explanation. A wall of text for everybody, right? Just wants to be interested in chat.
 
 \[00:39:23\] **Nathan Wrigley:** The then, so this, the implication here is go, so the asterisk is go look for something else. And it’s down here. It’s just down here. Yeah. Obviously we’ll change this around. And so what is this? this is a link, like a summary. this is a click and it’ll drop down its details.
 
@@ -369,7 +369,7 @@ This text. Anyway, the point is this hidden text from the eyeballs, at least any
 
 Yeah. I see. Probably just the one side, so yeah, that’s just a way of cramming in a bit of cheating in a way. It’s a bit of a way of saying to search engines, what. What this thing is that we’re doing when we’re talking about modern CSS. Okay. But hopefully it’s not too much of a cheat because it is designed to be useful for somebody who goes, what do you mean modern CSS?
 
-\[00:40:38\] **Nathan Wrigley:** Yeah. can I just ask, so I’m gonna move us on quickly. To the, next bit, which is the latest podcast episode. is there a reason in this design why you, this got floated to the right as opposed to the left because we’ve got this, image which says latest podcast episode. I dunno whether I probably would’ve ended up with that over on the left side.
+\[00:40:38\] **Nathan Wrigley:** Yeah. can I just ask, so I’m gonna move us on quickly. To the, next bit, which is the latest chat episode. is there a reason in this design why you, this got floated to the right as opposed to the left because we’ve got this, image which says latest chat episode. I dunno whether I probably would’ve ended up with that over on the left side.
 
 \[00:41:02\] **David Waumsley:** I feel it should be reversed. Yeah.
 
@@ -381,13 +381,13 @@ I, would feel like you, I, would go left first, so I’m the same as you in that
 
 We’ve got learn a little bit about modern CSS or the, we are for non-programmers and we’re gonna be talking about HTML and CSS, and then now the third thing feels like, now play the latest episode, here’s our latest piece of content. Yeah, I guess that’s a really typical thing to do, isn’t it?
 
-If you’re a podcaster or a YouTuber having the, most re recent episode on the homepage. That makes sense. I think. Yeah.
+If you’re a chater or a YouTuber having the, most re recent episode on the homepage. That makes sense. I think. Yeah.
 
 \[00:42:12\] **David Waumsley:** Yeah. And also if we can bring in some of the description for that episode, again, it’s a bit more text that will Well, I, think it’s good to have your homepages changing regularly, I think for search engines.
 
 Like to see that something is happening that you have not abandoned this page. so there’s a part of SEO thinking in doing that, particularly bringing forward the copy, not just the image link to the episode.
 
-\[00:42:39\] **Nathan Wrigley:** Yeah. Yeah. Okay. that makes perfect sense. if I was going to a podcast website, I would’ve an expectation that I’d be able to easily find the most recent piece of content.
+\[00:42:39\] **Nathan Wrigley:** Yeah. Yeah. Okay. that makes perfect sense. if I was going to a chat website, I would’ve an expectation that I’d be able to easily find the most recent piece of content.
 
 That would be what I’d want to do. Yeah. Okay. Okay. and that’s gonna be a YouTube video as opposed to an audio player? yeah, because really the. The video is gonna show everything as well. Okay. And then you’ve got this little extra section, which is, that gonna be related to the most recent episode, the bit that you do that’s related to it?
 
@@ -395,9 +395,9 @@ Or is that just some, I don’t
 
 \[00:43:13\] **David Waumsley:** know.
 
-Yeah, I think, I think we’ll probably have to, I, I suspect at some point we’ll start doing the odd article as well, which will be another strand of this, just for, to cover things that maybe. Wouldn’t go in a podcast or don’t need a video or something. So there might be some other exodus, but I imagine that will be, because what we’re doing at the moment, it may not be forever, but almost for every podcast we do, I do a little short 10 minute video.
+Yeah, I think, I think we’ll probably have to, I, I suspect at some point we’ll start doing the odd article as well, which will be another strand of this, just for, to cover things that maybe. Wouldn’t go in a chat or don’t need a video or something. So there might be some other exodus, but I imagine that will be, because what we’re doing at the moment, it may not be forever, but almost for every chat we do, I do a little short 10 minute video.
 
-Yep. Which is related to some code aspect of what we’ve been doing. as I work out that stuff most of the time. So the, there’s sort of two bits of content which are going out, at the moment, podcast every two weeks. And this. Every two weeks as well. This little 10 minute thing that I do. So we’ve got weekly content, so that’s where I put that.
+Yep. Which is related to some code aspect of what we’ve been doing. as I work out that stuff most of the time. So the, there’s sort of two bits of content which are going out, at the moment, chat every two weeks. And this. Every two weeks as well. This little 10 minute thing that I do. So we’ve got weekly content, so that’s where I put that.
 
 I suspect we’ll change this over time, but that’s just what it’s at the moment. Yeah.
 
@@ -423,7 +423,7 @@ yeah. And I think we probably, if we’ve got any credentials or any experience 
 
 \[00:46:09\] **Nathan Wrigley:** Okay, so rather than be self-deprecating, we’re gonna actually, make, outlandish claims of our, capabilities.
 
-\[00:46:18\] **David Waumsley:** I think just honest ones, that we have been, in some ways I put it in yours anyway, in the sense that you’ve got other podcasts that you’ve been running for other times with mine. I just, I’m alive and live somewhere. it’s about all like a muster. But yeah.
+\[00:46:18\] **David Waumsley:** I think just honest ones, that we have been, in some ways I put it in yours anyway, in the sense that you’ve got other chats that you’ve been running for other times with mine. I just, I’m alive and live somewhere. it’s about all like a muster. But yeah.
 
 \[00:46:34\] **Nathan Wrigley:** That’s gonna change over time though as well, isn’t it?
 
@@ -431,13 +431,13 @@ But those images, one quick thing that’s jumping out on this design Yeah. Is i
 
 Because in my head, lightning bolts signify heat or kind of something, really? Wow. Or something like that. What was your thinking? Yeah, there wasn’t much,
 
-\[00:47:13\] **David Waumsley:** don’t make me think. Yeah, I’ll tell you what, I, nicked it. Basically, I saw somewhere else on one of the stock images that they had a mic similar to this kind of thing, and they put these little lightning bolts, electricity, out of the podcast.
+\[00:47:13\] **David Waumsley:** don’t make me think. Yeah, I’ll tell you what, I, nicked it. Basically, I saw somewhere else on one of the stock images that they had a mic similar to this kind of thing, and they put these little lightning bolts, electricity, out of the chat.
 
 I think on their thing. It said something about, going live or something on there. So I just looking for embellishments because obviously we’re keeping the page simple. I just basically took. A symbol that was the lightning and replicated that. But now you’ve said it, you just think, actually it probably isn’t saying the right thing.
 
 So we maybe need some embellishments. Are different that, yeah, I don’t know.
 
-\[00:47:52\] **Nathan Wrigley:** I don’t know either. Yeah, no, it was just, it didn’t, it, there was no like sense of that’s weird or anything. I just thought, oh, lightning interesting. But it’s surely our podcasts are electric, aren’t they? Oh, exactly.
+\[00:47:52\] **Nathan Wrigley:** I don’t know either. Yeah, no, it was just, it didn’t, it, there was no like sense of that’s weird or anything. I just thought, oh, lightning interesting. But it’s surely our chats are electric, aren’t they? Oh, exactly.
 
 Let’s keep it then. yeah. I dunno. I dunno. When I, whenever I think of audio, and of course we’re not just audio, are we’ve now decided that it’s really gonna be about YouTube as much as anything else. that’s video. But the audio. In my head, the iconography around audio is always like this.
 
@@ -451,7 +451,7 @@ Concentric circles. Think of the RSS symbol. You’ve got like these three, you�
 
 \[00:49:10\] **Nathan Wrigley:** Okay.
 
-\[00:49:11\] **David Waumsley:** We’ve gone a long time and I just wonder if we should just step back one thing and just mention the, description. Do you think we’re on the right path with that? as a, this is the description on the hero bit. So after we’ve got the a web. Design podcast for non progress rediscovering HTML and modern CSS.
+\[00:49:11\] **David Waumsley:** We’ve gone a long time and I just wonder if we should just step back one thing and just mention the, description. Do you think we’re on the right path with that? as a, this is the description on the hero bit. So after we’ve got the a web. Design chat for non progress rediscovering HTML and modern CSS.
 
 What I’ve put here, and I’m not sure about this at all, Nathan, is I put CMS users, Nathan and David, revisit the web’s original page builder and ask what we can build today with minimal skills and dependencies thing that you’ve been reading out at the beginning of the episodes at the moment, and then.
 

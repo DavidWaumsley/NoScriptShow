@@ -1,8 +1,8 @@
 ---
 title: Everything we knew about web design changed!
-description: How this podcast aims to keep up with a fast changing web platform.
+description: How this chat aims to keep up with a fast changing web platform.
 date: 2023-12-13
-tags: [ podcast ]
+tags: [ chat ]
 permalink: "/1{{slugify }}/"
 videoid: MepORS6OHYw
 ---
@@ -45,7 +45,7 @@ As early adopters, both of us of low-code page builders, we’ve become quite de
 
 Use what we’ve learned, the foundations of this knowledge to employ how we use our tools appropriately. So that’s enough for me. Nathan, how are you? I’m
 
-\[00:02:03\] **Nathan Wrigley:** good, thank you. I’m Nathan Wrigley. I have been working with David on WordPress podcast for years and years now, but I think I’ll just give a little bit of my backstory.
+\[00:02:03\] **Nathan Wrigley:** good, thank you. I’m Nathan Wrigley. I have been working with David on WordPress chat for years and years now, but I think I’ll just give a little bit of my backstory.
 
 So I began. Working with the web, I think it was very, late 1990, so 19 99, 19 98, something like that. But back in that time, anybody was really with 10 minutes. If you put your nose into a book for 10 minutes, you could probably be as good as almost anybody else. It was really the very beginnings and I was learning.
 
@@ -59,7 +59,7 @@ There were no web pages, showing off the, portfolio of work that you’d done in
 
 Then I discovered CMSs. Drupal Magento and then finally WordPress, which I settled on and started to use that, and that’s where I’ve settled and stayed since probably about 2015. Something along those lines. Very happy with WordPress. I will be continuing to use it, but David spotted that there was a shift and a lot of the things that.
 
-We once would have found very, difficult to implement without complicated knowledge of things like JavaScript have been moved over into the CSS spec, or are going to be moved over into the CSS spec. And the options and the possibilities of CSS are gonna be amazing in the future. So we’re trying to make that the focus of this podcast just examining what’s coming, what we know thus far.
+We once would have found very, difficult to implement without complicated knowledge of things like JavaScript have been moved over into the CSS spec, or are going to be moved over into the CSS spec. And the options and the possibilities of CSS are gonna be amazing in the future. So we’re trying to make that the focus of this chat just examining what’s coming, what we know thus far.
 
 I have to say that my knowledge is pretty poor. I. I have let myself become very de-skilled because of platforms like WordPress and the amazing page builders that they provide. So I have let my knowledge stagnate and I’m probably stuck in 2018 or something like that. Things have moved on and I felt that I needed to upskill, and luckily David’s here with his Cape superhero David,
 
@@ -83,7 +83,7 @@ But if there is something that we say, which you think, oh, I would like to see 
 
 And what’s the point of this? It looks like a pretty, pretty bare bones website at the moment.
 
-\[00:08:05\] **David Waumsley:** Yeah, it is. And that’s intentional. we thought about this after we did the show that it might be best to demonstrate it because as we know with the podcast that you are still reading there, your site has had to change over time.
+\[00:08:05\] **David Waumsley:** Yeah, it is. And that’s intentional. we thought about this after we did the show that it might be best to demonstrate it because as we know with the chat that you are still reading there, your site has had to change over time.
 
 We thought, we’ll start with something as simple as you possibly can make it, and then we can use this as we learn or explain what we’ve been learning over the time. We can actually put that to practical applications and show it on the site. And maybe, I think when it goes to diving into some of the code, which I’ll.
 
@@ -97,7 +97,7 @@ I think we’re heading into a new direction where just knowing what’s going o
 
 \[00:09:39\] **Nathan Wrigley:** we’ll, see how, this website progresses, but I think the intention really is that what we’re talking about in each episode may very well get reflected almost immediately onto the website.
 
-So I can’t say what that’ll be because we haven’t planned that far into the future. But let’s say that we talk about particular thing. The intention is that thing will get displayed on the website soon after the podcast episode is released. It may well be that we put show notes or things on that website as well, and who knows, we may have some sort of way back machine type.
+So I can’t say what that’ll be because we haven’t planned that far into the future. But let’s say that we talk about particular thing. The intention is that thing will get displayed on the website soon after the chat episode is released. It may well be that we put show notes or things on that website as well, and who knows, we may have some sort of way back machine type.
 
 Feature where you can look at screenshots of how it was in the past. And if you go to screenshot one, I guess you’ll be looking at what we’ve got today, which is really what we’re looking at today, is a website which you could have built in 1998. It’s images and text and it’s, really bare
 
@@ -105,15 +105,15 @@ Feature where you can look at screenshots of how it was in the past. And if you 
 
 Yeah, so I think your archive is a good thing. I think we’ll do that with this when we make a next change, we’ll, put it somewhere so someone can look at it, and I, can imagine over time that we’ll run out of things that we can do with this site for one particular purpose, and we might just start to explore other things, which we’ve, done together.
 
-In another podcast, we did a whole series looking at somebody. And how they might build their site. That’s, so we might do this more practically with this. So yeah, let’s talk a little bit more about then the, format of the show where we intend to go with it. Okay. I, there’s not much to say ’cause you actually covered the fact that it’s going in two forms and that I might do some other videos.
+In another chat, we did a whole series looking at somebody. And how they might build their site. That’s, so we might do this more practically with this. So yeah, let’s talk a little bit more about then the, format of the show where we intend to go with it. Okay. I, there’s not much to say ’cause you actually covered the fact that it’s going in two forms and that I might do some other videos.
 
 I think frequency of the show, we’re going to just keep that. Wide open. We’re going to do ’em as we want for, so we don’t burden ourselves. But also for me, I think for the quality, if we’re, going to try and. Cover the stuff that we’re gonna cover now, which is big changes there when we’re probably gonna need to represent the experts properly.
 
 And that means catching up as we’re learning. So it might take a bit of time between various episodes. I think so, yeah. We’ll keep on loose
 
-\[00:11:40\] **Nathan Wrigley:** Podcast episodes that both of us have recorded so far have been on a real regular cadence, but we decided just for the. The purposes of this podcast that it, will come out when it comes out.
+\[00:11:40\] **Nathan Wrigley:** chat episodes that both of us have recorded so far have been on a real regular cadence, but we decided just for the. The purposes of this chat that it, will come out when it comes out.
 
-So if we don’t do an episode for several weeks, that doesn’t mean it’s gone away. Keep it in your. Podcast player of choice, but it will come round at some point when we manage to get around to doing an episode. I think the intention right at the beginning is to get a few recorded so that they will have a regular cadence.
+So if we don’t do an episode for several weeks, that doesn’t mean it’s gone away. Keep it in your. chat player of choice, but it will come round at some point when we manage to get around to doing an episode. I think the intention right at the beginning is to get a few recorded so that they will have a regular cadence.
 
 Sure. Because obviously we have, more inspiration at this point, but, we’ll, see how this goes. So that’s in terms of the frequency, but why the name, why no script show. That’s on you, David.
 
@@ -129,7 +129,7 @@ I will do, maybe less so with you, Nathan, but mostly just like front end stuff.
 
 \[00:13:24\] **David Waumsley:** Yeah. Yeah. It’s fine design.
 
-\[00:13:27\] **Nathan Wrigley:** so who’s, the intended audience for this then? I should probably say, we’re gonna put this into the WP Bills, which is the podcast David and I have done for many years. We’re gonna put it into that feed as well. hello to those listeners. are we trying to capture some of those?
+\[00:13:27\] **Nathan Wrigley:** so who’s, the intended audience for this then? I should probably say, we’re gonna put this into the WP Bills, which is the chat David and I have done for many years. We’re gonna put it into that feed as well. hello to those listeners. are we trying to capture some of those?
 
 Is there an intention that maybe some people that have been using CMSs might be interested in this as well? Yeah, I think
 
@@ -199,7 +199,7 @@ Put that into WordPress and think about it. In fact, it holds back certain thing
 
 That’s going on in the background in order to compute what needs to be done at any particular moment. Yeah. And so the advances in the backend of the browser enable this to happen. And you’ve, it’s not in our show notes, but there was a lovely quote somewhere about actually, maybe it was Jen Simmons that said it, browsers are quite good at maths, so let’s let, or rather, computers are quite good at math, so why don’t we offload all of that stuff to the browser to handle on the fly.
 
-And our experiences will be. broadly better. So yeah, intrinsic web design, that’s the bus that we’re all on at the moment. Whether or not there’ll be another bus just around the corner coming that we’ve got to hop on, but the least at the beginning of this podcast, that’s, that’s what, that’s the bandwagon we’re on.
+And our experiences will be. broadly better. So yeah, intrinsic web design, that’s the bus that we’re all on at the moment. Whether or not there’ll be another bus just around the corner coming that we’ve got to hop on, but the least at the beginning of this chat, that’s, that’s what, that’s the bandwagon we’re on.
 
 \[00:23:31\] **David Waumsley:** Yeah, exactly. And I’ve put down here I’m probably misusing the term, I’ve heard Jeremy Ke mention this, who’s a, kind of big player on talking about the web. He’s written a lot of books and, UK guy. but, just that recently, I, feel there’s a sort of sense that because everybody’s invested in making sure that the web platform, HTML and CMS.
 
@@ -215,7 +215,7 @@ It. These two have a hundred percent share of the market. So the other thing’s
 
 You carry on. No, I was gonna say about, I. Just bound in with that is that it’s, really the same point. It is just about following the standards and, stuff and getting back to that because there is we’ll talk about this I think later, but the really, the web’s been a series of hacks where we’ve all done our own things.
 
-That’s why we’ve needed more JavaScript because the CSS hasn’t given us what we need. And, it does feel like we’re reaching a point now where. Wow, this is great. Almost everything that you would need to at least do layouts at the moment are much more stuff is there and it’s fully documented and it’s a standard of which we all agree by, which has so many people who can veto it that at any point, and it’s the way the browsers are going, that it’s time to embrace those open standards, start to get to the idea that there is this fully documented, even the meetings are documented that we can look to, and I think that’s good for us if we are doing it professionally, which isn’t, this podcast isn’t intended.
+That’s why we’ve needed more JavaScript because the CSS hasn’t given us what we need. And, it does feel like we’re reaching a point now where. Wow, this is great. Almost everything that you would need to at least do layouts at the moment are much more stuff is there and it’s fully documented and it’s a standard of which we all agree by, which has so many people who can veto it that at any point, and it’s the way the browsers are going, that it’s time to embrace those open standards, start to get to the idea that there is this fully documented, even the meetings are documented that we can look to, and I think that’s good for us if we are doing it professionally, which isn’t, this chat isn’t intended.
 
 Definitely for people who are freelancers. It could be anybody, but I think, if you are doing it for that, it can give you credibility if you have documentation that you look to. yeah. It’s
 
@@ -297,9 +297,9 @@ which is the power that a front end developer now has with this intrinsic design
 
 Whereas now, because there is so much to think about with this performance accessibility, how these will display on different platforms, you’re not got just three devices you’re looking at. Suddenly there’s a power with, the people who are doing the front end. So just learning a bit of HTML and CSS you, you can become quite a powerful person in the whole design process, I think.
 
-\[00:36:53\] **Nathan Wrigley:** Yeah, it’s definitely a route to employability, but as I said, for me at the minute, it’s not because I just simply don’t know it. So if, as you’re listening to this, any of this is, rung a bell and you think, Yeah, maybe there’s some, maybe there’s some learning that’s gonna happen in this podcast.
+\[00:36:53\] **Nathan Wrigley:** Yeah, it’s definitely a route to employability, but as I said, for me at the minute, it’s not because I just simply don’t know it. So if, as you’re listening to this, any of this is, rung a bell and you think, Yeah, maybe there’s some, maybe there’s some learning that’s gonna happen in this chat.
 
-Yeah. Go and visit the site. I don’t know as yet how we’re gonna do things like subscribing. You can obviously do that, in your podcast player of choice. Again, give us time to, to get a feed going and all of that. We’ve gotta work all of that out. But the website will be called no Script Show.
+Yeah. Go and visit the site. I don’t know as yet how we’re gonna do things like subscribing. You can obviously do that, in your chat player of choice. Again, give us time to, to get a feed going and all of that. We’ve gotta work all of that out. But the website will be called no Script Show.
 
 \[00:37:29\] **David Waumsley:** Yeah, it’ll have a, it’ll, have a rubbish logo.
 
@@ -311,7 +311,7 @@ So hopefully, dear listener, you have understood what we’re trying to do. Stay
 
 \[00:37:57\] **David Waumsley:** yeah. Yeah. Can I’ve actually got a, bit of a, shall I just say what I think is next up? Yeah. I’ve sent you the, yeah, I think, if we are all agreeing and people are sticking with us, that there is a bit of a paradigm shift on there, the fundamentals, as we’ve said about web design.
 
-Completely changed. So conversations you and I have had on the other podcast for seven years can be revisited with a new light again. But I think maybe for next time, the best places to start is with the CSS and what the changes there actually mean for us. And Most, a lot of people are just not author authoring, CSS themselves.
+Completely changed. So conversations you and I have had on the other chat for seven years can be revisited with a new light again. But I think maybe for next time, the best places to start is with the CSS and what the changes there actually mean for us. And Most, a lot of people are just not author authoring, CSS themselves.
 
 you and I included first yeah, Melvin in again, we use third party platforms, but I think now it’s been massively refactored into something more comprehensive and logical. It’s probably start with, someone who’s better explaining that. So what we’ll try and do is have a look at, Rachel Andrews, who’s.
 

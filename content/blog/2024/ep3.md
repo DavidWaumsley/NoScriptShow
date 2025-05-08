@@ -2,7 +2,7 @@
 title: Modern CSS layouts
 description: The W3C on CSS layout and how it might be easier than we think.
 date: 2024-01-22
-tags: ["podcast"]
+tags: ["chat"]
 permalink: "/3{{slugify }}/"
 videoid: Q1g--a_hrXQ
 ---
@@ -142,7 +142,7 @@ the basic site, which of course we will design as we go on, is really keeping to
 
 \[00:14:21\] **David Waumsley**: Yeah. Yep. And they're on that. Anyway, sorry for the people who are listening to this only, it's not gonna make much sense, but, no, it's a good, it's
 
-\[00:14:28\] **Nathan Wrigley**: a good lesson that this, podcast is, partly audio, but also there is gonna be a always, I think, a slight video component to it.
+\[00:14:28\] **Nathan Wrigley**: a good lesson that this, chat is, partly audio, but also there is gonna be a always, I think, a slight video component to it.
 
 And, we'll be showing things. So you'll be able to look on the, the website, no script show. Yeah. But also you are gonna be doing bits and pieces on video, which. go alongside some of these episodes and maybe, you'll even do one, over here. So go and check out that website if you are listening. And it's confusing you. It is a, is a very visual subject, I'm afraid.
 
@@ -156,7 +156,7 @@ So there's flexbox on that. The easiest way to just get, ordered list, which wou
 
 You can work in the grids and the rows. So really our it, our thing is to be using the. Display is the way to now do layouts. That's where everything is changing.
 
-\[00:16:39\] **Nathan Wrigley**: Can I just interrupt there so that I'm clear because I am the poor relation in this, podcast series. I'm the, sort of sto who is gonna be trying to keep up with, David as he pushes forwards with all of this.
+\[00:16:39\] **Nathan Wrigley**: Can I just interrupt there so that I'm clear because I am the poor relation in this, chat series. I'm the, sort of sto who is gonna be trying to keep up with, David as he pushes forwards with all of this.
 
 So forgive me for the interruptions, but just to be clear, the flow layout is the bedrock of. Everything. if, everything is stripped away, flow is gonna work because that's what the browser is instructed to do. It will all work on this flow layout if you want to go away from flow, so one thing going horizontally under another.
 

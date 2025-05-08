@@ -2,7 +2,7 @@
 title:  Does Baseline solve our browser support problems?
 description: Baseline is a Google initiative introduced in 2023 that aims to make it easier for developers and other website stakeholders to understand what might be ready for production.
 date: 2024-04-25
-tags: ["podcast"]
+tags: ["chat"]
 permalink: "/9{{slugify }}/"
 videoid: QhdejyjEr5o
 ---
@@ -86,7 +86,7 @@ So you can go into production. But, previously, for us in a way we may be, I dun
 
 Then we’d say, okay, the theme will take care of that kind of stuff for us, or the page builder later.
 
-\[00:01:54\] **Nathan Wrigley:** Yeah, I think you’re right. I think if you are a core participant of this podcast, if you are really listening to this because you want to learn about modern CSS and HT ML, this stuff will matter.
+\[00:01:54\] **Nathan Wrigley:** Yeah, I think you’re right. I think if you are a core participant of this chat, if you are really listening to this because you want to learn about modern CSS and HT ML, this stuff will matter.
 
 But I think it’s also quite likely that a lot of the people listening to this will never really have ENC encountered this problem. the expectation is that all the browsers are the same. It doesn’t matter whether you are using Firefox or Chrome. They all do. Broadly the same thing, and it’s got lost that in the midst of time, the browsers really, went in their own direction.
 

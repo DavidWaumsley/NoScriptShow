@@ -2,7 +2,7 @@
 title:  How do we start a website project?
 description: Looking at the The MDN web docs on "project ideation".
 date: 2024-03-27
-tags: ["podcast"]
+tags: ["chat"]
 permalink: "/7{{slugify }}/"
 videoid: IgC6z3LcrlM
 ---
@@ -40,7 +40,7 @@ A client's brief
  
 \[00:00:05\] **Nathan Wrigley:** Welcome to the No Script web show about modern web design, where we look at what we can build today with minimal dependencies and skills. Up until now, we’ve been catching up with the new spec that has been coming to the web platform over recent years, particularly with CSS.
 
-We’re probably less than halfway through that, but we’re also building the show website as part of the podcast, and we thought it’d be interesting to take a step back from the technical side. For a while and look at how we should start or any new web project. As always, I’m joined by my good friend David Waumsley.
+We’re probably less than halfway through that, but we’re also building the show website as part of the chat, and we thought it’d be interesting to take a step back from the technical side. For a while and look at how we should start or any new web project. As always, I’m joined by my good friend David Waumsley.
 
 How you doing, David?
 
@@ -54,13 +54,13 @@ So the website is no script show. This is episode seven, so simply append slash 
 
 \[00:01:54\] **David Waumsley:** So we’ve still taking a step back ’cause we’ve got our website out. Yeah. And now we’ve gotta decide who it’s for and do the design stuff. ’cause that’s really where we start. We started with clients and and we had to ask ’em why they wanted their website and we now we’ve got a perfect opportunity even though it’s a bit self-indulgent, I dunno what this episode’s gonna be like, but it does give us a live project where we can look at things from both the designer and the client perspective as we are both Yeah.
 
-\[00:02:22\] **Nathan Wrigley:** So shall I pop it on the screen? Yeah, actually that’s, that would be useful. Our show notes. First of all, I should say, dear listener, If you are listening to this, maybe quite of the things, quite a lot of the things that we’re gonna mention in this podcast episode are related to what you’re seeing on the screen.
+\[00:02:22\] **Nathan Wrigley:** So shall I pop it on the screen? Yeah, actually that’s, that would be useful. Our show notes. First of all, I should say, dear listener, If you are listening to this, maybe quite of the things, quite a lot of the things that we’re gonna mention in this chat episode are related to what you’re seeing on the screen.
 
 You can find us. On, YouTube, if you go to the URLI mentioned previously, no doubt there will be a link to the video. so you’ll be able to see what we’re talking about, but bear with us. Hopefully we’ll manage to do it in an audio form as well. So there it is, there is our fully featured, finished complete, and.
 
 Nothing to fix websites. It’s pretty bare bones, isn’t it? Other?
 
-\[00:03:00\] **David Waumsley:** Yeah. It’s just functional. Yeah. because we didn’t do what anything I think you would expect to do for that would be classed as a design process. And here was the thing, because we decided for this podcast, we would take our source of truth for everything we talked about being the W three C, but when it comes to design, I’m not sure what that was.
+\[00:03:00\] **David Waumsley:** Yeah. It’s just functional. Yeah. because we didn’t do what anything I think you would expect to do for that would be classed as a design process. And here was the thing, because we decided for this chat, we would take our source of truth for everything we talked about being the W three C, but when it comes to design, I’m not sure what that was.
 
 So I thought. How do we start a web project? Who will we go to first? And I thought, the next best thing might be the NDN records that have a short article, which is called How Do I Start To Design My Website? And it doesn’t mention the term project ideation, which is a really fancy term, but the rest of it’s really plain English and it’s basically asks us three questions which we need to answer for ourselves, Nathan, about we are.
 
@@ -70,7 +70,7 @@ We need to ask it of ourselves and answer it. So do you wanna read out the three
 
 So it’s not the, it’s not the knowledge from a singular individual. It’s been changed and modified over time. So the three questions, I guess in the, in this order are. What do I want to accomplish? What, sorry? How will a website help me reach my goals? And thirdly, what needs to be done and in what order to reach my goals?
 
-So is the intention in this episode, David, to try and answer those three questions from our perspective? Running a podcast, running a YouTube channel, and the resultant website? Is that why we’re here today? Yeah, we’re trying to do
+So is the intention in this episode, David, to try and answer those three questions from our perspective? Running a chat, running a YouTube channel, and the resultant website? Is that why we’re here today? Yeah, we’re trying to do
 
 \[00:04:45\] **David Waumsley:** that. we’re trying to put ourselves through this, but it’s worth talking a little bit.
 
@@ -176,11 +176,11 @@ I guess at this point, you’re in a collaboration, aren’t you? And you need t
 
 So it is more practical, should we try and do this for
 
-\[00:17:35\] **Nathan Wrigley:** ourselves. Okay. This is gonna be painful. so the idea is that we’re gonna ask the questions about. About this podcast and related website, and we have talked about it. Whether or not these are the kind of answers you’d like from a client, who knows, but we’re gonna be honest.
+\[00:17:35\] **Nathan Wrigley:** ourselves. Okay. This is gonna be painful. so the idea is that we’re gonna ask the questions about. About this chat and related website, and we have talked about it. Whether or not these are the kind of answers you’d like from a client, who knows, but we’re gonna be honest.
 
 We’re gonna say it as it is. all right, where do we begin? yeah,
 
-\[00:18:00\] **David Waumsley:** so what exactly do we want to accomplish with doing? we’re looking at the site really, but it is the whole podcast itself. But yeah, we’re doing that. Okay. Do you want me to
+\[00:18:00\] **David Waumsley:** so what exactly do we want to accomplish with doing? we’re looking at the site really, but it is the whole chat itself. But yeah, we’re doing that. Okay. Do you want me to
 
 \[00:18:10\] **Nathan Wrigley:** start? I’ll ask you the question and then you can answer it with your little bullet pointed list.
 
@@ -190,7 +190,7 @@ You’ve put a lot more thought into this than I have. Mine is far more like off
 
 Brilliant. no, yeah, so yeah, so I did have a bit, it is a really good questions ’cause it does make you think, and in some ways we did start this when we said we’ll do this together and, my first thought, and it’s the first thing is that I’m doing it because I have to go in public and learn the stuff which I’m trying to learn.
 
-So this podcast has all been about learning all the new CSS stuff and I’ve needed to do that and. Doing something with you, it forces me to an agenda where I can’t cheat myself out learning if I’m gonna talk about it. I need to know a little bit about it, and so I’ll work harder at learning. So that’s the primary goal,
+So this chat has all been about learning all the new CSS stuff and I’ve needed to do that and. Doing something with you, it forces me to an agenda where I can’t cheat myself out learning if I’m gonna talk about it. I need to know a little bit about it, and so I’ll work harder at learning. So that’s the primary goal,
 
 \[00:19:14\] **Nathan Wrigley:** right?
 
@@ -218,23 +218,23 @@ So that’s a very personal one. But that’s important. I think the, gaining kn
 
 And so this is forcing me. To, I’m not really implementing it, but it’s at least confronting me with it. Maybe it’ll force me to implement it as well. So there’s that, step outside. So this is a little bit like you making connections with peers, step outside of a community that I’m really familiar with and maybe make some connections with some people that I’m unfamiliar with and, who knows where that’ll take you.
 
-I dunno quite how that’ll happen, but history shows doing the. Podcast that I didn’t, that I still continue to do in the WordPress space, just tells me I have an intuition that things just happen unexpectedly. And so the, my last one, my fourth one is, yeah, just see what new opportunities come along.
+I dunno quite how that’ll happen, but history shows doing the. chat that I didn’t, that I still continue to do in the WordPress space, just tells me I have an intuition that things just happen unexpectedly. And so the, my last one, my fourth one is, yeah, just see what new opportunities come along.
 
 Yeah, I’m a firm believer in serendipity and putting content out without necessarily an agenda for, we want this many followers or we want this many people on an email list or anything like that. It history shows that things happen unexpectedly and, opportunities arise. And so that’s also gonna be interesting for me.
 
 So mine are far less, far more, ephemeral I think than yours, but they are the real reasons.
 
-\[00:23:40\] **David Waumsley:** Yeah. And your first one, which was very kind is part, is really a major one for me as well. We’ve stopped doing the other podcast and it’s only like a week when it’s I’ve guilted you into saying that.
+\[00:23:40\] **David Waumsley:** Yeah. And your first one, which was very kind is part, is really a major one for me as well. We’ve stopped doing the other chat and it’s only like a week when it’s I’ve guilted you into saying that.
 
 I feel, proud that No, It’s absolutely, that is one of the things because there’s a missing gap, but it, there was a use. So I think that’s it. We haven’t got any, exact, and of course these things may change over time. I think with anything you ask the question for us to.
 
 What exactly do we want to accomplish? But I think these are questions you would need to keep circling around because they’re bound to change. As we change businesses, change, things happen. Websites need to change, forms of communication change. So I think, yeah, so yeah, that’s, that sums up what do we want to get out it?
 
-So money hasn’t come as the main thing, but it may have an opportunity to deliver something because you found a skill in podcasting and interviewing people that could. Be expanded out beyond what you’ve got. And I’ve got a way of forcing me to learn stuff and meet people. What about,
+So money hasn’t come as the main thing, but it may have an opportunity to deliver something because you found a skill in chating and interviewing people that could. Be expanded out beyond what you’ve got. And I’ve got a way of forcing me to learn stuff and meet people. What about,
 
 \[00:24:45\] **Nathan Wrigley:** I think we’ve maybe smuggled in money.
 
-Yeah. under the banner of, you called it looking a, way ahead. Yes. Yes. and this idea that maybe you could do templates. And I had this idea of future opportunities. So I think we’ve smuggled in the opportunity for this podcast to make some revenue, but it’s it’s not high on either of our agendas.
+Yeah. under the banner of, you called it looking a, way ahead. Yes. Yes. and this idea that maybe you could do templates. And I had this idea of future opportunities. So I think we’ve smuggled in the opportunity for this chat to make some revenue, but it’s it’s not high on either of our agendas.
 
 I don’t think so it’s. It’s maybe something, but anyway, yes. Yeah, sorry. So we’re on to the next one. I think
 
@@ -286,7 +286,7 @@ And I think messaging is exactly right. I think you are taking on the heavy lift
 
 I’m sure it’ll iterate a lot. So maybe, that’s, I think what needs to be done, is to, pretty fire it so that anybody jumping in isn’t put off with, oh, it’s all black and white. These guys dunno what they’re talking about.
 
-\[00:31:02\] **David Waumsley:** Yeah. I think we still have a connection with, you’re still doing a podcast for WordPress and I’m still very much connected and follow the news in that as well.
+\[00:31:02\] **David Waumsley:** Yeah. I think we still have a connection with, you’re still doing a chat for WordPress and I’m still very much connected and follow the news in that as well.
 
 But there’s a kind of like within that as well, even within that community, there’s a lot of people who, with us with the page builders, we like not dealing with code. There’s a lot more people who go, oh, I do need to learn a lot of the code and that’s going on at the moment, and some projects I might just need to be able to not use my platform.
 
@@ -296,9 +296,9 @@ And, do you know one thing that I think would be important to, to. Align with th
 
 \[00:31:54\] **Nathan Wrigley:** Yeah. One thing that we haven’t mentioned in this episode or much in the other episodes is that you are also taking this as an opportunity to create, your own YouTube content around what we’re doing.
 
-Yeah. And, so that’s important and it will touch on the stuff that we cover in the episode. So for example, if, the stuff that. So it, the podcast that we’re doing, if it’s episode number five, if you go to our YouTube channel, the, YouTube cover art will look in a certain way for the podcast and it’ll have a five in it.
+Yeah. And, so that’s important and it will touch on the stuff that we cover in the episode. So for example, if, the stuff that. So it, the chat that we’re doing, if it’s episode number five, if you go to our YouTube channel, the, YouTube cover art will look in a certain way for the chat and it’ll have a five in it.
 
-But I’ve also noticed that you’ve got a different kind of color palette, the same color palette, but swapped around for the content that you make. But if it’s related to number five, you’ll still see a little five somewhere. But that’s also a part of what we’re doing, or you are doing, we are making this podcast.
+But I’ve also noticed that you’ve got a different kind of color palette, the same color palette, but swapped around for the content that you make. But if it’s related to number five, you’ll still see a little five somewhere. But that’s also a part of what we’re doing, or you are doing, we are making this chat.
 
 Hopefully it’s gaining a bit of popularity or interest or whatever that might be. And then you are gonna be making content over there. One of the, one of the things that you wrote is you wanna, look at the SEO of this website as well,
 
@@ -326,13 +326,13 @@ is more or less the same. We’re on, we’re looking at the stuffer episode sev
 
 \[00:35:52\] **David Waumsley:** explain who we are and why we’re doing this and what we’re specialized in.
 
-And it doesn’t even actually, right that homepage, it actually takes you to the audio podcast. And I would imagine we probably need to swap that player out to. YouTube where we seem to be on more with the option to go to your own podcast player of choice, So I imagine a reader Yeah, that’s an interesting idea.
+And it doesn’t even actually, right that homepage, it actually takes you to the audio chat. And I would imagine we probably need to swap that player out to. YouTube where we seem to be on more with the option to go to your own chat player of choice, So I imagine a reader Yeah, that’s an interesting idea.
 
-\[00:36:15\] **Nathan Wrigley:** yeah, encouraging people from that page. I think YouTube, the embedded video, ’cause the audio is obviously just the same, more or less. The, idea of just having a link, should, you wish, have you, you’ve landed here. Here’s a video, and if you’ve enjoyed the content that the video has presented, how about taking that a step further and adding it to your podcast player, a choice that might be a, so instead of playing it as audio, you just the option to find the RSS feed and what have you.
+\[00:36:15\] **Nathan Wrigley:** yeah, encouraging people from that page. I think YouTube, the embedded video, ’cause the audio is obviously just the same, more or less. The, idea of just having a link, should, you wish, have you, you’ve landed here. Here’s a video, and if you’ve enjoyed the content that the video has presented, how about taking that a step further and adding it to your chat player, a choice that might be a, so instead of playing it as audio, you just the option to find the RSS feed and what have you.
 
 That could be a good
 
-\[00:36:41\] **David Waumsley:** idea as well. Yeah, it could be, and it probably, we didn’t start it. I did the little videos where I’m talking about more the code stuff that. Which is roughly in line with what we’re talking about on the podcast more generally. there is one other thing that needs to be done that I think what will help us reach our goals to make this more community, and it’s what you are very skilled in, is the idea of interviewing some people.
+\[00:36:41\] **David Waumsley:** idea as well. Yeah, it could be, and it probably, we didn’t start it. I did the little videos where I’m talking about more the code stuff that. Which is roughly in line with what we’re talking about on the chat more generally. there is one other thing that needs to be done that I think what will help us reach our goals to make this more community, and it’s what you are very skilled in, is the idea of interviewing some people.
 
 Oh,
 
@@ -342,7 +342,7 @@ Oh,
 
 \[00:37:11\] **Nathan Wrigley:** an area that I’ve definitely clocked up some hours in doing that. Yes. and okay. Yeah, maybe be interesting because my, intuitions will be, I’ll have to hone those a lot more about the kind of questions that I ask, because I was immersed in WordPress prior to.
 
-beginning that podcast, I had a, set of a repertoire of questions, which I knew would land okay. But in this era, sorry, in this arena that, that won’t be the case. And I’ll, probably feel the, heavy burden of asking silly questions to intelligent people. So I’ll have, there’s gonna have to be a bit of, upskilling.
+beginning that chat, I had a, set of a repertoire of questions, which I knew would land okay. But in this era, sorry, in this arena that, that won’t be the case. And I’ll, probably feel the, heavy burden of asking silly questions to intelligent people. So I’ll have, there’s gonna have to be a bit of, upskilling.
 
 So related to the website though, putting out video content on the website. All right. So we did our best to
 
@@ -376,7 +376,7 @@ So we keep it as simple as possible and we iterate as we go because communicatio
 
 Acknowledging the fact that we’re in websites evolve and people evolve.
 
-\[00:41:44\] **Nathan Wrigley:** I’ve just had another thought about the, the website itself. And one of the things that I probably would want to add in, and I dunno how we’re gonna achieve this without a CMS, is, is some kind of commenting system. Because at this point in the podcast, what I want to say is, if anything you, you found in this podcast is of interest to you, or if you’ve got any, anything that you wanna add, head to the website and drop us in a comment.
+\[00:41:44\] **Nathan Wrigley:** I’ve just had another thought about the, the website itself. And one of the things that I probably would want to add in, and I dunno how we’re gonna achieve this without a CMS, is, is some kind of commenting system. Because at this point in the chat, what I want to say is, if anything you, you found in this chat is of interest to you, or if you’ve got any, anything that you wanna add, head to the website and drop us in a comment.
 
 I dunno, maybe that’s, on the five year plan. but we don’t have a commenting system. But if you’re interested, nevertheless, head over to no script show. Forward slash seven in this case. we’ve obviously got other episodes. Put a different number in there and see what pops out.
 

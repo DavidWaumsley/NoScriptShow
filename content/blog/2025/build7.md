@@ -421,11 +421,11 @@ So it's just
 
 [00:31:37] **Nathan Wrigley:** looking at that and not knowing what I'm talking about, it looks like it's going so reverse. True is newest to oldest, I'm guessing. Yeah, the alias is almost like a custom post out. We're looking for the posts. The size six is how many to show before the, before you need to click the pagination, so there's six on a page, and then there'll be six more on a page and six more.
 
-And exactly. Data collections podcast. I don't even know what that is. Not a clue. 
+And exactly. Data collections chat. I don't even know what that is. Not a clue. 
 
 [00:32:07] **David Waumsley:** that's because that's what I've named this particular collection, so it's on the, got it. Page, which we've now called chat at the moment where, okay, some, this is why it's not up at all because we, still sort out some of the naming conventions.
 
-We called it podcast and maybe we'll call it chats. I'll reconfigure this. But the beauty of it is, and it's the same with the tagging system of the base blog, is that it's automated for you. So when I need a new page, this is automatically going, yeah. It's not 
+We called it chat and maybe we'll call it chats. I'll reconfigure this. But the beauty of it is, and it's the same with the tagging system of the base blog, is that it's automated for you. So when I need a new page, this is automatically going, yeah. It's not 
 
 [00:32:33] **Nathan Wrigley:** gonna figure it all out for you. Okay. And it's 
 

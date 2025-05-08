@@ -2,7 +2,7 @@
 title: What is intrinsic web design?
 description: Web layout from a designer's point of view.
 date: 2024-02-02
-tags: ["podcast"]
+tags: ["chat"]
 permalink: "/4{{slugify }}/"
 videoid: gqsU-ysvQF0
 ---
@@ -36,7 +36,7 @@ An overlapping history that loosely goes from flow only to HTML tables to Flash 
 
 ### What does this mean for us?
 
-*   Re-educating ourselves (possibly without making a podcast)?
+*   Re-educating ourselves (possibly without making a chat)?
 *   Setting better expectations of the web for clients (ie. HTML/communication first)?
 *   A change in how we organise web projects (reversing the picture to web approach)?
 *   More creatively with space (thinking outside the fixed box)?
@@ -182,7 +182,7 @@ And if we can convert everything over to the web and rely less on, I don't know,
 
 And I put the answers in here as well, which was, we do, I do feel there is a bit of reeducation that's needed going on. we covered it a little bit last time in the sense that we were referring to. Rachel Andrew says It's often easier to teach somebody who doesn't know CSS today because we have to think about it in a very different way because suddenly an outpouring of a load of changes have come to it and, a new mental model.
 
-The intrinsic mental model, I think means that we have to reeducate ourselves, so not everybody can. Set up a podcast, but, that's our way of doing it, isn't it? Yeah. And it,
+The intrinsic mental model, I think means that we have to reeducate ourselves, so not everybody can. Set up a chat, but, that's our way of doing it, isn't it? Yeah. And it,
 
 \[00:19:32\] **Nathan Wrigley**: but there is a lot to, I don't know if unlearn is the right word, but there's a lot, like I said earlier, there's a lot, there's another layer, just a slap on top.
 

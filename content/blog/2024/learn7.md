@@ -1,31 +1,31 @@
 ---
 title: Adding an audio player (web components)
-description: Looking at a audio podcast player which is a shadow DOM component by Dave Rupert. It's fabulous but comes with some pros and cons.
+description: Looking at a audio chat player which is a shadow DOM component by Dave Rupert. It's fabulous but comes with some pros and cons.
 date: 2024-03-19
 tags: ["learn"]
 permalink: "/learn/7{{slugify }}/"
 videoid: J03DQ2rQBsE
 ---
 
-## Audio podcast player
+## Audio chat player
 --------------------
 
-This is the second follow-up to episode of the podcast where we we were talking about component based web design.
+This is the second follow-up to episode of the chat where we we were talking about component based web design.
 
-Here we are looking at the audio podcast player that's presently on the show website. This is a shadow DOM component by [Dave Rupert.](https://daverupert.com/) He is co-host of the [Shop Talk podcast](https://shoptalkshow.com/) which he does with Chris Coyier (of Codepen and formerly CSS tricks fame). This player is also used on their podcast too.
+Here we are looking at the audio chat player that's presently on the show website. This is a shadow DOM component by [Dave Rupert.](https://daverupert.com/) He is co-host of the [Shop Talk chat](https://shoptalkshow.com/) which he does with Chris Coyier (of Codepen and formerly CSS tricks fame). This player is also used on their chat too.
 
-We can find it at [HTML with superpowers](https://htmlwithsuperpowers.netlify.app/using/examples/podcast-player.html) where the code and working example is on (perhaps no surprise) [CodePen.](https://codepen.io/davatron5000/pen/LYerBQw)
+We can find it at [HTML with superpowers](https://htmlwithsuperpowers.netlify.app/using/examples/chat-player.html) where the code and working example is on (perhaps no surprise) [CodePen.](https://codepen.io/davatron5000/pen/LYerBQw)
 
 ## Installing the audio player
 ---------------------------
 
-To install the podcast player all we have to do is:
+To install the chat player all we have to do is:
 
 *   Copy and paste the JavaScript to our own JS file and reference it on the pages we are using it (just before the close `</body>` tag of our HTML).
 
 `<script type="module" src="/player.js"></script>`
 
-*   Then add the `<podcast-player> </podcast-player>` custom element to where we want the player to show in our HTML and within that add on an tag providing the source of our audio file.
+*   Then add the `<chat-player> </chat-player>` custom element to where we want the player to show in our HTML and within that add on an tag providing the source of our audio file.
     
 
 ## The pros and cons of shadow DOM components
@@ -39,45 +39,45 @@ For example the 60% of chromium browsers visitors (globally) will get a download
 
 Although there is not much in the way of styling included, you will see from the Codepen example that the CSS (flexbox) layout is encapsulated in the Javascript.
 
-As we discussed in the podcast, this can be good in the sense that it is portable. We can add the component to any project without the fear of naming or specificity conflicts with the existing CSS there.
+As we discussed in the chat, this can be good in the sense that it is portable. We can add the component to any project without the fear of naming or specificity conflicts with the existing CSS there.
 
 The downside is there is a delay to the CSS being processed which increases the Cumulative Layout Shift that Google's core web vital measures. In this case we see the browser's native audio player before the styling kicks in. On a slow internet connection it could be frustrating to move your finger or mouse over the play button only for it to move before you can complete the action.
 
 As I am coding alone to my own naming convention CSS encapsulation to me is not really a benefit. It forces me to do the CSS styling in a Javascript document where I lose the time-saving prompts and auto-completes that [Emmet](https://emmet.io/) gives me in the VS Code editor. I'm more prone to error.
 
-Of course, Dave Rupert and Chris Coyier are both far more knowledgeable on web components than I am. On their podcast they discussed this topic at the end of 2023 following a run of articles by people who influence web standards.
+Of course, Dave Rupert and Chris Coyier are both far more knowledgeable on web components than I am. On their chat they discussed this topic at the end of 2023 following a run of articles by people who influence web standards.
 
 It might be worth reading Chris's article on [light DOM components](https://frontendmasters.com/blog/light-dom-only/) that reflects and references the view that this, rather than Shadow DOM, might be our best first option.
 
-In this case (and as I understand it), if we want the fallback back of the HTML audio player we need the [shadow-root open for a slot in which to place it.](https://htmlwithsuperpowers.netlify.app/images/podcast-player.png)
+In this case (and as I understand it), if we want the fallback back of the HTML audio player we need the [shadow-root open for a slot in which to place it.](https://htmlwithsuperpowers.netlify.app/images/chat-player.png)
 
 As this is the [noscript.show](https://noscript.show/) we're focusing on what we can do with the declarative languages HTML and CSS, but if you want to learn Web Component. Dave Rupert has a [course on it.](https://frontendmasters.com/courses/web-components/) He has been following this tech for more than a decade before its recent popularity (as a way to escape the burnout of changing and competing 3rd party libraries?).
 
 It may also be worth following Zach Leatherman (best known for creating the 11ty static site generator) who creates, talks and [writes](https://www.zachleat.com/web/?category=web-components) a lot about Web Components.
 
-## Adjusting the podcast player defaults
+## Adjusting the chat player defaults
 -------------------------------------
 
 ### CSS
 
-Below is the custom CSS I added for this flexbox version. I initially "borrowed" the CSS grid layout used on the Shop Talk podcast.
+Below is the custom CSS I added for this flexbox version. I initially "borrowed" the CSS grid layout used on the Shop Talk chat.
 
 ```css
-.podcast-player {
+.chat-player {
 background-color:var(--shade);
 /* this is overwriting lower in the cascade*/   
   }
-.podcast-player button svg{
+.chat-player button svg{
 background-color:var(--brand);
 display:block;
 width:4rem;
 height:2rem;
 padding:.5rem; 
 }
-.podcast-player button {
+.chat-player button {
 background-color:var(--brand);
 }
-.podcast-player button:hover{
+.chat-player button:hover{
 filter: brightness(1.2);
 }
 .button-rewind{
@@ -86,19 +86,19 @@ display: none;
 .button-ff{
  display: none;
 }
-.podcast-player input[type=range] {
+.chat-player input[type=range] {
  appearance: none;
 width: 100%;
 background-color:var(--base);
 }
-.podcast-player input[type=range]::-webkit-slider-thumb {
+.chat-player input[type=range]::-webkit-slider-thumb {
 height: 1rem;
 width: 1rem; 
 background: var(--brand);
 cursor: pointer;
 appearance: none;      
 }
-podcast-player button {
+chat-player button {
  border:none;     
 }
 ```

@@ -80,7 +80,7 @@
 <div class="right-me">
 <ul class="post-metadata">
 	<li><time datetime="2024-02-29">29 February 2024</time></li>
-	<li><a href="/tags/podcast/" class="post-tag">podcast</a></li>
+	<li><a href="/tags/chat/" class="post-tag">chat</a></li>
 </ul>
 </div>
 </div>
@@ -133,7 +133,7 @@
 <li><a href="https://www.youtube.com/watch?v=PK_PICNTgAg">Talk: Is Atomic Design Dead? - Brad Frost</a></li>
 <li><a href="https://www.youtube.com/watch?v=R4Ri4ft7bXY">Talk: The Good, The Bad, and The Web Components - Zach Leatherman</a></li>
 <li><a href="https://github.com/paulirish/lite-youtube-embed?tab=readme-ov-file#pro-usage-load-w-js-deferred-aka-progressive-enhancement">Light Youtube Embed Web Component -Paul Irish</a></li>
-<li><a href="https://htmlwithsuperpowers.netlify.app/using/examples/podcast-player.html">Podcast Player Web Component - Dave Rupert</a></li>
+<li><a href="https://htmlwithsuperpowers.netlify.app/using/examples/chat-player.html">chat Player Web Component - Dave Rupert</a></li>
 </ul>
 <details>
 <summary>Transcript</summary>
@@ -198,16 +198,16 @@
 <p>Just so much extra code and no separation of concerns. So it depends who you are, but I can see there's a bit of a, shift away from the last decade where we were Yeah. Components because it didn't it make perfect sense?.</p>
 <p>[00:19:49] <strong>Nathan Wrigley</strong>: Is there anything in your recent forays into CSS and HTML. That you have been defeated by. Is there anything that you've wished to achieve or some sort of little stretch goal on a project where you thought that would be a nice thing to implement, where you realized that the only way to achieve that would've been through something like a JavaScript framework, but you just said to yourself, no, forget it. We'll just, we'll pair back the design, we'll do the, more straightforward thing.</p>
 <p>[00:20:15] <strong>David Waumsley</strong>: Yeah. I think you've just led onto the next topic, actually, the last thing we were gonna cover, which is, what are our component options? Because yes, in a way, we need it for this site. but yeah, we, I listed out some things here where we now have more options.</p>
-<p>Once really, if you wanted this component based design. And to encapsulate something that you were reusing, and in our case, we've needed it. We probably need a podcast player or not. We'll talk about this later. Yeah. But that's a component where we'd probably want to be able to take this one component and move it to wherever you needed an audio player without having to reinvent the wheel all the time with it.</p>
+<p>Once really, if you wanted this component based design. And to encapsulate something that you were reusing, and in our case, we've needed it. We probably need a chat player or not. We'll talk about this later. Yeah. But that's a component where we'd probably want to be able to take this one component and move it to wherever you needed an audio player without having to reinvent the wheel all the time with it.</p>
 <p>And before, really, there wasn't much option you would've to use something like a React library to do something like that. Where now we have got some new options, they're not new, but we have what is called web components. do you wanna explain that</p>
 <p>[00:21:10] <strong>Nathan Wrigley</strong>: a little bit? 'cause I think it might be interesting for it. Maybe use the use case of the, the air, what is it? Even the MP three player? That's what I'm after. The audio player. yeah, just go into that a</p>
 <p>[00:21:23] <strong>David Waumsley</strong>: little bit. I mean with web components, really, I mean it's just using, it's actually predates React. It goes back to, 2011. It's taken different forms and it's different APIs if you like, but essentially it is just linking your JavaScript to your HTML.</p>
 <p>So at the simplest level, it is a custom element that you create. So we've actually got a couple of them acting on the site, which I'll do videos on later. so we've actually got the videos going through a web component. I. Which effectively is just within, I borrowed it from somebody else's library, and all it is a custom element that says, I forgot what it's called actually on it.</p>
 <p>It says Light YouTube embed or whatever, and we're putting that in there. And then this JavaScript created by somebody else is acting on this custom element. Stopping YouTube from loading all of its things until this, image has been clicked. And we have another one where it is, taken from Dave Rupert, which I haven't shown to anybody yet.</p>
-<p>But, we'll do a video on this one, which is a podcast player, designed around the existing. audio tag the element itself, but add it on through JavaScript around another custom element called a podcast player. it adds to that and adds in some extra functionality through JavaScript and also the Stein in that goes with it.</p>
+<p>But, we'll do a video on this one, which is a chat player, designed around the existing. audio tag the element itself, but add it on through JavaScript around another custom element called a chat player. it adds to that and adds in some extra functionality through JavaScript and also the Stein in that goes with it.</p>
 <p>And this is what's considered as the shadow dom because. The styling isn't, so it's very portable. We can take that and move it anywhere else. So we have got that option in there. there's a lot to talk about this because it's done at the end of last year, 2000 and, 23. There were so many people, if you like, who were standard space people talking about this and whether they need it.</p>
 <p>that it's gained a lot of attention and for me. I don't know if I fully understand what we're talking about. 'cause some people talk about the shadow dom, which is a way of using JavaScript to add in to your browser, some extra slots if you like. Yeah. With functionality in it. And it allows you to encapsulate your CSS, which used to be a problem for everybody before.</p>
-<p>But it also has a slight issue with it in the sense that, as you saw, I was showing you the demo of the podcast player when you. Load the page. There's a, flash of un styled content that happens 'cause the JavaScript then has to load the, CSS. so there's a lot of people who are just looking towards the light dom.</p>
+<p>But it also has a slight issue with it in the sense that, as you saw, I was showing you the demo of the chat player when you. Load the page. There's a, flash of un styled content that happens 'cause the JavaScript then has to load the, CSS. so there's a lot of people who are just looking towards the light dom.</p>
 <p>But effectively, when you're talking about light dom, all you're talking about is putting a custom element. So you create your own instead of having a diviv. Between your angle brackets, you put a name, so it could be Pod, and it has to have a dash player in between that, and you've got your own custom element and you can attach JavaScript or CSS to it, or you can create within that.</p>
 <p>So that, that's the, I think more people are moving that way. certainly when you look at, it's not the case with React at the moment, but you can, through another service, you can convert a lot of the. Libraries that are created Views library, they've got one as well. And React Libraries, they can be converted into, web components, HTML, web components as well.</p>
 <p>So we, I think there's a lot of moving that way or moving both directions. So if you are a. JavaScript library person who wants to stay would react? I think you can. There's a, bit of a, getting back to standards without React, being something with JavaScript, people being off on a entirely different planet to the web standards people who put JavaScript as the third language, which you need to call upon.</p>
@@ -218,7 +218,7 @@
 <p>Makes it into a web component so you can make, I dunno, the play button be in the center rather than at the far left. You can make the, the, scrubber, the way you find where you want to go in the audio. You can stretch that across the whole element. You can add, jump 30 seconds, go back 30 seconds, you can put the speed up, play it two times and all of that.</p>
 <p>you can style it, you can make it go wherever you want, but a drawback of that. Is that the JavaScript takes a moment to load. So you get this kind of content, a cumulative layout shift problem where you get a flash of the old one, the new one comes in and it looks nice when it's done, but maybe you're storing up problems in terms of Google and SERP and all that.</p>
 <p>But I dunno, but is that what you're saying? This is the web component that you've played with here. You've hijacked the audio. The default audio player and you've just made it look different, but you can imagine that being played out across any aspect of the website. It could be the video, it could be the buttons, it could be anything.</p>
-<p>[00:27:26] <strong>David Waumsley</strong>: Yeah, I mean it's obviously, I haven't done it. It's somebody much cleverer than me, Dave Rupert, who's actually has created a podcast player for their show, which is Shop Talk. Which is, excellent. so they created that and I've just been able to literally just take their files and do that. And it's on style.</p>
+<p>[00:27:26] <strong>David Waumsley</strong>: Yeah, I mean it's obviously, I haven't done it. It's somebody much cleverer than me, Dave Rupert, who's actually has created a chat player for their show, which is Shop Talk. Which is, excellent. so they created that and I've just been able to literally just take their files and do that. And it's on style.</p>
 <p>if I put the styling on, I have to take the sty in and put it in the JavaScript itself, and it's loading it through the shadow dom. But yes, it's creating all of the things that through JavaScript they've added in, which isn't in the default audio, but if somebody turns JavaScript off, the interesting thing is that we're still putting the audio, tag within.</p>
 <p>The custom element tags that we've got, and if I turn JavaScript off the audio. Player is still there, the default one that's in your browser and will still play if you turn off your JavaScript. So as wonderful fallback. Yeah. So</p>
 <p>[00:28:21] <strong>Nathan Wrigley</strong>: the JavaScript hijacks the already loaded audio tag and then just disrupts that and replaces it, what have you.</p>
@@ -279,10 +279,10 @@
 <h3 id="audio-episodes">Audio episodes</h3>
 
 <ul> 
-<li><a href="https://podcasts.apple.com/us/podcast/no-script-show/id1721164461">Apple podcasts</a></li>  
+<li><a href="https://chats.apple.com/us/chat/no-script-show/id1721164461">Apple chats</a></li>  
 <li><a href="https://open.spotify.com/show/3Ki7eEhpGheFpmJOzZ0WEi">Spotify</a></li> 
 <li><a href="https://castbox.fm/channel/id5744674?utm_campaign=ex_share_ch&utm_medium=exlink&country=us">Castbox.fm</a></li>
-<li><a href="https://www.podcastrepublic.net/podcast/1721164461">Podcast Republic</a></li>
+<li><a href="https://www.chatrepublic.net/chat/1721164461">chat Republic</a></li>
 <li><a href="https://feeds.hubhopper.com/9698ac00a8141974e116d9298f9f87c8.rss">Feed</a></li>   
 </ul>
 </nav>
@@ -306,7 +306,7 @@
  </div>
 </footer>
 
-		<!-- This page `/5/` was built on 2025-05-08T16:32:15.242Z -->
+		<!-- This page `/5/` was built on 2025-05-08T16:33:32.436Z -->
 		<script type="module" src="/dist/2it2F9Kmpn.js"></script>		
 </body>
 </html>

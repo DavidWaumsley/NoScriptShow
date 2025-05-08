@@ -2,7 +2,7 @@
 title: What's the big deal with container queries?
 description: Another approach to component based design, but focussed on layout.
 date: 2024-03-14
-tags: ["podcast"]
+tags: ["chat"]
 permalink: "/6{{slugify }}/"
 videoid: nFkXOvt40F0
 ---Show Notes

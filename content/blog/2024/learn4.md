@@ -12,7 +12,7 @@ videoid: AQAw17sNO6c
 
 As hyperlinks make the web what it is, I thought I should talk a bit about how we have marked-up and styled our anchor tags on this initial version of the show's website.
 
-The premise of the podcast is that we are relearning the fundamentals of web design. What this has been showing us is that this process is only partly about learning new approaches and specifications.
+The premise of the chat is that we are relearning the fundamentals of web design. What this has been showing us is that this process is only partly about learning new approaches and specifications.
 
 Much of it is about unlearning things that once seemed like cool design, but increasingly look more like ignorance and even contempt for web users.
 

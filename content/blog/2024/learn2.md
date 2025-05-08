@@ -11,13 +11,13 @@ TRANSCRIPT
 
 ### The reason for this video
 
-This is an extra to the main no script podcast.
+This is an extra to the main no script chat.
 
-As part of the podcast we are live designing and developing the show's website. This is so as the show progresses we can highlight the huge number of significant advances that have been coming to the web platform recently (mostly HTML and CSS).
+As part of the chat we are live designing and developing the show's website. This is so as the show progresses we can highlight the huge number of significant advances that have been coming to the web platform recently (mostly HTML and CSS).
 
 Ahead of our episode on typography (where there will be too much to cover) I thought it might be helpful to do a quick walkthrough of the responsive typography that's already been set up.
 
-As with much of the podcast we are presently learning how to move to the more flexible intrinsic web design approach.
+As with much of the chat we are presently learning how to move to the more flexible intrinsic web design approach.
 
 I hated having to set font sizes for different devices with media queries. It got ever more time consuming and ineffective as the range of devices available grew.
 

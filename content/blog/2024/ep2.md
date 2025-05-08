@@ -2,7 +2,7 @@
 title: The big picture.
 description: How this show tries to follow the development of the web.
 date: 2024-01-17
-tags: ["podcast"]
+tags: ["chat"]
 permalink: "/2{{slugify }}/"
 videoid: DYhaggDCBmM
 ---
@@ -37,9 +37,9 @@ Below is the order to the subjects we are covering next. We are using them here 
 
 <details>
 <summary>Transcript</summary>
-\[00:00:06\] **Nathan Wrigley:**:Hello there and welcome to this the second episode of the No Script Show, a brand new podcast, which is gonna be all about modern front end web design, where we look at what we can build today with minimal dependencies and skills. I'm joined as I always will be by David Waumsley. Hi David.
+\[00:00:06\] **Nathan Wrigley:**:Hello there and welcome to this the second episode of the No Script Show, a brand new chat, which is gonna be all about modern front end web design, where we look at what we can build today with minimal dependencies and skills. I'm joined as I always will be by David Waumsley. Hi David.
 
-\[00:00:06\] **Nathan Wrigley:**:Hello there and welcome to this the second episode of the No Script Show, a brand new podcast, which is gonna be all about modern front end web design, where we look at what we can build today with minimal dependencies and skills. I'm joined as I always will be by David Waumsley. Hi David.
+\[00:00:06\] **Nathan Wrigley:**:Hello there and welcome to this the second episode of the No Script Show, a brand new chat, which is gonna be all about modern front end web design, where we look at what we can build today with minimal dependencies and skills. I'm joined as I always will be by David Waumsley. Hi David.
 
 Hello. As I said, this is the second episode. In the first episode, we just orientated you a little bit about who we are and what our background is. This episode will be a little bit different, but I still feel orientation is the right word because we're gonna spend a moment or two just thinking about what we're gonna be doing in the episodes to come.
 
@@ -75,13 +75,13 @@ I. To gain knowledge because really all you had to do was buy a book. And that b
 
 But also they may be putting out just half the story or telling you things, which really ultimately you don't want to be doing. So yeah, I think the endeavor here is just to, is to reset a little bit. you've found a, list of people that you trust and you've got in, you've got intuitions as to why you can trust them.
 
-But I do think going back to the W three C is now a really good option and, I, dunno if it's done a really great way of. Advertising itself, particularly as the, source of authority, because it feels like that's not what its purpose is. But that's, what we're making this podcast about.
+But I do think going back to the W three C is now a really good option and, I, dunno if it's done a really great way of. Advertising itself, particularly as the, source of authority, because it feels like that's not what its purpose is. But that's, what we're making this chat about.
 
-Really. We're putting them the W three C right in the center front and center and, all of the different things are being, being talked about in this podcast
+Really. We're putting them the W three C right in the center front and center and, all of the different things are being, being talked about in this chat
 
 \[00:07:06\] **David Waumsley**: will be related to that. So yeah, it all got a bit
 
-\[00:07:10\] **Nathan Wrigley:**:shattered. I think it's become more shattered. And your genius, I think, really about putting this podcast together was the idea that, let's just brush aside all those shattered bits and let's just concentrate on the bit in the middle, the W three C and we will get into all of the knots and the bolts, the CSS and the h tmm l and a whole range of other subjects.
+\[00:07:10\] **Nathan Wrigley:**:shattered. I think it's become more shattered. And your genius, I think, really about putting this chat together was the idea that, let's just brush aside all those shattered bits and let's just concentrate on the bit in the middle, the W three C and we will get into all of the knots and the bolts, the CSS and the h tmm l and a whole range of other subjects.
 
 But today is more about what are we trying to learn? Who are we trying to learn from? And if you're watching the screen, finding a direction and gaining some perspective.
 
