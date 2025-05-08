@@ -3,8 +3,6 @@ COMPOSITION
 -----------
 BODY
 HEADER & NAV 
-HOMEPAGE MAIN
-ABOUT
 FOOTER 
 FLUID BREAKOUTS 
 */
@@ -29,10 +27,10 @@ body {
 }
   
   header {
-    margin-inline: 6vw;
+    margin-inline: 2vw;
   }
   footer {
-    margin-inline: 6vw;
+    margin-inline: 2vw;
   }
   main { 
     margin-inline: 2vw; 
@@ -62,6 +60,36 @@ body {
       padding-block-end: var(--space-l);
     }
   }
+
+
+/********************************/
+/******** FOOTER  ********/
+
+.fa1   {grid-area: fa1;}
+.fa2   {grid-area: fa2;}
+.fa3   {grid-area: fa3; justify-self: center; margin-block-end:var(--space-l) ;}
+
+
+@media (width > 40rem) {
+footer .footer-wrapper{  
+  display: grid;
+  justify-items: center;
+  grid-template:  
+  "fa1 fa2"
+  "fa3 fa3"
+ / 1fr 1fr ;
+
+}
+}
+
+.footer-wrapper{
+  display: grid;
+  margin-block-start: -3rem;
+  padding: var(--space-l);
+  justify-content: center; 
+}
+
+
   
 .box {
   /*--------Settings-------*/ 
@@ -77,8 +105,6 @@ body {
   grid-gap: var(--grid-gap);
   padding-block: var(--grid-gap); 
 }
-
-  
 
 .box li {
   margin: 0;

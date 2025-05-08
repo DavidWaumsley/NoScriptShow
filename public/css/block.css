@@ -1,3 +1,45 @@
+
+.btn, .btn:active{  
+  border: none;
+  background-color: var(--brand);  
+  color: var(--text-alt);
+  display: block;
+  padding: 0.6em 1.5em;
+  font-weight: 900;
+  letter-spacing: 0.05em; 
+  font-family: "Ubuntu Mono Bold"; 
+  text-decoration: none;  
+  text-transform: uppercase;
+  width:  fit-content;
+  height: fit-content; 
+  font-size: var(--step-0); 
+  outline: 0.1rem solid transparent;
+  outline-offset: -0.125rem;
+  /* box-shadow: 0  .1rem 0rem 0rem hsla(0, 0%, 2%, 1); */
+  transition: .2s ease-out;
+  margin-block: var(--space-m);
+}
+
+.btn-alt{
+  background-color: var(--text);
+  color: var(--text-alt) ;
+}
+
+.btn:hover {
+  color: #fff;
+  transition: .1s ease-in; 
+  box-shadow: 0 0 0 0 hsla(0, 0%, 2%, 0.1);    
+  background-color: var(--brand); 
+}  
+ 
+.btn:focus-visible{
+  outline: 0.3rem solid var(--brand);  
+  border-radius: 0.5rem;
+}
+
+
+
+
 /********************************/
 /******** HEADER & NAV  ********/
 
@@ -84,15 +126,73 @@ padding: var(--space-2xs);
   margin-block-end: 2rem;
 }
 
+.projects .reel-text{
+  border: .4rem solid var(--text-alt);
+  padding: var(--space-m);
+  width: fit-content;
+}
+
+
+.projects .reel-text small{
+  margin-block-start: var(--space-xs);
+ background-color: var(--brand); 
+ font-weight: 700;
+ padding-inline: var(--space-2xs);
+ padding-block: var(--space-3xs);
+}
+
 .projects{
   background-color: var(--text);
   color: var(--text-alt);
   padding: var(--space-l);
 }
 
-.projects h2{
+.projects a {
+  color: var(--text-alt);
+ }
+
+  .projects a:hover {
+text-decoration-color: var(--text-alt) ;
+ }
+
+ .projects figcaption{
+  text-align: right;
+ }
+
+ .projects h2{
  color: var(--text-alt);
+ margin-block-end: var(--space-m);
 }
+
+
+.reel  {
+  display: flex;
+  block-size: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-color:  var(--brand) var(--text); 
+}
+
+.reel > * {
+flex: 0 0 auto;
+margin-block-end: var(--space-m);
+}
+
+.reel div {
+flex-basis: 26rem; 
+}
+
+/* space between "slides" */
+.reel > * {
+margin-inline-end: 5rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reel{
+    scroll-behavior: smooth;
+  }
+}
+
 
 .bio img{
   background-color: var(--brand);
@@ -111,7 +211,8 @@ lite-youtube {
     contain: content;
     background-position: center center;
     background-size: cover;
-    cursor: pointer;   
+    cursor: pointer; 
+    border: .4rem solid var(--text);  
 }
 
 /* gradient */
@@ -258,67 +359,6 @@ lite-youtube.lyt-activated > .lyt-playbtn {
   }
 
 
-  .btn, .btn:active{  
-    border: none;
-    background-color: var(--brand);  
-    color: var(--text-alt);
-    display: block;
-    padding: 0.6em 1.5em;
-    font-weight: 900;
-    letter-spacing: 0.05em; 
-    font-family: "Ubuntu Mono Bold"; 
-    text-decoration: none;  
-    text-transform: uppercase;
-    width:  fit-content;
-    height: fit-content; 
-    font-size: var(--step-0); 
-    outline: 0.1rem solid transparent;
-    outline-offset: -0.125rem;
-    /* box-shadow: 0  .1rem 0rem 0rem hsla(0, 0%, 2%, 1); */
-    transition: .2s ease-out;
-    margin-block: var(--space-m);
-  }
-
-  .btn-alt{
-    background-color: var(--text);
-    color: var(--text-alt) ;
-  }
-  
-  .btn:hover {
-    color: #fff;
-    transition: .1s ease-in; 
-    box-shadow: 0 0 0 0 hsla(0, 0%, 2%, 0.1);    
-    background-color: var(--brand); 
-  }  
-   
-  .btn:focus-visible{
-    outline: 0.3rem solid var(--brand);  
-    border-radius: 0.5rem;
-  }
-  
-
-  .reel  {
-    display: flex;
-    block-size: auto;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scrollbar-color:  var(--brand) var(--text);   
-}
-
-
-.reel > * {
-  flex: 0 0 auto;
-  }
-  
-  .reel div {
-  flex-basis: 26rem; 
-  padding: 2rem;
-  }
-  
-  /* space between "slides" */
-  .reel > * {
-  margin-inline-end: 10rem;
-  }
 
   .bio{ 
     padding: var(--space-l);
@@ -469,14 +509,7 @@ code {
 /********************************/
 /************ FOOTER ************/
 
-footer .wrapper{
-  padding: var(--space-l);
-}
-footer > ul{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* justify-items: center;   */
-}
+
 
 footer h3{
   font-size: var(--step-1);
