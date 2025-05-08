@@ -31,6 +31,8 @@ layout: layouts/base.njk
 {{ content | safe }}
 </article>
 </div>
+
+<div class="popout">
 </heading-anchors>
 {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}
@@ -43,4 +45,4 @@ layout: layouts/base.njk
 {%- endif %}
 {%- endif %}
 
-
+</div>

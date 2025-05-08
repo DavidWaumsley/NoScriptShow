@@ -332,13 +332,30 @@ lite-youtube.lyt-activated > .lyt-playbtn {
   }
 
   .post-metadata li{
-
     font-size: var(--step-0);
   }
  
-  .pagination li {
-    display: inline-block;
+  .pagination {  
+    justify-self: center;  
   }
+
+  .pagination li {
+    display: inline-block; 
+    margin-block-end: var(--space-m);  
+   
+  }
+
+
+  .pagination a {
+   border: .4rem solid var(--text);   
+  }
+
+  .pagination a:hover {
+  background-color: var(--brand); 
+  color: var(--text-alt); 
+   }
+
+
 
 
 
