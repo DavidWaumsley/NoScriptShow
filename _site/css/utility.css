@@ -142,3 +142,8 @@
 .brand-font{
   font-family: "Ubuntu Mono" , monospace; 
 }
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: hsl(240, 8%, 10%);
+}

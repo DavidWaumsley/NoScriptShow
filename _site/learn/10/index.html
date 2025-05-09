@@ -40,7 +40,7 @@
 <meta property="twitter:description" content="About the accessibility considerations of adding a dark and light theme toggle switcher.">
 <meta property="twitter:image" content="https://i.ytimg.com/vi_webp/NbOtbHW4zlA/maxresdefault.webp">
 
-<link rel="stylesheet" href="/dist/ZTNeIPsLJn.css">
+<link rel="stylesheet" href="/dist/pm_ijUcjZg.css">
  <link rel="preload" href="/fonts/UbuntuMono-Bold.woff2" as="font" type="font/woff2" crossorigin="">
  <link rel="preload" href="/fonts/UbuntuMono-Regular.woff2" as="font" type="font/woff2" crossorigin="">
  <meta name="generator" content="Eleventy v3.0.0">
@@ -138,15 +138,15 @@
 /* All the light rules again*/
 } </code></pre>
 <p>If we want the same we need to add some additional JS.</p>
-<pre class="language-js" tabindex="0"><code class="language-js"><span class="token operator">&lt;</span>script<span class="token operator">></span>
- <span class="token comment">// Inline script to set the initial theme based on system preference or local storage</span>
+<pre class="language-js" tabindex="0"><code class="language-js">
+ <span class="token comment">// Inline script to set the initial theme </span>
 <span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
  <span class="token keyword">const</span> localStorageTheme <span class="token operator">=</span> localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">'theme'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
  <span class="token keyword">const</span> systemPrefersDark <span class="token operator">=</span> window<span class="token punctuation">.</span><span class="token function">matchMedia</span><span class="token punctuation">(</span><span class="token string">'(prefers-color-scheme: dark)'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>matches<span class="token punctuation">;</span>
  <span class="token keyword">const</span> theme <span class="token operator">=</span> localStorageTheme <span class="token operator">?</span> localStorageTheme <span class="token operator">:</span> <span class="token punctuation">(</span>systemPrefersDark <span class="token operator">?</span> <span class="token string">'dark'</span> <span class="token operator">:</span> <span class="token string">'light'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
  document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">'data-theme'</span><span class="token punctuation">,</span> theme<span class="token punctuation">)</span><span class="token punctuation">;</span>
  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
- <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span> </code></pre>
+</code></pre>
 <p>I got Chat GPT to do this. It's probably best to let the browser read this first. I have to put this in the head. Also I have to place the prefers-color-scheme media queries first in the CSS.</p>
 <p>We will probably stick with Salma's approach. The CSS duplication seems fine for a few colours, but if you get into swapping icons and images based on dark and light preference the code and maintenance starts adding up.</p>
 <h2 id="no-js-no-toggle">No JS - no toggle</h2>
@@ -181,7 +181,6 @@
 
 <ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/11/">What’s new in web images</a></li><li class="links-nextprev-next">Next →<br><a href="/learn/11/">Finally, a delightful free accessibility tool. Silktide&#39;s accessibility checker</a></li>
 </ul>
-
 </div>
 			
 </main>	
@@ -222,7 +221,7 @@
  </div>
 </footer>
 
-		<!-- This page `/learn/10/` was built on 2025-05-09T10:11:56.319Z -->
+		<!-- This page `/learn/10/` was built on 2025-05-09T12:48:37.915Z -->
 		<script type="module" src="/dist/2it2F9Kmpn.js"></script>		
 </body>
 </html>

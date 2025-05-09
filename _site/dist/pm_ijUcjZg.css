@@ -125,6 +125,7 @@ pre[class*="language-"] {
  * New diff- syntax
  */
 
+
 pre[class*="language-diff-"] {
 	--eleventy-code-padding: 1.25em;
 	padding-left: var(--eleventy-code-padding);
@@ -169,6 +170,51 @@ pre[class*="language-diff-"] {
 
 :not(pre) > code[class*="language-"], pre[class*="language-"] {
     background:hsl(240, 8%, 10%);
+}
+
+/* Reset and ensure proper overflow behavior */
+pre[class*="language-"] {
+  overflow-x: auto;
+  white-space: pre;
+  word-wrap: normal;
+  width: 100%; /* Start with 100% width */
+  box-sizing: border-box;
+  margin: 1.5rem 0;
+}
+
+/* Explicit width controls without min() or calc() functions */
+@media (max-width: 80rem) {
+  pre[class*="language-"] {
+    max-width: 45rem;
+    width: 45rem;
+  }
+}
+
+@media (max-width: 50rem) {
+  pre[class*="language-"] {
+    max-width: 20rem;
+    width: 20rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  pre[class*="language-"] {
+    max-width: 15rem;
+    width: 15rem;
+  }
+}
+
+/* Force code blocks to respect parent container at all sizes */
+.page-layout > pre[class*="language-"],
+.full-width > pre[class*="language-"] {
+  display: block;
+  position: relative;
+}
+
+/* Ensure code inside maintains formatting */
+code[class*="language-"] {
+  white-space: pre;
+  word-spacing: normal;
 }
 /*CSS RESET*/
 
@@ -238,6 +284,9 @@ body {
 :target {
   scroll-margin-block: 5ex;
 }
+
+
+
 /*
 GLOBAL STYLES
 --------------
@@ -603,6 +652,8 @@ code {
   font-family: "Courier New", Courier, monospace;
   padding: 0.2rem;
 }
+
+
 /*
 COMPOSITION
 -----------
@@ -672,9 +723,21 @@ body {
 .fa3   {grid-area: fa3; justify-self: center; margin-block-end:var(--space-l) ;}
 
 
-@media (width > 40rem) {
+@media (width <= 40rem) {
 footer .footer-wrapper{  
-  display: grid;
+  display: grid; 
+  justify-self: center;  
+  grid-template:  
+  "fa1"
+  "fa2" 
+  "fa3"
+ / 1fr ;
+
+}
+}
+
+@media (width > 40rem) {
+footer .footer-wrapper{   
   justify-items: center;
   grid-template:  
   "fa1 fa2"
@@ -690,7 +753,6 @@ footer .footer-wrapper{
   padding: var(--space-l);
   justify-content: center; 
 }
-
 
   
 .box {
@@ -708,7 +770,7 @@ footer .footer-wrapper{
   padding-block: var(--grid-gap); 
 }
 
-.box li:not(div), .box div{
+.box li{
   margin: 0;
   padding: var(--space-m);
   list-style: none;
@@ -729,6 +791,7 @@ font-size: var(--step-2);
 .page-layout > *,
 .full-width > * {
   grid-column: content;
+  
 }
 .page-layout,
 .full-width {
@@ -949,6 +1012,11 @@ font-size: var(--step-2);
 
 .brand-font{
   font-family: "Ubuntu Mono" , monospace; 
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: hsl(240, 8%, 10%);
 }
 /*
 BLOCK
@@ -1553,6 +1621,6 @@ footer li{
   list-style: none;
 }
 
-footer nav a{
-  padding-inline-start: 0;
+footer a{
+ padding-inline-start: 0;
 }

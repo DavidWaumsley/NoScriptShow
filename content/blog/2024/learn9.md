@@ -78,6 +78,7 @@ This is what I'm doing presently. The javaScript I used was prompted with Chat G
 
 ### javaScript
 
+
 ```js
 
  // Get the toggle button element by its ID

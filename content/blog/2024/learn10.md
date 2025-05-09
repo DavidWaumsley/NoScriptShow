@@ -101,16 +101,17 @@ AND
 } 
 ```
 If we want the same we need to add some additional JS.
+
 ```js
-<script>
- // Inline script to set the initial theme based on system preference or local storage
+
+ // Inline script to set the initial theme 
 (function() {
  const localStorageTheme = localStorage.getItem('theme');
  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
  const theme = localStorageTheme ? localStorageTheme : (systemPrefersDark ? 'dark' : 'light');
  document.documentElement.setAttribute('data-theme', theme);
  })();
- </script> 
+
  ```
 
 I got Chat GPT to do this. It's probably best to let the browser read this first. I have to put this in the head. Also I have to place the prefers-color-scheme media queries first in the CSS.

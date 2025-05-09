@@ -1,8 +1,8 @@
 /*CSS RESET*/
 
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
 
 *,
 *:before,
@@ -66,3 +66,5 @@ body {
 :target {
   scroll-margin-block: 5ex;
 }
+
+
