@@ -14,6 +14,9 @@
     document.documentElement.setAttribute('data-theme', 'dark');
   }
 </script> 
+<link rel="icon" type="img/x-icon" href="/svg/favicon.svg">
+<link rel="icon" href="img/favicon.ico" sizes="any">
+
 <meta name="description" content="{{ description or metadata.description }}">
 <link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 
@@ -62,12 +65,9 @@
 </div>	
 
   {% include "partials/header.njk" %}
-<main class="[ page-layout ] [ flow ]" id="skip">
-			
-				{{ content | safe }}
-			
-</main>
-	
+<main class="[ page-layout ] [ flow ]" id="skip">			
+				{{ content | safe }}			
+</main>	
   {% include "partials/footer.njk" %}
 
 		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
