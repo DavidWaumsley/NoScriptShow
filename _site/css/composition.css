@@ -64,7 +64,10 @@ body {
 
 .fa1   {grid-area: fa1;}
 .fa2   {grid-area: fa2;}
-.fa3   {grid-area: fa3; justify-self: center; margin-block-end:var(--space-l) ;}
+.fa3   {grid-area: fa3; 
+  justify-self: center;
+  margin-block-end:var(--space-l);
+  padding-inline: var(--space-l);}
 
 
 @media (width <= 40rem) {
