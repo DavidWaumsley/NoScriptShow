@@ -601,6 +601,6 @@ footer li{
   list-style: none;
 }
 
-footer nav a{
-  padding-inline-start: 0;
+footer a{
+ padding-inline-start: 0;
 }

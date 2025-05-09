@@ -67,9 +67,21 @@ body {
 .fa3   {grid-area: fa3; justify-self: center; margin-block-end:var(--space-l) ;}
 
 
-@media (width > 40rem) {
+@media (width <= 40rem) {
 footer .footer-wrapper{  
-  display: grid;
+  display: grid; 
+  justify-self: center;  
+  grid-template:  
+  "fa1"
+  "fa2" 
+  "fa3"
+ / 1fr ;
+
+}
+}
+
+@media (width > 40rem) {
+footer .footer-wrapper{   
   justify-items: center;
   grid-template:  
   "fa1 fa2"
@@ -85,7 +97,6 @@ footer .footer-wrapper{
   padding: var(--space-l);
   justify-content: center; 
 }
-
 
   
 .box {
