@@ -7,8 +7,6 @@ permalink: "/learn/1{{slugify }}/"
 videoid: ANg1d8wO3Pc
 ---
 
-
-
 TRANSCRIPT
 ----------
 

@@ -35,7 +35,7 @@ The code I am using here comes from Salma Alam-Naylor's (slightly tongue in chee
 
 I've made some additions to Salma's code which I have included in the article that goes with the video and we explain them here.
 
-I've also been looking at two other dark and light switches from to two other developers I admire: [Una Kravets](https://una.im/ target=) personal site and CSS in real life by [Michelle Barker](https://css-irl.info/) .
+I've also been looking at two other dark and light switches from to two other developers I admire: [Una Kravets](https://una.im/ target=) personal site and CSS in real life by [Michelle Barker](https://css-irl.info/).
 
 All of the above are similar to what I shared before. They all use a HTML button for the switch, they all try to honour the user system preference first and use the browser's local storage to hold changes in preference.
 
@@ -162,7 +162,7 @@ As dark and light themes become increasingly becoming a standard I’d rather be
 
 I feel more sure of this after seeing a couple of these switches made for the massive WordPress audience that have not taken anything the care the people I feature here have. Previously, I would have excitedly jumped on these taking it for granted that I was aiding accessibility
 
-Whilst I don't think this is as bad as the way things went with the accessibility overlays market (which I am sure was well intended originally) but, I think some early standards might avoid a similar thing happening . Rant over!
+Whilst I don't think this is as bad as the way things went with the accessibility overlays market (which I am sure was well intended originally) but, I think some early standards might avoid a similar thing happening. Rant over!
 
 [The code](https://codepen.io/David-Waumsley-the-solid/pen/ExzyyoK)
 -------------------------------------------------------------------
