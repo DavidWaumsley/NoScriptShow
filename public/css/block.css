@@ -560,6 +560,15 @@ header svg {
   padding: var(--space-xs);
 }
 
+
+@media (width <= 45rem) {
+.nss-icon {
+  display: none;
+}
+
+}
+
+
 header nav ul {
   display: flex;
   flex-wrap: wrap; 
