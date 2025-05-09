@@ -1,97 +1,33 @@
-
-.btn, .btn:active{  
-  border: none;
-  background-color: var(--brand);  
-  color: var(--text-alt);
-  display: block;
-  padding: 0.6em 1.5em;
-  font-weight: 900;
-  letter-spacing: 0.05em; 
-  font-family: "Ubuntu Mono Bold"; 
-  text-decoration: none;  
-  text-transform: uppercase;
-  width:  fit-content;
-  height: fit-content; 
-  font-size: var(--step-0); 
-  outline: 0.1rem solid transparent;
-  outline-offset: -0.125rem;
-  /* box-shadow: 0  .1rem 0rem 0rem hsla(0, 0%, 2%, 1); */
-  transition: .2s ease-out;
-  margin-block: var(--space-m);
-}
-
-.btn-alt{
-  background-color: var(--text);
-  color: var(--text-alt) ;
-}
-
-.btn:hover {
-  color: #fff;
-  transition: .1s ease-in; 
-  box-shadow: 0 0 0 0 hsla(0, 0%, 2%, 0.1);    
-  background-color: var(--brand); 
-}  
- 
-.btn:focus-visible{
-  outline: 0.3rem solid var(--brand);  
-  border-radius: 0.5rem;
-}
-
-
-
-
-/********************************/
-/******** HEADER & NAV  ********/
-
-header svg {
-  margin-block-start: -2rem;
-  inline-size:16rem;
-  padding: var(--space-xs); 
-}
-
-.nss-icon {
-  inline-size:16rem;
-  padding: var(--space-xs);
-}
-
-header nav ul {
-  display: flex;
-  flex-wrap: wrap; 
-  margin-block-end: 0; 
-}
-
-nav a,
-nav a:active:not(.btn) {
-  font-size: var(--step--1);
-  text-transform: uppercase;
-  transition: 0.5s;
-  padding: var(--space-xs);
-}
-
-header nav a[href]:not(:hover) {
-text-decoration: none;
-  list-style-type: none;
-}
-
-.nav a[href][aria-current="page"] {
-text-decoration: underline;
-text-decoration-thickness: .4rem;
-text-decoration-color: var(--brand);
-text-underline-offset: .8rem;
-}
-
-header li {
-  list-style: none;
-  line-height: 2.2;
-}
-
-header a {
-  text-decoration: none;
-}
+/*
+BLOCK
+-----------
+HOMEPAGE:   Hero - Episodes - Projects - Hosts
+POSTS:   Paginations 
+GLOBAL: Light Youtube - Light/dark mode - Forms - Buttons - Header - Footer
+*/
 
 /********************************/
 /************ HOMEPAGE ************/
 
+/* HERO */
+
+  .value-prop{
+    font-size: var(--step-7);
+    text-align:center;
+    font-weight: 700;
+  }
+  
+  .value-prop span{
+    display: block;
+    font-size: var(--step--1);
+    text-align:center;
+    text-transform: uppercase;
+    line-height: 1.5; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+    font-weight: 600;
+  }
+
+/* EPISODES */
 
 .latest-eps{ 
   border-inline: .4rem solid var(--text);
@@ -122,12 +58,13 @@ padding: var(--space-2xs);
   margin-block-end: 2rem;
 }
 
-.projects .reel-text{
-  border: .4rem solid var(--text-alt);
-  padding: var(--space-m);
-  width: fit-content;
-}
+/* PROJECTS */
 
+.projects{
+  background-color: var(--text);
+  color: var(--text-alt);
+  padding: var(--space-l);
+}
 
 .projects .reel-text small{
   margin-block-start: var(--space-xs);
@@ -137,17 +74,11 @@ padding: var(--space-2xs);
  padding-block: var(--space-3xs);
 }
 
-.projects{
-  background-color: var(--text);
-  color: var(--text-alt);
-  padding: var(--space-l);
-}
-
 .projects a {
   color: var(--text-alt);
  }
 
-  .projects a:hover {
+ .projects a:hover {
 text-decoration-color: var(--text-alt) ;
  }
 
@@ -183,197 +114,19 @@ flex-basis: 26rem;
 margin-inline-end: 5rem;
 }
 
+.projects .reel-text{
+  border: .4rem solid var(--text-alt);
+  padding: var(--space-m);
+  width: fit-content;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .reel{
     scroll-behavior: smooth;
   }
 }
 
-
-.bio img{
-  background-color: var(--brand);
-  background: linear-gradient(180deg, transparent 33.3%,  var(--brand) 33.3%);  
- }
-
-
-/********************************/
-/************ YOUTUBE ************/
-
-
-lite-youtube {
-    background-color: #000;
-    position: relative;
-    display: block;
-    contain: content;
-    background-position: center center;
-    background-size: cover;
-    cursor: pointer; 
-    border: .4rem solid var(--text);  
-}
-
-/* gradient */
-lite-youtube::before {
-    content: attr(data-title);
-    display: block;
-    position: absolute;
-    top: 0;
-    /* Pixel-perfect port of YT's gradient PNG, using https://github.com/bluesmoon/pngtocss plus optimizations */
-    background-image: linear-gradient(180deg, rgb(0 0 0 / 67%) 0%, rgb(0 0 0 / 54%) 14%, rgb(0 0 0 / 15%) 54%, rgb(0 0 0 / 5%) 72%, rgb(0 0 0 / 0%) 94%);
-    height: 99px;
-    width: 100%;
-    font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
-    color: hsl(0deg 0% 93.33%);
-    text-shadow: 0 0 2px rgba(0,0,0,.5);
-    font-size: 18px;
-    padding: 25px 20px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    box-sizing: border-box;
-}
-
-lite-youtube:hover::before {
-    color: white;
-}
-
-
-lite-youtube::after {
-    content: "";
-    display: block;
-	aspect-ratio: 16 / 9 ;
-}
-lite-youtube > iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 0;
-}
-
-/* play button */
-lite-youtube > .lyt-playbtn {
-    display: block;
-    /* Make the button element cover the whole area for a large hover/click target… */
-    width: 100%;
-    height: 100%;
-    /* …but visually it's still the same size */
-    background: no-repeat center/68px 48px;
-    /* YT's actual play button svg */
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>');
-    position: absolute;
-    cursor: pointer;
-    z-index: 1;
-    filter: grayscale(100%);
-    transition: filter .1s cubic-bezier(0, 0, 0.2, 1);
-    border: 0;
-}
-
-lite-youtube:hover > .lyt-playbtn,
-lite-youtube .lyt-playbtn:focus {
-    filter: none;
-}
-
-/* Post-click styles */
-lite-youtube.lyt-activated {
-    cursor: unset;
-}
-lite-youtube.lyt-activated::before,
-lite-youtube.lyt-activated > .lyt-playbtn {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.lyt-visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-  }
-
-
-  /* Light and dark toggle */
-
-.toggle {
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 1rem;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-	float: right;	
-  }
-  .theme-icon {
-	inline-size: 25px;
-	block-size: 25px;
-	transition: 0.3s;
-	
-  }
-  .theme-icon:hover {
-	transform: scale(1.2);
-  }
-  
-  .hide-dark-img {
-	display: none;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-	.theme-icon:active {
-	  transform: rotate(-22deg);
-	}
-  }
-
-  .post-metadata li{
-    font-size: var(--step-0);
-  }
- 
-  .pagination {  
-    justify-self: center;  
-  }
-
-  .pagination li {
-    display: inline-block; 
-    margin-block-end: var(--space-m);     
-  }
-
-
-  .pagination a {
-   border: .4rem solid var(--text);
-   background-color: var(--brand); 
-   color: var(--text-alt);    
-  }
-  
-
-  .pagination a:hover {
-    background-color: var(--text-alt); 
-  color: var(--text); 
-   }
-
-
-
-
-
-  .value-prop{
-    font-size: var(--step-7);
-    text-align:center;
-    font-weight: 700;
-  }
-  
-  .value-prop span{
-    display: block;
-    font-size: var(--step--1);
-    text-align:center;
-    text-transform: uppercase;
-    line-height: 1.5; 
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
-    font-weight: 600;
-  }
-
-
+/*  HOSTS  */
 
   .bio{ 
     padding: var(--space-l);
@@ -398,17 +151,48 @@ lite-youtube.lyt-activated > .lyt-playbtn {
   line-height: 1.6;
 }
 
-  /* Blog stuff */
+.bio img{
+  background-color: var(--brand);
+  background: linear-gradient(180deg, transparent 33.3%,  var(--brand) 33.3%);  
+ }
+
+
+ /********************************/
+/************ POSTS ************/
+  .post-metadata li{
+    font-size: var(--step-0);
+  }
+ 
+  .pagination {  
+    justify-self: center;  
+  }
+
+  .pagination li {
+    display: inline-block; 
+    margin-block-end: var(--space-m);     
+  }
+
+
+  .pagination a {
+   border: .4rem solid var(--text);
+   background-color: var(--brand); 
+   color: var(--text-alt);    
+  }
+  
+
+  .pagination a:hover {
+  background-color: var(--text-alt); 
+  color: var(--text); 
+   }
 
   
 .links-nextprev {
-	display: flex;
+	display: flex; 
 	justify-content: space-between;
 	gap: .5em 1em;
 	list-style: "";
 	border-top: 1px dashed var(--color-gray-20);
-	padding: 1em 0;
-	
+	padding: 1em 0;  
 }
 
 .links-nextprev li {
@@ -420,6 +204,11 @@ lite-youtube.lyt-activated > .lyt-playbtn {
 .links-nextprev-next {
 	text-align: right;
 }
+
+/* .links-nextprev a {
+  border: .4rem solid var(--text);
+  padding: var(--space-2xs);  
+} */
 
 table {
 	margin: 1em 0;
@@ -522,19 +311,135 @@ code {
 }
 
 /********************************/
-/************ FOOTER ************/
+/************ GLOBALS ************/
 
+/* LIGHT YOU TUBE */
 
-
-footer h3{
-  font-size: var(--step-1);
+lite-youtube {
+    background-color: #000;
+    position: relative;
+    display: block;
+    contain: content;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer; 
+    border: .4rem solid var(--text);  
 }
 
-footer li{
-  font-size: var(--step-0);
-  list-style: none;
+/* gradient */
+lite-youtube::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    top: 0;
+    /* Pixel-perfect port of YT's gradient PNG, using https://github.com/bluesmoon/pngtocss plus optimizations */
+    background-image: linear-gradient(180deg, rgb(0 0 0 / 67%) 0%, rgb(0 0 0 / 54%) 14%, rgb(0 0 0 / 15%) 54%, rgb(0 0 0 / 5%) 72%, rgb(0 0 0 / 0%) 94%);
+    height: 99px;
+    width: 100%;
+    font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+    color: hsl(0deg 0% 93.33%);
+    text-shadow: 0 0 2px rgba(0,0,0,.5);
+    font-size: 18px;
+    padding: 25px 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
 }
 
+lite-youtube:hover::before {
+    color: white;
+}
+
+lite-youtube::after {
+   content: "";
+   display: block;
+	aspect-ratio: 16 / 9 ;
+}
+lite-youtube > iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+/* play button */
+lite-youtube > .lyt-playbtn {
+    display: block;
+    /* Make the button element cover the whole area for a large hover/click target… */
+    width: 100%;
+    height: 100%;
+    /* …but visually it's still the same size */
+    background: no-repeat center/68px 48px;
+    /* YT's actual play button svg */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>');
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    filter: grayscale(100%);
+    transition: filter .1s cubic-bezier(0, 0, 0.2, 1);
+    border: 0;
+}
+
+lite-youtube:hover > .lyt-playbtn,
+lite-youtube .lyt-playbtn:focus {
+    filter: none;
+}
+
+/* Post-click styles */
+lite-youtube.lyt-activated {
+    cursor: unset;
+}
+lite-youtube.lyt-activated::before,
+lite-youtube.lyt-activated > .lyt-playbtn {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.lyt-visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+
+  /* LIGHT DARK TOGGLE */
+
+.toggle {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 1rem;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+	float: right;	
+  }
+  .theme-icon {
+	inline-size: 25px;
+	block-size: 25px;
+	transition: 0.3s;
+	
+  }
+  .theme-icon:hover {
+	transform: scale(1.2);
+  }
+  
+  .hide-dark-img {
+	display: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+	.theme-icon:active {
+	  transform: rotate(-22deg);
+	}
+  }
 
 /********************************/
 /************ FORMS ************/
@@ -592,4 +497,110 @@ article li::marker {
   color: var(--brand);
   content: '■  ';
   font-size: var(--step-1); 
+}
+
+
+.btn, .btn:active{  
+  border: none;
+  background-color: var(--brand);  
+  color: var(--text-alt);
+  display: block;
+  padding: 0.6em 1.5em;
+  font-weight: 900;
+  letter-spacing: 0.05em; 
+  font-family: "Ubuntu Mono Bold"; 
+  text-decoration: none;  
+  text-transform: uppercase;
+  width:  fit-content;
+  height: fit-content; 
+  font-size: var(--step-0); 
+  outline: 0.1rem solid transparent;
+  outline-offset: -0.125rem;
+  /* box-shadow: 0  .1rem 0rem 0rem hsla(0, 0%, 2%, 1); */
+  transition: .2s ease-out;
+  margin-block: var(--space-m);
+}
+
+.btn-alt{
+  background-color: var(--text);
+  color: var(--text-alt) ;
+}
+
+.btn:hover {
+  color: #fff;
+  transition: .1s ease-in; 
+  box-shadow: 0 0 0 0 hsla(0, 0%, 2%, 0.1);    
+  background-color: var(--brand); 
+}  
+ 
+.btn:focus-visible{
+  outline: 0.3rem solid var(--brand);  
+  border-radius: 0.5rem;
+}
+
+
+/********************************/
+/******** HEADER & NAV  ********/
+
+header svg {
+  margin-block-start: -2rem;
+  inline-size:16rem;
+  padding: var(--space-xs); 
+  justify-self: center;
+}
+
+.nss-icon {
+  inline-size:16rem;
+  padding: var(--space-xs);
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap; 
+  margin-block-end: 0; 
+}
+
+nav a,
+nav a:active:not(.btn) {
+  font-size: var(--step--1);
+  text-transform: uppercase;
+  transition: 0.5s;
+  padding: var(--space-xs);
+}
+
+header nav a[href]:not(:hover) {
+text-decoration: none;
+  list-style-type: none;
+}
+
+.nav a[href][aria-current="page"] {
+text-decoration: underline;
+text-decoration-thickness: .4rem;
+text-decoration-color: var(--brand);
+text-underline-offset: .8rem;
+}
+
+header li {
+  list-style: none;
+  line-height: 2.2;
+}
+
+header a {
+  text-decoration: none;
+}
+
+/********************************/
+/************ FOOTER ************/
+
+footer h3{
+  font-size: var(--step-1);
+}
+
+footer li{
+  font-size: var(--step-0);
+  list-style: none;
+}
+
+footer nav a{
+  padding-inline-start: 0;
 }

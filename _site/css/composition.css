@@ -21,19 +21,16 @@ body {
   grid-template:
   "tb"
   "h"
-  "m" 1fr /* gives remaining space to the main */
+  "m" 1fr 
   "f"
   ; 
 }
   
-  header {
+  header,  main, footer  {
     margin-inline: 2vw;
   }
-  footer {
-    margin-inline: 2vw;
-  }
-  main { 
-    margin-inline: 2vw; 
+
+  main {   
     margin-block-end: var(--space-2xl);
   }
      
