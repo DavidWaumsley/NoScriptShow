@@ -1,17 +1,16 @@
----js
-{
-  eleventyNavigation: {
-    key: "Chat",
-    order: 2
-  },
-  pagination: {
-    data: "collections.chat",
-    size: 6,
-    alias: "posts",
-    reverse: true
-  },
-  permalink: "{% if pagination.pageNumber > 0 %}/chat/page/{{ pagination.pageNumber + 1 }}/{% else %}/chat/{% endif %}"
-}
+---
+title: " Chats | No Script Show | Audio focussed episodes."
+eleventyNavigation:
+   key: "Chat"
+   order: 2
+
+pagination: 
+   data: "collections.chat"
+   size: 6
+   alias: "posts"
+   reverse: true
+ 
+permalink: "{% if pagination.pageNumber > 0 %}/chat/page/{{ pagination.pageNumber + 1 }}/{% else %}/chat/{% endif %}"
 ---
 
 <div class="[ popout ]">

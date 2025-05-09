@@ -1,17 +1,17 @@
----js
-{
-  eleventyNavigation: {
-    key: "Learn",
-    order: 3
-  },
-  pagination: {
-    data: "collections.learn",
-    size: 6,
-    alias: "posts",
-    reverse: true
-  },
-  permalink: "{% if pagination.pageNumber > 0 %}/learn/page/{{ pagination.pageNumber + 1 }}/{% else %}/learn/{% endif %}"
-}
+---
+title: "Learn | No Script Show | Website tips"
+eleventyNavigation: 
+  key: "Learn" 
+  order: 3
+ 
+pagination: 
+  data: "collections.learn"
+  size: 6
+  alias: "posts"
+  reverse: true
+
+permalink: "{% if pagination.pageNumber > 0 %}/learn/page/{{ pagination.pageNumber + 1 }}/{% else %}/learn/{% endif %}"
+
 ---
 <div class="[ popout ]">
 <h1>Learn</h1>

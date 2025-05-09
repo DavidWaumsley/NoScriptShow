@@ -1,18 +1,17 @@
----js
-{
-  eleventyNavigation: {
-    key: "Build",
-    order: 4
-  },
-  pagination: {
-    data: "collections.build",
-    size: 6,
-    alias: "posts",
-    reverse: true
-  },
-  permalink: "{% if pagination.pageNumber > 0 %}/build/page/{{ pagination.pageNumber + 1 }}/{% else %}/build/{% endif %}"
-}
 ---
+title: " Builds | No Script Show | Episodes building websites"
+eleventyNavigation: 
+  key: "Build"
+  order: 4
+pagination: 
+   data: "collections.build"
+   size: 6
+   alias: "posts"
+   reverse: true  
+permalink: "{% if pagination.pageNumber > 0 %}/build/page/{{ pagination.pageNumber + 1 }}/{% else %}/build/{% endif %}"
+---
+
+
 
 <div class="[ popout ]">
 
