@@ -69,15 +69,15 @@ pre[class*="language-"] {
 
 @media (max-width: 50rem) {
   pre[class*="language-"] {
-    max-width: 20rem;
-    width: 20rem;
+    max-width: 25rem;
+    width: 25rem;
   }
 }
 
 @media (max-width: 30rem) {
   pre[class*="language-"] {
-    max-width: 15rem;
-    width: 15rem;
+    max-width: 18rem;
+    width: 18rem;
   }
 }
 
