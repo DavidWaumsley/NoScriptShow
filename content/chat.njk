@@ -25,7 +25,7 @@ permalink: "{% if pagination.pageNumber > 0 %}/chat/page/{{ pagination.pageNumbe
 
 <small class="page-indicator">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</small>
 
- <ul class="box">
+ <ul class="[ box ]">
 {%- for post in posts -%}
   <li><a href="{{post.url}}"> <h2>{{ post.data.title }}</h2> </a> <br>
    <time class="postlist-date"  datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time><br>

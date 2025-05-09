@@ -103,7 +103,7 @@ footer .footer-wrapper{
   padding-block: var(--grid-gap); 
 }
 
-.box li {
+.box li{
   margin: 0;
   padding: var(--space-m);
   list-style: none;
