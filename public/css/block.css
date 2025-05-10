@@ -181,6 +181,7 @@ margin-inline-end: 5rem;
    border: .4rem solid var(--text); 
    padding: var(--space-s); 
    font-weight: 700;
+   text-decoration: none;
   }
   
   .pagination a:hover {
