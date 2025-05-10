@@ -207,11 +207,6 @@
 	</url>
 	
 	<url>
-		<loc>https://noscript.show/pbs8/</loc>
-		<lastmod>2025-03-12</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://noscript.show/contact/</loc>
 		<lastmod>2025-05-06</lastmod>
 	</url>
@@ -239,5 +234,10 @@
 	<url>
 		<loc>https://noscript.show/feed/feed.xml</loc>
 		<lastmod>2025-05-10</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/pbs8/</loc>
+		<lastmod>2025-05-16</lastmod>
 	</url>
 </urlset>
