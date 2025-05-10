@@ -743,8 +743,7 @@
     <link href="https://noscript.show/build/7/" />
     <updated>2025-02-07T00:00:00Z</updated>
     <id>https://noscript.show/build/7/</id>
-    <content type="html">&lt;h1 id=&quot;building-with-an-11ty-starter-sites-and-headless-wordpress&quot;&gt;Building with an 11ty starter sites and headless WordPress&lt;/h1&gt;
-&lt;h2 id=&quot;starter-sites&quot;&gt;Starter Sites&lt;/h2&gt;
+    <content type="html">&lt;h2 id=&quot;starter-sites&quot;&gt;Starter Sites&lt;/h2&gt;
 &lt;hr&gt;
 &lt;p&gt;11ty has something similar to WordPress themes called starter sites. It also has plugins.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Some places to look for themes:&lt;/strong&gt;&lt;/p&gt;

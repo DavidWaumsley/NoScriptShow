@@ -4,11 +4,9 @@ description: Learning the 11ty base blog and whether It can serves as a static f
 date: 2025-02-07
 tags: ["build"]
 permalink: "build/7{{slugify }}/"
-videoid: 
-# draft: true
----
-# Building with an 11ty starter sites and headless WordPress
+videoid: cwfIIXtzJRA
 
+---
 
 ## Starter Sites
 ----------------------------------------
