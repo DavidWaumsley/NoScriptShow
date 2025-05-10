@@ -159,6 +159,13 @@ margin-inline-end: 5rem;
   @media (width <= 55rem) {
   .bio {    
    display: block;
+   padding-inline: var(--space-3xl);
+  }
+}
+
+  @media (width <= 45rem) {
+  .bio {     
+   padding-inline: var(--space-m);
   }
 }
 
