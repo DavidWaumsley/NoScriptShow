@@ -531,7 +531,7 @@ article li::marker {
 }
 
 .btn-alt{
-  background-color: var(--text);
+  background-color: var(--brand);
   color: var(--text-alt) ;
 }
 
@@ -539,7 +539,7 @@ article li::marker {
   color: #fff;
   transition: .1s ease-in; 
   box-shadow: 0 0 0 0 hsla(0, 0%, 2%, 0.1);    
-  background-color: var(--brand); 
+  background-color: var(--text); 
 }  
  
 .btn:focus-visible{
