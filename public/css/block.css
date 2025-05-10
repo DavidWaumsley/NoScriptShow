@@ -196,7 +196,7 @@ margin-inline-end: 5rem;
 
   .pagination li {
     display: inline-block; 
-   margin-block-end: var(--space-l); 
+   margin-block: var(--space-l); 
   }
 
   .pagination a {
