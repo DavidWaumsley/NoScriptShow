@@ -273,8 +273,9 @@ code {
 }
 .postlist-date,
 .postlist-item:before {
-	font-size: 0.8125em; /* 13px /16 */
+	font-size: var(--step-0);
 	color: var(--brand);
+  font-weight: 500;
 }
 .postlist-date {
 	word-spacing: -0.5px;
