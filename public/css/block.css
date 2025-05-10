@@ -195,7 +195,8 @@ margin-inline-end: 5rem;
   }
 
   .pagination li {
-    display: inline-block;     
+    display: inline-block; 
+   margin-block-end: var(--space-l); 
   }
 
   .pagination a {
@@ -203,6 +204,7 @@ margin-inline-end: 5rem;
    padding: var(--space-s); 
    font-weight: 700;
    text-decoration: none;
+   
   }
   
   .pagination a:hover {
