@@ -167,10 +167,10 @@ unicode-range: U+0000, U+0008-0009, U+000D, U+001D, U+0020-007E,
 
 
 html {
-    font-size: 97%;
+    font-size: 95%;
     scrollbar-gutter: stable;
     /* background-color: var(--shadow); */
-    max-width: 1920px;
+    max-width: 1800px;
     margin-inline: auto;   
   }
   
