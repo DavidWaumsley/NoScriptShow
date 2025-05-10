@@ -162,6 +162,13 @@ margin-inline-end: 5rem;
   }
 }
 
+@media (width <= 55rem) {
+  .bio img {    
+   max-width: 320px;
+   justify-self: center;
+  }
+}
+
   @media (width <= 55rem) {
   .bio p {       
     justify-self: center;
