@@ -536,7 +536,7 @@ article li::marker {
 }
 
 .btn:hover {
-  color: #fff;
+  color: var(--text-alt);
   transition: .1s ease-in; 
   box-shadow: 0 0 0 0 hsla(0, 0%, 2%, 0.1);    
   background-color: var(--text); 

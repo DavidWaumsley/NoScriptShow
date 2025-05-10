@@ -4,9 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ title or metadata.title }}</title>
-
-<script>
-  // This runs immediately, before the page renders
+<script>  
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme) {
     document.documentElement.setAttribute('data-theme', savedTheme);
@@ -20,9 +18,16 @@
 <meta name="description" content="{{ description or metadata.description }}">
 <link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 
-{# {% if layout == "layouts/post.njk" and videoid %}
-<link rel="preload" href="/path/to/lite-youtube.js" as="script">
-{% endif %} #}
+<link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
+{%- css %}
+{% include "public/css/reset.css" %}
+{% include "public/css/global.css" %}
+{% include "public/css/composition.css" %}
+{% include "public/css/utility.css" %}
+{% include "public/css/block.css" %}
+{% include "public/css/exceptions.css" %}
+{% endcss %}
+
    
  {% if layout == "layouts/post.njk" and videoid %}
  <link rel="preload" as="image" href="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp">
@@ -33,24 +38,28 @@
 <meta property="og:url" content="https://noscript.show{{ page.url}}" />
 <meta property="og:title" content="No Script Show {{title}}" />
 <meta property="og:description" content="{{description}}" />
-<meta property="og:image" content="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp"  />
+{% if videoid %}
+<meta property="og:image" content="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp" />
+{% elif featureimg %}
+<meta property="og:image" content="{{metadata.url}}{{ featureimg }}" />
+{% else %}
+<meta property="og:image" content="{{ metadata.url }}/img/og-image.webp" />
+{% endif %}
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://noscript.show{{ page.url}}" />
 <meta property="twitter:title" content="No Script Show {{title}}" />
 <meta property="twitter:description" content="{{description}}" />
+{% if videoid %}
 <meta property="twitter:image" content="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp" />
+{% elif featureimg %}
+<meta property="twitter:image" content="{{metadata.url}}{{ featureimg }}" />
+{% else %}
+<meta property="twitter:image" content="{{ metadata.url }}/img/og-image.webp" />
+{% endif %}
 
-<link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
-{%- css %}
-{% include "public/css/reset.css" %}
-{% include "public/css/global.css" %}
-{% include "public/css/composition.css" %}
-{% include "public/css/utility.css" %}
-{% include "public/css/block.css" %}
-{% include "public/css/exceptions.css" %}
-{% endcss %}
+
  <link rel="preload" href="/fonts/UbuntuMono-Bold.woff2"  as="font" type="font/woff2" crossorigin="">
  <link rel="preload" href="/fonts/UbuntuMono-Regular.woff2"  as="font" type="font/woff2" crossorigin="">
  <meta name="generator" content="{{ eleventy.generator }}">
