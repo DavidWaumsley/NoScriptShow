@@ -123,6 +123,14 @@ footer .footer-wrapper{
   list-style: none;
   border: .4rem solid var(--text);
   align-content: start;
+
+}
+
+.box li{
+display: grid;
+grid-template-rows: subgrid;
+grid-row: auto / span 4;
+gap: 0;
 }
 
 .box h2 {

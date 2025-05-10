@@ -20,8 +20,8 @@ permalink: "{% if pagination.pageNumber > 0 %}/learn/page/{{ pagination.pageNumb
 
  <ul class="box">
 {%- for post in posts -%}
-  <li><a href="{{post.url}}"><h2>{{ post.data.title }}</h2></a> <br>
-   <time class="postlist-date"  datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time><br>
+  <li><a href="{{post.url}}"><h2>{{ post.data.title }}</h2></a> 
+   <time class=" [ postlist-date ]"  datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
   <small>{{post.data.description}}</small> </li>
 {%- endfor -%}
 </ul>

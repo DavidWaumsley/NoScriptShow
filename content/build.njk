@@ -10,19 +10,15 @@ pagination:
    reverse: true  
 permalink: "{% if pagination.pageNumber > 0 %}/build/page/{{ pagination.pageNumber + 1 }}/{% else %}/build/{% endif %}"
 ---
-
-
-
 <div class="[ popout ]">
 
 <h1>Build</h1>
-
 <p><strong>Longer YouTube videos.</strong><small class="page-indicator">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</small></p>
 
  <ul class="box">
 {%- for post in posts -%}
-  <li><a href="{{post.url}}"> <h2>{{ post.data.title }}</h2> </a> <br>
-   <time class="postlist-date"  datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time><br>
+  <li><a href="{{post.url}}"> <h2>{{ post.data.title }}</h2> </a> 
+   <time class="[ postlist-date ]"  datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
   <small>{{post.data.description}}</small> </li>
 {%- endfor -%}
 </ul>
