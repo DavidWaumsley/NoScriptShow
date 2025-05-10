@@ -1,8 +1,8 @@
 export default {
-	title: "No Script Show | Making websites simple again.",
+	title: "No Script Show | Making Websites Simple Again.",
 	url: "https://noscript.show/",
 	language: "en-gb",
-	description: "Talking, learning and building websites simply.",
+	description: "A vodcast where we chat, learn and build websites simply.",
 	author: {
 		name: "David Waumsley",
 		email: "david@davidwaumsey.com",
