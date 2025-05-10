@@ -148,10 +148,17 @@ margin-inline-end: 5rem;
   }
 }
 
+  @media (width > 55rem) {
+  .bio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  
+    align-items: center;
+  }
+}
+
   @media (width <= 55rem) {
-  .bio img{    
-    max-width: 320px;
-    justify-self: center;
+  .bio {    
+   display: block;
   }
 }
 
