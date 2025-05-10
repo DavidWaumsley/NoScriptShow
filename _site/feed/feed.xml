@@ -5,7 +5,7 @@
   <subtitle>Building solid websites simply.</subtitle>
   <link href="https://noscript.show/feed/feed.xml" rel="self" />
   <link href="https://noscript.show/" />
-  <updated>2025-05-01T00:00:00Z</updated>
+  <updated>2025-05-10T00:00:00Z</updated>
   <id>https://noscript.show/</id>
   <author>
     <name>No Script Show</name>
@@ -13,7 +13,7 @@
   <entry>
     <title>Programmatic CSS. Where is this going?</title>
     <link href="https://noscript.show/18/" />
-    <updated>2025-05-01T00:00:00Z</updated>
+    <updated>2025-05-10T00:00:00Z</updated>
     <id>https://noscript.show/18/</id>
     <content type="html">&lt;h1 id=&quot;programmatic-css-where-is-this-going&quot;&gt;Programmatic CSS. Where is this going?&lt;/h1&gt;
 &lt;h2 id=&quot;css-changes&quot;&gt;CSS changes&lt;/h2&gt;
@@ -1370,7 +1370,7 @@
 </content>
   </entry>
   <entry>
-    <title>Redesigning a Bistro/café site. Part 2. Coding with HTML and CSS</title>
+    <title>Redesigning a Bistro site. Part 2. Coding</title>
     <link href="https://noscript.show/build/4/" />
     <updated>2024-10-25T00:00:00Z</updated>
     <id>https://noscript.show/build/4/</id>
@@ -1386,7 +1386,7 @@
 </content>
   </entry>
   <entry>
-    <title>Redesigning a vets site. Part 2. Coding with CSS and Testing</title>
+    <title>Redesigning a vets site. Part 2. Coding</title>
     <link href="https://noscript.show/build/2/" />
     <updated>2024-10-05T00:00:00Z</updated>
     <id>https://noscript.show/build/2/</id>
