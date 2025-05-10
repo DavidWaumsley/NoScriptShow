@@ -140,13 +140,27 @@ margin-inline-end: 5rem;
     border-block-start: 0;
   }
 
-  @media (width > 87rem) {
+  @media (width > 55rem) {
   .bio{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;  
     align-items: center;
   }
 }
+
+  @media (width <= 55rem) {
+  .bio img{    
+    max-width: 320px;
+    justify-self: center;
+  }
+}
+
+  @media (width <= 55rem) {
+  .bio p {       
+    justify-self: center;
+  }
+}
+
 
 .bio h3{
   font-size: var(--step-1);
@@ -566,7 +580,7 @@ header svg {
 }
 
 
-@media (width <= 45rem) {
+@media (width <= 55rem) {
 .nss-icon {
   display: none;
 }
