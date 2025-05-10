@@ -164,8 +164,7 @@ margin-inline-end: 5rem;
 
 @media (width <= 55rem) {
   .bio img {     
-   justify-self: center; 
-   max-width: 320px;
+   justify-self: center;   
   }
 }
 
