@@ -17,9 +17,7 @@ permalink: "{% if pagination.pageNumber > 0 %}/build/page/{{ pagination.pageNumb
 
 <h1>Build</h1>
 
-<p><strong>Longer YouTube videos.</strong></p>
-
-<small class="page-indicator">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</small>
+<p><strong>Longer YouTube videos.</strong><small class="page-indicator">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</small></p>
 
  <ul class="box">
 {%- for post in posts -%}

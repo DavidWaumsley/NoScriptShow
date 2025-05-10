@@ -17,13 +17,7 @@ permalink: "{% if pagination.pageNumber > 0 %}/chat/page/{{ pagination.pageNumbe
 
 <h1>Chat</h1>
 
-<p><strong>Audio focussed episodes</strong> (also on YouTube).</p>
-
-{# {% if pagination.pageNumber > 0 %}
-  <p class="page-indicator">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</p>
-{% endif %} #}
-
-<small class="page-indicator">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</small>
+<p><strong>Audio focussed episodes</strong> <small>(also on YouTube)</small>. <small class="page-indicator">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</small></p>
 
  <ul class="[ box ]">
 {%- for post in posts -%}
