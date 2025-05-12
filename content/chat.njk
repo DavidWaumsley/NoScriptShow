@@ -15,7 +15,7 @@ permalink: "{% if pagination.pageNumber > 0 %}/chat/page/{{ pagination.pageNumbe
 ---
 <div class="[ popout ]">
 <h1>Chat</h1>
-<p><strong>Audio focussed episodes</strong> <small>(also on YouTube)</small>. <small class="page-indicator">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</small></p>
+<p><strong>Audio focussed episodes</strong>. <small class="page-indicator">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</small></p>
 
  <ul class="[ box ]">
 {%- for post in posts -%}
