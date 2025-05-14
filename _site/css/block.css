@@ -249,6 +249,8 @@ margin-inline-end: 5rem;
 
 .page-indicator{
   float: right;
+  margin-block-start: .6rem;
+  vertical-align:baseline;
 }
 
 table {
