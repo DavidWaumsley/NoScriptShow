@@ -540,12 +540,15 @@ textarea {
   resize: vertical; 
 }
 
-article li::marker {
+main li::marker {
   color: var(--brand);
   content: '■  ';
   font-size: var(--step-1); 
 }
 
+.links-nextprev li::marker{
+   content: '';
+}
 
 .btn, .btn:active{  
   border: none;
