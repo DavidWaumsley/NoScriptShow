@@ -550,6 +550,10 @@ main li::marker {
    content: '';
 }
 
+.latest-eps li::marker{
+   content: '';
+}
+
 .btn, .btn:active{  
   border: none;
   background-color: var(--brand);  
