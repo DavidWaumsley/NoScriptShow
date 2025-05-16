@@ -9,7 +9,7 @@ permalink: "/pbs8{{slugify }}/"
 
  # The Intrinsic Page Builder
 
-The links from David Waumsley's [Page Buider Summit](https://pagebuildersummit.com/) talk. 
+Links from David's [Page Buider Summit](https://pagebuildersummit.com/) talk. 
 
 ## Introduction
 
@@ -41,4 +41,5 @@ The links from David Waumsley's [Page Buider Summit](https://pagebuildersummit.c
 ## Other links
 
 - [Web Almanac: Increase in static sites](https://almanac.httparchive.org/en/2024/jamstack)
-- [ Our build projects](https://noscript.show/#projects)
+- [Our build projects](https://noscript.show/#projects)
+- [Jeremy Keith: Resilient Web Design (free book)](https://resilientwebdesign.com/)
