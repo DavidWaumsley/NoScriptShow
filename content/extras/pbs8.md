@@ -35,17 +35,22 @@ Links from David's [Page Buider Summit](https://pagebuildersummit.com/) talk.
 - [Bert Bos & Håkon Wium Lie: CSS Day 2017 - YouTube.](https://www.youtube.com/watch?v=PQTpsxf7rQQ&t=2606s)
 - [Alex Russell: The reckoning (on JavaScript excesses).](https://infrequently.org/series/reckoning/)
 - [Jeremy Keith: Declarative Design.](https://www.youtube.com/watch?v=pzRsvoyQGsg)
-- [Rachel Andrew: "Refactoring (the way we talk about) CSS"](https://noti.st/rachelandrew/wuKH4y)
-- [Estelle Weyl: CSS. The Definitive Guide Web Layout and Presentation](https://www.oreilly.com/library/view/css-the-definitive/9781098117603/)
+- [Rachel Andrew: "Refactoring (the way we talk about) CSS".](https://noti.st/rachelandrew/wuKH4y)
+- [Estelle Weyl: CSS. The Definitive Guide Web Layout and Presentation.](https://www.oreilly.com/library/view/css-the-definitive/9781098117603/)
 
 ## The Intrisic Page builder?
 
-- [Utopia Fluid Typography ](https://utopia.fyi/)
-- [Heydon Pickering and Andy Bell: Every Layout](https://every-layout.dev/)
-- [Layout Breakouts Builder](https://layout-breakouts-builder.vercel.app/)
-- 
+- [Utopia Fluid Typography. ](https://utopia.fyi/)
+- [Heydon Pickering and Andy Bell: Every Layout.](https://every-layout.dev/)
+- [Layout Breakouts Builder.](https://layout-breakouts-builder.vercel.app/)
+- [Web Almanac: Increase in static sites.](https://almanac.httparchive.org/en/2024/jamstack)
+- [Our build projects](https://noscript.show/#projects)
+
 ## Other links
 
-- [Web Almanac: Increase in static sites](https://almanac.httparchive.org/en/2024/jamstack)
-- [Our build projects](https://noscript.show/#projects)
-- [Jeremy Keith: Resilient Web Design (free book)](https://resilientwebdesign.com/)
+- [Jeremy Keith: Resilient Web Design (free book).](https://resilientwebdesign.com/)
+- [Rachel Andrew: Grid by Example(look for the videos). ](https://gridbyexample.com/)
+- [Learn CSS](https://web.dev/learn/css)
+- [CSS Day conference on Youtube.](https://www.youtube.com/@WebConferencesAmsterdam)
+- [OddBird (Miriam Suzanne): Winging It - Youtube channel](https://www.youtube.com/@wingingitoddbird)
+
