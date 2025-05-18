@@ -1396,7 +1396,58 @@
     <link href="https://noscript.show/build/3/" />
     <updated>2024-10-25T00:00:00Z</updated>
     <id>https://noscript.show/build/3/</id>
-    <content type="html">&lt;p&gt;Coming.&lt;/p&gt;
+    <content type="html">&lt;h2 id=&quot;show-notes&quot;&gt;Show Notes&lt;/h2&gt;
+&lt;h2 id=&quot;0-the-client-contacts-us&quot;&gt;0. The client contacts us&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Our checks on &lt;a href=&quot;https://greenskitchen.uk/&quot;&gt;Greens Kitchen&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A one page site (apart from cookie and privacy pages).&lt;/li&gt;
+&lt;li&gt;Seems to be new to this domain in 2022.&lt;/li&gt;
+&lt;li&gt;WordPress site with the Genesis Theme, WPBakery Page Builder, Smart Slider and Gravity forms.&lt;/li&gt;
+&lt;li&gt;Built by a new branding agency (print, marketing and websites). They repupose the same template.&lt;/li&gt;
+&lt;li&gt;A typical page builder site. Not the best usability, speed, accessibility and SEO. Hard black on white is hard to read.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;1-client-aims&quot;&gt;1. Client aims&lt;/h2&gt;
+&lt;p&gt;Maybe wants a wider reach and so wants to better highlight things mentioned in the website’s text:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Show they do group bookings and corporate meetings.&lt;/li&gt;
+&lt;li&gt;Show how their menu is dynamic and changing.&lt;/li&gt;
+&lt;li&gt;Show they are foodies. Chefs in action? There is no sign of the kitchen.&lt;/li&gt;
+&lt;li&gt;Add email or contact form.&lt;/li&gt;
+&lt;li&gt;Show the staff (who reviewers seem to like).&lt;/li&gt;
+&lt;li&gt;Reach more of the (wealthier) parts of North London.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The copy reads like AI. First line &amp;quot;Greens Kitchen offers the perfect blend of casual dining in a relaxed environment.&amp;quot;  Titles don’t match the text and the &amp;quot;something new&amp;quot; section is odd.&lt;/p&gt;
+&lt;h2 id=&quot;2-audience-and-user-journey&quot;&gt;2. Audience and User Journey&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;SEO for a wider London audience? Only the reviews on Google Local Business makes them top there.&lt;/li&gt;
+&lt;li&gt;Foodies? People with time and plenty of disposable income (Bruch is popular).&lt;/li&gt;
+&lt;li&gt;On a high street so most will know the cafe, but not the food so much.&lt;/li&gt;
+&lt;li&gt;Special events.&lt;/li&gt;
+&lt;li&gt;Takeaways (tired London commuters coming home!)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;3-branding&quot;&gt;3. Branding&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Maybe enhance the classy logo branding. More classy menu look.&lt;/li&gt;
+&lt;li&gt;Use the gold and angle brackets more in the design.&lt;/li&gt;
+&lt;li&gt;Logo font: closest match Arimo (Google) and Haggard Nova (paid). Could use DM Serif Display (Google).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;4-structure-nav-and-key-content&quot;&gt;4. Structure, nav and key content.&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Lose the side nav on mobile.&lt;/li&gt;
+&lt;li&gt;About page:  &amp;quot;foodies philosophy&amp;quot;.  Shows staff and skills (images of serving staff and chefs preparing).&lt;/li&gt;
+&lt;li&gt;Contact page: They are expected and come up in search. It is in easy reach being just off the North Circ. Add parking info?&lt;/li&gt;
+&lt;li&gt;Page/s for menus so we can organise the image examples.&lt;/li&gt;
+&lt;li&gt;Maybe a page for events?&lt;/li&gt;
+&lt;li&gt;SEO: maybe some recipe pages (ideally mentioning other part of Nth London). Posts on commuting and takeaways. Cakes: special occasions (forgot the partner or child&#39;s birthday?).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;5-hero-copy-and-home-sections&quot;&gt;5. Hero copy and home sections&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Presently no H1. Need a stronger value proposition than &#39;Welcome to Greens Kitchen&amp;quot;.&lt;/li&gt;
+&lt;li&gt;Not mentioned is that it&#39;s good for watching the world go past (outdoor seating).&lt;/li&gt;
+&lt;li&gt;Google reviews are good so they should link to them.&lt;/li&gt;
+&lt;li&gt;Area for events/specials/discounts.&lt;/li&gt;
+&lt;li&gt;Homepage as a hub to the above pages.&lt;/li&gt;
+&lt;/ul&gt;
 </content>
   </entry>
   <entry>
