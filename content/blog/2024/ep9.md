@@ -1,6 +1,6 @@
 ---
 title:  Does Baseline solve our browser support problems?
-description: Baseline is a Google initiative introduced in 2023 that aims to make it easier for developers and other website stakeholders to understand what might be ready for production.
+description: Baseline is a Google initiative that aims to make it easier to understand what might be ready for production.
 date: 2024-04-25
 tags: ["chat"]
 permalink: "/9{{slugify }}/"
