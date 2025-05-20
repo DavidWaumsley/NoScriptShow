@@ -1,5 +1,5 @@
 ---
-title:  Long-term WordPress user tries building with 11ty (a Static Site Generator)
+title:  Long-term WordPress user tries building with 11ty
 description: Rebuilding a website with the 11ty (Eleventy) Static Site Generator.
 date: 2025-01-23
 tags: ["build"]

@@ -1,6 +1,6 @@
 ---
 title:  Accessibility - Skip nav links & :focus-visible
-description: Looking at links gaffs, aria labels, when to use target="_blank" and underlining links with CSS. 
+description: Links, aria labels and when to use target="_blank". 
 date: 2024-02-20
 tags: ["learn"]
 permalink: "/learn/5{{slugify }}/"
