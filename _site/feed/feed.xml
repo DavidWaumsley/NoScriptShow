@@ -772,7 +772,7 @@
 &lt;p&gt;These talk about using WordPress plugins to tell hosts to rebuild 11ty.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.mikeaparicio.com/posts/2023-11-07-using-wordpress-as-a-headless-cms-for-eleventy/&quot;&gt;Using Wordpress as a headless CMS for Eleventy by Mike Aparicio&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://davedavies.dev/post/how-to-use-11ty-with-headless-wordpress/&quot;&gt;How to use 11ty with Headless WordPress and deploy to Netlify by Dave Davies&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://dev.to/thedavedavies/how-to-use-11ty-with-headless-wordpress-and-deploy-to-netlify-3i73&quot;&gt;How to use 11ty with Headless WordPress and deploy to Netlify by Dave Davies&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;small&gt;The mentioned WordPress plugins have not been updated in 4 years. We also have to consider the number concurrent builds our static hosting plan allow if letting clients update. Netlify only allows one on the free plan.&lt;/small&gt;&lt;/p&gt;
 &lt;h3 id=&quot;an-alternative&quot;&gt;An alternative&lt;/h3&gt;

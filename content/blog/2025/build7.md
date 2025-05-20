@@ -39,7 +39,7 @@ Andy Bell has a couple of articles on [hooking 11ty to WordPress](https://bell.b
 These talk about using WordPress plugins to tell hosts to rebuild 11ty.
 
 *   [Using Wordpress as a headless CMS for Eleventy by Mike Aparicio](https://www.mikeaparicio.com/posts/2023-11-07-using-wordpress-as-a-headless-cms-for-eleventy/)
-*   [How to use 11ty with Headless WordPress and deploy to Netlify by Dave Davies](https://davedavies.dev/post/how-to-use-11ty-with-headless-wordpress/)
+*   [How to use 11ty with Headless WordPress and deploy to Netlify by Dave Davies](https://dev.to/thedavedavies/how-to-use-11ty-with-headless-wordpress-and-deploy-to-netlify-3i73)
 
 <small>The mentioned WordPress plugins have not been updated in 4 years. We also have to consider the number concurrent builds our static hosting plan allow if letting clients update. Netlify only allows one on the free plan.</small>
 
