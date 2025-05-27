@@ -120,7 +120,11 @@
 .center-me {
   display: grid;
   justify-items: center;
-}  
+} 
+ 
+.display-none{
+  display: none;
+}
 
 .center-place-me {
   display: grid;

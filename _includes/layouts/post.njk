@@ -5,14 +5,27 @@ layout: layouts/base.njk
 {# Only include the syntax highlighter CSS on blog posts, included with the CSS per-page bundle #}
 {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
-<h1 class="visually-hidden">{{ title }}</h1>
 
-<div class="[ popout ]" >
+
+<div class="[ popout ]">
 {% if videoid %}
+<h1 class=" [ visually-hidden ]">{{ title }}</h1>
+<div class="[ popout ]" >
 <lite-youtube videoid="{{videoid}}" style="background-image: url('https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp');">
   <a href="https://youtube.com/watch?v={{videoid}}" class="lyt-playbtn" title="Play Video">   
   </a>
 </lite-youtube>
+</div>
+{% elif featureimg %}
+
+<div class="[ popout ]" >
+<img class="[ feature-img ]" src="{{featureimg}}" alt="">
+<h1 class="[ center-me ]">{{ title }}</h1>
+</div>
+{% else %}
+<div class="[ page-layout ]" >
+<h1 >{{ title }}</h1>
+</div>
 {% endif %}
 
 <div class="right-me">
