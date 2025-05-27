@@ -201,8 +201,8 @@ margin-inline-end: 5rem;
 .post-title-only {
   background-color: var(--text);
   color: var(--text-alt);
-  padding: var(--space-3xl); 
-  min-height: 5rem;
+  padding-inline: var(--space-2xl);
+  padding-block: var(--space-m);
   text-align: center;
   font-weight: 900; 
 }
