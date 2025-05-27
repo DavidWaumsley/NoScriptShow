@@ -5,11 +5,43 @@
   <subtitle>Building solid websites simply.</subtitle>
   <link href="https://noscript.show/feed/feed.xml" rel="self" />
   <link href="https://noscript.show/" />
-  <updated>2025-05-10T00:00:00Z</updated>
+  <updated>2025-05-28T00:00:00Z</updated>
   <id>https://noscript.show/</id>
   <author>
     <name>No Script Show</name>
   </author>
+  <entry>
+    <title>Becoming a better freelance web designer</title>
+    <link href="https://noscript.show/19/" />
+    <updated>2025-05-28T00:00:00Z</updated>
+    <id>https://noscript.show/19/</id>
+    <content type="html">&lt;h1 id=&quot;becoming-a-better-freelance-web-designer&quot;&gt;Becoming a better freelance web designer&lt;/h1&gt;
+&lt;p&gt;Show Notes:&lt;/p&gt;
+&lt;h2 id=&quot;what-david-thinks-he-got-wrong&quot;&gt;What David thinks he got wrong&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Not fully comprehending the nature of the web.&lt;/li&gt;
+&lt;li&gt;Forgetting the fundamentals (poor semantics).&lt;/li&gt;
+&lt;li&gt;Ignoring the rule of least  power (too many dependencies).&lt;/li&gt;
+&lt;li&gt;Enforcing systems on clients rather than around them (not being agile).&lt;/li&gt;
+&lt;li&gt;Selling websites as various &amp;quot;products&amp;quot; (beyond my ability).&lt;/li&gt;
+&lt;li&gt;Not taking payment upfront (early on).&lt;/li&gt;
+&lt;li&gt;Not having an escape route (ability to pass clients on).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;what-he-thinks-he-got-right-but-did-badly&quot;&gt;What he thinks he got  right, but did badly&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Setting up a recurring income (but not protected).&lt;/li&gt;
+&lt;li&gt;Starting with face to face contact (but over complicating).&lt;/li&gt;
+&lt;li&gt;Encouraging all into the build process (but creating ways to mess it up).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;what-he-thinks-he-actually-got-right&quot;&gt;What he thinks he actually got right&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Better messaging (content first over &amp;quot;pretty pictures&amp;quot; of websites).&lt;/li&gt;
+&lt;li&gt;Faster building with snippets. (need more jobs and recurring income).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- &lt;details&gt; 
+&lt;summary&gt;Transcript&lt;/summary&gt;
+&lt;/details&gt;  --&gt;</content>
+  </entry>
   <entry>
     <title>Programmatic CSS. Where is this going?</title>
     <link href="https://noscript.show/18/" />
@@ -1448,14 +1480,6 @@
 &lt;li&gt;Area for events/specials/discounts.&lt;/li&gt;
 &lt;li&gt;Homepage as a hub to the above pages.&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Redesigning a vets site. Part 2. Coding</title>
-    <link href="https://noscript.show/build/2/" />
-    <updated>2024-10-05T00:00:00Z</updated>
-    <id>https://noscript.show/build/2/</id>
-    <content type="html">&lt;p&gt;Coming.&lt;/p&gt;
 </content>
   </entry>
 </feed>
