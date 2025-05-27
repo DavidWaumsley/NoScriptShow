@@ -197,6 +197,17 @@ margin-inline-end: 5rem;
 
  /********************************/
 /************ POSTS ************/
+
+.post-title-only {
+  background-color: var(--text);
+  color: var(--text-alt);
+  padding: var(--space-3xl); 
+  min-height: 5rem;
+  text-align: center;
+  font-weight: 900; 
+}
+
+
   .post-metadata li{
     font-size: var(--step-0);
   }

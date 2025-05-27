@@ -6,7 +6,6 @@ layout: layouts/base.njk
 {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
 
-
 <div class="[ popout ]">
 {% if videoid %}
 <h1 class=" [ visually-hidden ]">{{ title }}</h1>
@@ -23,8 +22,8 @@ layout: layouts/base.njk
 <h1 class="[ center-me ]">{{ title }}</h1>
 </div>
 {% else %}
-<div class="[ page-layout ]" >
-<h1 >{{ title }}</h1>
+<div class="[ popout ][ center-me ]" >
+<h1 class="[ post-title-only ]">{{ title }}</h1>
 </div>
 {% endif %}
 
