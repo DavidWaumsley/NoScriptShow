@@ -135,6 +135,28 @@
    text-wrap: pretty;
 }
 
+.side-note  {
+  margin-block-start: var(--space-l);
+  background-color: var(--shade);
+  padding: var(--space-s);
+ 
+}
+.side-note p {
+  font-size: var(--step--1); 
+    line-height: 1.6; 
+}
+
+.side-note li{
+  font-size: var(--step--1);
+  line-height: 1.4;
+}
+
+.side-note li::marker{
+ content: initial;
+}
+
+
+
 @view-transition {
 	navigation: auto;
 }
