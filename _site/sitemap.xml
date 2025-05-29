@@ -162,36 +162,6 @@
 	</url>
 	
 	<url>
-		<loc>https://noscript.show/blog/</loc>
-		<lastmod>2025-02-05</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://noscript.show/build/</loc>
-		<lastmod>2025-02-05</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://noscript.show/chat/</loc>
-		<lastmod>2025-02-05</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://noscript.show/</loc>
-		<lastmod>2025-02-05</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://noscript.show/learn/</loc>
-		<lastmod>2025-02-05</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://noscript.show/tags/</loc>
-		<lastmod>2025-02-05</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://noscript.show/build/7/</loc>
 		<lastmod>2025-02-07</lastmod>
 	</url>
@@ -207,26 +177,6 @@
 	</url>
 	
 	<url>
-		<loc>https://noscript.show/contact/</loc>
-		<lastmod>2025-05-06</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://noscript.show/about/</loc>
-		<lastmod>2025-05-06</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://noscript.show/resources/</loc>
-		<lastmod>2025-05-06</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://noscript.show/privacy/</loc>
-		<lastmod>2025-05-09</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://noscript.show/18/</loc>
 		<lastmod>2025-05-10</lastmod>
 	</url>
@@ -237,17 +187,67 @@
 	</url>
 	
 	<url>
-		<loc>https://noscript.show/googleac27c4abfc0dd6a4/</loc>
-		<lastmod>2025-05-18</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://noscript.show/19/</loc>
 		<lastmod>2025-05-28</lastmod>
 	</url>
 	
 	<url>
+		<loc>https://noscript.show/about/</loc>
+		<lastmod>2025-05-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/blog/</loc>
+		<lastmod>2025-05-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/build/</loc>
+		<lastmod>2025-05-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/chat/</loc>
+		<lastmod>2025-05-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/contact/</loc>
+		<lastmod>2025-05-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/googleac27c4abfc0dd6a4/</loc>
+		<lastmod>2025-05-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/</loc>
+		<lastmod>2025-05-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/learn/</loc>
+		<lastmod>2025-05-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/privacy/</loc>
+		<lastmod>2025-05-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/resources/</loc>
+		<lastmod>2025-05-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/tags/</loc>
+		<lastmod>2025-05-29</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://noscript.show/feed/feed.xml</loc>
-		<lastmod>2025-05-28</lastmod>
+		<lastmod>2025-05-29</lastmod>
 	</url>
 </urlset>
