@@ -2,12 +2,6 @@
  * New diff- syntax
  */
 
-
-pre[class*="language-diff-"] {
-	--eleventy-code-padding: 1.25em;
-	padding-left: var(--eleventy-code-padding);
-	padding-right: var(--eleventy-code-padding);
-}
 .token.deleted {
 	background-color: hsl(0, 51%, 37%);
 	color: inherit;
@@ -31,7 +25,6 @@ pre[class*="language-diff-"] {
 }
 .token.prefix.inserted,
 .token.prefix.deleted {
-	width: var(--eleventy-code-padding);
 	background-color: rgba(0,0,0,.2);
 }
 
@@ -39,8 +32,6 @@ pre[class*="language-diff-"] {
 .token.inserted:not(.prefix),
 .token.deleted:not(.prefix) {
 	display: block;
-	margin-left: calc(-1 * var(--eleventy-code-padding));
-	margin-right: calc(-1 * var(--eleventy-code-padding));
 	text-decoration: none; /* override del, ins, mark defaults */
 	color: inherit; /* override del, ins, mark defaults */
 }
@@ -49,44 +40,11 @@ pre[class*="language-diff-"] {
     background:hsl(240, 8%, 10%);
 }
 
-/* Reset and ensure proper overflow behavior */
+
 pre[class*="language-"] {
-  overflow-x: auto;
-  white-space: pre;
-  word-wrap: normal;
-  width: 100%; /* Start with 100% width */
-  box-sizing: border-box;
-  margin: 1.5rem 0;
-}
-
-/* Explicit width controls without min() or calc() functions */
-@media (max-width: 80rem) {
-  pre[class*="language-"] {
-    max-width: 45rem;
-    width: 45rem;
+    width: clamp(2rem, 0.1rem + 85vw, 55rem);;  
+    margin-block: var(--space-s) ; 
   }
-}
-
-@media (max-width: 50rem) {
-  pre[class*="language-"] {
-    max-width: 25rem;
-    width: 25rem;
-  }
-}
-
-@media (max-width: 30rem) {
-  pre[class*="language-"] {
-    max-width: 18rem;
-    width: 18rem;
-  }
-}
-
-/* Force code blocks to respect parent container at all sizes */
-.page-layout > pre[class*="language-"],
-.full-width > pre[class*="language-"] {
-  display: block;
-  position: relative;
-}
 
 /* Ensure code inside maintains formatting */
 code[class*="language-"] {

@@ -274,7 +274,7 @@ table th {
 
 pre,
 code {
-	font-family: var(--font-family-monospace);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 }
 pre:not([class*="language-"]) {
 	margin: .5em 0;
@@ -294,6 +294,10 @@ pre:not([class*="language-"]) {
 }
 code {
 	word-break: break-all;
+ background: hsl(240, 8%, 10%);
+ color: #a6e22e;
+ padding-inline: var(--space-xs);
+ padding-block: .4rem;
 }
 
 
