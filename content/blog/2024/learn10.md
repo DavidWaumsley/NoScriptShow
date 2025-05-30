@@ -102,8 +102,9 @@ AND
 ```
 If we want the same we need to add some additional JS.
 
-```js
+<div class="popout">
 
+```js
  // Inline script to set the initial theme 
 (function() {
  const localStorageTheme = localStorage.getItem('theme');
@@ -111,8 +112,9 @@ If we want the same we need to add some additional JS.
  const theme = localStorageTheme ? localStorageTheme : (systemPrefersDark ? 'dark' : 'light');
  document.documentElement.setAttribute('data-theme', theme);
  })();
-
  ```
+
+</div>
 
 I got Chat GPT to do this. It's probably best to let the browser read this first. I have to put this in the head. Also I have to place the prefers-color-scheme media queries first in the CSS.
 
@@ -127,11 +129,15 @@ Focus state
 -----------
 
 In an earlier video I mentioned the new focus-visible pseudo class to let the browser remove ugly focus rings when a sighted user does not need this visual clue. This is generally one to go for, but here we have an exception as the button here is not being styled in the regular way and we need people to tab to it and change it with the keyboard. I added it this way:
+
+
 ```css
  :focus-visible:not(toggle){             
     /* Styles */
  }
 ```
+
+
 Toggle Animation
 ----------------
 

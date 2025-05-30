@@ -42,7 +42,7 @@
 
 
 pre[class*="language-"] {
-    width: clamp(2rem, 0.1rem + 85vw, 55rem);;  
+   max-width: clamp(3rem, 0.1rem + 80vw, 90rem);  
     margin-block: var(--space-s) ; 
   }
 

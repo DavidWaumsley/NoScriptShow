@@ -14,15 +14,11 @@ layout: layouts/base.njk
   <a href="https://youtube.com/watch?v={{videoid}}" class="lyt-playbtn" title="Play Video">   
   </a>
 </lite-youtube>
-</div>
 {% elif featureimg %}
-
-<div class="[ popout ]" >
 <img class="[ feature-img ]" src="{{featureimg}}" alt="">
 <h1 class="[ center-me ]">{{ title }}</h1>
-</div>
 {% else %}
-<div class="[ popout ][ center-me ]" >
+<div class="[ center-me ]" >
 <h1 class="[ post-title-only ]">{{ title }}</h1>
 </div>
 {% endif %}
@@ -36,13 +32,14 @@ layout: layouts/base.njk
 	{%- endfor %}
 </ul>
 </div>
-</div>
 <article>
 <heading-anchors>
-	<div class="flow">
+<div class="[ flow ][ page-layout ]">
 {{ content | safe }}
-</article>
 </div>
+</article>
+
+
 
 <div class="popout">
 </heading-anchors>

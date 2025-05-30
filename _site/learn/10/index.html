@@ -18,7 +18,7 @@
 <meta name="description" content="About the accessibility considerations of adding a dark and light theme toggle switcher.">
 <link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="No Script Show | Making Websites Simple Again.">
 
-<link rel="stylesheet" href="/dist/YDnkrSG_pD.css">
+<link rel="stylesheet" href="/dist/W0TAsUXJWn.css">
 
    
  
@@ -88,7 +88,6 @@
   <a href="https://youtube.com/watch?v=NbOtbHW4zlA" class="lyt-playbtn" title="Play Video">   
   </a>
 </lite-youtube>
-</div>
 
 
 <div class="right-me">
@@ -97,10 +96,9 @@
 	<li><a href="/tags/learn/" class="post-tag">learn</a></li>
 </ul>
 </div>
-</div>
 <article>
 <heading-anchors>
-	<div class="flow">
+<div class="[ flow ][ page-layout ]">
 <h2 id="toggles-should-be-a-browser-feature">Toggles should be a browser feature</h2>
 <p>As part of designing the No Script Show's website I talked <a href="/learn/9">before</a> about light and dark themes and briefly on adding a toggle switch.</p>
 <p>Here I'm looking more closely at the implementation and sharing some alternative code.</p>
@@ -147,15 +145,15 @@
 /* All the light rules again*/
 } </code></pre>
 <p>If we want the same we need to add some additional JS.</p>
-<pre class="language-js" tabindex="0"><code class="language-js">
- <span class="token comment">// Inline script to set the initial theme </span>
+<div class="popout">
+<pre class="language-js" tabindex="0"><code class="language-js"> <span class="token comment">// Inline script to set the initial theme </span>
 <span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
  <span class="token keyword">const</span> localStorageTheme <span class="token operator">=</span> localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">'theme'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
  <span class="token keyword">const</span> systemPrefersDark <span class="token operator">=</span> window<span class="token punctuation">.</span><span class="token function">matchMedia</span><span class="token punctuation">(</span><span class="token string">'(prefers-color-scheme: dark)'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>matches<span class="token punctuation">;</span>
  <span class="token keyword">const</span> theme <span class="token operator">=</span> localStorageTheme <span class="token operator">?</span> localStorageTheme <span class="token operator">:</span> <span class="token punctuation">(</span>systemPrefersDark <span class="token operator">?</span> <span class="token string">'dark'</span> <span class="token operator">:</span> <span class="token string">'light'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
  document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">'data-theme'</span><span class="token punctuation">,</span> theme<span class="token punctuation">)</span><span class="token punctuation">;</span>
- <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
+ <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+</div>
 <p>I got Chat GPT to do this. It's probably best to let the browser read this first. I have to put this in the head. Also I have to place the prefers-color-scheme media queries first in the CSS.</p>
 <p>We will probably stick with Salma's approach. The CSS duplication seems fine for a few colours, but if you get into swapping icons and images based on dark and light preference the code and maintenance starts adding up.</p>
 <h2 id="no-js-no-toggle">No JS - no toggle</h2>
@@ -183,7 +181,9 @@
 <h2 id="the-code"><a href="https://codepen.io/David-Waumsley-the-solid/pen/ExzyyoK">The code</a></h2>
 <p>See the Pen <a href="https://codepen.io/David-Waumsley-the-solid/pen/ExzyyoK">Light and dark theme toggle</a> by David Waumsley (<a href="https://codepen.io/David-Waumsley-the-solid">@David-Waumsley-the-solid</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
-</div></heading-anchors></article>
+</div>
+</heading-anchors></article>
+
 
 
 <div class="popout">
@@ -192,7 +192,7 @@
 </ul>
 </div>
 			
-</main>	
+</div></div></main>	
   <footer>
 
 <h2 class="[ angle ]" id="stuff">Stuff</h2>  
@@ -230,7 +230,7 @@
  </div>
 </footer>
 
-		<!-- This page `/learn/10/` was built on 2025-05-30T08:59:29.911Z -->
+		<!-- This page `/learn/10/` was built on 2025-05-30T12:52:14.825Z -->
 		<script type="module" src="/dist/2it2F9Kmpn.js"></script>		
 </body>
 </html>
