@@ -49,5 +49,5 @@ pre[class*="language-"] {
 /* Ensure code inside maintains formatting */
 code[class*="language-"] {
   white-space: pre;
-  word-spacing: normal;
+  word-spacing: normal; 
 }
