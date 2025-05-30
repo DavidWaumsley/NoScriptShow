@@ -293,7 +293,7 @@ pre:not([class*="language-"]) {
 	overflow-x: auto;
 }
 code {
-word-break: break-all;
+word-break: normal;
  background: hsl(240, 8%, 10%);
  color: #f8f8f2;
  padding-inline: var(--space-xs);
