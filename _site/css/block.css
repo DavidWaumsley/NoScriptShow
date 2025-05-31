@@ -393,10 +393,9 @@ lite-youtube::before {
     content: attr(data-title);
     display: block;
     position: absolute;
-    top: 0;   
-    
-    height: 99px;
-    width: 100%;
+    top: 0;       
+    block-size: 99px;
+    inline-size: 100%;
     font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
     color: hsl(0deg 0% 93.33%);
     text-shadow: 0 0 2px rgba(0,0,0,.5);
@@ -422,8 +421,8 @@ lite-youtube::after {
 	aspect-ratio: 16 / 9 ;
 }
 lite-youtube > iframe {
-    width: 100%;
-    height: 100%;
+    inline-size: 100%;
+    block-size: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -434,8 +433,8 @@ lite-youtube > iframe {
 lite-youtube > .lyt-playbtn {
     display: block;
     /* Make the button element cover the whole area for a large hover/click target… */
-    width: 100%;
-    height: 100%;
+    inline-size: 100%;
+    block-size: 100%;
     /* …but visually it's still the same size */
     background: no-repeat center/68px 48px;
     /* YT's actual play button svg */
@@ -466,11 +465,11 @@ lite-youtube.lyt-activated > .lyt-playbtn {
 .lyt-visually-hidden {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
-    height: 1px;
+    block-size: 1px;
     overflow: hidden;
     position: absolute;
     white-space: nowrap;
-    width: 1px;
+    inline-size: 1px;
   }
 
 
@@ -484,7 +483,6 @@ lite-youtube.lyt-activated > .lyt-playbtn {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
-	float: right;	
   }
   .theme-icon {
 	inline-size: 25px;
@@ -554,7 +552,7 @@ select:focus {
 
 /* Textarea specific styles */
 textarea {
-  height: 15rem;
+  block-size: 20rem;
   resize: vertical; 
 }
 
@@ -583,8 +581,8 @@ main li::marker {
   font-family: "Ubuntu Mono Bold"; 
   text-decoration: none;  
   text-transform: uppercase;
-  width:  fit-content;
-  height: fit-content; 
+  inline-size:  fit-content;
+  block-size: fit-content; 
   font-size: var(--step-0); 
   outline: 0.1rem solid transparent;
   outline-offset: -0.125rem;

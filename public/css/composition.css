@@ -37,7 +37,7 @@ body {
   .top-bar {
     display: flex;
     justify-self: end; 
-    height: 2.5rem;  
+    block-size: 2.5rem;  
 }
 
 /********************************/
