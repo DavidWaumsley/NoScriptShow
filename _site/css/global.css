@@ -292,8 +292,8 @@ details{
 
 details::details-content{
  block-size: 0;
- transition: block-size 1s,
- content-visibility .1s;
+ transition: block-size .6s,
+ content-visibility .6s;
  transition-behavior: allow-discrete; 
 
 }
