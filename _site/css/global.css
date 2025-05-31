@@ -273,8 +273,7 @@ p, li{
 details{
   background-color: var(--shade);
   font-size: var(--step--1);
-  padding: var(--space-m);
-  cursor: pointer;
+ 
 }
 
 details p{
@@ -289,6 +288,8 @@ summary{
   font-size: var(--step-1); 
   text-transform: uppercase;
   font-weight: 700;
+  padding: var(--space-m);
+  cursor: pointer;
 }
 
 blockquote {
