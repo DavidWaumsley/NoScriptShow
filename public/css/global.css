@@ -295,7 +295,6 @@ details::details-content{
  transition: block-size .6s,
  content-visibility .6s;
  transition-behavior: allow-discrete; 
-
 }
 
 details[open]::details-content{
@@ -310,10 +309,6 @@ summary{
   padding: var(--space-m); 
   cursor: pointer;
 }
-
-/* summary::marker{
-   
-} */
 
 blockquote {
   border-inline-start: 0.4rem solid var(--brand);
