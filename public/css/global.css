@@ -273,6 +273,7 @@ p, li{
 details{
   background-color: var(--shade);
   font-size: var(--step--1);
+  padding-inline: var(--space-m);
  
 }
 
