@@ -290,18 +290,26 @@ details{
  overflow: hidden;
 }
 
-details::details-content{
- block-size: 0;
+@media (prefers-reduced-motion: no-preference) {
+  details::details-content{
  transition: block-size .6s,
  content-visibility .6s;
  transition-behavior: allow-discrete; 
+}
+}
+
+details::details-content{
+ block-size: 0;
 }
 
 details[open]::details-content{
 /* should work with auto, but did not so added scroll */
 block-size: 30rem; 
- overflow-x: auto;  
+overflow-x: auto;  
 }
+
+
+
 
 summary{
   text-transform: uppercase;
