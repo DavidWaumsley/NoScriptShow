@@ -26,7 +26,7 @@ We are simplifying, but...
 
 Brad Frost's 2023 talk called [Is Atomic Design dead?](https://www.youtube.com/watch?v=PK_PICNTgAg) gives a good historical account (from a design systems point of view) of the fast change of tools, approaches and terminology over this decade.
 
-![Diagram of Atomic design.](/images/atomic-design.webp) Borrowed from Brad Frost's Atomic Design.
+![Diagram of Atomic design.](/img/atomic-design.webp) <small>Borrowed from Brad Frost's Atomic Design.</small> 
 
 ### Do we need component based web design?
 

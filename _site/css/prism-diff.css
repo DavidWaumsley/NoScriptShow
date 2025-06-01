@@ -40,14 +40,13 @@
     background:hsl(240, 8%, 10%);
 }
 
-
 pre[class*="language-"] {
-   max-width: clamp(3rem, 0.1rem + 80vw, 90rem);  
-    margin-block: var(--space-s) ; 
+   max-width: clamp(3rem, 0.1rem + 78vw, 90rem);  
+   margin-block: var(--space-s) ; 
   }
 
 /* Ensure code inside maintains formatting */
 code[class*="language-"] {
   white-space: pre;
-  word-spacing: normal; 
+  word-spacing: normal;  
 }

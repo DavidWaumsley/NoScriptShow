@@ -7,7 +7,7 @@ permalink: "/2{{slugify }}/"
 videoid: DYhaggDCBmM
 ---
  
-Show Notes
+Show notes
 ----------
 
 This episode looks at future topics and how they're interconnected and better understood within a historical context. It's to save us from getting overwhelmed and paralysed by all the new options.
@@ -37,6 +37,7 @@ Below is the order to the subjects we are covering next. We are using them here 
 
 <details>
 <summary>Transcript</summary>
+
 \[00:00:06\] **Nathan Wrigley:**:Hello there and welcome to this the second episode of the No Script Show, a brand new chat, which is gonna be all about modern front end web design, where we look at what we can build today with minimal dependencies and skills. I'm joined as I always will be by David Waumsley. Hi David.
 
 \[00:00:06\] **Nathan Wrigley:**:Hello there and welcome to this the second episode of the No Script Show, a brand new chat, which is gonna be all about modern front end web design, where we look at what we can build today with minimal dependencies and skills. I'm joined as I always will be by David Waumsley. Hi David.

@@ -8,7 +8,7 @@ videoid: Q1g--a_hrXQ
 ---
 
 
- Show Notes
+ Show notes
 ----------
 
 Here, we are looking at the principles of modern web layouts and to understand that we are referring a talk by Rachel Andrew from 2019 called ["Refactoring the way we talk about CSS"](https://noti.st/rachelandrew/wuKH4y).

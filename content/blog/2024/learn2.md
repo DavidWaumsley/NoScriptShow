@@ -6,7 +6,7 @@ tags: ["learn"]
 permalink: "/learn/2{{slugify }}/"
 videoid: jweWInlUTgQ
 ---
-TRANSCRIPT
+Video notes
 ----------
 
 ### The reason for this video

@@ -7,8 +7,8 @@ permalink: "/learn/4{{slugify }}/"
 videoid: AQAw17sNO6c
 ---
 
-## Notes
-----------
+## Video notes
+
 
 As hyperlinks make the web what it is, I thought I should talk a bit about how we have marked-up and styled our anchor tags on this initial version of the show's website.
 
@@ -39,12 +39,12 @@ Recently I programmed the "read more" links on a WordPress blog archive page to 
 
 It's a very common pattern, but often it seems pointless as the title is typically a link that has been styled to not look like a link and so require another for the sighted people.
 
-### Using target "\_blank"
+### Using target "_blank"
 
 In the VS Code editor we can select the 2nd anchor tag option (blank) and will get:
 
 ```html
- <a href="/"  target="_blank" rel="noopener noreferrer"> read more...</a>
+<a href="/" target="_blank" rel="noopener noreferrer"> read more...</a>
 ```
 This, of course, opens the link in a new browser tab and VS Code kindly adds rel="noopener noreferrer".
 

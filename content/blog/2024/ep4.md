@@ -31,7 +31,7 @@ Perhaps this quote best explains how it is different to responsive design:
 An overlapping history that loosely goes from flow only to HTML tables to Flash to fluid to fixed to responsive.
 
 
-<img src="/img/intrinsic-design-history.avif"  loading="lazy" width="1600" height="900" alt="A chart of Jen Simmon's history of web layouts">
+<img class="popout" src="/img/intrinsic-design-history.avif"  loading="lazy" width="1600" height="900" alt="A chart of Jen Simmon's history of web layouts">
 
 
 ### What does this mean for us?

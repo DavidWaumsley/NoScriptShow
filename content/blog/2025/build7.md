@@ -8,7 +8,7 @@ videoid: cwfIIXtzJRA
 ---
 
 ## Starter Sites
-----------------------------------------
+
 11ty has something similar to WordPress themes called starter sites. It also has plugins.
 
 **Some places to look for themes:**
@@ -31,7 +31,6 @@ Starter sites are typically plain for us to add our own CSS, but there are [exce
 
 
 ## 11ty as a static frontend for WordPress.
-----------------------------------------
 
 
 Andy Bell has a couple of articles on [hooking 11ty to WordPress](https://bell.bz/i-hooked-up-eleventy-to-wordpress-api/) and [importing 11ty content to WordPress](https://bell.bz/importing-eleventy-content-into-wordpress/).
@@ -59,12 +58,12 @@ With the cost, technical complexity and maintenance overhead of headless along w
 
 
 ## Building with the 11ty base blog
-----------------------------------------
+
 Learning more about 11ty by using the starter site from its author [Zach Leatherman](https://www.zachleat.com/).
 
 ### The Pros
 
-- Preconfigured 11ty plugins: [RSS](https://www.11ty.dev/docs/plugins/rss/), [Image Transform](https://www.11ty.dev/docs/plugins/image/), [Navigation](https://www.11ty.dev/docs/plugins/navigation/),  [Syntax Highlighting](https://www.11ty.dev/docs/plugins/syntaxhighlight/), [Id Attribute ](https://www.11ty.dev/docs/plugins/id-attribute/) and [HTML `<base>`](https://www.11ty.dev/docs/plugins/html-base/).
+- Preconfigured 11ty plugins: [RSS](https://www.11ty.dev/docs/plugins/rss/), [Image Transform](https://www.11ty.dev/docs/plugins/image/), [Navigation](https://www.11ty.dev/docs/plugins/navigation/),  [Syntax Highlighting](https://www.11ty.dev/docs/plugins/syntaxhighlight/), [Id Attribute ](https://www.11ty.dev/docs/plugins/id-attribute/) and [HTML base](https://www.11ty.dev/docs/plugins/html-base/).
 
 - Simple Stylesheet to extend or replace.
 - Updated and well documented.

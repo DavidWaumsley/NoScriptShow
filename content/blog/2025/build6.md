@@ -8,7 +8,7 @@ videoid: Ixxszvj9GKw
 ---
 
 ## Show notes
--------
+
 
 As WordPress user we know how to build dynamic sites. We know next to nothing about Static Site Generators and the Jamstack. Here we rebuild a HTML site with 11ty (Eleventy). We also look at adding a CMS.
 

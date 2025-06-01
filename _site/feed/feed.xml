@@ -963,7 +963,6 @@
     <updated>2025-02-07T00:00:00Z</updated>
     <id>https://noscript.show/build/7/</id>
     <content type="html">&lt;h2 id=&quot;starter-sites&quot;&gt;Starter Sites&lt;/h2&gt;
-&lt;hr&gt;
 &lt;p&gt;11ty has something similar to WordPress themes called starter sites. It also has plugins.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Some places to look for themes:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -986,7 +985,6 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;small&gt;&lt;em&gt;Eventy Excellent by &lt;a href=&quot;https://www.lenesaile.com/en/&quot;&gt;Lene Saile&lt;/a&gt; was the closest fit as it used CUBE CSS, Paul Irish&#39;s Lite YouTube Embed and has a strew of great features.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
 &lt;h2 id=&quot;11ty-as-a-static-frontend-for-wordpress&quot;&gt;11ty as a static frontend for WordPress.&lt;/h2&gt;
-&lt;hr&gt;
 &lt;p&gt;Andy Bell has a couple of articles on &lt;a href=&quot;https://bell.bz/i-hooked-up-eleventy-to-wordpress-api/&quot;&gt;hooking 11ty to WordPress&lt;/a&gt; and &lt;a href=&quot;https://bell.bz/importing-eleventy-content-into-wordpress/&quot;&gt;importing 11ty content to WordPress&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;These talk about using WordPress plugins to tell hosts to rebuild 11ty.&lt;/p&gt;
 &lt;ul&gt;
@@ -1007,12 +1005,11 @@
 &lt;/ul&gt;
 &lt;p&gt;With the cost, technical complexity and maintenance overhead of headless along with the growth of static and uncertaintly in WordPress it seem this is likey to be in decline.&lt;/p&gt;
 &lt;h2 id=&quot;building-with-the-11ty-base-blog&quot;&gt;Building with the 11ty base blog&lt;/h2&gt;
-&lt;hr&gt;
 &lt;p&gt;Learning more about 11ty by using the starter site from its author &lt;a href=&quot;https://www.zachleat.com/&quot;&gt;Zach Leatherman&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&quot;the-pros&quot;&gt;The Pros&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Preconfigured 11ty plugins: &lt;a href=&quot;https://www.11ty.dev/docs/plugins/rss/&quot;&gt;RSS&lt;/a&gt;, &lt;a href=&quot;https://www.11ty.dev/docs/plugins/image/&quot;&gt;Image Transform&lt;/a&gt;, &lt;a href=&quot;https://www.11ty.dev/docs/plugins/navigation/&quot;&gt;Navigation&lt;/a&gt;,  &lt;a href=&quot;https://www.11ty.dev/docs/plugins/syntaxhighlight/&quot;&gt;Syntax Highlighting&lt;/a&gt;, &lt;a href=&quot;https://www.11ty.dev/docs/plugins/id-attribute/&quot;&gt;Id Attribute &lt;/a&gt; and &lt;a href=&quot;https://www.11ty.dev/docs/plugins/html-base/&quot;&gt;HTML &lt;code&gt;&amp;lt;base&amp;gt;&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Preconfigured 11ty plugins: &lt;a href=&quot;https://www.11ty.dev/docs/plugins/rss/&quot;&gt;RSS&lt;/a&gt;, &lt;a href=&quot;https://www.11ty.dev/docs/plugins/image/&quot;&gt;Image Transform&lt;/a&gt;, &lt;a href=&quot;https://www.11ty.dev/docs/plugins/navigation/&quot;&gt;Navigation&lt;/a&gt;,  &lt;a href=&quot;https://www.11ty.dev/docs/plugins/syntaxhighlight/&quot;&gt;Syntax Highlighting&lt;/a&gt;, &lt;a href=&quot;https://www.11ty.dev/docs/plugins/id-attribute/&quot;&gt;Id Attribute &lt;/a&gt; and &lt;a href=&quot;https://www.11ty.dev/docs/plugins/html-base/&quot;&gt;HTML base&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Simple Stylesheet to extend or replace.&lt;/p&gt;
@@ -1312,7 +1309,6 @@
     <updated>2025-01-23T00:00:00Z</updated>
     <id>https://noscript.show/build/6/</id>
     <content type="html">&lt;h2 id=&quot;show-notes&quot;&gt;Show notes&lt;/h2&gt;
-&lt;hr&gt;
 &lt;p&gt;As WordPress user we know how to build dynamic sites. We know next to nothing about Static Site Generators and the Jamstack. Here we rebuild a HTML site with 11ty (Eleventy). We also look at adding a CMS.&lt;/p&gt;
 &lt;h2 id=&quot;things-we-cover&quot;&gt;Things we cover&lt;/h2&gt;
 &lt;ul&gt;
@@ -1584,7 +1580,7 @@
     <link href="https://noscript.show/build/5/" />
     <updated>2024-11-18T00:00:00Z</updated>
     <id>https://noscript.show/build/5/</id>
-    <content type="html">&lt;h2 id=&quot;show-notes&quot;&gt;Show Notes&lt;/h2&gt;
+    <content type="html">&lt;h2 id=&quot;show-notes&quot;&gt;Show notes&lt;/h2&gt;
 &lt;h3 id=&quot;is-bento-grid-designs-a-fad-that-will-look-jaded-in-a-few-years&quot;&gt;Is Bento grid designs a fad that will look jaded in a few years?&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;

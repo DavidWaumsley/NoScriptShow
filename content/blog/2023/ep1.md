@@ -7,7 +7,7 @@ permalink: "/1{{slugify }}/"
 videoid: MepORS6OHYw
 ---
 
-## Show Notes
+## Show notes
 ----------
 
 This is our introductory episode. The title is "borrowed" from an influential talk by Jen Simmonds in 2018 called "[Everything You Know About Web Design Just Changed](https://talks.jensimmons.com/GdnO62)". In it she argues that we are moving to a new paradigm of web design.

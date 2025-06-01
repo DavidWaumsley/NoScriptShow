@@ -253,11 +253,6 @@ margin-inline-end: 5rem;
 	text-align: right;
 }
 
-/* .links-nextprev a {
-  border: .4rem solid var(--text);
-  padding: var(--space-2xs);  
-} */
-
 .page-indicator{
   float: right;
   margin-block-start: .6rem;

@@ -7,7 +7,7 @@ permalink: "build/5{{slugify }}/"
 videoid: dKYxHkSKmgc
 ---
 
-## Show Notes
+## Show notes
 
 
 ### Is Bento grid designs a fad that will look jaded in a few years?
