@@ -363,12 +363,15 @@ address {
 	inline-size: 1px;
 }
 :focus-visible {
-    outline: 0.3rem solid var(--text);     
+    outline: 0.4rem solid var(--text);     
   } 
 
 .toggle:focus-visible {
-  outline: 0.3rem solid var(--text);  
-  border-radius: 0.5rem;
+  outline: 0.4rem solid var(--text); 
+ }
+
+ summary:focus-visible{ 
+  border:0.4rem solid var(--text) ;
  }
 
 /* Less used*/

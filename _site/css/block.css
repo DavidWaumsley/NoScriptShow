@@ -599,19 +599,35 @@ main li::marker {
 }  
  
 .btn:focus-visible{
-  outline: 0.3rem solid var(--brand);  
-  border-radius: 0.5rem;
+  outline: 0.4rem solid var(--text);   
+}
+
+.latest-eps a:focus{
+   display: block; 
+   padding: 0; 
+   outline: 0.4rem solid var(--brand);   
+}
+
+.projects a:focus{
+   display: block; 
+   padding: 0; 
+   outline: 0.4rem solid var(--brand);   
 }
 
 
 /********************************/
 /******** HEADER & NAV  ********/
 
-header svg {
-  margin-block-start: -2rem;
+header svg { 
   inline-size:16rem;
-  padding: var(--space-xs); 
+  padding-inline: var(--space-xs); 
   justify-self: center;
+}
+
+
+header svg:focus-visible {
+ margin-block-start: -2rem;
+ outline: 0.4rem solid var(--text); 
 }
 
 .nss-icon {
