@@ -38,7 +38,7 @@ Links from David's [Page Buider Summit](https://pagebuildersummit.com/) talk.
 - [Rachel Andrew: "Refactoring (the way we talk about) CSS".](https://noti.st/rachelandrew/wuKH4y)
 - [Estelle Weyl: CSS. The Definitive Guide Web Layout and Presentation.](https://www.oreilly.com/library/view/css-the-definitive/9781098117603/)
 
-## The Intrisic Page builder?
+## The intrinsic Page builder?
 
 - [Utopia Fluid Typography. ](https://utopia.fyi/)
 - [Heydon Pickering and Andy Bell: Every Layout.](https://every-layout.dev/)
@@ -49,9 +49,8 @@ Links from David's [Page Buider Summit](https://pagebuildersummit.com/) talk.
 ## Other links
 
 - [Jeremy Keith: Resilient Web Design (free book).](https://resilientwebdesign.com/)
-- [Rachel Andrew: Grid by Example(look for the videos). ](https://gridbyexample.com/)
+- [Rachel Andrew: Grid by Example (look for the videos). ](https://gridbyexample.com/)
 - [Learn CSS](https://web.dev/learn/css)
 - [CSS Day conference on Youtube.](https://www.youtube.com/@WebConferencesAmsterdam)
 - [OddBird (Miriam Suzanne): Winging It - Youtube channel](https://www.youtube.com/@wingingitoddbird)
 - [Manuel Matuzović: 100 Days Of More Or Less Modern CSS.](https://www.matuzo.at/blog/2022/100-days-of-more-or-less-modern-css)
-
