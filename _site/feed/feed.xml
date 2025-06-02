@@ -1604,6 +1604,7 @@
     <updated>2024-10-25T00:00:00Z</updated>
     <id>https://noscript.show/build/4/</id>
     <content type="html">&lt;h2 id=&quot;show-notes&quot;&gt;Show notes&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Nathan&#39;s intro&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;In the first video we reimaged the owners&#39; aims and created a static version in Figma.  Now this has been coded up we are looking at the challenges that came with that.   The code is on Github (link below) if you want to use that to follow along.&lt;/p&gt;
 &lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
 &lt;ul&gt;
