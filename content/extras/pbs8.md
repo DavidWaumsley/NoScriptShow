@@ -1,6 +1,6 @@
 ---
 title:  'The intrinsic Page Builder'
-description: Links from the Page builder Summit 8 talk.
+description: Links from the Page Builder Summit 8 talk.
 date: 2025-05-16
 permalink: "/pbs8{{slugify }}/"
 # videoid: fp30FXcfdOk
@@ -9,7 +9,7 @@ permalink: "/pbs8{{slugify }}/"
 
  # The Intrinsic Page Builder
 
-Links from David's [Page Buider Summit](https://pagebuildersummit.com/) talk. 
+Links from David's [Page Builder Summit](https://pagebuildersummit.com/) talk. 
 
 ## Introduction
 
