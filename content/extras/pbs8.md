@@ -38,7 +38,7 @@ Links from David's [Page Builder Summit](https://pagebuildersummit.com/) talk.
 - [Rachel Andrew: "Refactoring (the way we talk about) CSS".](https://noti.st/rachelandrew/wuKH4y)
 - [Estelle Weyl: CSS. The Definitive Guide Web Layout and Presentation.](https://www.oreilly.com/library/view/css-the-definitive/9781098117603/)
 
-## The intrinsic Page builder?
+## The intrinsic page builder?
 
 - [Utopia Fluid Typography. ](https://utopia.fyi/)
 - [Heydon Pickering and Andy Bell: Every Layout.](https://every-layout.dev/)
