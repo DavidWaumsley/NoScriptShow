@@ -44,13 +44,13 @@ Links from David's [Page Builder Summit](https://pagebuildersummit.com/) talk.
 - [Heydon Pickering and Andy Bell: Every Layout.](https://every-layout.dev/)
 - [Layout Breakouts Builder.](https://layout-breakouts-builder.vercel.app/)
 - [Web Almanac: Increase in static sites.](https://almanac.httparchive.org/en/2024/jamstack)
-- [Our build projects](https://noscript.show/#projects)
+- [Our build projects.](https://noscript.show/#projects)
 
 ## Other links
 
 - [Jeremy Keith: Resilient Web Design (free book).](https://resilientwebdesign.com/)
 - [Rachel Andrew: Grid by Example (look for the videos). ](https://gridbyexample.com/)
-- [Learn CSS](https://web.dev/learn/css)
+- [Web Dev: Learn CSS.](https://web.dev/learn/css)
 - [CSS Day conference on Youtube.](https://www.youtube.com/@WebConferencesAmsterdam)
-- [OddBird (Miriam Suzanne): Winging It - Youtube channel](https://www.youtube.com/@wingingitoddbird)
+- [OddBird (Miriam Suzanne): Winging It - Youtube channel.](https://www.youtube.com/@wingingitoddbird)
 - [Manuel Matuzović: 100 Days Of More Or Less Modern CSS.](https://www.matuzo.at/blog/2022/100-days-of-more-or-less-modern-css)
