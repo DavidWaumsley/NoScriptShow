@@ -5,11 +5,81 @@
   <subtitle>Building solid websites simply.</subtitle>
   <link href="https://noscript.show/feed/feed.xml" rel="self" />
   <link href="https://noscript.show/" />
-  <updated>2025-05-28T00:00:00Z</updated>
+  <updated>2025-06-11T00:00:00Z</updated>
   <id>https://noscript.show/</id>
   <author>
     <name>No Script Show</name>
   </author>
+  <entry>
+    <title>Website accordions:  the good the bad and the ugly</title>
+    <link href="https://noscript.show/20/" />
+    <updated>2025-06-11T00:00:00Z</updated>
+    <id>https://noscript.show/20/</id>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Show Notes:&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;what-s-an-accordion&quot;&gt;What’s an accordion?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A collection of (hide and show) disclosure widgets or...&lt;/li&gt;
+&lt;li&gt;A collection headings with icons that when interacted with reveal a panel of previously hidden content.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;small&gt;
+&lt;strong&gt;Note:&lt;/strong&gt; some articles point to other UX patterns. Here we are not considering overlays or anchor links to page content as accordions.
+&lt;/small&gt;
+&lt;h2 id=&quot;types-of-accordions&quot;&gt;Types of accordions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Exclusive when only one panel can be open at a time.&lt;/li&gt;
+&lt;li&gt;Non exclusive where the user can open how many they like.&lt;/li&gt;
+&lt;li&gt;Exclusive or non-exclusive with an open/close toggle.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;code-needed-for-accordions&quot;&gt;Code needed for accordions&lt;/h2&gt;
+&lt;p&gt;Until recently accordions always needed JS and ARIA tags (Accessible Rich Internet Applications).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;From Jan  2020 we got the details and summary elements that allowed us make non exclusive accordions with only HTML.&lt;/li&gt;
+&lt;li&gt;From Sept 2024 we could add matching name attributes to the details elements to allow us to create exclusive accordions.&lt;/li&gt;
+&lt;li&gt;If we want a toggle to open and close all panels we still needs Javascript and there may also be reason why we still want JS for accordion eve if we don’t need this toggle.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/interpolate-size&quot;&gt;Interpolate-size&lt;/a&gt; is still experimental and  limited to chromium browsers, but it allows us to animate the opening of an accordion panel. It is a progressive enhancement.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;when-we-might-use-them-ux&quot;&gt;When we might use them (UX)&lt;/h2&gt;
+&lt;p&gt;This is condensed version of &lt;a href=&quot;https://www.nngroup.com/articles/accordions-on-desktop/&quot;&gt;recent articles &lt;/a&gt; from the Nielsen Norman Group.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Benefits&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Improving Scannability (less clutter).&lt;/li&gt;
+&lt;li&gt;Reduces scrolling (quicker access to specific content).&lt;/li&gt;
+&lt;li&gt;Can make some content easier on mobile. (large articles or long forms).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Downsides&lt;/strong&gt; (depending on use and implementation)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Increased Interaction Cost.&lt;/li&gt;
+&lt;li&gt;Fragmented Access to Information (can’t compare panel content easily).&lt;/li&gt;
+&lt;li&gt;Difficulty with Printing, accessibility, SEO and in page search&lt;/li&gt;
+&lt;/ul&gt;
+ &lt;small&gt;
+&lt;strong&gt;Other articles:&lt;/strong&gt; 
+&lt;a href=&quot;https://www.youtube.com/watch?v=c8I7rplPN8I&quot;&gt;Accordions: 5 Scenarios to Avoid Them&lt;/a&gt;   and 
+&lt;a href=&quot;https://www.youtube.com/watch?v=bKZjnqRsxzo&quot;&gt;Accordions on Mobile&lt;/a&gt;
+&lt;/small&gt;
+&lt;h2 id=&quot;accessibility-considerations&quot;&gt;Accessibility  considerations&lt;/h2&gt;
+&lt;p&gt;Details and summary make things easier as the browser takes care of the interaction, state and role side of things, but to be accessible we can not just add a bunch.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;We need ARIA to tell the screen readers that these are grouped.&lt;/li&gt;
+&lt;li&gt;Decide if they need to be included in the page&#39;s table of contents.&lt;/li&gt;
+&lt;li&gt;Decide if the accordion headings should be announced as regular headings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;design-considerations&quot;&gt;Design considerations&lt;/h2&gt;
+&lt;p&gt;Presently, we have more design control with JS, but more responsibilities.&lt;/p&gt;
+&lt;p&gt;We should have a fallback for when JS does not load. Andy Bell list of 15 situations &lt;a href=&quot;https://piccalil.li/blog/a-handful-of-reasons-javascript-wont-be-available/&quot;&gt;where is can happen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here are the design issues with using details and summary.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Animation is presently either experimental or limited.&lt;/li&gt;
+&lt;li&gt;The browsers marker icon has a limited styling option. We can remove it with content: &amp;quot;&amp;quot;; but Safari presently ignores that.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Detail and summary open up lots of possibilities. Bramus Van Damme has been doing some &lt;a href=&quot;https://developer.chrome.com/blog/styling-details&quot;&gt;cool experiments&lt;/a&gt;, but following Google accessible carousels that were less than accessible I think these may not yet be production ready.&lt;/p&gt;
+&lt;h2 id=&quot;design-considerations-2&quot;&gt;Design considerations&lt;/h2&gt;
+&lt;p&gt;Those using accordion that depend on JS might want to research beyond what Google says about being able to find hidden content, but as far as we know there are no issues with using details and summary.&lt;/p&gt;
+&lt;p&gt;The bonus with details and summary is that in-page search works and panels will open to show the highlighted text. (presently true for Chromium browsers but as part of interop is should be true for other before 2026)&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;As the no script show focussed doing the most with HTML  we would probably look to other patterns if JS was needed.  For example if there was a page with lots of content sections. We&#39;d probably follow what &lt;a href=&quot;https://en.wikipedia.org/wiki/Accordion&quot;&gt;Wikipedia&lt;/a&gt; does by using anchor tags.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Becoming a better freelance web designer</title>
     <link href="https://noscript.show/19/" />
@@ -1610,65 +1680,6 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://bistro.here24.co/&quot;&gt;Demo website&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/DavidWaumsley/bistro-demo&quot;&gt;Download from Github&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Redesigning a Bistro site. Part 1. The Design.</title>
-    <link href="https://noscript.show/build/3/" />
-    <updated>2024-10-25T00:00:00Z</updated>
-    <id>https://noscript.show/build/3/</id>
-    <content type="html">&lt;h2 id=&quot;show-notes&quot;&gt;Show Notes&lt;/h2&gt;
-&lt;h2 id=&quot;0-the-client-contacts-us&quot;&gt;0. The client contacts us&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Our checks on &lt;a href=&quot;https://greenskitchen.uk/&quot;&gt;Greens Kitchen&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A one page site (apart from cookie and privacy pages).&lt;/li&gt;
-&lt;li&gt;Seems to be new to this domain in 2022.&lt;/li&gt;
-&lt;li&gt;WordPress site with the Genesis Theme, WPBakery Page Builder, Smart Slider and Gravity forms.&lt;/li&gt;
-&lt;li&gt;Built by a new branding agency (print, marketing and websites). They repupose the same template.&lt;/li&gt;
-&lt;li&gt;A typical page builder site. Not the best usability, speed, accessibility and SEO. Hard black on white is hard to read.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;1-client-aims&quot;&gt;1. Client aims&lt;/h2&gt;
-&lt;p&gt;Maybe wants a wider reach and so wants to better highlight things mentioned in the website’s text:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Show they do group bookings and corporate meetings.&lt;/li&gt;
-&lt;li&gt;Show how their menu is dynamic and changing.&lt;/li&gt;
-&lt;li&gt;Show they are foodies. Chefs in action? There is no sign of the kitchen.&lt;/li&gt;
-&lt;li&gt;Add email or contact form.&lt;/li&gt;
-&lt;li&gt;Show the staff (who reviewers seem to like).&lt;/li&gt;
-&lt;li&gt;Reach more of the (wealthier) parts of North London.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The copy reads like AI. First line &amp;quot;Greens Kitchen offers the perfect blend of casual dining in a relaxed environment.&amp;quot;  Titles don’t match the text and the &amp;quot;something new&amp;quot; section is odd.&lt;/p&gt;
-&lt;h2 id=&quot;2-audience-and-user-journey&quot;&gt;2. Audience and User Journey&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;SEO for a wider London audience? Only the reviews on Google Local Business makes them top there.&lt;/li&gt;
-&lt;li&gt;Foodies? People with time and plenty of disposable income (Bruch is popular).&lt;/li&gt;
-&lt;li&gt;On a high street so most will know the cafe, but not the food so much.&lt;/li&gt;
-&lt;li&gt;Special events.&lt;/li&gt;
-&lt;li&gt;Takeaways (tired London commuters coming home!)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;3-branding&quot;&gt;3. Branding&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Maybe enhance the classy logo branding. More classy menu look.&lt;/li&gt;
-&lt;li&gt;Use the gold and angle brackets more in the design.&lt;/li&gt;
-&lt;li&gt;Logo font: closest match Arimo (Google) and Haggard Nova (paid). Could use DM Serif Display (Google).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;4-structure-nav-and-key-content&quot;&gt;4. Structure, nav and key content.&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Lose the side nav on mobile.&lt;/li&gt;
-&lt;li&gt;About page:  &amp;quot;foodies philosophy&amp;quot;.  Shows staff and skills (images of serving staff and chefs preparing).&lt;/li&gt;
-&lt;li&gt;Contact page: They are expected and come up in search. It is in easy reach being just off the North Circ. Add parking info?&lt;/li&gt;
-&lt;li&gt;Page/s for menus so we can organise the image examples.&lt;/li&gt;
-&lt;li&gt;Maybe a page for events?&lt;/li&gt;
-&lt;li&gt;SEO: maybe some recipe pages (ideally mentioning other part of Nth London). Posts on commuting and takeaways. Cakes: special occasions (forgot the partner or child&#39;s birthday?).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;5-hero-copy-and-home-sections&quot;&gt;5. Hero copy and home sections&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Presently no H1. Need a stronger value proposition than &#39;Welcome to Greens Kitchen&amp;quot;.&lt;/li&gt;
-&lt;li&gt;Not mentioned is that it&#39;s good for watching the world go past (outdoor seating).&lt;/li&gt;
-&lt;li&gt;Google reviews are good so they should link to them.&lt;/li&gt;
-&lt;li&gt;Area for events/specials/discounts.&lt;/li&gt;
-&lt;li&gt;Homepage as a hub to the above pages.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
   </entry>

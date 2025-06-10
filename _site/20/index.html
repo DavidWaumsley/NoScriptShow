@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tagged &#39;learn&#39;</title>
+<title>Website accordions:  the good the bad and the ugly</title>
 <script>  
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme) {
@@ -15,28 +15,28 @@
 <link rel="icon" type="img/x-icon" href="/svg/favicon.svg">
 <link rel="icon" href="img/favicon.ico" sizes="any">
 
-<meta name="description" content="A vodcast where we chat, learn and build websites simply.">
+<meta name="description" content="Things we may have got right and wrong as web design freelancers.">
 <link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="No Script Show | Making Websites Simple Again.">
 
-<link rel="stylesheet" href="/dist/KAr9Bvtl55.css">
+<link rel="stylesheet" href="/dist/NdZSwRfO91.css">
 
    
  
 		
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://noscript.show/tags/learn/">
-<meta property="og:title" content="No Script Show Tagged &#39;learn&#39;">
-<meta property="og:description" content="">
+<meta property="og:url" content="https://noscript.show/20/">
+<meta property="og:title" content="No Script Show Website accordions:  the good the bad and the ugly">
+<meta property="og:description" content="Things we may have got right and wrong as web design freelancers.">
 
 <meta property="og:image" content="https://noscript.show//img/og-image.webp">
 
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://noscript.show/tags/learn/">
-<meta property="twitter:title" content="No Script Show Tagged &#39;learn&#39;">
-<meta property="twitter:description" content="">
+<meta property="twitter:url" content="https://noscript.show/20/">
+<meta property="twitter:title" content="No Script Show Website accordions:  the good the bad and the ugly">
+<meta property="twitter:description" content="Things we may have got right and wrong as web design freelancers.">
 
 <meta property="twitter:image" content="https://noscript.show//img/og-image.webp">
 
@@ -75,59 +75,101 @@
 </nav>
 </header>
 <main class="[ page-layout ] [ flow ]" id="skip">			
-				<h1 id="tagged-learn">Tagged “learn”</h1>
+				
 
 
-<ol reversed="">
-	<li>
-		<a href="/learn/11/">Finally, a delightful free accessibility tool. Silktide</a> - 
-		<small><time class="postlist-date" datetime="2024-06-01"> Jun 2024</time></small>
-	</li>
-	<li>
-		<a href="/learn/10/">I’m the ultimate dark and light theme toggle switch… and so’s my wife.</a> - 
-		<small><time class="postlist-date" datetime="2024-05-23"> May 2024</time></small>
-	</li>
-	<li>
-		<a href="/learn/9/">Adding a light and dark mode with a toggle</a> - 
-		<small><time class="postlist-date" datetime="2024-04-21"> Apr 2024</time></small>
-	</li>
-	<li>
-		<a href="/learn/8/">Building without WordPress.1 Tools and Tabs (organizing work)</a> - 
-		<small><time class="postlist-date" datetime="2024-04-03"> Apr 2024</time></small>
-	</li>
-	<li>
-		<a href="/learn/7/">Adding an audio player (web components)</a> - 
-		<small><time class="postlist-date" datetime="2024-03-19"> Mar 2024</time></small>
-	</li>
-	<li>
-		<a href="/learn/6/">Embedding YouTube videos for performance</a> - 
-		<small><time class="postlist-date" datetime="2024-03-06"> Mar 2024</time></small>
-	</li>
-	<li>
-		<a href="/learn/5/">Accessibility - Skip nav links &amp; :focus-visible</a> - 
-		<small><time class="postlist-date" datetime="2024-02-20"> Feb 2024</time></small>
-	</li>
-	<li>
-		<a href="/learn/4/">Creating links that are not too hyper!</a> - 
-		<small><time class="postlist-date" datetime="2024-02-13"> Feb 2024</time></small>
-	</li>
-	<li>
-		<a href="/learn/3/">Web safe or system fonts are cool again</a> - 
-		<small><time class="postlist-date" datetime="2024-02-06"> Feb 2024</time></small>
-	</li>
-	<li>
-		<a href="/learn/2/">Easy responsive or fluid typography</a> - 
-		<small><time class="postlist-date" datetime="2024-01-30"> Jan 2024</time></small>
-	</li>
-	<li>
-		<a href="/learn/1/">CSS layouts made simple</a> - 
-		<small><time class="postlist-date" datetime="2024-01-24"> Jan 2024</time></small>
-	</li>
-</ol>
+<div class="[ popout ]">
 
-<p>See <a href="/tags/">all tags</a>.</p>
+<div class="[ center-me ]">
+<h1 class="[ post-title-only ]" id="website-accordions-the-good-the-bad-and-the-ugly">Website accordions:  the good the bad and the ugly</h1>
+</div>
+
+
+<div class="right-me">
+<ul class="post-metadata">
+	<li><time datetime="2025-06-11">11 June 2025</time></li>
+	<li><a href="/tags/chat/" class="post-tag">chat</a></li>
+</ul>
+</div>
+<article>
+<heading-anchors>
+<div class="[ flow ][ page-layout ]">
+<p><strong>Show Notes:</strong></p>
+<h2 id="what-s-an-accordion">What’s an accordion?</h2>
+<ul>
+<li>A collection of (hide and show) disclosure widgets or...</li>
+<li>A collection headings with icons that when interacted with reveal a panel of previously hidden content.</li>
+</ul>
+<small>
+<strong>Note:</strong> some articles point to other UX patterns. Here we are not considering overlays or anchor links to page content as accordions.
+</small>
+<h2 id="types-of-accordions">Types of accordions</h2>
+<ul>
+<li>Exclusive when only one panel can be open at a time.</li>
+<li>Non exclusive where the user can open how many they like.</li>
+<li>Exclusive or non-exclusive with an open/close toggle.</li>
+</ul>
+<h2 id="code-needed-for-accordions">Code needed for accordions</h2>
+<p>Until recently accordions always needed JS and ARIA tags (Accessible Rich Internet Applications).</p>
+<ul>
+<li>From Jan  2020 we got the details and summary elements that allowed us make non exclusive accordions with only HTML.</li>
+<li>From Sept 2024 we could add matching name attributes to the details elements to allow us to create exclusive accordions.</li>
+<li>If we want a toggle to open and close all panels we still needs Javascript and there may also be reason why we still want JS for accordion eve if we don’t need this toggle.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/interpolate-size">Interpolate-size</a> is still experimental and  limited to chromium browsers, but it allows us to animate the opening of an accordion panel. It is a progressive enhancement.</li>
+</ul>
+<h2 id="when-we-might-use-them-ux">When we might use them (UX)</h2>
+<p>This is condensed version of <a href="https://www.nngroup.com/articles/accordions-on-desktop/">recent articles </a> from the Nielsen Norman Group.</p>
+<p><strong>Benefits</strong></p>
+<ul>
+<li>Improving Scannability (less clutter).</li>
+<li>Reduces scrolling (quicker access to specific content).</li>
+<li>Can make some content easier on mobile. (large articles or long forms).</li>
+</ul>
+<p><strong>Downsides</strong> (depending on use and implementation)</p>
+<ul>
+<li>Increased Interaction Cost.</li>
+<li>Fragmented Access to Information (can’t compare panel content easily).</li>
+<li>Difficulty with Printing, accessibility, SEO and in page search</li>
+</ul>
+ <small>
+<strong>Other articles:</strong> 
+<a href="https://www.youtube.com/watch?v=c8I7rplPN8I">Accordions: 5 Scenarios to Avoid Them</a>   and 
+<a href="https://www.youtube.com/watch?v=bKZjnqRsxzo">Accordions on Mobile</a>
+</small>
+<h2 id="accessibility-considerations">Accessibility  considerations</h2>
+<p>Details and summary make things easier as the browser takes care of the interaction, state and role side of things, but to be accessible we can not just add a bunch.</p>
+<ul>
+<li>We need ARIA to tell the screen readers that these are grouped.</li>
+<li>Decide if they need to be included in the page's table of contents.</li>
+<li>Decide if the accordion headings should be announced as regular headings.</li>
+</ul>
+<h2 id="design-considerations">Design considerations</h2>
+<p>Presently, we have more design control with JS, but more responsibilities.</p>
+<p>We should have a fallback for when JS does not load. Andy Bell list of 15 situations <a href="https://piccalil.li/blog/a-handful-of-reasons-javascript-wont-be-available/">where is can happen</a>.</p>
+<p>Here are the design issues with using details and summary.</p>
+<ul>
+<li>Animation is presently either experimental or limited.</li>
+<li>The browsers marker icon has a limited styling option. We can remove it with content: &quot;&quot;; but Safari presently ignores that.</li>
+</ul>
+<p>Detail and summary open up lots of possibilities. Bramus Van Damme has been doing some <a href="https://developer.chrome.com/blog/styling-details">cool experiments</a>, but following Google accessible carousels that were less than accessible I think these may not yet be production ready.</p>
+<h2 id="design-considerations-2">Design considerations</h2>
+<p>Those using accordion that depend on JS might want to research beyond what Google says about being able to find hidden content, but as far as we know there are no issues with using details and summary.</p>
+<p>The bonus with details and summary is that in-page search works and panels will open to show the highlighted text. (presently true for Chromium browsers but as part of interop is should be true for other before 2026)</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>As the no script show focussed doing the most with HTML  we would probably look to other patterns if JS was needed.  For example if there was a page with lots of content sections. We'd probably follow what <a href="https://en.wikipedia.org/wiki/Accordion">Wikipedia</a> does by using anchor tags.</p>
+
+</div>
+</heading-anchors></article>
+
+
+
+<div class="popout">
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/19/">Becoming a better freelance web designer</a></li>
+</ul>
+</div>
 			
-</main>	
+</div></main>	
   <footer>
 
 <h2 class="[ angle ]" id="stuff">Stuff</h2>  
@@ -165,7 +207,7 @@
  </div>
 </footer>
 
-		<!-- This page `/tags/learn/` was built on 2025-06-10T09:44:42.647Z -->
+		<!-- This page `/20/` was built on 2025-06-10T09:44:42.458Z -->
 		<script type="module" src="/dist/2it2F9Kmpn.js"></script>		
 </body>
 </html>
