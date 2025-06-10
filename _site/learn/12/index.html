@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tagged &#39;build&#39;</title>
+<title>Building an accessible accordion with HTML and CSS</title>
 <script>  
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme) {
@@ -15,28 +15,28 @@
 <link rel="icon" type="img/x-icon" href="/svg/favicon.svg">
 <link rel="icon" href="img/favicon.ico" sizes="any">
 
-<meta name="description" content="A vodcast where we chat, learn and build websites simply.">
+<meta name="description" content="Building an accessible accordion with HTML and CSS.">
 <link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="No Script Show | Making Websites Simple Again.">
 
-<link rel="stylesheet" href="/dist/KAr9Bvtl55.css">
+<link rel="stylesheet" href="/dist/NdZSwRfO91.css">
 
    
  
 		
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://noscript.show/tags/build/">
-<meta property="og:title" content="No Script Show Tagged &#39;build&#39;">
-<meta property="og:description" content="">
+<meta property="og:url" content="https://noscript.show/learn/12/">
+<meta property="og:title" content="No Script Show Building an accessible accordion with HTML and CSS">
+<meta property="og:description" content="Building an accessible accordion with HTML and CSS.">
 
 <meta property="og:image" content="https://noscript.show//img/og-image.webp">
 
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://noscript.show/tags/build/">
-<meta property="twitter:title" content="No Script Show Tagged &#39;build&#39;">
-<meta property="twitter:description" content="">
+<meta property="twitter:url" content="https://noscript.show/learn/12/">
+<meta property="twitter:title" content="No Script Show Building an accessible accordion with HTML and CSS">
+<meta property="twitter:description" content="Building an accessible accordion with HTML and CSS.">
 
 <meta property="twitter:image" content="https://noscript.show//img/og-image.webp">
 
@@ -75,43 +75,59 @@
 </nav>
 </header>
 <main class="[ page-layout ] [ flow ]" id="skip">			
-				<h1 id="tagged-build">Tagged “build”</h1>
+				
 
 
-<ol reversed="">
-	<li>
-		<a href="/build/7/">Building with an 11ty starter sites and headless WordPress</a> - 
-		<small><time class="postlist-date" datetime="2025-02-07"> Feb 2025</time></small>
-	</li>
-	<li>
-		<a href="/build/6/">Long-term WordPress user tries building with 11ty</a> - 
-		<small><time class="postlist-date" datetime="2025-01-23"> Jan 2025</time></small>
-	</li>
-	<li>
-		<a href="/build/5/">Easier web design and coding with Bento Grids</a> - 
-		<small><time class="postlist-date" datetime="2024-11-18"> Nov 2024</time></small>
-	</li>
-	<li>
-		<a href="/build/4/">Redesigning a Bistro site. Part 2. Coding</a> - 
-		<small><time class="postlist-date" datetime="2024-10-25"> Oct 2024</time></small>
-	</li>
-	<li>
-		<a href="/build/3/">Redesigning a Bistro site. Part 1. The Design.</a> - 
-		<small><time class="postlist-date" datetime="2024-10-25"> Oct 2024</time></small>
-	</li>
-	<li>
-		<a href="/build/2/">Redesigning a vets site. Part 2. Coding</a> - 
-		<small><time class="postlist-date" datetime="2024-10-05"> Oct 2024</time></small>
-	</li>
-	<li>
-		<a href="/build/1/">Redesigning a vets site. Part 1. UX Design and Planning</a> - 
-		<small><time class="postlist-date" datetime="2024-10-05"> Oct 2024</time></small>
-	</li>
-</ol>
+<div class="[ popout ]">
 
-<p>See <a href="/tags/">all tags</a>.</p>
+<div class="[ center-me ]">
+<h1 class="[ post-title-only ]" id="building-an-accessible-accordion-with-html-and-css">Building an accessible accordion with HTML and CSS</h1>
+</div>
+
+
+<div class="right-me">
+<ul class="post-metadata">
+	<li><time datetime="2025-06-11">11 June 2025</time></li>
+	<li><a href="/tags/learn/" class="post-tag">learn</a></li>
+</ul>
+</div>
+<article>
+<heading-anchors>
+<div class="[ flow ][ page-layout ]">
+<p><strong>Show Notes:</strong></p>
+<h2 id="accordions-with-js">Accordions with JS</h2>
+<p>Stolen from Sara Soueidan’s excellent <a href="https://practical-accessibility.today/">Practical Accessibility</a> course:</p>
+<ul>
+<li>Typical approach using <a href="https://codepen.io/SaraSoueidan/pen/yyLQmQZ/26d304b2094c87136a61a0b7cf12de18">HTML buttons</a> (no good is JS fails to load).</li>
+<li>Accordion with <a href="https://codepen.io/SaraSoueidan/pen/raNoXWr/b84fe6faa8823d00347532f428677044">&quot;interactive headings&quot;</a> (progressive enhancement).</li>
+<li>In-page search issues may be solved with the new hidden=until-found attribute.</li>
+</ul>
+<h2 id="disclosure-widget"><a href="https://intrinsicframework.here24.co/disclosure-widget/">Disclosure widget</a></h2>
+<ul>
+<li>With details the browser has a built-in shadow DOM component.</li>
+<li>details-content has browser styles set to content-visibility: hidden which changes to block.</li>
+<li>Styling the marker is <a href="https://css-tricks.com/using-styling-the-details-element/#aa-style-the-marker">limited</a>.</li>
+</ul>
+<h2 id="exclusive-css-accordion"><a href="https://intrinsicframework.here24.co/css-exclusive-accordion/">Exclusive CSS accordion</a></h2>
+<ul>
+<li>We can use 'open&quot; to keep any panel open.<code>&lt;details open&gt;</code></li>
+<li>With a matching name attribute we get an exclusive accordion. <code>&lt;details name=&quot;anyname&quot;&gt;</code></li>
+<li>We can fix the height and allow scroll (Adrian Roselli’s <a href="https://codepen.io/aardrian/pen/gOqdaXQ">example</a>).</li>
+<li>In our example I have borrowed the mock icon from <a href="https://web.dev/learn/html/details/#toggling_the_summary_marker">web.dev.</a>.</li>
+</ul>
+
+</div>
+</heading-anchors></article>
+
+
+
+<div class="popout">
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/20/">Website accordions:  the good the bad and the ugly</a></li>
+</ul>
+</div>
 			
-</main>	
+</div></main>	
   <footer>
 
 <h2 class="[ angle ]" id="stuff">Stuff</h2>  
@@ -149,7 +165,7 @@
  </div>
 </footer>
 
-		<!-- This page `/tags/build/` was built on 2025-06-10T10:26:41.494Z -->
+		<!-- This page `/learn/12/` was built on 2025-06-10T10:26:41.272Z -->
 		<script type="module" src="/dist/2it2F9Kmpn.js"></script>		
 </body>
 </html>

@@ -11,6 +11,34 @@
     <name>No Script Show</name>
   </author>
   <entry>
+    <title>Building an accessible accordion with HTML and CSS</title>
+    <link href="https://noscript.show/learn/12/" />
+    <updated>2025-06-11T00:00:00Z</updated>
+    <id>https://noscript.show/learn/12/</id>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Show Notes:&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;accordions-with-js&quot;&gt;Accordions with JS&lt;/h2&gt;
+&lt;p&gt;Stolen from Sara Soueidan’s excellent &lt;a href=&quot;https://practical-accessibility.today/&quot;&gt;Practical Accessibility&lt;/a&gt; course:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Typical approach using &lt;a href=&quot;https://codepen.io/SaraSoueidan/pen/yyLQmQZ/26d304b2094c87136a61a0b7cf12de18&quot;&gt;HTML buttons&lt;/a&gt; (no good is JS fails to load).&lt;/li&gt;
+&lt;li&gt;Accordion with &lt;a href=&quot;https://codepen.io/SaraSoueidan/pen/raNoXWr/b84fe6faa8823d00347532f428677044&quot;&gt;&amp;quot;interactive headings&amp;quot;&lt;/a&gt; (progressive enhancement).&lt;/li&gt;
+&lt;li&gt;In-page search issues may be solved with the new hidden=until-found attribute.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;disclosure-widget&quot;&gt;&lt;a href=&quot;https://intrinsicframework.here24.co/disclosure-widget/&quot;&gt;Disclosure widget&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;With details the browser has a built-in shadow DOM component.&lt;/li&gt;
+&lt;li&gt;details-content has browser styles set to content-visibility: hidden which changes to block.&lt;/li&gt;
+&lt;li&gt;Styling the marker is &lt;a href=&quot;https://css-tricks.com/using-styling-the-details-element/#aa-style-the-marker&quot;&gt;limited&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;exclusive-css-accordion&quot;&gt;&lt;a href=&quot;https://intrinsicframework.here24.co/css-exclusive-accordion/&quot;&gt;Exclusive CSS accordion&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;We can use &#39;open&amp;quot; to keep any panel open.&lt;code&gt;&amp;lt;details open&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;With a matching name attribute we get an exclusive accordion. &lt;code&gt;&amp;lt;details name=&amp;quot;anyname&amp;quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;We can fix the height and allow scroll (Adrian Roselli’s &lt;a href=&quot;https://codepen.io/aardrian/pen/gOqdaXQ&quot;&gt;example&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;In our example I have borrowed the mock icon from &lt;a href=&quot;https://web.dev/learn/html/details/#toggling_the_summary_marker&quot;&gt;web.dev.&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
     <title>Website accordions:  the good the bad and the ugly</title>
     <link href="https://noscript.show/20/" />
     <updated>2025-06-11T00:00:00Z</updated>
@@ -1666,21 +1694,6 @@
 &lt;li&gt;Could get boring.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;These can be overcome and putting everything on display can be seen as more transparent (than a guided story) in some eastern cultures.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Redesigning a Bistro site. Part 2. Coding</title>
-    <link href="https://noscript.show/build/4/" />
-    <updated>2024-10-25T00:00:00Z</updated>
-    <id>https://noscript.show/build/4/</id>
-    <content type="html">&lt;h2 id=&quot;show-notes&quot;&gt;Show notes&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Nathan&#39;s intro&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;In the first video we reimaged the owners&#39; aims and created a static version in Figma.  Now this has been coded up we are looking at the challenges that came with that.   The code is on Github (link below) if you want to use that to follow along.&lt;/p&gt;
-&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://bistro.here24.co/&quot;&gt;Demo website&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/DavidWaumsley/bistro-demo&quot;&gt;Download from Github&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content>
   </entry>
 </feed>
