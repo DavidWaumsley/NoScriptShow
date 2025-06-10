@@ -104,7 +104,7 @@
 &lt;h2 id=&quot;seo-considerations&quot;&gt;SEO considerations&lt;/h2&gt;
 &lt;p&gt;Those using accordion that depend on JS might want to research beyond what Google says about being able to find hidden content, but as far as we know there are no issues with using details and summary.&lt;/p&gt;
 &lt;p&gt;The bonus with details and summary is that in-page search works and panels will open to show the highlighted text. (presently true for Chromium browsers but as part of interop is should be true for other before 2026).&lt;/p&gt;
-&lt;p&gt;Accordions are often used for FAQ pages. There&#39;s &lt;a href=&quot;https://developers.google.com/search/docs/appearance/structured-data/faqpage&quot;&gt;schema&lt;/a&gt; for this, but probably only useful for bonifide health and government sites these days.&lt;/p&gt;
+&lt;p&gt;Accordions are often used for FAQ pages. There&#39;s &lt;a href=&quot;https://developers.google.com/search/docs/appearance/structured-data/faqpage&quot;&gt;schema&lt;/a&gt; for this, but probably only useful for bonafide health and government sites these days.&lt;/p&gt;
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;As the no script show focussed doing the most with HTML  we would probably look to other patterns if JS was needed.  For example if there was a page with lots of content sections. We&#39;d probably follow what &lt;a href=&quot;https://en.wikipedia.org/wiki/Accordion&quot;&gt;Wikipedia&lt;/a&gt; does by using anchor tags.&lt;/p&gt;
 </content>
