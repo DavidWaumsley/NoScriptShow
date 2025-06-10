@@ -152,9 +152,10 @@
 <li>The browsers marker icon has a limited styling option. We can remove it with content: &quot;&quot;; but Safari presently ignores that.</li>
 </ul>
 <p>Detail and summary open up lots of possibilities. Bramus Van Damme has been doing some <a href="https://developer.chrome.com/blog/styling-details">cool experiments</a>, but following Google accessible carousels that were less than accessible I think these may not yet be production ready.</p>
-<h2 id="design-considerations-2">Design considerations</h2>
+<h2 id="seo-considerations">SEO considerations</h2>
 <p>Those using accordion that depend on JS might want to research beyond what Google says about being able to find hidden content, but as far as we know there are no issues with using details and summary.</p>
-<p>The bonus with details and summary is that in-page search works and panels will open to show the highlighted text. (presently true for Chromium browsers but as part of interop is should be true for other before 2026)</p>
+<p>The bonus with details and summary is that in-page search works and panels will open to show the highlighted text. (presently true for Chromium browsers but as part of interop is should be true for other before 2026).</p>
+<p>Accordions are often used for FAQ pages. There's <a href="https://developers.google.com/search/docs/appearance/structured-data/faqpage">schema</a> for this, but probably only useful for bonifide health and government sites these days.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>As the no script show focussed doing the most with HTML  we would probably look to other patterns if JS was needed.  For example if there was a page with lots of content sections. We'd probably follow what <a href="https://en.wikipedia.org/wiki/Accordion">Wikipedia</a> does by using anchor tags.</p>
 
@@ -207,7 +208,7 @@
  </div>
 </footer>
 
-		<!-- This page `/20/` was built on 2025-06-10T10:26:41.272Z -->
+		<!-- This page `/20/` was built on 2025-06-10T13:04:09.285Z -->
 		<script type="module" src="/dist/2it2F9Kmpn.js"></script>		
 </body>
 </html>
