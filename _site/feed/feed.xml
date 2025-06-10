@@ -35,6 +35,7 @@
 &lt;li&gt;With a matching name attribute we get an exclusive accordion. &lt;code&gt;&amp;lt;details name=&amp;quot;anyname&amp;quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;We can fix the height and allow scroll (Adrian Roselli’s &lt;a href=&quot;https://codepen.io/aardrian/pen/gOqdaXQ&quot;&gt;example&lt;/a&gt;).&lt;/li&gt;
 &lt;li&gt;In our example I have borrowed the mock icon from &lt;a href=&quot;https://web.dev/learn/html/details/#toggling_the_summary_marker&quot;&gt;web.dev.&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;In page search works.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
   </entry>

@@ -30,3 +30,4 @@ Stolen from Sara Soueidan’s excellent [Practical Accessibility](https://practi
 - With a matching name attribute we get an exclusive accordion. `<details name="anyname">`
 - We can fix the height and allow scroll (Adrian Roselli’s [example](https://codepen.io/aardrian/pen/gOqdaXQ)).
 - In our example I have borrowed the mock icon from [web.dev.](https://web.dev/learn/html/details/#toggling_the_summary_marker). 
+- In page search works. 
