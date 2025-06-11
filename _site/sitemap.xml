@@ -247,17 +247,17 @@
 	</url>
 	
 	<url>
-		<loc>https://noscript.show/feed/feed.xml</loc>
-		<lastmod>2025-06-10</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://noscript.show/20/</loc>
 		<lastmod>2025-06-11</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://noscript.show/learn/12/</loc>
+		<lastmod>2025-06-11</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/feed/feed.xml</loc>
 		<lastmod>2025-06-11</lastmod>
 	</url>
 </urlset>
