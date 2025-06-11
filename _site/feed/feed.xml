@@ -16,6 +16,7 @@
     <updated>2025-06-11T00:00:00Z</updated>
     <id>https://noscript.show/learn/12/</id>
     <content type="html">&lt;p&gt;&lt;strong&gt;Show Notes:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://noscript.show/20&quot;&gt;Part one &lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;accordions-with-js&quot;&gt;Accordions with JS&lt;/h2&gt;
 &lt;p&gt;Borrowed from Sara Soueidan’s excellent &lt;a href=&quot;https://practical-accessibility.today/&quot;&gt;Practical Accessibility&lt;/a&gt; course:&lt;/p&gt;
 &lt;ul&gt;
@@ -208,6 +209,7 @@
 &lt;p&gt;Accordions are often used for FAQ pages. There&#39;s &lt;a href=&quot;https://developers.google.com/search/docs/appearance/structured-data/faqpage&quot;&gt;schema&lt;/a&gt; for this, but probably only useful for bonafide health and government sites these days.&lt;/p&gt;
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;As the no script show focussed doing the most with HTML  we would probably look to other patterns if JS was needed.  For example if there was a page with lots of content sections. We&#39;d probably follow what &lt;a href=&quot;https://en.wikipedia.org/wiki/Accordion&quot;&gt;Wikipedia&lt;/a&gt; does by using anchor tags or &lt;a href=&quot;https://www.joshwcomeau.com/animation/partial-keyframes/&quot;&gt;Josh Comeau&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://noscript.show/learn/12&quot;&gt;Part two&lt;/a&gt;&lt;/p&gt;
 &lt;details&gt; 
 &lt;summary&gt;Transcript&lt;/summary&gt;
 &lt;p&gt;[00:00:05] &lt;strong&gt;Nathan Wrigley:&lt;/strong&gt; Hello there and welcome to the No Script Show.&lt;/p&gt;

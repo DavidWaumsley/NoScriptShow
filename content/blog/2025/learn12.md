@@ -8,6 +8,9 @@ videoid: Y_2lbjGu9m0
 ---
  **Show Notes:**
 
+
+[Part one ](/20)
+
 ## Accordions with JS
 
 Borrowed from Sara Soueidan’s excellent [Practical Accessibility](https://practical-accessibility.today/) course:
