@@ -97,28 +97,28 @@
 <p><strong>Show Notes:</strong></p>
 <h2 id="what-s-an-accordion">What’s an accordion?</h2>
 <ul>
-<li>A collection of (hide and show) disclosure widgets or...</li>
-<li>A collection headings with icons that when interacted with reveal a panel of previously hidden content.</li>
+<li>A collection of (hide and show) disclosure widgets.</li>
+<li>A collection &quot;headings&quot; with icons which when triggered reveal a panel of previously hidden content.</li>
 </ul>
 <small>
 <strong>Note:</strong> some articles point to other UX patterns. Here we are not considering overlays or anchor links to page content as accordions.
 </small>
 <h2 id="types-of-accordions">Types of accordions</h2>
 <ul>
-<li>Exclusive when only one panel can be open at a time.</li>
+<li>Exclusive. This is when only one panel can be open at a time.</li>
 <li>Non exclusive where the user can open how many they like.</li>
-<li>Exclusive or non-exclusive with an open/close toggle.</li>
+<li>Exclusive or non-exclusive with an open/close all toggle.</li>
 </ul>
 <h2 id="code-needed-for-accordions">Code needed for accordions</h2>
 <p>Until recently accordions always needed JS and ARIA tags (Accessible Rich Internet Applications).</p>
 <ul>
 <li>From Jan  2020 we got the details and summary elements that allowed us make non exclusive accordions with only HTML.</li>
 <li>From Sept 2024 we could add matching name attributes to the details elements to allow us to create exclusive accordions.</li>
-<li>If we want a toggle to open and close all panels we still needs Javascript and there may also be reason why we still want JS for accordion eve if we don’t need this toggle.</li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/interpolate-size">Interpolate-size</a> is still experimental and  limited to chromium browsers, but it allows us to animate the opening of an accordion panel. It is a progressive enhancement.</li>
+<li>If we want a open/close all toggle we still needs Javascript.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/interpolate-size">Interpolate-size</a> allows us to animate the opening of an accordion panel. It is still experimental and limited to chromium browsers, but is a progressive enhancement.</li>
 </ul>
 <h2 id="when-we-might-use-them-ux">When we might use them (UX)</h2>
-<p>This is condensed version of <a href="https://www.nngroup.com/articles/accordions-on-desktop/">recent articles </a> from the Nielsen Norman Group.</p>
+<p>A condensed version of <a href="https://www.nngroup.com/articles/accordions-on-desktop/">recent articles </a> from the Nielsen Norman Group.</p>
 <p><strong>Benefits</strong></p>
 <ul>
 <li>Improving Scannability (less clutter).</li>
@@ -129,7 +129,7 @@
 <ul>
 <li>Increased Interaction Cost.</li>
 <li>Fragmented Access to Information (can’t compare panel content easily).</li>
-<li>Difficulty with Printing, accessibility, SEO and in page search</li>
+<li>Difficulty with printing, accessibility, SEO and in-page search</li>
 </ul>
  <small>
 <strong>Other articles:</strong> 
@@ -145,16 +145,16 @@
 </ul>
 <h2 id="design-considerations">Design considerations</h2>
 <p>Presently, we have more design control with JS, but more responsibilities.</p>
-<p>We should have a fallback for when JS does not load. Andy Bell list of 15 situations <a href="https://piccalil.li/blog/a-handful-of-reasons-javascript-wont-be-available/">where is can happen</a>.</p>
+<p>We should have a fallback for when JS does not load. Andy Bell lists 15 situations <a href="https://piccalil.li/blog/a-handful-of-reasons-javascript-wont-be-available/">where is can happen</a>.</p>
 <p>Here are the design issues with using details and summary.</p>
 <ul>
-<li>Animation is presently either experimental or limited.</li>
+<li>Animation is presently experimental or limited.</li>
 <li>The browsers marker icon has a limited styling option. We can remove it with content: &quot;&quot;; but Safari presently ignores that.</li>
 </ul>
 <p>Detail and summary open up lots of possibilities. Bramus Van Damme has been doing some <a href="https://developer.chrome.com/blog/styling-details">cool experiments</a>, but following Google accessible carousels that were less than accessible I think these may not yet be production ready.</p>
 <h2 id="seo-considerations">SEO considerations</h2>
-<p>Those using accordion that depend on JS might want to research beyond what Google says about being able to find hidden content, but as far as we know there are no issues with using details and summary.</p>
-<p>The bonus with details and summary is that in-page search works and panels will open to show the highlighted text. (presently true for Chromium browsers but as part of interop is should be true for other before 2026).</p>
+<p>Those using accordions dependent on JS might want to research beyond what Google says about being able to find hidden content, but as far as we know there are no issues with using details and summary.</p>
+<p>The bonus with details and summary is that in-page search works and panels will open to show the highlighted text. (presently true for Chromium browsers but as part of interop it should be true for other before 2026).</p>
 <p>Accordions are often used for FAQ pages. There's <a href="https://developers.google.com/search/docs/appearance/structured-data/faqpage">schema</a> for this, but probably only useful for bonafide health and government sites these days.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>As the no script show focussed doing the most with HTML  we would probably look to other patterns if JS was needed.  For example if there was a page with lots of content sections. We'd probably follow what <a href="https://en.wikipedia.org/wiki/Accordion">Wikipedia</a> does by using anchor tags or <a href="https://www.joshwcomeau.com/animation/partial-keyframes/">Josh Comeau</a>.</p>
@@ -208,7 +208,7 @@
  </div>
 </footer>
 
-		<!-- This page `/20/` was built on 2025-06-11T04:47:54.016Z -->
+		<!-- This page `/20/` was built on 2025-06-11T05:02:36.369Z -->
 		<script type="module" src="/dist/2it2F9Kmpn.js"></script>		
 </body>
 </html>
