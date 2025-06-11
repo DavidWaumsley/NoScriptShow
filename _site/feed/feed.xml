@@ -95,7 +95,7 @@
 &lt;/ul&gt;
 &lt;h2 id=&quot;design-considerations&quot;&gt;Design considerations&lt;/h2&gt;
 &lt;p&gt;Presently, we have more design control with JS, but more responsibilities.&lt;/p&gt;
-&lt;p&gt;We should have a fallback for when JS does not load. Andy Bell lists 15 situations &lt;a href=&quot;https://piccalil.li/blog/a-handful-of-reasons-javascript-wont-be-available/&quot;&gt;where is can happen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We should have a fallback for when JS does not load. Andy Bell lists 15 situations &lt;a href=&quot;https://piccalil.li/blog/a-handful-of-reasons-javascript-wont-be-available/&quot;&gt;where this can happen&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Here are the design issues with using details and summary.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Animation is presently experimental or limited.&lt;/li&gt;
