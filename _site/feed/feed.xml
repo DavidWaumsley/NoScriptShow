@@ -17,7 +17,7 @@
     <id>https://noscript.show/learn/12/</id>
     <content type="html">&lt;p&gt;&lt;strong&gt;Show Notes:&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&quot;accordions-with-js&quot;&gt;Accordions with JS&lt;/h2&gt;
-&lt;p&gt;Stolen from Sara Soueidan’s excellent &lt;a href=&quot;https://practical-accessibility.today/&quot;&gt;Practical Accessibility&lt;/a&gt; course:&lt;/p&gt;
+&lt;p&gt;Borrowed from Sara Soueidan’s excellent &lt;a href=&quot;https://practical-accessibility.today/&quot;&gt;Practical Accessibility&lt;/a&gt; course:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Typical approach using &lt;a href=&quot;https://codepen.io/SaraSoueidan/pen/yyLQmQZ/26d304b2094c87136a61a0b7cf12de18&quot;&gt;HTML buttons&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Accordion with &lt;a href=&quot;https://codepen.io/SaraSoueidan/pen/raNoXWr/b84fe6faa8823d00347532f428677044&quot;&gt;&amp;quot;interactive headings&amp;quot;&lt;/a&gt; (progressive enhancement).&lt;/li&gt;

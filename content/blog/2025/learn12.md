@@ -11,7 +11,7 @@ draft: true
 
 ## Accordions with JS
 
-Stolen from Sara Soueidan’s excellent [Practical Accessibility](https://practical-accessibility.today/) course:
+Borrowed from Sara Soueidan’s excellent [Practical Accessibility](https://practical-accessibility.today/) course:
 
 -  Typical approach using [HTML buttons](https://codepen.io/SaraSoueidan/pen/yyLQmQZ/26d304b2094c87136a61a0b7cf12de18).
 - Accordion with ["interactive headings"](https://codepen.io/SaraSoueidan/pen/raNoXWr/b84fe6faa8823d00347532f428677044) (progressive enhancement).
