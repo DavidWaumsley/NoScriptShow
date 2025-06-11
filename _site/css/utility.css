@@ -31,6 +31,10 @@
   blockquote + * {
     --flow-space: 3rem;
   }
+
+  details{
+    --flow-space: 3rem;
+  }
   article ul {
     --flow-space: 2rem;
   }
