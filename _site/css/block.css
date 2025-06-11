@@ -696,3 +696,7 @@ footer nav a, footer nav a:active{
 padding-inline-start: 0;
 }
 
+.ha:hover, .ha:focus{
+color: transparent;
+margin: 0;
+  }
