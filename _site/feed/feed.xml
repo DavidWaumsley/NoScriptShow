@@ -30,6 +30,7 @@
 &lt;li&gt;details-content has browser styles set to content-visibility: hidden which changes to block.&lt;/li&gt;
 &lt;li&gt;Styling the marker is &lt;a href=&quot;https://css-tricks.com/using-styling-the-details-element/#aa-style-the-marker&quot;&gt;limited&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;a class=&quot;btn&quot; href=&quot;https://intrinsicframework.here24.co/disclosure-widget/&quot;&gt; See disclosure widget code&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;exclusive-css-accordion&quot;&gt;&lt;a href=&quot;https://intrinsicframework.here24.co/css-exclusive-accordion/&quot;&gt;Exclusive CSS accordion&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;We can use &#39;open&amp;quot; to keep any panel open.&lt;code&gt;&amp;lt;details open&amp;gt;&lt;/code&gt;&lt;/li&gt;
@@ -38,6 +39,7 @@
 &lt;li&gt;In our example I have borrowed the mock icon from &lt;a href=&quot;https://web.dev/learn/html/details/#toggling_the_summary_marker&quot;&gt;web.dev.&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;In page search works.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;a class=&quot;btn&quot; href=&quot;https://intrinsicframework.here24.co/css-exclusive-accordion/&quot;&gt; See accordion code&lt;/a&gt;&lt;/p&gt;
 &lt;details&gt; 
 &lt;summary&gt;Transcript&lt;/summary&gt;
 &lt;p&gt;[00:00:05] &lt;strong&gt;Nathan Wrigley:&lt;/strong&gt; Hello there. This video is a follow up to our podcast episode on website accordions. If you want to find that, you can at no script show slash 20. Here though, we&#39;re looking at some example accordions and their code.&lt;/p&gt;

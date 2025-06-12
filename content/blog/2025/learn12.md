@@ -26,6 +26,8 @@ Borrowed from Sara Soueidan’s excellent [Practical Accessibility](https://prac
 - details-content has browser styles set to content-visibility: hidden which changes to block.
 - Styling the marker is [limited](https://css-tricks.com/using-styling-the-details-element/#aa-style-the-marker).
 
+<a class="btn" href="https://intrinsicframework.here24.co/disclosure-widget/"> See disclosure widget code</a>
+
 ## [Exclusive CSS accordion](https://intrinsicframework.here24.co/css-exclusive-accordion/)
 
 - We can use 'open" to keep any panel open.`<details open>` 
@@ -33,6 +35,8 @@ Borrowed from Sara Soueidan’s excellent [Practical Accessibility](https://prac
 - We can fix the height and allow scroll (Adrian Roselli’s [example](https://codepen.io/aardrian/pen/gOqdaXQ)).
 - In our example I have borrowed the mock icon from [web.dev.](https://web.dev/learn/html/details/#toggling_the_summary_marker). 
 - In page search works. 
+
+<a class="btn" href="https://intrinsicframework.here24.co/css-exclusive-accordion/"> See accordion code</a>
 
 <details> 
 <summary>Transcript</summary>
