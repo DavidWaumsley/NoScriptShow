@@ -608,7 +608,7 @@ main li::marker {
    outline: 0.4rem solid var(--brand);   
 }
 
-.projects a:focus{
+.projects a:focus-visible{
    display: block; 
    padding: 0; 
    outline: 0.4rem solid var(--brand);   
