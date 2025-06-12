@@ -291,7 +291,13 @@ details > p strong{
 details{
  background-color: var(--shade);
  overflow: hidden; 
+ outline: 0.4rem solid transparent;
 }
+
+ summary:hover{
+ background-color: hsl(from var(--shade) h s calc(l + -3));
+ transition: .2s ease-in;  
+ }
 
 @media (prefers-reduced-motion: no-preference) {
   details::details-content{
