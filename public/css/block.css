@@ -664,7 +664,7 @@ text-decoration: none;
   list-style-type: none;
 }
 
-.nav a[href][aria-current="page"] {
+.nav a[href][aria-current="page"], .nav a[href][aria-current="true"] {
 text-decoration: underline;
 text-decoration-thickness: .4rem;
 text-decoration-color: var(--brand);

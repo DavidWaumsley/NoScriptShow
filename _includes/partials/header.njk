@@ -22,9 +22,9 @@
 {% endfor %}
 
 <li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"
-{% elif entry.title == "Chat" and isInChatCollection %} aria-current="page"
-{% elif entry.title == "Learn" and isInLearnCollection %} aria-current="page"
-{% elif entry.title == "Build" and isInBuildCollection %} aria-current="page"
+{% elif entry.title == "Chat" and isInChatCollection %} aria-current="true"   aria-label="Currently viewing a single post under Chat."
+{% elif entry.title == "Learn" and isInLearnCollection %} aria-current="true" aria-label="Currently viewing a single post under Learn."
+{% elif entry.title == "Build" and isInBuildCollection %} aria-current="true" aria-label="Currently viewing a single post under Build."
 {% endif %}>
 {{ entry.title }}</a>
 </li>{%- endfor %}<li class="nav-item"><a href="#more-navigation">More...</a> </li>
