@@ -7,7 +7,28 @@
 <nav>
 <ul class="nav" aria-label="Main">
 {%- for entry in collections.all | eleventyNavigation %}
-<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>{%- endfor %}<li class="nav-item"><a href="#more-navigation">More...</a> </li>
+{% set isInChatCollection = false %}
+{% set isInLearnCollection = false %}
+{% set isInBuildCollection = false %}
+
+{% for post in collections.chat %}
+  {% if post.url == page.url %}{% set isInChatCollection = true %}{% endif %}
+{% endfor %}
+{% for post in collections.learn %}
+  {% if post.url == page.url %}{% set isInLearnCollection = true %}{% endif %}
+{% endfor %}
+{% for post in collections.build %}
+  {% if post.url == page.url %}{% set isInBuildCollection = true %}{% endif %}
+{% endfor %}
+
+<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"
+{% elif entry.title == "Chat" and isInChatCollection %} aria-current="page"
+{% elif entry.title == "Learn" and isInLearnCollection %} aria-current="page"
+{% elif entry.title == "Build" and isInBuildCollection %} aria-current="page"
+{% endif %}>
+{{ entry.title }}</a>
+</li>{%- endfor %}<li class="nav-item"><a href="#more-navigation">More...</a> </li>
 </ul>
 </nav>
+
 </header>
