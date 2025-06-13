@@ -5,7 +5,7 @@
 </a>
 
 <nav>
-<ul class="nav" role="list" aria-label="Main">
+<ul class="nav" aria-label="Main">
 {%- for entry in collections.all | eleventyNavigation %}
 <li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>{%- endfor %}<li class="nav-item"><a href="#more-navigation">More...</a> </li>
 </ul>
