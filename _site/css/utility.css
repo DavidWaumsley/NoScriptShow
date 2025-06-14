@@ -159,8 +159,6 @@
  content: initial;
 }
 
-
-
 @view-transition {
 	navigation: auto;
 }

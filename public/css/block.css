@@ -69,7 +69,7 @@ padding: var(--space-2xs);
   border: .4rem solid var(--text-alt);
   padding: var(--space-m);
   max-width: fit-content;
-  font-size: var(--step--1); 
+  font-size: var(--step--1);   
 }
 
 .projects .reel-text p{
@@ -583,7 +583,7 @@ main li::marker {
   outline-offset: -0.125rem;
   /* box-shadow: 0  .1rem 0rem 0rem hsla(0, 0%, 2%, 1); */
   transition: .2s ease-out;
-  margin-block: var(--space-m);
+  margin-block: var(--space-m);   
 }
 
 .btn-alt{
@@ -662,7 +662,9 @@ nav a:active {
 header nav a[href]:not(:hover) {
 text-decoration: none;
   list-style-type: none;
+  
 }
+
 
 .nav a[href][aria-current="page"], .nav a[href][aria-current="true"] {
 text-decoration: underline;
@@ -671,9 +673,10 @@ text-decoration-color: var(--brand);
 text-underline-offset: .8rem;
 }
 
+
 header li {
   list-style: none;
-  line-height: 2.2;
+  line-height: 2.2; 
 }
 
 header a {
