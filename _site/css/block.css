@@ -715,16 +715,9 @@ margin: 0;
   #more-navigation:target ul{
 animation: slide-in-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s both;
 }
- }
-  
+ }  
 
-   /* --http://animista.net----- */
-
-/**
- * ----------------------------------------
- * animation slide-in-top
- * ----------------------------------------
- */
+ /* -- animista.net ----- */
 @keyframes slide-in-top {
   0% {
     transform: translateY(-1000px);
@@ -735,3 +728,12 @@ animation: slide-in-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s both;
     opacity: 1;
   }
 }
+.back-to-top {   
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+   
+   
