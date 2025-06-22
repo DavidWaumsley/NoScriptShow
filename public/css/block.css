@@ -599,6 +599,12 @@ main li::marker {
   outline: 0.4rem solid var(--text);   
 }
 
+
+.pill a:hover{  
+   background-color: var(--text);
+   color: var(--text-alt);
+}
+
 .latest-eps a:focus{
    display: block; 
    padding: 0; 
@@ -642,6 +648,7 @@ header nav ul {
   display: flex;
   flex-wrap: wrap; 
   margin-block-end: 0; 
+  margin-block-start: var(--space-xs);
 }
 
 nav a,
@@ -696,9 +703,9 @@ margin: 0;
   }
   
  #more-navigation:target ul {                          
-            outline: .4rem solid var(--brand); 
+            outline: .2rem solid var(--text); 
             outline-offset: var(--space-xl);  
-            padding-inline-end: var(--space-2xl);           
+            padding-inline-end: var(--space-2xl);                     
           }
 
 @media (prefers-reduced-motion: no-preference){
