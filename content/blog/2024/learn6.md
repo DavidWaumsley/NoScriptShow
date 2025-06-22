@@ -1,6 +1,6 @@
 ---
 title:  Embedding YouTube videos for performance
-description: Looking at a web component called Lite YouTube Embed by Paul Irish which allows us to embed YouTube videos without automatically forcing  visitors to download all of YouTube's associated assets.
+description:  A look at Lite YouTube Embed which allows us to embed YouTube videos without automatically downloading YouTube's associated assets.
 date: 2024-03-06
 tags: ["learn"]
 permalink: "/learn/6{{slugify }}/"
