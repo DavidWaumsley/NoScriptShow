@@ -4,11 +4,9 @@
   outline: 1px solid red;
 } */
 
-
 @view-transition {
 	navigation: auto;
 }
-
 
 *,
 *:before,
@@ -72,5 +70,3 @@ body {
 :target {
   scroll-margin-block: 5ex;
 }
-
-

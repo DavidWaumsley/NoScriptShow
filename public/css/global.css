@@ -266,7 +266,6 @@ main li  {
 /********************************/
 /***** OTHER GLOBAL ELEMENTS *****/
 
-
 p, li{
     font-size: var(--step-1);
 }

@@ -207,7 +207,6 @@ margin-inline-end: 5rem;
   font-weight: 900; 
 }
 
-
   .post-metadata li{
     font-size: var(--step-0);
   }
@@ -225,8 +224,7 @@ margin-inline-end: 5rem;
    border: .4rem solid var(--text); 
    padding: var(--space-s); 
    font-weight: 700;
-   text-decoration: none;
-   
+   text-decoration: none;   
   }
   
   .pagination a:hover {
@@ -297,7 +295,6 @@ word-break: normal;
  margin-block: var(--space-s);
  border-radius: 0.3em;
 }
-
 
 /* Posts list */
 .postlist {
@@ -635,14 +632,11 @@ header svg:focus-visible {
   padding: var(--space-xs);
 }
 
-
 @media (width <= 55rem) {
 .nss-icon {
   display: none;
 }
-
 }
-
 
 header nav ul {
   display: flex;
@@ -661,10 +655,8 @@ nav a:active {
 
 header nav a[href]:not(:hover) {
 text-decoration: none;
-  list-style-type: none;
-  
+  list-style-type: none;  
 }
-
 
 .nav a[href][aria-current="page"], .nav a[href][aria-current="true"] {
 text-decoration: underline;
@@ -672,7 +664,6 @@ text-decoration-thickness: .4rem;
 text-decoration-color: var(--brand);
 text-underline-offset: .8rem;
 }
-
 
 header li {
   list-style: none;
@@ -703,7 +694,6 @@ padding-inline-start: 0;
 color: transparent;
 margin: 0;
   }
-
   
  #more-navigation:target ul {                          
             outline: .4rem solid var(--brand); 
@@ -732,8 +722,6 @@ animation: slide-in-elliptic-left-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.9
   }
 }
 
-
-
 .back-to-top {   
     display: flex;
     justify-content: center;
@@ -745,4 +733,3 @@ animation: slide-in-elliptic-left-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.9
   display: inline;
   vertical-align:sub;
  }
-   
