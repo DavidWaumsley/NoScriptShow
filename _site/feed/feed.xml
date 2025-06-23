@@ -5,18 +5,84 @@
   <subtitle>Building solid websites simply.</subtitle>
   <link href="https://noscript.show/feed/feed.xml" rel="self" />
   <link href="https://noscript.show/" />
-  <updated>2025-06-11T00:00:00Z</updated>
+  <updated>2025-06-25T00:00:00Z</updated>
   <id>https://noscript.show/</id>
   <author>
     <name>No Script Show</name>
   </author>
+  <entry>
+    <title>Website Navigation: Why is it so bloody awful?</title>
+    <link href="https://noscript.show/21/" />
+    <updated>2025-06-25T00:00:00Z</updated>
+    <id>https://noscript.show/21/</id>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Show Notes:&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;what-is-website-navigation&quot;&gt;What is website navigation?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A group or list of links that help users to find associated &amp;quot;documents&amp;quot;?&lt;/li&gt;
+&lt;li&gt;These links are commonly to internal pages on the same domain, but can also be external or to other forms of documents such as PDFs?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The terminology often appears contradictory.  What some call navigation and links, others call menus and buttons. A menu to a developer is a &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/menu_role&quot;&gt;specific role&lt;/a&gt;. To a UX expert it may define a &lt;a href=&quot;https://www.nngroup.com/articles/ui-elements-glossary/#Menu-Bar&quot;&gt;pattern&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;types-of-navigation&quot;&gt;Types of navigation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Main link navigation (or menu bar).&lt;/li&gt;
+&lt;li&gt;Navigation activated by a &amp;quot;hamburger&amp;quot; icon.&lt;/li&gt;
+&lt;li&gt;Breadcrumbs.&lt;/li&gt;
+&lt;li&gt;&amp;quot;Dropdowns&amp;quot; on hover.&lt;/li&gt;
+&lt;li&gt;&amp;quot;Dropdowns&amp;quot; on click.&lt;/li&gt;
+&lt;li&gt;&amp;quot;Dropdowns&amp;quot; on click and hover.&lt;/li&gt;
+&lt;li&gt;Links with adjacent icons indicating a dropdown sub-menus.&lt;/li&gt;
+&lt;li&gt;Nested or Multi-level “dropdowns”.&lt;/li&gt;
+&lt;li&gt;Mega-menu&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There further terminology issues here. As &lt;a href=&quot;https://inclusive-components.design/menus-menu-buttons/&quot;&gt;Heydon Pickering&lt;/a&gt; points out &#39;dropdown&amp;quot; is behaviour we get with the HTML &amp;lt;select&amp;gt; and &amp;lt;options&amp;gt;. Some refer instead to &amp;quot;pulldowns&amp;quot;.  The W3C’s Web Accessibility Initiative refers to them as &lt;a href=&quot;https://www.w3.org/WAI/tutorials/menus/flyout/#flyoutnavmousefixed&quot;&gt;fly-outs&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;code-needed-for-website-navigation&quot;&gt;Code needed for website navigation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;HTML gives us a semantic and accessible name with the &amp;lt;nav&amp;gt; element. Add in some a tags to an ordered or unordered list and we are good.&lt;/li&gt;
+&lt;li&gt;Add ARIA and we have an accessible way to have more navigation components on a page and tell screen readers their current page.&lt;/li&gt;
+&lt;li&gt;Add CSS and we can have beautiful horizontal nav bars where we can also visually indicate the current page.&lt;/li&gt;
+&lt;li&gt;Add JS and we can create interactive show and hide (disclosure widgets) and also create many ways to fail.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;navigation-problems&quot;&gt;Navigation problems&lt;/h2&gt;
+&lt;h3 id=&quot;ux&quot;&gt;UX&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Menu bars often look similar, but behave differently.&lt;/li&gt;
+&lt;li&gt;We can’t click on things we do not see.&lt;/li&gt;
+&lt;li&gt;Easy dropdown solutions make sloppy site architecture easy too.&lt;/li&gt;
+&lt;li&gt;We should indicate links that go to pdfs or external sites.&lt;/li&gt;
+&lt;li&gt;Dropdown on hover can interrupt a user’s journey to another target.&lt;/li&gt;
+&lt;li&gt;Hide and show option should not obscuring important information.&lt;/li&gt;
+&lt;li&gt;Disclosure widgets have an interaction cost.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;design&quot;&gt;Design&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Are dropdowns becoming a &lt;a href=&quot;https://www.strongdesign.co/articles/tired-trend-drop-down-navigation-menus&quot;&gt;tired design pattern&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Mega-menus improve UX and we have seen some head turning examples such as &lt;a href=&quot;https://stripe.com/gb&quot;&gt;stripe.com&lt;/a&gt;, but is it best way? It depends on JS .&lt;/li&gt;
+&lt;li&gt;Perhaps &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API&quot;&gt;view transitions&lt;/a&gt; combined with &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Speculative_loading&quot;&gt;speculative loading&lt;/a&gt; could move us from imitating desktop apps.&lt;/li&gt;
+&lt;li&gt;Our &amp;quot;menu&amp;quot; has a few items to avoid hambuger clicks, but links to a second nav in the footer. The target is styles and animated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;seo&quot;&gt;SEO&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;JS may create  search issues or view it as secondary content.&lt;/li&gt;
+&lt;li&gt;Hidden content could lead to less pages visited.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;accessibility&quot;&gt;Accessibility&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Straightforward until we try to hide and show.&lt;/li&gt;
+&lt;li&gt;Most checker can not pick up on navigation failures most sites have.&lt;/li&gt;
+&lt;li&gt;Technically, &amp;lt;details&amp;gt; and &amp;lt;summary&amp;gt; can give us accessible dropdowns, but how screen reader annouce them is not aways suitable and in-page search makes them stay open.&lt;/li&gt;
+&lt;li&gt;Using the role of menu for website navigation means we have to add support for spacebar, arrow keys and escape too. Generally best avoided, but there is this &lt;a href=&quot;https://accessible-mega-menu.netlify.app/&quot;&gt;example&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Much of this was informed by Manuel Matuzović&#39;s &lt;a href=&quot;https://accessibility-cookbook.com/&quot;&gt;Web Accessibility Cookbook&lt;/a&gt;, the Web Accessibility Initiative work and Sara Soueidan’s  &lt;a href=&quot;https://practical-accessibility.today/&quot;&gt;Practical Accessibility course&lt;/a&gt;.  Not suprisingly the conclusion is that it&#39;s far easier to make resillent navigation without scripts (where possible).&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Building an accessible accordion with HTML and CSS</title>
     <link href="https://noscript.show/learn/12/" />
     <updated>2025-06-11T00:00:00Z</updated>
     <id>https://noscript.show/learn/12/</id>
     <content type="html">&lt;p&gt;&lt;strong&gt;Show Notes:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://noscript.show/20&quot;&gt;Part one &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://noscript.show/20&quot;&gt;Part one&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;accordions-with-js&quot;&gt;Accordions with JS&lt;/h2&gt;
 &lt;p&gt;Borrowed from Sara Soueidan’s excellent &lt;a href=&quot;https://practical-accessibility.today/&quot;&gt;Practical Accessibility&lt;/a&gt; course:&lt;/p&gt;
 &lt;ul&gt;
@@ -143,7 +209,7 @@
 &lt;/details&gt; </content>
   </entry>
   <entry>
-    <title>Website accordions:  the good the bad and the ugly</title>
+    <title>Website accordions: the good the bad and the ugly</title>
     <link href="https://noscript.show/20/" />
     <updated>2025-06-11T00:00:00Z</updated>
     <id>https://noscript.show/20/</id>
@@ -1899,28 +1965,5 @@
 &lt;p&gt;[00:36:37] &lt;strong&gt;David Waumsley:&lt;/strong&gt; Yeah,&lt;/p&gt;
 &lt;p&gt;[00:36:37] &lt;strong&gt;Nathan Wrigley:&lt;/strong&gt; thanks. Bye bye. Bye-bye.&lt;/p&gt;
 &lt;details&gt; &lt;/details&gt;&lt;/details&gt;</content>
-  </entry>
-  <entry>
-    <title>Easier web design and coding with Bento Grids</title>
-    <link href="https://noscript.show/build/5/" />
-    <updated>2024-11-18T00:00:00Z</updated>
-    <id>https://noscript.show/build/5/</id>
-    <content type="html">&lt;h2 id=&quot;show-notes&quot;&gt;Show notes&lt;/h2&gt;
-&lt;h3 id=&quot;is-bento-grid-designs-a-fad-that-will-look-jaded-in-a-few-years&quot;&gt;Is Bento grid designs a fad that will look jaded in a few years?&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Pros&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;We could see it as an approach to layout that&#39;s not tied to one aesthetic.&lt;/li&gt;
-&lt;li&gt;We can be more adventurous in mixing up styles&lt;/li&gt;
-&lt;li&gt;We can add and remove sections without throwing out the balance on the page.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;It seems a reasonable solution for those sites where the homepage has selection of changing offers rather than a story to tell.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Cons&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Potential for information overload with no clear hierarchy&lt;/li&gt;
-&lt;li&gt;Potential for Accessibility and SEO issues.&lt;/li&gt;
-&lt;li&gt;Could get boring.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;These can be overcome and putting everything on display can be seen as more transparent (than a guided story) in some eastern cultures.&lt;/p&gt;
-</content>
   </entry>
 </feed>

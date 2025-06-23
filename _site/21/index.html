@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thank you | No Script Show</title>
+<title>Website Navigation: Why is it so bloody awful?</title>
 <script>  
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme) {
@@ -15,28 +15,28 @@
 <link rel="icon" type="img/x-icon" href="/svg/favicon.svg">
 <link rel="icon" href="img/favicon.ico" sizes="any">
 
-<meta name="description" content="Thank you from the No Script Show.">
+<meta name="description" content="Are navigation menus overcomplicated and out of date?">
 <link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="No Script Show | Making Websites Simple Again.">
 
-<link rel="stylesheet" href="/dist/tnQHnBP0aW.css">
+<link rel="stylesheet" href="/dist/DP4FwdfIUi.css">
 
    
  
 		
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://noscript.show/thank-you/">
-<meta property="og:title" content="No Script Show Thank you | No Script Show">
-<meta property="og:description" content="Thank you from the No Script Show.">
+<meta property="og:url" content="https://noscript.show/21/">
+<meta property="og:title" content="No Script Show Website Navigation: Why is it so bloody awful?">
+<meta property="og:description" content="Are navigation menus overcomplicated and out of date?">
 
 <meta property="og:image" content="https://noscript.show//img/og-image.webp">
 
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://noscript.show/thank-you/">
-<meta property="twitter:title" content="No Script Show Thank you | No Script Show">
-<meta property="twitter:description" content="Thank you from the No Script Show.">
+<meta property="twitter:url" content="https://noscript.show/21/">
+<meta property="twitter:title" content="No Script Show Website Navigation: Why is it so bloody awful?">
+<meta property="twitter:description" content="Are navigation menus overcomplicated and out of date?">
 
 <meta property="twitter:image" content="https://noscript.show//img/og-image.webp">
 
@@ -242,7 +242,7 @@ Home</a>
   
 
 
-<li class="nav-item"><a href="/chat/">
+<li class="nav-item"><a href="/chat/" aria-current="true" aria-label="Currently viewing a single post under Chat.">
 Chat</a>
 </li>
 
@@ -432,16 +432,96 @@ Build</a>
 </header>
 <main class="[ page-layout ] [ flow ]" id="skip">			
 				
-<div class="page-layout ">
 
-    <h1 id="thank-you">Thank you</h1>
-    <div class=" center-me">
+
+<div class="[ popout ]">
+
+<div class="[ center-me ]">
+<h1 class="[ post-title-only ]" id="website-navigation-why-is-it-so-bloody-awful">Website Navigation: Why is it so bloody awful?</h1>
 </div>
-<p>
-    We really appreciate you contacting us and will try to get back to you quickly. 
-</p> 
-</div>			
-</main>	
+
+
+<div class="right-me">
+<ul class="post-metadata">
+	<li><time datetime="2025-06-25">25 June 2025</time></li>
+	<li><a href="/tags/chat/" class="post-tag">chat</a></li>
+</ul>
+</div>
+<article>
+<heading-anchors>
+<div class="[ flow ][ page-layout ]">
+<p><strong>Show Notes:</strong></p>
+<h2 id="what-is-website-navigation">What is website navigation?</h2>
+<ul>
+<li>A group or list of links that help users to find associated &quot;documents&quot;?</li>
+<li>These links are commonly to internal pages on the same domain, but can also be external or to other forms of documents such as PDFs?</li>
+</ul>
+<p>The terminology often appears contradictory.  What some call navigation and links, others call menus and buttons. A menu to a developer is a <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/menu_role">specific role</a>. To a UX expert it may define a <a href="https://www.nngroup.com/articles/ui-elements-glossary/#Menu-Bar">pattern</a>.</p>
+<h2 id="types-of-navigation">Types of navigation</h2>
+<ul>
+<li>Main link navigation (or menu bar).</li>
+<li>Navigation activated by a &quot;hamburger&quot; icon.</li>
+<li>Breadcrumbs.</li>
+<li>&quot;Dropdowns&quot; on hover.</li>
+<li>&quot;Dropdowns&quot; on click.</li>
+<li>&quot;Dropdowns&quot; on click and hover.</li>
+<li>Links with adjacent icons indicating a dropdown sub-menus.</li>
+<li>Nested or Multi-level “dropdowns”.</li>
+<li>Mega-menu</li>
+</ul>
+<p>There further terminology issues here. As <a href="https://inclusive-components.design/menus-menu-buttons/">Heydon Pickering</a> points out 'dropdown&quot; is behaviour we get with the HTML &lt;select&gt; and &lt;options&gt;. Some refer instead to &quot;pulldowns&quot;.  The W3C’s Web Accessibility Initiative refers to them as <a href="https://www.w3.org/WAI/tutorials/menus/flyout/#flyoutnavmousefixed">fly-outs</a>.</p>
+<h2 id="code-needed-for-website-navigation">Code needed for website navigation</h2>
+<ul>
+<li>HTML gives us a semantic and accessible name with the &lt;nav&gt; element. Add in some a tags to an ordered or unordered list and we are good.</li>
+<li>Add ARIA and we have an accessible way to have more navigation components on a page and tell screen readers their current page.</li>
+<li>Add CSS and we can have beautiful horizontal nav bars where we can also visually indicate the current page.</li>
+<li>Add JS and we can create interactive show and hide (disclosure widgets) and also create many ways to fail.</li>
+</ul>
+<h2 id="navigation-problems">Navigation problems</h2>
+<h3 id="ux">UX</h3>
+<ul>
+<li>Menu bars often look similar, but behave differently.</li>
+<li>We can’t click on things we do not see.</li>
+<li>Easy dropdown solutions make sloppy site architecture easy too.</li>
+<li>We should indicate links that go to pdfs or external sites.</li>
+<li>Dropdown on hover can interrupt a user’s journey to another target.</li>
+<li>Hide and show option should not obscuring important information.</li>
+<li>Disclosure widgets have an interaction cost.</li>
+</ul>
+<h3 id="design">Design</h3>
+<ul>
+<li>Are dropdowns becoming a <a href="https://www.strongdesign.co/articles/tired-trend-drop-down-navigation-menus">tired design pattern</a>.</li>
+<li>Mega-menus improve UX and we have seen some head turning examples such as <a href="https://stripe.com/gb">stripe.com</a>, but is it best way? It depends on JS .</li>
+<li>Perhaps <a href="https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API">view transitions</a> combined with <a href="https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Speculative_loading">speculative loading</a> could move us from imitating desktop apps.</li>
+<li>Our &quot;menu&quot; has a few items to avoid hambuger clicks, but links to a second nav in the footer. The target is styles and animated.</li>
+</ul>
+<h3 id="seo">SEO</h3>
+<ul>
+<li>JS may create  search issues or view it as secondary content.</li>
+<li>Hidden content could lead to less pages visited.</li>
+</ul>
+<h3 id="accessibility">Accessibility</h3>
+<ul>
+<li>Straightforward until we try to hide and show.</li>
+<li>Most checker can not pick up on navigation failures most sites have.</li>
+<li>Technically, &lt;details&gt; and &lt;summary&gt; can give us accessible dropdowns, but how screen reader annouce them is not aways suitable and in-page search makes them stay open.</li>
+<li>Using the role of menu for website navigation means we have to add support for spacebar, arrow keys and escape too. Generally best avoided, but there is this <a href="https://accessible-mega-menu.netlify.app/">example</a></li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>Much of this was informed by Manuel Matuzović's <a href="https://accessibility-cookbook.com/">Web Accessibility Cookbook</a>, the Web Accessibility Initiative work and Sara Soueidan’s  <a href="https://practical-accessibility.today/">Practical Accessibility course</a>.  Not suprisingly the conclusion is that it's far easier to make resillent navigation without scripts (where possible).</p>
+
+</div>
+</heading-anchors></article>
+
+
+
+<div class="popout">
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/learn/12/">Building an accessible accordion with HTML and CSS</a></li>
+</ul>
+</div>
+			
+</div></main>	
   <footer>
 
 <h2 class="[ angle ]" id="links">Links</h2>  
@@ -484,7 +564,7 @@ Build</a>
  </div>
 </footer>
 
-		<!-- This page `/thank-you/` was built on 2025-06-23T18:49:36.427Z -->
+		<!-- This page `/21/` was built on 2025-06-23T18:49:36.453Z -->
 		<script type="module" src="/dist/2it2F9Kmpn.js"></script>		
 </body>
 </html>
