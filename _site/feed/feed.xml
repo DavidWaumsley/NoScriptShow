@@ -70,7 +70,7 @@
 &lt;li&gt;Straightforward until we try to hide and show.&lt;/li&gt;
 &lt;li&gt;Most checker can not pick up on navigation failures most sites have.&lt;/li&gt;
 &lt;li&gt;Technically, &amp;lt;details&amp;gt; and &amp;lt;summary&amp;gt; can give us accessible dropdowns, but how screen reader announce them is not aways suitable and in-page search makes them stay open.&lt;/li&gt;
-&lt;li&gt;Using the role of menu for website navigation means we have to add support for spacebar, arrow keys and escape too. Generally best avoided, but there is this &lt;a href=&quot;https://accessible-mega-menu.netlify.app/&quot;&gt;example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Using the role of menu for website navigation means we have to add support for spacebar, arrow keys and escape too. Generally best avoided, but there is this &lt;a href=&quot;https://accessible-mega-menu.netlify.app/&quot;&gt;example&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Much of this was informed by Manuel Matuzović&#39;s &lt;a href=&quot;https://accessibility-cookbook.com/&quot;&gt;Web Accessibility Cookbook&lt;/a&gt;, the Web Accessibility Initiative work and Sara Soueidan’s  &lt;a href=&quot;https://practical-accessibility.today/&quot;&gt;Practical Accessibility course&lt;/a&gt;.  Not suprisingly the conclusion is that it&#39;s far easier to make resillent navigation without scripts (where possible).&lt;/p&gt;
