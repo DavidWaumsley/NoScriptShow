@@ -60,8 +60,9 @@
 &lt;li&gt;Are dropdowns becoming a &lt;a href=&quot;https://www.strongdesign.co/articles/tired-trend-drop-down-navigation-menus&quot;&gt;tired design pattern&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Mega-menus improve UX and we have seen some head turning examples such as &lt;a href=&quot;https://stripe.com/gb&quot;&gt;stripe.com&lt;/a&gt;, but is it best way? It depends on JS .&lt;/li&gt;
 &lt;li&gt;Perhaps &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API&quot;&gt;view transitions&lt;/a&gt; combined with &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Speculative_loading&quot;&gt;speculative loading&lt;/a&gt; could move us from imitating desktop apps.&lt;/li&gt;
-&lt;li&gt;Our &amp;quot;menu&amp;quot; has a few items to avoid hambuger clicks, but links to a second nav in the footer. The target is styles and animated.&lt;/li&gt;
+&lt;li&gt;Our &amp;quot;menu&amp;quot; has a few items to avoid hamburger* clicks, but links to a second nav in the footer. The target is styles and animated.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;small&gt;The &lt;a href=&quot;https://www.nngroup.com/articles/hamburger-menus/&quot;&gt;NNG&lt;/a&gt; updated their view on hamburger menus. They found it now to be commonly reconisable if placed top left and contains 3 bars. &lt;small&gt;&lt;/small&gt;&lt;/small&gt;&lt;/p&gt;
 &lt;h3 id=&quot;seo&quot;&gt;SEO&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;JS may create  search issues or view it as secondary content.&lt;/li&gt;
