@@ -18,10 +18,11 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Show Notes:&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&quot;what-is-website-navigation&quot;&gt;What is website navigation?&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;A group or list of links that help users to find associated &amp;quot;documents&amp;quot;?&lt;/li&gt;
-&lt;li&gt;These links are commonly to internal pages on the same domain, but can also be external or to other forms of documents such as PDFs?&lt;/li&gt;
+&lt;li&gt;A list to help users find associated pages and documents?&lt;/li&gt;
+&lt;li&gt;A table of content?&lt;/li&gt;
+&lt;li&gt;An ever-present menu bar?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The terminology often appears contradictory.  What some call navigation and links, others call menus and buttons. A menu to a developer is a &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/menu_role&quot;&gt;specific role&lt;/a&gt;. To a UX expert it may define a &lt;a href=&quot;https://www.nngroup.com/articles/ui-elements-glossary/#Menu-Bar&quot;&gt;pattern&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Terminology is difficult.  What some call navigation and links, others call menus and buttons. A menu to a developer is a &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/menu_role&quot;&gt;specific role&lt;/a&gt;. To a UX expert it may define a &lt;a href=&quot;https://www.nngroup.com/articles/ui-elements-glossary/#Menu-Bar&quot;&gt;pattern&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;types-of-navigation&quot;&gt;Types of navigation&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Main link navigation (or menu bar).&lt;/li&gt;
