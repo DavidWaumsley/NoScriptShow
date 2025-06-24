@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Building an accessible menu bar</title>
+<title>Creating accessible navigation</title>
 <script>  
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme) {
@@ -18,7 +18,7 @@
 <meta name="description" content="We look the code needed for an accessible menu bar">
 <link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="No Script Show | Making Websites Simple Again.">
 
-<link rel="stylesheet" href="/dist/DP4FwdfIUi.css">
+<link rel="stylesheet" href="/dist/-ZCiGlmXkH.css">
 
    
  
@@ -26,7 +26,7 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://noscript.show/learn/13/">
-<meta property="og:title" content="No Script Show Building an accessible menu bar">
+<meta property="og:title" content="No Script Show Creating accessible navigation">
 <meta property="og:description" content="We look the code needed for an accessible menu bar">
 
 <meta property="og:image" content="https://noscript.show//img/og-image.webp">
@@ -35,7 +35,7 @@
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://noscript.show/learn/13/">
-<meta property="twitter:title" content="No Script Show Building an accessible menu bar">
+<meta property="twitter:title" content="No Script Show Creating accessible navigation">
 <meta property="twitter:description" content="We look the code needed for an accessible menu bar">
 
 <meta property="twitter:image" content="https://noscript.show//img/og-image.webp">
@@ -445,7 +445,7 @@ Build</a>
 <div class="[ popout ]">
 
 <div class="[ center-me ]">
-<h1 class="[ post-title-only ]" id="building-an-accessible-menu-bar">Building an accessible menu bar</h1>
+<h1 class="[ post-title-only ]" id="creating-accessible-navigation">Creating accessible navigation</h1>
 </div>
 
 
@@ -459,32 +459,33 @@ Build</a>
 <heading-anchors>
 <div class="[ flow ][ page-layout ]">
 <p><strong>Show Notes:</strong></p>
-<p><a href="/21">Part one</a></p>
-<h2 id="navigation-with-js">Navigation with JS</h2>
+<h2 id="examples-with-js">Examples with JS</h2>
 <h3 id="fly-out-menus">Fly-out Menus</h3>
-<p>This is from the W3C's <a href="https://www.w3.org/WAI/">Web Accessibility Initiative</a>.</p>
+<p>From the W3C's <a href="https://www.w3.org/WAI/">Web Accessibility Initiative</a>:</p>
 <ul>
 <li><a href="https://www.w3.org/WAI/tutorials/menus/flyout/#fly-out-functionality">Examples with code </a></li>
 </ul>
-<p>Accessible, but not usable on small devices. It not progresively enhanced. If JS fails to load submenu items can not be found.</p>
+<p><small>Accessible, but not progresively enhanced or very usable on small devices.</small></p>
 <h3 id="animated-nav-hidden-on-mobile">Animated nav hidden on mobile</h3>
-<p>This is from Manuel Matuzović <a href="https://accessibility-cookbook.com/">Acessibility Cookbook</a>.</p>
+<p>From Manuel Matuzović's  <a href="https://accessibility-cookbook.com/">Acessibility Cookbook</a>:</p>
 <ul>
 <li><a href="https://codepen.io/matuzo/pen/pomaLZQ">Example</a></li>
 <li><a href="https://accessibility-cookbook.com/code/chapter7/recipe7_6/1_nav-animated/">Code</a></li>
 </ul>
-<p>This improves the UX for user with small devices, but if JS fails to load there's no site navigation for them.</p>
+<p><small>Accessible and fine for small devices, but not progresively enhanced.</small></p>
 <h3 id="progressively-enhanced-navigation">Progressively enhanced navigation</h3>
-<p>These come from Sara Soueidan's <a href="https://practical-accessibility.today/">Practical Accessibility</a>.</p>
+<p>From Sara Soueidan's <a href="https://practical-accessibility.today/">Practical Accessibility</a>.</p>
 <ul>
 <li><a href="https://codepen.io/SaraSoueidan/pen/eYPVvBo/7bb41d53655af69e44b6cf4a72102097">Drop-down navigation</a>.</li>
 <li><a href="https://codepen.io/SaraSoueidan/pen/abYgpMG/2aaf9e249122f4619c924bcfc75f450f">Mobile navigation (focus trapped)</a>.</li>
-<li><a href="https://codepen.io/SaraSoueidan/pen/BaGPOdw/29d8bd26d365b0161c6d0ded9c33e5ef">Mobile navigation (focus trapped</a>.</li>
+<li><a href="https://codepen.io/SaraSoueidan/pen/BaGPOdw/29d8bd26d365b0161c6d0ded9c33e5ef">Mobile navigation (focus NOT trapped</a>.</li>
 </ul>
-<p>Here &lt;span&gt; tags are changed to &lt;button&gt; tags when JS is loaded.</p>
-<p>The hambuger menus works as a modal dialog which traps the user within it so they need to know how to escape it. Alternatively it closes when the user is on the last focussable item.</p>
-<h2 id="simpler-navigation">Simpler Navigation</h2>
-<p>These  example is from</p>
+<p><small>Here &lt;span&gt; tags are changed to &lt;button&gt; tags when JS loads. The hamburger works as a modal dialog which traps the user within it by default. The last option escape the modal via the last focusable item. </small></p>
+<h2 id="simpler-navigation"><a href="https://intrinsicframework.here24.co/simple-navigation/">Simpler Navigation</a></h2>
+<p>Even with HTML and CSS there are few things than can be done to make the experience better for all.</p>
+<ul>
+<li><a href="https://intrinsicframework.here24.co/simple-navigation/">Example with code</a></li>
+</ul>
 
 </div>
 </heading-anchors></article>
@@ -540,7 +541,7 @@ Build</a>
  </div>
 </footer>
 
-		<!-- This page `/learn/13/` was built on 2025-06-24T16:20:25.043Z -->
+		<!-- This page `/learn/13/` was built on 2025-06-24T16:50:24.084Z -->
 		<script type="module" src="/dist/2it2F9Kmpn.js"></script>		
 </body>
 </html>
