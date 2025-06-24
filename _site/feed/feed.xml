@@ -41,7 +41,7 @@
 &lt;li&gt;HTML gives us a semantic and accessible name with the &amp;lt;nav&amp;gt; element. Add in some a tags to an ordered or unordered list and we are good.&lt;/li&gt;
 &lt;li&gt;Add ARIA and we have an accessible way to have more navigation components on a page and tell screen readers their current page.&lt;/li&gt;
 &lt;li&gt;Add CSS and we can have beautiful horizontal nav bars where we can also visually indicate the current page.&lt;/li&gt;
-&lt;li&gt;Add JS and we can create interactive show and hide (disclosure widgets) and also create many ways to fail.&lt;/li&gt;
+&lt;li&gt;Add JS and we can create (usable) interactive show and hide (disclosure widgets) along with many new ways to fail.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;navigation-problems&quot;&gt;Navigation problems&lt;/h2&gt;
 &lt;h3 id=&quot;ux&quot;&gt;UX&lt;/h3&gt;
