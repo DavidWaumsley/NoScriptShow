@@ -35,7 +35,7 @@
 &lt;li&gt;Nested or Multi-level &amp;quot;dropdowns&amp;quot;.&lt;/li&gt;
 &lt;li&gt;Mega-menus.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;There further terminology issues here. As &lt;a href=&quot;https://inclusive-components.design/menus-menu-buttons/&quot;&gt;Heydon Pickering&lt;/a&gt; points out &#39;dropdown&amp;quot; is behaviour we get with the HTML &amp;lt;select&amp;gt; and &amp;lt;options&amp;gt;. Some refer instead to &amp;quot;pulldowns&amp;quot;.  The W3C’s Web Accessibility Initiative refers to them as &lt;a href=&quot;https://www.w3.org/WAI/tutorials/menus/flyout/#flyoutnavmousefixed&quot;&gt;fly-outs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There&#39;s further terminology issues here. As &lt;a href=&quot;https://inclusive-components.design/menus-menu-buttons/&quot;&gt;Heydon Pickering&lt;/a&gt; points out &#39;dropdown&amp;quot; is behaviour we get with the HTML &amp;lt;select&amp;gt; and &amp;lt;options&amp;gt;. Some refer instead to &amp;quot;pulldowns&amp;quot;.  The W3C’s Web Accessibility Initiative refers to them as &lt;a href=&quot;https://www.w3.org/WAI/tutorials/menus/flyout/#flyoutnavmousefixed&quot;&gt;fly-outs&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;code-needed-for-website-navigation&quot;&gt;Code needed for website navigation&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;HTML gives us a semantic and accessible name with the &amp;lt;nav&amp;gt; element. Add in some a tags to an ordered or unordered list and we are good.&lt;/li&gt;
