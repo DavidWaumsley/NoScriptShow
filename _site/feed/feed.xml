@@ -43,7 +43,7 @@
 &lt;li&gt;Add CSS and we can have beautiful horizontal nav bars where we can also visually indicate the current page.&lt;/li&gt;
 &lt;li&gt;Add JS and we can create interactive show and hide (disclosure widgets) along with many new ways to fail.*&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;small&gt;* We can hide and show with CSS, but hover menus are no use to keyboard users and may not work well on touch devices.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;* We can hide and show with CSS, but hover menus are no use to keyboard users and difficult on touch devices.&lt;/small&gt;&lt;/p&gt;
 &lt;h2 id=&quot;navigation-problems&quot;&gt;Navigation problems&lt;/h2&gt;
 &lt;h3 id=&quot;ux&quot;&gt;UX&lt;/h3&gt;
 &lt;ul&gt;
