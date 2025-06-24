@@ -481,7 +481,7 @@ Build</a>
 <p>There's further terminology issues here. As <a href="https://inclusive-components.design/menus-menu-buttons/">Heydon Pickering</a> points out 'dropdown&quot; is behaviour we get with the HTML &lt;select&gt; and &lt;options&gt;. Some refer instead to &quot;pulldowns&quot;.  The W3C’s Web Accessibility Initiative refers to them as <a href="https://www.w3.org/WAI/tutorials/menus/flyout/#flyoutnavmousefixed">fly-outs</a>.</p>
 <h2 id="code-needed-for-website-navigation">Code needed for website navigation</h2>
 <ul>
-<li>HTML gives us a semantic and accessible name with the &lt;nav&gt; element. Add in some a tags to an ordered or unordered list and we are good.</li>
+<li>HTML gives us a semantic and accessible name with the &lt;nav&gt; element. Add in some &lt;a&gt; tags to an ordered or unordered list and we are good.</li>
 <li>Add ARIA and we have an accessible way to have more navigation components on a page and tell screen readers their current page.</li>
 <li>Add CSS and we can have beautiful horizontal nav bars where we can also visually indicate the current page.</li>
 <li>Add JS and we can create interactive show and hide (disclosure widgets) along with many new ways to fail.*</li>
@@ -500,21 +500,21 @@ Build</a>
 </ul>
 <h3 id="design">Design</h3>
 <ul>
-<li>Are dropdowns becoming a <a href="https://www.strongdesign.co/articles/tired-trend-drop-down-navigation-menus">tired design pattern</a>.</li>
-<li>Mega-menus improve UX and we have seen some head turning examples such as <a href="https://stripe.com/gb">stripe.com</a>, but is it best way? It depends on JS .</li>
+<li>Are dropdowns becoming a <a href="https://www.strongdesign.co/articles/tired-trend-drop-down-navigation-menus">tired design pattern</a>?</li>
+<li>Mega-menus improve UX and we have seen some head turning examples such as <a href="https://stripe.com/gb">stripe.com</a>, but is it best way? It depends on JS.</li>
 <li>Perhaps <a href="https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API">view transitions</a> combined with <a href="https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Speculative_loading">speculative loading</a> could move us from imitating desktop apps.</li>
-<li>Our &quot;menu&quot; has a few items to avoid hamburger* clicks, but links to a second nav in the footer. The target is styles and animated.</li>
+<li>Our &quot;menu&quot; has a few items to avoid hamburger* clicks, but links to a second nav in the footer.The target is styles and animated.</li>
 </ul>
 <p><small>The <a href="https://www.nngroup.com/articles/hamburger-menus/">NNG</a> updated their view on hamburger menus. They found it now to be commonly reconisable if placed top left and contains 3 bars. <small></small></small></p>
 <h3 id="seo">SEO</h3>
 <ul>
-<li>JS may create  search issues or view it as secondary content.</li>
+<li>JS may create search issues or be viewed as secondary content.</li>
 <li>Hidden content could lead to less pages visited.</li>
 </ul>
 <h3 id="accessibility">Accessibility</h3>
 <ul>
 <li>Straightforward until we try to hide and show.</li>
-<li>Most checker can not pick up on navigation failures most sites have.</li>
+<li>Most checker can not pick up on navigation failures that most sites have.</li>
 <li>Technically, &lt;details&gt; and &lt;summary&gt; can give us accessible dropdowns, but how screen reader announce them is not aways suitable and in-page search makes them stay open.</li>
 <li>Using the role of menu for website navigation means we have to add support for spacebar, arrow keys and escape too. Generally best avoided, but there is this <a href="https://accessible-mega-menu.netlify.app/">example</a>.</li>
 </ul>
@@ -576,7 +576,7 @@ Build</a>
  </div>
 </footer>
 
-		<!-- This page `/21/` was built on 2025-06-24T12:13:16.388Z -->
+		<!-- This page `/21/` was built on 2025-06-24T14:29:46.237Z -->
 		<script type="module" src="/dist/2it2F9Kmpn.js"></script>		
 </body>
 </html>
