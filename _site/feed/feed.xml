@@ -38,7 +38,7 @@
 &lt;li&gt;&lt;a href=&quot;https://codepen.io/SaraSoueidan/pen/BaGPOdw/29d8bd26d365b0161c6d0ded9c33e5ef&quot;&gt;Mobile navigation (focus NOT trapped)&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;small&gt;Here &amp;lt;span&amp;gt; tags are changed to &amp;lt;button&amp;gt; tags when JS loads. The hamburger works as a modal dialog which traps the user within it by default. The last option escape the modal via the last focusable item. &lt;/small&gt;&lt;/p&gt;
-&lt;p&gt;&lt;small&gt; &lt;strong&gt;David&#39;s note:&lt;/strong&gt; some years back I used &amp;lt;dialog&amp;gt; to &lt;a href=&quot;https://affinitycentre.co.uk/&quot;&gt;imitate a mega-menu &lt;/a&gt;. Until this year, I have not seem anyone using this for navigation menus. It seems to work with only a few lines of JS, but I have not tested it emough to cover here. &lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt; &lt;strong&gt;David&#39;s note:&lt;/strong&gt; some years ago I used &amp;lt;dialog&amp;gt; to &lt;a href=&quot;https://affinitycentre.co.uk/&quot;&gt;imitate a mega-menu &lt;/a&gt;. Until a month ago, I&#39;ve not seen anyone using this for navigation menus. It seems to work with only a few lines of JS, but I have not tested it emough to cover here. Improvement is needed.&lt;/small&gt;&lt;/p&gt;
 &lt;h2 id=&quot;simpler-navigation&quot;&gt;&lt;a href=&quot;https://intrinsicframework.here24.co/simple-navigation/&quot;&gt;Simpler Navigation&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Even with HTML and CSS there are few things than can be done to make the experience better for all.&lt;/p&gt;
 &lt;ul&gt;

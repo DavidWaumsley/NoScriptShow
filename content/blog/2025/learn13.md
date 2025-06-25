@@ -39,7 +39,7 @@ From Sara Soueidan's [Practical Accessibility](https://practical-accessibility.t
 
 <small>Here &lt;span&gt; tags are changed to &lt;button&gt; tags when JS loads. The hamburger works as a modal dialog which traps the user within it by default. The last option escape the modal via the last focusable item. </small>
 
-<small> <strong>David's note:</strong> some years back I used &lt;dialog&gt; to [imitate a mega-menu ](https://affinitycentre.co.uk/). Until this year, I have not seem anyone using this for navigation menus. It seems to work with only a few lines of JS, but I have not tested it emough to cover here. </small>
+<small> <strong>David's note:</strong> some years ago I used &lt;dialog&gt; to [imitate a mega-menu ](https://affinitycentre.co.uk/). Until a month ago, I've not seen anyone using this for navigation menus. It seems to work with only a few lines of JS, but I have not tested it emough to cover here. Improvement is needed.</small>
 
 
 
