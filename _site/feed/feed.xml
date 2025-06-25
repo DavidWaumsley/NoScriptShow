@@ -88,7 +88,7 @@
 &lt;li&gt;Easy dropdown solutions make sloppy site architecture easy too.&lt;/li&gt;
 &lt;li&gt;We should indicate links that go to pdfs or external sites.&lt;/li&gt;
 &lt;li&gt;Dropdown on hover can interrupt a user’s journey to another target.&lt;/li&gt;
-&lt;li&gt;Hide and show option should not obscuring important information.&lt;/li&gt;
+&lt;li&gt;Hide and show options should not obscure important information.&lt;/li&gt;
 &lt;li&gt;Disclosure widgets have an interaction cost.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;design&quot;&gt;Design&lt;/h3&gt;
@@ -107,7 +107,7 @@
 &lt;h3 id=&quot;accessibility&quot;&gt;Accessibility&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Straightforward until we try to hide and show.&lt;/li&gt;
-&lt;li&gt;Most checker can not pick up on navigation failures that most sites have.&lt;/li&gt;
+&lt;li&gt;Most checkers can not pick up on navigation failures that most sites have.&lt;/li&gt;
 &lt;li&gt;Technically, &amp;lt;details&amp;gt; and &amp;lt;summary&amp;gt; can give us accessible dropdowns, but how screen reader announce them is not aways suitable and in-page search makes them stay open.&lt;/li&gt;
 &lt;li&gt;Using the role of menu for website navigation means we have to add support for spacebar, arrow keys and escape too. Generally best avoided, but there is this &lt;a href=&quot;https://accessible-mega-menu.netlify.app/&quot;&gt;example&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
