@@ -225,7 +225,7 @@
 &lt;/ul&gt;
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;Much of this was informed by Manuel Matuzović&#39;s &lt;a href=&quot;https://accessibility-cookbook.com/&quot;&gt;Web Accessibility Cookbook&lt;/a&gt;, the Web Accessibility Initiative work and Sara Soueidan’s  &lt;a href=&quot;https://practical-accessibility.today/&quot;&gt;Practical Accessibility course&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Not suprisingly, the conclusion is that the No Script Show shoud, where possible, avoid scripts.&lt;/p&gt;
+&lt;p&gt;Not suprisingly, the conclusion is that the No Script Show should, where possible, avoid scripts.&lt;/p&gt;
  &lt;details&gt; 
 &lt;summary&gt;Transcript&lt;/summary&gt;
 &lt;p&gt;[00:00:05] &lt;strong&gt;Nathan Wrigley:&lt;/strong&gt; Hello there. This is the second in our series looking at various components that make up a website. Today we&#39;re talking about website navigation and why it&#39;s so bloody awful.&lt;/p&gt;
