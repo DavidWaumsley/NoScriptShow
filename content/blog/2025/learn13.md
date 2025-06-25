@@ -24,7 +24,7 @@ From the W3C's [Web Accessibility Initiative](https://www.w3.org/WAI/):
 
 From Manuel Matuzović's  [Acessibility Cookbook](https://accessibility-cookbook.com/):
 
-- [Example](https://codepen.io/matuzo/pen/pomaLZQ)
+- [Example](https://codepen.io/matuzo/pen/mdYXxzm)
 - [Code](https://accessibility-cookbook.com/code/chapter7/recipe7_6/1_nav-animated/)
 
 <small>Accessible and fine for small devices, but not progresively enhanced.</small>
