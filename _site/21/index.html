@@ -22,6 +22,8 @@
 
    
  
+ <link rel="preload" as="image" href="https://i.ytimg.com/vi_webp/DAKMMxKcYzs/maxresdefault.webp">
+ 
 		
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
@@ -29,7 +31,7 @@
 <meta property="og:title" content="No Script Show Website Navigation: Why is it so bloody awful?">
 <meta property="og:description" content="Are navigation menus overcomplicated and out of date?">
 
-<meta property="og:image" content="https://noscript.show//img/og-image.webp">
+<meta property="og:image" content="https://i.ytimg.com/vi_webp/DAKMMxKcYzs/maxresdefault.webp">
 
 
 <!-- Twitter -->
@@ -38,7 +40,7 @@
 <meta property="twitter:title" content="No Script Show Website Navigation: Why is it so bloody awful?">
 <meta property="twitter:description" content="Are navigation menus overcomplicated and out of date?">
 
-<meta property="twitter:image" content="https://noscript.show//img/og-image.webp">
+<meta property="twitter:image" content="https://i.ytimg.com/vi_webp/DAKMMxKcYzs/maxresdefault.webp">
 
 
 
@@ -444,9 +446,12 @@ Build</a>
 
 <div class="[ popout ]">
 
-<div class="[ center-me ]">
-<h1 class="[ post-title-only ]" id="website-navigation-why-is-it-so-bloody-awful">Website Navigation: Why is it so bloody awful?</h1>
-</div>
+<h1 class=" [ visually-hidden ]" id="website-navigation-why-is-it-so-bloody-awful">Website Navigation: Why is it so bloody awful?</h1>
+<div class="[ popout ]">
+<lite-youtube videoid="DAKMMxKcYzs" style="background-image: url('https://i.ytimg.com/vi_webp/DAKMMxKcYzs/maxresdefault.webp');">
+  <a href="https://youtube.com/watch?v=DAKMMxKcYzs" class="lyt-playbtn" title="Play Video">   
+  </a>
+</lite-youtube>
 
 
 <div class="right-me">
@@ -521,7 +526,203 @@ Build</a>
 <h2 id="conclusion">Conclusion</h2>
 <p>Much of this was informed by Manuel Matuzović's <a href="https://accessibility-cookbook.com/">Web Accessibility Cookbook</a>, the Web Accessibility Initiative work and Sara Soueidan’s  <a href="https://practical-accessibility.today/">Practical Accessibility course</a>.</p>
 <p>Not suprisingly, the conclusion is that the No Script Show shoud, where possible, avoid scripts.</p>
-
+ <details> 
+<summary>Transcript</summary>
+<p>[00:00:05] <strong>Nathan Wrigley:</strong> Hello there. This is the second in our series looking at various components that make up a website. Today we're talking about website navigation and why it's so bloody awful.</p>
+<p>The format for this series is that we'll first chat about the components and consider them from a UX design, accessibility, technical, and SEO perspective. Then we'll follow this audio focused episode with a short YouTube video looking at code snippets and working examples.</p>
+<p>If you want the links for those, this show can be found at no script show slash 21. That's the numerals two one, no script show slash 21. And if you want some code examples, then head to no script Show forward slash learn. Forward slash 13. So the numbers one, three. No script show slash learn forward slash 13. As always, the person that's doing the actual hard work on this podcast is David Waumsley.</p>
+<p>I just turn up and talk. Hello David.</p>
+<p>[00:01:05] <strong>David Waumsley:</strong> Hello. this is really interesting 'cause I thought, oh, I can't do menus yet. There's so much with it and there is 'cause we've got a lot to get through. But it's been so fascinating because when I started trying to put some code snippets together for kind of components earlier on, I thought, oh I need this mega manual.</p>
+<p>I need these dropdown setups. I've got a whole bunch of things I need. And doing this and doing a bit of research, particularly with the accessibility, I've just ended up. Going with another instinct of mine is that we really make kind of website navigation overly complex sometimes, which is not always great for users and really hard technically to get</p>
+<p>[00:01:44] <strong>Nathan Wrigley:</strong> right.</p>
+<p>Yeah. You've, you've put together a, on the webpage that I just mentioned, you've put together a really exhaustive list of all of the bits and pieces that go into a navigation menu. Far more in all honesty than I'd ever thought about. I honestly, my position prior to reading your document was just put the headline things in and then create a site map and hope that Google will surface the content and kind of forget about it there, but there's a lot more to it and it's really fascinating what you've thrown together.</p>
+<p>Shall I show the yeah. The, notes. Yeah. Show the, page. Okay. So here we are. So you'll be able to find this at no script show slash 21, if you want to. Okay. So</p>
+<p>[00:02:25] <strong>David Waumsley:</strong> let's get into it. Yeah, the f following the format we started with last time, we, try and define what we're talking about with website navigation, and there really isn't a definition here with this one.</p>
+<p>So you could say, I've, listed a list that helps users to find associated pages and documents because it's not always internal links. It can be external links or it can be other documents like PDFs or even some decide to attach Word documents, even menus. is it a table of contents? effectively a table of contents on a website does the same thing, but we have a perhaps, generally a different view.</p>
+<p>Is it an ever present menu bar? And often people call it menu. And that's, honestly, there's no real definition out there because the terminology is so difficult. I think when we start talking about website navigation, so what some people will call. Navigation links, which is what I would generally call it these days.</p>
+<p>Other people will call menus and buttons, and I dunno about you, with clients sometimes you get this sort of mismatch of what you're talking about. They're saying the bot, the button's on the top, I need them to be, and you're thinking, oh,</p>
+<p>[00:03:34] <strong>Nathan Wrigley:</strong> there is no button.</p>
+<p>[00:03:34] <strong>David Waumsley:</strong> Yeah,</p>
+<p>[00:03:35] <strong>Nathan Wrigley:</strong> no, I know exactly what you mean.</p>
+<p>Like obviously to you and I, we've probably settled upon a term that you, like I use menu interchangeably with nav. Yes. I shorten navigation always to nav and and when I speak to clients very often the case was that yeah, they would just use a different. A different term, like a link or a button or what have you.</p>
+<p>And so those words are not out in the mainstream, so it's very difficult to define. But, okay.</p>
+<p>[00:04:06] <strong>David Waumsley:</strong> and I made a note here because I didn't appreciate this until I started doing this research on it. It's the fact that if you're a developer, the menu is actually a specific technical term, which means that if you use, if you mark up your, nav with menu as give it a roll of menu, then there are a whole bunch of expected behaviors that come with it.</p>
+<p>Like you should be able to use a space bar, the escapes key, the arrow keys and all of that. So it's actually technically a menu from a developer's point of view, or the role of menu is for those desktop applications and the, in fact, screen readers switch to a different mode. So you, if you decide to.</p>
+<p>Use menu as a sort of technical role for your menu. You've got a whole bunch of responsibilities that go with that. 'cause the screen reader has a certain expectation. So fascinating. But then if you go and look at something like the Nielsen Norman Group, I think I've got it right way this time. Norman Nielsen.</p>
+<p>Anyway, we'll go with that. Yeah, so they will use. They're talking about patterns, usability, and how things will function for those. So they use the term menu bar for this constantly visible, section that's on, on your top of your page that navigates people and the navigation is things that might come off that, So</p>
+<p>[00:05:28] <strong>Nathan Wrigley:</strong> can I just read the sentence that's written on the page in front of you there? Yeah. Just to show how interchangeable and weird the terms are, a type of navigate. So it's under the subheading of N navigation bar. It says a type of navigation menu implemented as a menu bar, hosting navigation categories.</p>
+<p>So they've they've used navigation twice. They've used menu twice. And it is very hard to understand. In my head, I've just decided, and this could be completely wrong, that menu is a, noun, and navigation is a verb. So the menu is the object, and navigation is the thing. The thing that you are doing, you are navigating.</p>
+<p>Via the menu. That's where I've landed. I dunno if that's gonna work or not.</p>
+<p>[00:06:12] <strong>David Waumsley:</strong> The, probably with NAV as well, of course. It's a, sort of technical role. It's a landmark in accessibility, so it stands for something itself. So it's not so much a verb in that sense. anyway,</p>
+<p>[00:06:25] <strong>Nathan Wrigley:</strong> but yeah. But, if you think about it, if you go to a restaurant, you are never gonna say, can I have the navigation?</p>
+<p>Yes, you are gonna say, can I have the menu? Which if you like, then is a series of links, for want of a better word, things that you can get to, in other words, a plate of food arrives at your, table. but you. Navigation is what you do when you receive the menu. You navigate around and your finger decides, oh, I'm gonna go look at this one for a bit.</p>
+<p>And I like the look at this. and so the navigation is the, doing the menu is the thing that you, hold. And like I said, I don't know that's gonna hold water. There you go.</p>
+<p>[00:07:01] <strong>David Waumsley:</strong> I wanna go off onto a tangent. There's a, yeah, sorry. Absolute. No, But with menus, there's a thing that's annoying me about menus when you go into restaurants right now, I dunno if this is happening in the uk, it's happening in India quite a lot.</p>
+<p>You go in and you ask for the menu and they don't give you that. You have to get your smartphone out. Oh yeah. And you have to, and then you have to navigate through. Yeah. So yeah. Anyway, sorry.</p>
+<p>[00:07:23] <strong>Nathan Wrigley:</strong> Yeah. Honestly, I could go on 'cause the whole 10 minutes would disappear. okay. So where are we at there? So you've done that.</p>
+<p>Oh. and you, there's just a little paragraph, which I don't know, got explored. A menu to a developer has a specific role. Yeah. To a UX person. It may define.</p>
+<p>[00:07:41] <strong>David Waumsley:</strong> Pattern. Pattern. Yeah. So it's just what I was talking about then and I was just putting them up for those who can see where they are. Define there.</p>
+<p>So yeah. Anyway, so we can use these words interchangeably. There's a lot of those that come up. Should we talk about the types of navigation we've got? And this is why I think they're so bloody awful and confusing. I think we've known this forever. I think the Norman Ling group way back probably in the two thousands talked about how dropdowns were terrible usability.</p>
+<p>but we have the main link navigation or menu bars. We know it. These kind of things that we expect to see often on the top right of a desktop application where we'll see home about contact services, et cetera. That main navigation. Then we have navigation now that's being activated by the hamburger icon.</p>
+<p>Sometimes it's everything is hidden behind the Yeah, but this</p>
+<p>[00:08:32] <strong>Nathan Wrigley:</strong> is becoming really common. I think even on desktop. It's just the normal. Visual queue is, where's the three lines? Okay. That's where all of the site navigation is happening inside of that.</p>
+<p>[00:08:44] <strong>David Waumsley:</strong> Yeah. And there's a point to make on that. I've listed it there on the hamburger, so Yeah.</p>
+<p>So you're getting that, but you typically find those on the mobiles anyway, to save space on those. we've got breadcrumbs of course. Which is a sort of sub menu. But then when we get to dropdowns, Terminology again, gets, drop as two separate words with a hyphen between it or to join together for one thing, but also we've got other terms for this, but drop down on hover, which which is a terrible idea.</p>
+<p>you can do that with CSS can't, you can actually hover over Oh yeah. That's quite common. Yeah, it is quite common. But it's also terrible because keyboard users are completely lost. They can't use it any longer. They can't</p>
+<p>[00:09:27] <strong>Nathan Wrigley:</strong> Yeah.</p>
+<p>[00:09:28] <strong>David Waumsley:</strong> Access it. Yeah. So it's not accessible. And then we've got, so the dropdowns on click, which is obviously the better thing.</p>
+<p>dropdowns on hover is often there, but creates all sorts of usability issues anyway. Which we'll move on to. Dropdowns on click and hover. So both will operate. We've got adjacent icons, concealing a dropdown to a sub menu of a main item, which can be confusing, which also can be activated by the main item on hover or click.</p>
+<p>So we've got. All these possible combinations of things about how that could use, how it could work, even though it looks the same to the user. then we have of course the nested or multi-level dropdowns, which I think are dying away now because of mobile, difficulties with that one, where they used to fly out.</p>
+<p>Yeah. We</p>
+<p>[00:10:16] <strong>Nathan Wrigley:</strong> seem to be more in like the, dropdown, something akin to accordions, don't we? So things are nested beneath other things, especially on mobile. It's just one thing under another. It doesn't fly out in a separate, yeah, slightly. I don't know. Floated right? A little bit. That</p>
+<p>[00:10:32] <strong>David Waumsley:</strong> doesn't seem to be happening quite as much.</p>
+<p>Yeah, no, we used to say a lot of that. And then we got the mega menu, which was supposed to be, oh boy. Solution to all of this.</p>
+<p>[00:10:40] <strong>Nathan Wrigley:</strong> Mega menus can be like an entire website. Fully take over the entire viewport where Yes. And in a sense you just think, what do I do with that? Just so many choices. And how would you navigate through that with, with the tab key?</p>
+<p>I literally don't know so well.</p>
+<p>[00:11:00] <strong>David Waumsley:</strong> Yeah. again, if you go down the route of, a proper application and use menu, you can use Arrow key. So it is potentially possible to do it, but a lot of work with JavaScript, yeah, so we've got that and terminology, haunts us.</p>
+<p>Again here, Hayden Pickin points out in, oh, I forgot what it was. I think it's accessible components, a sort of a book of his, that dropdowns is the behavior we'll get with HDL Select and options, so that's really where that term's used. And so some people also refer to 'em as pull downs. Yeah, it's an older term.</p>
+<p>And then if we go to the W three C'S web accessibility initiative, they refer to them as. Flyouts.</p>
+<p>[00:11:45] <strong>Nathan Wrigley:</strong> So you see, that's fascinating. That one I'd never even heard. I probably have some vestige of a decade or more ago, but it's a long time since I've seen anybody talking about flyouts.</p>
+<p>[00:11:55] <strong>David Waumsley:</strong> Yes. And that's, I'm just for those There you go.</p>
+<p>Flyout leads, these are flyouts according to them. So we have a terminology issue again there. We really</p>
+<p>[00:12:05] <strong>Nathan Wrigley:</strong> do. Yeah. But</p>
+<p>[00:12:06] <strong>David Waumsley:</strong> I think I wanted to list those just because I think, I dunno if you, so I do, I found the, I when I, I. Die a little inside when I see a dropdown menu, even a hamburger on a mobile phone.</p>
+<p>The fact that my options are hidden and I have to hit this thing, which I don't know what's gonna happen with it or might drop down too far. I hate that I'm not on the mobile phone much, but even on the desktop, I really hate the fact that I don't know if this top link I'm on is clickable or whether it is a button to open up a menu.</p>
+<p>And I don't know if it's got an icon next to it, whether, unless that animates, whether that's the place with the Submenu or what I've just hovered over it is the submenu. I actually get confused myself. Yeah. And I know how these all work. Yeah. And</p>
+<p>[00:12:54] <strong>Nathan Wrigley:</strong> I think you've taken a really interesting approach with this.</p>
+<p>Website, the no script show one where you've essentially decided that all the menus are just gonna be in the footer, for want of a better word. And yeah, you jump link to that. If you click what might have been considered, I don't know, the, menu that flies in from the side on a mobile, you've just jumped right into the footer In a, yeah.</p>
+<p>In a much more accessible way. I like that. That's good. go. If you're listening to this or watch it, it go and check it out. It's cool. I like it.</p>
+<p>[00:13:25] <strong>David Waumsley:</strong> in part two we'll just discuss it 'cause okay, yeah, of course. Yeah. I'll just discuss the markup on it. So we'll do that. okay, so let's have a look. We will talk about the code needed, 'cause we did that before.</p>
+<p>On the last one, when we're talking about accordions, that's needed for navigation. So straightforward. So HTML is gonna give us. All that we need in terms of semantics and accessible name. So we have the nav element, which is a landmark, and then if we put our A tags in a ordered or unordered list, then we're pretty good.</p>
+<p>It's gonna work. Yeah. That's</p>
+<p>[00:13:58] <strong>Nathan Wrigley:</strong> more or less all you need in air quotes. Yeah. Nav followed</p>
+<p>[00:14:03] <strong>David Waumsley:</strong> by a list of As. Okay. Yeah. Yeah. And for accessibility, screen reader is going to read out, the number of items. So it's quite helpful there. if we add in Aria, then we've got a, more accessible way of being able to add more navigation components to our pages because we can label those up as, main navigation, secondary navigation.</p>
+<p>So anybody who wants a, an overview of the page, the table of contents to get around, they'll be able to see that. And also with Aria, we can tell the user who's using the screen reader, which is the current page that they're on. Yep. Yep, So, that improves it. And obviously with CSS then we can have, beautiful horizontal rather than the standard sort of, vertical lineup that you would get with just HTML and where we can also indicate current page as well with that, by putting an underline when you're on that.</p>
+<p>Then if we add in JavaScript, then that allows us to create interactive show and hide, which is. Generally that term, which we used last time as disclosure widgets, something where it's hidden is that sort of technical term, but that's where we introduce all these many different ways to fail.</p>
+<p>[00:15:15] <strong>Nathan Wrigley:</strong> Yeah. So can I ask a question at this point?</p>
+<p>So we've got four things which increase? So number one is a given. So this nav with a list of As Yeah, that's the, basics. Then we've got, we add in area for making it more readable. Yeah. CSS comes in and then JavaScript. So there are four things that we can do. Which of those are you, are you attempting to use for, in most cases?</p>
+<p>Or are you, I'm guessing you are gonna stop at the third one, the CSS one and ignore the JavaScript one.</p>
+<p>[00:15:45] <strong>David Waumsley:</strong> Exactly. Okay. That's why I'm thinking if I can, or the, conclusion I've come to this, if I can get away with not using JavaScript, I save myself a lot of potential usability if I can get away.</p>
+<p>With being able to show the, content in the correct order, then we get away from all of the difficulties that come with show and hide, I think. And, when you say,</p>
+<p>[00:16:07] <strong>Nathan Wrigley:</strong> sorry, when you say get away with what, is that a client coming to you with a particular feature or that they've described that they want something which only really JavaScript could handle, so show hide for example.</p>
+<p>do you know what, or is it driven by more your own head? oh, wouldn't it be nice if, because I had a feeling that you would always stop at the CSS points. You would never stray into the JavaScript point ever basically these days. But maybe</p>
+<p>[00:16:36] <strong>David Waumsley:</strong> you do. I have done, and I'll show that. Okay. Actually, in the second part, I'll show you where I mimicked with dialogue a, mega menu, which I did for a client, which I thought was a good idea.</p>
+<p>Yeah. But, I'll talk about that later. but yeah, it's interesting because I did have a cl I have had a client and it was. Probably the most difficult project that went on for just years and years, who had a very specific idea about how things should open up on this menu. And I had to get somebody in who knew JavaScript to do what they did.</p>
+<p>And effectively, I took myself out the equation and let them talk to the, and they were so upset because of course they, they hadn't been able to explain. Two, the JavaScript person gave 'em exactly what they asked for, but they hadn't worked out that, oh no, this is supposed to close when this happens.</p>
+<p>okay. But on top of that, what they didn't know about that was the fact that, and I wasn't so aware as I am now, is that of course they hadn't thought about the usability for keyboard users. For screen readers, for any of those things. So yeah, generally I will avoid, Java, no script show.</p>
+<p>Obviously, it's a bit of a giveaway, isn't it, that we try to avoid. Yeah, yeah. I already mentioned the little subnote here that we can hover with CSS 'cause by saying that we can show in hide, we can do it with CSS, but keyboard users can't use that. So it's not, accessible and it's difficult as well on touch devices as well.</p>
+<p>If you're on a mobile, it doesn't necessarily always work if you use hover.</p>
+<p>[00:18:06] <strong>Nathan Wrigley:</strong> Okay, so now a slew of four different problems that we can have in terms of, navigation. So UX design, SEO, accessibility. Let's start with ux.</p>
+<p>[00:18:18] <strong>David Waumsley:</strong> Yeah.</p>
+<p>[00:18:19] <strong>Nathan Wrigley:</strong> Yeah.</p>
+<p>[00:18:20] <strong>David Waumsley:</strong> Gosh, yes. So ux. I think the, points I've put here and the menu bars often look similar, but behave differently.</p>
+<p>That's my experience with going to, home about, I don't know if something's gonna drop down, how it's going to drop down. Yeah. Whether I click on the top thing or the sub menus, blah, blah. Confusing. we can't click on things we cannot see, which I think is one of the biggest faults of hide and show with this one.</p>
+<p>is that, If, I don't know, there were some dropdown stuff there visually. I'm not going to go to it, so I'm gonna miss those pages.</p>
+<p>[00:18:57] <strong>Nathan Wrigley:</strong> Yeah. So this is, where mega menus come in because they show all the things, but equally they then give us a bit of overwhelm.</p>
+<p>[00:19:04] <strong>David Waumsley:</strong> Yeah. yeah,</p>
+<p>[00:19:06] <strong>Nathan Wrigley:</strong> presume</p>
+<p>[00:19:06] <strong>David Waumsley:</strong> it as, as long as, there's a mega menu there, so if it's combined.</p>
+<p>Okay. Okay. As often is, do you know it's, so you can easy, if it's not there in front of you, you're not gonna click on it. So I think that's a bit of a problem. Okay. e easy dropdown solutions make LOP sloppy. Site architecture easy too. And that's from my own experience of working with people.</p>
+<p>Because working with WordPress, it makes it so easy for you to have the sort of menus that you want with various dropdowns. But of course, working with other people who don't want to do the thinking about how things are laid out, they can just drop anything wherever they like. And that's solved. Its up in the menu somewhere, so you get all sorts of bizarre stuff going on.</p>
+<p>Some really confusing stuff goes on with menu. Sometimes what's in a dropdown is not what you expect,</p>
+<p>[00:19:51] <strong>Nathan Wrigley:</strong> Yeah. And it's also very, that the interface of WordPress makes it just trivially easy to drop in possibly. Yeah. Too much. Or nest things within nested things. And before you know it, you've got this collapsing menu of nine different layers and on the back end it, that's just offered.</p>
+<p>So why not use it? There's no, no hint that's weird on the front end.</p>
+<p>[00:20:15] <strong>David Waumsley:</strong> Yeah. We need to really indicate that our links are what they are and what they do. If they go to an external site, there should be some clue. There's usually a, visual thing, which I'll show in part two. Yeah, that's</p>
+<p>[00:20:29] <strong>Nathan Wrigley:</strong> very, I, you tend to see that on obsessively H-T-M-L-C-S-S focused websites, Yeah. But, not much elsewhere. Yeah. if you really don't see that being deployed broadly across the internet, an external link is just, it's guesswork. If I click this, what's gonna happen? No idea.</p>
+<p>[00:20:48] <strong>David Waumsley:</strong> luckily screen readers will largely announce for them, but it's for your sighted readers and PDFs as well, and uhhuh, other things that people put in their menus, they should indicate what you are gonna get when you click on.</p>
+<p>So it's so annoying if you click on something you think you're going to ion within the site and you are downloading a PDF before you and you're in some sort of silo that you yeah. drop down on hovers can interrupt a user's journey to another target. So often, there's some articles about this and you just think, again, this is a complication when you're hiding and showing in, you are heading off to one part of your menu, but you touch the other part of it and it opens up instantly if it's an instant hover.</p>
+<p>So the solution that people invent, and this is where you think things are getting complicated, they think, let's delay this. That's at a half, half a second delay here.</p>
+<p>[00:21:38] <strong>Nathan Wrigley:</strong> Yeah. Yes. I, can't remember the name of the website, but that this has happened to me on multiple occasions and it's profoundly annoying.</p>
+<p>because in some situ, I really can't remember, but there, I have had a situation where I literally couldn't overcome that problem.</p>
+<p>[00:21:54] <strong>David Waumsley:</strong> Yeah.</p>
+<p>[00:21:54] <strong>Nathan Wrigley:</strong> In that I was on a device of sufficient width that my mouse could not get to where it needed to go unless I took this very precise kinda one pixel route around things.</p>
+<p>Do you know what I mean? Yeah, I do. Yeah. And, it's just, it's just some confection of the, width of my device that I was using and the, the way that I was currently located. Yeah. This is, and again, you're solving it with a weird JavaScript based time function. Just let's add half a second.</p>
+<p>That'll fix it. yeah, it will, but maybe there's an underlying problem there</p>
+<p>[00:22:28] <strong>David Waumsley:</strong> as well. Yeah. And, not, when you think about it, you, a lot of the reason you want this to be available there is because it, people don't like to click onto a new page 'cause they have to wait for it to load. Yeah.</p>
+<p>'cause of all the JavaScript you put in your menu. But, these days, I think, we can get faster loading sites, so why not just go to flipping new page if you, have to delay someone's hover, it's you think we just lost the plot a bit with this, I'm</p>
+<p>[00:22:57] <strong>Nathan Wrigley:</strong> guessing from all of this that you don't do not like hover, you want click in all the menus.</p>
+<p>Right? That's what I</p>
+<p>[00:23:03] <strong>David Waumsley:</strong> do. Yeah. Okay. and I was very, I, do this practical accessibility course with, Sarah Erda, which I'll mention 'cause there's some of our examples I going to use there. And she's another one who hates, what she says she advises against any hovering, but of course it's common, hover and click give everybody everything Anyway, so that's one problem.</p>
+<p>we've got so many here. The hide and show, can also should not obscure important information that people, I, it's one of the, it's one of the rules actually that come with accessibility is that you're not to obscure. And that's quite difficult to do that with a lot of the menus that we have that pop up.</p>
+<p>You shouldn't really, it's, I think it's a violation of wagg if you have what you commonly see as one of those navigations that pop up and take over the whole screen. I think it is, I think that's a violation of, okay. Oh, So becoming important because this week is one, this is the where, yeah.</p>
+<p>Where accessibility laws coming in. So we've got that. disclosure, widgets have an interaction cost. Of course, if you're hiding and you're showing something, somebody has to go and click on it. it's extra work for them to do and that annoys me. If you don't need to, when you go to mobile and you don't need to click on something, you shouldn't have to.</p>
+<p>And it's almost standard to force you to click. And that dear listener, was only</p>
+<p>[00:24:25] <strong>Nathan Wrigley:</strong> the UX bit got three sections to come. They get progressively smaller. This is just me</p>
+<p>[00:24:31] <strong>David Waumsley:</strong> ranting, isn't</p>
+<p>[00:24:32] <strong>Nathan Wrigley:</strong> it? Yeah, no, it's great. I love it.</p>
+<p>[00:24:34] <strong>David Waumsley:</strong> Okay, so design issues now. there is a good article there, which I won't go to, which is, really my sentiment about, this, that it's feeling like a tire design pattern now drop down menus.</p>
+<p>that it's, I didn't, did I mention this earlier, in this chat, or did it, was it before we recorded? But I was saying that I think, in a way that we copied. Print to our detriment. We've copied, if you like, the menus that are in programs to our detriment when it comes to designing navigation.</p>
+<p>Yeah. We definitely didn't add that in, to this. Yeah. But</p>
+<p>[00:25:12] <strong>Nathan Wrigley:</strong> we did talk about it prior to hitting record. Yeah. And that's, think you're right. Yeah.</p>
+<p>[00:25:15] <strong>David Waumsley:</strong> That's,</p>
+<p>where I've come to with this. And I think a lot of people, if you look a lot, modern designs are avoiding that. But, so much dropdowns anyway. So I think it's probably something where we have no idea how the web's supposed to look, and we're creating it as we go.</p>
+<p>So we copy print in terms of our design, and I think we've also copied in terms of menus, preexisting desktop programs and applications as a way of dealing with menus. And I think, we're starting to move away a bit from that. But there are some, head turn in examples, which we talked about before.</p>
+<p>One of 'em, which is so copied, is Stripe. Oh. This</p>
+<p>[00:25:52] <strong>Nathan Wrigley:</strong> is one of the menus in particular, I think it's the product one. You hover, right?</p>
+<p>[00:25:56] <strong>David Waumsley:</strong> Yeah. Look at that. for those people who can't see, there were just so many options. they are subcategorized, and again, you've got this issue. If you're on your way to something, you've got interruption because I'm a hover.</p>
+<p>it's that. But honestly, is this the best way? it is wonderful. Technically</p>
+<p>[00:26:14] <strong>Nathan Wrigley:</strong> it's</p>
+<p>[00:26:14] <strong>David Waumsley:</strong> brilliant. Oh, beautiful</p>
+<p>[00:26:15] <strong>Nathan Wrigley:</strong> Implementation, like absolutely majestically gorgeous to look at. But yeah, there's a lot.</p>
+<p>[00:26:23] <strong>David Waumsley:</strong> I'm a, Stripe user and I have no idea where to find what I'd be interested in here. I just want to know what I mainly use it for ticking money off people.</p>
+<p>just gimme a link and a page that does that. No, what's</p>
+<p>[00:26:35] <strong>Nathan Wrigley:</strong> curious there is they don't have a search feature embedded No. In their header, which is often the case, isn't it often these days you'll find search in the main navigation area, if not necessarily in the main navigation. Yeah. But they've relegated search either to that menu, so hopefully they've.</p>
+<p>They've given you enough to navigate to it, or maybe they've just off offloaded that task to Google. They're hoping that you will choose the right set of keywords, which will deep link to whichever page you actually need from Google as opposed to doing it themselves. you can see what their intention, they're clearly trying to make it really so that you can get to wherever you want to go in, in one amazing menu.</p>
+<p>But it is a lot to take in, isn't it? Yeah.</p>
+<p>[00:27:22] <strong>David Waumsley:</strong> Yeah, and it I don't really understand the icons and the fact that they changed their styling from one to the other, I find a bit confusing. Anyway. One of the things that I did notice on this, 'cause the first thing I did see is this progressively enhanced.</p>
+<p>So if your JavaScript fails to load for this, the only thing you can get to is the pricing. Interesting. So there's not a lot in terms of progressive enhancement there. There's none. No. If the JavaScript fails, you've no menu other than the ability to pay for something because it's the only one which does not have a, some sort of hover state.</p>
+<p>Okay. there's that. So I think I've just twitched on one of my other points there. Design. da Let's have a look. yeah, my thoughts are, and this is where I can just maybe just show for those who are on YouTube, what we're doing, but I'll, oh, you've done such a good</p>
+<p>[00:28:11] <strong>Nathan Wrigley:</strong> job with this, I noticed this morning.</p>
+<p>It's</p>
+<p>[00:28:13] <strong>David Waumsley:</strong> so nice. it's actually view transition. Yeah. Actually I won't, I won't jump onto this yet. View transitions I think is really interesting because I think it's allowing us to, it's the, API that Yeah. Is supported now in safari. So I think it's about 87% support for view transition.</p>
+<p>It's definitely,</p>
+<p>[00:28:32] <strong>Nathan Wrigley:</strong> the way it's gonna be done. It's so graceful. It looks so nice. Yeah,</p>
+<p>[00:28:36] <strong>David Waumsley:</strong> I know. And people are making like, carousel, not carousels, galleries and stuff where you're going from one page to the other. And one thing I never noticed until this, is that I was thinking about it.</p>
+<p>Entirely different topic of tabs, but I was looking at YouTube and I thought when they have their tabs on YouTube that these were actually tabs, but I noticed that they take you to a different page. They take you to a different URL. So I think, yeah, I was surprised. Yeah, I looked at the, I don't realize that.</p>
+<p>Gosh. no. You think it's tabs, but actually the pattern is tabs. But actually you are changing your URL, and I think that's why we're going to move a little bit towards, I think, instead of. And particularly if combined with speculative loading, which again is new and experimental, but that allows you, it allows you in the, sort of moderate form to say if someone hovers over this link here, it will start to pre-render the page or preload.</p>
+<p>You can choose Yes, which way you want to go. Yeah, exactly. Yes. and you could just do that for two pages so it's not overwhelming your servers. So, I think, but isn't</p>
+<p>[00:29:47] <strong>Nathan Wrigley:</strong> it interesting how profoundly un jarring it is. So it, so I should probably explain. View transitions combined with speculative loading view transitions enables you to let's go with the example of fade from one page to another.</p>
+<p>So instead of this hard reload where everything for a brief moment just goes, boom, it's gonna be, I can show you this. Yeah. Let's see. An action. So if you click on that, it may be this, the way that we're capturing the video for this recording, it won't, work so well because we'll probably have a sort of fairly poor frame rate.</p>
+<p>But if you actually go to what David's looking at, and click around, there's this fade between, there you go. That was a lovely example. And combine that with speculative loading. I know it's nothing because really all that you're doing is, happening in the blink of an eye, but it, there is something far more aesthetically pleasing about it.</p>
+<p>There's just something Yeah. Like it's required now. I feel that's how it ought to be. 'cause it just feels, look at that. It's just so nice. Honestly, we're really getting in the weeds there, aren't we?</p>
+<p>[00:30:55] <strong>David Waumsley:</strong> But I think menus might be able to go that way. I think, if you've got a big section of stuff like the services, a transition that's beautiful into a new page, I think, now that you can perhaps with speculative loading, make that page load so instantaneous that, and you can glide between it in an app-like way.</p>
+<p>Yep. I think that's gonna change a lot of things. let me find my notes. Yeah, back up. There you go. Just there. So yeah, so that's my thinking. That might be the way forward with design on this one and, oh yeah, on our menu. So let me just move that. so I've just added onto this. So we've got a few items we need to put in our menu.</p>
+<p>Sorry for those people just listening to that. But we have a basic home. And then for our different types of content, we've got chat, learn, build, and then we've got a more, which I've now put little icon on. And when you hover over it, slightly changes, but just to make sure, I'm just going to reload. Yes.</p>
+<p>I'm just going to reload and then hover down to that. And what I've done is it is got a second menu in the footer there, but because there's stuff that isn't more navigation, I've actually put on the target a bit of animated. So with CSS we can animate the target, the place you're going to. So I put a little box around it.</p>
+<p>So I dunno if you saw that. I could see that. That was fabulous. Yeah. Yeah. But if I go back and refresh this, oops. I'll just go back and refresh this. So it, the target is only showing when, you actually click. When I'm on the more navigation, so it's, it looks normal, so I just think, I'm not sure what else you need.</p>
+<p>Really. If you've got all your menu</p>
+<p>[00:32:38] <strong>Nathan Wrigley:</strong> there and you can, there you go. and you can imagine a scenario where somebody like Stripe has all of that information. I don't know, very deep down on the page, but you click on the menu item and it takes you to it, and it would be. I can imagine very smooth and interesting ways to do it, especially with the dreaded Java script.</p>
+<p>But I like what you did there a lot. I thought that was nice.</p>
+<p>[00:32:59] <strong>David Waumsley:</strong> Yeah, so I, it's made me think that's probably the way I'll go with this, for as much as I can. there will, I'm sure there'll be circumstances I haven't thought about where that's just not gonna work. But I just think the combination of, I fear before was making it ever present because page loads.</p>
+<p>But I think we can make them quicker and we can do nice effects to those pages. And then combined with this other idea of connecting to different navigation, so everything's present all the time, you've not gotta worry about the next thing that we're talking about, SEO, which is the fact that JavaScript can possibly, we don't know Google say otherwise most of the time, but might create some search issues.</p>
+<p>Hiding something may mean that it's not found by Google.</p>
+<p>[00:33:39] <strong>Nathan Wrigley:</strong> Yeah. And I guess really if, there's even a chance that it's not gonna be found, it's. Probably not worth it. It's like you said, if it's hidden, you can't click on it. If it's, yeah, not, if it's only visible with JavaScript who Google may not see it,</p>
+<p>[00:33:53] <strong>David Waumsley:</strong> is it worth the risk?</p>
+<p>the SEO people do all these experiments and claim that things aren't quite, as Google might say, and Google also say, I think when they talk about anything that's hidden behind JavaScript, is that they will view that as secondary content. If you don't want it to be seen immediately, then that's their take on it.</p>
+<p>you've hidden it away for a reason. So it's secondary. So it will have less of importance according to what I've heard them say. I'm no expert on this. So to think about, and of course, Obviously important to SEO is getting lots of clicks. People going to different pages is a good thing for them.</p>
+<p>So if we're gonna hide our content, that's gonna lead to less clicks. Also, if we're making them just find those links rather than go to them quickly. slowing down our number of clicks, obviously. So I think there's some SEO. Okay. Considerations, accessibility. Last one. Yes. it's straightforward until we get to disclosure widgets showing and hiding.</p>
+<p>and it just goes beyond my abilities and I think most to I. Get the JavaScript right for this. But most checkers, accessibility checkers, they can't because they're not working interactively. They can't pick up on the now failures that most sites, to be honest. I started looking at sites now with a new view and pretty much every navigation I came across was bloody awful.</p>
+<p>Even though it's really big names. I, know you know about this because you've got Yeah. Joe Dolson, haven't you? Yeah. That's his name. And you've been doing series That's right. Yeah. With him. and he is been looking at menu, so yes. that's it. So there is one thing that I thought was interesting 'cause we talked about it last time with accordions, is the fact this new ability with details and summary, HTM l to be able to let that do the JavaScript work for us as disclosing, but it technically, it is possible to do that.</p>
+<p>and it be accessible. The problem is with it is how various screen readers and their combinations with various browsers decide to announce it. So they won't announce the disclosure triangle. They will say that it's a, what it is, that it's details and some just to wanna mean it. Oh, yeah. So it, it's not ideal at the moment.</p>
+<p>Maybe I see a lot of accessibility experts testing it out all the time to see if that might be an option for the future. So if we wanna drop down maybe details in summary, maybe the way, but at the moment it seems like a, bad idea. and, Yeah, as I covered before, I think if we use the role of menu, which a lot of people do, there's we have to add in the support for using space Escape Arrow, all things that we don't get when we're just with our links.</p>
+<p>So it's generally, I think 99% of the time, I think usability experts will say, don't bother there unless you're building a desktop app. Don't get into that. But there is a great example if I just brought this up, lemme just, yeah, that it, the, third tab along was the one that, yeah, loaded. I got this.</p>
+<p>So there is this accessible menu which is on accessible dash, mega dash menu at Netlify app. I don't know the people behind it, but they have done all this where you've got all their shifts, tab space, enter escapes home, and then all of these keys will work on there. Quite beautiful.</p>
+<p>[00:37:12] <strong>Nathan Wrigley:</strong> Menu here. And yeah, I looked at that and honestly I couldn't have differentiated it from the Stripe one visually.</p>
+<p>obviously they haven't leaned into all the icons and the border radius and the, all of that. But it's got, it's all there, right? Every single thing is there. But I, did wonder how much, of a tax in terms of time, this was probably rather a lot.</p>
+<p>[00:37:35] <strong>David Waumsley:</strong> Yes. And, also, you go this route, I mean I wouldn't be using it if I just borrowed it and tried to use it as it is.</p>
+<p>It's using in tailwinds something that wouldn't want does CSS but also even even though this is perfect, it may have some things that will confuse people. So people often when you get an open up here, they might be expecting, 'cause they dunno what mode they've gone into after to have closed. So effectively they screen readers will have gone into a sort of desktop menu type Reading of it. So maybe it's not such an issue, but for those who are not, you might expect to see a close because you're not expecting, you can now use your keyboard to get outta this. Interesting, okay. So there's a legacy problem</p>
+<p>[00:38:15] <strong>Nathan Wrigley:</strong> there that's fascinating.</p>
+<p>[00:38:16] <strong>David Waumsley:</strong> Yeah. it still can confuse some users. Yeah, Which, however perfect this might be. and difficult to</p>
+<p>[00:38:22] <strong>Nathan Wrigley:</strong> do</p>
+<p>[00:38:23] <strong>David Waumsley:</strong> it. I think</p>
+<p>[00:38:24] <strong>Nathan Wrigley:</strong> there's, so essentially what you're saying, David, is there's no right way of doing any of this. Yeah, exactly. Exactly. Exactly. so conclusion,</p>
+<p>[00:38:35] <strong>David Waumsley:</strong> Yeah. Conclusion is, I've, given it, no surprise for our show that I think wherever possible we shout that I've written here, should, avoid scripts.</p>
+<p>Really, if we can get away with our navigation with simple HTML and CSS, it makes life a lot easier. I dunno if that's always possible, but we're definitely gonna try for that. No,</p>
+<p>[00:38:57] <strong>Nathan Wrigley:</strong> yeah. who would've thought a, show called the No Script Show? Who would've thought they'd avoid using a script? but you've also made a couple of links there to, the Web Accessibility Cookbook, which is available as a, I guess Kindle, but as well as, a regular paper book in many, different formats.</p>
+<p>But also the, course that you've been talking about recently, rather a lot actually. The Practical Accessibility course. Yeah. Some links, over at no script show slash 21 just navigate to the bottom</p>
+<p>[00:39:27] <strong>David Waumsley:</strong> and there they all are. We'll talk about this 'cause I'll show some of the examples when we go to our YouTube section, but I think probably for the audio we're done, aren't we?</p>
+<p>[00:39:34] <strong>Nathan Wrigley:</strong> Okay. In that case, I will bid you farewell and we will see you very soon for the sort of code example session. So thanks David. That was fascinating. Yeah, enjoyed it. Thanks. Bye bye-Bye.</p>
+</details> 
 </div>
 </heading-anchors></article>
 
@@ -533,7 +734,7 @@ Build</a>
 </ul>
 </div>
 			
-</div></main>	
+</div></div></main>	
   <footer>
 
 <h2 class="[ angle ]" id="links">Links</h2>  
@@ -576,7 +777,7 @@ Build</a>
  </div>
 </footer>
 
-		<!-- This page `/21/` was built on 2025-06-25T07:08:39.180Z -->
+		<!-- This page `/21/` was built on 2025-06-25T11:54:06.059Z -->
 		<script type="module" src="/dist/2it2F9Kmpn.js"></script>		
 </body>
 </html>
