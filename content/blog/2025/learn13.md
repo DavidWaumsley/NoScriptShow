@@ -35,7 +35,7 @@ From Sara Soueidan's [Practical Accessibility](https://practical-accessibility.t
 
 - [Drop-down navigation](https://codepen.io/SaraSoueidan/pen/eYPVvBo/7bb41d53655af69e44b6cf4a72102097).
 - [Mobile navigation (focus trapped)](https://codepen.io/SaraSoueidan/pen/abYgpMG/2aaf9e249122f4619c924bcfc75f450f).
-- [Mobile navigation (focus NOT trapped]( https://codepen.io/SaraSoueidan/pen/BaGPOdw/29d8bd26d365b0161c6d0ded9c33e5ef).
+- [Mobile navigation (focus NOT trapped)]( https://codepen.io/SaraSoueidan/pen/BaGPOdw/29d8bd26d365b0161c6d0ded9c33e5ef).
 
 <small>Here &lt;span&gt; tags are changed to &lt;button&gt; tags when JS loads. The hamburger works as a modal dialog which traps the user within it by default. The last option escape the modal via the last focusable item. </small>
 

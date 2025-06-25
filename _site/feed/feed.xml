@@ -35,7 +35,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://codepen.io/SaraSoueidan/pen/eYPVvBo/7bb41d53655af69e44b6cf4a72102097&quot;&gt;Drop-down navigation&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://codepen.io/SaraSoueidan/pen/abYgpMG/2aaf9e249122f4619c924bcfc75f450f&quot;&gt;Mobile navigation (focus trapped)&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://codepen.io/SaraSoueidan/pen/BaGPOdw/29d8bd26d365b0161c6d0ded9c33e5ef&quot;&gt;Mobile navigation (focus NOT trapped&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://codepen.io/SaraSoueidan/pen/BaGPOdw/29d8bd26d365b0161c6d0ded9c33e5ef&quot;&gt;Mobile navigation (focus NOT trapped)&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;small&gt;Here &amp;lt;span&amp;gt; tags are changed to &amp;lt;button&amp;gt; tags when JS loads. The hamburger works as a modal dialog which traps the user within it by default. The last option escape the modal via the last focusable item. &lt;/small&gt;&lt;/p&gt;
 &lt;p&gt;&lt;small&gt; &lt;strong&gt;David&#39;s note:&lt;/strong&gt; some years back I used &amp;lt;dialog&amp;gt; to &lt;a href=&quot;https://affinitycentre.co.uk/&quot;&gt;imitate a mega-menu &lt;/a&gt;. Until this year, I have not seem anyone using this for navigation menus. It seems to work with only a few lines of JS, but I have not tested it emough to cover here. &lt;/small&gt;&lt;/p&gt;
