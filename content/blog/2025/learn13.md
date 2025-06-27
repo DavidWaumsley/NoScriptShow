@@ -17,7 +17,7 @@ From the W3C's [Web Accessibility Initiative](https://www.w3.org/WAI/):
 
 - [Examples with code ](https://www.w3.org/WAI/tutorials/menus/flyout/#fly-out-functionality)
 
-<small>Accessible, but not progresively enhanced or very usable on small devices.</small>
+<small>Accessible, but not progressively enhanced or very usable on small devices.</small>
 
 ### Animated nav hidden on mobile 
 
@@ -26,9 +26,9 @@ From Manuel Matuzović's  [Acessibility Cookbook](https://accessibility-cookbook
 - [Example](https://codepen.io/matuzo/pen/mdYXxzm)
 - [Code](https://accessibility-cookbook.com/code/chapter7/recipe7_6/1_nav-animated/)
 
-<small>Accessible and fine for small devices, but not progresively enhanced.</small>
+<small>Accessible and fine for small devices, but not progressively enhanced.</small>
 
-### Progressively enhanced navigation 
+### progressively enhanced navigation 
 
 From Sara Soueidan's [Practical Accessibility](https://practical-accessibility.today/).
 

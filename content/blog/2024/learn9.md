@@ -1,6 +1,6 @@
 ---
 title: Adding a light and dark mode with a toggle
-description: About adding a light or dark toogle to website and how this is not perfect but might become a standard.
+description: About adding a light or dark toggle to website and how this is not perfect but might become a standard.
 date: 2024-04-21
 tags: ["learn"]
 permalink: "/learn/9{{slugify }}/"

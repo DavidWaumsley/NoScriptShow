@@ -1,6 +1,6 @@
 ---
 title:  Building with an 11ty starter sites and headless WordPress
-description: Learning the 11ty base blog and whether It can serves as a static frontend to the WordPress CMS.
+description: Learning the 11ty base blog and whether It can serve as a static frontend to the WordPress CMS.
 date: 2025-02-07
 tags: ["build"]
 permalink: "build/7{{slugify }}/"
