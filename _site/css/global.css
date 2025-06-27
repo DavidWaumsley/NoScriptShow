@@ -202,7 +202,7 @@ h6 {
   line-height: calc(1em + 0.9rem);
   text-wrap: balance;
   font-weight: 700;
-  font-family: "Ubuntu Mono Bold" , monospace;
+  font-family: "Ubuntu Mono Bold", monospace;
 }
 h1 {
   font-size: var(--step-5);

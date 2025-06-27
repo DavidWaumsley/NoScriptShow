@@ -14,10 +14,8 @@
 </script> 
 <link rel="icon" type="img/x-icon" href="/svg/favicon.svg">
 <link rel="icon" href="img/favicon.ico" sizes="any">
-
 <meta name="description" content="{{ description or metadata.description }}">
 <link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
-
 <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
 {%- css %}
 {% include "public/css/reset.css" %}
@@ -26,13 +24,10 @@
 {% include "public/css/utility.css" %}
 {% include "public/css/block.css" %}
 {% include "public/css/exceptions.css" %}
-{% endcss %}
-
-   
+{% endcss %}   
  {% if layout == "layouts/post.njk" and videoid %}
  <link rel="preload" as="image" href="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp">
- {% endif %}
-		
+ {% endif %}		
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://noscript.show{{ page.url}}" />
@@ -41,11 +36,8 @@
 {% if videoid %}
 <meta property="og:image" content="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp" />
 {% elif featureimg %}
-<meta property="og:image" content="{{metadata.url}}{{ featureimg }}" />
-{% else %}
-<meta property="og:image" content="{{ metadata.url }}/img/og-image.webp" />
-{% endif %}
-
+<meta property="og:image" content="{{metadata.url}}{{ featureimg }}" />{% else %}
+<meta property="og:image" content="{{ metadata.url }}/img/og-image.webp" />{% endif %}
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://noscript.show{{ page.url}}" />
@@ -54,31 +46,24 @@
 {% if videoid %}
 <meta property="twitter:image" content="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp" />
 {% elif featureimg %}
-<meta property="twitter:image" content="{{metadata.url}}{{ featureimg }}" />
-{% else %}
-<meta property="twitter:image" content="{{ metadata.url }}/img/og-image.webp" />
-{% endif %}
-
-
+<meta property="twitter:image" content="{{metadata.url}}{{ featureimg }}" />{% else %}
+<meta property="twitter:image" content="{{ metadata.url }}/img/og-image.webp" />{% endif %}
  <link rel="preload" href="/fonts/UbuntuMono-Bold.woff2"  as="font" type="font/woff2" crossorigin="">
  <link rel="preload" href="/fonts/UbuntuMono-Regular.woff2"  as="font" type="font/woff2" crossorigin="">
  <meta name="generator" content="{{ eleventy.generator }}">
 </head>
 <body id="top">
 <a href="#skip" class="[ skip-link ]">Skip to main content</a>
-
 <div class="[ top-bar ]">
 <button class="[ toggle ]" data-theme-toggle="" id="theme-toggle" style="display: none" type="button" aria-label=" light and dark mode switch">
 <img class="theme-icon" src="/svg/moon.svg" width="25" height="25" alt="">
 </button>
 </div>	
-
-  {% include "partials/header.njk" %}
+{% include "partials/header.njk" %}
 <main class="[ page-layout ] [ flow ]" id="skip">			
-				{{ content | safe }}			
+{{ content | safe }}			
 </main>	
   {% include "partials/footer.njk" %}
-
 		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
 		<script type="module" src="{% getBundleFileUrl "js" %}"></script>
 		{%- js  %}	

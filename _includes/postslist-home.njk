@@ -1,18 +1,6 @@
-
-{%- for post in postslist | reverse %}
-  <li>
-    {% if post.data.videoid %}
-      <a href="{{ post.url }}" class="block">
-        <img src="https://i.ytimg.com/vi_webp/{{post.data.videoid}}/mqdefault.webp" 
+{%- for post in postslist | reverse %} <li>{% if post.data.videoid %}<a href="{{ post.url }}" class="block"><img src="https://i.ytimg.com/vi_webp/{{post.data.videoid}}/mqdefault.webp" 
              alt="{{post.data.title}}" 
              width="320" 
              height="180"
-             loading="lazy">             
-      </a>
-    {% else %}
-      <a href="{{ post.url }}" >
-        <span>{{ post.data.title }}</span>
-      </a>
-    {% endif %}
-  </li>
-{%- endfor %}
+             loading="lazy"></a>{% else %}
+ <a href="{{ post.url }}" ><span>{{ post.data.title }}</span></a> {% endif %}</li>{%- endfor %}
