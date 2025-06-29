@@ -28,15 +28,12 @@ function updateButton({ buttonEl, isDark }) {
   // Set the src attribute based on the current theme
   imgElement.src = isDark ? sunIconSrc : moonIconSrc;
 
-  // Set the alt attribute based on the current theme
-  const altText = isDark ? "A sun icon that changes this site from a dark to a light theme. " : "A moon icon that changes this site from a light to a dark theme.";
-  imgElement.alt = altText;
 
-  // Update aria-label
+
+ // Update aria-label
   const newAriaLabel = isDark ? "Switch to Light Theme" : "Switch to Dark Theme";
   buttonEl.setAttribute("aria-label", newAriaLabel);
 }
-
 /**
 * Utility function to update the theme setting on the html tag
 */
