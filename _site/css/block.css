@@ -14,7 +14,7 @@ GLOBAL: Light Youtube - Light/dark mode - Forms - Buttons - Header - Footer
   .value-prop{
     font-size: var(--step-7);
     text-align:center;
-    font-weight: 500;
+    font-weight: 600;
   }
   
   .value-prop span{
