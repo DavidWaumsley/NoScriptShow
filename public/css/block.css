@@ -14,7 +14,7 @@ GLOBAL: Light Youtube - Light/dark mode - Forms - Buttons - Header - Footer
   .value-prop{
     font-size: var(--step-7);
     text-align:center;
-    font-weight: 600;
+    font-weight: 500;
   }
   
   .value-prop span{
@@ -568,7 +568,7 @@ main li::marker {
   color: var(--text-alt);
   display: block;
   padding: 0.6em 1.5em;
-  font-weight: 900;
+  font-weight: 500;
   letter-spacing: 0.05em; 
   font-family: "Ubuntu Mono Bold"; 
   text-decoration: none;  
