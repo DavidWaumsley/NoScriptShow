@@ -1,0 +1,41 @@
+@media print {
+ .top-bar,
+  header,
+  footer,
+  nav,
+  lite-youtube,
+  .links-nextprev
+  {
+    display: none ;
+  }
+
+ h1{
+   margin-block-start: 4rem;
+   display:block !important;
+   visibility: initial;
+ }
+
+
+  a::after{
+    content:" [" attr(href) "]";
+    font-size: var(--step--1);
+    }
+
+    	.visually-hidden {
+		clip: auto;
+		clip-path: none;
+		block-size: auto;
+		overflow: visible;
+		position: static;
+		white-space: normal;
+		inline-size: auto;
+	} 
+ 
+details[open]::details-content{
+block-size: auto; 
+overflow-x:visible
+}
+
+}
+
+

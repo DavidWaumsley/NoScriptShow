@@ -77,3 +77,10 @@ button.addEventListener("click", (event) => {
 
 // Show the toogle button only if JavaScript is enabled
 document.getElementById('theme-toggle').style.display = 'block';
+
+// Print styles - open details.
+window.addEventListener('beforeprint', function() {
+	document.querySelectorAll('details').forEach(details => {
+		details.open = true;
+	});
+});
