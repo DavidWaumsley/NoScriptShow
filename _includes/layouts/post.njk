@@ -9,10 +9,15 @@ layout: layouts/base.njk
 {% if videoid %}
 <h1 class=" [ visually-hidden ]">{{ title }}</h1>
 <div class="[ popout ]" >
-<lite-youtube videoid="{{videoid}}" style="background-image: url('https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp');">
-  <a href="https://youtube.com/watch?v={{videoid}}" class="lyt-playbtn" title="Play Video">   
+<lite-youtube videoid="{{videoid}}"
+ playlabel="Play: {{ title }}"
+
+ style="background-image: url('https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp');">
+  <a href="https://youtube.com/watch?v={{videoid}}" class="lyt-playbtn" title="Play Video">  
+  <span class="lyt-visually-hidden">Play Video: {{ title }}</span>
   </a>
 </lite-youtube>
+
 {% elif featureimg %}
 <img class="[ feature-img ]" src="{{featureimg}}" alt="">
 <h1 class="[ center-me ]">{{ title }}</h1>{% else %}
