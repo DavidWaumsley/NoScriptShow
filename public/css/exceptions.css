@@ -5,9 +5,7 @@
   nav,
   lite-youtube,
   .links-nextprev
-  {
-    display: none ;
-  }
+  { display: none ; }
 
   body{
     background-color: white;
@@ -23,20 +21,18 @@
     opacity: 0 !important;
 }
 
-
-  a::after{
+ a::after{
     content:" [ URL: " attr(href) " ]";
     font-size: var(--step--1);
-    color: #333;
-    
+    color: #333;    
     }
 
-    a{ 
+  a{ 
       color: #111;
       text-decoration: none;
-    }
+  }
 
-    	.visually-hidden {
+  .visually-hidden {
 		clip: auto;
 		clip-path: none;
 		block-size: auto;
@@ -50,7 +46,4 @@ details[open]::details-content{
 block-size: auto; 
 overflow-x:visible
 }
-
 }
-
-
