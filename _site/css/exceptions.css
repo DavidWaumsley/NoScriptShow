@@ -19,11 +19,21 @@
    display:block !important;
    visibility: initial;
  }
+ .ha, .ha-placeholder {
+    opacity: 0 !important;
+}
 
 
   a::after{
-    content:" [" attr(href) "]";
+    content:" [ URL: " attr(href) " ]";
     font-size: var(--step--1);
+    color: #333;
+    
+    }
+
+    a{ 
+      color: #111;
+      text-decoration: none;
     }
 
     	.visually-hidden {
