@@ -9,6 +9,11 @@
     display: none ;
   }
 
+  body{
+    background-color: white;
+    color: #111;
+  }
+
  h1{
    margin-block-start: 4rem;
    display:block !important;
