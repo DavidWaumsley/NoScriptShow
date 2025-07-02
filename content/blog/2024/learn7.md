@@ -14,7 +14,7 @@ This is the second follow-up to episode of the chat where we we were talking abo
 
 Here we are looking at the audio chat player that's presently on the show website. This is a shadow DOM component by [Dave Rupert.](https://daverupert.com/) He is co-host of the [Shop Talk chat](https://shoptalkshow.com/) which he does with Chris Coyier (of Codepen and formerly CSS tricks fame). This player is also used on their chat too.
 
-We can find it at [HTML with superpowers](https://htmlwithsuperpowers.netlify.app/using/examples/chat-player.html) where the code and working example is on (perhaps no surprise) [CodePen.](https://codepen.io/davatron5000/pen/LYerBQw)
+We can find it on [CodePen.](https://codepen.io/davatron5000/pen/LYerBQw)
 
 ## Installing the audio player
 ---------------------------
@@ -49,7 +49,7 @@ Of course, Dave Rupert and Chris Coyier are both far more knowledgeable on web c
 
 It might be worth reading Chris's article on [light DOM components](https://frontendmasters.com/blog/light-dom-only/) that reflects and references the view that this, rather than Shadow DOM, might be our best first option.
 
-In this case (and as I understand it), if we want the fallback back of the HTML audio player we need the [shadow-root open for a slot in which to place it.](https://htmlwithsuperpowers.netlify.app/images/chat-player.png)
+In this case (and as I understand it), if we want the fallback back of the HTML audio player we need the shadow-root open for a slot in which to place it.
 
 As this is the [noscript.show](https://noscript.show/) we're focusing on what we can do with the declarative languages HTML and CSS, but if you want to learn Web Component. Dave Rupert has a [course on it.](https://frontendmasters.com/courses/web-components/) He has been following this tech for more than a decade before its recent popularity (as a way to escape the burnout of changing and competing 3rd party libraries?).
 

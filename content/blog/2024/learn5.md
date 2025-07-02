@@ -147,4 +147,3 @@ What this does is clip all edges of the element to 50% effectively hiding everyt
 
 *   [Visually hidden content is a hack that needs to be resolved, not enshrined](https://www.scottohara.me/blog/2023/03/21/visually-hidden-hack)
 *   [The anatomy of visually-hidden](https://www.tpgi.com/the-anatomy-of-visually-hidden/)
-*   [Can we at least modernize visually hidden?](https://dev.to/merri/can-we-at-least-modernize-visually-hidden-n31)

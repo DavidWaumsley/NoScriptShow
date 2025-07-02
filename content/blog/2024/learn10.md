@@ -174,4 +174,4 @@ Whilst I don't think this is as bad as the way things went with the accessibilit
 [The code](https://codepen.io/David-Waumsley-the-solid/pen/ExzyyoK)
 -------------------------------------------------------------------
 
-See the Pen [Light and dark theme toggle](https://codepen.io/David-Waumsley-the-solid/pen/ExzyyoK) by David Waumsley ([@David-Waumsley-the-solid](https://codepen.io/David-Waumsley-the-solid)) on [CodePen](https://codepen.io).
+See the Pen [Light and dark theme toggle](https://codepen.io/David-Waumsley-the-solid/pen/ExzyyoK) by David Waumsley on CodePen.
