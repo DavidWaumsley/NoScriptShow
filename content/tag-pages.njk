@@ -12,6 +12,10 @@ const eleventyExcludeFromCollections = true;
 
 const eleventyComputed = {
 	title: "Tagged '{{ tag }}' - No Script Show",
+	description: function(data) {
+		const postCount = data.collections[data.tag] ? data.collections[data.tag].length : 0;
+		return `Browse ${postCount} post${postCount !== 1 ? 's' : ''} tagged with '${data.tag}' on No Script Show. Website building tips and tutorials.`;
+	},
 	permalink: function(data) {
 		return `/tags/${this.slugify(data.tag)}/`;
 	}
