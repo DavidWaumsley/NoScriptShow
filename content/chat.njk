@@ -1,18 +1,22 @@
 ---
-title: "Chats - No Script Show - episodes on making websites."
-description: "Audio focussed episode about making websites with modern HTMLand CSS."
-eleventyNavigation:
-   key: "Chat"
-   order: 2
+eleventyComputed:
+  title: "{% if pagination.pageNumber > 0 %}Chat - Page {{ pagination.pageNumber + 1 }} - No Script Show - episodes on making websites.{% else %}Chats - No Script Show - episodes on making websites.{% endif %}"
+  description: "{% if pagination.pageNumber > 0 %}Audio focussed episode about making websites with modern HTML and CSS. - Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}.{% else %}Audio focussed episode about making websites with modern HTML and CSS.{% endif %}"
 
-pagination: 
-   data: "collections.chat"
-   size: 6
-   alias: "posts"
-   reverse: true
+eleventyNavigation: 
+  key: "Chat" 
+  order: 3
  
+pagination: 
+  data: "collections.chat"
+  size: 6
+  alias: "posts"
+  reverse: true
+
 permalink: "{% if pagination.pageNumber > 0 %}/chat/page/{{ pagination.pageNumber + 1 }}/{% else %}/chat/{% endif %}"
 ---
+
+
 <div class="[ popout ]">
 <h1>Chat</h1>
 <p><strong>Audio focussed episodes</strong>. <small class="page-indicator">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</small></p>

@@ -1,6 +1,8 @@
 ---
-title: "Learn -  No Script Show -  Website building tips"
-description: "Short 'how to' video posts on building websites."
+eleventyComputed:
+  title: "{% if pagination.pageNumber > 0 %}Learn - Page {{ pagination.pageNumber + 1 }} - No Script Show - Website Building Tips{% else %}Learn - No Script Show - Website Building Tips{% endif %}"
+  description: "{% if pagination.pageNumber > 0 %}Short 'how to' video posts on building websites - Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}.{% else %}Short 'how to' video posts on building websites.{% endif %}"
+
 eleventyNavigation: 
   key: "Learn" 
   order: 3
@@ -12,7 +14,6 @@ pagination:
   reverse: true
 
 permalink: "{% if pagination.pageNumber > 0 %}/learn/page/{{ pagination.pageNumber + 1 }}/{% else %}/learn/{% endif %}"
-
 ---
 <div class="[ popout ]">
 <h1>Learn</h1>

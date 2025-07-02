@@ -1,16 +1,22 @@
 ---
-title: "Builds -  No Script Show -  about building websites"
-description: "Episodes where we design and build websites."
+eleventyComputed:
+  title: "{% if pagination.pageNumber > 0 %}Build - Page {{ pagination.pageNumber + 1 }} - No Script Show - Building Websites.{% else %}Build - No Script Show - Building Websites.{% endif %}"
+  description: "{% if pagination.pageNumber > 0 %}Demos of how to building websites - Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}.{% else %}Demos of how to building websites.  {% endif %}"
+
 eleventyNavigation: 
- key: "Build"
- order: 4
+  key: "Build" 
+  order: 3
+ 
 pagination: 
-   data: "collections.build"
-   size: 6
-   alias: "posts"
-   reverse: true  
+  data: "collections.build"
+  size: 6
+  alias: "posts"
+  reverse: true
+
 permalink: "{% if pagination.pageNumber > 0 %}/build/page/{{ pagination.pageNumber + 1 }}/{% else %}/build/{% endif %}"
 ---
+
+
 <div class="[ popout ]">
 
 <h1>Build</h1>
