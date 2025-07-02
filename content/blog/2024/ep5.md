@@ -66,8 +66,6 @@ We'll talk about Container Queries in the next episode.
 *   [Talk: Is Atomic Design Dead? - Brad Frost](https://www.youtube.com/watch?v=PK_PICNTgAg)
 *   [Talk: The Good, The Bad, and The Web Components - Zach Leatherman](https://www.youtube.com/watch?v=R4Ri4ft7bXY)
 *   [Light Youtube Embed Web Component -Paul Irish](https://github.com/paulirish/lite-youtube-embed?tab=readme-ov-file#pro-usage-load-w-js-deferred-aka-progressive-enhancement)
-*   [chat Player Web Component - Dave Rupert](https://htmlwithsuperpowers.netlify.app/using/examples/chat-player.html)
-
 <details>
 <summary>Transcript</summary>
 
