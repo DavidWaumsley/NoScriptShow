@@ -242,11 +242,6 @@
 	</url>
 	
 	<url>
-		<loc>https://noscript.show/tag-pages/</loc>
-		<lastmod>2025-05-29</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://noscript.show/tags/</loc>
 		<lastmod>2025-05-29</lastmod>
 	</url>
@@ -277,7 +272,7 @@
 	</url>
 	
 	<url>
-		<loc>https://noscript.show/https:/noscript.show/feed/feed.xml</loc>
+		<loc>https://noscript.show/feed/feed.xml</loc>
 		<lastmod>2025-07-02</lastmod>
 	</url>
 </urlset>
