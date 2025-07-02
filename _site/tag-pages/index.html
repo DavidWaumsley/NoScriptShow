@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Accessibility Statement : No Script Show</title>
+<title>Tags -  No Script Show</title>
 <script>  
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme) {
@@ -14,22 +14,22 @@
 </script> 
 <link rel="icon" type="img/x-icon" href="/svg/favicon.svg">
 <link rel="icon" href="img/favicon.ico" sizes="any">
-<meta name="description" content="Accessibility Statement for the No Script Show.">
+<meta name="description" content="Post tags for the No Script Show. ">
 <link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="No Script Show - Homepage -  Making Websites Simple Again.">
 <link rel="stylesheet" href="/dist/Y3waXJm1NZ.css">   
  		
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://noscript.show/accessibility-statement/">
-<meta property="og:title" content="No Script Show Accessibility Statement : No Script Show">
-<meta property="og:description" content="Accessibility Statement for the No Script Show.">
+<meta property="og:url" content="https://noscript.show/tag-pages/">
+<meta property="og:title" content="No Script Show Tags -  No Script Show">
+<meta property="og:description" content="Post tags for the No Script Show. ">
 
 <meta property="og:image" content="https://noscript.show//img/og-image.webp">
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://noscript.show/accessibility-statement/">
-<meta property="twitter:title" content="No Script Show Accessibility Statement : No Script Show">
-<meta property="twitter:description" content="Accessibility Statement for the No Script Show.">
+<meta property="twitter:url" content="https://noscript.show/tag-pages/">
+<meta property="twitter:title" content="No Script Show Tags -  No Script Show">
+<meta property="twitter:description" content="Post tags for the No Script Show. ">
 
 <meta property="twitter:image" content="https://noscript.show//img/og-image.webp">
  <link rel="preload" href="/fonts/UbuntuMono-Bold.woff2" as="font" type="font/woff2" crossorigin="">
@@ -54,102 +54,41 @@
 </nav>
 </header>
 <main class="[ page-layout ] [ flow ]" id="skip">			
+// <script>
+const pagination = {
+	data: "collections",
+	size: 1,
+	alias: "tag",
+	filter: ["all", "posts"],
+	// addAllPagesToCollections: true,
+};
 
-<h1 id="accessibility-statement">Accessibility Statement</h1>
+const eleventyExcludeFromCollections = true;
 
-<h2 id="measures-to-support-accessibility">Measures to support accessibility</h2>
-<p>
-	Measures to ensure accessibility of
-	<span class="basic-information website-name">The No Script Show</span>:
-</p>
-<ul class="organizational-effort accessibility-measures">
-	<li>Include accessibility as part of our mission statement.</li>
-	<li>Integrate accessibility into our procurement practices.</li>
-</ul>
-<h2 id="conformance-status">Conformance status</h2>
-<p>	The <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG)</a> defines requirements for developers to improve accessibility for people with disabilities.
-</p>
-	<p>The No Script Show is mostly conformant with WCAG 2.2 level AA. </p>
-<h2 id="feedback">Feedback</h2>
-<p>
-	We welcome your feedback on the accessibility of
-	<span class="basic-information website-name">The No Script Show</span>.
-	Please let us know if you encounter accessibility barriers.
-</p>
-<ul class="basic-information feedback h-card">
-	<li>
-	E-mail:
-	<a class="email u-email" href="mailto:david@davidwaumsley.com">david@davidwaumsley.com</a>
-</li>
-</ul>
-<p>
-	We try to respond to feedback within <span class="feedback responsetime">2 days</span>.
-</p>
-<h3 id="compatibility-with-browsers-and-assistive-technology">Compatibility with browsers and assistive technology</h3>
-<p>
-	<span class="basic-information website-name">The No Script Show</span>
-	is designed to be compatible with the following assistive technologies:
-</p>
-<ul class="technical-information compatible-environments">
-	<li>NVDA, Jaws  and Navigator with modern Chromium, Safari and Firefox browsers. </li>
-</ul>
-<p>
-	<span class="basic-information website-name">The No Script Show</span>
-	is not compatible with:
-</p>
-<ul class="technical-information incompatible-environments">
-	<li>Internet Explorer.</li>
-</ul>
-<h3 id="technical-specifications">Technical specifications</h3>
-<p>
-	Accessibility of
-	<span class="basic-information website-name">The No Script Show</span>
-	relies on the following technologies to work with the particular combination of web browser and any assistive technologies or plugins installed on your computer:
-</p>
-<ul class="technical-information technologies-used">
-	<li>HTML</li>
-	<li>WAI-ARIA</li>
-	<li>CSS</li>
-	<li>JavaScript</li>
-</ul>
-<p>These technologies are relied upon for conformance with the accessibility standards used.</p>
-<h3 id="limitations-and-alternatives">Limitations and alternatives</h3>
-<p>
-	Despite our best efforts to ensure accessibility of
-	<span class="basic-information website-name">The No Script Show</span> , there may be some limitations. Below is a description of known limitations, and potential solutions. Please contact us if you observe an issue not listed below.
-</p>
-<p>
-	Known limitations for
-	<span class="basic-information website-name">The No Script Show</span>:
-</p>
-<ol class="technical-information accessibility-limitations">
-	<li><strong>No sign language version of our embedded video content </strong>:because we are non-profit and do not have the budget for this.</li>
+const eleventyComputed = {
+	title: "Tagged ''",
+	permalink: function(data) {
+		return `/tags/${this.slugify(data.tag)}/`;
+	}
+};
+---
+<h1>Tagged “”</h1>
+
+
+<ol reversed>
 </ol>
-<h2 id="assessment-approach">Assessment approach</h2>
-<p>
-	<span class="basic-information organization-name">The No Script Show</span>
-	assessed the accessibility of
-	<span class="basic-information website-name">The No Script Show</span>
-	by the following approaches:
-</p>
-<ul class="technical-information assessment-approaches">
-	<li>Self-evaluation</li>
-</ul>
 
-<p> <small>This statement was created on
-	<span class="basic-information statement-created-date">24 June 2025</span>
-	using the <a href="https://www.w3.org/WAI/planning/statements/">W3C Accessibility Statement Generator Tool</a>.
-</small>
-	</p>			
+<p>See <a href="tags.njk">all tags</a>.</p>
+			
 </main>	
   <footer>
 
-<h2 class="[ angle ]" id="links">Links</h2>  
+<h2 class="[ angle ]">Links</h2>  
 
 <div class="[ footer-wrapper ]">
 
 <nav class="[ footer-links ][ fa1 ]">
-<h3 id="audio-only-episodes">Audio only episodes</h3>
+<h3>Audio only episodes</h3>
 
 <ul> 
 <li><a href="https://podcast.apple.com/us/podcast/no-script-show/id1721164461">Apple Podcast</a></li>  
@@ -161,14 +100,14 @@
 </nav>
 
 <nav class="[ footer-links ][ fa2 ]" id="more-navigation" aria-label="More on this site">
-<h3 id="more-navigation-2">More navigation</h3>
+<h3>More navigation</h3>
 <ul>
 <li><a href="/about">About</a></li>
 <li><a href="/contact">Contact</a></li>        
 <li><a href="/blog">Archive</a></li>
 <li><a href="/feed/feed.xml">RSS Feed</a></li>
-<li class="external-link"><a href="https://intrinsicframework.here24.co/">Intrinsic Framework <svg aria-hidden="true" fill="var(--text)" width="18px" height="18px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M19,14 L19,19 C19,20.1045695 18.1045695,21 17,21 L5,21 C3.8954305,21 3,20.1045695 3,19 L3,7 C3,5.8954305 3.8954305,5 5,5 L10,5 L10,7 L5,7 L5,19 L17,19 L17,14 L19,14 Z M18.9971001,6.41421356 L11.7042068,13.7071068 L10.2899933,12.2928932 L17.5828865,5 L12.9971001,5 L12.9971001,3 L20.9971001,3 L20.9971001,11 L18.9971001,11 L18.9971001,6.41421356 Z"></path>
+<li class="external-link" ><a href="https://intrinsicframework.here24.co/">Intrinsic Framework <svg aria-hidden="true" fill="var(--text)" width="18px" height="18px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M19,14 L19,19 C19,20.1045695 18.1045695,21 17,21 L5,21 C3.8954305,21 3,20.1045695 3,19 L3,7 C3,5.8954305 3.8954305,5 5,5 L10,5 L10,7 L5,7 L5,19 L17,19 L17,14 L19,14 Z M18.9971001,6.41421356 L11.7042068,13.7071068 L10.2899933,12.2928932 L17.5828865,5 L12.9971001,5 L12.9971001,3 L20.9971001,3 L20.9971001,11 L18.9971001,11 L18.9971001,6.41421356 Z"/>
 </svg></a>
 </li>
 </ul>
@@ -178,12 +117,12 @@
 <a class="btn" href="#top" aria-label="back to top"> Back to top <span aria-hidden="true">▲</span></a>
 </div>
 <div class="[ fa3 ]">
-<small>© Copyright since 2023 | <a href="/privacy"> Privacy </a>  | <a href="/accessibility-statement/"> Accessibility</a>  | <em>Built with <a href="https://www.11ty.dev/">Eleventy v3.1.0</a></em>
+<small >© Copyright since 2023 | <a href="/privacy"> Privacy </a>  | <a href="/accessibility-statement/"> Accessibility</a>  | <em>Built with <a href="https://www.11ty.dev/">Eleventy v3.1.0</a></em>
 </small>
 
  </div>
 </footer>
-		<!-- This page `/accessibility-statement/` was built on 2025-07-02T11:58:16.708Z -->
+		<!-- This page `/tag-pages/` was built on 2025-07-02T11:58:16.712Z -->
 		<script type="module" src="/dist/1D9yP2m7sP.js"></script>		
-</body>
+</main></body>
 </html>
