@@ -28,6 +28,7 @@
  {% if layout == "layouts/post.njk" and videoid %}
  <link rel="preload" as="image" href="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp">
  {% endif %}		
+<meta name="robots" content="noai, noimageai">
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://noscript.show{{ page.url}}" />
