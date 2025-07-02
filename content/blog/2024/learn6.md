@@ -1,6 +1,6 @@
 ---
 title:  Embedding YouTube videos for performance
-description:  A look at Lite YouTube Embed which allows us to embed YouTube videos without automatically downloading YouTube's associated assets.
+description:  Lite YouTube Embed allows us to embed YouTube videos without automatically downloading YouTube's associated assets.
 date: 2024-03-06
 tags: ["learn"]
 permalink: "/learn/6{{slugify }}/"
