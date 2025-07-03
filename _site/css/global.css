@@ -371,3 +371,7 @@ code {
   font-family: "Courier New", Courier, monospace;
   padding: 0.2rem;
 }
+
+fieldset{
+  border: 0;
+}

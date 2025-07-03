@@ -16,7 +16,7 @@
 <link rel="icon" href="/img/favicon.ico" sizes="any">
 <meta name="description" content="Contact form for the No Script Show.">
 <link rel="alternate" href="https://noscript.show/feed/feed.xml" type="application/atom+xml" title="No Script Show - Homepage -  Making Websites Simple Again.">
-<link rel="stylesheet" href="/dist/Y3waXJm1NZ.css">   
+<link rel="stylesheet" href="/dist/Kv7_npLkVo.css">   
  		
 <meta name="robots" content="noai, noimageai">
 <!-- Open Graph / Facebook -->
@@ -55,57 +55,67 @@
 </nav>
 </header>
 <main class="[ page-layout ] [ flow ]" id="skip">			
+        <h1 id="contact-heading">Contact Form</h1>
 
-<h1 id="contact">Contact</h1>
+        <div id="form-instructions" class="form-help">
+            <small>Please fill out the form completely. All fields marked with an asterisk (*) are required.</small>  
+        </div>
 
-<section> 
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async="" defer=""></script>
-         
-          <form id="contact-form" action="https://submit-form.com/51oe63jyU" aria-label="Contact Form">
-          <input type="hidden" name="_redirect" value="https://noscript.show/thank-you/">
-            <div class="[ form-group ]" role="group" aria-labelledby="personal-info">
-              <h2 id="personal-info" class="visually-hidden">
-                Personal Information
-              </h2>            
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async="" defer=""></script>
 
-              <div class="[ field-wrapper ]">
-                <label for="fullname">
-                  Full Name
-                  <span class="required" aria-hidden="true">*</span>
-                  <span class="visually-hidden">required</span>
-                </label>
-                <input type="text" id="fullname" name="name" required="" aria-required="true" aria-describedby="name-error" autocomplete="name" minlength="2" maxlength="50" pattern="[A-Za-z\s'-]+">
-                <span id="name-error" class="error-message" role="alert" aria-live="polite"></span>
-              </div>
+        <form id="contact-form" action="https://submit-form.com/51oe63jyU" aria-labelledby="contact-heading" aria-describedby="form-instructions">
+            <input type="hidden" name="_redirect" value="https://noscript.show/thank-you/">
+            
+            <fieldset>
+                <legend class="visually-hidden">Personal Information</legend>
+                
+                <div class="field-wrapper">
+                    <label for="fullname">
+                        Full Name
+                        <span class="required" aria-hidden="true">*</span>
+                        <span class="visually-hidden">required</span>
+                    </label>
+                    <input type="text" id="fullname" name="name" required="" aria-required="true" aria-describedby="name-error name-help" autocomplete="name" minlength="2" maxlength="50" pattern="[A-Za-z\s'-]+">
+                    <div id="name-help" class="field-help">Enter your first and last name</div>
+                    <span id="name-error" class="error-message" role="alert" aria-live="polite"></span>
+                </div>
 
-              <div class="[ field-wrapper ]">
-                <label for="email-address">
-                  Email Address
-                  <span class="required" aria-hidden="true">*</span>
-                  <span class="visually-hidden">required</span>
-                </label>
-                <input type="email" id="email-address" name="email" required="" aria-required="true" aria-describedby="email-error" autocomplete="email">
-                <span id="email-error" class="error-message" role="alert" aria-live="polite"></span>
-              </div>           
+                <div class="field-wrapper">
+                    <label for="email-address">
+                        Email Address
+                        <span class="required" aria-hidden="true">*</span>
+                        <span class="visually-hidden">required</span>
+                    </label>
+                    <input type="email" id="email-address" name="email" required="" aria-required="true" aria-describedby="email-error email-help" autocomplete="email">
+                    <div id="email-help" class="field-help">We'll use this to respond to your message</div>
+                    <span id="email-error" class="error-message" role="alert" aria-live="polite"></span>
+                </div>           
 
-              <div class="[ field-wrapper ]">
-                <label for="message-text">
-                  Message
-                  <span class="required" aria-hidden="true">*</span>
-                  <span class="visually-hidden">required</span>
-                </label>
-                <textarea id="message-text" name="message" required="" aria-required="true" aria-describedby="message-error" minlength="10" maxlength="1000"></textarea>
-                <span id="message-error" class="[ error-message ]" role="alert" aria-live="polite"></span>
-              </div>
+                <div class="field-wrapper">
+                    <label for="message-text">
+                        Message
+                        <span class="required" aria-hidden="true">*</span>
+                        <span class="visually-hidden">required</span>
+                    </label>
+                    <textarea id="message-text" name="message" required="" aria-required="true" aria-describedby="message-error message-help" minlength="10" maxlength="1000" rows="5"></textarea>
+                    <div id="message-help" class="field-help">
+                        <span>Minimum 10 characters, maximum 1000 characters.</span>   
+                    </div>
+                    <span id="message-error" class="error-message" role="alert" aria-live="polite"></span>
+                </div>
+            </fieldset>
+
+            <div class="captcha-wrapper">
+                <small id="captcha-help">Please complete the security verification below:</small>
+                <br>
+                <div class="cf-turnstile" data-sitekey="0x4AAAAAABeb_XaN7Al5643x" aria-describedby="captcha-help"></div>
             </div>
 
-            <div class="cf-turnstile" data-sitekey="0x4AAAAAABeb_XaN7Al5643x"></div>
-
-            <button class="btn" type="submit" aria-label="Submit form">
-              Send
+            <button class="btn" type="submit">
+                <span>Send Message</span>
+                <span class="visually-hidden">Submit contact form</span>
             </button>
-          </form>
-        </section>
+        </form>
       			
 </main>	
   <footer>
@@ -146,7 +156,7 @@
 
  </div>
 </footer>
-		<!-- This page `/contact/` was built on 2025-07-03T07:05:54.013Z -->
+		<!-- This page `/contact/` was built on 2025-07-03T16:29:12.049Z -->
 		<script type="module" src="/dist/1D9yP2m7sP.js"></script>		
 </body>
 </html>
