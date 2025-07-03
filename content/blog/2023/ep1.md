@@ -3,7 +3,7 @@ title: Everything we knew about web design changed!
 description: How this chat aims to keep up with a fast changing web platform.
 date: 2023-12-13
 tags: [ chat ]
-permalink: "/1{{slugify }}/"
+permalink: "/1/{{slugify }}/"
 videoid: MepORS6OHYw
 ---
 

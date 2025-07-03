@@ -3,7 +3,7 @@ title:  Designing an effective homepage
 description: We critique a design of the show's future homepage against what experts from UX, copywriting, SEO and marketing might say.
 date: 2024-04-11
 tags: ["chat"]
-permalink: "/8{{slugify }}/"
+permalink: "/8/{{slugify }}/"
 videoid: -88LZYm_YTQ
 ---
 

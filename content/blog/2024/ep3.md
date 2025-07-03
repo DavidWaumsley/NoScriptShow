@@ -3,7 +3,7 @@ title: Modern CSS layouts
 description: The W3C on CSS layout and how it might be easier than we think.
 date: 2024-01-22
 tags: ["chat"]
-permalink: "/3{{slugify }}/"
+permalink: "/3/{{slugify }}/"
 videoid: Q1g--a_hrXQ
 ---
 

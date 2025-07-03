@@ -3,7 +3,7 @@ title:  Web safe or system fonts are cool again
 description: Looking at modernfontstack.com an online to get web safe fonts. 
 date: 2024-02-06
 tags: ["learn"]
-permalink: "/learn/3{{slugify }}/"
+permalink: "/learn/3/{{slugify }}/"
 videoid: ilrfhdSuIsw
 ---
 

@@ -3,7 +3,7 @@ title:  Accessibility - Skip nav links & :focus-visible
 description: Links, aria labels and when to use target="_blank". 
 date: 2024-02-20
 tags: ["learn"]
-permalink: "/learn/5{{slugify }}/"
+permalink: "/learn/5/{{slugify }}/"
 videoid: _KLBhO_7zW8
 ---
 

@@ -3,7 +3,7 @@ title: Finally, a delightful free accessibility tool. Silktide
 description: A new and free accessibility checker by Silktide, which includes a simple screen reader simulator.
 date: 2024-06-01
 tags: ["learn"]
-permalink: "/learn/11{{slugify }}/"
+permalink: "/learn/11/{{slugify }}/"
 videoid: FLAAs6upFj8
 ---
 

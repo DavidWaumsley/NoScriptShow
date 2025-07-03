@@ -3,7 +3,7 @@ title: Adding an audio player (web components)
 description: Looking at a audio chat player which is a shadow DOM component by Dave Rupert. It's fabulous but comes with some pros and cons.
 date: 2024-03-19
 tags: ["learn"]
-permalink: "/learn/7{{slugify }}/"
+permalink: "/learn/7/{{slugify }}/"
 videoid: J03DQ2rQBsE
 ---
 

@@ -3,7 +3,7 @@ title:  Does Baseline solve our browser support problems?
 description: Baseline is a Google initiative that aims to make it easier to understand what might be ready for production.
 date: 2024-04-25
 tags: ["chat"]
-permalink: "/9{{slugify }}/"
+permalink: "/9/{{slugify }}/"
 videoid: QhdejyjEr5o
 ---
 

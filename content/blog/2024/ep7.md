@@ -3,7 +3,7 @@ title:  How do we start a website project?
 description: Looking at the The MDN web docs on "project ideation".
 date: 2024-03-27
 tags: ["chat"]
-permalink: "/7{{slugify }}/"
+permalink: "/7/{{slugify }}/"
 videoid: IgC6z3LcrlM
 ---
 

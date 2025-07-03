@@ -3,7 +3,7 @@ title: Easy responsive or fluid typography
 description: Looking at the Utopia online calculator which makes it easy to get fluid typography. 
 date: 2024-01-30
 tags: ["learn"]
-permalink: "/learn/2{{slugify }}/"
+permalink: "/learn/2/{{slugify }}/"
 videoid: jweWInlUTgQ
 ---
 Video notes

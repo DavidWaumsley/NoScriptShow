@@ -3,7 +3,7 @@ title: The big picture.
 description: How this show tries to follow the development of the web.
 date: 2024-01-17
 tags: ["chat"]
-permalink: "/2{{slugify }}/"
+permalink: "/2/{{slugify }}/"
 videoid: DYhaggDCBmM
 ---
  

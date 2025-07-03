@@ -3,7 +3,7 @@ title: What is intrinsic web design?
 description: Web layout from a designer's point of view.
 date: 2024-02-02
 tags: ["chat"]
-permalink: "/4{{slugify }}/"
+permalink: "/4/{{slugify }}/"
 videoid: gqsU-ysvQF0
 ---
 Show Notes

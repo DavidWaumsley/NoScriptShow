@@ -3,7 +3,7 @@ title: Building without WordPress.1 Tools and Tabs (organizing work)
 description: About getting used to manually coding websites after many year depending on a CMS.
 date: 2024-04-03
 tags: ["learn"]
-permalink: "/learn/8{{slugify }}/"
+permalink: "/learn/8/{{slugify }}/"
 videoid: -RgObYHDwxw
 ---
 

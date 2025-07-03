@@ -3,7 +3,7 @@ title: Creating accessible navigation
 description: We look the code needed for an accessible menu bar 
 date: 2025-06-25
 tags: ["learn"]
-permalink: "/learn/13{{slugify }}/"
+permalink: "/learn/13/{{slugify }}/"
 videoid: KSpzCCa24x8
 ---
  **Show Notes:**

@@ -3,7 +3,7 @@ title: CSS layouts made simple
 description: Looks at modern CSS layouts using the show's initial simplified site. 
 date: 2024-01-24
 tags: ["learn"]
-permalink: "/learn/1{{slugify }}/"
+permalink: "/learn/1/{{slugify }}/"
 videoid: ANg1d8wO3Pc
 ---
 

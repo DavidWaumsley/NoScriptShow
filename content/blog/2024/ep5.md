@@ -3,7 +3,7 @@ title: What is component based web design?
 description: Making websites with reusable UI building bricks. What the web platform offers us and do we need it?
 date: 2024-02-29
 tags: ["chat"]
-permalink: "/5{{slugify }}/"
+permalink: "/5/{{slugify }}/"
 videoid: f7VUb-7bF28
 ---
 

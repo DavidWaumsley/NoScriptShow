@@ -3,7 +3,7 @@ title: Building an accessible accordion with HTML and CSS
 description: Building an accessible accordion with HTML and CSS. 
 date: 2025-06-11
 tags: ["learn"]
-permalink: "/learn/12{{slugify }}/"
+permalink: "/learn/12/{{slugify }}/"
 videoid: Y_2lbjGu9m0
 ---
  **Show Notes:**

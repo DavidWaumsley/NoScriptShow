@@ -3,7 +3,7 @@ title: I’m the ultimate dark and light theme toggle switch… and so’s my wi
 description: About the accessibility considerations of adding a dark and light theme toggle switcher.
 date: 2024-05-23
 tags: ["learn"]
-permalink: "/learn/10{{slugify }}/"
+permalink: "/learn/10/{{slugify }}/"
 videoid: NbOtbHW4zlA
 ---
 

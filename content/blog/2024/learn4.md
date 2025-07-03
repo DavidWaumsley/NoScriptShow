@@ -3,7 +3,7 @@ title:  Creating links that are not too hyper!
 description: Looking at links gaffs, aria labels, when to use target="_blank" and underlining links with CSS. 
 date: 2024-02-13
 tags: ["learn"]
-permalink: "/learn/4{{slugify }}/"
+permalink: "/learn/4/{{slugify }}/"
 videoid: AQAw17sNO6c
 ---
 
