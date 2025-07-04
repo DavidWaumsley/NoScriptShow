@@ -1,9 +1,30 @@
 <!doctype html>
 <html lang="{{ metadata.language }}" data-theme="dark">
-<head>
+<head> 
+{#- 
+***** Character encoding ***** 
+-#}  
 <meta charset="utf-8">
+{#- 
+***** Viewport meta tag ***** 
+-#}  
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{#- 
+***** CSP headers ***** 
+<meta http-equiv="Content-Security-Policy" content="upgrage-insecure-requests"> 
+-#}  
+{#- 
+***** Page title ***** 
+-#} 
 <title>{{ title or metadata.title }}</title>
+{#- 
+***** preconnect ***** 
+ <link rel="preconnect" href="#" />
+-#} 
+{#- 
+***** Asynchronous JavaScript ***** 
+-#} 
 <script>  
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme) {
@@ -12,10 +33,6 @@
     document.documentElement.setAttribute('data-theme', 'dark');
   }
 </script> 
-<link rel="icon" type="img/x-icon" href="/svg/favicon.svg">
-<link rel="icon" href="/img/favicon.ico" sizes="any">
-<meta name="description" content="{{ description or metadata.description }}">
-<link rel="alternate" href="https://noscript.show/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
 {%- css %}
 {% include "public/css/reset.css" %}
@@ -24,19 +41,23 @@
 {% include "public/css/utility.css" %}
 {% include "public/css/block.css" %}
 {% include "public/css/exceptions.css" %}
-{% endcss %}   
- {% if layout == "layouts/post.njk" and videoid %}
- <link rel="preload" as="image" href="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp">
- {% endif %}		
+{% endcss -%}   
+{% if layout == "layouts/post.njk" and videoid %}
+<link rel="preload" as="image" href="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp"> {% endif %}		
 <meta name="robots" content="noai, noimageai">
+<link rel="canonical" href="{{ metadata.url }}{{ page.url }}">
+<link rel="icon" type="img/x-icon" href="/svg/favicon.svg">
+<link rel="icon" href="/img/favicon.ico" sizes="any">
+<meta name="description" content="{{ description or metadata.description }}">
+<link rel="alternate" href="https://noscript.show/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://noscript.show{{ page.url}}/" />
 <meta property="og:title" content="No Script Show {{title}}" />
 <meta property="og:description" content="{{description}}" />
-{% if videoid %}
+{%- if videoid -%}
 <meta property="og:image" content="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp" />
-{% elif featureimg %}
+{%- elif featureimg -%}
 <meta property="og:image" content="{{metadata.url}}{{ featureimg }}" />{% else %}
 <meta property="og:image" content="{{ metadata.url }}/img/og-image.webp" />{% endif %}
 <!-- Twitter -->
@@ -44,7 +65,7 @@
 <meta property="twitter:url" content="https://noscript.show{{ page.url}}" />
 <meta property="twitter:title" content="No Script Show {{title}}" />
 <meta property="twitter:description" content="{{description}}" />
-{% if videoid %}
+{%- if videoid -%}
 <meta property="twitter:image" content="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp" />
 {% elif featureimg %}
 <meta property="twitter:image" content="{{metadata.url}}{{ featureimg }}" />{% else %}
