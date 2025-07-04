@@ -94,12 +94,10 @@ text-decoration-color: var(--text-alt) ;
  .projects figcaption{
   text-align: right;
  }
-
  .projects h2{
  color: var(--text-alt);
  margin-block-end: var(--space-m);
 }
-
 
 .reel  {
   display: flex;
@@ -118,7 +116,6 @@ margin-block-end: var(--space-m);
 flex-basis: 26rem; 
 }
 
-/* space between "slides" */
 .reel > * {
 margin-inline-end: 5rem;
 }

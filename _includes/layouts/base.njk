@@ -61,13 +61,13 @@ https://intrinsicframework.here24.co/optimized-head/
 <main class="[ page-layout ] [ flow ]" id="skip">			
 {{ content | safe }}			
 </main>	
-  {% include "partials/footer.njk" %}
-		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
-		<script type="module" src="{% getBundleFileUrl "js" %}"></script>
-		{%- js  %}	
-		{% include "public/js/light-dark.js" %}	
-		{% include "public/js/lite-yt-embed.js" %}	
-		{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}	
-		{% endjs %}		
+ {% include "partials/footer.njk" %}
+<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
+<script type="module" src="{% getBundleFileUrl "js" %}"></script>
+{%- js  %}	
+{% include "public/js/light-dark.js" %}	
+{% include "public/js/lite-yt-embed.js" %}	
+{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}	
+{% endjs %}		
 </body>
 </html>

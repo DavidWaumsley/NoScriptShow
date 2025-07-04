@@ -132,7 +132,6 @@
   display: grid;
   place-content: center;
 } 
-
   .pretty {
    text-wrap: pretty;
 }

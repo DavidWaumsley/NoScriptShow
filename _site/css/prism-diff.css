@@ -1,7 +1,4 @@
-/*
- * New diff- syntax
- */
-
+/* * New diff- syntax */
 .token.deleted {
 	background-color: hsl(0, 51%, 37%);
 	color: inherit;
