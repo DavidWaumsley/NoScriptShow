@@ -1,9 +1,7 @@
 <!doctype html>
 <html lang="{{ metadata.language }}" data-theme="dark">
 <head> 
-{#- 
-https://intrinsicframework.here24.co/optimized-head/
--#}  
+{#- https://intrinsicframework.here24.co/optimized-head/ -#}  
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ title or metadata.title }}</title>
@@ -48,7 +46,7 @@ https://intrinsicframework.here24.co/optimized-head/
 {% elif featureimg %}
 <meta property="twitter:image" content="{{metadata.url}}{{ featureimg }}" />{% else %}
 <meta property="twitter:image" content="{{ metadata.url }}/img/og-image.webp" />{% endif %}
- <meta name="generator" content="{{ eleventy.generator }}">
+<meta name="generator" content="{{ eleventy.generator }}">
 </head>
 <body id="top">
 <a href="#skip" class="[ skip-link ]">Skip to main content</a>
