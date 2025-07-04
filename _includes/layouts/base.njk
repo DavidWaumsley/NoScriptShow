@@ -43,7 +43,11 @@
 {% include "public/css/exceptions.css" %}
 {% endcss -%}   
 {% if layout == "layouts/post.njk" and videoid %}
-<link rel="preload" as="image" href="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp"> {% endif %}		
+<link rel="preload" as="image" href="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp"> {% endif %}
+<link rel="preload" as="image" href="https://noscript.show/svg/moon.svg">
+<link rel="preload" as="image" href="https://noscript.show/svg/sun.svg">
+<link rel="preload" href="/fonts/UbuntuMono-Bold.woff2"  as="font" type="font/woff2" crossorigin="">
+<link rel="preload" href="/fonts/UbuntuMono-Regular.woff2"  as="font" type="font/woff2" crossorigin="">		
 <meta name="robots" content="noai, noimageai">
 <link rel="canonical" href="{{ metadata.url }}{{ page.url }}">
 <link rel="icon" type="img/x-icon" href="/svg/favicon.svg">
@@ -70,8 +74,6 @@
 {% elif featureimg %}
 <meta property="twitter:image" content="{{metadata.url}}{{ featureimg }}" />{% else %}
 <meta property="twitter:image" content="{{ metadata.url }}/img/og-image.webp" />{% endif %}
- <link rel="preload" href="/fonts/UbuntuMono-Bold.woff2"  as="font" type="font/woff2" crossorigin="">
- <link rel="preload" href="/fonts/UbuntuMono-Regular.woff2"  as="font" type="font/woff2" crossorigin="">
  <meta name="generator" content="{{ eleventy.generator }}">
 </head>
 <body id="top">
