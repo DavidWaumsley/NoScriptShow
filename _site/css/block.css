@@ -201,7 +201,7 @@ margin-inline-end: 5rem;
   padding-inline: var(--space-2xl);
   padding-block: var(--space-m);
   text-align: center;
-  font-weight: 900; 
+  font-weight: 500; 
 }
 
   .post-metadata li{

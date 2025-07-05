@@ -5,11 +5,56 @@
   <subtitle>Building solid websites simply.</subtitle>
   <link href="https://noscript.show/feed/feed.xml" rel="self" />
   <link href="https://noscript.show/" />
-  <updated>2025-06-25T00:00:00Z</updated>
+  <updated>2025-07-09T00:00:00Z</updated>
   <id>https://noscript.show/</id>
   <author>
     <name>No Script Show</name>
   </author>
+  <entry>
+    <title>Design Systems. Who are they for?</title>
+    <link href="https://noscript.show/22/" />
+    <updated>2025-07-09T00:00:00Z</updated>
+    <id>https://noscript.show/22/</id>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Show Notes:&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;what-do-we-mean-by-design-systems&quot;&gt;What do we mean by design systems?&lt;/h2&gt;
+&lt;blockquote&gt;&quot;A complete set of standards intended to manage design at scale using reusable components and patterns.&quot;
+&lt;cite&gt;&lt;a href=&quot;https://www.nngroup.com/articles/design-systems-101/&quot;&gt;&lt;abr title=&quot;Nielsen Norman Group&quot;&gt;NNG&lt;/abr&gt;&lt;/a&gt; &lt;/cite&gt; &lt;/blockquote&gt;
+&lt;blockquote&gt;&quot;A single source of truth that reduces design redundancy and accelerates the development process.&quot;
+&lt;cite&gt;&lt;a href=&quot;https://www.figma.com/blog/design-systems-101-what-is-a-design-system/&quot;&gt;Figma&lt;/a&gt; &lt;/cite&gt; &lt;/blockquote&gt;
+&lt;h2 id=&quot;who-uses-a-design-system&quot;&gt;Who uses a design system?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Large sites that need consistency regardless of who’s working on them.&lt;/li&gt;
+&lt;li&gt;Solo designers who  want to assemble websites quickly.&lt;/li&gt;
+&lt;li&gt;Dreamers? Realists? Organised people? Control freaks? Time wasters?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;what-makes-up-a-design-system&quot;&gt;What makes up a design system?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.nngroup.com/articles/design-systems-vs-style-guides/&quot;&gt;Style guides&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.tokens.studio/fundamentals/design-tokens&quot;&gt;Design tokens&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Component libraries.&lt;/li&gt;
+&lt;li&gt;Pattern libraries.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;how-do-we-get-a-design-system&quot;&gt;How do we get a design system?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Off the shelf.&lt;/li&gt;
+&lt;li&gt;Adapted from other sources.&lt;/li&gt;
+&lt;li&gt;Custom.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;potential-benefits&quot;&gt;Potential benefits&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Efficiency and cost saving.&lt;/li&gt;
+&lt;li&gt;Reducing tedious tasks.&lt;/li&gt;
+&lt;li&gt;Maintaining quality or reducing errors.&lt;/li&gt;
+&lt;li&gt;Reducing staff dependency through documentation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;considerations&quot;&gt;Considerations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Long term efficiency in an ever changing industry?&lt;/li&gt;
+&lt;li&gt;Is there a point when design consistency begins to stifle creativity?&lt;/li&gt;
+&lt;li&gt;How do we know we are building on the right foundations?&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <title>Creating accessible navigation</title>
     <link href="https://noscript.show/learn/13/" />
@@ -1229,7 +1274,7 @@
     <content type="html">&lt;p&gt;We asked our good friend &lt;a href=&quot;https://paullacey.digital/&quot;&gt;Paul Lacey&lt;/a&gt; for his thoughts on offering clients a CMS and to our delight he agree to come on the show.&lt;/p&gt;
 &lt;h2 id=&quot;what-is-a-cms&quot;&gt;What is a CMS?&lt;/h2&gt;
 &lt;blockquote&gt;A Content Management System is software that helps users create, manage, store, and publish digital content.
-&lt;cite&gt;&lt;a href=&quot;https://www.ibm.com/think/topics/content-management-system&quot;&gt;IBM&lt;/a&gt; &lt;/cite&gt; &lt;/blockquote&gt;
+&lt;cite&gt;&lt;a href=&quot;https://www.ibm.com/think/topics/content-management-system&quot;&gt;&lt;abr title=&quot;International Business Machines&quot;&gt;IBM&lt;/abr&gt;&lt;/a&gt; &lt;/cite&gt; &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Some...&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;don&#39;t even consider WordPress a CMS.&lt;/li&gt;
@@ -2041,44 +2086,5 @@
 &lt;p&gt;I think it was useful. Yeah, it was really interesting. Honestly, the more you talk about it, the more convinced I&#39;m that I should give it a go if only I had 50 hours available to meet. Yeah, exactly. It does take some time. Yeah. All right. I&#39;ll see you next time, David. Thank you. Bye bye. Thank you. Cheers.&lt;/p&gt;
 &lt;p&gt;Alright, bye-bye. Bye.&lt;/p&gt;
 &lt;/details&gt;</content>
-  </entry>
-  <entry>
-    <title>Long-term WordPress user tries building with 11ty</title>
-    <link href="https://noscript.show/build/6/" />
-    <updated>2025-01-23T00:00:00Z</updated>
-    <id>https://noscript.show/build/6/</id>
-    <content type="html">&lt;h2 id=&quot;show-notes&quot;&gt;Show notes&lt;/h2&gt;
-&lt;p&gt;As WordPress user we know how to build dynamic sites. We know next to nothing about Static Site Generators and the Jamstack. Here we rebuild a HTML site with 11ty (Eleventy). We also look at adding a CMS.&lt;/p&gt;
-&lt;h2 id=&quot;things-we-cover&quot;&gt;Things we cover&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;What we need to run 11ty (Node, Git and free hosting).&lt;/li&gt;
-&lt;li&gt;Starting 11ty from scratch (installing 11ty).&lt;/li&gt;
-&lt;li&gt;Creating our first page. Converting Markdown to HTML.&lt;/li&gt;
-&lt;li&gt;Creating a header and footer template for our site.&lt;/li&gt;
-&lt;li&gt;Introducing Front Matter (like WordPress custom fields).&lt;/li&gt;
-&lt;li&gt;Adding CSS and bundling with a Nunjucks template.&lt;/li&gt;
-&lt;li&gt;Bringing in other website assets with the Eleventy config file.&lt;/li&gt;
-&lt;li&gt;Making the site&#39;s head dynamic for SEO (doing the job of a WordPress SEO plugin).&lt;/li&gt;
-&lt;li&gt;Making HTML more manageable with partials.&lt;/li&gt;
-&lt;li&gt;Adjusting CSS classes with Front Matter.&lt;/li&gt;
-&lt;li&gt;Introducing data (like WordPress&#39;s database), but with a dynamic menu.&lt;/li&gt;
-&lt;li&gt;Adding events. Similar to working with WordPress&#39;s post loop.&lt;/li&gt;
-&lt;li&gt;Adding a CMS (Decap and locally the Front Matter CMS extension).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/@EleventyVideo/videos&quot;&gt;11ty YouTube&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://11tybundle.dev/&quot;&gt;11ty Bundle&lt;/a&gt;. A fabulous place for all the latest by Bob Monsour.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;These are years out of date, but with the help of 11ty docs and Claude AI I could covert to 11ty V3:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://learneleventyfromscratch.com/&quot;&gt;Learn Eleventy From Scratch&lt;/a&gt;. Andy Bell.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=4wD00RT6d-g&quot;&gt;Turn static HTML/CSS into a blog with CMS using the JAMStack&lt;/a&gt;. Kevin Powell.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</content>
   </entry>
 </feed>
