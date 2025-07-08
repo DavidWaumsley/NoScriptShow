@@ -1,12 +1,19 @@
 ---
 layout: layouts/base.njk
 ---
-
-{# Only include the syntax highlighter CSS on blog posts, included with the CSS per-page bundle #}
+{#- 
+Only include the syntax highlighter CSS on blog posts, included with the CSS per-page bundle
+ -#}
 {%- css %}{% include "node_modules/prismjs/themes/prism-okaidia.css" %}{% endcss %}
 {%- css %}{% include "public/css/prism-diff.css" %}{%- endcss %}
+
+{#- 
+-------------------Post head/ video section ------------------- 
+-#} 
+
+{#- ------------------- Video ------------------- -#} 
 <div class="[ popout ]">
-{% if videoid %}
+{%-if videoid %}
 <h1 class=" [ visually-hidden ]">{{ title }}</h1>
 <div class="[ popout ]" >
 <lite-youtube videoid="{{videoid}}"
@@ -14,14 +21,18 @@ layout: layouts/base.njk
  style="background-image: url('https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp');">
   <a href="https://youtube.com/watch?v={{videoid}}" class="lyt-playbtn" title="Play Video">  
   <span class="lyt-visually-hidden">Play Video: {{ title }}</span>
-  </a>
+ </a> 
 </lite-youtube>
-
-{% elif featureimg %}
+{#- ------------------- Feature Image  ------------------- -#} 
+{%- elif featureimg %}
 <img class="[ feature-img ]" src="{{featureimg}}" alt="">
-<h1 class="[ center-me ]">{{ title }}</h1>{% else %}
+<h1 class="[ center-me ]">{{ title }}</h1>
+{%- else %}
+{#- ------------------- Title  ------------------- -#} 
 <div class="[ center-me ]" >
-<h1 class="[ post-title-only ]">{{ title }}</h1></div>{% endif %}
+<h1 class="[ post-title-only ]">{{ title }}</h1></div>
+{%- endif %}
+{#- ------------------- Meta data  ------------------- -#} 
 <div class="right-me">
 <ul class="post-metadata">
 <li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
@@ -31,6 +42,7 @@ layout: layouts/base.njk
 {%- endfor %}
 </ul>
 </div>
+{#- ------------------- Main article ------------------- -#} 
 <article>
 <heading-anchors>
 <div class="[ flow ][ page-layout ]">
@@ -39,6 +51,7 @@ layout: layouts/base.njk
 </article>
 <div class="popout">
 </heading-anchors>
+{#- ------------------- Post pagination ------------------- -#} 
 {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}
 {%- set nextPost = collections.posts | getNextCollectionItem %}
