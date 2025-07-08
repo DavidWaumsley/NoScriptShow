@@ -28,29 +28,49 @@
  -#}  
 <meta name="robots" content="noai, noimageai">
 <link rel="canonical" href="{{ metadata.url }}{{ page.url }}">
+{#-
+ ------------------- Favicons -------------------
+ -#}  
 <link rel="icon" type="img/x-icon" href="/svg/favicon.svg">
 <link rel="icon" href="/img/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <meta name="description" content="{{ description or metadata.description }}">
 <link rel="alternate" href="https://noscript.show/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
-{#- Open Graph / Facebook -#}  
+{#- 
+------------------- Open Graph / Facebook ------------------- 
+-#}  
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://noscript.show{{ page.url}}" />
 <meta property="og:title" content="No Script Show {{title}}" />
 <meta property="og:description" content="{{description}}" />
+{#-
+ ------------------- OG Image Conditionals -------------------
+ -#}  
 {%- if videoid -%}
 <meta property="og:image" content="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp" />
 {%- elif featureimg -%}
-<meta property="og:image" content="{{metadata.url}}{{ featureimg }}" />{% else %}
-<meta property="og:image" content="{{ metadata.url }}/img/og-image.webp" />{% endif %}
-{#- Twitter -#}  
+<meta property="og:image" content="{{metadata.url}}{{ featureimg }}" />
+{% else %}
+<meta property="og:image" content="{{ metadata.url }}/img/og-image.webp" />
+{%- endif %}
+ 
+{#- ------------------- Twitter ------------------- 
+-#}  
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://noscript.show{{ page.url}}" />
 <meta property="twitter:title" content="No Script Show {{title}}" />
 <meta property="twitter:description" content="{{description}}" />
+{#-
+ ------------------- Twitter Image Conditionals -------------------
+ -#}  
 {%- if videoid -%}
 <meta property="twitter:image" content="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp" />
 {% elif featureimg %}
-<meta property="twitter:image" content="{{metadata.url}}{{ featureimg }}" />{% else %}
-<meta property="twitter:image" content="{{ metadata.url }}/img/og-image.webp" />{% endif %}
+<meta property="twitter:image" content="{{metadata.url}}{{ featureimg }}" />
+{% else %}
+<meta property="twitter:image" content="{{ metadata.url }}/img/og-image.webp" />
+{% endif %}
+{#-
+ ------------------- Show 11ty -------------------
+ -#}  
 <meta name="generator" content="{{ eleventy.generator }}">
