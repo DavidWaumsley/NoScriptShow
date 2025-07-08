@@ -6,6 +6,6 @@ export default {
 	author: {
 		name: "David Waumsley",
 		email: "david@davidwaumsey.com",
-		url: "https://noscript.show/"
+		url: "https://noscript.show"
 	}
 }
