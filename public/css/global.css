@@ -283,10 +283,14 @@ block-size: 30rem;
 overflow-x: auto;
 }
 
+details p{
+  margin-block-end: var(--space-2xs);
+}
+
 summary{
   text-transform: uppercase;
   font-weight: 700;
-  padding: var(--space-s); 
+  padding: var(--space-m); 
   cursor: pointer;
 }
 
