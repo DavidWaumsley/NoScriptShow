@@ -34,10 +34,10 @@ permalink: "{% if pagination.pageNumber > 0 %}/chat/page/{{ pagination.pageNumbe
   <ul class="pagination">
 
       {%- if pagination.href.previous -%}
-      <li><a href="{{ pagination.href.previous }}">← Previous</a></li>
+      <li><a href="{{ pagination.href.previous }}"><span aria-hidden="true">←</span> Previous</a></li>
     {%- endif -%}
       {%- if pagination.href.next -%}
-      <li><a href="{{ pagination.href.next }}">Next →</a></li>
+      <li><a href="{{ pagination.href.next }}">Next <span aria-hidden="true">→</span></a></li>
     {%- endif -%}
   
     
