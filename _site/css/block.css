@@ -556,7 +556,7 @@ main li::marker {
   font-size: var(--step-1); 
 }
 
-li::before {
+main li::before {
   content: "";
   speak: none; /* Older browsers */
 }
