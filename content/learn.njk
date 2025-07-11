@@ -20,11 +20,14 @@ permalink: "{% if pagination.pageNumber > 0 %}/learn/page/{{ pagination.pageNumb
 
 <p><strong>Short YouTube videos.</strong> <small class="[ page-indicator ]">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</small></p>
 
- <ul class="box">
+{#- adds aria-describedby to the h2 link -#}
+<ul class="[ box ]">
 {%- for post in posts -%}
-  <li><a href="{{post.url}}"><h2>{{ post.data.title }}</h2></a> 
-   <time class=" [ postlist-date ]"  datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
-  <small>{{post.data.description}}</small> </li>
+  <li>
+    <h2><a href="{{post.url}}" aria-describedby="desc-{{loop.index}}">{{ post.data.title }}</a></h2>
+    <time class="[ postlist-date ]" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time>
+    <small id="desc-{{loop.index}}">{{post.data.description}}</small>
+  </li>
 {%- endfor -%}
 </ul>
 {# Navigation #}
