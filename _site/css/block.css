@@ -556,11 +556,6 @@ main li::marker {
   font-size: var(--step-1); 
 }
 
-main li::before {
-  content: "";
-  speak: none; /* Older browsers */
-}
-
 .links-nextprev li::marker{
    content: '';
 }
