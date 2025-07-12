@@ -1,6 +1,6 @@
 ---
-title:  Building with an 11ty starter sites and headless WordPress
-description: Learning the 11ty base blog and whether It can serve as a static frontend to the WordPress CMS.
+title:  Building with an Eleventy (11ty) starter sites and headless WordPress
+description: Learning the Eleventy base blog and whether It can serve as a static frontend to the WordPress CMS.
 date: 2025-02-07
 tags: ["build"]
 permalink: "build/7/{{slugify }}/"
@@ -9,7 +9,7 @@ videoid: cwfIIXtzJRA
 
 ## Starter Sites
 
-11ty has something similar to WordPress themes called starter sites. It also has plugins.
+Eleventy has something similar to WordPress themes called starter sites. It also has plugins.
 
 **Some places to look for themes:**
 
@@ -21,7 +21,7 @@ Starter sites are typically plain for us to add our own CSS, but there are [exce
 
 **3 considered suited to the show's website:**
 
-*   [The 11ty Base Blog](https://github.com/11ty/eleventy-base-blog).
+*   [The Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog).
     
 *   [Eleventy Excellent](https://github.com/madrilene/eleventy-excellent).
     

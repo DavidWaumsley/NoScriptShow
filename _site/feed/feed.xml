@@ -1968,12 +1968,12 @@
 &lt;/details&gt; </content>
   </entry>
   <entry>
-    <title>Building with an 11ty starter sites and headless WordPress</title>
+    <title>Building with an Eleventy (11ty) starter sites and headless WordPress</title>
     <link href="https://noscript.show/build/7/" />
     <updated>2025-02-07T00:00:00Z</updated>
     <id>https://noscript.show/build/7/</id>
     <content type="html">&lt;h2 id=&quot;starter-sites&quot;&gt;Starter Sites&lt;/h2&gt;
-&lt;p&gt;11ty has something similar to WordPress themes called starter sites. It also has plugins.&lt;/p&gt;
+&lt;p&gt;Eleventy has something similar to WordPress themes called starter sites. It also has plugins.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Some places to look for themes:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://11tybundle.dev/starters/&quot;&gt;11ty Bundle&lt;/a&gt;. A fabulous place for all things 11ty by &lt;a href=&quot;https://bobmonsour.com/&quot;&gt;Bob Monsour&lt;/a&gt;.&lt;/li&gt;
@@ -1984,7 +1984,7 @@
 &lt;p&gt;&lt;strong&gt;3 considered suited to the show&#39;s website:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/11ty/eleventy-base-blog&quot;&gt;The 11ty Base Blog&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/11ty/eleventy-base-blog&quot;&gt;The Eleventy Base Blog&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/madrilene/eleventy-excellent&quot;&gt;Eleventy Excellent&lt;/a&gt;.&lt;/p&gt;
