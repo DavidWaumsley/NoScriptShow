@@ -21,7 +21,7 @@ From the W3C's [Web Accessibility Initiative](https://www.w3.org/WAI/):
 
 ### Animated nav hidden on mobile 
 
-From Manuel Matuzović's  [Acessibility Cookbook](https://accessibility-cookbook.com/):
+From Manuel Matuzović's  [Accessibility Cookbook](https://accessibility-cookbook.com/):
 
 - [Example](https://codepen.io/matuzo/pen/mdYXxzm)
 - [Code](https://accessibility-cookbook.com/code/chapter7/recipe7_6/1_nav-animated/)

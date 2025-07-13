@@ -34,13 +34,11 @@ Only include the syntax highlighter CSS on blog posts, included with the CSS per
 {%- endif %}
 {#- ------------------- Meta data  ------------------- -#} 
 <div class="right-me">
-<ul class="post-metadata">
-<li><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
-{%- for tag in tags | filterTagList %}
+<small><strong>Published:</strong><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></small>
+{#- {%- for tag in tags | filterTagList %}
 {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-<li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
-{%- endfor %}
-</ul>
+<li><a href="{{ tagUrl }}" class="post-tag"> {{ tag }}</a>{%- if not loop.last %}, {% endif %}</li>
+{%- endfor %} -#}
 </div>
 {#- ------------------- Main article ------------------- -#} 
 <article>

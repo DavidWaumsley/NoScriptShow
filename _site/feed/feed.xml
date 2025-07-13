@@ -295,7 +295,7 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;small&gt;Accessible, but not progressively enhanced or very usable on small devices.&lt;/small&gt;&lt;/p&gt;
 &lt;h3 id=&quot;animated-nav-hidden-on-mobile&quot;&gt;Animated nav hidden on mobile&lt;/h3&gt;
-&lt;p&gt;From Manuel Matuzović&#39;s  &lt;a href=&quot;https://accessibility-cookbook.com/&quot;&gt;Acessibility Cookbook&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;From Manuel Matuzović&#39;s  &lt;a href=&quot;https://accessibility-cookbook.com/&quot;&gt;Accessibility Cookbook&lt;/a&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://codepen.io/matuzo/pen/mdYXxzm&quot;&gt;Example&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://accessibility-cookbook.com/code/chapter7/recipe7_6/1_nav-animated/&quot;&gt;Code&lt;/a&gt;&lt;/li&gt;
