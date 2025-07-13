@@ -1,8 +1,14 @@
 <!doctype html>
-<html lang="{{ metadata.language }}" data-theme="dark">
+<html lang="{{ metadata.language }}" data-theme="light">
+{#- 
+------------------- Head -------------------
+ -#}  	
 <head>
  {% include "partials/head.njk" %}   
 </head>
+{#- 
+------------------- Top bar -------------------
+ -#}  	
 <body id="top">
 <a href="#skip" class="[ skip-link ]">Skip to main content</a>
 <div class="[ top-bar ]">
@@ -10,11 +16,24 @@
 <img class="theme-icon" src="/svg/moon.svg" width="25" height="25" alt="" >
 </button>
 </div>
+{#- 
+------------------- Header -------------------
+ -#}  	
 {% include "partials/header.njk" %}
-<main class="[ page-layout ] [ flow ]" id="skip">			
+{#- 
+------------------- Main ------------------- 
+-#}  	
+<main class="[ page-layout ] [ flow ]" id="skip">		
 {{ content | safe }}			
 </main>	
+{#- 
+------------------- Footer ------------------- 
+-#}  	
  {% include "partials/footer.njk" %}
+
+ {#- 
+------------------- JS ------------------- 
+-#}  	
 <!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
 <script type="module" src="{% getBundleFileUrl "js" %}"></script>
 {%- js  %}	
