@@ -52,7 +52,7 @@ The cons are obvious:
 
 Much of the time and depending on the type of site we will need a non-system font, but certainly many web agencies are now sugesting (at least for the body copy) the client look to websafe fonts first.
 
-Recently saw this thought provoking quote from [Massimo Vignelli](https://en.wikipedia.org/wiki/Massimo_Vignelli) from when the NYC SCHOOL OF VISUAL ARTS made him the recipient of its 1991 Masters Series Award:
+Recently saw this thought provoking quote from Massimo Vignelli from when the NYC SCHOOL OF VISUAL ARTS made him the recipient of its 1991 Masters Series Award:
 
 > "In the new computer age, the proliferation of typefaces and type manipulations represents a new level of visual pollution threatening our culture. Out of thousands of typefaces, all we need are a few basic ones, and trash the rest."
 
