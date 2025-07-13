@@ -9,7 +9,7 @@ videoid: Y_2lbjGu9m0
  **Show Notes:**
 
 
-[Part one](/20)
+[Part one](/20/)
 
 ## Accordions with JS
 

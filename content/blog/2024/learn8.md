@@ -62,7 +62,7 @@ My Bookmarked Tools
     
     As we make shareable content an Open Graph and X/twitter image seems to have and we can preview them with this. For speed and ease we are using the Youtube thumbnail url. It keeps down the images to manage locally.
     
-    I also have a tab for [Classy Schema](https://classyschema.org/Video?example=single) for Youtube video schema. I mentioned this in my [video on Lite Youtube Embeds](/learn/6). However, Google have changed how they measure video pages. This could be pointless!
+    I also have a tab for [Classy Schema](https://classyschema.org/Video?example=single) for Youtube video schema. I mentioned this in my [video on Lite Youtube Embeds](/learn/6/). However, Google have changed how they measure video pages. This could be pointless!
     
 5.  #### [xml-sitemaps.com](https://www.xml-sitemaps.com/)
     

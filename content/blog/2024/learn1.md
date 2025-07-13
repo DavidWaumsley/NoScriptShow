@@ -12,7 +12,7 @@ Video notes
 
 ### The reason for this video
 
-This is extra content to the main [No Script show](/) No Script show. In particular, [Episode 3](/3) where Nathan and I were trying to both understand and explain modern CSS layout and how it has been completely refactored.
+This is extra content to the main [No Script show](/) No Script show. In particular, [Episode 3](/3/) where Nathan and I were trying to both understand and explain modern CSS layout and how it has been completely refactored.
 
 We used the main points of a talk by [Rachel Andrew](https://noti.st/rachelandrew/VqOEAa/refactoring-the-way-we-talk-about-css#scagi0F). She was significant in seeing we got the first truly comprehensive layout spec for the web:- CSS Grid. It was actually supported in all the browsers back in 2017 so you can see we are doing a lot of catching up.
 

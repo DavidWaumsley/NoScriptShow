@@ -701,7 +701,7 @@
     <updated>2025-06-11T00:00:00Z</updated>
     <id>https://noscript.show/learn/12/</id>
     <content type="html">&lt;p&gt;&lt;strong&gt;Show Notes:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://noscript.show/20&quot;&gt;Part one&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://noscript.show/20/&quot;&gt;Part one&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;accordions-with-js&quot;&gt;Accordions with JS&lt;/h2&gt;
 &lt;p&gt;Borrowed from Sara Soueidan’s excellent &lt;a href=&quot;https://practical-accessibility.today/&quot;&gt;Practical Accessibility&lt;/a&gt; course:&lt;/p&gt;
 &lt;ul&gt;

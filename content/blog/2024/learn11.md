@@ -7,7 +7,7 @@ permalink: "/learn/11/{{slugify }}/"
 videoid: FLAAs6upFj8
 ---
 
-This is not my planned follow-up, but in my [last video](/learn/10) I ended up testing the accessibility of a light and dark theme toggle using NVDA's screen reader.
+This is not my planned follow-up, but in my [last video](/learn/10/) I ended up testing the accessibility of a light and dark theme toggle using NVDA's screen reader.
 
 Out of my frustration with that, I discovered a fabulous new and free [accessibility checker by Silktide](https://silktide.com/toolbar/) that includes a simple screen reader simulator. I think it's the only checker to include this.
 
