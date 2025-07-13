@@ -54,11 +54,24 @@ Only include the syntax highlighter CSS on blog posts, included with the CSS per
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}
 {%- set nextPost = collections.posts | getNextCollectionItem %}
 {%- if nextPost or previousPost %}
-<ul class="links-nextprev">
-{%- if previousPost %}
-<li class="links-nextprev-prev">← Previous<br> <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>
-{% endif -%}
-{%- if nextPost %}<li class="links-nextprev-next">Next →<br><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-</ul>
+<nav aria-label="Post navigation">
+  <ul class="links-nextprev">
+    {%- if previousPost %}
+    {%- set prevTitle = previousPost.data.title | truncate(50) %}
+    <li class="links-nextprev-prev">
+    <a href="{{ previousPost.url }}" rel="prev" aria-label="Previous post:{{ prevTitle }}">
+    <span aria-hidden="true">←</span>Previous<br>{{ previousPost.data.title }}</a>
+    </li>
+    {% endif -%}
+    {%- if nextPost %}
+    {%- set nextTitle = nextPost.data.title | truncate(50) %}
+    <li class="links-nextprev-next">
+      <a href="{{ nextPost.url }}" rel="next" aria-label="Next post: {{ nextTitle }}">
+    <span class="next-post">Next<span aria-hidden="true">→</span></span> <br>{{ nextPost.data.title }}
+      </a>
+    </li>
+    {% endif %}
+  </ul>
+</nav>
 {%- endif %}{%- endif %}
 </div>
