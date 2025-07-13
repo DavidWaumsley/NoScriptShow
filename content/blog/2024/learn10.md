@@ -45,7 +45,7 @@ Michelle Barker's CSS in real life site is closest to what I shared before in th
 
 **Note:** Even with Bramus and Luke's chrome extension checking that light and dark themes are working properly in all situations is a pain. We have to keep clearing local storage
 
-![Screenshot of where the local storage is on Chromium browsers. That is the appications tab and local storage.](/img/local-storage.webp)
+![Screenshot of where the local storage is on Chromium browsers. That is the appications tab and local storage.](/img/local-storage.webp/)
 
 The other three are different in that they use data attributes: \[data-theme="light"\] and \[data-theme="dark"\] instead of a CSS class selector.
 
@@ -171,7 +171,7 @@ I feel more sure of this after seeing a couple of these switches made for the ma
 
 Whilst I don't think this is as bad as the way things went with the accessibility overlays market (which I am sure was well intended originally) but, I think some early standards might avoid a similar thing happening. Rant over!
 
-[The code](https://codepen.io/David-Waumsley-the-solid/pen/ExzyyoK)
+[The code](https://codepen.io/David-Waumsley-the-solid/pen/ExzyyoK/)
 -------------------------------------------------------------------
 
-See the Pen [Light and dark theme toggle](https://codepen.io/David-Waumsley-the-solid/pen/ExzyyoK) by David Waumsley on CodePen.
+See the Pen [Light and dark theme toggle](https://codepen.io/David-Waumsley-the-solid/pen/ExzyyoK/) by David Waumsley on CodePen.
