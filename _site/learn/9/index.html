@@ -43,7 +43,7 @@
 </div><article>
 <heading-anchors>
 <div class="[ flow ][ page-layout ]">
-<p>This is following on from chat <a href="/8">episode 8</a> where Nathan and I finally started talking about designing the show's website.</p>
+<p>This is following on from chat <a href="/8/">episode 8</a> where Nathan and I finally started talking about designing the show's website.</p>
 <p>In that episode I offered a rough homepage mock up and together we attempted to critically access it in the way various experts might.</p>
 <p>Here I am looking at the light and dark mode toggle in that design. I'll share the code I'm initially going to use and also talk about my concerns over present implementations of this feature.</p>
 <p>Offering a dark mode toggle is trending right now, but we are including it because It is not entirely inconceivable that one day this might be considered a standard for most websites.</p>
@@ -59,7 +59,7 @@
 <p>Then if we create a HTML page the browsers own user agent styles will kick in.</p>
 <p>If our device or browser is set to dark mode the browser will give us light text against a dark background and visa versus is set to light. It will also apply dark and light styling to the browser built in components as I previously used with the audio element.</p>
 <p>Most will not want this as the styles colours added by browser are similar but not the same. I personally prefer Firefox's slightly lighter and blue tinged background to chrome's default.</p>
-<p>To take control of our own light and dark colours we have the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">prefers-color-scheme</a> media query. Baseline (which we talk about in <a href="/9">episode 9</a> of the chat) classifies it as &quot;widely available&quot; across browsers. <a href="https://caniuse.com/?search=prefers-color-scheme">Can I use</a> in April 2024 says it is96% supported globally (higher in the UK and USA).</p>
+<p>To take control of our own light and dark colours we have the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">prefers-color-scheme</a> media query. Baseline (which we talk about in <a href="/9/">episode 9</a> of the chat) classifies it as &quot;widely available&quot; across browsers. <a href="https://caniuse.com/?search=prefers-color-scheme">Can I use</a> in April 2024 says it is96% supported globally (higher in the UK and USA).</p>
 <p>Very soon things may get easier when the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/light-dark">light-dark()</a> function gets better browser support. With this you will be able write your CSS like this:</p>
 <p>body {color: light-dark(color-1, color-2);
 background-color: light-dark (color-1, custom color-2);
@@ -229,7 +229,7 @@ toggleButton<span class="token punctuation">.</span><span class="token function"
 <small><span aria-hidden="true">©</span> Copyright since 2023 | <a href="/privacy/"> Privacy </a>  | <a href="/accessibility-statement/"> Accessibility</a>  | <em>Built with <a href="https://www.11ty.dev/">Eleventy v3.1.0</a></em>
 </small>
 </div>
-</footer><!-- This page `/learn/9/` was built on 2025-07-13T10:59:08.009Z -->
+</footer><!-- This page `/learn/9/` was built on 2025-07-13T11:25:59.522Z -->
 <script type="module" src="/dist/ffsqCfr5qq.js"></script>		
 </body>
 </html>

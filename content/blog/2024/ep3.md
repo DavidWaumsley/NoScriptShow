@@ -7,7 +7,6 @@ permalink: "/3/{{slugify }}/"
 videoid: Q1g--a_hrXQ
 ---
 
-
  Show notes
 ----------
 

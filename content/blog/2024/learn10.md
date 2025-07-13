@@ -10,7 +10,7 @@ videoid: NbOtbHW4zlA
 Toggles should be a browser feature
 -----------------------------------
 
-As part of designing the No Script Show's website I talked [before](/learn/9) about light and dark themes and briefly on adding a toggle switch.
+As part of designing the No Script Show's website I talked [before](/learn/9/) about light and dark themes and briefly on adding a toggle switch.
 
 Here I'm looking more closely at the implementation and sharing some alternative code.
 
