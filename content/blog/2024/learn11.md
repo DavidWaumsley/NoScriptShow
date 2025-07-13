@@ -32,7 +32,7 @@ It could be my lack of experience, and there are extensions or settings to help,
 
 That said, it's important to read the limitations of this screen reader. They have applied the 80/20 rule, so it won't entirely remove the need to test with a full screen reader.
 
-**For example:** In my [last video](/learn/10) I was unsure about the poor results with aria-live on a light/dark theme toggle. I did not know whether it was a user error on my part, the inappropriate use of this code, or just a screen reader bug.
+**For example:** In my [last video](/learn/10/) I was unsure about the poor results with aria-live on a light/dark theme toggle. I did not know whether it was a user error on my part, the inappropriate use of this code, or just a screen reader bug.
 
 This screen reader will not help with that as aria-live is not supported. Neither can I hover and have the alt text read to me as CSS hover will not work.
 
