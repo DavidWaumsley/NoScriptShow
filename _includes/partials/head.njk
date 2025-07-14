@@ -1,4 +1,5 @@
 {#-
+For structure see here:
  https://intrinsicframework.here24.co/optimized-head/ 
  -#}
 <meta charset="utf-8">
@@ -35,14 +36,22 @@
 <link rel="icon" href="/img/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <meta name="description" content="{{ description or metadata.description }}">
+{#- 
+------------------- RSS/Atom Feed Discovery ------------------- 
+-#} 
 <link rel="alternate" href="https://noscript.show/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+
+{#- 
+For social metadata see here:
+https://intrinsicframework.here24.co/social-metadata/
+-#} 
 {#- 
 ------------------- Open Graph / Facebook ------------------- 
 -#}  
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://noscript.show{{ page.url}}" />
-<meta property="og:title" content="No Script Show {{title}}" />
-<meta property="og:description" content="{{description}}" />
+<meta property="og:title" content="{{ title or metadata.title }}" />
+<meta property="og:description" content="{{description or metadata.description}}" />
 {#-
  ------------------- OG Image Conditionals -------------------
  -#}  
@@ -54,12 +63,12 @@
 <meta property="og:image" content="{{ metadata.url }}/img/og-image.webp" />
 {%- endif %}
  
-{#- ------------------- Twitter ------------------- 
+{#- ------------------- Twitter  ------------------- 
 -#}  
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://noscript.show{{ page.url}}" />
-<meta property="twitter:title" content="No Script Show {{title}}" />
-<meta property="twitter:description" content="{{description}}" />
+<meta property="twitter:title" content="{{ title or metadata.title }}" />
+<meta property="twitter:description" content="{{description or metadata.description}}" />
 {#-
  ------------------- Twitter Image Conditionals -------------------
  -#}  

@@ -5,7 +5,7 @@
       .brackets { fill: #17171c; }
       
       @media (prefers-color-scheme: dark) {
-         .bars { fill: ##ed505d; }
+         .bars { fill: #ed505d; }
         .brackets { fill: #ffffff; }
       }
     </style>
