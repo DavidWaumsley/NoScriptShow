@@ -69,6 +69,18 @@
 &lt;p&gt;&lt;small&gt; There&#39;s more to discuss such as the benefits of preloading/prefetching assets, speculative loading and when we should use inline CSS, but this offers a great framework.  Harry also has a neat &lt;a href=&quot;https://csswizardry.com/ct/&quot;&gt;bookmark&lt;/a&gt; we can test our heads with.&lt;/small&gt;&lt;/p&gt;
 &lt;h3 id=&quot;ux-design&quot;&gt;UX - design&lt;/h3&gt;
 &lt;p&gt;Missing links to Favicons and meta data for Open Graph and Twitter images.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Favicons:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Since Safari 26 we have support for &lt;a href=&quot;https://caniuse.com/link-icon-svg&quot;&gt;SVG favicons&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;SVG icons let us use &amp;quot;prefers-color-scheme&amp;quot; to have light and dark versions. It is on this site as an experiment.&lt;/li&gt;
+&lt;li&gt;We still need an .ico fall back.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Social media&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://metatags.io/?url=https%3A%2F%2Fnoscript.show%2Fabout&quot;&gt;metatags.io&lt;/a&gt; is good for checking OG and Twitter images.&lt;/li&gt;
+&lt;li&gt;If a social image  has enough white space one image can  serve all.&lt;/li&gt;
+&lt;li&gt;If we don&#39;t set specific titles and descriptions social media take what exist.&lt;/li&gt;
+&lt;/ul&gt;
 </content>
   </entry>
   <entry>
