@@ -316,7 +316,6 @@ word-break: normal;
  padding-block: .4rem;
  display: block;
  margin-block: var(--space-s);
- border-radius: 0.3em;
 }
 
 /* Posts list */

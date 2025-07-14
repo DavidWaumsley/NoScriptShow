@@ -280,4 +280,9 @@
 		<loc>https://noscript.show/feed/feed.xml</loc>
 		<lastmod>2025-07-14</lastmod>
 	</url>
+	
+	<url>
+		<loc>https://noscript.show/23/</loc>
+		<lastmod>2025-07-16</lastmod>
+	</url>
 </urlset>
