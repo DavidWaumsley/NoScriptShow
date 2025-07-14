@@ -18,7 +18,7 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Show Notes:&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&quot;what-is-the-head&quot;&gt;What is the &amp;lt;head&amp;gt;?&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;A HTML element containing machine-readable metadata for web documents.&lt;/li&gt;
+&lt;li&gt;A HTML element for machine-readable metadata for web documents.&lt;/li&gt;
 &lt;li&gt;There can only be one &amp;lt;head&amp;gt; and only 8 tags used:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;title&amp;gt; &amp;lt;link&amp;gt; &amp;lt;style&amp;gt; &amp;lt;meta&amp;gt; &amp;lt;script&amp;gt; &amp;lt;noscript&amp;gt; &amp;lt;base&amp;gt; &amp;lt;template&amp;gt;&lt;/code&gt;&lt;/p&gt;
@@ -40,6 +40,35 @@
 &lt;/ul&gt;
 &lt;h2 id=&quot;common-issues&quot;&gt;Common Issues&lt;/h2&gt;
 &lt;h3 id=&quot;accessibility&quot;&gt;Accessibility&lt;/h3&gt;
+&lt;p&gt;For meet &lt;a href=&quot;https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html&quot;&gt;WCAG 2.2&lt;/a&gt; we must have &amp;lt;title&amp;gt; tags that describe the topic or purpose of a page.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Avoid special characters and &lt;a href=&quot;https://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/&quot;&gt;certain types of punctuation&lt;/a&gt;*.&lt;small&gt; Screen reader can read &amp;quot;|&amp;quot;  as pipe or line or as a pause. Dashes are best.&lt;/small&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Keep titles short and consistent across pages.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Keep the &amp;lt;title&amp;gt; near the top of the &amp;lt;head&amp;gt; for quick loading.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Not in the &amp;lt;head&amp;gt;, but it&#39;s worth mentioning that not setting &lt;html lang=&quot;&quot;&gt; is WCAG fail (and is missing on &lt;a href=&quot;https://webaim.org/projects/million/&quot;&gt;15% of websites&lt;/a&gt;)**.&lt;/html&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;small&gt;* &lt;a href=&quot;https://www.seroundtable.com/archives/023052.html&quot;&gt;Google&lt;/a&gt; also say avoid the vertical line symbol too. &lt;a href=&quot;https://www.semrush.com/blog/case-study-should-you-add-pipes-or-dashes-to-your-title-ag-/&quot;&gt;Semrush&lt;/a&gt; did an experiment and overall dashes seemed to bring in more organic traffic than vertical lines.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;**  Overwriting lang=&amp;quot;&amp;quot; and styling it within the body in international phrases and words is underused. It’s pointless these days to cram loads of keywords into titles.
+&lt;/small&gt;&lt;/p&gt;
+&lt;h3 id=&quot;ux-page-load&quot;&gt;UX - Page load&lt;/h3&gt;
+&lt;p&gt;As HTML is rendered line by line, &lt;a href=&quot;https://csswizardry.com/&quot;&gt;Harry Roberts&lt;/a&gt; has demonstrated how important to performance structure is. He suggests we should:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Move what we can out of the head (trackers, JS and some CSS).&lt;/li&gt;
+&lt;li&gt;Avoid @import and redirect to 3rd parties.&lt;/li&gt;
+&lt;li&gt;Put synchronous JS before CSS. Browsers see if JS refers to CSS.&lt;/li&gt;
+&lt;li&gt;Put &lt;abbr title=&quot;Content Security Policy&quot;&gt;CSP&lt;/abbr&gt; headers top as they break parallel preloading.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;small&gt; There&#39;s more to discuss such as the benefits of preloading/prefetching assets, speculative loading and when we should use inline CSS, but this offers a great framework.  Harry also has a neat &lt;a href=&quot;https://csswizardry.com/ct/&quot;&gt;bookmark&lt;/a&gt; we can test our heads with.&lt;/small&gt;&lt;/p&gt;
+&lt;h3 id=&quot;ux-design&quot;&gt;UX - design&lt;/h3&gt;
+&lt;p&gt;Missing links to Favicons and meta data for Open Graph and Twitter images.&lt;/p&gt;
 </content>
   </entry>
   <entry>

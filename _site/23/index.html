@@ -41,7 +41,7 @@
 <p><strong>Show Notes:</strong></p>
 <h2 id="what-is-the-head">What is the &lt;head&gt;?</h2>
 <ul>
-<li>A HTML element containing machine-readable metadata for web documents.</li>
+<li>A HTML element for machine-readable metadata for web documents.</li>
 <li>There can only be one &lt;head&gt; and only 8 tags used:</li>
 </ul>
 <p><code>&lt;title&gt; &lt;link&gt; &lt;style&gt; &lt;meta&gt; &lt;script&gt; &lt;noscript&gt; &lt;base&gt; &lt;template&gt;</code></p>
@@ -63,6 +63,35 @@
 </ul>
 <h2 id="common-issues">Common Issues</h2>
 <h3 id="accessibility">Accessibility</h3>
+<p>For meet <a href="https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html">WCAG 2.2</a> we must have &lt;title&gt; tags that describe the topic or purpose of a page.</p>
+<ul>
+<li>
+<p>Avoid special characters and <a href="https://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/">certain types of punctuation</a>*.<small> Screen reader can read &quot;|&quot;  as pipe or line or as a pause. Dashes are best.</small></p>
+</li>
+<li>
+<p>Keep titles short and consistent across pages.</p>
+</li>
+<li>
+<p>Keep the &lt;title&gt; near the top of the &lt;head&gt; for quick loading.</p>
+</li>
+<li>
+<p>Not in the &lt;head&gt;, but it's worth mentioning that not setting <html lang=""> is WCAG fail (and is missing on <a href="https://webaim.org/projects/million/">15% of websites</a>)**.</html></p>
+</li>
+</ul>
+<p><small>* <a href="https://www.seroundtable.com/archives/023052.html">Google</a> also say avoid the vertical line symbol too. <a href="https://www.semrush.com/blog/case-study-should-you-add-pipes-or-dashes-to-your-title-ag-/">Semrush</a> did an experiment and overall dashes seemed to bring in more organic traffic than vertical lines.</small></p>
+<p><small>**  Overwriting lang=&quot;&quot; and styling it within the body in international phrases and words is underused. It’s pointless these days to cram loads of keywords into titles.
+</small></p>
+<h3 id="ux-page-load">UX - Page load</h3>
+<p>As HTML is rendered line by line, <a href="https://csswizardry.com/">Harry Roberts</a> has demonstrated how important to performance structure is. He suggests we should:</p>
+<ul>
+<li>Move what we can out of the head (trackers, JS and some CSS).</li>
+<li>Avoid @import and redirect to 3rd parties.</li>
+<li>Put synchronous JS before CSS. Browsers see if JS refers to CSS.</li>
+<li>Put <abbr title="Content Security Policy">CSP</abbr> headers top as they break parallel preloading.</li>
+</ul>
+<p><small> There's more to discuss such as the benefits of preloading/prefetching assets, speculative loading and when we should use inline CSS, but this offers a great framework.  Harry also has a neat <a href="https://csswizardry.com/ct/">bookmark</a> we can test our heads with.</small></p>
+<h3 id="ux-design">UX - design</h3>
+<p>Missing links to Favicons and meta data for Open Graph and Twitter images.</p>
 
 </div>
 </heading-anchors></article>
@@ -110,7 +139,7 @@
 <small><span aria-hidden="true">©</span> Copyright since 2023 | <a href="/privacy/"> Privacy </a>  | <a href="/accessibility-statement/"> Accessibility</a>  | <em>Built with <a href="https://www.11ty.dev/">Eleventy v3.1.0</a></em>
 </small>
 </div>
-</footer><!-- This page `/23/` was built on 2025-07-14T10:49:32.376Z -->
+</footer><!-- This page `/23/` was built on 2025-07-14T11:32:38.934Z -->
 <script type="module" src="/dist/ffsqCfr5qq.js"></script>		
 </body>
 </html>
