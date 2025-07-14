@@ -78,9 +78,12 @@
 &lt;p&gt;&lt;strong&gt;Social media&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://metatags.io/?url=https%3A%2F%2Fnoscript.show%2Fabout&quot;&gt;metatags.io&lt;/a&gt; is good for checking OG and Twitter images.&lt;/li&gt;
-&lt;li&gt;If a social image  has enough white space one image can  serve all.&lt;/li&gt;
-&lt;li&gt;If we don&#39;t set specific titles and descriptions social media take what exist.&lt;/li&gt;
+&lt;li&gt;If a social image has enough white space one image can serve all.&lt;/li&gt;
+&lt;li&gt;We need an image to stop social media showing the first in the DOM.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;small&gt; The No Script Show&#39;s uses YouTube&#39;s thumbnail on the episode. For all other pages there is a generic image. Titles and descriptions for social media is added, but is not needed as it is the same the site&#39;s meta.
+&lt;/small&gt;&lt;/p&gt;
+&lt;h3 id=&quot;technical-seo&quot;&gt;Technical SEO&lt;/h3&gt;
 </content>
   </entry>
   <entry>
