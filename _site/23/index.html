@@ -66,7 +66,7 @@
 <p>For meet <a href="https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html">WCAG 2.2</a> we must have &lt;title&gt; tags that describe the topic or purpose of a page.</p>
 <ul>
 <li>
-<p>Avoid special characters and <a href="https://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/">certain types of punctuation</a>*.<small> Screen reader can read &quot;|&quot;  as pipe or line or as a pause. Dashes are best.</small></p>
+<p>Avoid special characters and <a href="https://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/">certain types</a> of punctuation.*<small> Dashes are safest. Screen reader can read &quot;|&quot;  as pipe or line or as a pause.</small></p>
 </li>
 <li>
 <p>Keep titles short and consistent across pages.</p>
@@ -75,10 +75,10 @@
 <p>Keep the &lt;title&gt; near the top of the &lt;head&gt; for quick loading.</p>
 </li>
 <li>
-<p>Not in the &lt;head&gt;, but it's worth mentioning that not setting <html lang=""> is WCAG fail (and is missing on <a href="https://webaim.org/projects/million/">15% of websites</a>)**.</html></p>
+<p>Not in the &lt;head&gt;, but it's worth mentioning that not setting &lt;html lang=””&gt; is <a href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html">WCAG fail</a> (and missing on <a href="https://webaim.org/projects/million/">15% of websites</a>!).**</p>
 </li>
 </ul>
-<p><small>* <a href="https://www.seroundtable.com/archives/023052.html">Google</a> also say avoid the vertical line symbol too. <a href="https://www.semrush.com/blog/case-study-should-you-add-pipes-or-dashes-to-your-title-ag-/">Semrush</a> did an experiment and overall dashes seemed to bring in more organic traffic than vertical lines.</small></p>
+<p><small>* <a href="https://www.seroundtable.com/archives/023052.html">Google</a> also says to avoid the vertical line symbol too. <a href="https://www.semrush.com/blog/case-study-should-you-add-pipes-or-dashes-to-your-title-ag-/">Semrush</a> did an experiment and overall dashes seemed to bring in more organic traffic than vertical lines.</small></p>
 <p><small>**  Overwriting lang=&quot;&quot; and styling it within the body in international phrases and words is underused. It’s pointless these days to cram loads of keywords into titles.
 </small></p>
 <h3 id="ux-page-load">UX - Page load</h3>
@@ -94,7 +94,7 @@
 <p>Missing links to Favicons and meta data for Open Graph and Twitter images.</p>
 <p><strong>Favicons:</strong></p>
 <ul>
-<li>Since Safari 26 we have support for <a href="https://caniuse.com/link-icon-svg">SVG favicons</a>.</li>
+<li>Since <a href="https://developer.apple.com/documentation/safari-release-notes/safari-26-release-notes">Safari 26</a> we have support for <a href="https://caniuse.com/link-icon-svg">SVG favicons</a>.</li>
 <li>SVG icons let us use &quot;prefers-color-scheme&quot; to have light and dark versions. It is on this site as an experiment.</li>
 <li>We still need an .ico fall back.</li>
 </ul>
@@ -107,6 +107,17 @@
 <p><small> The No Script Show's uses YouTube's thumbnail on the episode. For all other pages there is a generic image. Titles and descriptions for social media is added, but is not needed as it is the same the site's meta.
 </small></p>
 <h3 id="technical-seo">Technical SEO</h3>
+<p>With CMSs and large content sites the &lt;head&gt; can easily become the source of silly technical issues.</p>
+<p>For example when <a href="https://www.link-assistant.com/website-auditor/">Web Auditor</a> was run on the No Script Show it showed scores of 301 redirects as a few dynamic URLs were set up without a trailing forward slash (/).  Not major, but extra work for the user browser that could be easily fixed.</p>
+<p><a href="https://www.screamingfrog.co.uk/seo-spider/">Screaming Frog's SEO Spider</a> is a partly free (up to 500 URLs) alternative checker. Some things we might want to include in our &lt;head&gt;:</p>
+<ul>
+<li>&lt;meta name=&quot;robots&quot;&gt; for search engine crawl and indexing.</li>
+<li>&lt;link rel=&quot;canonical&quot;&gt; to prevent duplicate content issues.</li>
+<li>&lt;meta name=&quot;robots&quot; content=&quot;noindex&quot;&gt; for duplicate content.</li>
+<li>&lt;link rel=&quot;alternate&quot; hreflang=&quot;x&quot;&gt; for international sites.</li>
+<li>&lt;link rel=&quot;alternate&quot; href=&quot;/feed.xml&quot; type=&quot;application/atom+xml&quot; title=&quot;&quot;&gt; for RSS feeds.</li>
+</ul>
+<p>The No Script Show has not added Schema.org mark-up. <a href="https://developers.google.com/search/docs/appearance/structured-data/organization">Organization schema</a> might be good for some companies. Perhaps a good signal for Google's <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content">E-E-A-T</a>.</p>
 
 </div>
 </heading-anchors></article>
@@ -154,7 +165,7 @@
 <small><span aria-hidden="true">©</span> Copyright since 2023 | <a href="/privacy/"> Privacy </a>  | <a href="/accessibility-statement/"> Accessibility</a>  | <em>Built with <a href="https://www.11ty.dev/">Eleventy v3.1.0</a></em>
 </small>
 </div>
-</footer><!-- This page `/23/` was built on 2025-07-14T14:59:50.975Z -->
+</footer><!-- This page `/23/` was built on 2025-07-14T17:22:45.916Z -->
 <script type="module" src="/dist/ffsqCfr5qq.js"></script>		
 </body>
 </html>

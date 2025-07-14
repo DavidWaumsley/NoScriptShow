@@ -43,7 +43,7 @@
 &lt;p&gt;For meet &lt;a href=&quot;https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html&quot;&gt;WCAG 2.2&lt;/a&gt; we must have &amp;lt;title&amp;gt; tags that describe the topic or purpose of a page.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Avoid special characters and &lt;a href=&quot;https://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/&quot;&gt;certain types of punctuation&lt;/a&gt;*.&lt;small&gt; Screen reader can read &amp;quot;|&amp;quot;  as pipe or line or as a pause. Dashes are best.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;Avoid special characters and &lt;a href=&quot;https://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/&quot;&gt;certain types&lt;/a&gt; of punctuation.*&lt;small&gt; Dashes are safest. Screen reader can read &amp;quot;|&amp;quot;  as pipe or line or as a pause.&lt;/small&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Keep titles short and consistent across pages.&lt;/p&gt;
@@ -52,10 +52,10 @@
 &lt;p&gt;Keep the &amp;lt;title&amp;gt; near the top of the &amp;lt;head&amp;gt; for quick loading.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Not in the &amp;lt;head&amp;gt;, but it&#39;s worth mentioning that not setting &lt;html lang=&quot;&quot;&gt; is WCAG fail (and is missing on &lt;a href=&quot;https://webaim.org/projects/million/&quot;&gt;15% of websites&lt;/a&gt;)**.&lt;/html&gt;&lt;/p&gt;
+&lt;p&gt;Not in the &amp;lt;head&amp;gt;, but it&#39;s worth mentioning that not setting &amp;lt;html lang=””&amp;gt; is &lt;a href=&quot;https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html&quot;&gt;WCAG fail&lt;/a&gt; (and missing on &lt;a href=&quot;https://webaim.org/projects/million/&quot;&gt;15% of websites&lt;/a&gt;!).**&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;small&gt;* &lt;a href=&quot;https://www.seroundtable.com/archives/023052.html&quot;&gt;Google&lt;/a&gt; also say avoid the vertical line symbol too. &lt;a href=&quot;https://www.semrush.com/blog/case-study-should-you-add-pipes-or-dashes-to-your-title-ag-/&quot;&gt;Semrush&lt;/a&gt; did an experiment and overall dashes seemed to bring in more organic traffic than vertical lines.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;* &lt;a href=&quot;https://www.seroundtable.com/archives/023052.html&quot;&gt;Google&lt;/a&gt; also says to avoid the vertical line symbol too. &lt;a href=&quot;https://www.semrush.com/blog/case-study-should-you-add-pipes-or-dashes-to-your-title-ag-/&quot;&gt;Semrush&lt;/a&gt; did an experiment and overall dashes seemed to bring in more organic traffic than vertical lines.&lt;/small&gt;&lt;/p&gt;
 &lt;p&gt;&lt;small&gt;**  Overwriting lang=&amp;quot;&amp;quot; and styling it within the body in international phrases and words is underused. It’s pointless these days to cram loads of keywords into titles.
 &lt;/small&gt;&lt;/p&gt;
 &lt;h3 id=&quot;ux-page-load&quot;&gt;UX - Page load&lt;/h3&gt;
@@ -71,7 +71,7 @@
 &lt;p&gt;Missing links to Favicons and meta data for Open Graph and Twitter images.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Favicons:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Since Safari 26 we have support for &lt;a href=&quot;https://caniuse.com/link-icon-svg&quot;&gt;SVG favicons&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Since &lt;a href=&quot;https://developer.apple.com/documentation/safari-release-notes/safari-26-release-notes&quot;&gt;Safari 26&lt;/a&gt; we have support for &lt;a href=&quot;https://caniuse.com/link-icon-svg&quot;&gt;SVG favicons&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;SVG icons let us use &amp;quot;prefers-color-scheme&amp;quot; to have light and dark versions. It is on this site as an experiment.&lt;/li&gt;
 &lt;li&gt;We still need an .ico fall back.&lt;/li&gt;
 &lt;/ul&gt;
@@ -84,6 +84,17 @@
 &lt;p&gt;&lt;small&gt; The No Script Show&#39;s uses YouTube&#39;s thumbnail on the episode. For all other pages there is a generic image. Titles and descriptions for social media is added, but is not needed as it is the same the site&#39;s meta.
 &lt;/small&gt;&lt;/p&gt;
 &lt;h3 id=&quot;technical-seo&quot;&gt;Technical SEO&lt;/h3&gt;
+&lt;p&gt;With CMSs and large content sites the &amp;lt;head&amp;gt; can easily become the source of silly technical issues.&lt;/p&gt;
+&lt;p&gt;For example when &lt;a href=&quot;https://www.link-assistant.com/website-auditor/&quot;&gt;Web Auditor&lt;/a&gt; was run on the No Script Show it showed scores of 301 redirects as a few dynamic URLs were set up without a trailing forward slash (/).  Not major, but extra work for the user browser that could be easily fixed.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.screamingfrog.co.uk/seo-spider/&quot;&gt;Screaming Frog&#39;s SEO Spider&lt;/a&gt; is a partly free (up to 500 URLs) alternative checker. Some things we might want to include in our &amp;lt;head&amp;gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;lt;meta name=&amp;quot;robots&amp;quot;&amp;gt; for search engine crawl and indexing.&lt;/li&gt;
+&lt;li&gt;&amp;lt;link rel=&amp;quot;canonical&amp;quot;&amp;gt; to prevent duplicate content issues.&lt;/li&gt;
+&lt;li&gt;&amp;lt;meta name=&amp;quot;robots&amp;quot; content=&amp;quot;noindex&amp;quot;&amp;gt; for duplicate content.&lt;/li&gt;
+&lt;li&gt;&amp;lt;link rel=&amp;quot;alternate&amp;quot; hreflang=&amp;quot;x&amp;quot;&amp;gt; for international sites.&lt;/li&gt;
+&lt;li&gt;&amp;lt;link rel=&amp;quot;alternate&amp;quot; href=&amp;quot;/feed.xml&amp;quot; type=&amp;quot;application/atom+xml&amp;quot; title=&amp;quot;&amp;quot;&amp;gt; for RSS feeds.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The No Script Show has not added Schema.org mark-up. &lt;a href=&quot;https://developers.google.com/search/docs/appearance/structured-data/organization&quot;&gt;Organization schema&lt;/a&gt; might be good for some companies. Perhaps a good signal for Google&#39;s &lt;a href=&quot;https://developers.google.com/search/docs/fundamentals/creating-helpful-content&quot;&gt;E-E-A-T&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   <entry>
