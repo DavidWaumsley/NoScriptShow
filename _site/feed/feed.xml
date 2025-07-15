@@ -18,8 +18,8 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Show Notes:&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&quot;what-is-the-head&quot;&gt;What is the &amp;lt;head&amp;gt;?&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;A HTML element for machine-readable metadata for web documents.&lt;/li&gt;
-&lt;li&gt;There can only be one &amp;lt;head&amp;gt; and only 8 tags used:&lt;/li&gt;
+&lt;li&gt;A HTML element for machine-readable metadata on web documents.&lt;/li&gt;
+&lt;li&gt;There can only be one &amp;lt;head&amp;gt; with only these 8 tags:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;title&amp;gt; &amp;lt;link&amp;gt; &amp;lt;style&amp;gt; &amp;lt;meta&amp;gt; &amp;lt;script&amp;gt; &amp;lt;noscript&amp;gt; &amp;lt;base&amp;gt; &amp;lt;template&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
