@@ -137,14 +137,15 @@
 }
 
 .side-note  {
-  margin-block-start: var(--space-l);
+  margin-block-start: var(--space-m);
   background-color: var(--shade);
   padding: var(--space-s);
  
 }
 .side-note p {
   font-size: var(--step--1); 
-    line-height: 1.6; 
+  line-height: 1.6; 
+  margin-block-end: var(--space-xs);
 }
 
 .side-note li{

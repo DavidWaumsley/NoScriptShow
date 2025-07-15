@@ -2,7 +2,7 @@
 <html lang="en-gb" data-theme="light"><head>
  <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Are we right in the &lt;head&gt;?</title><link rel="stylesheet" href="/dist/gWCULtYlQH.css">
+<title>Are we right in the &lt;head&gt;?</title><link rel="stylesheet" href="/dist/IguUgKb9Pt.css">
 <link rel="preload" href="/fonts/UbuntuMono-Bold.woff2" as="font" type="font/woff2" crossorigin="">
 <link rel="preload" href="/fonts/UbuntuMono-Regular.woff2" as="font" type="font/woff2" crossorigin=""><meta name="robots" content="noai, noimageai">
 <link rel="canonical" href="https://noscript.show/23/"><link rel="icon" type="img/x-icon" href="/svg/favicon.svg">
@@ -48,7 +48,10 @@
 <ul>
 <li>Typically it follows the &lt;!doctype html&gt; and is the first thing in the HTML element.</li>
 </ul>
-<p><small>It’s worth <a href="https://validator.w3.org/nu/?showsource=yes&amp;useragent=Validator.nu%2FLV+https%3A%2F%2Fvalidator.w3.org%2Fservices&amp;acceptlanguage=&amp;doc=https%3A%2F%2Fnoscript.show%2F">validating</a> particularly with CMS's where others have access to the &lt;head&gt;.</small></p>
+ <div class="side-note">
+<p>It’s worth <a href="https://validator.w3.org/nu/?showsource=yes&useragent=Validator.nu%2FLV+https%3A%2F%2Fvalidator.w3.org%2Fservices&acceptlanguage=&doc=https%3A%2F%2Fnoscript.show%2F">validating</a> the HTML
+ particularly with CMS's where others have access to the &lt;head&gt;.</p>
+</div>
 <h2 id="essential-head-elements">Essential &lt;head&gt; elements</h2>
 <ul>
 <li>
@@ -63,7 +66,7 @@
 </ul>
 <h2 id="common-issues">Common Issues</h2>
 <h3 id="accessibility">Accessibility</h3>
-<p>For meet <a href="https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html">WCAG 2.2</a> we must have &lt;title&gt; tags that describe the topic or purpose of a page.</p>
+<p>To meet <a href="https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html">WCAG 2.2</a> we must have &lt;title&gt; tags that describe the topic or purpose of a page.</p>
 <ul>
 <li>
 <p>Avoid special characters and <a href="https://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/">certain types</a> of punctuation.*<small> Dashes are safest. Screen reader can read &quot;|&quot;  as pipe or line or as a pause.</small></p>
@@ -78,9 +81,11 @@
 <p>Not in the &lt;head&gt;, but it's worth mentioning that not setting &lt;html lang=””&gt; is <a href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html">WCAG fail</a> (and missing on <a href="https://webaim.org/projects/million/">15% of websites</a>!).**</p>
 </li>
 </ul>
-<p><small>* <a href="https://www.seroundtable.com/archives/023052.html">Google</a> also says to avoid the vertical line symbol too. <a href="https://www.semrush.com/blog/case-study-should-you-add-pipes-or-dashes-to-your-title-ag-/">Semrush</a> did an experiment and overall dashes seemed to bring in more organic traffic than vertical lines.</small></p>
-<p><small>**  Overwriting lang=&quot;&quot; and styling it for international phrases and words is underused. It’s pointless these days to cram loads of keywords into titles.
-</small></p>
+<div class="side-note">
+<p>* <a href="https://www.seroundtable.com/archives/023052.html">Google</a> also says to avoid the vertical line symbol too. <a href="https://www.semrush.com/blog/case-study-should-you-add-pipes-or-dashes-to-your-title-ag-/">Semrush</a>  did an experiment and overall dashes seemed to bring in more organic traffic than vertical lines.</p>
+<p>**  Overwriting lang="" and styling it for international phrases and words is underused. It’s pointless these days to cram loads of keywords into titles.
+</p>
+</div>
 <h3 id="ux-page-load">UX - Page load</h3>
 <p>As HTML is rendered line by line, <a href="https://csswizardry.com/">Harry Roberts</a> has demonstrated how important to performance structure is. He suggests we should:</p>
 <ul>
@@ -89,7 +94,9 @@
 <li>Put synchronous JS before CSS. Browsers see if JS refers to CSS.</li>
 <li>Put <abbr title="Content Security Policy">CSP</abbr> headers top as they break parallel preloading.</li>
 </ul>
-<p><small> There's more to discuss such as the benefits of preloading/prefetching assets, speculative loading and when we should use inline CSS, but this offers a great framework.  Harry also has a neat <a href="https://csswizardry.com/ct/">bookmark</a> we can test our heads with.</small></p>
+<div class="side-note">
+<p> Naturally, there's more to discuss such as the benefits of preloading/prefetching assets, speculative loading and when we should use inline CSS, but this offers a great framework.  Harry also has a neat <a href="https://csswizardry.com/ct/">bookmark</a> we can check our heads with.</p>
+</div>
 <h3 id="ux-design">UX - design</h3>
 <p>Missing links to Favicons and meta data for Open Graph and Twitter images.</p>
 <p><strong>Favicons:</strong></p>
@@ -104,12 +111,12 @@
 <li>If a social image has enough white space one image can serve all.</li>
 <li>We need an image to stop social media showing the first in the DOM.</li>
 </ul>
-<p><small> The No Script Show's uses YouTube's thumbnail on the episode pages. For all others there is a generic image. Titles and descriptions for social media is added, but is not needed as it is the same the site's meta.
-</small></p>
+<div class="side-note">
+<p> The No Script Show's uses YouTube's thumbnail on the episode pages. For all others there is a generic image. Titles and descriptions for social media is added, but is not needed as it is the same the site's meta.
+</p>
+</div>
 <h3 id="technical-seo">Technical SEO</h3>
-<p>With CMSs and large content sites the &lt;head&gt; can easily become the source of technical issues.</p>
-<p>For example, when <a href="https://www.link-assistant.com/website-auditor/">Web Auditor</a> was run on the No Script Show it showed scores of 301 redirects as a few dynamic URLs were set up without a trailing forward slash (/).  Not major, but extra work for the user's browser that could be easily fixed. See the report <a href="/img/SEO-audit.pdf">here</a>. <small>(The errors are false positives).<small></small></small></p>
-<p><a href="https://www.screamingfrog.co.uk/seo-spider/">Screaming Frog's SEO Spider</a> is a partly free (up to 500 URLs) alternative checker. Some things we might want to include in our &lt;head&gt;:</p>
+<p>Some things we might want to include in our &lt;head&gt;:</p>
 <ul>
 <li>&lt;meta name=&quot;<a href="https://noscript.show/robots.txt">robots</a>&quot;&gt; for search engine crawl and indexing.</li>
 <li>&lt;link rel=&quot;canonical&quot;&gt; to prevent duplicate content issues.</li>
@@ -117,8 +124,16 @@
 <li>&lt;link rel=&quot;alternate&quot; hreflang=&quot;x&quot;&gt; for international sites.</li>
 <li>&lt;link rel=&quot;alternate&quot; href=&quot;/feed.xml&quot; type=&quot;application/atom+xml&quot; title=&quot;&quot;&gt; for RSS feeds.</li>
 </ul>
+<div class="side-note">
+<p>With CMSs and large content sites the &lt;head&gt; can easily become the source of technical issues.</p>
+<p>For example, when <a href="https://www.link-assistant.com/website-auditor/">Web Auditor</a> was run on the No Script Show it showed scores of 301 redirects as a few dynamic URLs were set up without a trailing forward slash (/).  Not major, but extra work for the user's browser that could be easily fixed. See the report <a href="/img/SEO-audit.pdf">here</a>. (The errors are false positives).</p>
+<p><a href="https://www.screamingfrog.co.uk/seo-spider/">Screaming Frog's SEO Spider</a>  is a partly free (up to 500 URLs) alternative checker. </p>
 <p>The No Script Show has not added Schema.org mark-up. <a href="https://developers.google.com/search/docs/appearance/structured-data/organization">Organization schema</a> might be good for some companies. Perhaps a good signal for Google's <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content">E-E-A-T</a>.</p>
-
+</div>
+<details> 
+<summary>Transcript</summary>
+Coming.
+</details> 
 </div>
 </heading-anchors></article>
 <div class="popout">
@@ -165,7 +180,7 @@
 <small><span aria-hidden="true">©</span> Copyright since 2023 | <a href="/privacy/"> Privacy </a>  | <a href="/accessibility-statement/"> Accessibility</a>  | <em>Built with <a href="https://www.11ty.dev/">Eleventy v3.1.0</a></em>
 </small>
 </div>
-</footer><!-- This page `/23/` was built on 2025-07-15T12:26:32.453Z -->
+</footer><!-- This page `/23/` was built on 2025-07-15T13:51:20.780Z -->
 <script type="module" src="/dist/ffsqCfr5qq.js"></script>		
 </body>
 </html>
