@@ -21,7 +21,7 @@ draft: true
 
  ## Resources 
 
- - [Optimal Head structure for performance](https://intrinsicframework.here24.co/optimized-head/ )
+ - [Optimal head structure for performance](https://intrinsicframework.here24.co/optimized-head/ )
  - [Favicons](https://intrinsicframework.here24.co/favicons/)
- - [Social Metadata](https://intrinsicframework.here24.co/social-metadata/)
+ - [Social metadata](https://intrinsicframework.here24.co/social-metadata/)
 
