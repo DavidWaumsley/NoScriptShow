@@ -68,7 +68,7 @@
 &lt;p&gt;As HTML is rendered line by line, &lt;a href=&quot;https://csswizardry.com/&quot;&gt;Harry Roberts&lt;/a&gt; has demonstrated how important to performance structure is. He suggests we should:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Move what we can out of the head (trackers, JS and some CSS).&lt;/li&gt;
-&lt;li&gt;Avoid @import and redirect to 3rd parties.&lt;/li&gt;
+&lt;li&gt;Avoid @import and redirects to 3rd parties.&lt;/li&gt;
 &lt;li&gt;Put synchronous JS before CSS. Browsers see if JS refers to CSS.&lt;/li&gt;
 &lt;li&gt;Put &lt;abbr title=&quot;Content Security Policy&quot;&gt;CSP&lt;/abbr&gt; headers top as they break parallel preloading.&lt;/li&gt;
 &lt;/ul&gt;
