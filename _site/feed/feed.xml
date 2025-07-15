@@ -88,7 +88,7 @@
 &lt;p&gt;For example when &lt;a href=&quot;https://www.link-assistant.com/website-auditor/&quot;&gt;Web Auditor&lt;/a&gt; was run on the No Script Show it showed scores of 301 redirects as a few dynamic URLs were set up without a trailing forward slash (/).  Not major, but extra work for the user browser that could be easily fixed.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.screamingfrog.co.uk/seo-spider/&quot;&gt;Screaming Frog&#39;s SEO Spider&lt;/a&gt; is a partly free (up to 500 URLs) alternative checker. Some things we might want to include in our &amp;lt;head&amp;gt;:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&amp;lt;meta name=&amp;quot;robots&amp;quot;&amp;gt; for search engine crawl and indexing.&lt;/li&gt;
+&lt;li&gt;&amp;lt;meta name=&amp;quot;&lt;a href=&quot;https://noscript.show/robots.txt&quot;&gt;robots&lt;/a&gt;&amp;quot;&amp;gt; for search engine crawl and indexing.&lt;/li&gt;
 &lt;li&gt;&amp;lt;link rel=&amp;quot;canonical&amp;quot;&amp;gt; to prevent duplicate content issues.&lt;/li&gt;
 &lt;li&gt;&amp;lt;meta name=&amp;quot;robots&amp;quot; content=&amp;quot;noindex&amp;quot;&amp;gt; for duplicate content.&lt;/li&gt;
 &lt;li&gt;&amp;lt;link rel=&amp;quot;alternate&amp;quot; hreflang=&amp;quot;x&amp;quot;&amp;gt; for international sites.&lt;/li&gt;
