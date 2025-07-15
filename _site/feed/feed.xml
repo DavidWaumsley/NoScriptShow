@@ -41,6 +41,7 @@
 &lt;p&gt;A &amp;lt;title&amp;gt; tag to name the document.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;hr&gt;
 &lt;h2 id=&quot;common-issues&quot;&gt;Common Issues&lt;/h2&gt;
 &lt;h3 id=&quot;accessibility&quot;&gt;Accessibility&lt;/h3&gt;
 &lt;p&gt;To meet &lt;a href=&quot;https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html&quot;&gt;WCAG 2.2&lt;/a&gt; we must have &amp;lt;title&amp;gt; tags that describe the topic or purpose of a page.&lt;/p&gt;
