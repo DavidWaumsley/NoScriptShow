@@ -11,13 +11,13 @@ draft: true
 
  **Show Notes:**
 
- Following our chat with Paul Lacey on [design systems](https://noscript.show/22/) we are looking at the head element on the No Script Show. How it is set up could be the start of out own design system.  Key points:
+ Following our chat with Paul Lacey on [design systems](https://noscript.show/22/) we are looking at the head element on the No Script Show. How it is set up could be the start of our own design system.  Key points:
 
  - Our site is on [Github](https://github.com/DavidWaumsley/NoScriptShow). You can reach head code [here](https://github.dev/DavidWaumsley/NoScriptShow/blob/main/_includes/partials/head.njk).
 
  - The site is created with Eleventy ([11ty](https://www.11ty.dev/)) and uses nunjuck templates.
  - We're creating small components containing links to code resources.
- - The aim is to have cut and paste snippets and quality checklists.
+ - The aim is to include cut and paste snippets and quality checklists.
 
  ## Resources 
 
