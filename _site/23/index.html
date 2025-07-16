@@ -8,14 +8,14 @@
 <link rel="canonical" href="https://noscript.show/23/"><link rel="icon" type="img/x-icon" href="/svg/favicon.svg">
 <link rel="icon" href="/img/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-<meta name="description" content="Unseen by visitors the &lt;head&gt; tags is easily overlooked, but very important."><link rel="alternate" href="https://noscript.show/feed/feed.xml" type="application/atom+xml" title="No Script Show. Making Websites simple again."><meta property="og:type" content="website">
+<meta name="description" content="Unseen by visitors the &lt;head&gt; tags is easily overlooked, but very important to a website&#39;s performance."><link rel="alternate" href="https://noscript.show/feed/feed.xml" type="application/atom+xml" title="No Script Show. Making Websites simple again."><meta property="og:type" content="website">
 <meta property="og:url" content="https://noscript.show/23/">
 <meta property="og:title" content="Are we right in the &lt;head&gt;?">
-<meta property="og:description" content="Unseen by visitors the &lt;head&gt; tags is easily overlooked, but very important.">
+<meta property="og:description" content="Unseen by visitors the &lt;head&gt; tags is easily overlooked, but very important to a website&#39;s performance.">
 <meta property="og:image" content="https://noscript.show/img/og-image.webp"><meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://noscript.show/23/">
 <meta property="twitter:title" content="Are we right in the &lt;head&gt;?">
-<meta property="twitter:description" content="Unseen by visitors the &lt;head&gt; tags is easily overlooked, but very important.">
+<meta property="twitter:description" content="Unseen by visitors the &lt;head&gt; tags is easily overlooked, but very important to a website&#39;s performance.">
 <meta property="twitter:image" content="https://noscript.show/img/og-image.webp">
 <meta name="generator" content="Eleventy v3.1.0">   
 </head><body id="top">
@@ -67,10 +67,10 @@
 <hr>
 <h2 id="common-issues">Common Issues</h2>
 <h3 id="accessibility">Accessibility</h3>
-<p>To meet <a href="https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html">WCAG 2.2</a> we must have &lt;title&gt; tags that describe the topic or purpose of a page.</p>
+<p>To meet <a href="https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html">WCAG 2.2</a> we must have title tags that describe the topic or purpose of a page.</p>
 <ul>
 <li>
-<p>Avoid special characters and <a href="https://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/">certain types</a> of punctuation.*<small> Dashes are safest. Screen reader can read &quot;|&quot;  as pipe or line or as a pause.</small></p>
+<p>Avoid special characters and <a href="https://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/">certain types</a> of punctuation.*<small> Dashes are safe, but screen readers can read &quot;|&quot;  as &quot;pipe&quot; or &quot;line&quot; or as a pause.</small></p>
 </li>
 <li>
 <p>Keep titles short and consistent across pages.</p>
@@ -79,7 +79,7 @@
 <p>Keep the &lt;title&gt; near the top of the &lt;head&gt; for quick loading.</p>
 </li>
 <li>
-<p>Not in the &lt;head&gt;, but it's worth mentioning that not setting &lt;html lang=””&gt; is a <a href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html">WCAG fail</a> (and missing on <a href="https://webaim.org/projects/million/">15% of websites</a>!).**</p>
+<p>Just outsite the &lt;head&gt; it's worth mentioning that not setting &lt;html lang=””&gt; is a <a href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html">WCAG fail</a> (and missing on <a href="https://webaim.org/projects/million/">15% of websites</a>!).**</p>
 </li>
 </ul>
 <div class="side-note">
@@ -96,14 +96,14 @@
 <li>Put <abbr title="Content Security Policy">CSP</abbr> headers top as they break parallel preloading.</li>
 </ul>
 <div class="side-note">
-<p> Naturally, there's more to discuss such as the benefits of preloading/prefetching assets, speculative loading and when we should use inline CSS, but this offers a great framework.  Harry also has a neat <a href="https://csswizardry.com/ct/">bookmark</a> we can check our heads with.</p>
+<p> Naturally, there's more to discuss such as the benefits of preloading/prefetching assets, speculative loading and when we should use inline CSS, but this offers a great overview.  Harry also has a neat <a href="https://csswizardry.com/ct/">bookmark</a> we can check our heads with.</p>
 </div>
 <h3 id="ux-design">UX - design</h3>
-<p>Missing links to Favicons and meta data for Open Graph and Twitter images.</p>
+<p>Missing links to Favicons and metadata for Open Graph and Twitter images.</p>
 <p><strong>Favicons:</strong></p>
 <ul>
 <li>Since <a href="https://developer.apple.com/documentation/safari-release-notes/safari-26-release-notes">Safari 26</a> we have support for <a href="https://caniuse.com/link-icon-svg">SVG favicons</a>.</li>
-<li>SVG icons let us use &quot;prefers-color-scheme&quot; to have light and dark versions. It is on this site as an experiment.</li>
+<li>SVG icons can respond to light and dark preferences.</li>
 <li>We still need an .ico fall back.</li>
 </ul>
 <p><strong>Social media</strong></p>
@@ -181,7 +181,7 @@
 <small><span aria-hidden="true">©</span> Copyright since 2023 | <a href="/privacy/"> Privacy </a>  | <a href="/accessibility-statement/"> Accessibility</a>  | <em>Built with <a href="https://www.11ty.dev/">Eleventy v3.1.0</a></em>
 </small>
 </div>
-</footer><!-- This page `/23/` was built on 2025-07-15T18:28:54.533Z -->
+</footer><!-- This page `/23/` was built on 2025-07-16T05:27:49.094Z -->
 <script type="module" src="/dist/ffsqCfr5qq.js"></script>		
 </body>
 </html>
