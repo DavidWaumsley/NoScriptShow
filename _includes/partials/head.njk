@@ -18,11 +18,15 @@ For structure see here:
 {% include "public/css/block.css" %}
 {% include "public/css/exceptions.css" %}
 {% endcss -%}   
-{% if layout == "layouts/post.njk" and videoid %}
+
 {#-
- ------------------- Preloads -------------------
+ ------------------- PRELOADS ------------------- 
  -#}  
-<link rel="preload" as="image" href="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp"> {% endif %}
+{#- ------------------- preload YT thumbnails --------------------#} 
+{% if layout == "layouts/post.njk" and videoid %}
+<link rel="preload" as="image" href="https://i.ytimg.com/vi_webp/{{videoid}}/maxresdefault.webp">
+{%- endif %}
+{#- ----------------------------------------------------------------------------------------- -#} 
 <link rel="preload" href="/fonts/UbuntuMono-Bold.woff2"  as="font" type="font/woff2" crossorigin="">
 <link rel="preload" href="/fonts/UbuntuMono-Regular.woff2"  as="font" type="font/woff2" crossorigin="">	
 {#-
@@ -31,7 +35,7 @@ For structure see here:
 <meta name="robots" content="noai, noimageai">
 <link rel="canonical" href="{{ metadata.url }}{{ page.url }}">
 {#-
- ------------------- Favicons -------------------
+ ------------------- FAVICONS -------------------
 
  See here https://intrinsicframework.here24.co/favicons/
 
@@ -41,7 +45,7 @@ For structure see here:
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <meta name="description" content="{{ description or metadata.description }}">
 {#- 
-------------------- RSS/Atom Feed Discovery ------------------- 
+------------------- RSS FEED DISCOVERY ------------------- 
 -#} 
 <link rel="alternate" href="https://noscript.show/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 
