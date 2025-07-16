@@ -23,7 +23,7 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;title&amp;gt; &amp;lt;link&amp;gt; &amp;lt;style&amp;gt; &amp;lt;meta&amp;gt; &amp;lt;script&amp;gt; &amp;lt;noscript&amp;gt; &amp;lt;base&amp;gt; &amp;lt;template&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Typically it follows the &amp;lt;!doctype html&amp;gt; and is the first thing in the HTML element.&lt;/li&gt;
+&lt;li&gt;Typically it follows the &lt;code class=&quot;inline-code&quot;&gt; &amp;lt;!doctype html&amp;gt; &lt;/code&gt; and is the first thing in the HTML element.&lt;/li&gt;
 &lt;/ul&gt;
  &lt;div class=&quot;side-note&quot;&gt;
 &lt;p&gt;It’s worth &lt;a href=&quot;https://validator.w3.org/nu/?showsource=yes&amp;useragent=Validator.nu%2FLV+https%3A%2F%2Fvalidator.w3.org%2Fservices&amp;acceptlanguage=&amp;doc=https%3A%2F%2Fnoscript.show%2F&quot;&gt;validating&lt;/a&gt; the HTML
@@ -94,13 +94,13 @@
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;h3 id=&quot;technical-seo&quot;&gt;Technical SEO&lt;/h3&gt;
-&lt;p&gt;Some things we might want to include in our &amp;lt;head&amp;gt;:&lt;/p&gt;
+&lt;p&gt;Some things we might want to include in our head tag:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&amp;lt;meta name=&amp;quot;&lt;a href=&quot;https://noscript.show/robots.txt&quot;&gt;robots&lt;/a&gt;&amp;quot;&amp;gt; for search engine crawl and indexing.&lt;/li&gt;
-&lt;li&gt;&amp;lt;link rel=&amp;quot;canonical&amp;quot;&amp;gt; to prevent duplicate content issues.&lt;/li&gt;
-&lt;li&gt;&amp;lt;meta name=&amp;quot;robots&amp;quot; content=&amp;quot;noindex&amp;quot;&amp;gt; for duplicate content.&lt;/li&gt;
-&lt;li&gt;&amp;lt;link rel=&amp;quot;alternate&amp;quot; hreflang=&amp;quot;x&amp;quot;&amp;gt; for international sites.&lt;/li&gt;
-&lt;li&gt;&amp;lt;link rel=&amp;quot;alternate&amp;quot; href=&amp;quot;/feed.xml&amp;quot; type=&amp;quot;application/atom+xml&amp;quot; title=&amp;quot;&amp;quot;&amp;gt; for RSS feeds.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;inline-code&quot;&gt;&amp;lt;meta name=&amp;quot;&lt;a href=&quot;https://noscript.show/robots.txt&quot;&gt;robots&lt;/a&gt;&amp;quot;&amp;gt; &lt;/code&gt;for search engine crawl and indexing.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;inline-code&quot;&gt;&amp;lt;link rel=&amp;quot;canonical&amp;quot;&amp;gt;&lt;/code&gt; to prevent duplicate content issues.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;inline-code&quot;&gt;&amp;lt;meta name=&amp;quot;robots&amp;quot; content=&amp;quot;noindex&amp;quot;&amp;gt;&lt;/code&gt; for duplicate content.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;inline-code&quot;&gt;&amp;lt;link rel=&amp;quot;alternate&amp;quot; hreflang=&amp;quot;x&amp;quot;&amp;gt;&lt;/code&gt; for international sites.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;inline-code&quot;&gt;&amp;lt;link rel=&amp;quot;alternate&amp;quot; href=&amp;quot;/feed.xml&amp;quot; type=&amp;quot;application/atom+xml&amp;quot; title=&amp;quot;&amp;quot;&amp;gt;&lt;/code&gt;  for RSS feeds.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;side-note&quot;&gt;
 &lt;p&gt;With CMSs and large content sites the &amp;lt;head&amp;gt; can easily become the source of technical issues.&lt;/p&gt;

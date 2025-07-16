@@ -318,6 +318,15 @@ word-break: normal;
  margin-block: var(--space-s);
 }
 
+.inline-code {
+ background: var(--shade);
+ color: var(--text);
+ padding-inline:0;
+ padding-block: .0;
+ display: inline;
+ margin-block: 0;
+}
+
 /* Posts list */
 .postlist {
 	list-style: none;
