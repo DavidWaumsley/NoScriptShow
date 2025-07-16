@@ -28,7 +28,7 @@ From Manuel Matuzović's  [Accessibility Cookbook](https://accessibility-cookboo
 
 <small>Accessible and fine for small devices, but not progressively enhanced.</small>
 
-### progressively enhanced navigation 
+### Progressively enhanced navigation 
 
 From Sara Soueidan's [Practical Accessibility](https://practical-accessibility.today/).
 
