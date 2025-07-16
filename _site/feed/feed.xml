@@ -56,7 +56,7 @@
 &lt;p&gt;Keep the &amp;lt;title&amp;gt; near the top of the &amp;lt;head&amp;gt; for quick loading.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Just outsite the &amp;lt;head&amp;gt; it&#39;s worth mentioning that not setting &amp;lt;html lang=””&amp;gt; is a &lt;a href=&quot;https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html&quot;&gt;WCAG fail&lt;/a&gt; (and missing on &lt;a href=&quot;https://webaim.org/projects/million/&quot;&gt;15% of websites&lt;/a&gt;!).**&lt;/p&gt;
+&lt;p&gt;Just outsite the &amp;lt;head&amp;gt; it&#39;s worth mentioning that not setting &lt;code class=&quot;inline-code&quot;&gt;&amp;lt;html lang=””&amp;gt;&lt;/code&gt; is a &lt;a href=&quot;https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html&quot;&gt;WCAG fail&lt;/a&gt; (and missing on &lt;a href=&quot;https://webaim.org/projects/million/&quot;&gt;15% of websites&lt;/a&gt;!).**&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;side-note&quot;&gt;
