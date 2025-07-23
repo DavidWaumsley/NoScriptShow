@@ -37,13 +37,12 @@ Syntax highlighter CSS on blog posts added to the bundle
 </div>
 {#- ------------------- Main article ------------------- -#} 
 <article>
-<heading-anchors>
 <div class="[ flow ][ page-layout ]">
 {{ content | safe }}
 </div>
 </article>
 <div class="popout">
-</heading-anchors>
+
 {#- ------------------- Post pagination ------------------- -#} 
 {%- if collections.posts %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem %}
