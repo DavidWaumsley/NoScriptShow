@@ -586,7 +586,7 @@ textarea {
 
 main li::marker {
   color: var(--brand);
-  content: '■  ';
+  content: '■   '  / '' ;
   font-size: var(--step-1); 
 }
 
