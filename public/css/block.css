@@ -666,31 +666,42 @@ main li::marker {
 
 .pill a {
     position: relative;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;  
 }
 
 .pill a:hover, .pill a:focus {
     background-color: var(--text);
     color: var(--text-alt);
-    padding-inline-end: 1.8em; /* Make room for icon */
-    margin-block-start: 1em;
+    padding-right: 2em; /* Make room for icon */
 }
+
+.pill a:hover::after, .pill a:focus::after {
+    content: '↓';
+    position: absolute;
+    inset-inline-end: 0.8em;
+    inset-block-start: 5%;    
+    font-size: 1.4em;   
+    animation: none;
+}
+
+@media (prefers-reduced-motion: no-preference){
 
 .pill a:hover::after, .pill a:focus::after {
     content: '↓' / '';
     position: absolute;
-    right: 0.5em;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.5em;
-    font-weight: 900;
+    inset-inline-end: 0.8em;
+    inset-block-start: 50%;    
+    font-size: 1.4em;   
     animation: bounce 1s infinite;
+}   
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateY(-50%); }
+    0%, 100% { transform: translateY(-45%); }
     50% { transform: translateY(-30%); }
 }
+
+
 .latest-eps a:focus{
    display: block; 
    padding: 0; 
