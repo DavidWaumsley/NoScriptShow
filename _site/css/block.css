@@ -9,6 +9,10 @@ GLOBAL: Light Youtube - Light/dark mode - Forms - Buttons - Header - Footer
 /********************************/
 /************ HOMEPAGE ************/
 
+.logo{
+  margin-block-start: -.5rem;
+}
+
 /* HERO */
 
   .value-prop{
@@ -708,7 +712,7 @@ header nav ul {
   display: flex;
   flex-wrap: wrap; 
   margin-block-end: 0; 
-  margin-block-start: var(--space-xs);
+  margin-block-start: 0; 
 }
 
 nav a,

@@ -36,9 +36,12 @@ body {
      
   .top-bar {
     display: flex;
-    justify-self: end;  
-    block-size: 2.5rem;  
+    justify-content: end; 
+    padding-inline-end: .5rem;
+    padding-block-start: .5rem;   
 }
+
+
 
 /********************************/
 /******** HEADER & NAV  ********/
