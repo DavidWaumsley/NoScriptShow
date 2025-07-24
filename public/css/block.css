@@ -70,7 +70,8 @@ width: 400px;
   border: .4rem solid var(--text-alt);
   padding: var(--space-m);
   max-width: fit-content;
-  font-size: var(--step--1);   
+  font-size: var(--step--1); 
+  margin-block: var(--space-l);   
 }
 
 .projects .reel-text p{
@@ -98,27 +99,50 @@ text-decoration-color: var(--text-alt) ;
  margin-block-end: var(--space-m);
 }
 
-.reel  {
-  display: flex;
-  block-size: auto;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scrollbar-color:  var(--brand) var(--text); 
+/* reel */
+
+.reel figure{
+margin-block: var(--space-l); 
+}
+
+.reel {
+display: flex;
+block-size: auto;
+overflow-x: auto;
+overflow-y: hidden;
+scrollbar-color: var(--brand) var(--text-alt);
+}
+
+.reel::-webkit-scrollbar {
+  block-size: 1rem;
+}
+
+.reel::-webkit-scrollbar-track {
+  background-color: var(--brand);
+}
+
+.reel::-webkit-scrollbar-thumb {
+  background-color:var(--brand);
+  background-image: linear-gradient(var(--brand)0, var(--brand) 0.25rem, var(--text-alt) 0.25rem, var(--text-alt) 0.75rem, var(--brand) 0.75rem);
 }
 
 .reel > * {
-flex: 0 0 auto;
-margin-block-end: var(--space-m);
+  flex: 0 0 auto;
 }
 
-.reel div {
-flex-basis: 26rem; 
+.reel > img {
+  block-size: 100%;
+  flex-basis: auto;
+  width: auto;
 }
 
-.reel > * {
-margin-inline-end: 5rem;
+.reel > * + * {
+  margin-inline-start: var(--space-l);
 }
 
+.reel.overflowing {
+  padding-block-end: var(--space-l);
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .reel{
@@ -174,7 +198,6 @@ margin-inline-end: 5rem;
     justify-self: center;
   }
 }
-
 
 .bio h3{
   font-size: var(--step-1);
