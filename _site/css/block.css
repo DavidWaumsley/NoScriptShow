@@ -10,7 +10,7 @@ GLOBAL: Light Youtube - Light/dark mode - Forms - Buttons - Header - Footer
 /************ HOMEPAGE ************/
 
 .logo{
-  margin-block-start: -.5rem;
+  margin-block-start: -1rem;
 }
 
 /* HERO */
