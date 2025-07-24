@@ -51,6 +51,7 @@ GLOBAL: Light Youtube - Light/dark mode - Forms - Buttons - Header - Footer
  .latest-eps img{   
 border: .4rem solid var(--text);
 padding: var(--space-2xs);
+width: 400px;
  }
 
 .latest-eps svg{

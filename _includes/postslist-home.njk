@@ -1,7 +1,7 @@
-{%- for post in postslist | reverse %} <li>{% if post.data.videoid %}<a href="{{ post.url }}" class="block"><img src="https://i.ytimg.com/vi_webp/{{post.data.videoid}}/mqdefault.webp" 
+{%- for post in postslist | reverse %} <li>{% if post.data.videoid %}<a href="{{ post.url }}" class="block"><img src="https://i.ytimg.com/vi_webp/{{post.data.videoid}}/maxresdefault.webp" 
  alt="" 
- width="320" 
- height="180"
+ width="1280" 
+ height="720"
 loading="lazy">
 <span class="visually-hidden">See our episode titled "{{post.data.title}}".</span>
 </a>{% else %}
