@@ -664,11 +664,33 @@ main li::marker {
 }
 
 
-.pill a:hover{  
-   background-color: var(--text);
-   color: var(--text-alt);
+.pill a {
+    position: relative;
+    transition: all 0.3s ease;
 }
 
+.pill a:hover, .pill a:focus {
+    background-color: var(--text);
+    color: var(--text-alt);
+    padding-inline-end: 1.8em; /* Make room for icon */
+    margin-block-start: 1em;
+}
+
+.pill a:hover::after, .pill a:focus::after {
+    content: '↓' / '';
+    position: absolute;
+    right: 0.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    font-weight: 900;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(-50%); }
+    50% { transform: translateY(-30%); }
+}
 .latest-eps a:focus{
    display: block; 
    padding: 0; 
@@ -761,11 +783,7 @@ footer nav a, footer nav a:active{
 padding-inline-start: 0;
 }
 
-.ha:hover, .ha:focus{
-color: transparent;
-margin: 0;
-  }
-  
+
  #more-navigation:target ul {                          
             outline: .2rem solid var(--text); 
             outline-offset: var(--space-xl);  
