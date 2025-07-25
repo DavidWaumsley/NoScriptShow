@@ -674,7 +674,7 @@ main li::marker {
 @media (width > 45rem) {
 
 .pill a {
-  margin-inline-start: var(--space-m); 
+  margin-inline-start: var(--space-l); 
 
 }
 }
