@@ -664,25 +664,23 @@ main li::marker {
 }
 
 
-.pill a {
+
+@media (width > 45rem) {
+  .pill a {
     position: relative;
     transition: all 0.2s ease;    
     margin-top: .8rem; 
     outline: .1rem solid var(--text);   
 }
-
-@media (width > 45rem) {
-
+  
 .pill a {
   margin-inline-start: var(--space-l); 
-
-}
 }
 
 .pill a:hover, .pill a:focus {
     background-color: var(--text);
     color: var(--text-alt);
-    padding-inline-end: 2em; /* Make room for icon */ 
+    padding-inline-end: 2.6em; /* Make room for icon */ 
 }
 
 .pill a:hover::after, .pill a:focus::after {
@@ -691,8 +689,10 @@ main li::marker {
     inset-inline-end: 0.8em;
     inset-block-start: 5%;    
     font-size: 1.4em;   
-    animation: none;
+    animation: none; 
 }
+}
+
 
 @media (prefers-reduced-motion: no-preference){
 
