@@ -38,7 +38,7 @@ body {
     display: flex;
     justify-content: end; 
     padding-inline-end: .5rem;
-    padding-block-start: .5rem;   
+    padding-block: .5rem;   
 }
 
 /********************************/
