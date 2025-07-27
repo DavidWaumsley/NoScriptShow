@@ -472,7 +472,7 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Show Notes:&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&quot;what-do-we-mean-by-design-systems&quot;&gt;What do we mean by design systems?&lt;/h2&gt;
 &lt;blockquote&gt; A complete set of standards intended to manage design at scale using reusable components and patterns.&lt;/blockquote&gt;
-&lt;cite&gt;&lt;a href=&quot;https://www.nngroup.com/articles/design-systems-101/&quot;&gt;&lt;abr title=&quot;Nielsen Norman Group&quot;&gt;NNG&lt;/abr&gt;&lt;/a&gt; &lt;/cite&gt; 
+&lt;cite&gt;&lt;a href=&quot;https://www.nngroup.com/articles/design-systems-101/&quot;&gt;&lt;abbr title=&quot;Nielsen Norman Group&quot;&gt;NNG&lt;/abbr&gt;&lt;/a&gt; &lt;/cite&gt; 
 &lt;blockquote&gt;A single source of truth that reduces design redundancy and accelerates the development process.&lt;/blockquote&gt;
 &lt;cite&gt;&lt;a href=&quot;https://www.figma.com/blog/design-systems-101-what-is-a-design-system/&quot;&gt;Figma&lt;/a&gt; &lt;/cite&gt;
 &lt;h2 id=&quot;who-uses-a-design-system&quot;&gt;Who uses a design system?&lt;/h2&gt;
@@ -1954,7 +1954,7 @@
     <content type="html">&lt;p&gt;We asked our good friend &lt;a href=&quot;https://paullacey.digital/&quot;&gt;Paul Lacey&lt;/a&gt; for his thoughts on offering clients a CMS and to our delight he agree to come on the show.&lt;/p&gt;
 &lt;h2 id=&quot;what-is-a-cms&quot;&gt;What is a CMS?&lt;/h2&gt;
 &lt;blockquote&gt;A Content Management System is software that helps users create, manage, store, and publish digital content.&lt;/blockquote&gt;
-&lt;cite&gt;&lt;a href=&quot;https://www.ibm.com/think/topics/content-management-system&quot;&gt;&lt;abr title=&quot;International Business Machines&quot;&gt;IBM&lt;/abr&gt;&lt;/a&gt; &lt;/cite&gt; 
+&lt;cite&gt;&lt;a href=&quot;https://www.ibm.com/think/topics/content-management-system&quot;&gt;&lt;abbr title=&quot;International Business Machines&quot;&gt;IBM&lt;/abbr&gt;&lt;/a&gt; &lt;/cite&gt; 
 &lt;p&gt;&lt;strong&gt;Some...&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;don&#39;t even consider WordPress a CMS.&lt;/li&gt;
