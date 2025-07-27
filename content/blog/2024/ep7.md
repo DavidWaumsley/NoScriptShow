@@ -24,9 +24,10 @@ The MDN web docs has a short article called [How do I start to design my website
 *   How will a website help me reach my goals?
 *   What needs to be done, and in what order, to reach my goals?
 
-This quote is from the MDN:
+This quote is from the <cite>MDN</cite>:
 
-> “When starting with a web project, many people focus on the technical side. Of course you must be familiar with the technique of your craft, but what really matters is what you want to accomplish. Yes, it seems obvious, but too many projects fail not from a lack of technical know-how, but from lack of goals and vision.”
+> When starting with a web project, many people focus on the technical side. Of course you must be familiar with the technique of your craft, but what really matters is what you want to accomplish. Yes, it seems obvious, but too many projects fail not from a lack of technical know-how, but from lack of goals and vision.
+<cite>MDN</cite>
 
 A client's brief
 ----------------

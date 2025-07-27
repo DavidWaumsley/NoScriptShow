@@ -295,10 +295,8 @@ summary{
 }
 
 blockquote {
-  border-inline-start: 0.4rem solid var(--brand);
-  padding: var(--space-2xs);
-  font-style: italic;
-  margin-inline: 0;
+  border-inline-start: 0.4rem solid var(--brand); 
+  font-style: italic;  
   padding-inline-start: var(--space-s);
 }
 
@@ -374,3 +372,4 @@ code {
 fieldset{
   border: 0;
 }
+

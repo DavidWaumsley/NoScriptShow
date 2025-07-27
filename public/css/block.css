@@ -663,8 +663,6 @@ main li::marker {
   outline: 0.4rem solid var(--text);   
 }
 
-
-
 @media (width > 45rem) {
   .pill a {
     position: relative;
@@ -672,18 +670,18 @@ main li::marker {
     margin-top: .8rem; 
     outline: .1rem solid var(--text);   
 }
-  
+
 .pill a {
   margin-inline-start: var(--space-l); 
 }
 
-.pill a:hover, .pill a:focus {
+.pill a:hover, .pill a:active, .pill a:focus {
     background-color: var(--text);
     color: var(--text-alt);
     padding-inline-end: 2.6em; /* Make room for icon */ 
 }
 
-.pill a:hover::after, .pill a:focus::after {
+.pill a:hover::after, .pill a:active:after, .pill a:focus::after {
     content: '↓';
     position: absolute;
     inset-inline-end: 0.8em;
@@ -691,8 +689,6 @@ main li::marker {
     font-size: 1.4em;   
     animation: none; 
 }
-}
-
 
 @media (prefers-reduced-motion: no-preference){
 
@@ -710,6 +706,10 @@ main li::marker {
     0%, 100% { transform: translateY(-45%); }
     50% { transform: translateY(-30%); }
 }
+
+}
+
+
 
 
 .latest-eps a:focus{
