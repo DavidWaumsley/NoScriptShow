@@ -678,26 +678,24 @@ main li::marker {
 .pill a:hover, .pill a:active, .pill a:focus {
     background-color: var(--text);
     color: var(--text-alt);
-    padding-inline-end: 2.6em; /* Make room for icon */ 
+    padding-inline-end: 2.8em; /* Make room for icon */ 
 }
 
 .pill a:hover::after, .pill a:active:after, .pill a:focus::after {
-    content: '↓';
+    content: '▼'/ '';
     position: absolute;
     inset-inline-end: 0.8em;
-    inset-block-start: 5%;    
-    font-size: 1.4em;   
+    inset-block-start: 5%;      
     animation: none; 
 }
 
 @media (prefers-reduced-motion: no-preference){
 
 .pill a:hover::after, .pill a:focus::after {
-    content: '↓' / '';
+    content: '▼' / '';
     position: absolute;
     inset-inline-end: 0.8em;
-    inset-block-start: 50%;    
-    font-size: 1.4em;   
+    inset-block-start: 50%; 
     animation: bounce 1s infinite;
 }   
 }
@@ -813,12 +811,12 @@ padding-inline-start: 0;
           }
 
  #more-navigation:target ul::before {  
-  content:'MORE' / '';
+  content:'◀ MORE' / '';
   position: absolute;
   padding-inline:1rem;
   inset-block-start:0;
   inset-inline-end: 0;
-  background-color: var(--brand);
+  background-color: var(--text);
   color: var(--text-alt);
   text-transform: capitalize ;  
   font-size: var(--step--2);
