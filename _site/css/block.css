@@ -806,11 +806,25 @@ padding-inline-start: 0;
 }
 
 
- #more-navigation:target ul {                          
-            outline: .2rem solid var(--text); 
-            outline-offset: var(--space-xl);  
-            padding-inline-end: var(--space-2xl);                     
+ #more-navigation:target ul { 
+  outline: .2rem dashed var(--brand); 
+  outline-offset: var(--space-xl);  
+  padding-inline-end: var(--space-2xl);                     
           }
+
+ #more-navigation:target ul::before {  
+  content:'MORE' / '';
+  position: absolute;
+  padding-inline:1rem;
+  inset-block-start:0;
+  inset-inline-end: 0;
+  background-color: var(--brand);
+  color: var(--text-alt);
+  text-transform: capitalize ;  
+  font-size: var(--step--2);
+  font-weight: 700;
+  letter-spacing: .1rem;                 
+  }
 
 @media (prefers-reduced-motion: no-preference){
   #more-navigation:target ul{
