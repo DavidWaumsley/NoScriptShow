@@ -668,11 +668,11 @@ main li::marker {
     position: relative;
     transition: all 0.2s ease;    
     margin-top: .8rem; 
-    outline: .1rem solid var(--text);   
+    outline: .1rem dashed var(--text);   
 }
 
 .pill a {
-  margin-inline-start: var(--space-l); 
+  margin-inline-start: var(--space-m); 
 }
 
 .pill a:hover, .pill a:active, .pill a:focus {
