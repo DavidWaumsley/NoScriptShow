@@ -472,9 +472,10 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Show Notes:&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&quot;what-do-we-mean-by-design-systems&quot;&gt;What do we mean by design systems?&lt;/h2&gt;
 &lt;blockquote&gt; A complete set of standards intended to manage design at scale using reusable components and patterns.&lt;/blockquote&gt;
-&lt;cite&gt;&lt;a href=&quot;https://www.nngroup.com/articles/design-systems-101/&quot;&gt;&lt;abbr title=&quot;Nielsen Norman Group&quot;&gt;NNG&lt;/abbr&gt;&lt;/a&gt; &lt;/cite&gt; 
+&lt;small&gt;&lt;cite&gt;&lt;a href=&quot;https://www.nngroup.com/articles/design-systems-101/&quot;&gt;Design systems 101&lt;/a&gt; &lt;/cite&gt; - &lt;abbr title=&quot;Nielsen Norman Group&quot;&gt;NNG&lt;/abbr&gt; &lt;/small&gt;
 &lt;blockquote&gt;A single source of truth that reduces design redundancy and accelerates the development process.&lt;/blockquote&gt;
-&lt;cite&gt;&lt;a href=&quot;https://www.figma.com/blog/design-systems-101-what-is-a-design-system/&quot;&gt;Figma&lt;/a&gt; &lt;/cite&gt;
+&lt;small&gt;
+&lt;cite&gt; &lt;a href=&quot;https://www.figma.com/blog/design-systems-101-what-is-a-design-system/&quot;&gt;What is a design system?&lt;/a&gt; &lt;/cite&gt; - Figma&lt;/small&gt;
 &lt;h2 id=&quot;who-uses-a-design-system&quot;&gt;Who uses a design system?&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Large sites that need consistency regardless of who’s working on them.&lt;/li&gt;

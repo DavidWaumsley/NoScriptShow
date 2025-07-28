@@ -803,7 +803,6 @@ footer nav a, footer nav a:active{
 padding-inline-start: 0;
 }
 
-
  #more-navigation:target ul { 
   outline: .2rem dashed var(--text); 
   outline-offset: var(--space-xl);  
