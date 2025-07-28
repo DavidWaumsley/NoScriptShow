@@ -804,7 +804,7 @@ padding-inline-start: 0;
 }
 
  #more-navigation:target ul { 
-  outline: .2rem dashed var(--text); 
+  outline: .1rem dashed var(--text); 
   outline-offset: var(--space-xl);  
   padding-inline-end: var(--space-2xl);                     
           }
