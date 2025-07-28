@@ -1,5 +1,5 @@
 ---
-title:  "Better HTML <head> tags"
+title:  "Better HTML head tags"
 description: We look at the HTML head tag and how it can be better structured.
 date: 2025-07-15
 tags: ["learn"]
