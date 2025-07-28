@@ -298,7 +298,22 @@ blockquote {
   border-inline-start: 0.4rem solid var(--brand); 
   font-style: italic;  
   padding-inline-start: var(--space-s);
+   font-size: var(--step-1); 
+ 
 }
+
+blockquote p {
+  font-size: var(--step-1); 
+}
+
+blockquote footer{
+ padding-block-start: var(--space-3xs);
+ font-size: var(--step-0); 
+ margin: 0;
+ font-style: initial;
+ font-weight: 600;
+}
+
 
 ::selection {
   color: var(--text-alt);
