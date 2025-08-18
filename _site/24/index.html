@@ -59,23 +59,29 @@
 <p><strong>This means:</strong></p>
 <ul>
 <li>We should not use quotation elements for (self quoting) pull quotes.</li>
-<li>Using the cite element after a quote puts it outside of the &quot;section&quot; (Accessibility wise similar to orphaned &quot;read more&quot; links on blog archives).</li>
+<li>Weirdly for accessibiity, the citation is orphaned from the quote &quot;section&quot;.</li>
 </ul>
-<p><strong>But, it's hard to find clear advice</strong></p>
-<p>Many <a href="https://html5doctor.com/cite-and-blockquote-reloaded/">expert sources</a> have encouraged us to use blockquotes in ways that seem technically incorrect Including <a href="https://wordpress.com/support/wordpress-editor/blocks/quote-block/#insert-your-quote">platforms</a> (<a href="https://theadminbar.com/accessibility-weekly/coding-blockquotes/">code example</a>).</p>
+<p><strong>It's hard to find consistant advice</strong></p>
+<p>Many <a href="https://html5doctor.com/cite-and-blockquote-reloaded/">expert sources</a> have encouraged us to use blockquotes in ways that seem technically incorrect including <a href="https://wordpress.com/support/wordpress-editor/blocks/quote-block/#insert-your-quote">platforms</a> (<a href="https://theadminbar.com/accessibility-weekly/coding-blockquotes/">code example</a>).</p>
 <ul>
-<li><a href="https://heydonworks.com/article/the-blockquote-element/">Haydon Pickering </a> suggests placing blockquote and cite within figure and figcaption elements.</li>
-<li>Adrian Roselli recommended against using figure as it is verbose for popular screen readers. His <a href="https://adrianroselli.com/2023/07/blockquotes-in-screen-readers.html#Example07">preferred approach</a> breaks with WHATWG as he uses cite within the blockquote and puts authors in there too.</li>
-<li>Like Adrian Roselli, the <a href="https://design-system.w3.org/components/quote.html">W3C design system</a> uses a footer element to cite an author Unlike him, they do not use the cite element because of the WHATWG specification.</li>
+<li>
+<p><a href="https://heydonworks.com/article/the-blockquote-element/">Haydon Pickering </a> suggests placing blockquotes and cites within figure and figcaption elements.</p>
+</li>
+<li>
+<p>Adrian Roselli recommended against using figure as it is verbose for popular screen readers. But, his <a href="https://adrianroselli.com/2023/07/blockquotes-in-screen-readers.html#Example07">preferred approach</a> breaks with WHATWG as he uses cite within the blockquote and puts authors in there too.</p>
+</li>
+<li>
+<p>Like Adrian Roselli, the <a href="https://design-system.w3.org/components/quote.html">W3C design system</a> uses a footer element to cite an author Unlike him, they do not use the cite element because of the WHATWG specification.</p>
+</li>
 </ul>
-<p>If you look at the design systems for local government you will find many other variations. It is not suprising as the W3C documentation started to evolve differently to WHATWG.</p>
+<p>Looking at design systems for local governments we find many other variations. Probably becasue changes in the orginal W3C documentation was not carried forward to WHATWG.</p>
 <h2 id="our-approach-to-the-html">Our approach to the HTML</h2>
-<p>As we don’t have the standing or experience to influence specifications like Haydon Pickering, Adrian Roselli and Michelle Barker we'll try and stick to the WHATWG specification and be consistent in that from here on (untill told otherwise).</p>
+<p>As we don’t have the standing or experience to influence specifications like Haydon Pickering, Adrian Roselli or Michelle Barker we'll try and stick to the WHATWG specification and be consistent in that from here on (until told otherwise).</p>
 <h3 id="testimonials">Testimonials</h3>
-<p>The typical pattern is the external quote followed by the author's name sometimes with a link to their organisation and image of them.</p>
+<p>The typical pattern is the external quote followed by the author's name sometimes with a link to their organisation and image of them (<a href="https://band.here24.co/">example</a>).</p>
 <p>For this we will use the W3C design systems approach of not using cite, but putting the author credentials in a footer element within the block quote.</p>
-<p>If appropriate we will add the invisible cite attribute. If the testimonial contained a heading the markup would change depending on whether the heading was part of the original quote. If it was, we would add the heading as part of the quote.</p>
-<p>If not (in the case of us summarising with a header ) we would use an <a href="https://html.spec.whatwg.org/multipage/sections.html#the-article-element">article</a>.</p>
+<p>If appropriate we will add the invisible cite attribute. If the testimonial contains a heading the markup would change depending on whether the heading was part of the original quote. If it was, we would add the heading as part of the quote.</p>
+<p>If not (in the case of us summarising with a header) we'd use an <a href="https://html.spec.whatwg.org/multipage/sections.html#the-article-element">article</a>.</p>
 <pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">></span></span>Review Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span><span class="token punctuation">></span></span>
@@ -83,7 +89,7 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">></span></span> — Reviewer Name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">></span></span> </code></pre>
-<h3 id="comments">Comments</h3>
+<h3 id="comments-blog-posts">Comments (blog posts)</h3>
 <p>According to <a href="https://html.spec.whatwg.org/multipage/sections.html#the-article-element">WHATWG</a></p>
  <blockquote>
  When article elements are nested, the inner article elements represent articles that are in principle related to the contents of the outer article. For instance, a blog entry on a site that accepts user-submitted comments could represent the comments as article elements nested within the article element for the blog entry.
@@ -94,8 +100,14 @@
    <blockquote>
    The aside element can be used for typographical effects like pull quotes or sidebars
    </blockquote>
-<p>Jeremy Keith set off  debate in 2016 by asking <a href="https://adactio.com/journal/11102">Why do pull quotes exist on the web?</a>. It is a good question given it is a duplication of content that visually does not look impressive on small devices. It is also not easy to code with many employing JavaScript to achieve it.</p>
-<p>On the other hand there is Rachel Andrew's CSS Day 2025 presentation called <a href="https://www.youtube.com/watch?v=NfwDP9shxNQ&amp;t=2493s">Multicol and fragmentation</a>. In this she talks about the idea of the web being more page like and the idea of &quot;exclusions&quot; (to normal flow). The examples she shows look very much like the patterns designers are often trying to recreate with pull quotes.</p>
+<p>Jeremy Keith set off  debate in 2016 by asking <a href="https://adactio.com/journal/11102">Why do pull quotes exist on the web?</a> It's a great question given it is a duplication of content that visually does not look impressive on small devices. It is also not easy to code with many employing JavaScript to achieve it.</p>
+<p>Interestingly, Rachel Andrew's CSS Day 2025 presentation called <a href="https://youtu.be/NfwDP9shxNQ?t=2445">Multicol and fragmentation</a> talks about the idea of the web being more page like going forward. She introduces the idea of &quot;exclusions&quot; (to normal flow). The examples she shows look very much like the patterns designers are often trying to recreate with pull quotes.</p>
+  <div class="popout center-me">
+  <img src="/img/exclusions.webp" loading="lazy" width="1200" height="665" alt="screenshot from Rachel Andrew's talk showing print examples of large text excluded from normal document flow.">
+<p><small> <em> A screenshot from Rachel Andrew's talk.</em></small></p>
+</div>
+<h2 id="styling">Styling</h2>
+<p>Please join us for part two video only episode where we look at adding CSS.</p>
 
 </div>
 </article>
@@ -142,7 +154,7 @@
 <small><span aria-hidden="true">©</span> Copyright since 2023 | <a href="/privacy/"> Privacy </a>  | <a href="/accessibility-statement/"> Accessibility</a>  | <em>Built with <a href="https://www.11ty.dev/">Eleventy v3.1.0</a></em>
 </small>
 </div>
-</footer><!-- This page `/24/` was built on 2025-08-18T18:00:51.471Z -->
+</footer><!-- This page `/24/` was built on 2025-08-18T18:42:23.704Z -->
 <script type="module" src="/dist/ffsqCfr5qq.js"></script>		
 </body>
 </html>
