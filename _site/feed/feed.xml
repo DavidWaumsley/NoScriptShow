@@ -72,7 +72,7 @@
    The aside element can be used for typographical effects like pull quotes or sidebars
    &lt;/blockquote&gt;
 &lt;p&gt;Jeremy Keith set off some debate in 2016 by asking &lt;a href=&quot;https://adactio.com/journal/11102&quot;&gt;Why do pull quotes exist on the web?&lt;/a&gt;. It is a good question given that it is a duplication of content that visually does not look so impressive on mobile. It is also not easy to code with many using Javascript to acheive it.&lt;/p&gt;
-&lt;p&gt;On the other hand Rachel Andrew&#39;s CSS Day 2025 presentation called &lt;a href=&quot;https://www.youtube.com/watch?v=NfwDP9shxNQ&amp;amp;t=2493s&quot;&gt;Multicol and fragmentation&lt;/a&gt;. In that she talks about the idea of the web being more page like and the idea of &amp;quot;exclusions&amp;quot; (to normal flow). The examples she shows look very much like the  pattern designer are often trying to recreated wit pull quotes.&lt;/p&gt;
+&lt;p&gt;On the other hand there is Rachel Andrew&#39;s CSS Day 2025 presentation called &lt;a href=&quot;https://www.youtube.com/watch?v=NfwDP9shxNQ&amp;amp;t=2493s&quot;&gt;Multicol and fragmentation&lt;/a&gt;. In this she talks about the idea of the web being more page like and the idea of &amp;quot;exclusions&amp;quot; (to normal flow). The examples she shows look very much like the patterns designers are often trying to recreate with pull quotes.&lt;/p&gt;
 </content>
   </entry>
   <entry>
