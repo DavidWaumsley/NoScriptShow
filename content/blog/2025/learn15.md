@@ -1,9 +1,9 @@
 ---
 title:  "Styling Quotes"
 description: Styling testimonials, blockquotes and pull quotes.
-date: 2025-08-20
+date: 2025-08-19
 tags: ["learn"]
-permalink: "/learn/15/{{slugify}}/"
+permalink: "/learn/15/{{slugify }}/"
 videoid: 
 draft: true
 
