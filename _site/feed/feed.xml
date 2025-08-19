@@ -101,7 +101,7 @@ s/he says:
 &lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- or &amp;lt;q&gt;&amp;lt;/q&gt; if inline  --&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&quot;block-or-inine-quotes&quot;&gt;Block or inine quotes?&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://heydonworks.com/article/the-blockquote-element/&quot;&gt;Haydon Pickering &lt;/a&gt; points out that the term “block quotation” precedes the precedes the blockquote element. The Chicago Manual Of Style recommends block quotations are over 100 words in length. Some examples in the specification have very short quotes. It remains unclear when you should use one over the other.&lt;/p&gt;
-&lt;h2 id=&quot;styling&quot;&gt;Styling&lt;/h2&gt;
+&lt;h2 id=&quot;styling-quotes&quot;&gt;Styling quotes&lt;/h2&gt;
 &lt;p&gt;Please join us for part two video only episode where we look at adding CSS.&lt;/p&gt;
 </content>
   </entry>
