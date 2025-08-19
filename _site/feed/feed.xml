@@ -109,8 +109,16 @@ s/he says:
     <updated>2025-08-19T00:00:00Z</updated>
     <id>https://noscript.show/learn/15/</id>
     <content type="html">&lt;p&gt;&lt;strong&gt;Show Notes:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;https://noscript.show/24/&quot;&gt;part one&lt;/a&gt; we attempted to rationalize the HTML mark-up needed for testimonial, regular quotes and pull quotes. Here we are looking at styling them with CSS.&lt;/p&gt;
+&lt;h2 id=&quot;testimonials&quot;&gt;Testimonials&lt;/h2&gt;
+&lt;p&gt;It&#39;s common for these to be displayed as a carousel, but until this can be achived in an accessible way without JavaScript we (for reasons associated with the show&#39;s name) look for simpler and more resilient options like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &amp;quot;Reel&amp;quot; a horizontal scrolling technique used on &lt;a href=&quot;https://every-layout.dev/&quot;&gt;Every Layout &lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Details and Summary as used on our demo &lt;a href=&quot;https://band.here24.co/&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&quot;pull-quotes&quot;&gt;Pull Quotes&lt;/h2&gt;
-&lt;p&gt;Interestingly, Rachel Andrew&#39;s CSS Day 2025 presentation called &lt;a href=&quot;https://youtu.be/NfwDP9shxNQ?t=2445&quot;&gt;Multicol and fragmentation&lt;/a&gt; talks about the idea of the web being more like printed pages going forward. She introduces the idea of &amp;quot;exclusions&amp;quot; (to normal flow). The examples she shows look much like the patterns designers often try to recreate with pull quotes.&lt;/p&gt;
+&lt;p&gt;As mentioned in part one pull quotes don&#39;t naturally lend themselves to the web because it is repeated content and the effect is difficult and lost on smaller devices.&lt;/p&gt;
+&lt;p&gt;Interestingly though, Rachel Andrew&#39;s CSS Day 2025 presentation called &lt;a href=&quot;https://youtu.be/NfwDP9shxNQ?t=2445&quot;&gt;Multicol and fragmentation&lt;/a&gt; talks about the idea of the web being more like printed pages going forward. She introduces the idea of &amp;quot;exclusions&amp;quot; (to normal flow). The examples she shows look much like the patterns designers often try to recreate with pull quotes.&lt;/p&gt;
   &lt;div class=&quot;popout center-me&quot;&gt;
   &lt;img src=&quot;https://noscript.show/img/exclusions.webp&quot; loading=&quot;lazy&quot; width=&quot;1200&quot; height=&quot;665&quot; alt=&quot;screenshot from Rachel Andrew&#39;s talk showing print examples of large text excluded from normal document flow.&quot;&gt;
 &lt;p&gt;&lt;small&gt; &lt;em&gt; A screenshot from Rachel Andrew&#39;s talk.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
