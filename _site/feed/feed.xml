@@ -117,7 +117,7 @@ s/he says:
 &lt;li&gt;Details and Summary as used on our demo &lt;a href=&quot;https://band.here24.co/&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;An example of a 3 column testimonial can be found on our &lt;a href=&quot;https://intrinsicframework.here24.co/testimonials/&quot;&gt;intrinsic framework&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;The details and summary used on the band website demo combines the RAM technique &lt;a href=&quot;https://intrinsicframework.here24.co/maximum-column-grid/&quot;&gt;shown here&lt;/a&gt; with the diclosure widget example &lt;a href=&quot;https://intrinsicframework.here24.co/disclosure-widget/&quot;&gt;shown here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The details and summary used on the band website demo combines the RAM technique &lt;a href=&quot;https://intrinsicframework.here24.co/maximum-column-grid/&quot;&gt;shown here&lt;/a&gt; with the disclosure widget example &lt;a href=&quot;https://intrinsicframework.here24.co/disclosure-widget/&quot;&gt;shown here&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;pull-quotes&quot;&gt;Pull Quotes&lt;/h2&gt;
 &lt;p&gt;As mentioned in part one pull quotes don&#39;t naturally lend themselves to the web because it is repeated content and the effect is difficult and lost on smaller devices.&lt;/p&gt;
 &lt;p&gt;Interestingly though, Rachel Andrew&#39;s CSS Day 2025 presentation called &lt;a href=&quot;https://youtu.be/NfwDP9shxNQ?t=2445&quot;&gt;Multicol and fragmentation&lt;/a&gt; talks about the idea of the web being more like printed pages going forward. She introduces the idea of &amp;quot;exclusions&amp;quot; (to normal flow). The examples she shows look much like the patterns designers often try to recreate with pull quotes.&lt;/p&gt;
