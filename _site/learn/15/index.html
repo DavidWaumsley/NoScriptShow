@@ -39,23 +39,23 @@
 </div><article>
 <div class="[ flow ][ page-layout ]">
 <p><strong>Show Notes:</strong></p>
-<p>In <a href="/24/">part one</a> we attempted to rationalize the HTML mark-up needed for testimonial, regular quotes and pull quotes. Here we are looking quickly at styling them with CSS.</p>
+<p>In <a href="/24/">part one</a> we attempted to rationalize the HTML mark-up needed for testimonials, regular quotes and pull quotes. Here we are looking quickly at styling them with CSS.</p>
 <h2 id="testimonials">Testimonials</h2>
 <p>It's common for these to be displayed as a carousel, but until this can be achived in an accessible way without JavaScript we (for reasons associated with the show's name) look for simpler and more resilient options like:</p>
 <ul>
 <li>The &quot;Reel&quot; a horizontal scrolling technique used on <a href="https://every-layout.dev/">Every Layout </a>.</li>
-<li>Details and Summary as used on our demo <a href="https://band.here24.co/">here</a>.</li>
+<li>&lt;details&gt; and &lt;summary&gt; as used on our demo <a href="https://band.here24.co/">here</a>.</li>
 </ul>
 <p>An example of a 3 column testimonial can be found on our <a href="https://intrinsicframework.here24.co/testimonials/">intrinsic framework</a>.</p>
 <p>The details and summary used on the band website demo combines the RAM technique <a href="https://intrinsicframework.here24.co/maximum-column-grid/">shown here</a> with the disclosure widget example <a href="https://intrinsicframework.here24.co/disclosure-widget/">shown here</a>.</p>
 <h2 id="pull-quotes">Pull Quotes</h2>
-<p>As mentioned in part one pull quotes don't naturally lend themselves to the web because it is repeated content and the effect is difficult and lost on smaller devices.</p>
+<p>As mentioned in <a href="/24/">part one</a> pull quotes don't naturally lend themselves to the web as the effect is complex, lost on smaler devices and is a repeat of content that does not make sense (by default) to those using screen readers.</p>
 <p>Interestingly though, Rachel Andrew's CSS Day 2025 presentation called <a href="https://youtu.be/NfwDP9shxNQ?t=2445">Multicol and fragmentation</a> talks about the idea of the web being more like printed pages going forward. She introduces the idea of &quot;exclusions&quot; (to normal flow). The examples she shows look much like the patterns designers often try to recreate with pull quotes.</p>
   <div class="popout center-me">
   <img src="/img/exclusions.webp" loading="lazy" width="1200" height="665" alt="screenshot from Rachel Andrew's talk showing print examples of large text excluded from normal document flow.">
 <p><small> <em> A screenshot from Rachel Andrew's talk.</em></small></p>
 </div>
-<p>The No Script Show uses a <a href="https://layout-breakouts-builder.vercel.app/">named grid lines technique</a> to allow some content to break out of the narrow more readable confines allowed for written text (as seen with the above image). This can be used to create somthing close to a typical pull quote pattern as shown <a href="https://band.here24.co/music/street-lights-album">here</a> and <a href="https://band.here24.co/music/shadow-album">here</a>.</p>
+<p>The No Script Show uses a <a href="https://layout-breakouts-builder.vercel.app/">named grid lines technique</a> to allow some content to break out of the narrow (more readable) confines allowed for written text (as seen with the above image). This can be used to create somthing close to a typical pull quote pattern as shown <a href="https://band.here24.co/music/street-lights-album">here</a> and <a href="https://band.here24.co/music/shadow-album">here</a>.</p>
 <h2 id="regular-quotes">Regular Quotes</h2>
 <p>Over time we will be building up some copy and paste styles, but a good starting point is <a href="https://css-tricks.com/getting-creative-with-quotes/">this recent post on CSS tricks by Andy Clarke</a>.</p>
 
@@ -110,7 +110,7 @@
 <small><span aria-hidden="true">©</span> Copyright since 2023 | <a href="/privacy/"> Privacy </a>  | <a href="/accessibility-statement/"> Accessibility</a>  | <em>Built with <a href="https://www.11ty.dev/">Eleventy v3.1.0</a></em>
 </small>
 </div>
-</footer><!-- This page `/learn/15/` was built on 2025-08-19T21:00:29.442Z -->
+</footer><!-- This page `/learn/15/` was built on 2025-08-19T21:12:32.962Z -->
 <script type="module" src="/dist/ffsqCfr5qq.js"></script>		
 </body>
 </html>
