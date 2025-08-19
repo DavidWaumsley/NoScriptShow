@@ -109,7 +109,7 @@ s/he says:
     <updated>2025-08-19T00:00:00Z</updated>
     <id>https://noscript.show/learn/15/</id>
     <content type="html">&lt;p&gt;&lt;strong&gt;Show Notes:&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;In &lt;a href=&quot;https://noscript.show/24/&quot;&gt;part one&lt;/a&gt; we attempted to rationalize the HTML mark-up needed for testimonial, regular quotes and pull quotes. Here we are looking at styling them with CSS.&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&quot;https://noscript.show/24/&quot;&gt;part one&lt;/a&gt; we attempted to rationalize the HTML mark-up needed for testimonial, regular quotes and pull quotes. Here we are looking quickly at styling them with CSS.&lt;/p&gt;
 &lt;h2 id=&quot;testimonials&quot;&gt;Testimonials&lt;/h2&gt;
 &lt;p&gt;It&#39;s common for these to be displayed as a carousel, but until this can be achived in an accessible way without JavaScript we (for reasons associated with the show&#39;s name) look for simpler and more resilient options like:&lt;/p&gt;
 &lt;ul&gt;
@@ -123,6 +123,9 @@ s/he says:
   &lt;img src=&quot;https://noscript.show/img/exclusions.webp&quot; loading=&quot;lazy&quot; width=&quot;1200&quot; height=&quot;665&quot; alt=&quot;screenshot from Rachel Andrew&#39;s talk showing print examples of large text excluded from normal document flow.&quot;&gt;
 &lt;p&gt;&lt;small&gt; &lt;em&gt; A screenshot from Rachel Andrew&#39;s talk.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
 &lt;/div&gt;
+&lt;p&gt;The No Script Show uses a named grid lines technique to allow some content to break out of the narrow more readabe confines allowed for written text (as seen with the above image). This can be used to create somthing close to a typical pull quote pattern as shown &lt;a href=&quot;https://band.here24.co/music/street-lights-album&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;https://band.here24.co/music/shadow-album&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;regular-quotes&quot;&gt;Regular Quotes&lt;/h2&gt;
+&lt;p&gt;Over time we will be building up some copy and paste style, but a good starting point is &lt;a href=&quot;https://css-tricks.com/getting-creative-with-quotes/&quot;&gt;this recent post on CSS tricks by Andy Clarke&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   <entry>

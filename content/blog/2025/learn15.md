@@ -11,7 +11,7 @@ draft: true
 
  **Show Notes:**
 
- In [part one](/24/) we attempted to rationalize the HTML mark-up needed for testimonial, regular quotes and pull quotes. Here we are looking at styling them with CSS. 
+ In [part one](/24/) we attempted to rationalize the HTML mark-up needed for testimonial, regular quotes and pull quotes. Here we are looking quickly at styling them with CSS. 
 
 ## Testimonials
 
@@ -33,3 +33,10 @@ Interestingly though, Rachel Andrew's CSS Day 2025 presentation called [Multicol
 
   <small> <em> A screenshot from Rachel Andrew's talk.</em></small>
 </div>
+
+The No Script Show uses a named grid lines technique to allow some content to break out of the narrow more readabe confines allowed for written text (as seen with the above image). This can be used to create somthing close to a typical pull quote pattern as shown [here](https://band.here24.co/music/street-lights-album) and [here](https://band.here24.co/music/shadow-album).
+
+## Regular Quotes
+
+Over time we will be building up some copy and paste style, but a good starting point is [this recent post on CSS tricks by Andy Clarke](https://css-tricks.com/getting-creative-with-quotes/).
+
