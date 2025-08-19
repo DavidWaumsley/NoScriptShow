@@ -84,11 +84,23 @@
    The aside element can be used for typographical effects like pull quotes or sidebars
    &lt;/blockquote&gt;
 &lt;p&gt;Jeremy Keith set off debate in 2016 by asking &lt;a href=&quot;https://adactio.com/journal/11102&quot;&gt;Why do pull quotes exist on the web?&lt;/a&gt; It&#39;s a great question given it is a duplication of content that visually does not look impressive on small devices. It is also not easy to code with many employing JavaScript to achieve it.&lt;/p&gt;
-&lt;p&gt;Interestingly, Rachel Andrew&#39;s CSS Day 2025 presentation called &lt;a href=&quot;https://youtu.be/NfwDP9shxNQ?t=2445&quot;&gt;Multicol and fragmentation&lt;/a&gt; talks about the idea of the web being more like printed pages going forward. She introduces the idea of &amp;quot;exclusions&amp;quot; (to normal flow). The examples she shows look much like the patterns designers often try to recreate with pull quotes.&lt;/p&gt;
-  &lt;div class=&quot;popout center-me&quot;&gt;
-  &lt;img src=&quot;https://noscript.show/img/exclusions.webp&quot; loading=&quot;lazy&quot; width=&quot;1200&quot; height=&quot;665&quot; alt=&quot;screenshot from Rachel Andrew&#39;s talk showing print examples of large text excluded from normal document flow.&quot;&gt;
-&lt;p&gt;&lt;small&gt; &lt;em&gt; A screenshot from Rachel Andrew&#39;s talk.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
-&lt;/div&gt;
+&lt;h3 id=&quot;regular-quotes&quot;&gt;Regular quotes&lt;/h3&gt;
+&lt;p&gt;To keep things easier for both sighted and none sighted users it seem to make sense to cite before the quote.&lt;/p&gt;
+&lt;pre class=&quot;language-html&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;p&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;In NAME&#39;s article/song/presentation
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;cite&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;https:/www.example/&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;NAME OF THE WORK
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;cite&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; 
+s/he says:
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;p&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;blockquote&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+ THE QUOTE
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;blockquote&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- or &amp;lt;q&gt;&amp;lt;/q&gt; if inline  --&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;block-or-inine-quotes&quot;&gt;Block or inine quotes?&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://heydonworks.com/article/the-blockquote-element/&quot;&gt;Haydon Pickering &lt;/a&gt; points out that the term “block quotation” precedes the precedes the blockquote element. The Chicago Manual Of Style recommends block quotations are over 100 words in length. Some examples in the specification have very short quotes. It remains unclear when you should use one over the other.&lt;/p&gt;
 &lt;h2 id=&quot;styling&quot;&gt;Styling&lt;/h2&gt;
 &lt;p&gt;Please join us for part two video only episode where we look at adding CSS.&lt;/p&gt;
 </content>
