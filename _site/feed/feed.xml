@@ -19,12 +19,12 @@
 &lt;h2 id=&quot;where-we-quote&quot;&gt;Where we quote&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;In testimonials for credibility and social proof.&lt;/li&gt;
-&lt;li&gt;In comments for engagement.&lt;/li&gt;
+&lt;li&gt;In blog comments for engagement.&lt;/li&gt;
 &lt;li&gt;In &amp;quot;pull&amp;quot; quotes for style and highlighting.&lt;/li&gt;
-&lt;li&gt;In block and inline quotes for proof in our arguments.&lt;/li&gt;
+&lt;li&gt;In articles for to support our arguments.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;the-difficulty-with-semantic-html&quot;&gt;The difficulty with semantic HTML&lt;/h2&gt;
-&lt;p&gt;We have the blockquote, q and cite elements, but the specifications have changed over time and don’t entirely line up with our design patterns.&lt;/p&gt;
+&lt;p&gt;We have the  &amp;lt;blockquote&amp;gt;, &amp;lt;q&amp;gt; and &amp;lt;cite&amp;gt; elements, but the specifications have changed over time and don’t entirely line up with our design patterns.&lt;/p&gt;
 &lt;p&gt;Michelle Barker&#39;s article &lt;cite&gt;&lt;a href=&quot;https://css-irl.info/ive-been-doing-blockquotes-wrong/&quot;&gt;I’ve Been Doing Blockquotes Wrong&lt;/a&gt;&lt;/cite&gt; highlights how difficult HTML can be at times.&lt;/p&gt;
 &lt;p&gt;The official HTML specifications are with the Web Hypertext Application Technology Working Group (WHATWG). This tells us:&lt;/p&gt;
 &lt;ul&gt;
@@ -43,7 +43,7 @@
 &lt;p&gt;Many &lt;a href=&quot;https://html5doctor.com/cite-and-blockquote-reloaded/&quot;&gt;expert sources&lt;/a&gt; have encouraged us to use blockquotes in ways that seem technically incorrect including &lt;a href=&quot;https://wordpress.com/support/wordpress-editor/blocks/quote-block/#insert-your-quote&quot;&gt;platforms&lt;/a&gt; (&lt;a href=&quot;https://theadminbar.com/accessibility-weekly/coding-blockquotes/&quot;&gt;code example&lt;/a&gt;).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://heydonworks.com/article/the-blockquote-element/&quot;&gt;Haydon Pickering &lt;/a&gt; suggests placing blockquotes and cites within figure and figcaption elements.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://heydonworks.com/article/the-blockquote-element/&quot;&gt;Haydon Pickering &lt;/a&gt; suggests placing blockquotes and cites within &amp;lt;figure&amp;gt; and  &amp;lt;figcaption&amp;gt; elements.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Adrian Roselli recommends against using figure as it&#39;s verbose for popular screen readers. However, his &lt;a href=&quot;https://adrianroselli.com/2023/07/blockquotes-in-screen-readers.html#Example07&quot;&gt;preferred approach&lt;/a&gt; breaks WHATWG rules as he uses cite within the blockquote and uses them for authors too.&lt;/p&gt;
