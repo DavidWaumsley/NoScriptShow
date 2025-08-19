@@ -34,7 +34,7 @@ Interestingly though, Rachel Andrew's CSS Day 2025 presentation called [Multicol
   <small> <em> A screenshot from Rachel Andrew's talk.</em></small>
 </div>
 
-The No Script Show uses a named grid lines technique to allow some content to break out of the narrow more readabe confines allowed for written text (as seen with the above image). This can be used to create somthing close to a typical pull quote pattern as shown [here](https://band.here24.co/music/street-lights-album) and [here](https://band.here24.co/music/shadow-album).
+The No Script Show uses a [named grid lines technique](https://layout-breakouts-builder.vercel.app/) to allow some content to break out of the narrow more readabe confines allowed for written text (as seen with the above image). This can be used to create somthing close to a typical pull quote pattern as shown [here](https://band.here24.co/music/street-lights-album) and [here](https://band.here24.co/music/shadow-album).
 
 ## Regular Quotes
 
