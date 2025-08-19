@@ -20,6 +20,10 @@ It's common for these to be displayed as a carousel, but until this can be achiv
 - The "Reel" a horizontal scrolling technique used on [Every Layout ](https://every-layout.dev/).
 - Details and Summary as used on our demo [here](https://band.here24.co/)
 
+An example 3 colunm testimonial can be found on our [intrinsic framework](https://intrinsicframework.here24.co/testimonials/).
+
+The details and summary used on the band website demo combines the RAM technique [shown here](https://intrinsicframework.here24.co/maximum-column-grid/) with the diclosure widget example [shown here](https://intrinsicframework.here24.co/disclosure-widget/).
+
 
 ## Pull Quotes
 
@@ -38,5 +42,5 @@ The No Script Show uses a [named grid lines technique](https://layout-breakouts-
 
 ## Regular Quotes
 
-Over time we will be building up some copy and paste style, but a good starting point is [this recent post on CSS tricks by Andy Clarke](https://css-tricks.com/getting-creative-with-quotes/).
+Over time we will be building up some copy and paste styles, but a good starting point is [this recent post on CSS tricks by Andy Clarke](https://css-tricks.com/getting-creative-with-quotes/).
 
