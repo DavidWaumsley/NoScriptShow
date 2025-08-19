@@ -43,23 +43,24 @@
 <ul>
 <li>In testimonials for credibility and social proof.</li>
 <li>In comments for engagement.</li>
-<li>In &quot;pull&quot; quotes for highlighting text and styling.</li>
-<li>In block and inline quotes for supporting our arguments.</li>
+<li>In &quot;pull&quot; quotes for style and highlighting.</li>
+<li>In block and inline quotes for proof in our arguments.</li>
 </ul>
-<h2 id="the-difficulty-creating-semantic-html">The difficulty creating semantic HTML</h2>
+<h2 id="the-difficulty-with-semantic-html">The difficulty with semantic HTML</h2>
 <p>We have the blockquote, q and cite elements, but the specifications have changed over time and don’t entirely line up with our design patterns.</p>
 <p>Michelle Barker's article <cite><a href="https://css-irl.info/ive-been-doing-blockquotes-wrong/">I’ve Been Doing Blockquotes Wrong</a></cite> highlights how difficult HTML can be at times.</p>
-<p>The official HTML specifications are with the Web Hypertext Application Technology Working Group (WHATWG). Here's what we can glean:</p>
+<p>The official HTML specifications are with the Web Hypertext Application Technology Working Group (WHATWG). This tells us:</p>
 <ul>
-<li>Since HTML5, quote elements are for <a href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element">external sources</a> only. Presumably to the page rather than the domain?</li>
-<li>The cite <strong>attribute</strong> is used to specify a URL that points to the source of a quotation. It's invisible to humans and most screen readers.</li>
-<li>The visible cite element should hold the title of a creative work (not an author) and should not be included in the quote element.</li>
-<li>Blockquotes are sectioning <strong>roots</strong>. It marks a distinct part of the content, it doesn't define a new section in the document's outline in the same way sectioning <strong>elements</strong> do (like aside, article, nav).</li>
+<li>Quote elements are for <a href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element">external sources</a> only. Presumably to the page rather than the domain?</li>
+<li>The cite <strong>attribute</strong> is used to specify a URL source. This is invisible to humans and most screen readers.</li>
+<li>The visible cite <strong>element</strong> is for the title of a creative work only and should not be included in the quote element.</li>
+<li>A blockquote is a sectioning <strong>root</strong>. It marks a distinct part of the content, but not part of document's outline as with sectioning <strong>elements</strong> (such as aside, article, nav).</li>
 </ul>
 <p><strong>This means:</strong></p>
 <ul>
 <li>We should not use quotation elements for (self quoting) pull quotes.</li>
-<li>Weirdly for accessibiity, the citation is orphaned from the quote &quot;section&quot;.</li>
+<li>We should not use cite elements for authors of quotes.</li>
+<li>The citation is orphaned from the quote &quot;section&quot;. Not ideal for accessibility.</li>
 </ul>
 <p><strong>It's hard to find consistant advice</strong></p>
 <p>Many <a href="https://html5doctor.com/cite-and-blockquote-reloaded/">expert sources</a> have encouraged us to use blockquotes in ways that seem technically incorrect including <a href="https://wordpress.com/support/wordpress-editor/blocks/quote-block/#insert-your-quote">platforms</a> (<a href="https://theadminbar.com/accessibility-weekly/coding-blockquotes/">code example</a>).</p>
@@ -68,20 +69,21 @@
 <p><a href="https://heydonworks.com/article/the-blockquote-element/">Haydon Pickering </a> suggests placing blockquotes and cites within figure and figcaption elements.</p>
 </li>
 <li>
-<p>Adrian Roselli recommended against using figure as it is verbose for popular screen readers. But, his <a href="https://adrianroselli.com/2023/07/blockquotes-in-screen-readers.html#Example07">preferred approach</a> breaks with WHATWG as he uses cite within the blockquote and puts authors in there too.</p>
+<p>Adrian Roselli recommends against using figure as it is verbose for popular screen readers. However, his <a href="https://adrianroselli.com/2023/07/blockquotes-in-screen-readers.html#Example07">preferred approach</a> breaks WHATWG rules as he uses cite within the blockquote and uses them for too.</p>
 </li>
 <li>
-<p>Like Adrian Roselli, the <a href="https://design-system.w3.org/components/quote.html">W3C design system</a> uses a footer element to cite an author Unlike him, they do not use the cite element because of the WHATWG specification.</p>
+<p>The <a href="https://design-system.w3.org/components/quote.html">W3C design system</a> uses a footer element to cite an author Unlike Adrian Roselli, they do not use the cite element because of the WHATWG specifications.</p>
 </li>
 </ul>
-<p>Looking at design systems for local governments we find many other variations. Probably becasue changes in the orginal W3C documentation was not carried forward to WHATWG.</p>
+<p>Design systems for local governments reveal many other variations. Probably due to changes in the orginal W3C documentation was not carried forward to WHATWG.</p>
 <h2 id="our-approach-to-the-html">Our approach to the HTML</h2>
-<p>As we don’t have the standing or experience to influence specifications like Haydon Pickering, Adrian Roselli or Michelle Barker we'll try and stick to the WHATWG specification and be consistent in that from here on (until told otherwise).</p>
+<p>We don’t have the standing to influence specifications like Haydon Pickering, Adrian Roselli or Michelle Barker so we'll stick to  WHATWG rules to be consistent from here on (until told otherwise).</p>
 <h3 id="testimonials">Testimonials</h3>
 <p>The typical pattern is the external quote followed by the author's name sometimes with a link to their organisation and image of them (<a href="https://band.here24.co/">example</a>).</p>
 <p>For this we will use the W3C design systems approach of not using cite, but putting the author credentials in a footer element within the block quote.</p>
-<p>If appropriate we will add the invisible cite attribute. If the testimonial contains a heading the markup would change depending on whether the heading was part of the original quote. If it was, we would add the heading as part of the quote.</p>
-<p>If not (in the case of us summarising with a header) we'd use an <a href="https://html.spec.whatwg.org/multipage/sections.html#the-article-element">article</a>.</p>
+<p>If there is a URL we will add the invisible cite attribute.</p>
+<p>If the testimonial contains a heading the markup would change depending on whether the heading was part of the original quote. If it was, we would add the heading as part of the quote.</p>
+<p>If not we'd use an <a href="https://html.spec.whatwg.org/multipage/sections.html#the-article-element">article</a> as below.</p>
 <pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">></span></span>Review Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span><span class="token punctuation">></span></span>
@@ -89,10 +91,14 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">></span></span> — Reviewer Name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">></span></span> </code></pre>
+<div class="side-note">
+<p> <strong>Note:</strong> Google's review snippets can not be <a href="https://developers.google.com/search/docs/appearance/structured-data/review-snippet#self-serving">self-serving</a>.
+</p>
+</div>
 <h3 id="comments-blog-posts">Comments (blog posts)</h3>
 <p>According to <a href="https://html.spec.whatwg.org/multipage/sections.html#the-article-element">WHATWG</a></p>
  <blockquote>
- When article elements are nested, the inner article elements represent articles that are in principle related to the contents of the outer article. For instance, a blog entry on a site that accepts user-submitted comments could represent the comments as article elements nested within the article element for the blog entry.
+ A blog entry on a site that accepts user-submitted comments could represent the comments as article elements nested within the article element for the blog entry.
  </blockquote>
 <p>This is what the classic WordPress comment system does.</p>
 <h3 id="pull-quotes">Pull quotes</h3>
@@ -154,7 +160,7 @@
 <small><span aria-hidden="true">©</span> Copyright since 2023 | <a href="/privacy/"> Privacy </a>  | <a href="/accessibility-statement/"> Accessibility</a>  | <em>Built with <a href="https://www.11ty.dev/">Eleventy v3.1.0</a></em>
 </small>
 </div>
-</footer><!-- This page `/24/` was built on 2025-08-18T21:08:11.323Z -->
+</footer><!-- This page `/24/` was built on 2025-08-19T09:58:58.869Z -->
 <script type="module" src="/dist/ffsqCfr5qq.js"></script>		
 </body>
 </html>
