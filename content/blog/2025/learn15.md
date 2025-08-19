@@ -20,7 +20,7 @@ It's common for these to be displayed as a carousel, but until this can be achiv
 - The "Reel" a horizontal scrolling technique used on [Every Layout ](https://every-layout.dev/).
 - Details and Summary as used on our demo [here](https://band.here24.co/).
 
-An example 3 colunm testimonial can be found on our [intrinsic framework](https://intrinsicframework.here24.co/testimonials/).
+An example of a 3 column testimonial can be found on our [intrinsic framework](https://intrinsicframework.here24.co/testimonials/).
 
 The details and summary used on the band website demo combines the RAM technique [shown here](https://intrinsicframework.here24.co/maximum-column-grid/) with the diclosure widget example [shown here](https://intrinsicframework.here24.co/disclosure-widget/).
 
