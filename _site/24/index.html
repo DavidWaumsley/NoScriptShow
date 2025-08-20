@@ -2,7 +2,8 @@
 <html lang="en-gb" data-theme="light"><head>
  <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Don’t quote us on this!</title><link rel="stylesheet" href="/dist/8OL1z9IymT.css"><link rel="preload" href="/fonts/UbuntuMono-Bold.woff2" as="font" type="font/woff2" crossorigin="">
+<title>Don’t quote us on this!</title><link rel="stylesheet" href="/dist/8OL1z9IymT.css">
+<link rel="preload" as="image" href="https://i.ytimg.com/vi_webp/L00mGpTsY2E/maxresdefault.webp"><link rel="preload" href="/fonts/UbuntuMono-Bold.woff2" as="font" type="font/woff2" crossorigin="">
 <link rel="preload" href="/fonts/UbuntuMono-Regular.woff2" as="font" type="font/woff2" crossorigin=""><meta name="robots" content="noai, noimageai">
 <link rel="canonical" href="https://noscript.show/24/">
 <meta name="google-site-verification" content="_raK6guBs21bG6-xAhhDylzso1KnDXGzBYvWd7HFFg8"><link rel="icon" type="img/x-icon" href="/svg/favicon.svg">
@@ -11,12 +12,10 @@
 <meta name="description" content="Looking at the problem with testimonials, blockquotes, pull quotes and the cite element."><link rel="alternate" href="https://noscript.show/feed/feed.xml" type="application/atom+xml" title="No Script Show. Making Websites simple again."><meta property="og:type" content="website">
 <meta property="og:url" content="https://noscript.show/24/">
 <meta property="og:title" content="Don’t quote us on this!">
-<meta property="og:description" content="Looking at the problem with testimonials, blockquotes, pull quotes and the cite element.">
-<meta property="og:image" content="https://noscript.show/img/og-image.webp"><meta property="twitter:card" content="summary_large_image">
+<meta property="og:description" content="Looking at the problem with testimonials, blockquotes, pull quotes and the cite element."><meta property="og:image" content="https://i.ytimg.com/vi_webp/L00mGpTsY2E/maxresdefault.webp"><meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://noscript.show/24/">
 <meta property="twitter:title" content="Don’t quote us on this!">
-<meta property="twitter:description" content="Looking at the problem with testimonials, blockquotes, pull quotes and the cite element.">
-<meta property="twitter:image" content="https://noscript.show/img/og-image.webp">
+<meta property="twitter:description" content="Looking at the problem with testimonials, blockquotes, pull quotes and the cite element."><meta property="twitter:image" content="https://i.ytimg.com/vi_webp/L00mGpTsY2E/maxresdefault.webp">
 <meta name="generator" content="Eleventy v3.1.0">   
 </head><body id="top">
 <a href="#skip" class="[ skip-link ]">Skip to main content</a>
@@ -33,8 +32,14 @@
 </ul>
 </nav>
 </header><main class="[ page-layout ] [ flow ]" id="skip">		
-<div class="[ popout ]"><div class="[ center-me ]">
-<h1 class="[ post-title-only ]" id="don-t-quote-us-on-this">Don’t quote us on this!</h1></div><div class="right-me">
+<div class="[ popout ]">
+<h1 class=" [ visually-hidden ]" id="don-t-quote-us-on-this">Don’t quote us on this!</h1>
+<div class="[ popout ]">
+<lite-youtube videoid="L00mGpTsY2E" playlabel="Play: Don’t quote us on this!" style="background-image: url('https://i.ytimg.com/vi_webp/L00mGpTsY2E/maxresdefault.webp');">
+  <a href="https://youtube.com/watch?v=L00mGpTsY2E" class="lyt-playbtn" title="Play Video">  
+  <span class="lyt-visually-hidden">Play Video: Don’t quote us on this!</span>
+ </a> 
+</lite-youtube><div class="right-me">
 <small><strong>Published: </strong><time datetime="2025-08-20">20 August 2025</time></small>
 </div><article>
 <div class="[ flow ][ page-layout ]">
@@ -107,7 +112,7 @@
    </blockquote>
 <p>Jeremy Keith set off debate in 2016 by asking <a href="https://adactio.com/journal/11102">Why do pull quotes exist on the web?</a> It's a great question given it is a duplication of content that visually does not look impressive on small devices. It is also not easy to code with many employing JavaScript to achieve it.</p>
 <h3 id="regular-quotes">Regular quotes</h3>
-<p>To keep things easier for both sighted and none sighted users it seem to make sense to cite before the quote.</p>
+<p>To keep things easier for both sighted and non-sighted users it seem to make sense to cite before the quote.</p>
 <pre class="language-html" tabindex="0"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>In NAME's article/song/presentation
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cite</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https:/www.example/<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>NAME OF THE WORK
@@ -125,21 +130,173 @@ s/he says:
 <p>Please join us for <a href="/learn/15/">part two</a> where we look at adding styling with CSS (this is a video only episode).</p>
 <h2 id="mentioned">Mentioned</h2>
 <p><a href="https://survey.devographics.com/en-US/survey/state-of-html/2025">The State of HTML 2025</a></p>
-
+<details> 
+<summary>Transcript</summary>
+<p>[00:00:06] <strong>Nathan Wrigley:</strong> Hello there and welcome to the No Script Show. This is the fourth in our series, looking at components that make up a website. Today we're looking at testimonials, block quotes, pull quotes, and the site elements and how these are most likely coded wrongly.</p>
+<p>As with other episodes in this series, we'll be considering these from a technical design, accessibility, and SEO perspective, and we'll follow up this chat with a YouTube video looking at some coded examples. This time it is slightly different in that we will be focusing on the HT RL markup in this podcast, as there is a surprising amount to cover.</p>
+<p>And CSS styling is what we'll cover in the follow up video only content. As always Joined by David Wamsley, who's over there? Hello, David? Hello? Hello? Nathan Wrigley. You're sporting a slightly different background.</p>
+<p>[00:00:57] <strong>David Waumsley:</strong> Yes, I'm in London, usually I'm in India. but we're a bit closer. We were almost close actually.</p>
+<p>Yeah. we nearly got to see each other. Yeah. It all happened in this time, but yes. anyway, let me move on to this. 'cause you were the one who really set me off on doing this topic a bit earlier. We would've done it anyway because you shared with me a video by Kevin Powell, called is HTML the Hardest Language, and he was demonstrating with his, followers and everything, how.</p>
+<p>Everyone, he gave them a card component to code up and everybody did it in slightly different ways, which really asked you that's what is the semantic way. And this really reminded me of a post by or series by Hayden Pickering where he is looking at various, has HTML elements and. It really highlights the fact that there's a lot of confusion on how to do HTML and it really caught my attention, the block quote one that he did and the site element.</p>
+<p>So it set me off experimenting about, how, 'cause we're trying to set up our own, if you like, design system and have a consistent way of marking things up. And yeah. So I went on a bit of a journey. Yeah, sorry</p>
+<p>[00:02:13] <strong>Nathan Wrigley:</strong> about that. All of that. With me DMing you on blue sky and set you off on a complete, laundry list of things to cover.</p>
+<p>So apologies about that, but hopefully there's some useful content in here. Should we switch to your screen? Do you wanna do that one? Yeah, let's do that. Okay. We've</p>
+<p>[00:02:28] <strong>David Waumsley:</strong> got a lot of notes to get through actually here. I'd be largely reading these out I think, 'cause the research has been done. Yep. So let's talk about, so we called this one.</p>
+<p>don't quote us on this, or I should mention as well. I'll put a little note. It actually is already in there that another reason for doing this is that the state of HTML 2025 is still open as a survey. I, haven't done it myself, but I will. No, I</p>
+<p>[00:02:54] <strong>Nathan Wrigley:</strong> took a quick look at it. I didn't fill it out, but I will come back and fill it out.</p>
+<p>It's not a long enterprise, it's fairly quick, but, obviously somebody somewhere needs to know where we're all at. and yeah. Useful to fill out. I would've thought so. We'll provide the link in the show notes,</p>
+<p>[00:03:09] <strong>David Waumsley:</strong> Yeah, it's down there in my. So for those who are on YouTube, you will be able to follow along with our notes.</p>
+<p>So I put first where we quote, where we use quotes. So in testimonials for credibility and social proof, we use, in blog comments for engagement, effectively where user submissions are a quote Yeah. Of some form. Yep. in pull quotes for style and highlighting. I'm not sure. do you know what?</p>
+<p>When I say pull quotes, does that mean</p>
+<p>[00:03:40] <strong>Nathan Wrigley:</strong> anything to you? Do you</p>
+<p>[00:03:41] <strong>David Waumsley:</strong> have an expectation?</p>
+<p>[00:03:42] <strong>Nathan Wrigley:</strong> No, I'm, basically imagining the, things that you've described previously. So to me, a pull quote is a block quote. I, genuinely wouldn't have known what the difference was.</p>
+<p>[00:03:53] <strong>David Waumsley:</strong> Yeah, it's all, it's just interesting. We'll, move on to this one.</p>
+<p>'cause there's an article by Andy Clark where his interpretation of a poll quote is different to what I think, I'm talking about here. But generally it's a self quote, I think, where we put it. Usually in an article where there's this big thing that gives you a, some styling, it gives you some highlight of text that's to come.</p>
+<p>So it's a, okay. It's duplicate content. and we use it in articles, for, oh, I've made a. To support our arguments. Okay. often,</p>
+<p>[00:04:25] <strong>Nathan Wrigley:</strong> it's fairly widely used throughout the web. I think the, place that I see it most is, comments on blogs and things like that are out of fashion, aren't they these days.</p>
+<p>But I see it all over on testimonials. you, somehow want to, I don't know, link the words to the image or the person's name or something. And in order to do that, you adopt this different style and maybe some iconography around it. And,</p>
+<p>[00:04:49] <strong>David Waumsley:</strong> yeah. Yeah, exactly. this is the interesting bit really of what we're gonna get stuck on, the difficulties with Symantec HTML.</p>
+<p>So we have the block quote element, the Q element for inline quotations. We have the site element, which Hayden Pickering says really ought to be called citation rather than site, but, But the thing is with this, the specifications have changed over time and they don't entirely line up with the design patterns that we use.</p>
+<p>And after reading Hayden Pickin's article, I also stumbled across Michelle Barker's article, which says what exactly what I experienced. I've been doing block quotes wrong. Through, listening to or reading his article, she realized that, and I've got it up over here. And there was quite a lot of, and this has helped me look into this more because there's a lot of comments here on that by some really.</p>
+<p>quite clever people. She's a very clever person as well. She writes some of the M dms, we've mentioned her before. Yeah. Articles and, that was</p>
+<p>[00:05:54] <strong>Nathan Wrigley:</strong> me saying comments or dad and Yeah. No, there's a load here. I, on this</p>
+<p>[00:05:58] <strong>David Waumsley:</strong> topic. I think it's particularly popular. Yeah. and also she's actually using eleventy as well on that.</p>
+<p>Oh, interesting. Add in our comments myself. Yeah. yeah, so that was quite interesting. But the, I think the, a lot of the changes due to the fact that the official HCML specifications are with the web hypertext, applications, technology working group. Easy for you to say no. What w what? What wg, I think, 'cause it's, the working group, so we'll call it what, I dunno how people say it, but we'll say what working group.</p>
+<p>I think that's be easy. So what they tell us through their documentation, which I've got over here, is go back that quote elements are for external sources. Oh, so we should only be, so if we're using those, if we're using a block quote, it should be for someone else's comment, not our own, but presumably, because it's not spelt out.</p>
+<p>This is to the page, at the page level rather than the domain level. But. I'm not sure that's unclear. Okay. the site attribute, attribute being the site equals quotation mark should be where you put a URL to that source of the quote. Okay. Okay. And it's invisible to humans and most screen readers, but the visible site element, the, one, the actual tag itself is for the title of Creative Works only.</p>
+<p>and it, and there's another element of this, that the site element shouldn't be included in the quote element, so it shouldn't be within the tags of our block quote.</p>
+<p>[00:07:44] <strong>Nathan Wrigley:</strong> So there's a lot more depth to this than I imagined. That's yes. rules upon rules, not rules as such recommendations, But nevertheless, I did not know that there was that level of granularity, so that's fascinating.</p>
+<p>[00:07:57] <strong>David Waumsley:</strong> It is, and it's also quite confusing as well because it's some of this comes in, so this idea that it's only for the title of Creative Works only rather than an author comes only after HTML five. I know that's been around for a long time, so there has been changes over time and it's.</p>
+<p>Disputed. I, think Jeremy Keith is one person who was trying to argue against that at the time. anyway, I'm going into things that we don't need to, and the last point that I got here is that the block quote is a section in route, so it marks a distinct. Of content, but is not part of the documents outlined in the way that section elements such as side or article or Nava.</p>
+<p>So with screen readers, they will be able to look at different makeup of a page or something by looking to those section elements, but it is still something distinct. What I wrote down here is that it means that we should not use quotation elements for self quoting, pull quotes, and that's what I generally think.</p>
+<p>A pull quote is something where you are referencing something within your own document to stylize it and say, here's a bit of a teaser of what's to come. So we shouldn't be using, the block quote tag really for our pulled quotes. we shouldn't use the site element for authors of quotes.</p>
+<p>And the last point on is that citations are, or orphaned from the quote, which is not ideal for accessibility because again, it's Hayden Pickering, it picks up on how uncomfortable that is because it's a little bit, I think he does make this example, but it's a little bit like how, if you. Have on a blog archive page, these read more buttons that you have, which are separate to, or links separate to the description, then it's very difficult.</p>
+<p>It's not, It's not, yeah, it's outta context with it. So I think that's a similar thing happening, but really that's what we're encouraged to do if we go with What wg</p>
+<p>[00:10:00] <strong>Nathan Wrigley:</strong> have you managed to memorize that in your head now, such that if you were just writing out HTML and you were trying to deploy citations, block quotes and so on, have you got that cascade of things figured out or would you have to go back to that and say, which example does it fit into here?</p>
+<p>I think I've got it sorted</p>
+<p>[00:10:19] <strong>David Waumsley:</strong> out now. Yeah. But that's what I'm trying to do for this one. We can have something is, is the no script shows way of doing it, I think. But this is the next thing. I've put it on my notes here that, this is where it gets really difficult 'cause it's hard to find consistent advice.</p>
+<p>So we have. Many expert sources and I've only actually put one in here and that is, lemme just go back here, is the HTML five doctor, which is supposed to be the place to really get, to learn all your stuff. it says different things Wow. To watch. Yeah. so that becomes a problem.</p>
+<p>And we also have, as well, with WordPress as well, it is quite interesting because if we go to. press.com and it looks at it's, quote block there. So it works against it as well, because what it literally says is that you can use this, it will add in your citation will be the author, and there's nothing on that.</p>
+<p>and the citation was in with the block quote. So technically according to what wg Yeah, what WordPress does on there. And there's a code example on here. it calls no problems for. and this will make sense for, there's an article here looking up the Block quotes by Amber Hines, who's a big accessibility person in WordPress.</p>
+<p>And she sees no issue with how that does it. He thinks she's doing it semantic, and I think you'll understand why she doesn't see an issue with this one. Yeah, maybe she's not looked into it, but let's have a look. if we go here. So there is that side of it. So technically these. Experts there, and this platform is wrong according to the present specifications.</p>
+<p>But also when we start to get to experts like Hayden Pickin in his article, what he suggests is a get around the fact with, lemme just go to his posts for those who can see, that one. Yeah. Yeah. So in terms of accessibility as a problem with the idea that you would put the citation. Separate to the quote, because it's not programably linked together.</p>
+<p>Yep. Yep. So his way around this is to put everything in a figure. So you have a figure. Then a block quote, and then you have a fig caption, which contains your citation within there. Citations</p>
+<p>[00:12:42] <strong>Nathan Wrigley:</strong> in there.</p>
+<p>[00:12:43] <strong>David Waumsley:</strong> Yeah. So that's his approach. However, then we come to Adrian Ly, who's one of the big players when it comes to accessibility, who's gone and tested all the different ways that a screen reader will read these different ways of doing it.</p>
+<p>Oh, interesting. Okay. Yep. Yeah. So his own approach is to not do that. What he recommends is because it's so verbose for screen readers, all the popular ones to read out, fig not to do that. Yeah. So he goes with block quote, and then he puts in a footer where he puts his citation and then closes the, block quote.</p>
+<p>Yeah. So that's his way as an accessibility expert who doesn't, let me say that all of these people say this is how they've dealt with the situation. Not necessarily this is the way to do it. I don't think anybody feels confident in what rules we have at the moment, so, anyway, you could see a contradiction there.</p>
+<p>So you can go two different routes on that. And let's see, gosh, what, it's really surprising. Open a hole. Disagree. I know.</p>
+<p>[00:13:46] <strong>Nathan Wrigley:</strong> Isn't as fascinating. Yeah,</p>
+<p>[00:13:47] <strong>David Waumsley:</strong> I think attention's going to H-D-M-L-A lot more at the moment. it's been on CSS, but yeah. But I think we need to get these fundamentals right. And finally, the one that I think we are effectively going to use is the W three C design system.</p>
+<p>So if I just move on to this one, so it's similar to Adrian ly in the sense that there's no fig with this one. It's put in a block quote. Then it's adding a footer. Yeah. 'cause this is a section in route. It's perfectly fine to add in a footer element and, ending it with a block quote. So if you like, but what they, and they point out in the considerations.</p>
+<p>They point out the fact that, and this is really where it all goes wrong, there's been some leniency when HTML was decided by the W three C itself on their own documentation. But since. I think 2019, this has gone to the Living Standards Working Group, which is the what wg. And not everything that has been changed there has transferred over.</p>
+<p>So our official documentations may not be up to speed, if you like. This is where we get some of the confusion.</p>
+<p>[00:14:59] <strong>Nathan Wrigley:</strong> Yeah, I was gonna say officially then. It's really confusing officially.</p>
+<p>[00:15:03] <strong>David Waumsley:</strong> It's confusing. Officially. It's confusing. Yeah. Yeah. When you've got brilliant experts like that, but I think. I think the way for us to deal with it.</p>
+<p>and again, I went and had a little search around just what people did well, interestingly enough to search around what some of the people say they do and what they actually do as well doesn't always match. So they've changed. Okay. They've changed over time. Like we, we will be changing over time and when we go and look round, there's not much in the way of the big design systems out there for this specifically, but there is a lot of sort of local government, Design systems out there. So if you go and look at them again, they're all different variations. Gosh. Yeah. It's a, spaghetti, isn't it? It is. And yeah, I, just think it is due to this. And in fact, there's a point that was made on Michelle Barker's, I've been doing. Block quotes wrong. I think the last quote on here.</p>
+<p>Yes. This is by Amelia Bellamy Rhodes, and I know of her, she's on the working group for SVGs, I think so I've seen her name for this one, and that's it. How she's spelling it out how the three C spec was modified. If you allow two. Be a little bit more flexible to do what Jeremy Keith, I think years back wanted to do to be able to contain authors.</p>
+<p>So when I was pointing out that sort of WordPresses basically got it wrong in terms of the official spec, you can understand why it's like that? Yeah, because, We were generally leaning towards that, although I think, it would be better if it did have a little footer to separate the citation within the block quote.</p>
+<p>But, so that's really, I think, what we'll do, I think as we don't have the kind of standing and influence like people like Adrian Rosalie, Hayden Pickering, or Michelle Barker. I think we'll try and stick to the what WG rules. Okay. Just to get some consistency. Yeah.</p>
+<p>[00:16:59] <strong>Nathan Wrigley:</strong> Yeah.</p>
+<p>[00:16:59] <strong>David Waumsley:</strong> And, until we're told otherwise.</p>
+<p>[00:17:02] <strong>Nathan Wrigley:</strong> Okay. Yeah. Until they've finished that bun fight and, sorted it out, frankly. Yeah. Okay. Testimonials now then, is it?</p>
+<p>[00:17:10] <strong>David Waumsley:</strong> Yeah. So, rationalizing the code, so this took me some time to kinda work out, so exactly how we're laying things out. So a typical pattern, and I've got an example up here. On that sort of little demo site I made first, which we'll use at some point.</p>
+<p>A typical pattern for a testimonial might be something where we have what someone said about us, maybe a picture of the author and their name, and maybe a link to their organization. Or one of the other. and that's a sort of common pattern here, That would be straightforward. What we're doing here with something like that is that we'd be putting it all in a block quote.</p>
+<p>Yep. And using W three Cs and putting all of the stuff where their names, their image, their where they work, or their company or their t yeah. We would all go in that footer within a block quote, so that would be fine. there is the circumstance where. Sometimes you see with these, this pattern, you will see a header as well as the quote.</p>
+<p>sometimes, there's just a sort of summary of what the quotation</p>
+<p>[00:18:20] <strong>Nathan Wrigley:</strong> says. Oh, interesting. I'm trying to remember when I've seen that, but I, can't conjure it up. Okay.</p>
+<p>[00:18:26] <strong>David Waumsley:</strong> I think sometimes if you're taking from a source, that does that some, reviews do allow you to put the title and then like a name, like a too long</p>
+<p>[00:18:36] <strong>Nathan Wrigley:</strong> didn't read kind of thing where you summarize the quote.</p>
+<p>Is that what you mean? Yeah. You might just, Yeah. Like, stunning.</p>
+<p>[00:18:43] <strong>David Waumsley:</strong> And</p>
+<p>[00:18:43] <strong>Nathan Wrigley:</strong> then the quote, which is, yeah. Okay.</p>
+<p>[00:18:45] <strong>David Waumsley:</strong> Got it. they might just pull out the main, because we know people read titles and some of the review, things are set up, which is another point actually I should mention really. 'cause, just thinking about the SEO perspective on this one, when it comes to testimonials, we can't really use, that review markup, the rich.</p>
+<p>Text or the schema for that one because it can't be self-serving, so we can't say something. You can't use other people's quotes about us. yeah. To self serve. So for testimonials that, that doesn't become an issue. Anyway, thi this did make me think about that pattern. So if it was a pattern where, the.</p>
+<p>Header was part of the quote that was submitted by the user. Then I would just put a header three probably that would be the likely one, and then it would be the block quote. Okay. In the block quote, itself. Got it. but if it was one where we decided to sum up their block quote, then what I would do is wrap the whole thing in an article.</p>
+<p>Okay. Yeah. Again, this is another one where it's another Hayden Pickering, topic where he talks about article, and I think it's from him that I got this idea. 'cause when I thought of article as a tag, I tended to think</p>
+<p>[00:20:04] <strong>Nathan Wrigley:</strong> of just blog posts. Yeah. that's where my head goes. It, doesn't, in my head, it doesn't land as a container for more broad stuff, even though I know it should be.</p>
+<p>[00:20:13] <strong>David Waumsley:</strong> Yeah, and I think if we look at the actual spec for it, I won't pull it up here at the moment, but it actually says it's any sort of standalone element that you could use on its own. Yeah. So an article would be right for this, and I think it was Hayden Pickering or something. It said, is, and I think this is that way of looking at it, and now I think of it as like an article of clothing.</p>
+<p>[00:20:33] <strong>Nathan Wrigley:</strong> Oh, interesting. Okay. You do you know what</p>
+<p>[00:20:35] <strong>David Waumsley:</strong> I mean? It's like a pair of gloves or something. They stand aside, but they're not the entire thing. And, because we can use, yeah, because I think it's any sort of standalone. So I think it would be suitable. So that would be the semantic way. And I've put the code here, sorry for those who are just listening, but basically it would be the surrounding, wrapper, if you like, would be the article tag within that, then I'd put our header, Because we're making that up ourselves in that would be the block quote with its footer, with the reviewer's name, and then it would close with the block quote, and then finally the article wrapper so that you got article</p>
+<p>[00:21:11] <strong>Nathan Wrigley:</strong> with. Children of a heading and a block quote. And then inside the block quote, you've got your content paragraph, footer and so on.</p>
+<p>Interesting. Okay. yeah.</p>
+<p>[00:21:22] <strong>David Waumsley:</strong> I was wondering about comments as well. not that we've got them, but we're gonna have to get like blog</p>
+<p>[00:21:26] <strong>Nathan Wrigley:</strong> posts, that kind of thing. Yeah. So</p>
+<p>[00:21:28] <strong>David Waumsley:</strong> when we're inviting people to use a generated what, where they would fit in, and I think the official specification tells us this, what we can use, and that is a blog entry on a, this is.</p>
+<p>Quoting from them, a blog entry on a site that accepts user submitted comments could be represented as could, sorry, could represent the comments as article elements nested within the article element for the blog entry. So I wouldn't be using blog quotes for that kind of quoting, and we would just stick them in nested articles.</p>
+<p>Articles.</p>
+<p>[00:22:05] <strong>Nathan Wrigley:</strong> So you'd have articles nested within articles. Within, an article.</p>
+<p>[00:22:10] <strong>David Waumsley:</strong> Okay. Yeah. So I think that's how, it is interesting because I think later we'll try and put some form of commenting system on our own, site. So I think, it's interesting to see,</p>
+<p>[00:22:22] <strong>Nathan Wrigley:</strong> yeah. Especially given the user submitted nature of things.</p>
+<p>obviously with modern CMSs, you've got the capacity to, put things into a pending state, so they don't make it there. But if you're worried about SEO and things like that, then. User submitted content might really run against what you're trying to do, or I don't know, mention your commercial rivals with links and things like that, so there may be something there.</p>
+<p>Yeah,</p>
+<p>[00:22:46] <strong>David Waumsley:</strong> I did look, Michelle Barkers, I, because I was there, I thought I'd poke around at the code there and I noticed that her articles, which obviously she said to create the whole HTML for that one, we put in a block quote, which is seems appropriate. For it. but when you think about it, people just shove all sorts of stuff in there, which isn't necessarily a quote that might be quoting somebody else.</p>
+<p>It wouldn't fit the quote. So I actually think, and, when I looked at examples of at least classic WordPress sites that I've seen, I think most people have marked it up in the way that, what WG would suggested by using the Raptors articles in the, okay. Okay. So I think that's what we would do in that case.</p>
+<p>So pull quotes, Again, we've, what WG has given us, and I'm quoting here, is the aside element can be used for typographical effects, pull quotes or sidebars. So it literally mentions where we can use the aside. so as a sidebar,</p>
+<p>[00:23:48] <strong>Nathan Wrigley:</strong> the aside being a side.</p>
+<p>[00:23:51] <strong>David Waumsley:</strong> because they've spec specified pull quotes.</p>
+<p>So if you like Paul quote, is that duplicate of content that we put on somewhere in style separately? It's an aside to our main article.</p>
+<p>[00:24:02] <strong>Nathan Wrigley:</strong> Oh, that's pull quote. Is it? 'cause at the beginning we talked about, so a pull quote is where you. You literally are pulling something out of the article. It's duplicate from an SEO point of view.</p>
+<p>Yes. But you wanna highlight it. So it's like when you're reading a newspaper sometimes, or a magazine, sometimes they'll just, I, don't know. It's eye catching, isn't it? They'll throw that, that one sentence, which kind of encapsulates the next two paragraphs. Yes. As a, as an easy way. It's almost like a heading, it's navigates you into what's coming or what has just been said.</p>
+<p>Yes. Okay. Okay. I didn't know that.</p>
+<p>[00:24:34] <strong>David Waumsley:</strong> Yeah. So block quote isn't appropriate. No. that's what people have used of course, because of the confusion. But an aside seems to be the thing to do. no one really knows, but that seems the most. But there is an interesting debate that goes back.</p>
+<p>Jeremy Keefe set one off in 2016, got tons and tons of comments, asking the question, why do Paul quotes exist on the web? And it is a great question given that if your screen reader. And in his own post, it gives that example, if he was to read it with a screen reader, it's terrible because it's got this pull quote out and then it repeats the next thing you know.</p>
+<p>Yeah. You're just hearing this constant re repetition. Yeah. With no visual clues to know what the heck is going on. Why is this article repeating itself? So there's that difficulty. There's the difficulty. Some people, although I don't think duplicate content is an issue for SEO, but some people have been conscious about that, but also, you do all this work.</p>
+<p>To pull quotes. Generally they are pulling slightly out of the main body of content. You mean physically? they look, yeah. Physically. They usually pull to one side left. Yeah, Do that to the main content. Yeah. If you're</p>
+<p>[00:25:44] <strong>Nathan Wrigley:</strong> a left to right reader, then it's slightly to the right.</p>
+<p>[00:25:47] <strong>David Waumsley:</strong> Yeah. Yeah. And they're really, difficult to code.</p>
+<p>We'll move on to that when we talk about CSS, but, a lot of people have had to employ JavaScript in order to make this thing that's outta the main body. Move to where you want it to do, and then it doesn't look all that impressive necessarily when you get down to smaller devices where you can't see that it's pulling out you, you've literally only got the room for your text.</p>
+<p>Yeah. So yeah, so there is that. and, what did I put here for regular quotes? Okay. So our format, in. unless you disagree on any of these ones, I think to keep things easier for cited and non-sighted users, not non-sighted, as I've written here,</p>
+<p>it, seems, I'll put an s in there later to make sense to cite before the quote. So I think when we're doing our articles, generally it's better to you'll have your paragraph that will be running, you'll put the name of the order. Author and then, reference their article, song, presentation, whatever it is, as the title of the work, with a link to that one, and that will be in the citation.</p>
+<p>And then. he or she says, and then it will just be in the block quote doing it that way. So if you are put in as, I think most people when they were thinking about HTML spec, were thinking when you use a block quote, you're quoting generally, you might introduce it first. Yeah. Before you do the block quote.</p>
+<p>So in. General, general blog posts. That would be my format. I think so</p>
+<p>[00:27:26] <strong>Nathan Wrigley:</strong> I guess it's almost serving as a little signpost of Okay. This is why it's now, okay. It is out of the flow of the normal text, but here's a, flag saying this is what it is. This is, as you've written there, the name of the work.</p>
+<p>It's like a mini title. It's alerting you to here's something different. Yes. Then the quote comes afterwards where if you had it the other way around. the site. At the end of it, after the block quote, then it would just go straight into that. It would feel like an ordinary part of text and then the name of the title would randomly come and you wouldn't know where that started or stopped.</p>
+<p>Okay. Yeah. That's interesting. And I think that's presentation. you often see it. Differently, don't you? You'd see the, you'd see the quote first encapsulated in some container, which is, I don't know, a rectangle or something to differentiate it. Different color background or something. Then the person, let's go for person's name.</p>
+<p>no. The name of the work might be at the bottom. In an old font or something like that. And, you can capture that 'cause you can see it all. But if you're doing it. With a screen reader that's all back to front. 'cause you need that indication at the beginning. Okay. Yeah.</p>
+<p>[00:28:35] <strong>David Waumsley:</strong> Yeah. I think the pattern's different and I think most of the haste, this is my understanding of it, is that the, when writing out the spec there, they've generally been thinking of written text and articles where you might.</p>
+<p>you'll introduce as part of your copy who the author and what work it's citing before you move to the block quote where it all gets thrown out. And we get into trouble is when we start to think about this design pattern of the testimonial, where we tend to put the quote up front. yeah.</p>
+<p>And then the author after, and it doesn't work anyway, I think we've solved that. Yeah, there is, another interesting point again from Hayden Pickering on his article, and that is, when you use the, we've been talking about block quote all the time, but there's the, there's the Q tag, the inline, quote and.</p>
+<p>For those reading the notes here, I will correct these later 'cause it says it's okay. yeah. He points out the, fact that, the term block quotation precedes the block quote element ever existing in HTML and the Chicago Manual of Style recommends that a block quotation is over a hundred words. There are some examples as he points out in the specifications, which have very short quotes and they use block quotes. So it still remains quite unclear when at least semantically you should be using block quote over the queue. Interesting.</p>
+<p>[00:30:03] <strong>Nathan Wrigley:</strong> Yeah,</p>
+<p>[00:30:04] <strong>David Waumsley:</strong> it's a visual thing in the end, doesn't it?</p>
+<p>Ends up you say block quote because it's basically. Style wise, it's taken up the whole block where it's not in line. But, semantically, I don't know. There isn't any clear guidance on</p>
+<p>[00:30:16] <strong>Nathan Wrigley:</strong> No.</p>
+<p>[00:30:17] <strong>David Waumsley:</strong> Which you should be using.</p>
+<p>[00:30:18] <strong>Nathan Wrigley:</strong> No. Interesting that, we reference things like the Chicago Manual of style. I love that.</p>
+<p>that's Hayden. No, but just the fact that there. A Chicago manual of style. I think I need that in my life. I don't have enough style basically, and it's got to be over a hundred words. Oh, fascinating. Okay.</p>
+<p>[00:30:38] <strong>David Waumsley:</strong> Alright. Yeah, so I, anyway, I guess that's this, our aim of our show was to try and simplify things and I think I've just made things as about as complex as they, no, you highlighted</p>
+<p>[00:30:49] <strong>Nathan Wrigley:</strong> complexity that all of us have ignored, basically.</p>
+<p>we, I think it would've been fair to say that most of that, nobody's pricing off the. The lid to appear inside that jar just because you rely on, especially in the WordPress world, you rely on a block increasingly to just take this work for you. Yes, you put a block, quote, block in, and you assume it's doing everything correctly, whereas in fact, perhaps you need to roll your own or certainly be thinking about the context in which you're using it, be it a block quote, a quote, a testimonial, a citation, whatever it may, be.</p>
+<p>There's a lot more to it, honestly. Way more to that than I thought, so that's fascinating.</p>
+<p>[00:31:26] <strong>David Waumsley:</strong> Yeah. And I would be really interested, if anybody does have any thoughts or, they spot anything that I've completely missed on this or want to change our mind, then I'd love to hear on that one. But I think what we've decided to do on this as a design system sort to make sense 'cause we're not, breaking any rules.</p>
+<p>I think the interesting thing is about the site element. It really, it doesn't seem to have any purpose. It's there for semantics. Yeah. But it's not read out by screen readers. Certainly, when we're using that as the attribute, nobody sees it. So what's it? Therefore it's, the, full use of this isn't in place.</p>
+<p>But perhaps one day if we all do the right thing, maybe it might be useful.</p>
+<p>[00:32:11] <strong>Nathan Wrigley:</strong> Is there any more on that, page that you want to go? No. You just got some links there at the bottom, styling quotes, part two and what have you. So are we. Are we a wrap? Wrap? Wrap? It's a wrap. Wrap as they said.</p>
+<p>Yeah. We'll just move</p>
+<p>[00:32:23] <strong>David Waumsley:</strong> on. And this will be quick, I think, just part two because we've talked all about the HTML and said, we'll just quickly talk about how we might. Go about styling some of these.</p>
+<p>[00:32:33] <strong>Nathan Wrigley:</strong> Okay, so in which case, if you want to follow along with the show notes that David's been displaying there, including typographical corrections, you can go and find those as well.</p>
+<p>Then head to no script show. And then this episode is 24 so slash 24, the numerals two four. Go and check that out. And then there will be a corresponding episode in which, this is demonstrated. David gives it a bash, and that is no script show slash learn. 15 1 5. So those two things will correspond and overlap.</p>
+<p>So we will, see you then. So shall I, shall I, hit stop on this recording and yeah, we'll go into the next.</p>
+<p>[00:33:16] <strong>David Waumsley:</strong> Alright, see you</p>
+<p>[00:33:16] <strong>Nathan Wrigley:</strong> soon.</p>
+<p>[00:33:17] <strong>David Waumsley:</strong> Thanks Nathan. Bye.</p>
+</details> 
 </div>
 </article>
 <div class="popout">
 <nav aria-label="Post navigation">
   <ul class="links-nextprev">
     <li class="links-nextprev-prev">
-    <a href="/learn/15/" rel="prev" aria-label="Previous post:Styling Quotes">
-    <span aria-hidden="true">←</span>Previous<br>Styling Quotes</a>
+    <a href="/learn/15/" rel="prev" aria-label="Previous post:Styling Quotes with CSS">
+    <span aria-hidden="true">←</span>Previous<br>Styling Quotes with CSS</a>
     </li>
     
   </ul>
 </nav>
 </div>			
-</div></main><footer>
+</div></div></main><footer>
 <h2 class="[ angle ]" id="links">Links</h2>  
 <div class="[ footer-wrapper ]"><nav aria-labelledby="podcast-links" class="[ footer-links ][ fa1 ]">
 <h3 id="podcast-links">For audio episodes</h3>
@@ -171,7 +328,7 @@ s/he says:
 <small><span aria-hidden="true">©</span> Copyright since 2023 | <a href="/privacy/"> Privacy </a>  | <a href="/accessibility-statement/"> Accessibility</a>  | <em>Built with <a href="https://www.11ty.dev/">Eleventy v3.1.0</a></em>
 </small>
 </div>
-</footer><!-- This page `/24/` was built on 2025-08-20T09:58:51.480Z -->
+</footer><!-- This page `/24/` was built on 2025-08-20T16:31:45.189Z -->
 <script type="module" src="/dist/ffsqCfr5qq.js"></script>		
 </body>
 </html>
