@@ -21,7 +21,7 @@
 &lt;li&gt;In testimonials for credibility and social proof.&lt;/li&gt;
 &lt;li&gt;In blog comments for engagement.&lt;/li&gt;
 &lt;li&gt;In &amp;quot;pull&amp;quot; quotes for style and highlighting.&lt;/li&gt;
-&lt;li&gt;In articles for to support our arguments.&lt;/li&gt;
+&lt;li&gt;In articles to support our arguments.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;the-difficulty-with-semantic-html&quot;&gt;The difficulty with semantic HTML&lt;/h2&gt;
 &lt;p&gt;We have the &amp;lt;blockquote&amp;gt;, &amp;lt;q&amp;gt; and &amp;lt;cite&amp;gt; elements, but the specifications have changed over time and don’t entirely line up with our design patterns.&lt;/p&gt;
@@ -60,7 +60,7 @@
 &lt;p&gt;For this we will use the W3C design systems approach of not using cite, but putting the author credentials in a footer element within the block quote.&lt;/p&gt;
 &lt;p&gt;If there is a URL we will add the invisible cite attribute.&lt;/p&gt;
 &lt;p&gt;If the testimonial contains a heading the markup would change depending on whether the heading was part of the original quote. If it was, we would add the heading as part of the quote.&lt;/p&gt;
-&lt;p&gt;If not, we&#39;d use an &lt;a href=&quot;https://html.spec.whatwg.org/multipage/sections.html#the-article-element&quot;&gt;article&lt;/a&gt; as below.&lt;/p&gt;
+&lt;p&gt;If not, we&#39;d use an &lt;a href=&quot;https://html.spec.whatwg.org/multipage/sections.html#the-article-element&quot;&gt;&amp;lt;article&amp;gt;&lt;/a&gt; as below.&lt;/p&gt;
 &lt;pre class=&quot;language-html&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;article&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;h3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Review Title&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;h3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;blockquote&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
@@ -96,7 +96,7 @@ s/he says:
  THE QUOTE
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;blockquote&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;token comment&quot;&gt;&amp;lt;!-- or &amp;lt;q&gt;&amp;lt;/q&gt; if inline  --&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;block-or-inine-quotes&quot;&gt;Block or inine quotes?&lt;/h2&gt;
+&lt;h2 id=&quot;block-or-inline-quotes&quot;&gt;Block or inline quotes?&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://heydonworks.com/article/the-blockquote-element/&quot;&gt;Haydon Pickering &lt;/a&gt; points out that the term “block quotation” precedes the blockquote element. The Chicago Manual Of Style recommends block quotations are over 100 words. Some examples in the specification have very short quotes and so it remains unclear when (semantically) you should use one over the other.&lt;/p&gt;
 &lt;h2 id=&quot;styling-quotes&quot;&gt;Styling quotes&lt;/h2&gt;
 &lt;p&gt;Please join us for &lt;a href=&quot;https://noscript.show/learn/15/&quot;&gt;part two&lt;/a&gt; where we look at adding styling with CSS (this is a video only episode).&lt;/p&gt;
