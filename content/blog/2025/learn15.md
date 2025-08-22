@@ -26,7 +26,7 @@ The details and summary used on the band website demo combines the RAM technique
 
 ## Pull Quotes
 
-As mentioned in [part one](/24/) pull quotes don't naturally lend themselves to the web as the effect is complex, lost on smaler devices and is a repeat of content that does not make sense (by default) to those using screen readers.
+As mentioned in [part one](/24/) pull quotes don't naturally lend themselves to the web as the effect is complex, lost on smaller devices and is a repeat of content that does not make sense (by default) to those using screen readers.
 
 Interestingly though, Rachel Andrew's CSS Day 2025 presentation called [Multicol and fragmentation](https://youtu.be/NfwDP9shxNQ?t=2445) talks about the idea of the web being more like printed pages going forward. She introduces the idea of "exclusions" (to normal flow). The examples she shows look much like the patterns designers often try to recreate with pull quotes. 
 
