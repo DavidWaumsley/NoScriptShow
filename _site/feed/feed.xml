@@ -264,7 +264,7 @@ s/he says:
     <content type="html">&lt;p&gt;&lt;strong&gt;Show Notes:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;In &lt;a href=&quot;https://noscript.show/24/&quot;&gt;part one&lt;/a&gt; we attempted to rationalize the HTML mark-up needed for testimonials, regular quotes and pull quotes. Here we are looking quickly at styling them with CSS.&lt;/p&gt;
 &lt;h2 id=&quot;testimonials&quot;&gt;Testimonials&lt;/h2&gt;
-&lt;p&gt;It&#39;s common for these to be displayed as a carousel, but until this can be achived in an accessible way without JavaScript we (for reasons associated with the show&#39;s name) look for simpler and more resilient options like:&lt;/p&gt;
+&lt;p&gt;It&#39;s common for these to be displayed as a carousel, but until this can be achieved in an accessible way without JavaScript we (for reasons associated with the show&#39;s name) look for simpler and more resilient options like:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The &amp;quot;Reel&amp;quot; a horizontal scrolling technique used on &lt;a href=&quot;https://every-layout.dev/&quot;&gt;Every Layout &lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&amp;lt;details&amp;gt; and &amp;lt;summary&amp;gt; as used on our demo &lt;a href=&quot;https://band.here24.co/&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;

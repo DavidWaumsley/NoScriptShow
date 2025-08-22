@@ -14,7 +14,7 @@ videoid: Ov5Y0Cn_87k
 
 ## Testimonials
 
-It's common for these to be displayed as a carousel, but until this can be achived in an accessible way without JavaScript we (for reasons associated with the show's name) look for simpler and more resilient options like:
+It's common for these to be displayed as a carousel, but until this can be achieved in an accessible way without JavaScript we (for reasons associated with the show's name) look for simpler and more resilient options like:
 
 - The "Reel" a horizontal scrolling technique used on [Every Layout ](https://every-layout.dev/).
 - &lt;details&gt; and &lt;summary&gt; as used on our demo [here](https://band.here24.co/).
