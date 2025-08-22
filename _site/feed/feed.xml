@@ -39,7 +39,7 @@
 &lt;li&gt;We should not use cite elements for authors of quotes.&lt;/li&gt;
 &lt;li&gt;The citation is orphaned from the quote. Not ideal accessibility.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;It&#39;s hard to find consistant advice&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;It&#39;s hard to find consistent advice&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Many &lt;a href=&quot;https://html5doctor.com/cite-and-blockquote-reloaded/&quot;&gt;expert sources&lt;/a&gt; have encouraged us to use blockquotes in ways that seem technically incorrect including &lt;a href=&quot;https://wordpress.com/support/wordpress-editor/blocks/quote-block/#insert-your-quote&quot;&gt;platforms&lt;/a&gt; (&lt;a href=&quot;https://theadminbar.com/accessibility-weekly/coding-blockquotes/&quot;&gt;code example&lt;/a&gt;).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -52,7 +52,7 @@
 &lt;p&gt;The &lt;a href=&quot;https://design-system.w3.org/components/quote.html&quot;&gt;W3C design system&lt;/a&gt; uses a &amp;lt;footer&amp;gt; element to cite an author Unlike Adrian Roselli, they do not use the cite element because of the WHATWG specifications.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Design systems for local governments reveal many other variations. Probably due to changes in the orginal W3C documentation that was not carried forward to WHATWG. The W3C essentially defers to WHATWG&#39;s HTML Living Standard as the authoritative specification.&lt;/p&gt;
+&lt;p&gt;Design systems for local governments reveal many other variations. Probably due to changes in the original W3C documentation that was not carried forward to WHATWG. The W3C essentially defers to WHATWG&#39;s HTML Living Standard as the authoritative specification.&lt;/p&gt;
 &lt;h2 id=&quot;our-approach-to-the-html&quot;&gt;Our approach to the HTML&lt;/h2&gt;
 &lt;p&gt;We don’t have the standing to influence specifications like Haydon Pickering, Adrian Roselli or Michelle Barker so we&#39;ll stick to  WHATWG rules to be consistent from here on (until told otherwise).&lt;/p&gt;
 &lt;h3 id=&quot;testimonials&quot;&gt;Testimonials&lt;/h3&gt;
