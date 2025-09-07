@@ -856,3 +856,40 @@ animation: slide-in-elliptic-left-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.9
   display: inline;
   vertical-align:sub;
  }
+
+/* resposive table */
+
+table{
+  background-color: var(--shade);
+}
+
+   .responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+  }
+  th,
+  td {
+    border: 1px solid var(--shadow);
+    padding: var(--space-xs);
+    text-align: start;
+  }
+   thead {
+    background-color: var(--text);
+    color:var(--text-alt);
+  }
+caption {
+    color:var(--brand);
+    font-size:var(--step-2);
+    font-weight: 700;
+    margin-block: var(--space-l);
+  }
+  @media (width < 800px) {
+   table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
+
+  
