@@ -183,7 +183,7 @@
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;https://www.fillout.com&quot;&gt;Fillout&lt;/a&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;a href=&quot;https://www.fillout.com&quot;&gt;Fillout&lt;/a&gt;&lt;/th&gt;
       &lt;td&gt;1,000/month&lt;/td&gt;
       &lt;td&gt;Unlimited&lt;/td&gt;
       &lt;td&gt;Unlimited&lt;/td&gt;
@@ -193,7 +193,7 @@
       &lt;td&gt;No added fee, just Stripe&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;https://www.jotform.com&quot;&gt;Jotform&lt;/a&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;a href=&quot;https://www.jotform.com&quot;&gt;Jotform&lt;/a&gt;&lt;/th&gt;
       &lt;td&gt;100/month&lt;br&gt;(10 Stripe payments)&lt;/td&gt;
       &lt;td&gt;5&lt;/td&gt;
       &lt;td&gt;100 MB&lt;/td&gt;
@@ -203,7 +203,7 @@
       &lt;td&gt;Upgrade for &amp;gt;10 Stripe pmts/mo&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;https://www.cognitoforms.com&quot;&gt;Cognito Forms&lt;/a&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;a href=&quot;https://www.cognitoforms.com&quot;&gt;Cognito Forms&lt;/a&gt;&lt;/th&gt;
       &lt;td&gt;500&lt;/td&gt;
       &lt;td&gt;Unlimited&lt;/td&gt;
       &lt;td&gt;100 MB&lt;/td&gt;
@@ -213,7 +213,7 @@
       &lt;td&gt;Unlimited pmts, 1% fee plus Stripe&#39;s&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;https://www.typeform.com&quot;&gt;Typeform&lt;/a&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;a href=&quot;https://www.typeform.com&quot;&gt;Typeform&lt;/a&gt;&lt;/th&gt;
       &lt;td&gt;10/month&lt;/td&gt;
       &lt;td&gt;Unlimited&lt;/td&gt;
       &lt;td&gt;2 MB/form&lt;/td&gt;
@@ -223,7 +223,7 @@
       &lt;td&gt;Stripe requires paid plan&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;https://formester.com&quot;&gt;Formester&lt;/a&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;a href=&quot;https://formester.com&quot;&gt;Formester&lt;/a&gt;&lt;/th&gt;
       &lt;td&gt;100/month&lt;/td&gt;
       &lt;td&gt;10&lt;/td&gt;
       &lt;td&gt;100 MB&lt;/td&gt;
@@ -233,7 +233,7 @@
       &lt;td&gt;No extra fee, just Stripe&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;https://youform.com&quot;&gt;Youform&lt;/a&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;a href=&quot;https://youform.com&quot;&gt;Youform&lt;/a&gt;&lt;/th&gt;
       &lt;td&gt;Unlimited&lt;/td&gt;
       &lt;td&gt;Unlimited&lt;/td&gt;
       &lt;td&gt;10 MB/form&lt;/td&gt;
@@ -243,7 +243,7 @@
       &lt;td&gt;Stripe/pro is paid only&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;https://formnx.com&quot;&gt;FormNX&lt;/a&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;a href=&quot;https://formnx.com&quot;&gt;FormNX&lt;/a&gt;&lt;/th&gt;
       &lt;td&gt;Unlimited&lt;/td&gt;
       &lt;td&gt;Unlimited&lt;/td&gt;
       &lt;td&gt;100 MB&lt;/td&gt;
@@ -253,7 +253,7 @@
       &lt;td&gt;Stripe fee drops to 0 on paid plans&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;https://survicate.com&quot;&gt;Survicate&lt;/a&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;a href=&quot;https://survicate.com&quot;&gt;Survicate&lt;/a&gt;&lt;/th&gt;
       &lt;td&gt;25/month&lt;/td&gt;
       &lt;td&gt;1&lt;/td&gt;
       &lt;td&gt;Not specified&lt;/td&gt;
@@ -263,7 +263,7 @@
       &lt;td&gt;Payments not supported&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;https://tally.so&quot;&gt;Tally&lt;/a&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;a href=&quot;https://tally.so&quot;&gt;Tally&lt;/a&gt;&lt;/th&gt;
       &lt;td&gt;Unlimited&lt;/td&gt;
       &lt;td&gt;Unlimited&lt;/td&gt;
       &lt;td&gt;Unlimited&lt;/td&gt;
@@ -273,7 +273,7 @@
       &lt;td&gt;Ongoing WCAG work, no extra fee&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;https://aidatform.com&quot;&gt;AidaForm&lt;/a&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;a href=&quot;https://aidatform.com&quot;&gt;AidaForm&lt;/a&gt;&lt;/th&gt;
       &lt;td&gt;100/month&lt;/td&gt;
       &lt;td&gt;Unlimited&lt;/td&gt;
       &lt;td&gt;Not specified&lt;/td&gt;
@@ -283,7 +283,7 @@
       &lt;td&gt;Payments require paid plan&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;https://formsmarts.com&quot;&gt;FormSmarts&lt;/a&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;a href=&quot;https://formsmarts.com&quot;&gt;FormSmarts&lt;/a&gt;&lt;/th&gt;
       &lt;td&gt;Not specified&lt;/td&gt;
       &lt;td&gt;Not specified&lt;/td&gt;
       &lt;td&gt;Not specified&lt;/td&gt;
