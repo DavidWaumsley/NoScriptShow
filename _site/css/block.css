@@ -861,6 +861,7 @@ animation: slide-in-elliptic-left-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.9
 
 table{
   background-color: var(--shade);
+  
 }
 
    .responsive-table {
@@ -892,4 +893,9 @@ caption {
     }
   }
 
-   
+  table thead{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    height: 2rem;
+   }
