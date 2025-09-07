@@ -16,7 +16,7 @@
     <updated>2025-09-10T00:00:00Z</updated>
     <id>https://noscript.show/25/</id>
     <content type="html">&lt;p&gt;&lt;strong&gt;Show Notes:&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;forms-expectations-and-clients&quot;&gt;Forms, expectations and clients&lt;/h2&gt;
+&lt;h2 id=&quot;expectations-and-clients&quot;&gt;Expectations and clients&lt;/h2&gt;
 &lt;p&gt;In the era of heavily marketed no-code products, it is not unreasonable for many website clients to think web interactivity is easy.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;They may think:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -169,7 +169,7 @@
 &lt;h3 id=&quot;3-3rd-party-with-a-client-and-server-side-service&quot;&gt;3. 3rd party with a client and server-side service&lt;/h3&gt;
 &lt;p&gt;This, for us, is the most suitable option if we need complex conditional forms for bookings and taking payment. The downside is you lose control over page load, UX and accessibility.&lt;/p&gt;
 &lt;table class=&quot;responsive-table full&quot; role=&quot;table&quot;&gt;
-  &lt;caption&gt;Form Builders: Free Plan, Accessibility &amp; Stripe&lt;/caption&gt;
+  &lt;caption&gt;Form Builders&lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th scope=&quot;col&quot;&gt;Service&lt;/th&gt;
