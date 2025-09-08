@@ -296,8 +296,8 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Missing is the popular Google Forms which appears to value accessibiliy and can be extended via addons.&lt;/p&gt;
-&lt;p&gt;We will talk more about these in a future episode. Presently favoured is &lt;a href=&quot;https://tally.so/&quot;&gt;Tally forms&lt;/a&gt; because of the philosophy of the people behind it. They are based in the EU and are proud to be a bootstrap company with a small team.&lt;/p&gt;
-&lt;p&gt;Also they do not by default load huge ammount of JS.  Formapp, was also not included here because it loaded 1.5MB of javaScript over 49 files with a basic form.&lt;/p&gt;
+&lt;p&gt;We will talk more about these in a future episode. Presently favoured is &lt;a href=&quot;https://tally.so/&quot;&gt;Tally&lt;/a&gt; because of the philosophy of the people behind it. They are based in the EU and are proud to be a bootstrap company with a small team.&lt;/p&gt;
+&lt;p&gt;Also they do not by default load huge ammount of JS. &lt;a href=&quot;https://forms.app/&quot;&gt;Formapp&lt;/a&gt;, was also not included here because it loaded 1.5MB of javaScript over 49 files with a basic form. It has a focus on AI.&lt;/p&gt;
 &lt;div class=&quot;side-note&quot;&gt;
 &lt;p&gt;Luckily, we can lazy load iframes so we can prevent heavy forms failing us on Core Web Vitals by putting the form lower in the page or containing it within a details element. &lt;/p&gt;
 &lt;/div&gt;
