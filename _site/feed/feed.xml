@@ -183,6 +183,16 @@
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
+     &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;&lt;a href=&quot;https://paperform.co/&quot;&gt;Paperform&lt;/a&gt;&lt;/th&gt;
+      &lt;td&gt;Free 7-day trial&lt;br&gt;(Full access)&lt;/td&gt;
+      &lt;td&gt;Unlimited during trial&lt;/td&gt;
+      &lt;td&gt;Not specified&lt;/td&gt;
+      &lt;td&gt;Not specified&lt;/td&gt;
+      &lt;td&gt;Yes (trial only)&lt;/td&gt;
+      &lt;td&gt;None (during trial)&lt;/td&gt;
+      &lt;td&gt;Stripe/Paid features only after trial&lt;/td&gt;
+    &lt;/tr&gt;
     &lt;tr&gt;
       &lt;th&gt;&lt;a href=&quot;https://www.fillout.com&quot;&gt;Fillout&lt;/a&gt;&lt;/th&gt;
       &lt;td&gt;1,000/mo&lt;/td&gt;
