@@ -306,7 +306,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Missing is the popular Google Forms which appears to value accessibiliy and can be extended via addons.&lt;/p&gt;
-&lt;p&gt;We will talk more about these in a future episode. Presently favoured is &lt;a href=&quot;https://tally.so/&quot;&gt;Tally&lt;/a&gt; because of the philosophy of the people behind it. They are based in the EU and are proud to be a bootstrap company with a small team.&lt;/p&gt;
+&lt;p&gt;We will talk more about these in a future episode. Presently favoured is &lt;a href=&quot;https://tally.so/&quot;&gt;Tally&lt;/a&gt; because of the philosophy behind it. They are based in the EU and are proud to be a bootstrap company with a small team.&lt;/p&gt;
 &lt;p&gt;Also they do not by default load huge ammount of JS. &lt;a href=&quot;https://forms.app/&quot;&gt;Formapp&lt;/a&gt;, was also not included here because it loaded 1.5MB of javaScript over 49 files with a basic form. It has a focus on AI.&lt;/p&gt;
 &lt;p&gt;Paperform is added because David has uses it due to getting a low cost life-time deal many years back. It is slow loading with over 0.5MB of javaScript and presently is not yet accessible.&lt;/p&gt;
 &lt;div class=&quot;side-note&quot;&gt;
