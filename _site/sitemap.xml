@@ -297,12 +297,12 @@
 	</url>
 	
 	<url>
-		<loc>https://noscript.show/feed/feed.xml</loc>
-		<lastmod>2025-09-09</lastmod>
+		<loc>https://noscript.show/25/</loc>
+		<lastmod>2025-09-10</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://noscript.show/25/</loc>
+		<loc>https://noscript.show/feed/feed.xml</loc>
 		<lastmod>2025-09-10</lastmod>
 	</url>
 </urlset>
