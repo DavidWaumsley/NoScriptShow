@@ -18,7 +18,6 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Show Notes:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Here&#39;s the presentation slides. Below is the text version.&lt;/p&gt;
 &lt;embed class=&quot;full&quot; src=&quot;https://noscript.show/pdf/Trap-or-Trade-off.pdf&quot; title=&quot;Episode slides&quot; type=&quot;application/pdf&quot; width=&quot;100%&quot; height=&quot;600px&quot;&gt;
-&lt;h1 id=&quot;trap-or-trade-off&quot;&gt;Trap or Trade-off&lt;/h1&gt;
 &lt;h2 id=&quot;what-small-businesses-should-know-before-getting-a-website&quot;&gt;What Small Businesses Should Know Before Getting a Website&lt;/h2&gt;
 &lt;p&gt;The website builders market was worth 3.06 billion dollars in 2025.&lt;br&gt;
 It is projected to reach 6.68 billion dollars by 2030.&lt;/p&gt;
@@ -112,7 +111,7 @@ The structure and functionality that makes interacting with your brand easy, enj
 &lt;li&gt;Application Examples&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;trap-or-trade-off-2&quot;&gt;Trap or Trade-off?&lt;/h2&gt;
+&lt;h2 id=&quot;trap-or-trade-off&quot;&gt;Trap or Trade-off?&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Trap&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Vendor lock-in&lt;/li&gt;
