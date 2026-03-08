@@ -1,6 +1,6 @@
 ---
 title:  'Simple User Testing'
-description: "User Testing notes for the Website Owner's Manual."
+description: "User testing notes for the Website Owner's Manual."
 date: 2026-03-08
 permalink: "/simple-user-testing{{slugify }}/"
 ---
@@ -37,5 +37,5 @@ This checklist covers the essential steps for preparing and running a live (mode
 
 **References:**
 
-- [NNG - usability chacklist](https://www.nngroup.com/articles/usability-checklist/)
+- [NNG - usability checklist](https://www.nngroup.com/articles/usability-checklist/)
 - [ContentSquare - usability-testing](https://contentsquare.com/guides/usability-testing/)
