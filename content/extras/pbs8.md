@@ -6,8 +6,8 @@ permalink: "/pbs8{{slugify }}/"
 # videoid: fp30FXcfdOk
 
 ---
+<h1 class="post-title-only">The Intrinsic Page Builder</h1>
 
- # The Intrinsic Page Builder
 
 Links from David's [Page Builder Summit](https://pagebuildersummit.com/) talk. 
 

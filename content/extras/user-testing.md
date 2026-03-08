@@ -4,8 +4,9 @@ description: "User testing notes for the Website Owner's Manual."
 date: 2026-03-08
 permalink: "/simple-user-testing{{slugify }}/"
 ---
-# Simple User Testing Checkist
 
+<h1 class="post-title-only">Simple User Testing Checkist</h1>
+ 
 This checklist covers the essential steps for preparing and running a live (moderated) user testing session, ensuring you remain neutral and capture actionable insights.
 
 ### Preparation (Before the Session)
