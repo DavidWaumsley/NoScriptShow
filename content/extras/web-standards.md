@@ -62,7 +62,7 @@ This section should be read alongside the accessibility, inclusive design, and t
 
 ## Further reading and references
 
-- W3C – Web Standards and Guidelines: overview of the core standards that shape the web: https://www.w3.org/standards/
-- MDN Web Docs – Web Standards: practical, developer‑friendly documentation on HTML, CSS, and JavaScript: https://developer.mozilla.org/
-- Web.dev (by Chrome team) – guides on modern best practices for performance, accessibility, and PWA features: https://web.dev/
-- WHATWG – HTML Living Standard: the continuously updated definition of HTML: https://html.spec.whatwg.org/
+- [W3C – Web Standards and Guidelines: overview of the core standards that shape the web](https://www.w3.org/standards/) 
+- [MDN Web Docs – Web Standards: practical, developer‑friendly documentation on HTML, CSS, and JavaScript](https://developer.mozilla.org/) 
+- [Web.dev (by Chrome team) – guides on modern best practices for performance, accessibility, and PWA features](https://web.dev/) 
+- [WHATWG – HTML Living Standard: the continuously updated definition of HTML](https://html.spec.whatwg.org/) 
