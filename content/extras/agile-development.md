@@ -1,7 +1,7 @@
 ---
 title:  'Agile Development'
-description: "Agile Developmentfor the Website Owner's Manual."
-date: 2026-03-00
+description: "Agile Development for the Website Owner's Manual."
+date: 2026-03-10
 permalink: "/agile-development/{{slugify }}/"
 ---
 <h1 class="post-title-only">Agile Development</h1>

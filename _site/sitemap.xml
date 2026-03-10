@@ -317,11 +317,6 @@
 	</url>
 	
 	<url>
-		<loc>https://noscript.show/agile-development/</loc>
-		<lastmod>2026-02-28</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://noscript.show/inclusive-design/</loc>
 		<lastmod>2026-02-28</lastmod>
 	</url>
@@ -334,6 +329,11 @@
 	<url>
 		<loc>https://noscript.show/web-copy-tips/</loc>
 		<lastmod>2026-03-08</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/agile-development/</loc>
+		<lastmod>2026-03-10</lastmod>
 	</url>
 	
 	<url>
