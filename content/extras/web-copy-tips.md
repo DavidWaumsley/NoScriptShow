@@ -30,4 +30,4 @@ Avoid jargon or being overly creative at the expense of clarity.
 ## Consider keywords, but don’t keyword stuff
 
  - HTML &lt;details&gt; and &lt;summary&gt; elements provide a way to add extra text without overwhelming the page.
- - Typically copy that can be halved has more clarity. We tend to use more words than are absolutely needed (like this sentence!).
+ - Typically if we half the copy it has more clarity.
