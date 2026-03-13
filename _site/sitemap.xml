@@ -322,6 +322,11 @@
 	</url>
 	
 	<url>
+		<loc>https://noscript.show/29/</loc>
+		<lastmod>2026-03-04</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://noscript.show/simple-user-testing/</loc>
 		<lastmod>2026-03-08</lastmod>
 	</url>
@@ -337,7 +342,12 @@
 	</url>
 	
 	<url>
-		<loc>https://noscript.show/feed/feed.xml</loc>
+		<loc>https://noscript.show/web-standards/</loc>
 		<lastmod>2026-03-10</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://noscript.show/feed/feed.xml</loc>
+		<lastmod>2026-03-13</lastmod>
 	</url>
 </urlset>
