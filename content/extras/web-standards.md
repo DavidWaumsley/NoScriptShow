@@ -16,7 +16,7 @@ In practice, this means we:
 
 Standards evolve, so “modern” is an ongoing commitment to stay aligned with current best practices, not a one‑time setup.
 
-***
+
 
 ## Why it matters
 
@@ -30,7 +30,7 @@ For this brand, using web standards means:
 
 This approach supports our broader goals of inclusivity, sustainability, and professional quality.
 
-***
+
 
 ## Core principles we follow
 
@@ -44,7 +44,7 @@ We treat modern web standards as a set of guiding principles, not just a checkli
 
 We still use modern frameworks and tools where appropriate, but we expect them to build on web standards, not replace them.
 
-***
+
 
 ## How website owners apply this
 
@@ -58,7 +58,7 @@ Website owners don’t need to know every technical detail, but they can still m
 
 This section should be read alongside the accessibility, inclusive design, and technical maintenance parts of this manual.
 
-***
+
 
 ## Further reading and references
 

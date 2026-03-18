@@ -5,7 +5,6 @@ date: 2026-03-00
 permalink: "/inclusive-design{{slugify }}/"
 ---
 
-
 <h1 class="post-title-only">Inclusive Design</h1>
 
 Inclusive design is a approach that aims to make products, services, and content usable and welcoming for as many different people as possible, across ages, backgrounds, abilities, and contexts. 
@@ -20,7 +19,7 @@ In practice, this means we:
 
 Inclusive design is an ongoing mindset, not a one‑off checklist.
 
-***
+
 
 ## Why it matters
 
@@ -32,7 +31,7 @@ Inclusive design means:
 - Our interfaces are clear, forgiving of error, and work across a range of devices and capabilities.
 - Our choices (visuals, language, interactions) avoid stereotyping and unnecessary exclusion.
 
-***
+
 
 ## Core principles
 
@@ -46,7 +45,7 @@ We use established inclusive design and accessibility principles as a baseline. 
 
 Accessibility standards (such as WCAG) are treated as a minimum technical baseline, not the full definition of inclusion.
 
-***
+
 
 ## How website owners apply this
 
@@ -59,7 +58,7 @@ When creating or updating content or features, website owners should:
 - Check that all key actions can be completed with a keyboard and are announced clearly to assistive technologies.
 - Choose photography, illustrations, and examples that reflect a variety of people and situations, without tokenism.
 
-***
+
 
 ## Further reading and references
 
