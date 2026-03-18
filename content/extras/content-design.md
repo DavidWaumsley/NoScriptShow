@@ -9,8 +9,6 @@ videoid:
 ---
 <h1 class="post-title-only">Content Design</h1>
 
-## What we mean by content design
-
 Content design is a discipline created by Sarah Richards (now Winters) while transforming GOV.UK from hundreds of disconnected government websites into a single, user‑centred resource. 
 
 In her own words, it is about "using data and evidence to give the audience what they need, at the time they need it, and in a way they expect".
