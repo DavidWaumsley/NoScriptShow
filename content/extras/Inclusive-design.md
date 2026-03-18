@@ -1,5 +1,5 @@
 ---
-title:  'Inclusive Design'
+title:  'What is Inclusive Design?'
 description: "Inclusive Design for the Website Owner's Manual."
 date: 2026-03-00
 permalink: "/inclusive-design{{slugify }}/"

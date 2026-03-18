@@ -1,5 +1,5 @@
 ---
-title: 'Web Standards'
+title: 'What are Web Standards?'
 description: "Web Standards for the Website Owner's Manual."
 date: 2026-03-10
 permalink: "/web-standards/{{slugify }}/"
@@ -55,9 +55,6 @@ Website owners don’t need to know every technical detail, but they can still m
 - Keep content structured with meaningful headings, lists, and labels rather than styling alone.
 - Encourage use of responsive layouts and media that work well on mobile, tablet, and desktop.
 - Periodically review the site for outdated technologies (unsupported APIs, insecure embeds, obsolete formats) and plan to replace them.
-
-This section should be read alongside the accessibility, inclusive design, and technical maintenance parts of this manual.
-
 
 
 ## Further reading and references
