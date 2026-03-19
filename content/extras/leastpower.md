@@ -14,7 +14,6 @@ In Tim Berners‑Lee’s words, “the less powerful the language, the more you 
 On the web, this usually means preferring HTML and other declarative, standards‑based approaches over complex, highly dynamic, or opaque solutions when there is a choice.
 
 
-
 ## Why it matters 
 
 Using the least powerful suitable tools tends to make our sites **more robust, maintainable, and future‑friendly**. 
