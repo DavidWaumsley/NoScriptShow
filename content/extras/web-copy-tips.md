@@ -2,7 +2,7 @@
 title: 'Website Copy Tips'
 description: "User testing notes for the Website Owner's Manual."
 date: 2026-03-08
-permalink: "/website-copy{{slugify }}/"
+permalink: "/website-copy/{{slugify }}/"
 ---
 
 <h1 class="post-title-only">Website Copy </h1>
