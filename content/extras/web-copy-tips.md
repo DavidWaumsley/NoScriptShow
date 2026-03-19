@@ -1,11 +1,11 @@
 ---
-title: 'Web Copy Tips'
+title: 'Website Copy Tips'
 description: "User testing notes for the Website Owner's Manual."
 date: 2026-03-08
-permalink: "/web-copy-tips{{slugify }}/"
+permalink: "/website-copy{{slugify }}/"
 ---
 
-<h1 class="post-title-only">Web Copy </h1>
+<h1 class="post-title-only">Website Copy </h1>
 
 Website copy explains what you do, who it is for, and what visitors can do next. It includes headlines, body text, calls‑to‑action, product or service descriptions, and supporting content such as FAQs or testimonials.
 
