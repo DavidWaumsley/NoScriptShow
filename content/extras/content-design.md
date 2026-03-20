@@ -2,7 +2,6 @@
 title: " What is Content Design?"
 description: "Giving the audience what they need, when they need it, and in a way they expect."
 date: 2026-03-18
-tags: ["chat"]
 permalink: "/content-design/{{slugify }}/"
 videoid:
 
