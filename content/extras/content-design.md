@@ -21,7 +21,9 @@ It's about using evidence to give the audience what they need, when they need it
 - The format (words, video, a tool, a table, nothing at all) is a design decision, not a default.
 - The goal is to meet a genuine user need, not to fill a page or promote the organisation.
 
-The approach has been adopted by other governments such as the US, Australia and New Zealand. Meta (Facebook) formally switched its content strategy teams to content design, embedding content designers across every product team.  Companies like Shopify, Atlassian, Apple, Google and Microsoft have followed.
+The approach has been adopted by other governments such as the US, Australia and New Zealand. 
+
+Meta (Facebook) formally switched its content strategy teams to content design, embedding content designers across every product team.  Companies like Shopify, Atlassian, Apple, Google and Microsoft have followed.
 
 
 ## Why it matters
