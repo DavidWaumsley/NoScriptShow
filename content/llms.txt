@@ -2,3 +2,6 @@
 
 This is a vodcast about resilient web design focussed on the Indieweb and using HTML and CSS.
 
+## Episodes
+
+[Episode list](https://noscript.show/blog/): This page has a list of all the vodcast's episodes with links to their respective pages.
