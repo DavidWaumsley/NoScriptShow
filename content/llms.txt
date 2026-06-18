@@ -1,0 +1,4 @@
+# No Script Show
+
+This is a vodcast about resilient web design focussed on the Indieweb and using HTML and CSS.
+
