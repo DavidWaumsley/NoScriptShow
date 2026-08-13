@@ -17,8 +17,8 @@
     <id>https://noscript.show/34/</id>
     <content type="html">&lt;p&gt;&lt;strong&gt;Show Notes:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Here&#39;s the presentation slides. Below is the text version.&lt;/p&gt;
-&lt;embed class=&quot;full&quot; src=&quot;https://noscript.show/pdf/rule-of-least-power.pdf&quot; title=&quot;Episode slides&quot; loading=&quot;lazy&quot; type=&quot;application/pdf&quot; width=&quot;100%&quot; height=&quot;600px&quot;&gt;
-&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;embed class=&quot;full&quot; src=&quot;https://noscript.show/pdf/Rule-of-Least-Power.pdf&quot; title=&quot;Episode slides&quot; loading=&quot;lazy&quot; type=&quot;application/pdf&quot; width=&quot;100%&quot; height=&quot;600px&quot;&gt;
+&lt;br&gt;
 &lt;h2 id=&quot;the-rule-of-least-power&quot;&gt;The Rule of Least Power…&lt;/h2&gt;
 &lt;p&gt;In Tim Berners-Lee&#39;s words, &amp;quot;the less powerful the language, the more you can do with the data stored in that language&amp;quot; because simpler, more declarative formats are easier for many different tools to read, analyse, reuse, and combine.&lt;/p&gt;
 &lt;ul&gt;
