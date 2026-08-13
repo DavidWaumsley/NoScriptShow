@@ -1,0 +1,430 @@
+---
+title: "The Rule of Least Power"
+description: "The W3C programming rule that says, where we have a choice, we should use the least powerful computer language or technology."
+date: 2026-08-13
+tags: ["chat"]
+permalink: "/34/{{slugify }}/"
+videoid: wfcAuZ9z_Qc
+---
+
+**Show Notes:**
+
+Here's the presentation slides. Below is the text version.
+
+<embed class="full" src="\pdf\rule-of-least-power.pdf" title="Episode slides" loading="lazy" type="application/pdf" width="100%" height="600px" />
+
+<br><br>
+
+## The Rule of Least Power…
+
+In Tim Berners-Lee's words, "the less powerful the language, the more you can do with the data stored in that language" because simpler, more declarative formats are easier for many different tools to read, analyse, reuse, and combine.
+
+- This usually means preferring HTML, CSS and other declarative approaches over complex, highly dynamic, or opaque solutions.
+- It is a "rule of thumb" rather than a hard and fast principle.
+- It has acted as an interoperability strategy for the Web itself.
+
+## We have to mention…
+
+> Any application that can be written in JavaScript, will eventually be written in JavaScript.
+>
+> — **Jeff Atwood**
+
+A humorous corollary to the W3C's "Rule of Least Power" from Stack Overflow's co-founder Jeff Atwood.
+
+It was posted in 2007 on his blog, [Coding Horror](https://blog.codinghorror.com/the-principle-of-least-power/), as a joke, but is now treated as a prophetic observation about the tech industry.
+
+## Why it matters
+
+Using the least powerful suitable tools tends to make our sites more robust, maintainable, and future-friendly.
+
+- We are less likely to break basic things when we change or redesign.
+- Simpler, declarative solutions are easier to test, easier to migrate, and easier for search engines, assistive technologies, and other systems to understand.
+- More of our content can be reused (for search, integrations, new channels) without major rework.
+- We avoid tying the site too tightly to a single framework or vendor.
+
+## Core principles
+
+- **Prefer declarative over imperative:** Describe what something is (HTML structure, simple data formats) rather than how to do it in code.
+- **Use the simplest tool that works:** If something can be done in plain HTML or CSS, we avoid reaching for JavaScript or heavy client-side frameworks.
+- **Keep data and structure open:** We favour formats that are easy to parse and repurpose (for example, HTML, JSON, CSV) over proprietary or highly scripted formats.
+- **Add power only when justified:** We accept more powerful, complex solutions when there is a clear, sustained need that simpler options cannot meet.
+
+## How website owners apply this
+
+Website owners don't need the theory, but they can make decisions that support it:
+
+- When requesting features, ask whether they can be done with standard HTML, CSS, and server-side logic before adding new libraries or complex client-side behaviour.
+- Prefer simple, structured content (clear headings, lists, data tables) instead of "everything inside an image" or complex, scripted widgets.
+- Be cautious about "all-in-one" embeds or plugins that hide important information or functionality inside opaque code where search engines and assistive tech cannot easily reach it.
+- When reviewing proposals or tools, favour options that keep content portable and understandable outside a single platform.
+
+## References
+
+- [W3C TAG: The Rule of Least Power](https://www.w3.org/2001/tag/doc/leastPower.html) – original finding explaining the principle in a web context
+- [Tim Berners-Lee: Principles of Design](https://www.w3.org/DesignIssues/Principles.html) – background notes including the principle of least power
+- [Rule of Least Power (Wikipedia)](https://en.wikipedia.org/wiki/Rule_of_least_power) – short overview and rationale
+- [Clearleft: Robustness and least power](https://clearleft.com/thinking/robustness-and-least-power) – practical explanation for front-end and product teams
+- [Coding Horror: The Principle of Least Power](https://blog.codinghorror.com/the-principle-of-least-power/) – commentary and examples outside the browser
+
+
+<details> 
+<summary>Transcript</summary>
+
+
+
+[00:00:06] **Nathan Wrigley:** Hello there and welcome to the No Script Show. Today we're talking about the rule of least power. This is a W3C or worldwide web consortium programming rule that says, where we have a choice, we should use the least powerful computer language or technology. It's a practical implementation of Occam's Razor, which is a philosophical principle dating back to the 14th century and is similar to the KISS principle Kiss Standing for Keep It Simple, stupid, which is aimed at engineers.
+
+Critics of the rule of least power will point to the problems of oversimplification and rigidity. Some may even say that it's anti-innovation, but this rule has helped the web to be interoperable, accessible and able to evolve, and so it's probably worthy of an episode. As always, you can find our show notes and resources at no script show, and in this case, no script show slash three four, the number 34, and if you're watching on YouTube, the link will be in the first comment just below the subscribe and like buttons.
+
+And as always. I'm joined by David Wamsley. Hello. How are you doing? 
+
+[00:01:13] **David Waumsley:** I'm good, thanks Nathan. Yeah, I'm a little bit dark. Sorry, my camera. But, anyway, I think your introduction probably covers the basics, of it all, but we'll manage to stretch this out a little bit further.
+
+Yes, we always do. I think it's quite interesting. I think it, for me, it's the catalyst of this show, in fact, and it's been my guiding light since I started to feel that I was no longer in control of my websites. 'cause I got tired of all the kind of creeping time and money costs that came with it. So rediscovering how good HML and CSS are and that I can control 'em myself, reignited my passion.
+
+I think I might have given up with doing web design if it hadn't been for that. Yeah. It's also nice. 
+
+[00:02:02] **Nathan Wrigley:** Nice. 
+
+[00:02:03] **David Waumsley:** Yeah. It's also made me a little bit political, I suppose in some way. There is a bit of a, a political side to all of this because as the web, and we've been talking about this quite a bit, increasingly falls into the hands of kind of elite billionaires now.
+
+Who many of 'em want to dismantle democracy and would rather have tech overlords doing it. I'm really keen to promote the web as this kind of tool for democracy or this kind of dumb web as I prefer, did before. So yeah, 
+
+[00:02:36] **Nathan Wrigley:** I can have something there. Absolutely. Yeah. 
+
+[00:02:38] **David Waumsley:** Yeah. And it's really interesting doing this one because, I actually remember, way back 20 years ago when this was published, I actually remember it 'cause it was around the sort of time that I was starting to get into web design and it was published, actually, if you're gonna look it up, it's on my birthday.
+
+Oh, very 
+
+[00:02:56] **Nathan Wrigley:** nice 
+
+[00:02:56] **David Waumsley:** years ago. Yeah. Yeah. so it stuck in my mind and, I didn't grab the, I didn't grasp the significance of it really at the time because I was really into all of the sort of commercial stuff and what we can build and what tools you can get to build everything on it. So it's now I think, that, I'm paying more attention to it and it's one of those things where I think.
+
+It's one of the few professions I think you can go into where you've got no, you can claim expertise as we've managed to do almost, I have for sort of 20 years with almost no historic or theoretical foundations. 
+
+[00:03:35] **Nathan Wrigley:** Yes. Yeah. That's really interesting. And it's, it is interesting that there's a, even that there is a philosophical underpinning to all of this.
+
+just the fact that is a, like nobody's interested in the philosophy of a fridge, it's a piece of technology, but who cares? It's just a fridge. But the web is something different. It allows you to express yourself and be creative and, put music out and video out and all these creative things that you can do.
+
+And very much designed with the principle, some sort of egalitarian principle at the, sort of basis of it. And I think it's a bit of a case of, as Johnny Mitchell famously said, you don't know what you've got till it's gone a bit. Yeah. And we do appear to be in a phase of, it's going, yeah. And arresting that is the job, the work, I think of the, our, the, our generation right now and the generations to come just to make sure that it's not handled by a few individuals because we can absolutely guarantee how that's gonna work out and it's not gonna be good.
+
+[00:04:37] **David Waumsley:** Yeah. 
+
+[00:04:39] **Nathan Wrigley:** okay. Shall I move on to the slides or are you got 
+
+[00:04:41] **David Waumsley:** more? Yeah, please. No, that's it. I've, gone on long enough. yeah, so I put a subtitle here, which may be a bit of my own politics, less platform power, more people power. So that's how I'm interpreting the rule a little bit. What I'm gonna do is I'll go onto the next slide and I'll let you read this out as usual.
+
+Yeah. Because it's just a summary of what it is. 
+
+[00:05:02] **Nathan Wrigley:** Okay, so the rule of lease power, here's a description of it. So in Tim Burners Lee's words, Tim burners Lee is often given the title of kind of founder of the internet. I guess in Tim burner's Lee's words, the less powerful the language, the more you can do with the data stored in that language because simpler, more declarative formats are easier for many different tools to read, analyse, reuse, and combine.
+
+And then three bullet points following on from that. This usually means preferring HTML and CSS and other declarative approaches over complex, highly dynamic or opaque solutions. It is a rule of thumb rather than a hard and fast principle. And it has acted as an interoperability strategy for the web itself.
+
+There's quite a lot in there actually, isn't there when you give it some thought, especially the last one. Yeah, 
+
+[00:05:57] **David Waumsley:** yeah. I guess I put my own interpretation on this. because it's it is what it is, the rule. It's but you can see that, Tim Burnley was, in, that first thing, he wants the least powerful language 'cause he wants to be able to travel wherever it can do.
+
+And that's the success of the internet. I think it's already been established, but overturned at certain points that we should have HTML first, then the CSS and then JavaScript when, because it's, an imperative rather than a declarative Language. so we only use it where necessary and that's been turned upside on its head more recently and maybe is turning back again.
+
+yeah, I just put some notes here really just to say for those who are not familiar. philosophical razor is a role that we default to. and this is similar, it's actually, it's not a role that same, you should do it hard and fast. And it's with Occam's Razor that the default on that one is to go for the explanation with the fewest assumptions.
+
+[00:06:59] **Nathan Wrigley:** Yes. 
+
+[00:07:00] **David Waumsley:** interestingly enough, and it's still referred to in many old blog posts, when the draught was coming out, it was called the Principle of Lease Power. It was changed to the rule of lease power when it was actually published later. So a lot of people refer to it as the principle of these power.
+
+And yeah, that was it really. I, there was probably something about interoperability for anybody who's not really familiar with that term. 'cause when I say it, I'm generally thinking about the standard browsers that we use, Firefox or Chrome. but it's really about other things. So we're using these same declarative technologies for email, for e-readers, epub for applications, for smart devices.
+
+And even when you've got SVGs, which is really visual, we're combining XML, declarative language with CSS as well to give us, sort of visuals for games and stuff. 
+
+[00:07:54] **Nathan Wrigley:** Yeah. 
+
+[00:07:56] **David Waumsley:** so I think it's, it's been a real key thing, I think for the growth of the web to have kept things declarative and, 
+
+[00:08:04] **Nathan Wrigley:** yeah.
+
+I was just gonna say, the slightly annoying thing is that every single thing could be interoperable, if we allowed it to be, but, for obvious reasons. I, guess commerce is one of the reasons, you mentioned, eBooks, for example. 
+
+There's loads of open standards for that, but then you can't make it so that can't be copy and pasted throughout the internet and only sold once and everybody's got a copy of it.
+
+We've got all of these technologies, DRM and so on, which kind of lock that down. It's a difficult circle to square, isn't it? In, in the ideal egalitarian world where the unicorns and the rainbows are everywhere, then everything would be interoperable and freely available. but I suppose at some point we do have to crowbar in some of this non interoperability.
+
+It just, from a philosophical point of view, seems like a shame. 
+
+[00:08:56] **David Waumsley:** Yeah. 
+
+[00:08:57] **Nathan Wrigley:** yeah, 
+
+[00:08:57] **David Waumsley:** it's interesting. I was just looking, 'cause it came out last week as we're recording this, the 2026 state of CSS, and there was a quote at the end, I've got it here, at the end of that survey saying, it, it starts with a quote itself.
+
+what JavaScript used to do CSS, can now do is a statement that bears some truth. Yeah. CSS is growing into what is supposed to be features that should have belonged in its presentation layer and now starting to come alive and take shape. and I think that's the key thing when we're talking about JavaScript, it is the presentation layer.
+
+We're talking about what users, have to deal with, particularly in browsers because JavaScript as an imperative language can break where the declarative ones you give the data to the browser to display 
+
+[00:09:46] **Nathan Wrigley:** Yeah. 
+
+[00:09:46] **David Waumsley:** It, you're declaring Yeah. It can't break. 
+
+[00:09:49] **Nathan Wrigley:** Yeah. 
+
+[00:09:50] **David Waumsley:** so it's not against JavaScript as such because I, I love it for things like, what you can do now with 11ty in my case, and things like Astro and stuff, you can Do all that stuff anyway, shall I move on? Okay. We can, we can't possibly talk about this without mentioning this, 
+
+[00:10:09] **Nathan Wrigley:** okay. So we have to mention, Atwood Law, I'll just read out the image, so Let me just move us around a little bit so that we're no longer in the way. There we go. Jeff Atwood, and there's a, there's an image on the screen here, which says Atwood's Law, any application that can be written in JavaScript will eventually be written in JavaScript.
+
+this seems like, I don't know, the sort of thing that you could replace the word JavaScript with so many things in the real world, but it's a humorous corollary of the W three C's rule of lease power from Stack Overflow's co-founder Jeff Atwood. It was posted in 2007 onto his blog coding Horror, which by the way, is such a great title for a blog.
+
+and it was done as a joke, but it is now not, but it is now treated as a prophetic observation about the tech industry. Yeah. it definitely, up until now, we, we do see, as you described, we do seem to be arresting that development. It does seem that a lot of things are being back ported from JavaScript into CSS, but for a period of time up until a few years ago, it did feel like Yeah, do it all in JavaScript.
+
+Everything in JavaScript, 
+
+[00:11:23] **David Waumsley:** yeah. Yeah. 
+
+[00:11:24] **Nathan Wrigley:** No, yeah. 
+
+[00:11:26] **David Waumsley:** And then this historical context, 'cause I suppose, he is writing in 2007 at that time, it's he was someone who was praising what he called, his blog post was called The Principle of Lease Power. So he was somebody who latched onto that rather than a rule.
+
+and obviously it was poking fun at how we overcomplicate things, but at the time, to put it in context, JavaScript was certainly by software engineers, was seen as this kind of quirky, limited scripted language, which only worked in browsers to make animations. That's right.
+
+[00:11:58] **Nathan Wrigley:** Yeah. Yeah. 
+
+[00:12:00] **David Waumsley:** And, partly, it is, in a way, it's quite right because applications, there are some applications. 'cause when we got 2009 and we got the rise of node js that allowed us to do all these things, it, that's what runs things like Astro and Eleventy. And those kind of 
+
+tools that we rely on now to manage our content.
+
+And it, for me, it was only really, and then where it went crazy is when it ended up in the presentation layer, when it, we, by the 2000, and 14 when, to me, the world had lost its mind because we all jumped onto React and these single page applications and everybody was in apps. for me that was just flash all over again as far as I can see.
+
+Yes. Yeah. And, but worse in a way because, people want, companies particularly liked you to use their apps because it's a way of getting you away from the public net into their system where they could, they could ignore should they wish to. Yes. The sort of, privacy laws that apply to the web.
+
+yeah, 
+
+[00:13:07] **Nathan Wrigley:** I do wonder as well if the, the popularity and the rise of JavaScript stifled innovation or no, that's not really what I'm trying to say. It's stifled the adoption or the curiosity of people getting into web development because it's harder, it's significantly harder to do things in JavaScript than it ever would be in HTML and CSS.
+
+In fact, curiously, I'm looking up here, I've got two books above me on a shelf, just there, one's called the JavaScript Bible. This is going back years and it's really thick. It's about two and a half inches thick. And then next to it is a book called JavaScript, the Good Parts, and it's about three millimetres thick.
+
+It's really thin. it's like a quick read, but what I'm trying to say there is, I, wonder if in the advent of CSS taking the role of many of these things, I wonder if we'll see a resurgence in people's curiosity. People who are just dabbling in web development a little bit more because it's much more straightforward and easy for them to use because JavaScript, especially the implementations that you've got now, it's just hard work.
+
+You've gotta be an actual developer with the kind of that kind of brain, in order to get that to work functionally for you. 
+
+[00:14:24] **David Waumsley:** Yeah. Yeah. now there's more to talk about this. I think we'll do another episode actually. 'cause I think when gonna throw in ai, but I've got a little note actually to remember, to mention that I, wanted to just mention here, just while we got Jeff at Edward up, is that I absolutely love his blog bio, which is, Jeff, we, indoor enthusiast, co-founder of Stack Overflow Discourse and RGM two disclaimer.
+
+I have no idea what I'm talking about. Let's be kind to each other. 
+
+[00:14:52] **Nathan Wrigley:** Oh, yes. That'll do it. That sums it up beautifully. Well done, Jeff. we endorse that. Absolutely. That way of thinking. 
+
+[00:15:01] **David Waumsley:** Okay. I'll move on to the next slide. Next. 
+
+[00:15:03] **Nathan Wrigley:** Okay. Let me move us out of the way. There we go. So why does it matter?
+
+Using the least powerful suitable tools tends to make our sites more robust, maintainable and future friendly, simpler, declarative solutions are easier to test, easier to migrate, and easier for search engines, assistive technologies, and other systems to understand. That was where I was going a minute ago with what I said.
+
+We are less likely to break basic things when we change or redesign. That's a big one. More of our content can be reused, for example, for search integrations or possibly some new channels. And that can be done without major reworking and we avoid tying the site too tightly into a single framework or vendor so it becomes much more portable.
+
+[00:15:51] **David Waumsley:** Yeah. I've not got much to sound though. 
+
+[00:15:53] **Nathan Wrigley:** No. Anything out questionable. Yes. 
+
+[00:15:55] **David Waumsley:** Yeah. 
+
+[00:15:56] **Nathan Wrigley:** no. I, think basically it's just more open, isn't it? It's, easier to understand. It's easier to use, it's easier to move. The data's right there for things like search and integrations and new things that you want to move that data to.
+
+It's basically just more intelligent, isn't it? 
+
+[00:16:12] **David Waumsley:** yeah. 
+
+[00:16:13] **Nathan Wrigley:** Yeah. 
+
+[00:16:14] **David Waumsley:** and also I think probably the bit that might trip some people, they might question this one is the bit about, simpler declarative solutions. They're easier to test when, you spend a lot of time testing done different browsers how CSS is working.
+
+You might disagree with that one, but that really, when you, look at it when you're getting into declarative, you're really only looking at the outcomes you are testing to see that it does communicate on different browsers where when you get into, other code, then the conversation is less about the outcome and it's more about the means of the code.
+
+Yeah. How the code works and stuff. yeah. Anyway, I'll move on, shall I to the next slide? Okay. 
+
+[00:16:56] **Nathan Wrigley:** Yeah. sure, sure. 
+
+Okay, so we're onto some core principles now, and again, I'll just read through them. There's four bullet points, prefer declarative over imperative. Describe what something is. for example, HTML structure, simple data formats rather than how to do it in code.
+
+Use the simplest tools that work if something can be done in plain HTML or CSS, we avoid reaching for JavaScript or heavy client side frameworks. Keep data and structure open. We favour formats that are easy to pause and repurpose. So for example, H-T-M-L-J-S-O-N-C-S-V over proprietary or highly scripted formats.
+
+And finally, add power only When justified, we accept more powerful complex solutions when there is a clear sustained need that simpler options cannot meet. 
+
+[00:17:52] **David Waumsley:** Yeah. And, there's not much more I can add. No. Other than the fact that we're obviously, we ignore these things 
+
+[00:17:57] **Nathan Wrigley:** mostly. Yeah. everybody don't, we just, yeah.
+
+but it's a, case of that's how life isn't it? we have these grandiose, simple goals and then we overcomplicate 'em. I imagine we overcomplicate them because in many ways the, the harder thing is easier to use, if because maybe somebody's built a tool, or in the WordPress case, maybe they built a plugin which you can just reach for and you can just forget all of this.
+
+It doesn't matter. Somebody's done a thing. I can use that thing. Let's just do that. and off you go. Not thinking about whether or not it's the most straightforward thing to use in the future and be portable and all the things that we mentioned on the last slide. 
+
+[00:18:34] **David Waumsley:** Yeah. And for me it's I think we're at a point where things are starting to turn around and AI for me will do this.
+
+'cause I think, it's obviously we ignore these things because CSS has been difficult and it's still difficult if you visual output is demanding. If what people expect the sites to look like visually is very specific and very much based on what you'd see in print or in other media, it's quite difficult to achieve.
+
+So there are ways to get around that. and that, that's because we've generally not looked at, the web as this kind of visual tool. We We judge it by how sighted people see it on the most common large, the most commonly used large device. And that's pretty much all there is.
+
+Yeah. in order, and that's what clients buy. And that means that you can also sell them a whole bunch of rubbish. As long as you give 'em a pretty layer, they can have a, a whole bunch of really unmanageable code underneath there that they have to deal with that. 
+
+[00:19:36] **Nathan Wrigley:** Okay. That, so that's an interesting layer that we haven't really ever penetrated into is the desire to gain financial reward for the layers of unnecessary work that you do.
+
+[00:19:49] **David Waumsley:** Yeah. 
+
+[00:19:50] **Nathan Wrigley:** if okay, they don't probably need this, but if I add this one in, this thing in, I can charge another a thousand dollars. Okay, let's just do it. 'cause it's, look, we did all this hard work and did all this JavaScript based thing so we can charge for it. I'd never really thought about it like that, but okay.
+
+Maybe that's one for another day as well. 
+
+[00:20:07] **David Waumsley:** Yeah. I think, this is. What's interesting is that because we've been more interested in what is commonly seen on a large device as visually exciting. Perhaps with animation, that's what you can sell best and it can be put together.
+
+What's really interesting now is that ai, some of it has been watching some recent videos of people knocking up in minutes with some of the recent models, some websites, which, you know, as a lot of these, YouTube videos are saying, you'll be paying at least 20 grand for these, they've got real complex things.
+
+So if it's, say a coffee shop or something, there will be a video of coffee and it'll be pouring to the next section into a NCE in the next section. Okay. All of that kind of stuff that you see, and it's literally, and yes, that's what people would've paid that money for, that visual effect, but really the, the key thing is whether that actually communicates, and I'm sure we're going to get to a point where if it becomes so easy to create this kind of.
+
+really, exceptional imagery that we see on there, it's not really gonna work, is that if you are local barber or something has got a website or something, it's got, all this really polished website, that looks like it should be international. People are not gonna buy it any longer, are they?
+
+It's gonna get well, they're gonna stop looking beyond the vigils, I think. 
+
+[00:21:32] **Nathan Wrigley:** Yeah. That's really interesting. And it's a bit like when, something is ubiquitous and everywhere, it stops becoming powerful. Yeah. So if, for example, every website has got some sort of JavaScript animation, and if you think about the web as a canvas, really you do have a limited subset of things that you can do.
+
+you can put static pictures on there, you can put moving pictures on there. You might call it video, or it might be an animation, driven by CSS or JavaScript or what have you. You could do, text, but that's kind of the canvas that you're working with. If we flood the canvas so that everything's moving all the time and we've got, just a million things going on, that then stops being interesting, doesn't it?
+
+Because it's just wherever you go, you're just inundated with these animations and these clever things. And maybe there's a bit of you which wants to say, can we just stop and give me, just show me the information that I actually want. I need to have my hair cut. Yeah. And so I want your phone number. I don't need to see a pair of scissors moving across the landscape, cutting somebody's hair.
+
+Yeah. So I, it'll be interesting to see, but what's also curious is I wonder if a bit of human psychology comes into play here. I do wonder if people are beguiled still by that, they see the coffee being spilled from picture to picture. And if the client still thinks that's brilliant, I love that.
+
+not thinking, will this help my business? And, I know that's what you've been banging on about for years, is trying to explain to the client this is not gonna help. yeah. But let's see. Only time will tell, but it certainly is curious. I have a theory that will, the animations, the unnecessary animations on the internet are not going anywhere soon.
+
+yeah. But it would be nice if they did. 
+
+[00:23:20] **David Waumsley:** Maybe, and it is just the thing if you spend a lot, because I saw an article as well the other day. They, there was somebody, it was quite a recent one. I was quite surprised with it saying that HTML is dead. Which is rather bizarre. But that is so 
+
+[00:23:31] **Nathan Wrigley:** curious.
+
+[00:23:32] **David Waumsley:** Yes, it is. given it's improving and obviously it's at the centre of everything, but their argument was the fact that we're not en engaging, not using it. and I think that is the problem. And, when you are concentrating on the visuals, what you're not doing there is talk. You're not, engaging with the HTML and the CSS, which is an instruction to the browser, which is, not only are you, if you engage with the declarative languages, you do a bit of.
+
+Forward planning. You put things in where you know that maybe they'll be supported by browsers later because you're thinking if you go at that surface level, you're not thinking about the future. And also if you're thinking about accessibility and how the reach, internationalisation, all of that, you need to get back to the declarative languages in order to do a good job.
+
+But you're unlikely to be able to charge a client for this work, which they can't see because there's a cover. 
+
+[00:24:26] **Nathan Wrigley:** Yeah. Do you know, that is such an interesting observation that HTML is dead thing, because firstly, I predict that will turn out to be nonsense. But I can also see how that argument has for the first time ever got prized open.
+
+Because of, I'm imagining it was based on ai, this, this sort of interaction with a totally different layer of the internet where you're just asking a chat bot for information as opposed to going to a website. So I guess only time will tell my intuition is very strongly that's not gonna turn out to be the case.
+
+I certainly hope not. 
+
+[00:25:03] **David Waumsley:** Anyway, following in the fashion of the, other shows that we did, I've just got this final slide, which is really what the website owners can do. 
+
+[00:25:12] **Nathan Wrigley:** Okay. So this one's entitled How Website Owners Apply This Website Owners don't need the theory, but they can make decisions that support it.
+
+And four bullet points follow when requesting features ask whether they can be done with standard H-T-M-L-C-S-S and Server Side Logic before adding new libraries or complex client side behaviour prefer simple structured content. So clear headings lists data tables instead of everything inside an image or complex scripted widgets.
+
+Be cautious about all-in-one embeds or plugins that hide important information or functionality inside opaque code where search engines and assistive tech cannot easily reach it. And finally, when reviewing proposals or tools favour options that keep content portable and understandable outside a single platform.
+
+Interesting. 
+
+[00:26:05] **David Waumsley:** Do you think there's ever a, a client out there who considers this and goes, 
+
+[00:26:10] **Nathan Wrigley:** no. So that I, obviously that was the case and I made the point a moment about, you have that client meeting and you show them the coffee cup dripping the, coffee from image. my experience with anything like that.
+
+Oh yeah, we want that. and if you showed them 12 cups pouring more coffee, they'd be Oh no, we want that one. and 24 cups, yes. We'll have 24 cup and can they pour it backwards as well? you get what I mean? Yeah. the point being that it does seem that we are visually, if you can overcomplicate things, humans seem to love that.
+
+Yeah. And I dunno what that is. so no, in answer to your question, I've overdone that a little bit. No, I don't think any client is ever come to you and say, can we have these things? Please. But then I guess that's the job of you is to explain that. 
+
+[00:26:58] **David Waumsley:** Yeah. 
+
+[00:26:59] **Nathan Wrigley:** I don't go into a bank and ignore their financial advice.
+
+The whole point is I go in and listen to their advice and hopefully they give me some good ad, you know, good advice and I follow it. Now, I presume is the job of a, a web developer in the future Yeah. Explain the landscape and get them to understand. 
+
+[00:27:15] **David Waumsley:** It's very tricky for me at the moment because it's the message I want to get.
+
+This is what I want 'em to look for. I want 'em to look for someone who's gonna spend that sort of time. So the foundations of it are pretty good. the declarative stuff, the HTML underneath is making it reachable to more people that is thinking about the future. And it does that. And then we'll add the nice layer on the top as much as is, as much as, which seems genuine to the business.
+
+that seems, that's the whole thing. You, if you did have all of these, scissors, sniping, hair animations and stuff, all that, you're gonna distrust some of these things as you do, it's not in keeping with the business, that, so it's, there's a trust element goes.
+
+But yeah, I interestingly just recently because of the fact that I put in a close on the, WordPress, hosting the maintenance that I do in a few years time, I'm talking to clients who generally refer my colleague who used to build a lot these sites had nothing to do with them apart from looking after them.
+
+So I'm letting them know that I'll need to find somebody else or, anything else. So I'm getting a chance to go in and advise people as if I'm not trying to sell it to them, because I'm interesting actually trying to get work. So I'm able to give them this sort of information. Perhaps they need to consider this.
+
+And so far, with the few people I've talked to, they just get it. They just, okay. Yeah. Oh, that's interesting. You get the web, yeah, the web was what they saw. And then when you ask you, when you put the, these are things you might wanna think about. So I might be getting job where I'm, I trying, you were trying 
+
+[00:28:49] **Nathan Wrigley:** not to get work and you're actually gaining work.
+
+Oh, that's interesting. But maybe, we've reached the point where the web is so ubiquitous that people actually are curious about it now, and the underpinnings of it and what have you. Because I, think back in the day, the, the web was kind like a website was an additional thing that you had, you know, you got a website because your business was running.
+
+Now it's much more front and centre, what's the second job that you do after setting up your company with the authority in your jurisdiction? okay, we'll go and buy a domain name, get a website so that we can promote it for, very few dollars. So maybe people are becoming more curious.
+
+That's interesting. Or maybe you are just very persuasive, David. 
+
+[00:29:32] **David Waumsley:** Yeah. Could be. I suppose when there's no skin in the game, you're just telling people, when you saying, oh we might have a new website and then you start to advise 'em not to, okay, so 
+
+[00:29:42] **Nathan Wrigley:** that's, yeah. That's interesting isn't it?
+
+Because then it comes across as a sales pitch and then there's a suspicion. I don't know if that's true. 
+
+[00:29:49] **David Waumsley:** Yeah, okay. Okay. 
+
+[00:29:50] **Nathan Wrigley:** Yeah. Alright. 
+
+[00:29:51] **David Waumsley:** Yeah, I managed to avoid that 'cause I'm genuinely not that no bothered about, getting new customers at the moment. Yeah. yeah. we've only got that.
+
+We've really, at the end there, we've just got one final side, which is our references, which lead up and will expect you to read out. 
+
+[00:30:06] **Nathan Wrigley:** No, but it's okay. anyway, there they are, they're on the screen. If you can see those, you obviously can click on the links, which will be in the show notes, go to no script show slash 34, so the numerals three, four.
+
+and presumably they'll be added to the YouTube description Yeah. And things like that as well. Yeah. So they're all there. There's five or six from the W three C, Tim Burners, Lee Wikipedia, clear left and Coding Horror. 
+
+[00:30:34] **David Waumsley:** Yeah. 
+
+[00:30:35] **Nathan Wrigley:** As well. So I guess that's it. Is it, are we done for this episode? 
+
+[00:30:38] **David Waumsley:** Yeah, I think we've, I think we've probably covered it.
+
+Okay. for me, the, rule of lease power, I, in my mind it's for those with the lease power so they can rule over themselves. That's how I see it is 
+
+[00:30:52] **Nathan Wrigley:** Oh, that's nicely put. 
+
+[00:30:53] **David Waumsley:** Yeah. It's how I reinterpret it. And I honestly, I do think, it's starting to make more sense to more people.
+
+Maybe I'm just imagining this, but I do notice that, I still follow all the kind of professionals in WordPress and what they're talking about and the page builders, circles. And I see there's such a keenness now to learn HTML and get back to, to have control over the HT ML and the CSS.
+
+Nobody bothered about it before when the no code movement started. You thought, I'm done with that. HTML's dead. I, I can get a tool to do it, but I see a real surgence in that and I think 
+
+[00:31:30] **Nathan Wrigley:** okay. Yeah. And what's also interesting is in the common narrative, I think maybe the, I'm going to do air quotes here, the tech overlords, there's been so much overreach lately, which has spilled out into the mainstream media that maybe people are just curious about, that thing that they hold in their hand, that device that they've got.
+
+what is it doing when I'm using this platform? What is happening to that picture that I just posted, or those words that I just wrote? And I think there is more interest. don't get me wrong. I imagine that the people are curious about this as still the 1% of the 1%, but nevertheless, it's becoming part of the common vernacular.
+
+I think as we realise what we've given away and what the potential for the internet could have been. 'cause genuinely, like with 20 years plus under our belt of the internet, if it had gone in a different direction, it could have been a whole lot worse. But boy, it could have been a whole lot better.
+
+as well. 
+
+[00:32:26] **David Waumsley:** Yeah. And that's interesting. I saw, I dunno if you've seen any of his videos, Jimmy the Giant. No, 
+
+[00:32:33] **Nathan Wrigley:** no, I like my name. 
+
+[00:32:34] **David Waumsley:** Yeah, it's quite interesting. He's had a history. He is a bit of a sort of a, a far right, person in, in the early days who's flipped around. He just really interesting videos.
+
+One, one he was doing recently is a much younger fella. So I think our age, because we're, I'm a still at the tail end of the boomer generation. You are a bit younger than that, but still old, but we're still old out touch. But his video recently was on why does everybody hate tech Now? And it was very much about Oh, yeah, about younger.
+
+I know you've been talking about that on your, yeah, no, they, 
+
+[00:33:11] **Nathan Wrigley:** they, there is a gen, there is a deep love for it because of the utility and the functionality that it brings into their life. The communication in particular, the fact that you can chat with everybody and send people pictures right away, but also a real distrust of where the heck is this going?
+
+Yeah. And as we know, in almost every situation, there is a direct swap out from Evil Corp to Yeah, good Corp. There, there's always, mostly there's a direct swap out, but it's a question of capturing enough people that kind of tidal wave of movement is a tidal wave, not just a little trickle.
+
+and it feels to me at the moment as if the large tech companies are, in a bit of a pr battle to stop that tidal wave from developing. And, the more that they try to h hold people into their walled gardens, the worse it becomes for them. but we'll see, 
+
+[00:34:05] **David Waumsley:** Yeah. on the younger generation, having the new technology saying that's gonna take all your jobs, even though you've got very little chance of getting one, it's not the best message and No.
+
+So there's a hatred of tech, but I think it's an opportunity for, to get back to, this kind of dumb tech, that really, it helps with democracy, helps us to communicate, is something we can own ourselves. So I think 
+
+[00:34:27] **Nathan Wrigley:** Yeah. 
+
+[00:34:27] **David Waumsley:** Yeah. I can see why we might be pulling things back to get back to some of the earlier, principles of the web.
+
+[00:34:34] **Nathan Wrigley:** Yeah. by the time we do episode 35, no doubt that tidal wave will have made everything open source and like I said earlier, the unicorns and the rainbows will everywhere. so it'll be another decade before the next episode comes. No, I guess we've wrapped that one up. Have we? We 
+
+[00:34:51] **David Waumsley:** have. We have.
+
+[00:34:52] **Nathan Wrigley:** Okay. Yes. In which case I will say we'll be back soon. no script show slash 34 if you want to check this one out. But thank you, David, for chatting today. Thank you. 
+
+[00:35:04] **David Waumsley:** Yeah, cheers. Bye-bye. 
+
+[00:35:05] **Nathan Wrigley:** Bye-bye. 
+</details> 
